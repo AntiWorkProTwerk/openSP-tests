@@ -1,0 +1,66 @@
+{
+  "stabilityEvidence": "Browser assertions compare final source and build pins; downloaded engine/worker hashes match built provenance. Root independently rechecked retained pins.",
+  "passed": true,
+  "schema": 1,
+  "deployment": "Local only",
+  "runtime": {
+    "wasmBytes": 706188,
+    "javascriptGzipBytes": 59564
+  },
+  "runtimeStable": true,
+  "sourceStable": true,
+  "firmwareBytesPublished": false,
+  "verification": {
+    "productionModelGroups": 537,
+    "typecheckFiles": 93,
+    "errors": 0,
+    "targetedStrictTyping": "passed",
+    "focusedBrowserTests": 1,
+    "candidateExcluded": true,
+    "skipped": 0,
+    "hints": 0,
+    "warnings": 0
+  },
+  "files": {
+    "audio-board-qualification.json": {
+      "sha256": "a7e958921213c412c3fdf8b1c7cc0edfd8c81bc7961593cd727f0936fa52556d",
+      "bytes": 2436
+    },
+    "browser-tests.log": {
+      "sha256": "fb1d51b4d8306fe0c3eacc9dbe990f24ebbd96f415ea62926fc9af8130567552",
+      "bytes": 583
+    },
+    "build-info.json": {
+      "sha256": "1febc6b1920eb82dd99e6d63e92f4773788f3888d689bcee20b85291b5513dc5",
+      "bytes": 9968
+    },
+    "build.log": {
+      "sha256": "af24e446d16fd2c29965834a5855d0e493659e7709de1d640fbd9ce005e80175",
+      "bytes": 33765
+    },
+    "check.log": {
+      "sha256": "94c5f95ac86467878a2cca996e92a42eb3046df79fca45dabe1f2eebcefcb2b0",
+      "bytes": 293
+    },
+    "emulator-worker-roundtrip.spec.ts": {
+      "sha256": "5007e316d853eedce5bf5f68c3138b0a2e4f7ad140af3680b2b4a875c86bf6fa",
+      "bytes": 27895
+    },
+    "model-pins.json": {
+      "sha256": "f3013ad6989dbf899028fa47f090d7deb3608f00da5cc52bc7f397cc5423d4f9",
+      "bytes": 5217
+    },
+    "model-tests.tap": {
+      "sha256": "09f81fc7c5c0a2694b7e033882b6090d5dd8e61738d8ee20d9bf75e66e0dcfa0",
+      "bytes": 50094
+    },
+    "worker-rpc-browser-roundtrip.json": {
+      "sha256": "a5869eb54596e987d54c47921dba34c5e8fd1137ac9d87446b63f2c385c386e3",
+      "bytes": 1279837
+    }
+  },
+  "scope": "AUDIO-integrated production Worker bridge, R13/R14 changed-image updates with two synthetic read-only SD fixtures",
+  "browserPhysicalDeviceAccess": false,
+  "sdScope": "Admission, transfer, safe metadata and retention through fresh initial/reset/R13-R14-R13 boots; no guest SD read or filesystem qualification",
+  "sdBytesPublished": false
+}

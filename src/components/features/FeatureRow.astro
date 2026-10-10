@@ -1,0 +1,20 @@
+---
+import type {FeatureRowPresentation} from '../../lib/features/presentation';
+interface Props {feature:FeatureRowPresentation;unavailableNote?:string;}
+const {feature,unavailableNote='Planned for a later release. Selection is unavailable.'}=Astro.props;
+---
+<article class="feature-row" data-feature={feature.id} data-component="Feature row">
+  <div class="feature-heading">
+    <label class="feature-choice"><input type="checkbox" data-choice={feature.id} data-selectable={String(feature.selectable)} aria-describedby={`feature-description-${feature.id}`} disabled/><span>{feature.name}</span></label>
+    <span class="feature-readiness">{feature.readiness}</span>
+  </div>
+  <p id={`feature-description-${feature.id}`} class="feature-description">{feature.description}</p>
+  {!feature.selectable&&<p class="feature-future-note">{unavailableNote}</p>}
+  <details class="feature-evidence">
+    <summary>Evidence and requirements <span class="disclosure-mark" aria-hidden="true"></span></summary>
+    <p>{feature.evidence}</p>
+    <p>{feature.blocker}</p>
+    <p class="feature-dependencies">Required components: {feature.requires.join(', ')}.</p>
+    {feature.artifact&&<p class="feature-artifact">Evidence identity: {feature.artifact.identity}.<br/>SHA256 <code>{feature.artifact.sha256}</code></p>}
+  </details>
+</article>

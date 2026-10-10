@@ -1,0 +1,274 @@
+TAP version 13
+# Subtest: board routes ARM PLL aliases and lock ticks independently of a disabled GPT
+ok 1 - board routes ARM PLL aliases and lock ticks independently of a disabled GPT
+  ---
+  duration_ms: 7.482
+  type: 'test'
+  ...
+# Subtest: board preserves ARM PLL missing-reference fixtures and chunks large independent ticks
+ok 2 - board preserves ARM PLL missing-reference fixtures and chunks large independent ticks
+  ---
+  duration_ms: 2.5126
+  type: 'test'
+  ...
+# Subtest: evidence identifies source-qualified ARM control and explicit synthetic limits
+ok 3 - evidence identifies source-qualified ARM control and explicit synthetic limits
+  ---
+  duration_ms: 2.9019
+  type: 'test'
+  ...
+# Subtest: literal reset is powered down, bypassed and output-enabled with LOCK low
+ok 4 - literal reset is powered down, bypassed and output-enabled with LOCK low
+  ---
+  duration_ms: 0.9111
+  type: 'test'
+  ...
+# Subtest: the independent NXP ARM initialization caller locks while bypass remains set
+ok 5 - the independent NXP ARM initialization caller locks while bypass remains set
+  ---
+  duration_ms: 0.4652
+  type: 'test'
+  ...
+# Subtest: reads and writes alone do not advance pending lock time
+ok 6 - reads and writes alone do not advance pending lock time
+  ---
+  duration_ms: 2.3945
+  type: 'test'
+  ...
+# Subtest: unchanged divider/source writes preserve pending progress and completed lock
+ok 7 - unchanged divider/source writes preserve pending progress and completed lock
+  ---
+  duration_ms: 0.3505
+  type: 'test'
+  ...
+# Subtest: a changed divider removes stale LOCK and restarts its explicit delay
+ok 8 - a changed divider removes stale LOCK and restarts its explicit delay
+  ---
+  duration_ms: 0.1868
+  type: 'test'
+  ...
+# Subtest: changing reference source restarts pending and completed lock
+ok 9 - changing reference source restarts pending and completed lock
+  ---
+  duration_ms: 0.2528
+  type: 'test'
+  ...
+# Subtest: POWERDOWN clear enables locking and set cancels completed or pending progress
+ok 10 - POWERDOWN clear enables locking and set cancels completed or pending progress
+  ---
+  duration_ms: 0.1818
+  type: 'test'
+  ...
+# Subtest: toggled POWERDOWN follows the non-USB power polarity
+ok 11 - toggled POWERDOWN follows the non-USB power polarity
+  ---
+  duration_ms: 0.273
+  type: 'test'
+  ...
+# Subtest: ENABLE and BYPASS do not block analog locking or reset valid progress
+ok 12 - ENABLE and BYPASS do not block analog locking or reset valid progress
+  ---
+  duration_ms: 0.3352
+  type: 'test'
+  ...
+# Subtest: both supported reference sources require their explicit available fixtures
+ok 13 - both supported reference sources require their explicit available fixtures
+  ---
+  duration_ms: 0.3287
+  type: 'test'
+  ...
+# Subtest: reserved source codes remain stored and visible while conservatively holding LOCK low
+ok 14 - reserved source codes remain stored and visible while conservatively holding LOCK low
+  ---
+  duration_ms: 0.2973
+  type: 'test'
+  ...
+# Subtest: all 128 divider encodings are retained and only documented54..108 can lock
+ok 15 - all 128 divider encodings are retained and only documented54..108 can lock
+  ---
+  duration_ms: 0.5886
+  type: 'test'
+  ...
+# Subtest: fixed lock failure never completes and survives reset
+ok 16 - fixed lock failure never completes and survives reset
+  ---
+  duration_ms: 0.3086
+  type: 'test'
+  ...
+# Subtest: every SET CLR TOG alias reads zero at each aligned lane
+ok 17 - every SET CLR TOG alias reads zero at each aligned lane
+  ---
+  duration_ms: 0.2389
+  type: 'test'
+  ...
+# Subtest: SET CLR TOG modify selected ones only and zeros leave state unchanged
+ok 18 - SET CLR TOG modify selected ones only and zeros leave state unchanged
+  ---
+  duration_ms: 0.2853
+  type: 'test'
+  ...
+# Subtest: primary and alias byte/halfword writes preserve untouched lanes
+ok 19 - primary and alias byte/halfword writes preserve untouched lanes
+  ---
+  duration_ms: 0.194
+  type: 'test'
+  ...
+# Subtest: unwritten high value bits cannot power down select a reference or request a reserved selector
+ok 20 - unwritten high value bits cannot power down select a reference or request a reserved selector
+  ---
+  duration_ms: 0.1841
+  type: 'test'
+  ...
+# Subtest: LOCK is protected through primary and alias full and narrow writes
+ok 21 - LOCK is protected through primary and alias full and narrow writes
+  ---
+  duration_ms: 0.2548
+  type: 'test'
+  ...
+# Subtest: reserved PLL_SEL writes stay zero, remain visible and cannot disturb valid lock
+ok 22 - reserved PLL_SEL writes stay zero, remain visible and cannot disturb valid lock
+  ---
+  duration_ms: 0.3029
+  type: 'test'
+  ...
+# Subtest: configuration mask excludes LOCK and all reserved bits without losing actual fields
+ok 23 - configuration mask excludes LOCK and all reserved bits without losing actual fields
+  ---
+  duration_ms: 0.137
+  type: 'test'
+  ...
+# Subtest: equivalent batched ticks preserve pending and completed states
+ok 24 - equivalent batched ticks preserve pending and completed states
+  ---
+  duration_ms: 0.1981
+  type: 'test'
+  ...
+# Subtest: zero-delay lock still needs an explicit tick after eligible power-up
+ok 25 - zero-delay lock still needs an explicit tick after eligible power-up
+  ---
+  duration_ms: 0.1236
+  type: 'test'
+  ...
+# Subtest: tick bounds reject invalid delays and counts without mutating model state
+ok 26 - tick bounds reject invalid delays and counts without mutating model state
+  ---
+  duration_ms: 1.2856
+  type: 'test'
+  ...
+# Subtest: boolean fixtures are validated and status returns independent diagnostic copies
+ok 27 - boolean fixtures are validated and status returns independent diagnostic copies
+  ---
+  duration_ms: 0.5568
+  type: 'test'
+  ...
+# Subtest: reset restores source controls and clears progress while retaining fixed reference fixtures
+ok 28 - reset restores source controls and clears progress while retaining fixed reference fixtures
+  ---
+  duration_ms: 0.2479
+  type: 'test'
+  ...
+# Subtest: exact16-byte ownership leaves USB1 other PLLs PFD and handshakes unhandled
+ok 29 - exact16-byte ownership leaves USB1 other PLLs PFD and handshakes unhandled
+  ---
+  duration_ms: 0.3773
+  type: 'test'
+  ...
+# Subtest: malformed widths addresses and cross-lane accesses remain unhandled
+ok 30 - malformed widths addresses and cross-lane accesses remain unhandled
+  ---
+  duration_ms: 0.2657
+  type: 'test'
+  ...
+# Subtest: board owns USB2 aliases, lock ticks and status without changing neighboring PLL routes
+ok 31 - board owns USB2 aliases, lock ticks and status without changing neighboring PLL routes
+  ---
+  duration_ms: 6.0473
+  type: 'test'
+  ...
+# Subtest: USB2 board ticks remain independent of GPT and retain a failure fixture through reset
+ok 32 - USB2 board ticks remain independent of GPT and retain a failure fixture through reset
+  ---
+  duration_ms: 2.046
+  type: 'test'
+  ...
+# Subtest: reset USB2 controls retain output/bypass with analog power off and no lock
+ok 33 - reset USB2 controls retain output/bypass with analog power off and no lock
+  ---
+  duration_ms: 2.583
+  type: 'test'
+  ...
+# Subtest: NXP USB2 initializer waits while bypassed then selects locked output
+ok 34 - NXP USB2 initializer waits while bypassed then selects locked output
+  ---
+  duration_ms: 0.6234
+  type: 'test'
+  ...
+# Subtest: POWER has USB polarity and TOG powers off without trusting read-only LOCK
+ok 35 - POWER has USB polarity and TOG powers off without trusting read-only LOCK
+  ---
+  duration_ms: 0.2567
+  type: 'test'
+  ...
+# Subtest: output gates and bypass do not prevent analog lock or disturb progress
+ok 36 - output gates and bypass do not prevent analog lock or disturb progress
+  ---
+  duration_ms: 0.2849
+  type: 'test'
+  ...
+# Subtest: same configuration preserves delay but power divider and reference changes restart it
+ok 37 - same configuration preserves delay but power divider and reference changes restart it
+  ---
+  duration_ms: 0.2314
+  type: 'test'
+  ...
+# Subtest: source availability is explicit and reserved selectors remain visible without lock
+ok 38 - source availability is explicit and reserved selectors remain visible without lock
+  ---
+  duration_ms: 0.4252
+  type: 'test'
+  ...
+# Subtest: fixed failures and unavailable references survive reset without synthesized power
+ok 39 - fixed failures and unavailable references survive reset without synthesized power
+  ---
+  duration_ms: 1.7202
+  type: 'test'
+  ...
+# Subtest: all alias reads are zero and byte operations preserve independent lanes
+ok 40 - all alias reads are zero and byte operations preserve independent lanes
+  ---
+  duration_ms: 0.2918
+  type: 'test'
+  ...
+# Subtest: read-only LOCK and reserved bits cannot be written through any alias or bus lane
+ok 41 - read-only LOCK and reserved bits cannot be written through any alias or bus lane
+  ---
+  duration_ms: 0.2616
+  type: 'test'
+  ...
+# Subtest: reads and writes do not advance time; batches and explicit zero delay are deterministic
+ok 42 - reads and writes do not advance time; batches and explicit zero delay are deterministic
+  ---
+  duration_ms: 1.3145
+  type: 'test'
+  ...
+# Subtest: exact USB2 ownership leaves ARM USB1 SYS and adjacent reserved bytes unhandled
+ok 43 - exact USB2 ownership leaves ARM USB1 SYS and adjacent reserved bytes unhandled
+  ---
+  duration_ms: 0.2967
+  type: 'test'
+  ...
+# Subtest: invalid ticks fixtures and mutable status copies cannot change the controller
+ok 44 - invalid ticks fixtures and mutable status copies cannot change the controller
+  ---
+  duration_ms: 0.5846
+  type: 'test'
+  ...
+1..44
+# tests 44
+# suites 0
+# pass 44
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 209.5668

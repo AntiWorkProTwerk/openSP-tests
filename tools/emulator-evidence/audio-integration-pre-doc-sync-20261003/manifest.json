@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "files": {
+    "docs/emulator-pll-audio.md": {
+      "sha256": "b238bcaa46b1ba4a9553ef8cbca69db448395768e46d40064545dafbb73e4806",
+      "bytes": 4678
+    },
+    "docs/emulator-pll-video.md": {
+      "sha256": "e094fb85068ec735b590ffbce7b860a38c02929a42fb98343eeeef835ed3f58f",
+      "bytes": 4733
+    },
+    "docs/emulator-board-contract.md": {
+      "sha256": "abd16d090e7d399d6ee185848e511cb3c3e40abb0576225f56d2f408c88f40de",
+      "bytes": 14631
+    },
+    "docs/emulator.md": {
+      "sha256": "9f88e5df8d7b30b0922f047b4269677bd69efc6cbed498138b131d594b663672",
+      "bytes": 21477
+    },
+    "docs/emulator-sd-fixtures.md": {
+      "sha256": "17e89faac33169b1cdde981d116641d4fd462edd341f5b6959c3e4f1027c4ce0",
+      "bytes": 4644
+    }
+  },
+  "scope": "Exact prose before AUDIO integration and small writer result sync"
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "scope": "Local four-repair runtime, shared page RPC and ARM/USB2 clock-integrated build; before VIDEO routing and optional session SD input",
+  "deployed": false,
+  "physicalDeviceAccess": false,
+  "firmwareBytesPublished": false,
+  "verification": {
+    "modelGroups": 438,
+    "genericCpuGroups": 12,
+    "separateCpuStartupGroups": 13,
+    "exceptionGroups": 54,
+    "browserTests": 165,
+    "privateFirmwareBrowserTestsSkipped": 0,
+    "typecheckFiles": 83,
+    "errors": 0,
+    "warnings": 0,
+    "hints": 0,
+    "countsOverlap": true
+  },
+  "budgets": {
+    "ordinaryMaxJavascriptGzipBytes": 12880,
+    "initialEmulatorJavascriptGzipBytes": 7903,
+    "demandJavascriptGzipBytes": 55413,
+    "wasmBytes": 706188
+  },
+  "files": {
+    "build-info.json": {
+      "bytes": 9968,
+      "sha256": "7530e0e999d4d807840fc219bc8861574855fbf7af17ee4cd3e0b6d1380f947d"
+    },
+    "complete-tests.log": {
+      "bytes": 68170,
+      "sha256": "dc4f0ca79357d88b7ab7602bafa379353a3267d5dc3fa08e12182a2083ba8233"
+    },
+    "model-tests.tap": {
+      "bytes": 99780,
+      "sha256": "a91490154271a56ed8fad38bd194b2f1ab45b1659dd24b56f6fba4943041102d"
+    },
+    "check.log": {
+      "bytes": 293,
+      "sha256": "6e0e63eb2a9d336f135c45e78e5c144b58d559d849b2d8d097db491783f808c8"
+    },
+    "browser-runtime.json": {
+      "bytes": 3225,
+      "sha256": "a931e082062aa8959f179b7b599bb4f848cb11014b2c3b040820aa9b02ee4ccc"
+    },
+    "worker-rpc-browser-roundtrip.json": {
+      "bytes": 727040,
+      "sha256": "ab063c545203716d2ab32725ac86b0c2643258a8a109424ded6f1cdaed538fac"
+    },
+    "cpu-startup.json": {
+      "bytes": 3424,
+      "sha256": "f82b9cfc81e3ce428893c31551e88372ec7c13683f465b20e7f6614737c8d1fb"
+    },
+    "exception-fpu-qualification.json": {
+      "bytes": 6499,
+      "sha256": "b784fd63ef92ff46889201179c8df81855037a0e264a3b6945f93e67182cddec"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "schema": "opensp-synth-direct-recording-ui",
+  "version": 1,
+  "product": "openSynth",
+  "candidateMarker": "openSynth N1",
+  "status": "Proposed interface; original illustrative design, not a device capture or qualified recording result.",
+  "logicalSize": [128, 64],
+  "flow": "REC opens empty-pad chooser; pad chooses destination without sounding; REC starts; REC stops and saves; EXIT cancels chooser.",
+  "geometry": {
+    "header": [0, 0, 128, 10],
+    "footer": [0, 55, 128, 9],
+    "grid": {"origin": [3, 13], "columns": 4, "rows": 4, "cell": [28, 8], "pitch": [30, 10]},
+    "destination": [3, 14, 122, 10],
+    "status": [3, 27, 122, 8],
+    "scope": [3, 37, 122, 15],
+    "progress": [3, 35, 122, 1]
+  },
+  "states": [
+    {"id": "chooser", "main": "P6N direct record chooser", "header": "CHOOSE EMPTY PAD", "footer": "PAD:SELECT EXIT:BACK", "scope": false, "note": "Show current-bank empty pads from a checked snapshot. Occupied or unknown pads are unavailable. A destination press is consumed and must not reach the synth note handler."},
+    {"id": "armed", "main": "P6N direct record armed", "header": "ARMED A01", "destination": "REC TO START", "statusText": "EMPTY PAD SELECTED", "footer": "REC:START EXIT:BACK", "scope": false, "note": "The pad is selected before the request owner arms recording. Validate it again when REC starts. The displayed A01 is an illustrative destination."},
+    {"id": "recording", "main": "P6N direct record recording", "header": "RECORD A01", "destination": "00:00 / 02:00", "statusText": "AUTO STOP AT 02:00", "footer": "REC:STOP + SAVE", "scope": true, "elapsedMs": 0, "maximumSeconds": 120, "remainingSeconds": 120, "progress": 0, "note": "Bounded manual take: no count-in, REC stops earlier, maximum 120 seconds. Display actual accepted elapsed time against the 120-second cap and progress from accepted frames, not predicted timing. Pads return to normal synth-note delivery after recording starts. The linked scope is an original illustrative waveform; runtime must use a complete owned PCM snapshot."},
+    {"id": "saving", "main": "P6N direct record saving", "header": "SAVING A01", "destination": "KEEP POWER ON", "statusText": "WRITING SAMPLE", "footer": "PLEASE WAIT", "scope": false, "note": "REC stop requests the checked save to the chosen pad. Stay busy until the native sample/project result is confirmed; error or incomplete save must not show success."}
+  ],
+  "ownership": {
+    "implementation": "Compact recording worker owns control state, destination validation, panel hooks and recorder lifecycle.",
+    "availablePads": "Use an authenticated current project/bank cache snapshot and refuse occupied, stale or unknown destinations.",
+    "selection": "Destination pad-down and release are consumed by chooser state. No synth note or capture start occurs until the next explicit REC.",
+    "save": "A separate REC after start stops and saves. Render success only after confirmed native write and project retirement.",
+    "evidence": "Penpot source and shared state geometry describe the intended interface. No recording, timing or memory qualification is implied."
+  }
+}

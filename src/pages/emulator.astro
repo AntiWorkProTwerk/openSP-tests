@@ -1,0 +1,131 @@
+---
+import Base from '../layouts/Base.astro';
+import SiteHeader from '../components/SiteHeader.astro';
+import SiteFooter from '../components/SiteFooter.astro';
+import SPInstrument from '../components/SPInstrument.astro';
+import {part,findShape} from '../lib/penpot';
+import {CONTROL_NAMES} from '../lib/emulator/board';
+import copy from '../content/emulator.json';
+import '../styles/emulator.css';
+const instrument=part('Instrument');
+const screen=findShape(instrument,'OLED content slot');
+const aperture=findShape(instrument,'OLED circular aperture');
+if(!screen||!aperture)throw new Error('The shared instrument is missing its OLED geometry.');
+const screenStyle=`left:${screen.x/instrument.width*100}%;top:${screen.y/instrument.height*100}%;width:${screen.shape.width/instrument.width*100}%;clip-path:ellipse(${aperture.shape.width/2/screen.shape.width*100}% ${aperture.shape.height/2/screen.shape.height*100}% at ${(aperture.x+aperture.shape.width/2-screen.x)/screen.shape.width*100}% ${(aperture.y+aperture.shape.height/2-screen.y)/screen.shape.height*100}%)`;
+---
+<Base title={`${copy.title} · OpenSP`} description={copy.description}>
+  <SiteHeader/>
+  <main id="main" class="emulator-page" data-emulator>
+    <div class="emulator-introduction">
+      <h1>{copy.title}</h1>
+      <p>{copy.introduction}</p>
+      <p class="emulator-limit">{copy.researchLimit}</p>
+      <p class="emulator-local">{copy.localNote}</p>
+    </div>
+    <noscript><p class="emulator-no-script">{copy.noScript}</p></noscript>
+    <div class="emulator-toolbar">
+      <h2>{copy.sessions}</h2>
+      <button type="button" data-add-session disabled>{copy.addSession}</button>
+    </div>
+    <div data-sessions>
+      <section class="emulator-session" data-session data-state="empty" aria-label="Session 1">
+        <div class="emulator-session-heading">
+          <label class="emulator-name-label"><span class="visually-hidden">{copy.sessionName}</span><input data-session-name type="text" value="Session 1" maxlength="80" autocomplete="off"/></label>
+          <span class="emulator-session-state" data-session-state role="status">{copy.waiting}</span>
+          <button type="button" class="emulator-remove" data-action="remove" disabled>{copy.removeSession}</button>
+        </div>
+        <div class="emulator-session-workspace">
+          <figure class="emulator-instrument">
+            <SPInstrument>
+              <canvas slot="screen" class="emulator-oled" style={screenStyle} data-oled width="128" height="64" role="img" aria-label={copy.oledLabel}>{copy.oledBlank}</canvas>
+            </SPInstrument>
+            <figcaption>{copy.instrumentCaption}</figcaption>
+          </figure>
+          <div class="emulator-session-controls">
+            <div class="emulator-file-fields">
+              <label>{copy.firmwareFile}<input data-file type="file" accept=".bin,.img,.dat,application/octet-stream" disabled/></label>
+              <label>{copy.startingPoint}<select data-format disabled><option value="app1">{copy.app1Choice}</option><option value="flash">{copy.flashChoice}</option></select></label>
+            </div>
+            <p class="emulator-file-name" data-firmware-name>{copy.noFile}</p>
+            <p class="emulator-format-note">{copy.formatNote}</p>
+            <div class="emulator-transport" aria-label={copy.executionControls}>
+              <button type="button" class="emulator-primary" data-action="start" disabled>{copy.start}</button>
+              <button type="button" data-action="pause" disabled>{copy.pause}</button>
+              <button type="button" data-action="step" disabled>{copy.step}</button>
+              <button type="button" data-action="reset" disabled>{copy.reset}</button>
+            </div>
+            <p class="emulator-session-error" data-session-error role="alert" hidden></p>
+            <dl class="emulator-diagnostics">
+              {copy.diagnostics.map(diagnostic=><div class:list={{'emulator-hash':diagnostic.key==='hash'}}><dt>{diagnostic.label}</dt><dd data-diagnostic={diagnostic.key}>{diagnostic.initial}</dd></div>)}
+            </dl>
+            <details class="emulator-model-details">
+              <summary><span>{copy.modelCoverage}</span><span class="disclosure-mark" aria-hidden="true"></span></summary>
+              <ul data-model-limits><li>{copy.modelInitial}</li></ul>
+              <pre data-mmio-details>{copy.noUnknownMmio}</pre>
+            </details>
+            <div class="emulator-trace-actions"><button type="button" data-action="export" disabled>{copy.exportTrace}</button><span>{copy.traceNote}</span></div>
+          </div>
+        </div>
+        <details class="emulator-sd" open>
+          <summary><span>{copy.sdImages}</span><span class="disclosure-mark" aria-hidden="true"></span></summary>
+          <p>{copy.sdNote}</p>
+          <div class="emulator-sd-slots">
+            {[1,2].map(slot=><div class="emulator-sd-slot">
+              <label>{slot===1?copy.sd1File:copy.sd2File}<input data-sd-file={slot} type="file" accept=".bin,.img,.raw,.iso,application/octet-stream" disabled/></label>
+              <div class="emulator-sd-selection"><p data-sd-name={slot} role="status">{copy.sdNoImage}</p><button type="button" data-sd-remove={slot} disabled>{copy.sdRemove}</button></div>
+              <p class="emulator-sd-error" data-sd-error={slot} role="alert" hidden></p>
+            </div>)}
+          </div>
+          <p class="emulator-sd-change" data-sd-change role="status">{copy.sdChangeNote}</p>
+        </details>
+        <details class="emulator-inputs" open>
+          <summary><span>{copy.controlInputs}</span><span class="disclosure-mark" aria-hidden="true"></span></summary>
+          <p>{copy.controlNote}</p>
+          <div class="emulator-pad-inputs" role="group" aria-label={copy.momentaryPads}>
+            {Array.from({length:16},(_,i)=><button type="button" data-pad-control={`PAD ${i+1}`} aria-pressed="false" disabled>Pad {i+1}</button>)}
+          </div>
+          <form data-input-form>
+            <label>{copy.control}<select data-input-control disabled>{CONTROL_NAMES.map(name=><option value={name}>{name}</option>)}</select></label>
+            <div class="emulator-input-level"><label>{copy.level}<input data-input-value type="range" min="0" max="1" step="0.01" value="1" disabled/></label><output data-input-level aria-label={copy.levelLabel}>1.00</output></div>
+            <button type="submit" disabled>{copy.applyControl}</button>
+          </form>
+          <p class="emulator-encoder-note" data-input-note hidden>{copy.encoderNote}</p>
+          <div class="emulator-input-footer"><p data-input-result role="status">{copy.inputNote}</p><button type="button" data-action="power-off" disabled>{copy.powerOff}</button></div>
+        </details>
+        <details class="emulator-usb" open>
+          <summary><span>{copy.virtualUsb}</span><span class="disclosure-mark" aria-hidden="true"></span></summary>
+          <h3>{copy.updateHeading}</h3>
+          <p>{copy.updateNote}</p>
+          <form class="emulator-update" data-update-form>
+            <div class="emulator-update-files">
+              <label>{copy.updateImage}<input data-update-image type="file" accept=".bin,application/octet-stream" disabled/></label>
+              <label>{copy.updateManifest}<input data-update-manifest type="file" accept=".json,application/json" disabled/></label>
+            </div>
+            <p class="emulator-update-summary" data-update-summary>{copy.updateNoCandidate}</p>
+            <div class="emulator-update-actions"><button class="emulator-primary" type="submit" disabled>{copy.updateStart}</button><button type="button" data-action="cancel-update" disabled>{copy.updateCancel}</button></div>
+          </form>
+          <div class="emulator-update-status">
+            <p data-update-phase role="status">{copy.updateWaiting}</p>
+            <progress data-update-progress max="1" value="0" aria-label={copy.updateHeading} hidden></progress>
+            <p class="emulator-update-error" data-update-error role="alert" hidden></p>
+            <p class="emulator-update-receipt" data-update-receipt>{copy.updateNoReceipt}</p>
+          </div>
+          <p class="emulator-update-note">{copy.updateReceipt}</p>
+          <p class="emulator-update-note">{copy.updateCancelNote}</p>
+          <details class="emulator-usb-advanced" data-usb-advanced>
+          <summary><span>{copy.advancedReports}</span><span class="disclosure-mark" aria-hidden="true"></span></summary>
+          <p>{copy.usbNote}</p>
+          <form data-usb-form>
+            <label>{copy.outputReport}<textarea data-usb-report rows="3" spellcheck="false" autocapitalize="off" autocomplete="off" disabled placeholder="00 00 00 00 …"></textarea></label>
+            <div class="emulator-usb-actions"><button type="submit" disabled>{copy.exchangeReport}</button><button type="button" data-action="usb-status" disabled>{copy.readUsbStatus}</button></div>
+          </form>
+          <div class="emulator-usb-response"><span>{copy.inputReport}</span><pre data-usb-result aria-live="polite">{copy.noReport}</pre></div>
+          </details>
+        </details>
+      </section>
+    </div>
+    <p class="emulator-session-limit" data-session-limit role="status"></p>
+  </main>
+  <SiteFooter page={copy.footer}/>
+</Base>
+<script>import '../scripts/emulator';</script>

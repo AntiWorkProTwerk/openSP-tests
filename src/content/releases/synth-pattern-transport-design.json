@@ -1,0 +1,22 @@
+{
+  "schema": "opensp-synth-pattern-transport-ui",
+  "version": 1,
+  "product": "openSynth",
+  "status": "Proposed additive interface; original design, not a device capture or hardware-qualified transport.",
+  "logicalSize": [128, 64],
+  "geometry": {
+    "header": [0, 0, 128, 10],
+    "footer": [0, 55, 128, 9],
+    "grid": {"origin": [3, 13], "columns": 4, "rows": 4, "cell": [28, 8], "pitch": [30, 10]},
+    "transport": [3, 13, 122, 8]
+  },
+  "states": [
+    {"id": "chooser", "main": "openSynth pattern chooser", "header": "PATTERN A", "footer": "PAD:SELECT EXIT:BACK", "note": "Show configured patterns in the actual current bank. A01 is illustrative. Unavailable or unknown slots carry X and refuse selection. Selecting a pattern consumes both pad-down and release; it does not produce a synth note."}
+  ],
+  "ownership": {
+    "toggle": "PATTERN SELECT toggles the chooser; closing it restores synth pad notes. Exact start/stop controls and bank navigation remain owned by the native transport source worker.",
+    "priority": "The direct recording destination chooser owns pads while active. A pattern chooser cannot steal those events. Preserve the frozen direct recording lifecycle and 120-second limit.",
+    "status": "Render only source-backed current bank, pattern availability and native transport state. Do not imply a click getter or invent timing.",
+    "click": "Use the existing native configured click. No new click control or status is introduced by this design."
+  }
+}

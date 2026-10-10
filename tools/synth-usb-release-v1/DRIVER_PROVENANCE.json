@@ -1,0 +1,14 @@
+{
+  "schema": "opensp-synth-b2-driver-port-v1",
+  "sourceSha256": "9283155fbb074f8c6650fbed308f674dde8f2f144276f7ffc2901ad1ec65e5ef",
+  "physicalTrialStorageSha256": "090872342cc913029ca9f5ba5005ee2606dc4399df99710a9029b2557f4e97ac",
+  "transportSectionSha256": "3dbb9ea4b9b4d6df6b01f3e6f9d96ea2758876ed16f3d7f6eed1383d91ace65f",
+  "transportSectionBytes": 24655,
+  "transportSectionUnchanged": true,
+  "changes": [
+    "Admission and private byte ownership moved to the restoration-only release module.",
+    "Shared types, constants and bounded binary/JSON helpers extracted."
+  ],
+  "deviceOperations": false,
+  "firmwareRebuilt": false
+}

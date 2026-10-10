@@ -1,0 +1,514 @@
+{
+  "schema": "opensp-r13-machine-integration-v1",
+  "timestampUtc": "2026-10-03T01:56:27.931Z",
+  "passed": false,
+  "scope": "Exact original R13 executes in ARM WASM through startup, OLED GPIO, USB EP0/HID, RAM CRC, FlexSPI erase/program/IP readback and a model power cycle; two actual Node worker threads execute separate firmware sessions.",
+  "modeledClock": {
+    "gptHz": 24000000,
+    "counterReadIncrement": 24000,
+    "cpuCyclesMeasured": false
+  },
+  "physicalDeviceAccess": false,
+  "firmwareBytesPublished": false,
+  "limitations": [
+    "APP1 begins at the captured resident handoff, not a cold ROM or resident-loader execution.",
+    "This is a same-image R13 update; a changed firmware identity and broader firmware families are separate evidence.",
+    "FCB geometry, busy completion, ADC conversion and bounded companion replies include explicit model fixtures.",
+    "NOR policy bounds are enforced by the executed R13 writer; the hardware model permits whole-chip mutations.",
+    "No physical USB, PHY, cache coherence, electrical timing, flash endurance or interrupted-update recovery is established.",
+    "Stock sampler, SD/filesystem, SAI/DMA audio, complete BMC and all peripheral behavior remain unverified.",
+    "Instruction counts and accelerated GPT reads do not establish device deadlines."
+  ],
+  "sourceSha256": {
+    "src/lib/emulator/image.ts": "8ce61e1c0490c7588906a7d32c7e395db4eab5df40b5b0872908e38eca33e019",
+    "src/lib/emulator/cpu.ts": "7f34df0a334ed71e48a08969370a2f71ea99d743d911d707b9a86e9da1b1b939",
+    "src/lib/emulator/board.ts": "1ea01983c204d9dcbcf4121997a3734b6ff7eba7193c4e87bc7a709098b4376f",
+    "src/lib/emulator/usb.ts": "68e5fa1b6b9c1d7de2da9a66ace01fb147077eb849ca9c6ef3c943e143ad85b2",
+    "src/lib/emulator/flash.ts": "2a887edf140feae0ed6ae450650ee2feb0c4bb8119c4a8d94d373a3c6d15d5bc",
+    "src/lib/emulator/exceptions.ts": "9c0e526a640e837ab0bb1e91af200424eae23784a5c02a6fab4220cc64c3237d",
+    "src/lib/emulator/session.ts": "b98d2389943ddd7467a19cb89b41a43e3152c29fa9affeb4fbb5942a9c3f0cac",
+    "tools/test-emulator-firmware.mjs": "9ec8bb0a0d63356745bc3324f42e173d7c9c0150b51ef7ca06671c5e23c2f1fa",
+    "tools/emulator-test-worker.mjs": "ed716f621fbd645913ca05adba277afc5eaeaeb6f1c5e7165e69b003977013e0"
+  },
+  "runtime": {
+    "wrapperCommit": "1220477c7fb0f8fe4b500f4bd211de52f6dfe638",
+    "coreCommit": "8028ec436f2d9376525352dd38ed9ed6b9f6be10",
+    "jsSha256": "d8bc37b898ccbc5b429f17112add6ad33a8a9b35df4146034ba141b992dae007",
+    "wasmSha256": "f9520f9aa55299b84d005390844082a1468f26137e239eb1167dde8473aecc6c"
+  },
+  "firmware": {
+    "name": "ORIGINAL R13",
+    "bytes": 15396,
+    "sha256": "4891fd9451cd107f6f50f4fb85d75f538cf5b2eb3c7fb2680f36719b32f67e8a",
+    "marker": "0x523d0001",
+    "buildManifestSha256": "540b094a2588532d629376426870321ddc86c4f4ad75beb2bf4172ec5b488dbd",
+    "sourceSha256": {
+      "startup.S": "77a0da0310fd45e3e98951b0b4159f2ded3d4950ec710403031cffdd6120b0db",
+      "monitor.c": "11e7fa32e75c6492aad14667bb9873871478351343a22eeecc8b2153d96bf2bd",
+      "app1.ld": "cb050a7432145d737a86f8b1fb3afacc74745e4c4a409fcb37ecac37dc91fb94",
+      "board.c": "65481a65ddd24c9a7aa63ec75dfb4d8a0897f04587682ff107ec04292f0a1928",
+      "board.h": "1dc05396ad753251d792be4eb0059321c39a2e7dc43a8fac5946a2cf1e0d5bdb",
+      "screen.c": "7b193deaadcd30d62519a93c58c3aa5d5c02e99e1a979efc07e2f75f0afa7049",
+      "local_input.c": "c3eb4efa75b6adb6feff62c187a641ef11e78ffec17b736b36226039a0f34139",
+      "local_input.h": "837b0c884e9f5b0a99754ee631ec0cc98b6fd409ea25c299d9012bb201fcc2a8",
+      "usb_device.c": "4e856c4c6cc76f2064206112879e6b08f7a7e2e96a62bf668a15b6e3cd798bcd",
+      "usb_upload.c": "7e01690b8c3be5811ab056c164f96e9ea41a6254df115003b8d786cdb1790ff8",
+      "usb_upload.h": "c7ca78d4a3f5d70188a3fcc1066a3ac685423b540cff365e3053b743f8dd5035",
+      "build.py": "deddd6bcbfad2ba5cdc93e561432223fabccb280e314f480f032d8816a05c1cc",
+      "flash.c": "b58fd29e230c2447400315b9f76d42806018e9da7908c7cb26e0b39a3e50667a",
+      "flash.h": "bdb16538f71f22b1d6fa795e4fae0cca71691e09fa87c5c9d631345e419c8cf7",
+      "control_capture.c": "02f31a9f3522bb8b2cf8e8b10964334ff0b420fabf4e36c6fcfd3183f455c555",
+      "control_capture.h": "9b9da35671ec042f6452022c7036bb98b7b86398c7142eaab2d48e247de9ece2",
+      "controls.c": "e5bf77180e1ae56a66aaa56637d28483555c3eed1326ed69c111977217808e58",
+      "controls.h": "688918694507b9e8be7c8fdb85d3cb6896241ce2ca1677674b8dbffcb26f37c1",
+      "control_map.c": "18aececb50e73863b835bf41a7333bc3fbe607914329c1f12b38b23812750d39",
+      "named_input.c": "aca5df688eebee10745b0f488b3cd26a837e9fb9c8c80f9ef84cb0bc6a908479",
+      "named_input.h": "a628178fd98f752af1f8aecbbab6ac82be1ef6d2f243a20071d11f572414db74",
+      "generate_map.py": "98a76902c0b8c65d084a1c126a237a5577abedf5ec796b8a36b99a7adea936d2",
+      "control_profile.json": "42193d24ae9ddb94bea08f915533fa74cc9099db3e3f440091cb098eac329b4a"
+    }
+  },
+  "references": [
+    "sdk/examples/original_r13/{USB.md,FLASH.md,monitor.c,screen.c,usb_upload.c,flash.c}",
+    "sdk/examples/original_r11/{USB.md,FLASH.md}",
+    "tools/{usb_upload.py,usb_flash_r13.py}",
+    "analysis/hardware/usb_r11_20260922T190757Z/preflight.json"
+  ],
+  "phase": "APP1 flash/readback",
+  "boot": {
+    "checkpoint": "resident-app1-handoff",
+    "incoming": {
+      "r0": "0x60080001",
+      "msp": "0x202435b0",
+      "lr": 4,
+      "control": 0
+    },
+    "cpuModel": 10,
+    "cpuid": "0x411fc271",
+    "vtor": "0x80000000",
+    "marker": "0x523d0001",
+    "firmwareState": 2,
+    "heartbeat": 5,
+    "exceptions": {
+      "activeException": 0,
+      "activeExceptions": [],
+      "pendingExceptions": [],
+      "vectorTable": 2147483648,
+      "priorityGrouping": 0,
+      "delivered": 1,
+      "returned": 1,
+      "tailChains": 0,
+      "systick": {
+        "control": 0,
+        "reload": 0,
+        "current": 0,
+        "countFlag": false,
+        "sourceTicks": 0,
+        "timing": "modeled source ticks; no physical cycle calibration"
+      },
+      "unsupported": [
+        "FPU/lazy frames",
+        "late arrival",
+        "fault escalation",
+        "non-base Thread return",
+        "sleep",
+        "exclusive monitors"
+      ]
+    },
+    "frames": [
+      {
+        "number": 1,
+        "bytes": 1024,
+        "sha256": "5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
+      },
+      {
+        "number": 2,
+        "bytes": 1024,
+        "sha256": "50083cabbaf22d8c50cacaa9155443850d3ec287459ff630a2791046ed416199"
+      },
+      {
+        "number": 3,
+        "bytes": 1024,
+        "sha256": "0c55f041ef4fcac2ef4009e404dd89eaab5b671d70c7d3b4a6a1d72b3a4123f2"
+      },
+      {
+        "number": 4,
+        "bytes": 1024,
+        "sha256": "41e0f21fcbc0a2dce1e525eb03097a6181df9148070f8037aa02fc8f6883aa41"
+      },
+      {
+        "number": 5,
+        "bytes": 1024,
+        "sha256": "fcdb19253e1d53a82baed2c9d2e406f95d697a2706f28076f53e3079359e0635"
+      }
+    ],
+    "instructions": 5800000
+  },
+  "usb": {
+    "enumeration": {
+      "device": [
+        18,
+        1,
+        0,
+        2,
+        0,
+        0,
+        0,
+        64,
+        254,
+        202,
+        77,
+        64,
+        19,
+        0,
+        1,
+        2,
+        0,
+        1
+      ],
+      "configuration": [
+        9,
+        2,
+        34,
+        0,
+        1,
+        1,
+        0,
+        128,
+        50,
+        9,
+        4,
+        0,
+        0,
+        1,
+        3,
+        0,
+        0,
+        0,
+        9,
+        33,
+        17,
+        1,
+        0,
+        1,
+        34,
+        21,
+        0,
+        7,
+        5,
+        129,
+        3,
+        64,
+        0,
+        10
+      ]
+    },
+    "hidDescriptorSha256": "a4208cb24eb64535458df6794fbcc4a6e435521cddc1c83437d2dee8da46f931",
+    "initialStatus": {
+      "version": 2,
+      "state": 0,
+      "error": 0,
+      "length": 0,
+      "received": 0,
+      "crc32": 0,
+      "maximum": 65536,
+      "capabilities": 1,
+      "jedec": 0,
+      "flash_status": 0,
+      "flash_error": 0,
+      "programmed": 0,
+      "flash_ready": 0,
+      "flash_crc32": 0,
+      "build_marker": 1379729409
+    }
+  },
+  "preflight": {
+    "status": {
+      "version": 2,
+      "state": 0,
+      "error": 0,
+      "length": 0,
+      "received": 0,
+      "crc32": 0,
+      "maximum": 65536,
+      "capabilities": 1,
+      "jedec": 12722198,
+      "flash_status": 64,
+      "flash_error": 0,
+      "programmed": 0,
+      "flash_ready": 1,
+      "flash_crc32": 0,
+      "build_marker": 1379729409
+    },
+    "diagnostic": {
+      "phase": 5,
+      "bfpt_dwords": 9,
+      "bfpt_pointer": 48,
+      "legacy_profile": 1,
+      "jedec": 12722198,
+      "flash_status": 64,
+      "flash_error": 0,
+      "flash_ready": 1,
+      "reserved": 0,
+      "sha256": "ac8639b2d4f622535133c16a83d0a12e704cfcf78bc97b401d9c7c12fec42154",
+      "measuredProfileMatches": true
+    },
+    "commandCount": 6,
+    "norUnchanged": true,
+    "fcbSource": "geometry fixture",
+    "sfdpSource": "R11 measured bytes with FF fixture padding"
+  },
+  "upload": {
+    "status": {
+      "version": 2,
+      "state": 2,
+      "error": 0,
+      "length": 15396,
+      "received": 15396,
+      "crc32": 3688201814,
+      "maximum": 65536,
+      "capabilities": 1,
+      "jedec": 12722198,
+      "flash_status": 64,
+      "flash_error": 0,
+      "programmed": 0,
+      "flash_ready": 1,
+      "flash_crc32": 0,
+      "build_marker": 1379729409
+    },
+    "packets": 275,
+    "actualStagingSha256": "4891fd9451cd107f6f50f4fb85d75f538cf5b2eb3c7fb2680f36719b32f67e8a",
+    "instructions": 56150000,
+    "norUnchanged": true
+  },
+  "failureSnapshot": {
+    "state": "fault",
+    "pc": 2147492144,
+    "instructions": 68910368,
+    "firmwareHash": "4891fd9451cd107f6f50f4fb85d75f538cf5b2eb3c7fb2680f36719b32f67e8a",
+    "format": "app1",
+    "checkpoint": "resident-app1-handoff",
+    "marker": 1379729409,
+    "heartbeat": 52,
+    "firmwareState": 2,
+    "frames": 53,
+    "displayOn": true,
+    "powered": true,
+    "unknownMmio": [],
+    "pendingInterrupts": [],
+    "fault": "RuntimeError: memory access out of bounds",
+    "exceptions": {
+      "activeException": 0,
+      "activeExceptions": [],
+      "pendingExceptions": [],
+      "vectorTable": 2147483648,
+      "priorityGrouping": 0,
+      "delivered": 1,
+      "returned": 1,
+      "tailChains": 0,
+      "systick": {
+        "control": 0,
+        "reload": 0,
+        "current": 0,
+        "countFlag": false,
+        "sourceTicks": 0,
+        "timing": "modeled source ticks; no physical cycle calibration"
+      },
+      "unsupported": [
+        "FPU/lazy frames",
+        "late arrival",
+        "fault escalation",
+        "non-base Thread return",
+        "sleep",
+        "exclusive monitors"
+      ]
+    },
+    "flash": {
+      "commandCount": 23,
+      "fcbSource": "geometry fixture",
+      "sfdpSource": "R11 measured bytes with FF fixture padding"
+    },
+    "limitations": [
+      "Structural admission does not prove firmware bootability or physical device behavior.",
+      "The emulator executes the uploaded startup bytes; it does not substitute reconstructed scatter regions.",
+      "APP1 starts at the captured resident handoff, MSP 0x202435B0 and BASEPRI 16. No reset-vector lookup or cold ROM boot occurs.",
+      "GPT uses nominal 24 MHz; instruction ticks do not establish Cortex-M7 cycle timing.",
+      "GPIO/ADC inputs are injected values; electrical settling, pressure and mechanical calibration are unmodeled.",
+      "ADC calibration and conversion complete immediately; failure injection tests bounded firmware paths.",
+      "Clock, mux, watchdog and cache registers retain configuration without electrical, expiry or cache-coherency simulation.",
+      "UART startup/status/shutdown replies are a bounded companion fixture; complete BMC behavior remains unknown.",
+      "SAI models injected FIFO words only; external clocks, audio DMA and physical route identity are unimplemented.",
+      "OLED RAM/window/on-off and GPIO SPI are modeled; contrast, scrolling and analog display behavior are unimplemented.",
+      "USB device DMA/control tokens are modeled; PHY, cache timing, host mode and isochronous scheduling are unimplemented.",
+      "NOR preflight/IP reads/erase/program are modeled; default FCB fields and unread SFDP bytes are fixtures, and unsupported commands report a model error.",
+      "ADC_ETC, USDHC/storage, eDMA and other stock peripherals are unimplemented and appear in unknown MMIO.",
+      "The default regression clock advances GPT by 24,000 ticks per counter read; this is a fast fixture, not hardware timing.",
+      "Integer exceptions are modeled; FPU/lazy frames, fault escalation and complete interrupt timing remain unsupported.",
+      "External IRQ count 160 and priority bits 4 are model profile choices; they do not establish the physical configuration.",
+      "Instruction counts are emulator work, not measured Cortex-M7 cycles."
+    ]
+  },
+  "failureFlash": {
+    "commands": [
+      {
+        "opcode": 159,
+        "address": 0,
+        "length": 3,
+        "sequence": 15
+      },
+      {
+        "opcode": 5,
+        "address": 0,
+        "length": 1,
+        "sequence": 15
+      },
+      {
+        "opcode": 3,
+        "address": 0,
+        "length": 256,
+        "sequence": 15
+      },
+      {
+        "opcode": 3,
+        "address": 256,
+        "length": 256,
+        "sequence": 15
+      },
+      {
+        "opcode": 90,
+        "address": 0,
+        "length": 32,
+        "sequence": 15
+      },
+      {
+        "opcode": 90,
+        "address": 48,
+        "length": 36,
+        "sequence": 15
+      },
+      {
+        "opcode": 159,
+        "address": 0,
+        "length": 3,
+        "sequence": 15
+      },
+      {
+        "opcode": 5,
+        "address": 0,
+        "length": 1,
+        "sequence": 15
+      },
+      {
+        "opcode": 3,
+        "address": 0,
+        "length": 256,
+        "sequence": 15
+      },
+      {
+        "opcode": 3,
+        "address": 256,
+        "length": 256,
+        "sequence": 15
+      },
+      {
+        "opcode": 90,
+        "address": 0,
+        "length": 32,
+        "sequence": 15
+      },
+      {
+        "opcode": 90,
+        "address": 48,
+        "length": 36,
+        "sequence": 15
+      },
+      {
+        "opcode": 5,
+        "address": 0,
+        "length": 1,
+        "sequence": 15
+      },
+      {
+        "opcode": 6,
+        "address": 0,
+        "length": 0,
+        "sequence": 15
+      },
+      {
+        "opcode": 5,
+        "address": 0,
+        "length": 1,
+        "sequence": 15
+      },
+      {
+        "opcode": 32,
+        "address": 528384,
+        "length": 0,
+        "sequence": 15
+      },
+      {
+        "opcode": 5,
+        "address": 0,
+        "length": 1,
+        "sequence": 15
+      },
+      {
+        "opcode": 5,
+        "address": 0,
+        "length": 1,
+        "sequence": 15
+      },
+      {
+        "opcode": 5,
+        "address": 0,
+        "length": 1,
+        "sequence": 15
+      },
+      {
+        "opcode": 5,
+        "address": 0,
+        "length": 1,
+        "sequence": 15
+      },
+      {
+        "opcode": 6,
+        "address": 0,
+        "length": 0,
+        "sequence": 15
+      },
+      {
+        "opcode": 5,
+        "address": 0,
+        "length": 1,
+        "sequence": 15
+      },
+      {
+        "opcode": 2,
+        "address": 528384,
+        "length": 256,
+        "sequence": 15
+      }
+    ],
+    "erases": [
+      528384
+    ],
+    "pages": [
+      528384
+    ]
+  },
+  "error": {
+    "name": "Error",
+    "message": "USB IN data stopped: RuntimeError: memory access out of bounds"
+  },
+  "finalSourceSha256": {
+    "src/lib/emulator/image.ts": "8ce61e1c0490c7588906a7d32c7e395db4eab5df40b5b0872908e38eca33e019",
+    "src/lib/emulator/cpu.ts": "7f34df0a334ed71e48a08969370a2f71ea99d743d911d707b9a86e9da1b1b939",
+    "src/lib/emulator/board.ts": "1ea01983c204d9dcbcf4121997a3734b6ff7eba7193c4e87bc7a709098b4376f",
+    "src/lib/emulator/usb.ts": "68e5fa1b6b9c1d7de2da9a66ace01fb147077eb849ca9c6ef3c943e143ad85b2",
+    "src/lib/emulator/flash.ts": "2a887edf140feae0ed6ae450650ee2feb0c4bb8119c4a8d94d373a3c6d15d5bc",
+    "src/lib/emulator/exceptions.ts": "9c0e526a640e837ab0bb1e91af200424eae23784a5c02a6fab4220cc64c3237d",
+    "src/lib/emulator/session.ts": "b98d2389943ddd7467a19cb89b41a43e3152c29fa9affeb4fbb5942a9c3f0cac",
+    "tools/test-emulator-firmware.mjs": "9ec8bb0a0d63356745bc3324f42e173d7c9c0150b51ef7ca06671c5e23c2f1fa",
+    "tools/emulator-test-worker.mjs": "ed716f621fbd645913ca05adba277afc5eaeaeb6f1c5e7165e69b003977013e0"
+  }
+}

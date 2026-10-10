@@ -1,0 +1,71 @@
+{
+  "schema": "opensp-sd-worker-browser-fixture-preparation-v1",
+  "createdUtc": "2026-10-03T07:37:55.615795+00:00",
+  "status": "Prepared; revised browser acceptance is pending.",
+  "scope": {
+    "testSourceOnly": true,
+    "browserExecuted": false,
+    "guestFirmwareExecuted": false,
+    "cpuEngineExecuted": false,
+    "physicalTransportOpened": false,
+    "sdBytesRetained": false,
+    "firmwareBytesRetained": false
+  },
+  "fixture": {
+    "path": "tests/emulator-worker-roundtrip.spec.ts",
+    "sha256": "937ca5aec803bc111bc7b02e1378f2817430c23a79cbc229e9ca4496d4d9b53d",
+    "bytes": 27862
+  },
+  "preservation": {
+    "path": "tools/emulator-evidence/sd-worker-browser-fixture-pre-20261003/emulator-worker-roundtrip.spec.ts",
+    "sha256": "f9e93aac9e4260ba276b30c7a386226101e24e6c32b79c54e72c1a418b8b9005",
+    "bytes": 20496,
+    "method": "Exact byte copy made before edits.",
+    "manifest": {
+      "path": "tools/emulator-evidence/sd-worker-browser-fixture-pre-20261003/manifest.json",
+      "sha256": "3eca988cea22f83bd592450980204ec227a31cd32492cdd744a3698009d12586"
+    }
+  },
+  "productionSourcesUnchanged": {
+    "src/lib/emulator/session.ts": "c0e47e2bf2899b3497e2b58b0ab5e8d50ae0760be27f26ac154bd33970080aaf",
+    "src/scripts/emulator-worker.ts": "05c373e971048d2ebe4844d4e05920b4a678e20acf61ca1b72c3baa098cadd43",
+    "src/lib/emulator/worker-rpc.ts": "bd07bdfcabbe52968d142c0f19278df14a96cac027531db581c83d537585e5bf",
+    "src/lib/emulator/sd-fixtures.ts": "7ca00c9ec9b39ad8ed7d1b7913b38aef9ec4102de7ed848658888813566da993"
+  },
+  "sourcePinListUnchanged": true,
+  "testModuleRoutesUnchanged": true,
+  "syntheticCards": {
+    "slots": [
+      "sd1",
+      "sd2"
+    ],
+    "imageBytesEach": 262144,
+    "readOnly": true,
+    "source": "Constructed in the isolated test page; no card file is read or retained."
+  },
+  "preparedAssertions": [
+    "One initial load transfers distinct owned firmware and two SD buffers exactly once, while caller buffers stay attached.",
+    "Raw Worker loaded/status/trace replies contain both admitted SD profiles, capacity, read-only flag, presence and board-owned routes.",
+    "Request observers omit firmware bytes and expose only SD profile/capacity/read-only metadata; snapshot observers contain safe scalar SD diagnostics.",
+    "Fresh initial/reset/update snapshots, updater receipt snapshots and before/after traces retain both card metadata entries.",
+    "Undocumented SD fields, binary buffers/views and non-scalar SD diagnostics fail before raw card content can enter retained evidence.",
+    "Observer and incoming-reply counts must be nonzero; observer failures are collected because subscribers cannot throw into RPC."
+  ],
+  "reviewCorrection": "The binary privacy scan guards SharedArrayBuffer availability for pages without cross-origin isolation.",
+  "checks": {
+    "targetedStrictTyping": {
+      "passed": true,
+      "command": "node node_modules/typescript/bin/tsc --ignoreConfig --noEmit --strict --target ES2022 --module ESNext --moduleResolution bundler --allowImportingTsExtensions --skipLibCheck --lib ES2022,DOM --types node tests/emulator-worker-roundtrip.spec.ts",
+      "exitCode": 0
+    },
+    "independentTestSourceReview": {
+      "passed": true,
+      "browserGlobalGuardCorrectionApplied": true
+    }
+  },
+  "limits": [
+    "This receipt prepares assertions and records source preservation; it does not report a revised browser result.",
+    "No guest SD command, content read, filesystem compatibility, physical card or SD power-cycle result is qualified.",
+    "Root owns the isolated production Worker browser execution and its separate acceptance receipt."
+  ]
+}

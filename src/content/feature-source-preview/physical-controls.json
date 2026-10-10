@@ -1,0 +1,342 @@
+{
+  "schema": "opensp-physical-controls",
+  "version": 1,
+  "board": "sp-404mkii",
+  "source": {
+    "repository": "sp404mk2-synth",
+    "path": "diagnostics/global_usb_stream_v552/PROFILE_V552.json",
+    "sha256": "d5a35286e0817f43bac1c193df0d078bb7e7e08d7bb7e0359db82be1a3eb1aac"
+  },
+  "controls": [
+    {
+      "id": "PAD_1",
+      "label": "PAD 1",
+      "kind": "pad",
+      "shortcut": true
+    },
+    {
+      "id": "PAD_2",
+      "label": "PAD 2",
+      "kind": "pad",
+      "shortcut": true
+    },
+    {
+      "id": "PAD_3",
+      "label": "PAD 3",
+      "kind": "pad",
+      "shortcut": true
+    },
+    {
+      "id": "PAD_4",
+      "label": "PAD 4",
+      "kind": "pad",
+      "shortcut": true
+    },
+    {
+      "id": "PAD_5",
+      "label": "PAD 5",
+      "kind": "pad",
+      "shortcut": true
+    },
+    {
+      "id": "PAD_6",
+      "label": "PAD 6",
+      "kind": "pad",
+      "shortcut": true
+    },
+    {
+      "id": "PAD_7",
+      "label": "PAD 7",
+      "kind": "pad",
+      "shortcut": true
+    },
+    {
+      "id": "PAD_8",
+      "label": "PAD 8",
+      "kind": "pad",
+      "shortcut": true
+    },
+    {
+      "id": "PAD_9",
+      "label": "PAD 9",
+      "kind": "pad",
+      "shortcut": true
+    },
+    {
+      "id": "PAD_10",
+      "label": "PAD 10",
+      "kind": "pad",
+      "shortcut": true
+    },
+    {
+      "id": "PAD_11",
+      "label": "PAD 11",
+      "kind": "pad",
+      "shortcut": true
+    },
+    {
+      "id": "PAD_12",
+      "label": "PAD 12",
+      "kind": "pad",
+      "shortcut": true
+    },
+    {
+      "id": "PAD_13",
+      "label": "PAD 13",
+      "kind": "pad",
+      "shortcut": true
+    },
+    {
+      "id": "PAD_14",
+      "label": "PAD 14",
+      "kind": "pad",
+      "shortcut": true
+    },
+    {
+      "id": "PAD_15",
+      "label": "PAD 15",
+      "kind": "pad",
+      "shortcut": true
+    },
+    {
+      "id": "PAD_16",
+      "label": "PAD 16",
+      "kind": "pad",
+      "shortcut": true
+    },
+    {
+      "id": "BUS_FX",
+      "label": "BUS FX",
+      "kind": "button",
+      "shortcut": true
+    },
+    {
+      "id": "HOLD",
+      "label": "HOLD",
+      "kind": "button",
+      "shortcut": true
+    },
+    {
+      "id": "EXT_SOURCE",
+      "label": "EXT SOURCE",
+      "kind": "button",
+      "shortcut": true
+    },
+    {
+      "id": "SUB_PAD",
+      "label": "SUB PAD",
+      "kind": "pad",
+      "shortcut": true
+    },
+    {
+      "id": "PATTERN_SELECT",
+      "label": "PATTERN SELECT",
+      "kind": "button",
+      "shortcut": true
+    },
+    {
+      "id": "PATTERN_EDIT",
+      "label": "PATTERN EDIT",
+      "kind": "button",
+      "shortcut": true
+    },
+    {
+      "id": "RECORD_SETTING",
+      "label": "RECORD SETTING",
+      "kind": "button",
+      "shortcut": true
+    },
+    {
+      "id": "START_END",
+      "label": "START/END",
+      "kind": "button",
+      "shortcut": true
+    },
+    {
+      "id": "PITCH_SPEED",
+      "label": "PITCH/SPEED",
+      "kind": "button",
+      "shortcut": true
+    },
+    {
+      "id": "MARK",
+      "label": "MARK",
+      "kind": "button",
+      "shortcut": true
+    },
+    {
+      "id": "DEL",
+      "label": "DEL",
+      "kind": "button",
+      "shortcut": true
+    },
+    {
+      "id": "REC",
+      "label": "REC",
+      "kind": "button",
+      "shortcut": true
+    },
+    {
+      "id": "RESAMPLE",
+      "label": "RESAMPLE",
+      "kind": "button",
+      "shortcut": true
+    },
+    {
+      "id": "BPM_SYNC",
+      "label": "BPM SYNC",
+      "kind": "button",
+      "shortcut": true
+    },
+    {
+      "id": "GATE",
+      "label": "GATE",
+      "kind": "button",
+      "shortcut": true
+    },
+    {
+      "id": "LOOP",
+      "label": "LOOP",
+      "kind": "button",
+      "shortcut": true
+    },
+    {
+      "id": "REVERSE",
+      "label": "REVERSE",
+      "kind": "button",
+      "shortcut": true
+    },
+    {
+      "id": "ROLL",
+      "label": "ROLL",
+      "kind": "button",
+      "shortcut": true
+    },
+    {
+      "id": "EXIT",
+      "label": "EXIT",
+      "kind": "button",
+      "shortcut": true
+    },
+    {
+      "id": "COPY",
+      "label": "COPY",
+      "kind": "button",
+      "shortcut": true
+    },
+    {
+      "id": "REMAIN",
+      "label": "REMAIN",
+      "kind": "button",
+      "shortcut": true
+    },
+    {
+      "id": "BANK_A_F",
+      "label": "BANK A/F",
+      "kind": "button",
+      "shortcut": true
+    },
+    {
+      "id": "BANK_B_G",
+      "label": "BANK B/G",
+      "kind": "button",
+      "shortcut": true
+    },
+    {
+      "id": "BANK_C_H",
+      "label": "BANK C/H",
+      "kind": "button",
+      "shortcut": true
+    },
+    {
+      "id": "BANK_D_I",
+      "label": "BANK D/I",
+      "kind": "button",
+      "shortcut": true
+    },
+    {
+      "id": "BANK_E_J",
+      "label": "BANK E/J",
+      "kind": "button",
+      "shortcut": true
+    },
+    {
+      "id": "SHIFT",
+      "label": "SHIFT",
+      "kind": "button",
+      "shortcut": true
+    },
+    {
+      "id": "FILTER_DRIVE",
+      "label": "FILTER+DRIVE",
+      "kind": "button",
+      "shortcut": true
+    },
+    {
+      "id": "RESONATOR",
+      "label": "RESONATOR",
+      "kind": "button",
+      "shortcut": true
+    },
+    {
+      "id": "DELAY",
+      "label": "DELAY",
+      "kind": "button",
+      "shortcut": true
+    },
+    {
+      "id": "ISOLATOR",
+      "label": "ISOLATOR",
+      "kind": "button",
+      "shortcut": true
+    },
+    {
+      "id": "DJFX_LOOPER",
+      "label": "DJFX LOOPER",
+      "kind": "button",
+      "shortcut": true
+    },
+    {
+      "id": "MFX",
+      "label": "MFX",
+      "kind": "button",
+      "shortcut": true
+    },
+    {
+      "id": "VALUE_PRESS",
+      "label": "VALUE PRESS",
+      "kind": "button",
+      "shortcut": true
+    },
+    {
+      "id": "VOLUME",
+      "label": "VOLUME",
+      "kind": "absolute",
+      "shortcut": false
+    },
+    {
+      "id": "CTRL1",
+      "label": "CTRL1",
+      "kind": "absolute",
+      "shortcut": false
+    },
+    {
+      "id": "CTRL2",
+      "label": "CTRL2",
+      "kind": "absolute",
+      "shortcut": false
+    },
+    {
+      "id": "CTRL3",
+      "label": "CTRL3",
+      "kind": "absolute",
+      "shortcut": false
+    },
+    {
+      "id": "VALUE_TURN",
+      "label": "VALUE TURN",
+      "kind": "relative",
+      "shortcut": false
+    }
+  ]
+}

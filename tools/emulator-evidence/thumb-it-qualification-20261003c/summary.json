@@ -1,0 +1,9 @@
+{
+  "cases": 47,
+  "architecturalChecksPassed": true,
+  "strictQualificationPassed": false,
+  "strictFailures": 17,
+  "stopBeforeFinalItTransferQualified": false,
+  "firmwareExecuted": false,
+  "cpuAndSessionModified": false
+}

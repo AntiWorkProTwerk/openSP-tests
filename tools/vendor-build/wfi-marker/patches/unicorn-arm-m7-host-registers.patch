@@ -1,0 +1,281 @@
+diff --git a/qemu/target/arm/unicorn_arm.c b/qemu/target/arm/unicorn_arm.c
+--- a/qemu/target/arm/unicorn_arm.c
++++ b/qemu/target/arm/unicorn_arm.c
+@@ -7,6 +7,7 @@
+ #include "sysemu/cpus.h"
+ #include "sysemu/tcg.h"
+ #include "cpu.h"
++#include "internals.h"
+ #include "uc_priv.h"
+ #include "unicorn_common.h"
+ #include "unicorn.h"
+@@ -109,6 +110,89 @@
+ uint32_t HELPER(v7m_mrs)(CPUARMState *env, uint32_t reg);
+ void HELPER(v7m_msr)(CPUARMState *env, uint32_t reg, uint32_t val);
+ 
++/* Called only by callbacks installed on a live engine, never by contexts. */
++static bool m7_live_register_access(CPUARMState *env)
++{
++    return env->uc->cpu_model == UC_CPU_ARM_CORTEX_M7 &&
++           arm_feature(env, ARM_FEATURE_M) &&
++           !arm_feature(env, ARM_FEATURE_M_SECURITY);
++}
++
++void arm_m7_host_write_control(CPUARMState *env, uint32_t val);
++
++static uint32_t v7m_host_reg_read(CPUARMState *env, uint32_t reg, bool raw_m7)
++{
++    if (!raw_m7) {
++        return helper_v7m_mrs(env, reg);
++    }
++    switch (reg) {
++    case 8: /* MSP */
++        return v7m_using_psp(env) ? env->v7m.other_sp : env->regs[13];
++    case 9: /* PSP */
++        return v7m_using_psp(env) ? env->regs[13] : env->v7m.other_sp;
++    case 16: /* PRIMASK */
++        return env->v7m.primask[env->v7m.secure];
++    case 17: /* BASEPRI */
++    case 18: /* BASEPRI_MAX read alias */
++        return env->v7m.basepri[env->v7m.secure];
++    case 19: /* FAULTMASK */
++        return env->v7m.faultmask[env->v7m.secure];
++    case 20: /* CONTROL; FPCA is stored in the S bank even on M7. */
++        return env->v7m.control[env->v7m.secure] |
++               (env->v7m.control[M_REG_S] & R_V7M_CONTROL_FPCA_MASK);
++    default:
++        return helper_v7m_mrs(env, reg);
++    }
++}
++
++static void v7m_host_reg_write(CPUARMState *env, uint32_t reg, uint32_t val,
++                               bool raw_m7)
++{
++    if (!raw_m7) {
++        helper_v7m_msr(env, reg, val);
++        return;
++    }
++    switch (reg) {
++    case 8: /* MSP */
++        if (v7m_using_psp(env)) {
++            env->v7m.other_sp = val;
++        } else {
++            env->regs[13] = val;
++        }
++        break;
++    case 9: /* PSP */
++        if (v7m_using_psp(env)) {
++            env->regs[13] = val;
++        } else {
++            env->v7m.other_sp = val;
++        }
++        break;
++    case 16: /* PRIMASK */
++        env->v7m.primask[env->v7m.secure] = val & 1;
++        break;
++    case 17: /* BASEPRI */
++        env->v7m.basepri[env->v7m.secure] = val & 0xff;
++        break;
++    case 18: /* Preserve BASEPRI_MAX's priority-raising semantics. */
++        val &= 0xff;
++        if (val && (!env->v7m.basepri[env->v7m.secure] ||
++                    val < env->v7m.basepri[env->v7m.secure])) {
++            env->v7m.basepri[env->v7m.secure] = val;
++        }
++        break;
++    case 19: /* FAULTMASK */
++        env->v7m.faultmask[env->v7m.secure] = val & 1;
++        break;
++    case 20: /* Host restoration bypasses guest CONTROL write restrictions. */
++        arm_m7_host_write_control(env, val);
++        return;
++    default:
++        helper_v7m_msr(env, reg, val);
++        return;
++    }
++    arm_rebuild_hflags(env);
++}
++
+ static uint32_t v7m_mrs_xpsr(CPUARMState *env, uint32_t reg)
+ {
+     uint32_t mask = 0;
+@@ -209,9 +293,8 @@
+     return UC_ERR_OK;
+ }
+ 
+-DEFAULT_VISIBILITY
+-uc_err reg_read(void *_env, int mode, unsigned int regid, void *value,
+-                size_t *size)
++static uc_err reg_read_internal(void *_env, int mode, unsigned int regid, void *value,
++                                size_t *size, bool raw_m7)
+ {
+     CPUARMState *env = _env;
+     uc_err ret = UC_ERR_ARG;
+@@ -303,11 +386,11 @@
+             break;
+         case UC_ARM_REG_MSP:
+             CHECK_REG_TYPE(uint32_t);
+-            *(uint32_t *)value = helper_v7m_mrs(env, 8);
++            *(uint32_t *)value = v7m_host_reg_read(env, 8, raw_m7);
+             break;
+         case UC_ARM_REG_PSP:
+             CHECK_REG_TYPE(uint32_t);
+-            *(uint32_t *)value = helper_v7m_mrs(env, 9);
++            *(uint32_t *)value = v7m_host_reg_read(env, 9, raw_m7);
+             break;
+         case UC_ARM_REG_IAPSR:
+             CHECK_REG_TYPE(int32_t);
+@@ -331,23 +414,23 @@
+             break;
+         case UC_ARM_REG_PRIMASK:
+             CHECK_REG_TYPE(uint32_t);
+-            *(uint32_t *)value = helper_v7m_mrs(env, 16);
++            *(uint32_t *)value = v7m_host_reg_read(env, 16, raw_m7);
+             break;
+         case UC_ARM_REG_BASEPRI:
+             CHECK_REG_TYPE(uint32_t);
+-            *(uint32_t *)value = helper_v7m_mrs(env, 17);
++            *(uint32_t *)value = v7m_host_reg_read(env, 17, raw_m7);
+             break;
+         case UC_ARM_REG_BASEPRI_MAX:
+             CHECK_REG_TYPE(uint32_t);
+-            *(uint32_t *)value = helper_v7m_mrs(env, 18);
++            *(uint32_t *)value = v7m_host_reg_read(env, 18, raw_m7);
+             break;
+         case UC_ARM_REG_FAULTMASK:
+             CHECK_REG_TYPE(uint32_t);
+-            *(uint32_t *)value = helper_v7m_mrs(env, 19);
++            *(uint32_t *)value = v7m_host_reg_read(env, 19, raw_m7);
+             break;
+         case UC_ARM_REG_CONTROL:
+             CHECK_REG_TYPE(uint32_t);
+-            *(uint32_t *)value = helper_v7m_mrs(env, 20);
++            *(uint32_t *)value = v7m_host_reg_read(env, 20, raw_m7);
+             break;
+         case UC_ARM_REG_CP_REG:
+             CHECK_REG_TYPE(uc_arm_cp_reg);
+@@ -364,9 +447,8 @@
+     return ret;
+ }
+ 
+-DEFAULT_VISIBILITY
+-uc_err reg_write(void *_env, int mode, unsigned int regid, const void *value,
+-                 size_t *size, int *setpc)
++static uc_err reg_write_internal(void *_env, int mode, unsigned int regid, const void *value,
++                                 size_t *size, int *setpc, bool raw_m7)
+ {
+     CPUARMState *env = _env;
+     uc_err ret = UC_ERR_ARG;
+@@ -471,15 +553,15 @@
+             break;
+         case UC_ARM_REG_MSP:
+             CHECK_REG_TYPE(uint32_t);
+-            helper_v7m_msr(env, 8, *(uint32_t *)value);
++            v7m_host_reg_write(env, 8, *(uint32_t *)value, raw_m7);
+             break;
+         case UC_ARM_REG_PSP:
+             CHECK_REG_TYPE(uint32_t);
+-            helper_v7m_msr(env, 9, *(uint32_t *)value);
++            v7m_host_reg_write(env, 9, *(uint32_t *)value, raw_m7);
+             break;
+         case UC_ARM_REG_CONTROL:
+             CHECK_REG_TYPE(uint32_t);
+-            helper_v7m_msr(env, 20, *(uint32_t *)value);
++            v7m_host_reg_write(env, 20, *(uint32_t *)value, raw_m7);
+             break;
+         case UC_ARM_REG_EPSR:
+             CHECK_REG_TYPE(uint32_t);
+@@ -491,19 +573,19 @@
+             break;
+         case UC_ARM_REG_PRIMASK:
+             CHECK_REG_TYPE(uint32_t);
+-            helper_v7m_msr(env, 16, *(uint32_t *)value);
++            v7m_host_reg_write(env, 16, *(uint32_t *)value, raw_m7);
+             break;
+         case UC_ARM_REG_BASEPRI:
+             CHECK_REG_TYPE(uint32_t);
+-            helper_v7m_msr(env, 17, *(uint32_t *)value);
++            v7m_host_reg_write(env, 17, *(uint32_t *)value, raw_m7);
+             break;
+         case UC_ARM_REG_BASEPRI_MAX:
+             CHECK_REG_TYPE(uint32_t);
+-            helper_v7m_msr(env, 18, *(uint32_t *)value);
++            v7m_host_reg_write(env, 18, *(uint32_t *)value, raw_m7);
+             break;
+         case UC_ARM_REG_FAULTMASK:
+             CHECK_REG_TYPE(uint32_t);
+-            helper_v7m_msr(env, 19, *(uint32_t *)value);
++            v7m_host_reg_write(env, 19, *(uint32_t *)value, raw_m7);
+             break;
+         case UC_ARM_REG_APSR_NZCVQ:
+             CHECK_REG_TYPE(uint32_t);
+@@ -570,6 +652,37 @@
+ 
+     CHECK_RET_DEPRECATE(ret, regid);
+     return ret;
++}
++
++
++/* Context dispatch uses these original exported entry points. */
++DEFAULT_VISIBILITY
++uc_err reg_read(void *env, int mode, unsigned int regid, void *value,
++                size_t *size)
++{
++    return reg_read_internal(env, mode, regid, value, size, false);
++}
++
++DEFAULT_VISIBILITY
++uc_err reg_write(void *env, int mode, unsigned int regid, const void *value,
++                 size_t *size, int *setpc)
++{
++    return reg_write_internal(env, mode, regid, value, size, setpc, false);
++}
++
++/* uc_reg_* supplies a full live CPUARMState through these callbacks. */
++static uc_err reg_read_live(void *env, int mode, unsigned int regid, void *value,
++                            size_t *size)
++{
++    return reg_read_internal(env, mode, regid, value, size,
++                             m7_live_register_access(env));
++}
++
++static uc_err reg_write_live(void *env, int mode, unsigned int regid,
++                             const void *value, size_t *size, int *setpc)
++{
++    return reg_write_internal(env, mode, regid, value, size, setpc,
++                              m7_live_register_access(env));
+ }
+ 
+ static bool arm_stop_interrupt(struct uc_struct *uc, int intno)
+@@ -774,8 +887,8 @@
+ DEFAULT_VISIBILITY
+ void uc_init(struct uc_struct *uc)
+ {
+-    uc->reg_read = reg_read;
+-    uc->reg_write = reg_write;
++    uc->reg_read = reg_read_live;
++    uc->reg_write = reg_write_live;
+     uc->reg_reset = reg_reset;
+     uc->set_pc = arm_set_pc;
+     uc->get_pc = arm_get_pc;
+diff --git a/qemu/target/arm/m_helper.c b/qemu/target/arm/m_helper.c
+--- a/qemu/target/arm/m_helper.c
++++ b/qemu/target/arm/m_helper.c
+@@ -367,6 +367,17 @@
+ static void write_v7m_control_spsel(CPUARMState *env, bool new_spsel)
+ {
+     write_v7m_control_spsel_for_secstate(env, new_spsel, env->v7m.secure);
++}
++
++/* Called only by the live M7 host register API, never by guest MSR. */
++void arm_m7_host_write_control(CPUARMState *env, uint32_t val)
++{
++    write_v7m_control_spsel(env, (val & R_V7M_CONTROL_SPSEL_MASK) != 0);
++    env->v7m.control[env->v7m.secure] &= ~R_V7M_CONTROL_NPRIV_MASK;
++    env->v7m.control[env->v7m.secure] |= val & R_V7M_CONTROL_NPRIV_MASK;
++    env->v7m.control[M_REG_S] &= ~R_V7M_CONTROL_FPCA_MASK;
++    env->v7m.control[M_REG_S] |= val & R_V7M_CONTROL_FPCA_MASK;
++    arm_rebuild_hflags(env);
+ }
+ 
+ void write_v7m_exception(CPUARMState *env, uint32_t new_exc)

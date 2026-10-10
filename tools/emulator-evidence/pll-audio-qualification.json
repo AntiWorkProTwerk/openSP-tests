@@ -1,0 +1,171 @@
+{
+  "schema": "opensp-audio-pll-model-qualification-v1",
+  "createdUtc": "2026-10-03T07:18:40.426Z",
+  "scope": {
+    "isolatedRegisterModel": true,
+    "guestFirmwareExecuted": false,
+    "cpuEngineExecuted": false,
+    "boardIntegrationExercised": false,
+    "browserOpened": false,
+    "physicalDeviceTransportOpened": false,
+    "physicalLockTimingVerified": false,
+    "clockOutputVerified": false,
+    "firmwareArtifactsCreated": false
+  },
+  "modelReferenceBase": "OpenSP repository",
+  "primaryReferenceBase": "sp404mk2 repository",
+  "sources": {
+    "src/lib/emulator/pll-audio.ts": {
+      "sha256": "ed60c0518ea61450e85ef1ac35a220a14a5f7a97e0179d683ad9897dd0cc578f",
+      "bytes": 10778
+    },
+    "tests/emulator-pll-audio.test.mjs": {
+      "sha256": "83c3587de46980b8e9721da69dc1b1d62f334dc3f19982abff1b020a757d529b",
+      "bytes": 26840
+    },
+    "docs/emulator-pll-audio.md": {
+      "sha256": "b238bcaa46b1ba4a9553ef8cbca69db448395768e46d40064545dafbb73e4806",
+      "bytes": 4678
+    }
+  },
+  "inputsStableDuringQualification": true,
+  "preservedVideoSources": {
+    "src/lib/emulator/pll-video.ts": "a685474127671538d65eb05e490265fcfe807df3516aec75ddd7bcb060c2bd08",
+    "tests/emulator-pll-video.test.mjs": "a2fa177b770ff0ca5602c4a99fedd504f66e0d5bc37fd820b05ebb567be1233c"
+  },
+  "primarySources": {
+    "manual": {
+      "path": "analysis/flash_research/IMXRT1060RM_rev3.pdf",
+      "sha256": "a2e342e492eded2a1d626cf955de953ca28d8db8675b10937a5176fd6f2c9200",
+      "bytes": 29973751
+    },
+    "header": {
+      "path": "references/MIMXRT1062.h",
+      "sha256": "1ee70ed9eb7f3a75ed89943dd799314e8330538f54c6990ea7d9cae96fd263aa",
+      "bytes": 2797765
+    },
+    "clockDriver": {
+      "path": "analysis/emulator/pll_static_20261003/fsl_clock.c",
+      "sha256": "669e2698ea0be01db0ac656f4ceef6106670d1f116b2da9f3b2ac961945a5eb3",
+      "bytes": 49394
+    }
+  },
+  "staticContract": {
+    "path": "analysis/emulator/pll_static_20261003/source-contract.json",
+    "sha256": "ae9e5f19da29303b79894e34c96ec2b9fde34cdd121f7b2bfe67aaf8fc552d9c",
+    "bytes": 19827
+  },
+  "guestPathSelection": {
+    "sourceCoverageOnly": true,
+    "selectingReport": null,
+    "qualifiedGuestAdvance": false
+  },
+  "upstream": {
+    "url": "https://raw.githubusercontent.com/nxp-mcuxpresso/legacy-mcux-sdk/6f3fd257cdcf978a4d26e7d6e9eed9240037422b/devices/MIMXRT1062/drivers/fsl_clock.c",
+    "commit": "6f3fd257cdcf978a4d26e7d6e9eed9240037422b",
+    "reviewedDriverLines": "722..800;1051..1065",
+    "license": "BSD-3-Clause"
+  },
+  "sourceReview": {
+    "ownedBytes": 24,
+    "controlBaseHex": "400D8070",
+    "numeratorAddressHex": "400D8080",
+    "denominatorAddressHex": "400D8090",
+    "resetHex": "00011006",
+    "numeratorResetHex": "05F5E100",
+    "denominatorResetHex": "2964619C",
+    "scopedControlMaskHex": "0019F07F",
+    "fractionalMaskHex": "3FFFFFFF",
+    "protectedStatusMaskHex": "80000000",
+    "manualSections": "1.5.2;14.6.1.5.3;14.6.1.6;14.8.8..14.8.10;14.8.19",
+    "manualPrintedPages": "25;1031..1033;1091;1104..1107;1126..1129",
+    "headerLines": "8531..8538;9211..9252;9387..9400;10944..10978",
+    "aliases": {
+      "SET": {
+        "offset": 4,
+        "read": 0
+      },
+      "CLR": {
+        "offset": 8,
+        "read": 0
+      },
+      "TOG": {
+        "offset": 12,
+        "read": 0
+      }
+    },
+    "accessWidths": [
+      1,
+      2,
+      4
+    ],
+    "unhandledReservedRangesHex": [
+      "400D8084..400D808F",
+      "400D8094..400D809F"
+    ],
+    "loopDivider": "Documented27..54; literal powered-down reset retains6",
+    "fractionalParameters": "Signed30-bit numerator, unsigned30-bit denominator; abs(numerator)<denominator",
+    "analogPower": "POWERDOWN bit12=1 prevents synthetic analog lock",
+    "outputs": "ENABLE/BYPASS/POST_DIV_SELECT are output configuration, not analog-lock prerequisites",
+    "postDivider": "Codes0/1/2 divide4/2/1; reserved3 retains bits and reports unsupported output behavior without blocking analog lock",
+    "sdkRmw": "Line752 clears DIV_SELECT/POWERDOWN only before inherited POST_DIV_SELECT bits are ORed; tests preserve this behavior",
+    "sdkDeinit": "Line799 writes control1000 only; fractional words and accumulated abstract ticks remain intact",
+    "externalMisc2": {
+      "addressHex": "400D8170",
+      "audioLsbMaskHex": "00008000",
+      "audioMsbMaskHex": "00800000",
+      "combinedAudioMaskHex": "00808000",
+      "audioPairEncodings": {
+        "10": 1,
+        "11": 4,
+        "00": 1,
+        "01": 2
+      },
+      "sdkWrite": "Clear/set only AUDIO bits15/23; preserve VIDEO_DIV bits31/30 and all unrelated fields",
+      "componentHandlesMisc2": false,
+      "outputFrequencyModeled": false
+    },
+    "implementation": "Common register/tick mechanics reused after independent AUDIO-specific primary review; AUDIO constants and SDK expectations verified separately",
+    "validTickPathAllocatesDiagnosticArrays": false
+  },
+  "command": "node --test --test-reporter=tap tests/emulator-pll-audio.test.mjs",
+  "nodeVersion": "v24.20.0",
+  "summary": {
+    "tests": 35,
+    "passed": 35,
+    "failed": 0,
+    "skipped": 0,
+    "exitCode": 0
+  },
+  "typeCheck": {
+    "passed": true,
+    "command": "node node_modules/typescript/bin/tsc --ignoreConfig --noEmit --strict --target ES2022 --module ESNext --moduleResolution bundler src/lib/emulator/pll-audio.ts",
+    "exitCode": 0
+  },
+  "transcript": {
+    "path": "tools/emulator-evidence/pll-audio-model-tests.tap",
+    "sha256": "8d115c9cce37e83cef359ca570948f1339f3bc58f24902b65857c0dd8f2884d0",
+    "bytes": 7707
+  },
+  "modelPolicy": {
+    "lockTicks": 1,
+    "lockFailure": false,
+    "reference24MAvailable": true,
+    "referenceClk1Available": false,
+    "fixedFixturesSurviveReset": true,
+    "lockChanges": "Actual power/source/loop-divider/NUM/DENOM changes clear synthetic lock and progress; equivalent writes preserve them",
+    "outputChanges": "ENABLE/BYPASS/POST_DIV_SELECT changes preserve eligible lock and progress",
+    "unsupportedParameters": "Retain stored bits and expose conservative lock-low stall; silicon response remains unqualified",
+    "zeroDenominator": "Explicit conservative lock-low stall; no division or clock-frequency arithmetic",
+    "referenceAvailability": "Fixed inputs; a stored source selector cannot create a reference",
+    "tickBounds": "Integer0..4294967295 per call and configured delay; reads/writes never advance time",
+    "zeroDelay": "Requires explicit tick, including tick(0), after eligible setup",
+    "physicalSettling": "Unknown; synthetic transition timing is model policy"
+  },
+  "limits": [
+    "Source and finite MMIO coverage only; no selecting AUDIO guest path or guest advance qualified here",
+    "Component checks execute no guest firmware, CPU engine, browser or physical transport",
+    "No whole-image boot, physical lock timing, fractional frequency arithmetic or generated waveform is proved",
+    "Board routing, MISC2, CCM, other PLL groups, oscillator coupling, SAI and DMA are outside ownership"
+  ]
+}

@@ -1,0 +1,16 @@
+---
+import copy from '../../content/features.json';
+---
+<section class="feature-receipt" aria-labelledby="receipt-title" data-component="Feature receipt">
+  <h2 id="receipt-title">{copy.receiptHeading}</h2>
+  <p>{copy.receiptNote}</p>
+  <div class="feature-file-actions">
+    <label class="feature-import-button">{copy.receiptChoose}<input type="file" data-receipt accept=".json,application/json" aria-describedby="receipt-limit" disabled/></label>
+    <button type="button" data-receipt-clear disabled>{copy.receiptClear}</button>
+  </div>
+  <p id="receipt-limit" class="feature-receipt-limit">{copy.receiptLimit}</p>
+  <div data-receipt-result role="status" aria-live="polite" aria-atomic="true">
+    <p data-receipt-status>{copy.receiptEmpty}</p>
+    <ul data-receipt-issues hidden></ul>
+  </div>
+</section>

@@ -1,0 +1,3016 @@
+TAP version 13
+# Subtest: source contract names original firmware, without a stock equivalence claim
+ok 1 - source contract names original firmware, without a stock equivalence claim
+  ---
+  duration_ms: 7.204
+  type: 'test'
+  ...
+# Subtest: oscillator MMIO and aliases advance independently of disabled GPT and reset with the board
+ok 2 - oscillator MMIO and aliases advance independently of disabled GPT and reset with the board
+  ---
+  duration_ms: 4.471
+  type: 'test'
+  ...
+# Subtest: board preserves the stalled oscillator fixture and unknown neighboring register evidence
+ok 3 - board preserves the stalled oscillator fixture and unknown neighboring register evidence
+  ---
+  duration_ms: 3.3308
+  type: 'test'
+  ...
+# Subtest: system registers retain unsigned E000 addresses and correct M7 identity
+ok 4 - system registers retain unsigned E000 addresses and correct M7 identity
+  ---
+  duration_ms: 9.1428
+  type: 'test'
+  ...
+# Subtest: subword NVIC priority writes preserve nearby priorities
+ok 5 - subword NVIC priority writes preserve nearby priorities
+  ---
+  duration_ms: 1.5237
+  type: 'test'
+  ...
+# Subtest: NVIC ISER/ICER and pending registers implement W1S/W1C
+ok 6 - NVIC ISER/ICER and pending registers implement W1S/W1C
+  ---
+  duration_ms: 1.5501
+  type: 'test'
+  ...
+# Subtest: GPT advances only after firmware clock selection and via explicit ticks
+ok 7 - GPT advances only after firmware clock selection and via explicit ticks
+  ---
+  duration_ms: 1.8705
+  type: 'test'
+  ...
+# Subtest: GPT reset, enable reset and modulo32 wrap are deterministic
+ok 8 - GPT reset, enable reset and modulo32 wrap are deterministic
+  ---
+  duration_ms: 1.7473
+  type: 'test'
+  ...
+# Subtest: optional read-driven GPT matches the retained Python functional fixture
+ok 9 - optional read-driven GPT matches the retained Python functional fixture
+  ---
+  duration_ms: 1.789
+  type: 'test'
+  ...
+# Subtest: all40 matrix slots drive the selected active-low row and preserve OLED
+ok 10 - all40 matrix slots drive the selected active-low row and preserve OLED
+  ---
+  duration_ms: 3.9404
+  type: 'test'
+  ...
+# Subtest: GPIO set/clear/toggle/direct/subword writes preserve neighboring outputs
+ok 11 - GPIO set/clear/toggle/direct/subword writes preserve neighboring outputs
+  ---
+  duration_ms: 1.5493
+  type: 'test'
+  ...
+# Subtest: ADC HC0 maps channels4/5/6/3 and analog mux to all32 slots
+ok 12 - ADC HC0 maps channels4/5/6/3 and analog mux to all32 slots
+  ---
+  duration_ms: 1.937
+  type: 'test'
+  ...
+# Subtest: ADC calibration and conversion faults stay observable
+ok 13 - ADC calibration and conversion faults stay observable
+  ---
+  duration_ms: 1.4164
+  type: 'test'
+  ...
+# Subtest: named inputs use their recorded raw path and DEL mirrors all columns
+ok 14 - named inputs use their recorded raw path and DEL mirrors all columns
+  ---
+  duration_ms: 1.7824
+  type: 'test'
+  ...
+# Subtest: UART FIFO, errors, exact SHIFT bytes and IRQ22 follow the firmware path
+ok 15 - UART FIFO, errors, exact SHIFT bytes and IRQ22 follow the firmware path
+  ---
+  duration_ms: 2.1052
+  type: 'test'
+  ...
+# Subtest: companion fixture replies to startup and removes modeled power only on shutdown ACK
+ok 16 - companion fixture replies to startup and removes modeled power only on shutdown ACK
+  ---
+  duration_ms: 6.5523
+  type: 'test'
+  ...
+# Subtest: encoder levels remain separate from matrix row pins
+ok 17 - encoder levels remain separate from matrix row pins
+  ---
+  duration_ms: 1.4566
+  type: 'test'
+  ...
+# Subtest: GPIO SPI produces exact page-packed OLED bytes from transfer writes
+ok 18 - GPIO SPI produces exact page-packed OLED bytes from transfer writes
+  ---
+  duration_ms: 26.1448
+  type: 'test'
+  ...
+# Subtest: OLED partial horizontal-window data updates only addressed RAM
+ok 19 - OLED partial horizontal-window data updates only addressed RAM
+  ---
+  duration_ms: 2.3571
+  type: 'test'
+  ...
+# Subtest: SAI injected FIFO pointers, overflow clear and collected TX writes are observable
+ok 20 - SAI injected FIFO pointers, overflow clear and collected TX writes are observable
+  ---
+  duration_ms: 2.4878
+  type: 'test'
+  ...
+# Subtest: SAI receiver/channel gates affect injection while existing FIFO data can still be drained
+ok 21 - SAI receiver/channel gates affect injection while existing FIFO data can still be drained
+  ---
+  duration_ms: 1.118
+  type: 'test'
+  ...
+# Subtest: SAI RX request uses count greater than watermark and warning uses exactly32 enabled entries
+ok 22 - SAI RX request uses count greater than watermark and warning uses exactly32 enabled entries
+  ---
+  duration_ms: 5.262
+  type: 'test'
+  ...
+# Subtest: SAI RX pointers wrap modulo64 across repeated full FIFO and retain exact word order
+ok 23 - SAI RX pointers wrap modulo64 across repeated full FIFO and retain exact word order
+  ---
+  duration_ms: 2.5114
+  type: 'test'
+  ...
+# Subtest: SAI RX FIFO reset preserves nonzero write phase and sticky flags; software reset is held
+ok 24 - SAI RX FIFO reset preserves nonzero write phase and sticky flags; software reset is held
+  ---
+  duration_ms: 2.4521
+  type: 'test'
+  ...
+# Subtest: SAI RX W1C writes honor byte lanes and selected-word/sync events remain sticky across reads
+ok 25 - SAI RX W1C writes honor byte lanes and selected-word/sync events remain sticky across reads
+  ---
+  duration_ms: 1.6601
+  type: 'test'
+  ...
+# Subtest: SAI RX narrow reads each consume one unpacked entry; empty and RO writes preserve pointers
+ok 26 - SAI RX narrow reads each consume one unpacked entry; empty and RO writes preserve pointers
+  ---
+  duration_ms: 1.6655
+  type: 'test'
+  ...
+# Subtest: SAI RX overflow preserves queued words; FCONT1 permits explicit continuation despite stickyFEF
+ok 27 - SAI RX overflow preserves queued words; FCONT1 permits explicit continuation despite stickyFEF
+  ---
+  duration_ms: 1.858
+  type: 'test'
+  ...
+# Subtest: SAI RX FCONT0 discards injected continuation until FEF clears and a new explicit frame begins
+ok 28 - SAI RX FCONT0 discards injected continuation until FEF clears and a new explicit frame begins
+  ---
+  duration_ms: 1.665
+  type: 'test'
+  ...
+# Subtest: SAI RX flags drive their matching IRQ56 enables and requests fall when occupancy drops
+ok 29 - SAI RX flags drive their matching IRQ56 enables and requests fall when occupancy drops
+  ---
+  duration_ms: 1.4861
+  type: 'test'
+  ...
+# Subtest: SAI additional channels, packing, combine, masks, DMA and individual FIFO reset remain visible as unsupported
+ok 30 - SAI additional channels, packing, combine, masks, DMA and individual FIFO reset remain visible as unsupported
+  ---
+  duration_ms: 37.3288
+  type: 'test'
+  ...
+# Subtest: unknown MMIO remains undefined and carries operation/address/count
+ok 31 - unknown MMIO remains undefined and carries operation/address/count
+  ---
+  duration_ms: 2.3206
+  type: 'test'
+  ...
+# Subtest: reset clears volatile board inputs/display and preserves NOR bytes
+ok 32 - reset clears volatile board inputs/display and preserves NOR bytes
+  ---
+  duration_ms: 2.9887
+  type: 'test'
+  ...
+# Subtest: board routes DCDC targets, status and independent settling while GPT is disabled
+ok 33 - board routes DCDC targets, status and independent settling while GPT is disabled
+  ---
+  duration_ms: 43.5691
+  type: 'test'
+  ...
+# Subtest: board preserves stalled DCDC across reset and does not advance it on timer reads
+ok 34 - board preserves stalled DCDC across reset and does not advance it on timer reads
+  ---
+  duration_ms: 3.4112
+  type: 'test'
+  ...
+# Subtest: evidence pins the reviewed RT1062 source and discloses synthetic readiness
+ok 35 - evidence pins the reviewed RT1062 source and discloses synthetic readiness
+  ---
+  duration_ms: 3.9589
+  type: 'test'
+  ...
+# Subtest: manual resets preserve nonzero reserved lanes and leave DC_OK low
+ok 36 - manual resets preserve nonzero reserved lanes and leave DC_OK low
+  ---
+  duration_ms: 1.892
+  type: 'test'
+  ...
+# Subtest: all documented field masks retain the source values
+ok 37 - all documented field masks retain the source values
+  ---
+  duration_ms: 0.6324
+  type: 'test'
+  ...
+# Subtest: adjacent words are separate registers and do not perform SET CLR or TOG
+ok 38 - adjacent words are separate registers and do not perform SET CLR or TOG
+  ---
+  duration_ms: 8.372
+  type: 'test'
+  ...
+# Subtest: reads and unchanged writes never advance or complete settling
+ok 39 - reads and unchanged writes never advance or complete settling
+  ---
+  duration_ms: 2.4499
+  type: 'test'
+  ...
+# Subtest: target adjustment reaches protected DC_OK only at the configured explicit tick
+ok 40 - target adjustment reaches protected DC_OK only at the configured explicit tick
+  ---
+  duration_ms: 1.2867
+  type: 'test'
+  ...
+# Subtest: a second changed target restarts pending settling without stale readiness
+ok 41 - a second changed target restarts pending settling without stale readiness
+  ---
+  duration_ms: 0.7821
+  type: 'test'
+  ...
+# Subtest: rewriting unchanged targets preserves pending progress and completed DC_OK
+ok 42 - rewriting unchanged targets preserves pending progress and completed DC_OK
+  ---
+  duration_ms: 0.8401
+  type: 'test'
+  ...
+# Subtest: the NXP one-output adjustment sequence preserves fields and restarts target settling
+ok 43 - the NXP one-output adjustment sequence preserves fields and restarts target settling
+  ---
+  duration_ms: 0.8191
+  type: 'test'
+  ...
+# Subtest: DISABLE_STEP retains configuration while admitting target writes
+ok 44 - DISABLE_STEP retains configuration while admitting target writes
+  ---
+  duration_ms: 0.8407
+  type: 'test'
+  ...
+# Subtest: all 32 documented TRG encodings remain admitted
+ok 45 - all 32 documented TRG encodings remain admitted
+  ---
+  duration_ms: 1.1204
+  type: 'test'
+  ...
+# Subtest: a low-power target change restarts status while all documented codes settle
+ok 46 - a low-power target change restarts status while all documented codes settle
+  ---
+  duration_ms: 0.7007
+  type: 'test'
+  ...
+# Subtest: undocumented low-power targets are retained, visible and conservatively stalled
+ok 47 - undocumented low-power targets are retained, visible and conservatively stalled
+  ---
+  duration_ms: 3.0555
+  type: 'test'
+  ...
+# Subtest: CUR_SNS reserved codes are visible without inventing current-detector behavior
+ok 48 - CUR_SNS reserved codes are visible without inventing current-detector behavior
+  ---
+  duration_ms: 0.3825
+  type: 'test'
+  ...
+# Subtest: DC_OK cannot be software-written or cleared as W1C in any byte lane
+ok 49 - DC_OK cannot be software-written or cleared as W1C in any byte lane
+  ---
+  duration_ms: 0.2027
+  type: 'test'
+  ...
+# Subtest: byte and halfword writes preserve the other defined and reserved lanes
+ok 50 - byte and halfword writes preserve the other defined and reserved lanes
+  ---
+  duration_ms: 0.1536
+  type: 'test'
+  ...
+# Subtest: unwritten high value bits cannot change clock selection or DISABLE_STEP
+ok 51 - unwritten high value bits cannot change clock selection or DISABLE_STEP
+  ---
+  duration_ms: 0.2283
+  type: 'test'
+  ...
+# Subtest: fixed settling failure and disabled converter never fabricate DC_OK
+ok 52 - fixed settling failure and disabled converter never fabricate DC_OK
+  ---
+  duration_ms: 3.3828
+  type: 'test'
+  ...
+# Subtest: forced internal selection requires its explicit availability and powered oscillator
+ok 53 - forced internal selection requires its explicit availability and powered oscillator
+  ---
+  duration_ms: 0.3485
+  type: 'test'
+  ...
+# Subtest: forced external selection needs an explicit source fixture despite writable XTAL controls
+ok 54 - forced external selection needs an explicit source fixture despite writable XTAL controls
+  ---
+  duration_ms: 0.5857
+  type: 'test'
+  ...
+# Subtest: auto selection uses only available fixture clocks and discloses its fallback policy
+ok 55 - auto selection uses only available fixture clocks and discloses its fallback policy
+  ---
+  duration_ms: 0.2598
+  type: 'test'
+  ...
+# Subtest: changing the selected available clock restarts the explicit settling delay
+ok 56 - changing the selected available clock restarts the explicit settling delay
+  ---
+  duration_ms: 0.1704
+  type: 'test'
+  ...
+# Subtest: configuration controls retain values without resetting unrelated target progress
+ok 57 - configuration controls retain values without resetting unrelated target progress
+  ---
+  duration_ms: 0.1461
+  type: 'test'
+  ...
+# Subtest: tick batching has the same complete and pending state as smaller ticks
+ok 58 - tick batching has the same complete and pending state as smaller ticks
+  ---
+  duration_ms: 0.2043
+  type: 'test'
+  ...
+# Subtest: zero-duration settling still requires an explicit tick including tick zero
+ok 59 - zero-duration settling still requires an explicit tick including tick zero
+  ---
+  duration_ms: 0.1591
+  type: 'test'
+  ...
+# Subtest: bounded tick validation leaves state unchanged on invalid inputs
+ok 60 - bounded tick validation leaves state unchanged on invalid inputs
+  ---
+  duration_ms: 1.1012
+  type: 'test'
+  ...
+# Subtest: fixture values require booleans and snapshots cannot mutate the configuration
+ok 61 - fixture values require booleans and snapshots cannot mutate the configuration
+  ---
+  duration_ms: 0.5746
+  type: 'test'
+  ...
+# Subtest: reset restores source registers and time while retaining fixed environment fixtures
+ok 62 - reset restores source registers and time while retaining fixed environment fixtures
+  ---
+  duration_ms: 0.233
+  type: 'test'
+  ...
+# Subtest: all exact register lanes are owned and neighboring or malformed accesses remain unhandled
+ok 63 - all exact register lanes are owned and neighboring or malformed accesses remain unhandled
+  ---
+  duration_ms: 0.3488
+  type: 'test'
+  ...
+# Subtest: native emulator mains have unique identities and retain their editable structure
+ok 64 - native emulator mains have unique identities and retain their editable structure
+  ---
+  duration_ms: 1.6458
+  type: 'test'
+  ...
+# Subtest: each responsive session keeps the shared Instrument and an empty linked OLED
+ok 65 - each responsive session keeps the shared Instrument and an empty linked OLED
+  ---
+  duration_ms: 7.7741
+  type: 'test'
+  ...
+# Subtest: pad inputs use sixteen linked action instances with distinct labels
+ok 66 - pad inputs use sixteen linked action instances with distinct labels
+  ---
+  duration_ms: 2.24
+  type: 'test'
+  ...
+# Subtest: four linked layouts cover both themes and sizes without invented firmware output
+ok 67 - four linked layouts cover both themes and sizes without invented firmware output
+  ---
+  duration_ms: 3.9323
+  type: 'test'
+  ...
+# Subtest: visible native copy agrees with the browser source and reading text fits its frames
+ok 68 - visible native copy agrees with the browser source and reading text fits its frames
+  ---
+  duration_ms: 1.5915
+  type: 'test'
+  ...
+# Subtest: interaction examples are linked and explicitly illustrative
+ok 69 - interaction examples are linked and explicitly illustrative
+  ---
+  duration_ms: 12.0913
+  type: 'test'
+  ...
+# Subtest: shared Footer utility stays linked across all eighty existing layout instances
+ok 70 - shared Footer utility stays linked across all eighty existing layout instances
+  ---
+  duration_ms: 27.3332
+  type: 'test'
+  ...
+# Subtest: model BX LR captures strict token and only software-owned effects
+ok 71 - model BX LR captures strict token and only software-owned effects
+  ---
+  duration_ms: 3.9721
+  type: 'test'
+  ...
+# Subtest: model BX R4 captures strict token and only software-owned effects
+ok 72 - model BX R4 captures strict token and only software-owned effects
+  ---
+  duration_ms: 0.4417
+  type: 'test'
+  ...
+# Subtest: model POP R4/PC captures strict token and only software-owned effects
+ok 73 - model POP R4/PC captures strict token and only software-owned effects
+  ---
+  duration_ms: 0.7298
+  type: 'test'
+  ...
+# Subtest: model POP PC captures strict token and only software-owned effects
+ok 74 - model POP PC captures strict token and only software-owned effects
+  ---
+  duration_ms: 0.2499
+  type: 'test'
+  ...
+# Subtest: model POP.W R4/R8/PC captures strict token and only software-owned effects
+ok 75 - model POP.W R4/R8/PC captures strict token and only software-owned effects
+  ---
+  duration_ms: 0.2514
+  type: 'test'
+  ...
+# Subtest: model LDMIA R4! R5/PC captures strict token and only software-owned effects
+ok 76 - model LDMIA R4! R5/PC captures strict token and only software-owned effects
+  ---
+  duration_ms: 0.225
+  type: 'test'
+  ...
+# Subtest: model LDMIA R0 R4/PC captures strict token and only software-owned effects
+ok 77 - model LDMIA R0 R4/PC captures strict token and only software-owned effects
+  ---
+  duration_ms: 0.2262
+  type: 'test'
+  ...
+# Subtest: model LDMDB R4! R5/PC captures strict token and only software-owned effects
+ok 78 - model LDMDB R4! R5/PC captures strict token and only software-owned effects
+  ---
+  duration_ms: 0.1882
+  type: 'test'
+  ...
+# Subtest: model LDR positive immediate captures strict token and only software-owned effects
+ok 79 - model LDR positive immediate captures strict token and only software-owned effects
+  ---
+  duration_ms: 0.1849
+  type: 'test'
+  ...
+# Subtest: model LDR negative immediate captures strict token and only software-owned effects
+ok 80 - model LDR negative immediate captures strict token and only software-owned effects
+  ---
+  duration_ms: 0.2354
+  type: 'test'
+  ...
+# Subtest: model LDR pre-index writeback captures strict token and only software-owned effects
+ok 81 - model LDR pre-index writeback captures strict token and only software-owned effects
+  ---
+  duration_ms: 0.1799
+  type: 'test'
+  ...
+# Subtest: model LDR post-index positive captures strict token and only software-owned effects
+ok 82 - model LDR post-index positive captures strict token and only software-owned effects
+  ---
+  duration_ms: 0.2314
+  type: 'test'
+  ...
+# Subtest: model LDR post-index negative captures strict token and only software-owned effects
+ok 83 - model LDR post-index negative captures strict token and only software-owned effects
+  ---
+  duration_ms: 0.1191
+  type: 'test'
+  ...
+# Subtest: model LDR register shifted captures strict token and only software-owned effects
+ok 84 - model LDR register shifted captures strict token and only software-owned effects
+  ---
+  duration_ms: 0.1382
+  type: 'test'
+  ...
+# Subtest: model LDR positive literal captures strict token and only software-owned effects
+ok 85 - model LDR positive literal captures strict token and only software-owned effects
+  ---
+  duration_ms: 0.0799
+  type: 'test'
+  ...
+# Subtest: model LDR negative literal captures strict token and only software-owned effects
+ok 86 - model LDR negative literal captures strict token and only software-owned effects
+  ---
+  duration_ms: 0.0855
+  type: 'test'
+  ...
+# Subtest: model POP.W PC (LDR alias) captures strict token and only software-owned effects
+ok 87 - model POP.W PC (LDR alias) captures strict token and only software-owned effects
+  ---
+  duration_ms: 0.1003
+  type: 'test'
+  ...
+# Subtest: unrelated PC writers and Thread mode cannot become exception returns
+ok 88 - unrelated PC writers and Thread mode cannot become exception returns
+  ---
+  duration_ms: 0.7055
+  type: 'test'
+  ...
+# Subtest: every supported raw basic/extended token remains exact; even/reserved values fail
+ok 89 - every supported raw basic/extended token remains exact; even/reserved values fail
+  ---
+  duration_ms: 0.3847
+  type: 'test'
+  ...
+# Subtest: passing final IT instruction qualifies; skipped or nonfinal return never applies
+ok 90 - passing final IT instruction qualifies; skipped or nonfinal return never applies
+  ---
+  duration_ms: 0.2174
+  type: 'test'
+  ...
+# Subtest: reserved and unpredictable multiple-load/LDR forms are refused as model errors
+ok 91 - reserved and unpredictable multiple-load/LDR forms are refused as model errors
+  ---
+  duration_ms: 0.3561
+  type: 'test'
+  ...
+# Subtest: general LDM writeback through restored or banked registers remains explicitly unqualified
+ok 92 - general LDM writeback through restored or banked registers remains explicitly unqualified
+  ---
+  duration_ms: 0.3682
+  type: 'test'
+  ...
+# Subtest: unaligned or device-memory PC loads refuse prediction without reading device backing
+ok 93 - unaligned or device-memory PC loads refuse prediction without reading device backing
+  ---
+  duration_ms: 0.3711
+  type: 'test'
+  ...
+# Subtest: stale instruction, memory, register or mode plans fail before software writes
+ok 94 - stale instruction, memory, register or mode plans fail before software writes
+  ---
+  duration_ms: 0.5281
+  type: 'test'
+  ...
+# Subtest: injected JavaScript read failure cannot produce a partial software transfer
+ok 95 - injected JavaScript read failure cannot produce a partial software transfer
+  ---
+  duration_ms: 0.3288
+  type: 'test'
+  ...
+# Subtest: software POP then hardware unstack restores frame registers and preserves loaded R4
+ok 96 - software POP then hardware unstack restores frame registers and preserves loaded R4
+  ---
+  duration_ms: 1.4538
+  type: 'test'
+  ...
+# Subtest: real M7 benign BX LR matches decoded software loads/writeback
+ok 97 - real M7 benign BX LR matches decoded software loads/writeback
+  ---
+  duration_ms: 135.1549
+  type: 'test'
+  ...
+# Subtest: real M7 benign BX R4 matches decoded software loads/writeback
+ok 98 - real M7 benign BX R4 matches decoded software loads/writeback
+  ---
+  duration_ms: 87.0824
+  type: 'test'
+  ...
+# Subtest: real M7 benign POP R4/PC matches decoded software loads/writeback
+ok 99 - real M7 benign POP R4/PC matches decoded software loads/writeback
+  ---
+  duration_ms: 38.6822
+  type: 'test'
+  ...
+# Subtest: real M7 benign POP PC matches decoded software loads/writeback
+ok 100 - real M7 benign POP PC matches decoded software loads/writeback
+  ---
+  duration_ms: 37.5569
+  type: 'test'
+  ...
+# Subtest: real M7 benign POP.W R4/R8/PC matches decoded software loads/writeback
+ok 101 - real M7 benign POP.W R4/R8/PC matches decoded software loads/writeback
+  ---
+  duration_ms: 71.1893
+  type: 'test'
+  ...
+# Subtest: real M7 benign LDMIA R4! R5/PC matches decoded software loads/writeback
+ok 102 - real M7 benign LDMIA R4! R5/PC matches decoded software loads/writeback
+  ---
+  duration_ms: 50.8966
+  type: 'test'
+  ...
+# Subtest: real M7 benign LDMIA R0 R4/PC matches decoded software loads/writeback
+ok 103 - real M7 benign LDMIA R0 R4/PC matches decoded software loads/writeback
+  ---
+  duration_ms: 42.894
+  type: 'test'
+  ...
+# Subtest: real M7 benign LDMDB R4! R5/PC matches decoded software loads/writeback
+ok 104 - real M7 benign LDMDB R4! R5/PC matches decoded software loads/writeback
+  ---
+  duration_ms: 33.2877
+  type: 'test'
+  ...
+# Subtest: real M7 benign LDR positive immediate matches decoded software loads/writeback
+ok 105 - real M7 benign LDR positive immediate matches decoded software loads/writeback
+  ---
+  duration_ms: 46.932
+  type: 'test'
+  ...
+# Subtest: real M7 benign LDR negative immediate matches decoded software loads/writeback
+ok 106 - real M7 benign LDR negative immediate matches decoded software loads/writeback
+  ---
+  duration_ms: 37.6188
+  type: 'test'
+  ...
+# Subtest: real M7 benign LDR pre-index writeback matches decoded software loads/writeback
+ok 107 - real M7 benign LDR pre-index writeback matches decoded software loads/writeback
+  ---
+  duration_ms: 53.4755
+  type: 'test'
+  ...
+# Subtest: real M7 benign LDR post-index positive matches decoded software loads/writeback
+ok 108 - real M7 benign LDR post-index positive matches decoded software loads/writeback
+  ---
+  duration_ms: 57.457
+  type: 'test'
+  ...
+# Subtest: real M7 benign LDR post-index negative matches decoded software loads/writeback
+ok 109 - real M7 benign LDR post-index negative matches decoded software loads/writeback
+  ---
+  duration_ms: 52.7322
+  type: 'test'
+  ...
+# Subtest: real M7 benign LDR register shifted matches decoded software loads/writeback
+ok 110 - real M7 benign LDR register shifted matches decoded software loads/writeback
+  ---
+  duration_ms: 49.0748
+  type: 'test'
+  ...
+# Subtest: real M7 benign LDR positive literal matches decoded software loads/writeback
+ok 111 - real M7 benign LDR positive literal matches decoded software loads/writeback
+  ---
+  duration_ms: 34.8924
+  type: 'test'
+  ...
+# Subtest: real M7 benign LDR negative literal matches decoded software loads/writeback
+ok 112 - real M7 benign LDR negative literal matches decoded software loads/writeback
+  ---
+  duration_ms: 36.2995
+  type: 'test'
+  ...
+# Subtest: real M7 benign POP.W PC (LDR alias) matches decoded software loads/writeback
+ok 113 - real M7 benign POP.W PC (LDR alias) matches decoded software loads/writeback
+  ---
+  duration_ms: 32.7912
+  type: 'test'
+  ...
+# Subtest: real M7 omits the skipped IT BX and captures its passing final BX
+ok 114 - real M7 omits the skipped IT BX and captures its passing final BX
+  ---
+  duration_ms: 53.7029
+  type: 'test'
+  ...
+# Subtest: real M7 stop-before-transfer leaves a fresh immutable plan for software application
+ok 115 - real M7 stop-before-transfer leaves a fresh immutable plan for software application
+  ---
+  duration_ms: 38.8373
+  type: 'test'
+  ...
+# Subtest: eager extended frame stores core then S0-S15/FPSCR, preserving reserved words and S16-S31
+ok 116 - eager extended frame stores core then S0-S15/FPSCR, preserving reserved words and S16-S31
+  ---
+  duration_ms: 4.5717
+  type: 'test'
+  ...
+# Subtest: lazy entry reserves the FP extension without storing it; unused return performs no FP reads
+ok 117 - lazy entry reserves the FP extension without storing it; unused return performs no FP reads
+  ---
+  duration_ms: 1.3055
+  type: 'test'
+  ...
+# Subtest: lazy preservation saves the interrupted low FP state once and extended return restores it
+ok 118 - lazy preservation saves the interrupted low FP state once and extended return restores it
+  ---
+  duration_ms: 0.5933
+  type: 'test'
+  ...
+# Subtest: nested basic handlers preserve the outer lazy address and LSPACT through return
+ok 119 - nested basic handlers preserve the outer lazy address and LSPACT through return
+  ---
+  duration_ms: 0.6345
+  type: 'test'
+  ...
+# Subtest: nested FP handlers reserve independent frames after the previous lazy save
+ok 120 - nested FP handlers reserve independent frames after the previous lazy save
+  ---
+  duration_ms: 0.8379
+  type: 'test'
+  ...
+# Subtest: tail chaining retains the lazy frame until final unstack
+ok 121 - tail chaining retains the lazy frame until final unstack
+  ---
+  duration_ms: 0.4843
+  type: 'test'
+  ...
+# Subtest: manual ASPEN=0 still stacks extended when software sets FPCA
+ok 122 - manual ASPEN=0 still stacks extended when software sets FPCA
+  ---
+  duration_ms: 0.411
+  type: 'test'
+  ...
+# Subtest: RTOS extended return reads the newly selected PSP rather than a saved host snapshot
+ok 123 - RTOS extended return reads the newly selected PSP rather than a saved host snapshot
+  ---
+  duration_ms: 0.4236
+  type: 'test'
+  ...
+# Subtest: basic return clears FPCA and leaves handler FP data untouched
+ok 124 - basic return clears FPCA and leaves handler FP data untouched
+  ---
+  duration_ms: 0.3901
+  type: 'test'
+  ...
+# Subtest: failed lazy store preserves LSPACT and frame ownership for an explicit error
+ok 125 - failed lazy store preserves LSPACT and frame ownership for an explicit error
+  ---
+  duration_ms: 3.1992
+  type: 'test'
+  ...
+# Subtest: CPACR gates eager entry and lazy preserve; reserved/mismatched access fails explicitly
+ok 126 - CPACR gates eager entry and lazy preserve; reserved/mismatched access fails explicitly
+  ---
+  duration_ms: 1.0789
+  type: 'test'
+  ...
+# Subtest: privileged-only CPACR checks the interrupted entry and the restored Thread context
+ok 127 - privileged-only CPACR checks the interrupted entry and the restored Thread context
+  ---
+  duration_ms: 0.5159
+  type: 'test'
+  ...
+# Subtest: lazy unused return skips FP permissions and memory even with handler FPCA set
+ok 128 - lazy unused return skips FP permissions and memory even with handler FPCA set
+  ---
+  duration_ms: 0.3495
+  type: 'test'
+  ...
+# Subtest: lazy FPCCR records origin privilege and masked fault readiness
+ok 129 - lazy FPCCR records origin privilege and masked fault readiness
+  ---
+  duration_ms: 0.3783
+  type: 'test'
+  ...
+# Subtest: FP core MMIO masks reserved bits and rejects unsafe automatic-policy changes
+ok 130 - FP core MMIO masks reserved bits and rejects unsafe automatic-policy changes
+  ---
+  duration_ms: 0.407
+  type: 'test'
+  ...
+# Subtest: overlapping software-activated lazy context is refused without corrupting the outer frame
+ok 131 - overlapping software-activated lazy context is refused without corrupting the outer frame
+  ---
+  duration_ms: 0.294
+  type: 'test'
+  ...
+# Subtest: real M7 eager handler FP use restores low registers and leaves S16 software-owned
+ok 132 - real M7 eager handler FP use restores low registers and leaves S16 software-owned
+  ---
+  duration_ms: 178.5064
+  type: 'test'
+  ...
+# Subtest: real M7 lazy handler FP use restores low registers and leaves S16 software-owned
+ok 133 - real M7 lazy handler FP use restores low registers and leaves S16 software-owned
+  ---
+  duration_ms: 126.4479
+  type: 'test'
+  ...
+# Subtest: real M7 IT-skipped VFP does not consume an outstanding lazy context
+ok 134 - real M7 IT-skipped VFP does not consume an outstanding lazy context
+  ---
+  duration_ms: 40.6238
+  type: 'test'
+  ...
+# Subtest: real M7 automatic FP activation applies modeled FPDSCR; manual ASPEN retains FPCA=0
+ok 135 - real M7 automatic FP activation applies modeled FPDSCR; manual ASPEN retains FPCA=0
+  ---
+  duration_ms: 73.7227
+  type: 'test'
+  ...
+# Subtest: real M7 VLDR/VSTR/VPUSH/VPOP/VMRS/VMSR are recognized FP instructions
+ok 136 - real M7 VLDR/VSTR/VPUSH/VPOP/VMRS/VMSR are recognized FP instructions
+  ---
+  duration_ms: 37.358
+  type: 'test'
+  ...
+# Subtest: real M7 first FP context applies FPDSCR rounding during arithmetic
+ok 137 - real M7 first FP context applies FPDSCR rounding during arithmetic
+  ---
+  duration_ms: 36.4413
+  type: 'test'
+  ...
+# Subtest: real M7 modeled CPACR denial stops before the FP instruction changes context
+ok 138 - real M7 modeled CPACR denial stops before the FP instruction changes context
+  ---
+  duration_ms: 52.0105
+  type: 'test'
+  ...
+# Subtest: external pending survives disable and delivery writes precisely the basic frame
+ok 139 - external pending survives disable and delivery writes precisely the basic frame
+  ---
+  duration_ms: 5.4773
+  type: 'test'
+  ...
+# Subtest: return restores only the hardware frame and retains handler r4-r11 and masks
+ok 140 - return restores only the hardware frame and retains handler r4-r11 and masks
+  ---
+  duration_ms: 1.736
+  type: 'test'
+  ...
+# Subtest: Thread PSP entry stages PSP, runs Handler on MSP and restores CONTROL.SPSEL
+ok 141 - Thread PSP entry stages PSP, runs Handler on MSP and restores CONTROL.SPSEL
+  ---
+  duration_ms: 1.1088
+  type: 'test'
+  ...
+# Subtest: M7 aligns an initially four-byte-aligned stack and preserves IT/APSR in the frame
+ok 142 - M7 aligns an initially four-byte-aligned stack and preserves IT/APSR in the frame
+  ---
+  duration_ms: 2.122
+  type: 'test'
+  ...
+# Subtest: RTOS can replace PSP and select a new task frame before EXC_RETURN
+ok 143 - RTOS can replace PSP and select a new task frame before EXC_RETURN
+  ---
+  duration_ms: 0.8644
+  type: 'test'
+  ...
+# Subtest: crafted frame restoration uses the architecture alignment OR, not addition
+ok 144 - crafted frame restoration uses the architecture alignment OR, not addition
+  ---
+  duration_ms: 0.7184
+  type: 'test'
+  ...
+# Subtest: higher group priority nests; returning Handler restores the preempted frame
+ok 145 - higher group priority nests; returning Handler restores the preempted frame
+  ---
+  duration_ms: 1.5583
+  type: 'test'
+  ...
+# Subtest: subpriority chooses a pending winner but cannot preempt the same priority group
+ok 146 - subpriority chooses a pending winner but cannot preempt the same priority group
+  ---
+  duration_ms: 1.0107
+  type: 'test'
+  ...
+# Subtest: equal priorities use the lower exception number, including SysTick before IRQ0
+ok 147 - equal priorities use the lower exception number, including SysTick before IRQ0
+  ---
+  duration_ms: 4.978
+  type: 'test'
+  ...
+# Subtest: BASEPRI uses group priority and zero disables the threshold
+ok 148 - BASEPRI uses group priority and zero disables the threshold
+  ---
+  duration_ms: 0.9774
+  type: 'test'
+  ...
+# Subtest: PRIMASK allows HardFault and NMI; FAULTMASK allows NMI only
+ok 149 - PRIMASK allows HardFault and NMI; FAULTMASK allows NMI only
+  ---
+  duration_ms: 4.2545
+  type: 'test'
+  ...
+# Subtest: tail chain preserves the frame and handler register values until final unstack
+ok 150 - tail chain preserves the frame and handler register values until final unstack
+  ---
+  duration_ms: 1.1862
+  type: 'test'
+  ...
+# Subtest: a held external level re-pends; deassertion permits final return
+ok 151 - a held external level re-pends; deassertion permits final return
+  ---
+  duration_ms: 0.8015
+  type: 'test'
+  ...
+# Subtest: a rising level during an active IRQ remains active and pending while held
+ok 152 - a rising level during an active IRQ remains active and pending while held
+  ---
+  duration_ms: 2.203
+  type: 'test'
+  ...
+# Subtest: SysTick reload is a separate edge; ticks and wrap count are deterministic
+ok 153 - SysTick reload is a separate edge; ticks and wrap count are deterministic
+  ---
+  duration_ms: 0.9701
+  type: 'test'
+  ...
+# Subtest: SysTick zero reload has no event; CVR clears COUNTFLAG independently of pending
+ok 154 - SysTick zero reload has no event; CVR clears COUNTFLAG independently of pending
+  ---
+  duration_ms: 0.6934
+  type: 'test'
+  ...
+# Subtest: SysTick gates interrupt requests, enable, and selected clock independently
+ok 155 - SysTick gates interrupt requests, enable, and selected clock independently
+  ---
+  duration_ms: 0.906
+  type: 'test'
+  ...
+# Subtest: bulk SysTick advancement matches independently stepped edges across reload changes
+ok 156 - bulk SysTick advancement matches independently stepped edges across reload changes
+  ---
+  duration_ms: 2.8792
+  type: 'test'
+  ...
+# Subtest: NVIC set/clear aliases preserve other bits; priority bytes mask unimplemented bits
+ok 157 - NVIC set/clear aliases preserve other bits; priority bytes mask unimplemented bits
+  ---
+  duration_ms: 1.401
+  type: 'test'
+  ...
+# Subtest: AIRCR needs its key; VTOR masks implementation alignment; ICSR reports and clears pending
+ok 158 - AIRCR needs its key; VTOR masks implementation alignment; ICSR reports and clears pending
+  ---
+  duration_ms: 1.5365
+  type: 'test'
+  ...
+# Subtest: M7 VECTPENDING reflects BASEPRI/FAULTMASK but ignores PRIMASK
+ok 159 - M7 VECTPENDING reflects BASEPRI/FAULTMASK but ignores PRIMASK
+  ---
+  duration_ms: 0.9939
+  type: 'test'
+  ...
+# Subtest: configurable fault enables and SHCSR active/pending state remain distinct
+ok 160 - configurable fault enables and SHCSR active/pending state remain distinct
+  ---
+  duration_ms: 1.1994
+  type: 'test'
+  ...
+# Subtest: invalid vector stops before staging a frame or consuming pending state
+ok 161 - invalid vector stops before staging a frame or consuming pending state
+  ---
+  duration_ms: 0.8933
+  type: 'test'
+  ...
+# Subtest: invalid return tokens are strict; fetch normalization is explicit
+ok 162 - invalid return tokens are strict; fetch normalization is explicit
+  ---
+  duration_ms: 1.9937
+  type: 'test'
+  ...
+# Subtest: archived integer-only option still rejects extended, active and lazy FPU frames
+ok 163 - archived integer-only option still rejects extended, active and lazy FPU frames
+  ---
+  duration_ms: 2.4391
+  type: 'test'
+  ...
+# Subtest: invalid stacked state/context and unsupported non-base Thread return remain failures
+ok 164 - invalid stacked state/context and unsupported non-base Thread return remain failures
+  ---
+  duration_ms: 2.5034
+  type: 'test'
+  ...
+# Subtest: reserved/unimplemented IDs, unsupported widths and unprivileged core writes are rejected
+ok 165 - reserved/unimplemented IDs, unsupported widths and unprivileged core writes are rejected
+  ---
+  duration_ms: 0.9284
+  type: 'test'
+  ...
+# Subtest: CPU writeMemory alternative and constructor option validation
+ok 166 - CPU writeMemory alternative and constructor option validation
+  ---
+  duration_ms: 0.853
+  type: 'test'
+  ...
+# Subtest: real Cortex-M7 WASM handler edits its frame and callee-saved state remains software-owned
+ok 167 - real Cortex-M7 WASM handler edits its frame and callee-saved state remains software-owned
+  ---
+  duration_ms: 178.8196
+  type: 'test'
+  ...
+# Subtest: real M7 VFP execution sets FPCA and the archived integer-only option refuses it
+ok 168 - real M7 VFP execution sets FPCA and the archived integer-only option refuses it
+  ---
+  duration_ms: 100.9026
+  type: 'test'
+  ...
+# Subtest: real M7 stops before POP, applies its software effects and returns through the raw instruction target
+ok 169 - real M7 stops before POP, applies its software effects and returns through the raw instruction target
+  ---
+  duration_ms: 52.1305
+  type: 'test'
+  ...
+# Subtest: default profile exposes measured ID/status/SFDP and labeled FCB fixture
+ok 170 - default profile exposes measured ID/status/SFDP and labeled FCB fixture
+  ---
+  duration_ms: 25.7485
+  type: 'test'
+  ...
+# Subtest: caller flash and SFDP bytes replace fixtures without being rewritten
+ok 171 - caller flash and SFDP bytes replace fixtures without being rewritten
+  ---
+  duration_ms: 9.9375
+  type: 'test'
+  ...
+# Subtest: unknown, reserved, unaligned and read-only MMIO accesses remain explicit
+ok 172 - unknown, reserved, unaligned and read-only MMIO accesses remain explicit
+  ---
+  duration_ms: 1.4306
+  type: 'test'
+  ...
+# Subtest: LUT writes require key/unlock and can execute any of sixteen slots
+ok 173 - LUT writes require key/unlock and can execute any of sixteen slots
+  ---
+  duration_ms: 2.2441
+  type: 'test'
+  ...
+# Subtest: full sector erase/page programming/IP readback and FF padding match traffic
+ok 174 - full sector erase/page programming/IP readback and FF padding match traffic
+  ---
+  duration_ms: 12
+  type: 'test'
+  ...
+# Subtest: virtual chip permits offset0 and final-sector writes; writer must own APP1 policy
+ok 175 - virtual chip permits offset0 and final-sector writes; writer must own APP1 policy
+  ---
+  duration_ms: 1.9539
+  type: 'test'
+  ...
+# Subtest: programming performs NOR bitwise AND and consumes WEL
+ok 176 - programming performs NOR bitwise AND and consumes WEL
+  ---
+  duration_ms: 2.3621
+  type: 'test'
+  ...
+# Subtest: busy transitions are deterministic status polls, never physical timing evidence
+ok 177 - busy transitions are deterministic status polls, never physical timing evidence
+  ---
+  duration_ms: 2.8148
+  type: 'test'
+  ...
+# Subtest: reset preserves storage, clears controller/FIFO and requires fresh WREN
+ok 178 - reset preserves storage, clears controller/FIFO and requires fresh WREN
+  ---
+  duration_ms: 3.491
+  type: 'test'
+  ...
+# Subtest: controller software reset clears transient work without corrupting programmed bytes
+ok 179 - controller software reset clears transient work without corrupting programmed bytes
+  ---
+  duration_ms: 8.1989
+  type: 'test'
+  ...
+# Subtest: capacity, page crossing, erase alignment, missing WEL and unknown commands reject before mutation
+ok 180 - capacity, page crossing, erase alignment, missing WEL and unknown commands reject before mutation
+  ---
+  duration_ms: 43.7262
+  type: 'test'
+  ...
+# Subtest: altered LUT pad/address/dummy/data instructions and chained sequences remain unsupported
+ok 181 - altered LUT pad/address/dummy/data instructions and chained sequences remain unsupported
+  ---
+  duration_ms: 23.4724
+  type: 'test'
+  ...
+# Subtest: unsupported protection profile, injected command/RX/WEL/idle failures stay visible
+ok 182 - unsupported protection profile, injected command/RX/WEL/idle failures stay visible
+  ---
+  duration_ms: 3.4805
+  type: 'test'
+  ...
+# Subtest: XIP callback follows completed mutations and exposes optional corrupt-page readback
+ok 183 - XIP callback follows completed mutations and exposes optional corrupt-page readback
+  ---
+  duration_ms: 1.7114
+  type: 'test'
+  ...
+# Subtest: exported fixtures are independent arrays for parallel virtual boards
+ok 184 - exported fixtures are independent arrays for parallel virtual boards
+  ---
+  duration_ms: 4.8495
+  type: 'test'
+  ...
+# Subtest: APP1 uses the captured direct Thumb handoff and retains the raw bytes
+ok 185 - APP1 uses the captured direct Thumb handoff and retains the raw bytes
+  ---
+  duration_ms: 14.2479
+  type: 'test'
+  ...
+# Subtest: loader snapshots subarray and ArrayBuffer inputs before asynchronous hashing
+ok 186 - loader snapshots subarray and ArrayBuffer inputs before asynchronous hashing
+  ---
+  duration_ms: 2.0594
+  type: 'test'
+  ...
+# Subtest: APP1 admission covers the full application slot beyond historical 64 KiB
+ok 187 - APP1 admission covers the full application slot beyond historical 64 KiB
+  ---
+  duration_ms: 13.3384
+  type: 'test'
+  ...
+# Subtest: container, companion-image, blank and truncated inputs are refused
+ok 188 - container, companion-image, blank and truncated inputs are refused
+  ---
+  duration_ms: 1.6106
+  type: 'test'
+  ...
+# Subtest: original ABI1 metadata admits large images without changing the launch checkpoint
+ok 189 - original ABI1 metadata admits large images without changing the launch checkpoint
+  ---
+  duration_ms: 14.0116
+  type: 'test'
+  ...
+# Subtest: original ABI2 CRC detects payload and metadata changes
+ok 190 - original ABI2 CRC detects payload and metadata changes
+  ---
+  duration_ms: 16.6328
+  type: 'test'
+  ...
+# Subtest: full flash uses the resident IVT rather than treating the FCB as vectors
+ok 191 - full flash uses the resident IVT rather than treating the FCB as vectors
+  ---
+  duration_ms: 65.2947
+  type: 'test'
+  ...
+# Subtest: full-flash structural validation refuses wrong size, pointers and non-Thumb entries
+ok 192 - full-flash structural validation refuses wrong size, pointers and non-Thumb entries
+  ---
+  duration_ms: 56.3565
+  type: 'test'
+  ...
+# Subtest: DCD lengths cannot escape their envelope or leave a truncated command
+ok 193 - DCD lengths cannot escape their envelope or leave a truncated command
+  ---
+  duration_ms: 7.7108
+  type: 'test'
+  ...
+# Subtest: pinned original R13 is identified by exact hash, without guessed markers
+ok 194 - pinned original R13 is identified by exact hash, without guessed markers
+  ---
+  duration_ms: 126.3639
+  type: 'test'
+  ...
+# Subtest: pinned stock v5.52 bytes remain unchanged for their own scatter startup
+ok 195 - pinned stock v5.52 bytes remain unchanged for their own scatter startup
+  ---
+  duration_ms: 11.1565
+  type: 'test'
+  ...
+# Subtest: pinned APP0 is refused even when its file name is absent or misleading
+ok 196 - pinned APP0 is refused even when its file name is absent or misleading
+  ---
+  duration_ms: 39.7743
+  type: 'test'
+  ...
+# Subtest: preserved offline P1 envelope passes captured FCB, IVT and DCD structural checks
+ok 197 - preserved offline P1 envelope passes captured FCB, IVT and DCD structural checks
+  ---
+  duration_ms: 50.4321
+  type: 'test'
+  ...
+# Subtest: source pins identify the reviewed NXP driver, manual, and header
+ok 198 - source pins identify the reviewed NXP driver, manual, and header
+  ---
+  duration_ms: 2.4236
+  type: 'test'
+  ...
+# Subtest: reset uses source values with power-down clear and both oscillator statuses low
+ok 199 - reset uses source values with power-down clear and both oscillator statuses low
+  ---
+  duration_ms: 2.2262
+  type: 'test'
+  ...
+# Subtest: reads and control writes leave synthetic time unchanged
+ok 200 - reads and control writes leave synthetic time unchanged
+  ---
+  duration_ms: 0.9769
+  type: 'test'
+  ...
+# Subtest: NXP initialization sequence reaches each status only after its explicit tick phase
+ok 201 - NXP initialization sequence reaches each status only after its explicit tick phase
+  ---
+  duration_ms: 0.4815
+  type: 'test'
+  ...
+# Subtest: early detection uses only ticks after power-up, independent of tick batching
+ok 202 - early detection uses only ticks after power-up, independent of tick batching
+  ---
+  duration_ms: 0.4861
+  type: 'test'
+  ...
+# Subtest: power-down cancels a pending power-up and holds both status bits low
+ok 203 - power-down cancels a pending power-up and holds both status bits low
+  ---
+  duration_ms: 0.309
+  type: 'test'
+  ...
+# Subtest: toggle power-down clears a completed result and starts a fresh power-up
+ok 204 - toggle power-down clears a completed result and starts a fresh power-up
+  ---
+  duration_ms: 0.2852
+  type: 'test'
+  ...
+# Subtest: detector disable retains completed XTALOK and re-enable starts a new detection
+ok 205 - detector disable retains completed XTALOK and re-enable starts a new detection
+  ---
+  duration_ms: 0.2233
+  type: 'test'
+  ...
+# Subtest: detector disable cancels partial progress without completing it
+ok 206 - detector disable cancels partial progress without completing it
+  ---
+  duration_ms: 0.2476
+  type: 'test'
+  ...
+# Subtest: power-up failure leaves both statuses low even with detection enabled
+ok 207 - power-up failure leaves both statuses low even with detection enabled
+  ---
+  duration_ms: 0.4583
+  type: 'test'
+  ...
+# Subtest: frequency failure permits power-up readiness but never XTALOK or a fictitious bit17 error
+ok 208 - frequency failure permits power-up readiness but never XTALOK or a fictitious bit17 error
+  ---
+  duration_ms: 0.2452
+  type: 'test'
+  ...
+# Subtest: every SET/CLR/TOG alias reads zero at every aligned byte lane
+ok 209 - every SET/CLR/TOG alias reads zero at every aligned byte lane
+  ---
+  duration_ms: 0.3216
+  type: 'test'
+  ...
+# Subtest: primary byte and halfword writes preserve other documented control lanes
+ok 210 - primary byte and halfword writes preserve other documented control lanes
+  ---
+  duration_ms: 0.2537
+  type: 'test'
+  ...
+# Subtest: SET/CLR/TOG operate only on selected ones in the written byte lanes
+ok 211 - SET/CLR/TOG operate only on selected ones in the written byte lanes
+  ---
+  duration_ms: 0.1987
+  type: 'test'
+  ...
+# Subtest: unwritten high value bits cannot power down or enable detection during a narrow write
+ok 212 - unwritten high value bits cannot power down or enable detection during a narrow write
+  ---
+  duration_ms: 0.2326
+  type: 'test'
+  ...
+# Subtest: oscillator status and fixed source/bandgap fixtures cannot be written through any alias
+ok 213 - oscillator status and fixed source/bandgap fixtures cannot be written through any alias
+  ---
+  duration_ms: 0.27
+  type: 'test'
+  ...
+# Subtest: status lanes remain protected on byte and halfword writes
+ok 214 - status lanes remain protected on byte and halfword writes
+  ---
+  duration_ms: 0.1818
+  type: 'test'
+  ...
+# Subtest: unsigned VID_PLL_PREDIV survives word and subword reads without changing readiness
+ok 215 - unsigned VID_PLL_PREDIV survives word and subword reads without changing readiness
+  ---
+  duration_ms: 0.2309
+  type: 'test'
+  ...
+# Subtest: unrelated documented controls retain values while reserved fields stay zero
+ok 216 - unrelated documented controls retain values while reserved fields stay zero
+  ---
+  duration_ms: 0.1637
+  type: 'test'
+  ...
+# Subtest: register delay fields retain their source encoding without changing configured synthetic delays
+ok 217 - register delay fields retain their source encoding without changing configured synthetic delays
+  ---
+  duration_ms: 0.1389
+  type: 'test'
+  ...
+# Subtest: unknown, out-of-range, unaligned, and invalid-width accesses remain unhandled
+ok 218 - unknown, out-of-range, unaligned, and invalid-width accesses remain unhandled
+  ---
+  duration_ms: 0.2832
+  type: 'test'
+  ...
+# Subtest: reset restores registers and timing while keeping configured delay/failure fixtures
+ok 219 - reset restores registers and timing while keeping configured delay/failure fixtures
+  ---
+  duration_ms: 0.1885
+  type: 'test'
+  ...
+# Subtest: status returns independent configuration data
+ok 220 - status returns independent configuration data
+  ---
+  duration_ms: 0.1
+  type: 'test'
+  ...
+# Subtest: zero-duration phases need an explicit tick and invalid tick configuration is rejected
+ok 221 - zero-duration phases need an explicit tick and invalid tick configuration is rejected
+  ---
+  duration_ms: 0.8478
+  type: 'test'
+  ...
+# (node:14920) ExperimentalWarning: stripTypeScriptTypes is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: the page waits for load and USB same-ID status while unsolicited replies only publish
+ok 222 - the page waits for load and USB same-ID status while unsolicited replies only publish
+  ---
+  duration_ms: 252.1068
+  type: 'test'
+  ...
+# Subtest: the page generic reset clears an old mailbox and needs no guest boot steps
+ok 223 - the page generic reset clears an old mailbox and needs no guest boot steps
+  ---
+  duration_ms: 25.6922
+  type: 'test'
+  ...
+# Subtest: file replacement cancels a pending bridge import before worker creation
+ok 224 - file replacement cancels a pending bridge import before worker creation
+  ---
+  duration_ms: 24.4047
+  type: 'test'
+  ...
+# Subtest: old load rejection and completion cannot change a replacement file or release its busy state
+ok 225 - old load rejection and completion cannot change a replacement file or release its busy state
+  ---
+  duration_ms: 21.6383
+  type: 'test'
+  ...
+# Subtest: close cancels pending file reads and worker operations
+ok 226 - close cancels pending file reads and worker operations
+  ---
+  duration_ms: 11.0935
+  type: 'test'
+  ...
+# Subtest: suspend cancels pending file reads and worker operations
+ok 227 - suspend cancels pending file reads and worker operations
+  ---
+  duration_ms: 65.9189
+  type: 'test'
+  ...
+# Subtest: file read results and errors remain fresh across replacement
+ok 228 - file read results and errors remain fresh across replacement
+  ---
+  duration_ms: 8.223
+  type: 'test'
+  ...
+# Subtest: bridge observations preserve bounded command and USB ledgers without firmware bytes
+ok 229 - bridge observations preserve bounded command and USB ledgers without firmware bytes
+  ---
+  duration_ms: 344.2294
+  type: 'test'
+  ...
+# Subtest: a stalled bridge chunk times out before Worker creation and a late import cannot revive it
+ok 230 - a stalled bridge chunk times out before Worker creation and a late import cannot revive it
+  ---
+  duration_ms: 10.8816
+  type: 'test'
+  ...
+# Subtest: the run-publication watchdog closes only its owned bridge and leaves cached diagnostics
+ok 231 - the run-publication watchdog closes only its owned bridge and leaves cached diagnostics
+  ---
+  duration_ms: 20.2448
+  type: 'test'
+  ...
+# Subtest: only the most recent export intent downloads and replacement discards an old trace
+ok 232 - only the most recent export intent downloads and replacement discards an old trace
+  ---
+  duration_ms: 15.1126
+  type: 'test'
+  ...
+# Subtest: board routes ARM PLL aliases and lock ticks independently of a disabled GPT
+ok 233 - board routes ARM PLL aliases and lock ticks independently of a disabled GPT
+  ---
+  duration_ms: 36.7002
+  type: 'test'
+  ...
+# Subtest: board preserves ARM PLL missing-reference fixtures and chunks large independent ticks
+ok 234 - board preserves ARM PLL missing-reference fixtures and chunks large independent ticks
+  ---
+  duration_ms: 2.5251
+  type: 'test'
+  ...
+# Subtest: evidence identifies source-qualified ARM control and explicit synthetic limits
+ok 235 - evidence identifies source-qualified ARM control and explicit synthetic limits
+  ---
+  duration_ms: 6.8868
+  type: 'test'
+  ...
+# Subtest: literal reset is powered down, bypassed and output-enabled with LOCK low
+ok 236 - literal reset is powered down, bypassed and output-enabled with LOCK low
+  ---
+  duration_ms: 0.9499
+  type: 'test'
+  ...
+# Subtest: the independent NXP ARM initialization caller locks while bypass remains set
+ok 237 - the independent NXP ARM initialization caller locks while bypass remains set
+  ---
+  duration_ms: 0.5212
+  type: 'test'
+  ...
+# Subtest: reads and writes alone do not advance pending lock time
+ok 238 - reads and writes alone do not advance pending lock time
+  ---
+  duration_ms: 2.659
+  type: 'test'
+  ...
+# Subtest: unchanged divider/source writes preserve pending progress and completed lock
+ok 239 - unchanged divider/source writes preserve pending progress and completed lock
+  ---
+  duration_ms: 0.3555
+  type: 'test'
+  ...
+# Subtest: a changed divider removes stale LOCK and restarts its explicit delay
+ok 240 - a changed divider removes stale LOCK and restarts its explicit delay
+  ---
+  duration_ms: 0.2488
+  type: 'test'
+  ...
+# Subtest: changing reference source restarts pending and completed lock
+ok 241 - changing reference source restarts pending and completed lock
+  ---
+  duration_ms: 0.2439
+  type: 'test'
+  ...
+# Subtest: POWERDOWN clear enables locking and set cancels completed or pending progress
+ok 242 - POWERDOWN clear enables locking and set cancels completed or pending progress
+  ---
+  duration_ms: 0.1883
+  type: 'test'
+  ...
+# Subtest: toggled POWERDOWN follows the non-USB power polarity
+ok 243 - toggled POWERDOWN follows the non-USB power polarity
+  ---
+  duration_ms: 0.234
+  type: 'test'
+  ...
+# Subtest: ENABLE and BYPASS do not block analog locking or reset valid progress
+ok 244 - ENABLE and BYPASS do not block analog locking or reset valid progress
+  ---
+  duration_ms: 0.3286
+  type: 'test'
+  ...
+# Subtest: both supported reference sources require their explicit available fixtures
+ok 245 - both supported reference sources require their explicit available fixtures
+  ---
+  duration_ms: 0.3195
+  type: 'test'
+  ...
+# Subtest: reserved source codes remain stored and visible while conservatively holding LOCK low
+ok 246 - reserved source codes remain stored and visible while conservatively holding LOCK low
+  ---
+  duration_ms: 0.3397
+  type: 'test'
+  ...
+# Subtest: all 128 divider encodings are retained and only documented54..108 can lock
+ok 247 - all 128 divider encodings are retained and only documented54..108 can lock
+  ---
+  duration_ms: 0.6946
+  type: 'test'
+  ...
+# Subtest: fixed lock failure never completes and survives reset
+ok 248 - fixed lock failure never completes and survives reset
+  ---
+  duration_ms: 0.3671
+  type: 'test'
+  ...
+# Subtest: every SET CLR TOG alias reads zero at each aligned lane
+ok 249 - every SET CLR TOG alias reads zero at each aligned lane
+  ---
+  duration_ms: 0.247
+  type: 'test'
+  ...
+# Subtest: SET CLR TOG modify selected ones only and zeros leave state unchanged
+ok 250 - SET CLR TOG modify selected ones only and zeros leave state unchanged
+  ---
+  duration_ms: 0.2328
+  type: 'test'
+  ...
+# Subtest: primary and alias byte/halfword writes preserve untouched lanes
+ok 251 - primary and alias byte/halfword writes preserve untouched lanes
+  ---
+  duration_ms: 0.1676
+  type: 'test'
+  ...
+# Subtest: unwritten high value bits cannot power down select a reference or request a reserved selector
+ok 252 - unwritten high value bits cannot power down select a reference or request a reserved selector
+  ---
+  duration_ms: 0.147
+  type: 'test'
+  ...
+# Subtest: LOCK is protected through primary and alias full and narrow writes
+ok 253 - LOCK is protected through primary and alias full and narrow writes
+  ---
+  duration_ms: 0.2634
+  type: 'test'
+  ...
+# Subtest: reserved PLL_SEL writes stay zero, remain visible and cannot disturb valid lock
+ok 254 - reserved PLL_SEL writes stay zero, remain visible and cannot disturb valid lock
+  ---
+  duration_ms: 0.2809
+  type: 'test'
+  ...
+# Subtest: configuration mask excludes LOCK and all reserved bits without losing actual fields
+ok 255 - configuration mask excludes LOCK and all reserved bits without losing actual fields
+  ---
+  duration_ms: 0.1341
+  type: 'test'
+  ...
+# Subtest: equivalent batched ticks preserve pending and completed states
+ok 256 - equivalent batched ticks preserve pending and completed states
+  ---
+  duration_ms: 0.1991
+  type: 'test'
+  ...
+# Subtest: zero-delay lock still needs an explicit tick after eligible power-up
+ok 257 - zero-delay lock still needs an explicit tick after eligible power-up
+  ---
+  duration_ms: 0.1314
+  type: 'test'
+  ...
+# Subtest: tick bounds reject invalid delays and counts without mutating model state
+ok 258 - tick bounds reject invalid delays and counts without mutating model state
+  ---
+  duration_ms: 1.0861
+  type: 'test'
+  ...
+# Subtest: boolean fixtures are validated and status returns independent diagnostic copies
+ok 259 - boolean fixtures are validated and status returns independent diagnostic copies
+  ---
+  duration_ms: 0.5448
+  type: 'test'
+  ...
+# Subtest: reset restores source controls and clears progress while retaining fixed reference fixtures
+ok 260 - reset restores source controls and clears progress while retaining fixed reference fixtures
+  ---
+  duration_ms: 1.0493
+  type: 'test'
+  ...
+# Subtest: exact16-byte ownership leaves USB1 other PLLs PFD and handshakes unhandled
+ok 261 - exact16-byte ownership leaves USB1 other PLLs PFD and handshakes unhandled
+  ---
+  duration_ms: 78.3257
+  type: 'test'
+  ...
+# Subtest: malformed widths addresses and cross-lane accesses remain unhandled
+ok 262 - malformed widths addresses and cross-lane accesses remain unhandled
+  ---
+  duration_ms: 0.5619
+  type: 'test'
+  ...
+# Subtest: board owns USB2 aliases, lock ticks and status without changing neighboring PLL routes
+ok 263 - board owns USB2 aliases, lock ticks and status without changing neighboring PLL routes
+  ---
+  duration_ms: 7.6027
+  type: 'test'
+  ...
+# Subtest: USB2 board ticks remain independent of GPT and retain a failure fixture through reset
+ok 264 - USB2 board ticks remain independent of GPT and retain a failure fixture through reset
+  ---
+  duration_ms: 54.4019
+  type: 'test'
+  ...
+# Subtest: reset USB2 controls retain output/bypass with analog power off and no lock
+ok 265 - reset USB2 controls retain output/bypass with analog power off and no lock
+  ---
+  duration_ms: 2.1921
+  type: 'test'
+  ...
+# Subtest: NXP USB2 initializer waits while bypassed then selects locked output
+ok 266 - NXP USB2 initializer waits while bypassed then selects locked output
+  ---
+  duration_ms: 0.7206
+  type: 'test'
+  ...
+# Subtest: POWER has USB polarity and TOG powers off without trusting read-only LOCK
+ok 267 - POWER has USB polarity and TOG powers off without trusting read-only LOCK
+  ---
+  duration_ms: 0.2937
+  type: 'test'
+  ...
+# Subtest: output gates and bypass do not prevent analog lock or disturb progress
+ok 268 - output gates and bypass do not prevent analog lock or disturb progress
+  ---
+  duration_ms: 0.3037
+  type: 'test'
+  ...
+# Subtest: same configuration preserves delay but power divider and reference changes restart it
+ok 269 - same configuration preserves delay but power divider and reference changes restart it
+  ---
+  duration_ms: 0.2877
+  type: 'test'
+  ...
+# Subtest: source availability is explicit and reserved selectors remain visible without lock
+ok 270 - source availability is explicit and reserved selectors remain visible without lock
+  ---
+  duration_ms: 0.4543
+  type: 'test'
+  ...
+# Subtest: fixed failures and unavailable references survive reset without synthesized power
+ok 271 - fixed failures and unavailable references survive reset without synthesized power
+  ---
+  duration_ms: 6.9872
+  type: 'test'
+  ...
+# Subtest: all alias reads are zero and byte operations preserve independent lanes
+ok 272 - all alias reads are zero and byte operations preserve independent lanes
+  ---
+  duration_ms: 0.7461
+  type: 'test'
+  ...
+# Subtest: read-only LOCK and reserved bits cannot be written through any alias or bus lane
+ok 273 - read-only LOCK and reserved bits cannot be written through any alias or bus lane
+  ---
+  duration_ms: 0.5454
+  type: 'test'
+  ...
+# Subtest: reads and writes do not advance time; batches and explicit zero delay are deterministic
+ok 274 - reads and writes do not advance time; batches and explicit zero delay are deterministic
+  ---
+  duration_ms: 1.7278
+  type: 'test'
+  ...
+# Subtest: exact USB2 ownership leaves ARM USB1 SYS and adjacent reserved bytes unhandled
+ok 275 - exact USB2 ownership leaves ARM USB1 SYS and adjacent reserved bytes unhandled
+  ---
+  duration_ms: 0.4042
+  type: 'test'
+  ...
+# Subtest: invalid ticks fixtures and mutable status copies cannot change the controller
+ok 276 - invalid ticks fixtures and mutable status copies cannot change the controller
+  ---
+  duration_ms: 0.9545
+  type: 'test'
+  ...
+# Subtest: VIDEO board routing owns only its control aliases and two fractional words
+ok 277 - VIDEO board routing owns only its control aliases and two fractional words
+  ---
+  duration_ms: 9.8365
+  type: 'test'
+  ...
+# Subtest: VIDEO synthetic clock advances with GPT stopped and retains its failure fixture after reset
+ok 278 - VIDEO synthetic clock advances with GPT stopped and retains its failure fixture after reset
+  ---
+  duration_ms: 2.4873
+  type: 'test'
+  ...
+# Subtest: primary addresses masks and literal reset words match the NXP VIDEO contract
+ok 279 - primary addresses masks and literal reset words match the NXP VIDEO contract
+  ---
+  duration_ms: 5.7596
+  type: 'test'
+  ...
+# Subtest: reset keeps the literal invalid divider powered down with valid fractional defaults
+ok 280 - reset keeps the literal invalid divider powered down with valid fractional defaults
+  ---
+  duration_ms: 1.0807
+  type: 'test'
+  ...
+# Subtest: the pinned SDK initializer preserves its exact RMW order and external MISC2 write
+ok 281 - the pinned SDK initializer preserves its exact RMW order and external MISC2 write
+  ---
+  duration_ms: 1.9072
+  type: 'test'
+  ...
+# Subtest: the SDK OR operation retains inherited POST bits including reserved code3
+ok 282 - the SDK OR operation retains inherited POST bits including reserved code3
+  ---
+  duration_ms: 2.3139
+  type: 'test'
+  ...
+# Subtest: reads and masked-identical writes never advance pending lock time
+ok 283 - reads and masked-identical writes never advance pending lock time
+  ---
+  duration_ms: 1.3355
+  type: 'test'
+  ...
+# Subtest: unchanged loop source and fractional writes preserve pending and completed lock
+ok 284 - unchanged loop source and fractional writes preserve pending and completed lock
+  ---
+  duration_ms: 0.7001
+  type: 'test'
+  ...
+# Subtest: actual loop changes clear pending and completed lock and restart the delay
+ok 285 - actual loop changes clear pending and completed lock and restart the delay
+  ---
+  duration_ms: 0.4191
+  type: 'test'
+  ...
+# Subtest: actual reference changes clear pending and completed lock
+ok 286 - actual reference changes clear pending and completed lock
+  ---
+  duration_ms: 0.236
+  type: 'test'
+  ...
+# Subtest: analog POWERDOWN polarity and all aliases cancel pending or completed lock
+ok 287 - analog POWERDOWN polarity and all aliases cancel pending or completed lock
+  ---
+  duration_ms: 0.2621
+  type: 'test'
+  ...
+# Subtest: ENABLE BYPASS and every post-divider code preserve valid analog lock progress
+ok 288 - ENABLE BYPASS and every post-divider code preserve valid analog lock progress
+  ---
+  duration_ms: 0.6574
+  type: 'test'
+  ...
+# Subtest: all 128 loop divider encodings are retained and only documented27..54 can lock
+ok 289 - all 128 loop divider encodings are retained and only documented27..54 can lock
+  ---
+  duration_ms: 1.0735
+  type: 'test'
+  ...
+# Subtest: supported source availability comes only from the fixed environmental fixtures
+ok 290 - supported source availability comes only from the fixed environmental fixtures
+  ---
+  duration_ms: 0.3808
+  type: 'test'
+  ...
+# Subtest: reserved reference codes2 and3 remain stored and conservatively stall LOCK
+ok 291 - reserved reference codes2 and3 remain stored and conservatively stall LOCK
+  ---
+  duration_ms: 0.5716
+  type: 'test'
+  ...
+# Subtest: NUM is signed30 while DENOM is unsigned30 and upper bits read zero
+ok 292 - NUM is signed30 while DENOM is unsigned30 and upper bits read zero
+  ---
+  duration_ms: 0.2303
+  type: 'test'
+  ...
+# Subtest: fraction eligibility uses strict absolute signed numerator less than denominator
+ok 293 - fraction eligibility uses strict absolute signed numerator less than denominator
+  ---
+  duration_ms: 0.6068
+  type: 'test'
+  ...
+# Subtest: zero denominator remains stored and conservatively stalls even zero numerator
+ok 294 - zero denominator remains stored and conservatively stalls even zero numerator
+  ---
+  duration_ms: 0.3333
+  type: 'test'
+  ...
+# Subtest: actual NUM and DENOM changes clear pending and completed lock independently
+ok 295 - actual NUM and DENOM changes clear pending and completed lock independently
+  ---
+  duration_ms: 0.2317
+  type: 'test'
+  ...
+# Subtest: invalid fractional changes discard stale LOCK and recovery needs a fresh delay
+ok 296 - invalid fractional changes discard stale LOCK and recovery needs a fresh delay
+  ---
+  duration_ms: 0.1582
+  type: 'test'
+  ...
+# Subtest: SET CLR TOG aliases read zero at all aligned lanes
+ok 297 - SET CLR TOG aliases read zero at all aligned lanes
+  ---
+  duration_ms: 0.2614
+  type: 'test'
+  ...
+# Subtest: control aliases act only on selected ones and preserve zero writes
+ok 298 - control aliases act only on selected ones and preserve zero writes
+  ---
+  duration_ms: 0.1817
+  type: 'test'
+  ...
+# Subtest: control byte and halfword accesses preserve untouched lanes
+ok 299 - control byte and halfword accesses preserve untouched lanes
+  ---
+  duration_ms: 0.2927
+  type: 'test'
+  ...
+# Subtest: fractional byte and halfword accesses are little endian with protected upper bits
+ok 300 - fractional byte and halfword accesses are little endian with protected upper bits
+  ---
+  duration_ms: 1.2285
+  type: 'test'
+  ...
+# Subtest: unwritten value bits cannot affect another lane or fractional upper fields
+ok 301 - unwritten value bits cannot affect another lane or fractional upper fields
+  ---
+  duration_ms: 0.2708
+  type: 'test'
+  ...
+# Subtest: LOCK stays read only through every control alias and lane width
+ok 302 - LOCK stays read only through every control alias and lane width
+  ---
+  duration_ms: 0.2885
+  type: 'test'
+  ...
+# Subtest: reserved control bits remain zero while every actual field remains writable
+ok 303 - reserved control bits remain zero while every actual field remains writable
+  ---
+  duration_ms: 0.1511
+  type: 'test'
+  ...
+# Subtest: equivalent batched ticks preserve the same pending and completed state
+ok 304 - equivalent batched ticks preserve the same pending and completed state
+  ---
+  duration_ms: 0.1729
+  type: 'test'
+  ...
+# Subtest: zero-delay lock still requires an explicit tick after eligibility or parameter change
+ok 305 - zero-delay lock still requires an explicit tick after eligibility or parameter change
+  ---
+  duration_ms: 0.1147
+  type: 'test'
+  ...
+# Subtest: tick bounds reject invalid counts and delays without changing model state
+ok 306 - tick bounds reject invalid counts and delays without changing model state
+  ---
+  duration_ms: 1.2637
+  type: 'test'
+  ...
+# Subtest: fixed lock failure never completes and remains fixed after reset
+ok 307 - fixed lock failure never completes and remains fixed after reset
+  ---
+  duration_ms: 13.978
+  type: 'test'
+  ...
+# Subtest: boolean fixtures are validated and status snapshots cannot alter future state
+ok 308 - boolean fixtures are validated and status snapshots cannot alter future state
+  ---
+  duration_ms: 0.8365
+  type: 'test'
+  ...
+# Subtest: reset restores all three words and progress but retains the fixed fixtures
+ok 309 - reset restores all three words and progress but retains the fixed fixtures
+  ---
+  duration_ms: 0.4105
+  type: 'test'
+  ...
+# Subtest: exact24-byte ownership leaves NUM DENOM reserved holes and neighboring blocks unhandled
+ok 310 - exact24-byte ownership leaves NUM DENOM reserved holes and neighboring blocks unhandled
+  ---
+  duration_ms: 0.7076
+  type: 'test'
+  ...
+# Subtest: malformed widths addresses and cross-lane accesses remain unhandled without mutation
+ok 311 - malformed widths addresses and cross-lane accesses remain unhandled without mutation
+  ---
+  duration_ms: 0.4627
+  type: 'test'
+  ...
+# Subtest: reset contract parser owns its exact bounded request and normalizes complete hashes
+ok 312 - reset contract parser owns its exact bounded request and normalizes complete hashes
+  ---
+  duration_ms: 1.7165
+  type: 'test'
+  ...
+# Subtest: reset contracts reject missing identities, invalid extents and arbitrary entry controls
+ok 313 - reset contracts reject missing identities, invalid extents and arbitrary entry controls
+  ---
+  duration_ms: 0.5956
+  type: 'test'
+  ...
+# Subtest: explicit raw APP1 extent admits every target byte beyond the old image length
+ok 314 - explicit raw APP1 extent admits every target byte beyond the old image length
+  ---
+  duration_ms: 12.4973
+  type: 'test'
+  ...
+# Subtest: explicit target identity rejects partial programming and incomplete retained NOR
+ok 315 - explicit target identity rejects partial programming and incomplete retained NOR
+  ---
+  duration_ms: 3.0404
+  type: 'test'
+  ...
+# Subtest: matching SHA cannot bypass original APP1 structural admission
+ok 316 - matching SHA cannot bypass original APP1 structural admission
+  ---
+  duration_ms: 5.1598
+  type: 'test'
+  ...
+# Subtest: reset helper rejects stale current hashes and full-flash sessions
+ok 317 - reset helper rejects stale current hashes and full-flash sessions
+  ---
+  duration_ms: 3.4467
+  type: 'test'
+  ...
+# Subtest: reset helper snapshots the request and detects retained target mutation during hashing
+ok 318 - reset helper snapshots the request and detects retained target mutation during hashing
+  ---
+  duration_ms: 2.6967
+  type: 'test'
+  ...
+# Subtest: reset helper detects running-image byte mutation during hashing
+ok 319 - reset helper detects running-image byte mutation during hashing
+  ---
+  duration_ms: 1.7152
+  type: 'test'
+  ...
+# Subtest: B1 selector source admission requires its exact wrapped-R3 length and SHA
+ok 320 - B1 selector source admission requires its exact wrapped-R3 length and SHA
+  ---
+  duration_ms: 3.1375
+  type: 'test'
+  ...
+# Subtest: exact B1 source pin still requires the complete retained target hash
+ok 321 - exact B1 source pin still requires the complete retained target hash
+  ---
+  duration_ms: 8.6893
+  type: 'test'
+  ...
+# Subtest: explicit session reset validates the complete larger target before recreating a fake CPU
+ok 322 - explicit session reset validates the complete larger target before recreating a fake CPU
+  ---
+  duration_ms: 52.2397
+  type: 'test'
+  ...
+# Subtest: malformed, stale and mismatched reset contracts leave the live session intact
+ok 323 - malformed, stale and mismatched reset contracts leave the live session intact
+  ---
+  duration_ms: 7.4208
+  type: 'test'
+  ...
+# Subtest: reset rehashes the owned running image rather than trusting stale hash metadata
+ok 324 - reset rehashes the owned running image rather than trusting stale hash metadata
+  ---
+  duration_ms: 5.2464
+  type: 'test'
+  ...
+# Subtest: session reset detects any retained NOR mutation during async SHA before closing its CPU
+ok 325 - session reset detects any retained NOR mutation during async SHA before closing its CPU
+  ---
+  duration_ms: 5.1941
+  type: 'test'
+  ...
+# Subtest: session reset refuses a replaced running image during async validation
+ok 326 - session reset refuses a replaced running image during async validation
+  ---
+  duration_ms: 6.1057
+  type: 'test'
+  ...
+# Subtest: session reset detects executable image metadata changes during async validation
+ok 327 - session reset detects executable image metadata changes during async validation
+  ---
+  duration_ms: 33.0733
+  type: 'test'
+  ...
+# Subtest: session reset does not reopen a session closed during SHA validation
+ok 328 - session reset does not reopen a session closed during SHA validation
+  ---
+  duration_ms: 6.4658
+  type: 'test'
+  ...
+# Subtest: legacy reset preserves old raw-image length and original ABI declared-length behavior
+ok 329 - legacy reset preserves old raw-image length and original ABI declared-length behavior
+  ---
+  duration_ms: 7.7345
+  type: 'test'
+  ...
+# Subtest: B1 DEL runtime reset remains blocked before any CPU, image or board mutation
+ok 330 - B1 DEL runtime reset remains blocked before any CPU, image or board mutation
+  ---
+  duration_ms: 2.2733
+  type: 'test'
+  ...
+# (node:7436) ExperimentalWarning: stripTypeScriptTypes is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: fixture admission copies only an exact view and isolates both slots
+ok 331 - fixture admission copies only an exact view and isolates both slots
+  ---
+  duration_ms: 33.7556
+  type: 'test'
+  ...
+# Subtest: ArrayBuffer fixture admission owns bytes and exposes safe geometry metadata
+ok 332 - ArrayBuffer fixture admission owns bytes and exposes safe geometry metadata
+  ---
+  duration_ms: 18.9936
+  type: 'test'
+  ...
+# Subtest: typed-array subclass copy hooks cannot substitute a caller backing buffer
+ok 333 - typed-array subclass copy hooks cannot substitute a caller backing buffer
+  ---
+  duration_ms: 0.8158
+  type: 'test'
+  ...
+# Subtest: SD diagnostics keep only admitted metadata, including nested diagnostics
+ok 334 - SD diagnostics keep only admitted metadata, including nested diagnostics
+  ---
+  duration_ms: 120.7451
+  type: 'test'
+  ...
+# Subtest: bad fixture types, detached buffers and shared-backed views reject without content disclosure
+ok 335 - bad fixture types, detached buffers and shared-backed views reject without content disclosure
+  ---
+  duration_ms: 28.6023
+  type: 'test'
+  ...
+# Subtest: fixture capacity rejects underflow, overflow and partial geometry without padding
+ok 336 - fixture capacity rejects underflow, overflow and partial geometry without padding
+  ---
+  duration_ms: 2.0412
+  type: 'test'
+  ...
+# Subtest: RPC load transfers copied cards while subscribers receive no backing bytes
+ok 337 - RPC load transfers copied cards while subscribers receive no backing bytes
+  ---
+  duration_ms: 94.436
+  type: 'test'
+  ...
+# Subtest: invalid RPC card replacement sends nothing and preserves earlier session state
+ok 338 - invalid RPC card replacement sends nothing and preserves earlier session state
+  ---
+  duration_ms: 49.2444
+  type: 'test'
+  ...
+# Subtest: pre-cancelled card load does not detach the caller or reach the Worker
+ok 339 - pre-cancelled card load does not detach the caller or reach the Worker
+  ---
+  duration_ms: 26.2979
+  type: 'test'
+  ...
+# Subtest: two RPC Workers and both slots retain separate local ownership
+ok 340 - two RPC Workers and both slots retain separate local ownership
+  ---
+  duration_ms: 44.9837
+  type: 'test'
+  ...
+# Subtest: production Worker validates both cards before pause, module creation or old-session replacement
+ok 341 - production Worker validates both cards before pause, module creation or old-session replacement
+  ---
+  duration_ms: 41.8901
+  type: 'test'
+  ...
+# Subtest: production Worker replacement admits owned slots and retains them on reset
+ok 342 - production Worker replacement admits owned slots and retains them on reset
+  ---
+  duration_ms: 34.4614
+  type: 'test'
+  ...
+# Subtest: subscriber mutation cannot change transferred cards or another subscriber metadata
+ok 343 - subscriber mutation cannot change transferred cards or another subscriber metadata
+  ---
+  duration_ms: 18.9427
+  type: 'test'
+  ...
+# Subtest: reply snapshots and traces discard unexpected raw SD content before subscribers or callers see it
+ok 344 - reply snapshots and traces discard unexpected raw SD content before subscribers or callers see it
+  ---
+  duration_ms: 17.2126
+  type: 'test'
+  ...
+# Subtest: invalid SD reply diagnostics terminate with safe cached evidence
+ok 345 - invalid SD reply diagnostics terminate with safe cached evidence
+  ---
+  duration_ms: 55.3273
+  type: 'test'
+  ...
+# Subtest: direct session construction owns exact typed-array views and ArrayBuffer cards immediately
+ok 346 - direct session construction owns exact typed-array views and ArrayBuffer cards immediately
+  ---
+  duration_ms: 78.3305
+  type: 'test'
+  ...
+# Subtest: createSession owns both cards before asynchronous firmware admission starts
+ok 347 - createSession owns both cards before asynchronous firmware admission starts
+  ---
+  duration_ms: 23.71
+  type: 'test'
+  ...
+# Subtest: each session and slot owns separate card data, protocol state and diagnostics
+ok 348 - each session and slot owns separate card data, protocol state and diagnostics
+  ---
+  duration_ms: 14.0167
+  type: 'test'
+  ...
+# Subtest: different cards route independent sector data and fixed controller identities
+ok 349 - different cards route independent sector data and fixed controller identities
+  ---
+  duration_ms: 30.6852
+  type: 'test'
+  ...
+# Subtest: invalid raw card types and geometry reject before firmware hashing or CPU construction
+ok 350 - invalid raw card types and geometry reject before firmware hashing or CPU construction
+  ---
+  duration_ms: 17.4794
+  type: 'test'
+  ...
+# Subtest: shared and detached card buffers reject before admission
+ok 351 - shared and detached card buffers reject before admission
+  ---
+  duration_ms: 1.0687
+  type: 'test'
+  ...
+# Subtest: no supplied cards leaves both USDHC windows unknown in session diagnostics
+ok 352 - no supplied cards leaves both USDHC windows unknown in session diagnostics
+  ---
+  duration_ms: 1.7603
+  type: 'test'
+  ...
+# Subtest: supplying one slot never aliases or implicitly creates the absent slot
+ok 353 - supplying one slot never aliases or implicitly creates the absent slot
+  ---
+  duration_ms: 22.1675
+  type: 'test'
+  ...
+# Subtest: session reset retains card bytes and protocol while resetting both host controllers and CPU
+ok 354 - session reset retains card bytes and protocol while resetting both host controllers and CPU
+  ---
+  duration_ms: 45.8261
+  type: 'test'
+  ...
+# Subtest: reset clears pending host commands without completing them or resetting card state
+ok 355 - reset clears pending host commands without completing them or resetting card state
+  ---
+  duration_ms: 22.0452
+  type: 'test'
+  ...
+# Subtest: reset during unfinished PIO retains sending-data and records its model limitation
+ok 356 - reset during unfinished PIO retains sending-data and records its model limitation
+  ---
+  duration_ms: 17.7718
+  type: 'test'
+  ...
+# Subtest: snapshot and trace expose owned metadata and diagnostics without raw card bytes
+ok 357 - snapshot and trace expose owned metadata and diagnostics without raw card bytes
+  ---
+  duration_ms: 44.6792
+  type: 'test'
+  ...
+# Subtest: R16B small ABI1 update pins the recipient and forwards the complete reset extent
+ok 358 - R16B small ABI1 update pins the recipient and forwards the complete reset extent
+  ---
+  duration_ms: 53.4706
+  type: 'test'
+  ...
+# Subtest: R16B normal marker alone cannot admit an unpinned, stale or substituted running image
+ok 359 - R16B normal marker alone cannot admit an unpinned, stale or substituted running image
+  ---
+  duration_ms: 24.8204
+  type: 'test'
+  ...
+# Subtest: R16B capacity does not admit generic larger ABI1 or ABI2
+ok 360 - R16B capacity does not admit generic larger ABI1 or ABI2
+  ---
+  duration_ms: 9.1686
+  type: 'test'
+  ...
+# Subtest: R16B stale replacement and partial completion cannot reach reset
+ok 361 - R16B stale replacement and partial completion cannot reach reset
+  ---
+  duration_ms: 21.0203
+  type: 'test'
+  ...
+# Subtest: R48 small ABI1 update pins the recipient and forwards the complete reset extent
+ok 362 - R48 small ABI1 update pins the recipient and forwards the complete reset extent
+  ---
+  duration_ms: 5.2449
+  type: 'test'
+  ...
+# Subtest: R48 normal marker alone cannot admit an unpinned, stale or substituted running image
+ok 363 - R48 normal marker alone cannot admit an unpinned, stale or substituted running image
+  ---
+  duration_ms: 32.2121
+  type: 'test'
+  ...
+# Subtest: R48 capacity does not admit generic larger ABI1 or ABI2
+ok 364 - R48 capacity does not admit generic larger ABI1 or ABI2
+  ---
+  duration_ms: 6.7544
+  type: 'test'
+  ...
+# Subtest: R48 stale replacement and partial completion cannot reach reset
+ok 365 - R48 stale replacement and partial completion cannot reach reset
+  ---
+  duration_ms: 10.8655
+  type: 'test'
+  ...
+# Subtest: unretained R48 proof and excluded R16B proof are not recipient profiles
+ok 366 - unretained R48 proof and excluded R16B proof are not recipient profiles
+  ---
+  duration_ms: 1.2942
+  type: 'test'
+  ...
+# Subtest: small preparation owns caller bytes and identifies both target and bounded protocol work
+ok 367 - small preparation owns caller bytes and identifies both target and bounded protocol work
+  ---
+  duration_ms: 1.9078
+  type: 'test'
+  ...
+# Subtest: R16B exact full target is prepared with explicit execution blockers
+ok 368 - R16B exact full target is prepared with explicit execution blockers
+  ---
+  duration_ms: 56.4276
+  type: 'test'
+  ...
+# Subtest: R48 exact full target is prepared with explicit execution blockers
+ok 369 - R48 exact full target is prepared with explicit execution blockers
+  ---
+  duration_ms: 64.4907
+  type: 'test'
+  ...
+# Subtest: CRC matches independent IEEE vectors and command payload has no report-ID prefix
+ok 370 - CRC matches independent IEEE vectors and command payload has no report-ID prefix
+  ---
+  duration_ms: 1.6332
+  type: 'test'
+  ...
+# Subtest: separate preflight is read-only and validates both fixed diagnostic pages
+ok 371 - separate preflight is read-only and validates both fixed diagnostic pages
+  ---
+  duration_ms: 1.128
+  type: 'test'
+  ...
+# Subtest: complete R13 to R14 requires separate status and exact fresh boot identity
+ok 372 - complete R13 to R14 requires separate status and exact fresh boot identity
+  ---
+  duration_ms: 6.2279
+  type: 'test'
+  ...
+# Subtest: complete R14 to R13 requires separate status and exact fresh boot identity
+ok 373 - complete R14 to R13 requires separate status and exact fresh boot identity
+  ---
+  duration_ms: 10.0518
+  type: 'test'
+  ...
+# Subtest: complete R15 to R15 proof requires separate status and exact fresh boot identity
+ok 374 - complete R15 to R15 proof requires separate status and exact fresh boot identity
+  ---
+  duration_ms: 6.7128
+  type: 'test'
+  ...
+# Subtest: 65536-byte ABI1 upper bound uploads exact ordered chunks and verifies all 16 sectors
+ok 375 - 65536-byte ABI1 upper bound uploads exact ordered chunks and verifies all 16 sectors
+  ---
+  duration_ms: 98.5728
+  type: 'test'
+  ...
+# Subtest: invalid image size, ABI metadata, hash or unsupported target sends no USB command
+ok 376 - invalid image size, ABI metadata, hash or unsupported target sends no USB command
+  ---
+  duration_ms: 8.1831
+  type: 'test'
+  ...
+# Subtest: unknown running writer, non-idle transaction and mismatched pinned marker stop before probe
+ok 377 - unknown running writer, non-idle transaction and mismatched pinned marker stop before probe
+  ---
+  duration_ms: 3.2153
+  type: 'test'
+  ...
+# Subtest: probe errors, chip mismatch and bounded pending probe never send BEGIN
+ok 378 - probe errors, chip mismatch and bounded pending probe never send BEGIN
+  ---
+  duration_ms: 3.8231
+  type: 'test'
+  ...
+# Subtest: diagnostic signature, page index, measured bytes and geometry flags are checked before upload
+ok 379 - diagnostic signature, page index, measured bytes and geometry flags are checked before upload
+  ---
+  duration_ms: 5.0603
+  type: 'test'
+  ...
+# Subtest: report-ID-prefixed and truncated responses fail the 64-byte virtual transport contract
+ok 380 - report-ID-prefixed and truncated responses fail the 64-byte virtual transport contract
+  ---
+  duration_ms: 1.0075
+  type: 'test'
+  ...
+# Subtest: ordered DATA acknowledgement and RAM verification each gate COMMIT
+ok 381 - ordered DATA acknowledgement and RAM verification each gate COMMIT
+  ---
+  duration_ms: 10.9118
+  type: 'test'
+  ...
+# Subtest: programmed byte count alone cannot establish full-sector flash verification
+ok 382 - programmed byte count alone cannot establish full-sector flash verification
+  ---
+  duration_ms: 17.5114
+  type: 'test'
+  ...
+# Subtest: separate completion status failure preserves session without attempting reset
+ok 383 - separate completion status failure preserves session without attempting reset
+  ---
+  duration_ms: 5.1453
+  type: 'test'
+  ...
+# Subtest: pre-reset unsupported MMIO and stale model diagnostics cannot be erased by a successful reset
+ok 384 - pre-reset unsupported MMIO and stale model diagnostics cannot be erased by a successful reset
+  ---
+  duration_ms: 11.4508
+  type: 'test'
+  ...
+# Subtest: fresh marker, fresh BSS and executed candidate hash all gate boot completion
+ok 385 - fresh marker, fresh BSS and executed candidate hash all gate boot completion
+  ---
+  duration_ms: 13.4901
+  type: 'test'
+  ...
+# Subtest: the host owns candidate bytes and accepts the same entry envelope as the source validator
+ok 386 - the host owns candidate bytes and accepts the same entry envelope as the source validator
+  ---
+  duration_ms: 4.2511
+  type: 'test'
+  ...
+# Subtest: a guest fault or unsupported MMIO after new-image boot prevents a completed receipt
+ok 387 - a guest fault or unsupported MMIO after new-image boot prevents a completed receipt
+  ---
+  duration_ms: 9.3682
+  type: 'test'
+  ...
+# Subtest: missing snapshot and invalid polling bounds fail setup
+ok 388 - missing snapshot and invalid polling bounds fail setup
+  ---
+  duration_ms: 0.7
+  type: 'test'
+  ...
+# Subtest: concurrent clients and timeout retries cannot overlap an outstanding transport call
+ok 389 - concurrent clients and timeout retries cannot overlap an outstanding transport call
+  ---
+  duration_ms: 44.7911
+  type: 'test'
+  ...
+# Subtest: cancellation after COMMIT neither resets the guest nor sends an automatic ABORT
+ok 390 - cancellation after COMMIT neither resets the guest nor sends an automatic ABORT
+  ---
+  duration_ms: 4.4106
+  type: 'test'
+  ...
+# Subtest: USB1 uses documented base/IRQ and rejects unknown or crossing MMIO accesses
+ok 391 - USB1 uses documented base/IRQ and rejects unknown or crossing MMIO accesses
+  ---
+  duration_ms: 2.2156
+  type: 'test'
+  ...
+# Subtest: controller reset self-clears and masks the endpoint-list alignment
+ok 392 - controller reset self-clears and masks the endpoint-list alignment
+  ---
+  duration_ms: 0.6739
+  type: 'test'
+  ...
+# Subtest: SETUP copies eight bytes to dQH+40 and breaks the setup tripwire
+ok 393 - SETUP copies eight bytes to dQH+40 and breaks the setup tripwire
+  ---
+  duration_ms: 7.1771
+  type: 'test'
+  ...
+# Subtest: R13/R16B dTD layout sends descriptor bytes and updates DMA token/overlay
+ok 394 - R13/R16B dTD layout sends descriptor bytes and updates DMA token/overlay
+  ---
+  duration_ms: 1.632
+  type: 'test'
+  ...
+# Subtest: OUT report DMA preserves all 64 payload bytes and retires ACTIVE
+ok 395 - OUT report DMA preserves all 64 payload bytes and retires ACTIVE
+  ---
+  duration_ms: 0.5704
+  type: 'test'
+  ...
+# Subtest: short OUT packets expose residual length for firmware validation
+ok 396 - short OUT packets expose residual length for firmware validation
+  ---
+  duration_ms: 0.4636
+  type: 'test'
+  ...
+# Subtest: host IN packets honor endpoint packet size until the dTD is complete
+ok 397 - host IN packets honor endpoint packet size until the dTD is complete
+  ---
+  duration_ms: 0.8005
+  type: 'test'
+  ...
+# Subtest: IN and OUT DMA cross noncontiguous descriptor pages
+ok 398 - IN and OUT DMA cross noncontiguous descriptor pages
+  ---
+  duration_ms: 0.951
+  type: 'test'
+  ...
+# Subtest: chained active descriptors continue without another firmware prime
+ok 399 - chained active descriptors continue without another firmware prime
+  ---
+  duration_ms: 0.6018
+  type: 'test'
+  ...
+# Subtest: all eight endpoint pairs own separate dQHs and completion bits
+ok 400 - all eight endpoint pairs own separate dQHs and completion bits
+  ---
+  duration_ms: 1.7218
+  type: 'test'
+  ...
+# Subtest: automatic IN zero termination emits a ZLP after an exact packet multiple
+ok 401 - automatic IN zero termination emits a ZLP after an exact packet multiple
+  ---
+  duration_ms: 0.4416
+  type: 'test'
+  ...
+# Subtest: staged device address activates only when EP0 status IN is acknowledged
+ok 402 - staged device address activates only when EP0 status IN is acknowledged
+  ---
+  duration_ms: 0.4502
+  type: 'test'
+  ...
+# Subtest: STALL blocks data tokens and a fresh SETUP clears STALL/old endpoint queues
+ok 403 - STALL blocks data tokens and a fresh SETUP clears STALL/old endpoint queues
+  ---
+  duration_ms: 0.3932
+  type: 'test'
+  ...
+# Subtest: flush synchronously cancels queues without fabricating completed packets
+ok 404 - flush synchronously cancels queues without fabricating completed packets
+  ---
+  duration_ms: 0.5148
+  type: 'test'
+  ...
+# Subtest: bus reset clears controller transaction state and preserves firmware RAM
+ok 405 - bus reset clears controller transaction state and preserves firmware RAM
+  ---
+  duration_ms: 0.5147
+  type: 'test'
+  ...
+# Subtest: enabled IRQ113 reflects latched W1C status and byte-lane acknowledgments
+ok 406 - enabled IRQ113 reflects latched W1C status and byte-lane acknowledgments
+  ---
+  duration_ms: 0.684
+  type: 'test'
+  ...
+# Subtest: oversized OUT packets halt the dTD and raise a controller error
+ok 407 - oversized OUT packets halt the dTD and raise a controller error
+  ---
+  duration_ms: 0.5096
+  type: 'test'
+  ...
+# Subtest: unmapped DMA fails visibly and can be rebound before a new transfer
+ok 408 - unmapped DMA fails visibly and can be rebound before a new transfer
+  ---
+  duration_ms: 0.7153
+  type: 'test'
+  ...
+# Subtest: absent SD fixtures retain unknown MMIO across both exact windows and boundaries
+ok 409 - absent SD fixtures retain unknown MMIO across both exact windows and boundaries
+  ---
+  duration_ms: 47.7222
+  type: 'test'
+  ...
+# Subtest: runtime instance and callback overrides cannot change fixed board routes
+ok 410 - runtime instance and callback overrides cannot change fixed board routes
+  ---
+  duration_ms: 44.3069
+  type: 'test'
+  ...
+# Subtest: register lanes preserve neighboring bytes and reads apply the lane exactly once
+ok 411 - register lanes preserve neighboring bytes and reads apply the lane exactly once
+  ---
+  duration_ms: 25.932
+  type: 'test'
+  ...
+# Subtest: unsupported status/force writes retain unknown evidence while qualified read-only writes are ignored
+ok 412 - unsupported status/force writes retain unknown evidence while qualified read-only writes are ignored
+  ---
+  duration_ms: 23.4141
+  type: 'test'
+  ...
+# Subtest: board MMIO completes single-sector and finite two-block PIO with short block tails
+ok 413 - board MMIO completes single-sector and finite two-block PIO with short block tails
+  ---
+  duration_ms: 22.7295
+  type: 'test'
+  ...
+# Subtest: byte-lane W1C deasserts the controller IRQ while NVIC pending needs its own acknowledgment
+ok 414 - byte-lane W1C deasserts the controller IRQ while NVIC pending needs its own acknowledgment
+  ---
+  duration_ms: 23.9224
+  type: 'test'
+  ...
+# Subtest: SD commands advance with disabled, stalled and read-driven GPT without read-driven SD time
+ok 415 - SD commands advance with disabled, stalled and read-driven GPT without read-driven SD time
+  ---
+  duration_ms: 59.1923
+  type: 'test'
+  ...
+# Subtest: unsupported lanes and write classification cannot consume active PIO data or launch commands
+ok 416 - unsupported lanes and write classification cannot consume active PIO data or launch commands
+  ---
+  duration_ms: 24.5
+  type: 'test'
+  ...
+# Subtest: board reset preserves card protocol, owned image and diagnostics while clearing controller work and IRQs
+ok 417 - board reset preserves card protocol, owned image and diagnostics while clearing controller work and IRQs
+  ---
+  duration_ms: 19.2097
+  type: 'test'
+  ...
+# Subtest: removal abandons active PIO without fabricated completion and presence W1C reasserts
+ok 418 - removal abandons active PIO without fabricated completion and presence W1C reasserts
+  ---
+  duration_ms: 19.5771
+  type: 'test'
+  ...
+# Subtest: two boards and two controllers retain independent owned images, commands, presence and IRQs
+ok 419 - two boards and two controllers retain independent owned images, commands, presence and IRQs
+  ---
+  duration_ms: 44.643
+  type: 'test'
+  ...
+# Subtest: board fixture transfer bounds are forwarded and do not invent oversized read completion
+ok 420 - board fixture transfer bounds are forwarded and do not invent oversized read completion
+  ---
+  duration_ms: 16.6603
+  type: 'test'
+  ...
+# Subtest: board SD status omits image data and returns independent diagnostic snapshots
+ok 421 - board SD status omits image data and returns independent diagnostic snapshots
+  ---
+  duration_ms: 21.3157
+  type: 'test'
+  ...
+# Subtest: image geometry is exactly representable, owned and read-only
+ok 422 - image geometry is exactly representable, owned and read-only
+  ---
+  duration_ms: 37.5782
+  type: 'test'
+  ...
+# Subtest: CSD decoded through actual controller response packing reports exact image capacity
+ok 423 - CSD decoded through actual controller response packing reports exact image capacity
+  ---
+  duration_ms: 653.5467
+  type: 'test'
+  ...
+# Subtest: CID is a named synthetic profile and short responses preserve RSP1..3
+ok 424 - CID is a named synthetic profile and short responses preserve RSP1..3
+  ---
+  duration_ms: 10.1375
+  type: 'test'
+  ...
+# Subtest: initialization follows SD states and CMD55 authorizes only the next command
+ok 425 - initialization follows SD states and CMD55 authorizes only the next command
+  ---
+  duration_ms: 10.0016
+  type: 'test'
+  ...
+# Subtest: 8-byte SCR completes through a final short PIO burst with a128-word watermark
+ok 426 - 8-byte SCR completes through a final short PIO burst with a128-word watermark
+  ---
+  duration_ms: 9.2595
+  type: 'test'
+  ...
+# Subtest: PIO single-block data and readiness honor watermark boundaries1/40/128
+ok 427 - PIO single-block data and readiness honor watermark boundaries1/40/128
+  ---
+  duration_ms: 28.4994
+  type: 'test'
+  ...
+# Subtest: CMD18 uses finite block count and short bursts restart at each block boundary
+ok 428 - CMD18 uses finite block count and short bursts restart at each block boundary
+  ---
+  duration_ms: 10.1092
+  type: 'test'
+  ...
+# Subtest: AutoCMD12 returns card to transfer state and places its response in RSP3
+ok 429 - AutoCMD12 returns card to transfer state and places its response in RSP3
+  ---
+  duration_ms: 9.989
+  type: 'test'
+  ...
+# Subtest: capacity, alignment, block size and finite-transfer bounds reject without data or mutation
+ok 430 - capacity, alignment, block size and finite-transfer bounds reject without data or mutation
+  ---
+  duration_ms: 10.1722
+  type: 'test'
+  ...
+# Subtest: block-count zero means no data transfer and infinite CMD18 is refused visibly
+ok 431 - block-count zero means no data transfer and infinite CMD18 is refused visibly
+  ---
+  duration_ms: 9.5526
+  type: 'test'
+  ...
+# Subtest: status generation and signal delivery are separate, with byte-lane W1C
+ok 432 - status generation and signal delivery are separate, with byte-lane W1C
+  ---
+  duration_ms: 9.468
+  type: 'test'
+  ...
+# Subtest: card insertion/removal status reasserts until its status enable is disabled
+ok 433 - card insertion/removal status reasserts until its status enable is disabled
+  ---
+  duration_ms: 10.827
+  type: 'test'
+  ...
+# Subtest: command inhibit protects a pending command and ordinary data commands cannot replace reads
+ok 434 - command inhibit protects a pending command and ordinary data commands cannot replace reads
+  ---
+  duration_ms: 19.0532
+  type: 'test'
+  ...
+# Subtest: RSTC preserves data and errors; RSTD clears data flags while sticky errors survive
+ok 435 - RSTC preserves data and errors; RSTD clears data flags while sticky errors survive
+  ---
+  duration_ms: 13.3851
+  type: 'test'
+  ...
+# Subtest: full controller reset preserves protocol state/capabilities and requires explicit card CMD0
+ok 436 - full controller reset preserves protocol state/capabilities and requires explicit card CMD0
+  ---
+  duration_ms: 19.95
+  type: 'test'
+  ...
+# Subtest: INITA is write-one-start, cannot be cancelled by zero, and does not reset card state
+ok 437 - INITA is write-one-start, cannot be cancelled by zero, and does not reset card state
+  ---
+  duration_ms: 11.412
+  type: 'test'
+  ...
+# Subtest: DMA, DDR, endian, width, watermark and missing data flags fail visibly
+ok 438 - DMA, DDR, endian, width, watermark and missing data flags fail visibly
+  ---
+  duration_ms: 78.6295
+  type: 'test'
+  ...
+# Subtest: ACMD6 and matching host width allow4-bit PIO; response-format mismatch is diagnosed
+ok 439 - ACMD6 and matching host width allow4-bit PIO; response-format mismatch is diagnosed
+  ---
+  duration_ms: 9.7969
+  type: 'test'
+  ...
+# Subtest: write/erase attempts return write protection and leave original sectors intact
+ok 440 - write/erase attempts return write protection and leave original sectors intact
+  ---
+  duration_ms: 9.1055
+  type: 'test'
+  ...
+# Subtest: unknown MMIO and invalid accesses stay visible with bounded diagnostics
+ok 441 - unknown MMIO and invalid accesses stay visible with bounded diagnostics
+  ---
+  duration_ms: 9.7855
+  type: 'test'
+  ...
+# Subtest: upstream total-transfer burst rule is rejected at non-dividing multiblock watermark
+ok 442 - upstream total-transfer burst rule is rejected at non-dividing multiblock watermark
+  ---
+  duration_ms: 9.8305
+  type: 'test'
+  ...
+# Subtest: card state restrictions prevent CID/CSD and CMD8 queries from becoming fabricated success
+ok 443 - card state restrictions prevent CID/CSD and CMD8 queries from becoming fabricated success
+  ---
+  duration_ms: 9.4367
+  type: 'test'
+  ...
+# Subtest: repeated CMD55 retains authorization and an absent card cannot delay a no-response command
+ok 444 - repeated CMD55 retains authorization and an absent card cannot delay a no-response command
+  ---
+  duration_ms: 18.4276
+  type: 'test'
+  ...
+# Subtest: CMD13 command-only status can coexist with PIO data without consuming or replacing its batch
+ok 445 - CMD13 command-only status can coexist with PIO data without consuming or replacing its batch
+  ---
+  duration_ms: 8.9826
+  type: 'test'
+  ...
+# Subtest: aggregated ticks preserve command, initialization and busy phase ordering
+ok 446 - aggregated ticks preserve command, initialization and busy phase ordering
+  ---
+  duration_ms: 26.7056
+  type: 'test'
+  ...
+# (node:33568) ExperimentalWarning: stripTypeScriptTypes is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: production reset handler forwards an owned validated target to the session
+ok 447 - production reset handler forwards an owned validated target to the session
+  ---
+  duration_ms: 14.7224
+  type: 'test'
+  ...
+# Subtest: production reset handler rejects malformed target messages before stopping or resetting
+ok 448 - production reset handler rejects malformed target messages before stopping or resetting
+  ---
+  duration_ms: 33.1909
+  type: 'test'
+  ...
+# Subtest: production reset handler preserves generic reset and surfaces selector refusal
+ok 449 - production reset handler preserves generic reset and surfaces selector refusal
+  ---
+  duration_ms: 5.3674
+  type: 'test'
+  ...
+# Subtest: load copies local bytes and awaits loaded plus the same-ID status
+ok 450 - load copies local bytes and awaits loaded plus the same-ID status
+  ---
+  duration_ms: 69.0715
+  type: 'test'
+  ...
+# Subtest: USB waits for its own report and status despite interleaved run publications
+ok 451 - USB waits for its own report and status despite interleaved run publications
+  ---
+  duration_ms: 2.7311
+  type: 'test'
+  ...
+# Subtest: older correlated responses resolve their caller without overwriting newer diagnostics
+ok 452 - older correlated responses resolve their caller without overwriting newer diagnostics
+  ---
+  duration_ms: 1.225
+  type: 'test'
+  ...
+# Subtest: retired duplicate, unknown and paused unsolicited replies cannot replace diagnostics
+ok 453 - retired duplicate, unknown and paused unsolicited replies cannot replace diagnostics
+  ---
+  duration_ms: 1.0858
+  type: 'test'
+  ...
+# Subtest: a delayed run acknowledgment cannot reverse a newer pause intent
+ok 454 - a delayed run acknowledgment cannot reverse a newer pause intent
+  ---
+  duration_ms: 1.0206
+  type: 'test'
+  ...
+# Subtest: an already-aborted control request does not change an active run intent
+ok 455 - an already-aborted control request does not change an active run intent
+  ---
+  duration_ms: 1.2649
+  type: 'test'
+  ...
+# Subtest: duplicate USB primaries reject the unsettled call and close the ambiguous connection
+ok 456 - duplicate USB primaries reject the unsettled call and close the ambiguous connection
+  ---
+  duration_ms: 0.6058
+  type: 'test'
+  ...
+# Subtest: USB rejects invalid correlated status/order replies
+ok 457 - USB rejects invalid correlated status/order replies
+  ---
+  duration_ms: 0.379
+  type: 'test'
+  ...
+# Subtest: USB rejects invalid correlated usb/63 replies
+ok 458 - USB rejects invalid correlated usb/63 replies
+  ---
+  duration_ms: 0.3267
+  type: 'test'
+  ...
+# Subtest: USB rejects invalid correlated usb/64 replies
+ok 459 - USB rejects invalid correlated usb/64 replies
+  ---
+  duration_ms: 0.648
+  type: 'test'
+  ...
+# Subtest: matching remote errors reject only their request and leave diagnostics available
+ok 460 - matching remote errors reject only their request and leave diagnostics available
+  ---
+  duration_ms: 0.6139
+  type: 'test'
+  ...
+# Subtest: asynchronous run errors reject pending work and preserve the latest healthy observation
+ok 461 - asynchronous run errors reject pending work and preserve the latest healthy observation
+  ---
+  duration_ms: 0.4821
+  type: 'test'
+  ...
+# Subtest: native error events close pending RPCs and detach listeners
+ok 462 - native error events close pending RPCs and detach listeners
+  ---
+  duration_ms: 0.461
+  type: 'test'
+  ...
+# Subtest: native messageerror events close pending RPCs and detach listeners
+ok 463 - native messageerror events close pending RPCs and detach listeners
+  ---
+  duration_ms: 1.5265
+  type: 'test'
+  ...
+# Subtest: timeout closes the owned worker and late replies cannot resurrect it
+ok 464 - timeout closes the owned worker and late replies cannot resurrect it
+  ---
+  duration_ms: 5.7681
+  type: 'test'
+  ...
+# Subtest: a primary load reply without its trailing status still times out
+ok 465 - a primary load reply without its trailing status still times out
+  ---
+  duration_ms: 15.2802
+  type: 'test'
+  ...
+# Subtest: snapshot rejects missing or malformed correlated evidence
+ok 466 - snapshot rejects missing or malformed correlated evidence
+  ---
+  duration_ms: 0.7171
+  type: 'test'
+  ...
+# Subtest: trace rejects missing or malformed correlated evidence
+ok 467 - trace rejects missing or malformed correlated evidence
+  ---
+  duration_ms: 1.986
+  type: 'test'
+  ...
+# Subtest: already-aborted calls are not sent; in-flight abort rejects all work and terminates
+ok 468 - already-aborted calls are not sent; in-flight abort rejects all work and terminates
+  ---
+  duration_ms: 16.8683
+  type: 'test'
+  ...
+# Subtest: close is idempotent, removes abort listeners and rejects all pending calls
+ok 469 - close is idempotent, removes abort listeners and rejects all pending calls
+  ---
+  duration_ms: 1.6259
+  type: 'test'
+  ...
+# Subtest: send failures reject and terminate without retaining listeners
+ok 470 - send failures reject and terminate without retaining listeners
+  ---
+  duration_ms: 0.4392
+  type: 'test'
+  ...
+# Subtest: argument bounds reject before posting and do not close a healthy bridge
+ok 471 - argument bounds reject before posting and do not close a healthy bridge
+  ---
+  duration_ms: 4.3584
+  type: 'test'
+  ...
+# Subtest: step/input/run/pause/trace use distinct IDs and expected reply shapes
+ok 472 - step/input/run/pause/trace use distinct IDs and expected reply shapes
+  ---
+  duration_ms: 1.2741
+  type: 'test'
+  ...
+# Subtest: reset steps from a cleared mailbox and ignores header marker as readiness
+ok 473 - reset steps from a cleared mailbox and ignores header marker as readiness
+  ---
+  duration_ms: 0.9718
+  type: 'test'
+  ...
+# Subtest: reset rejects stale mailbox fields even when reset instruction count is zero
+ok 474 - reset rejects stale mailbox fields even when reset instruction count is zero
+  ---
+  duration_ms: 0.5015
+  type: 'test'
+  ...
+# Subtest: bounded reset rejects injected engine-failed without accepting a ready marker
+ok 475 - bounded reset rejects injected engine-failed without accepting a ready marker
+  ---
+  duration_ms: 0.3966
+  type: 'test'
+  ...
+# Subtest: bounded reset rejects injected guest-stopped without accepting a ready marker
+ok 476 - bounded reset rejects injected guest-stopped without accepting a ready marker
+  ---
+  duration_ms: 0.398
+  type: 'test'
+  ...
+# Subtest: bounded reset rejects injected boot-no-progress without accepting a ready marker
+ok 477 - bounded reset rejects injected boot-no-progress without accepting a ready marker
+  ---
+  duration_ms: 1.1156
+  type: 'test'
+  ...
+# Subtest: mailbox boot instruction budget is exact and does not fall back to an image header
+ok 478 - mailbox boot instruction budget is exact and does not fall back to an image header
+  ---
+  duration_ms: 0.9744
+  type: 'test'
+  ...
+# Subtest: mailbox readiness rejects missing heartbeat
+ok 479 - mailbox readiness rejects missing heartbeat
+  ---
+  duration_ms: 0.69
+  type: 'test'
+  ...
+# Subtest: mailbox readiness rejects missing backend health
+ok 480 - mailbox readiness rejects missing backend health
+  ---
+  duration_ms: 0.6108
+  type: 'test'
+  ...
+# Subtest: mailbox readiness rejects missing cache health
+ok 481 - mailbox readiness rejects missing cache health
+  ---
+  duration_ms: 0.2896
+  type: 'test'
+  ...
+# Subtest: mailbox readiness rejects unexpected running state
+ok 482 - mailbox readiness rejects unexpected running state
+  ---
+  duration_ms: 0.2576
+  type: 'test'
+  ...
+# Subtest: whole reset boot deadline bounds a missing step reply and cleans pending requests
+ok 483 - whole reset boot deadline bounds a missing step reply and cleans pending requests
+  ---
+  duration_ms: 10.5974
+  type: 'test'
+  ...
+# Subtest: reset has exclusive access; cancellation leaves no parallel request queued
+ok 484 - reset has exclusive access; cancellation leaves no parallel request queued
+  ---
+  duration_ms: 0.5588
+  type: 'test'
+  ...
+# Subtest: bound update adapter runs VirtualFirmwareUpdater inspect over virtual feature payloads
+ok 485 - bound update adapter runs VirtualFirmwareUpdater inspect over virtual feature payloads
+  ---
+  duration_ms: 1.5402
+  type: 'test'
+  ...
+# Subtest: a bound adapter signal cancels an outstanding update-host transport and closes its worker
+ok 486 - a bound adapter signal cancels an outstanding update-host transport and closes its worker
+  ---
+  duration_ms: 1.4162
+  type: 'test'
+  ...
+# Subtest: browser factory starts on demand and cleans up a worker when setup validation fails
+ok 487 - browser factory starts on demand and cleans up a worker when setup validation fails
+  ---
+  duration_ms: 2.3595
+  type: 'test'
+  ...
+# Subtest: generic restart accepts stock diagnostics and sends no mailbox boot steps
+ok 488 - generic restart accepts stock diagnostics and sends no mailbox boot steps
+  ---
+  duration_ms: 0.5629
+  type: 'test'
+  ...
+# Subtest: explicit APP1 reset contracts are copied and forwarded through the bound update bridge
+ok 489 - explicit APP1 reset contracts are copied and forwarded through the bound update bridge
+  ---
+  duration_ms: 1.8469
+  type: 'test'
+  ...
+# Subtest: explicit reset targets reject unsupported fields and retain bound cancellation options
+ok 490 - explicit reset targets reject unsupported fields and retain bound cancellation options
+  ---
+  duration_ms: 1.0805
+  type: 'test'
+  ...
+# Subtest: legacy reset call options and no-target bound reset preserve the mailbox boot contract
+ok 491 - legacy reset call options and no-target bound reset preserve the mailbox boot contract
+  ---
+  duration_ms: 0.8307
+  type: 'test'
+  ...
+# Subtest: generic restart requires a zero-instruction loaded acknowledgment and excludes new calls
+ok 492 - generic restart requires a zero-instruction loaded acknowledgment and excludes new calls
+  ---
+  duration_ms: 0.7336
+  type: 'test'
+  ...
+# Subtest: generic restart queues behind earlier page input and trace calls without requiring a mailbox
+ok 493 - generic restart queues behind earlier page input and trace calls without requiring a mailbox
+  ---
+  duration_ms: 0.8005
+  type: 'test'
+  ...
+# Subtest: observers are isolated copies and throws cannot corrupt load or USB settlement
+ok 494 - observers are isolated copies and throws cannot corrupt load or USB settlement
+  ---
+  duration_ms: 5.687
+  type: 'test'
+  ...
+# Subtest: snapshot observers see only accepted IDs and unsubscribe suppresses queued deliveries
+ok 495 - snapshot observers see only accepted IDs and unsubscribe suppresses queued deliveries
+  ---
+  duration_ms: 1.3082
+  type: 'test'
+  ...
+# Subtest: terminal observers receive copied errors once and cannot interfere with shutdown
+ok 496 - terminal observers receive copied errors once and cannot interfere with shutdown
+  ---
+  duration_ms: 0.7182
+  type: 'test'
+  ...
+# Subtest: malformed observational display fields reject before publication
+ok 497 - malformed observational display fields reject before publication
+  ---
+  duration_ms: 0.737
+  type: 'test'
+  ...
+# Subtest: malformed observational displayOn fields reject before publication
+ok 498 - malformed observational displayOn fields reject before publication
+  ---
+  duration_ms: 0.5144
+  type: 'test'
+  ...
+# Subtest: malformed observational limitations fields reject before publication
+ok 499 - malformed observational limitations fields reject before publication
+  ---
+  duration_ms: 0.6022
+  type: 'test'
+  ...
+# Subtest: malformed observational unknownMmio fields reject before publication
+ok 500 - malformed observational unknownMmio fields reject before publication
+  ---
+  duration_ms: 0.6019
+  type: 'test'
+  ...
+1..500
+# tests 500
+# suites 0
+# pass 500
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 2013.6224

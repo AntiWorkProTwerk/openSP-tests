@@ -1,0 +1,1945 @@
+{
+  "source": {
+    "fileId": "24d9d841-759d-81bc-8008-b518bc70d8b3",
+    "pageId": "cac28749-e268-802e-8008-bf960825add9",
+    "kind": "native-layout-api-export"
+  },
+  "boards": [
+    {
+      "id": "cac28749-e268-802e-8008-bf96822344a9",
+      "name": "Feature local build / Desktop / Light",
+      "width": 1440,
+      "height": 2628,
+      "metadata": {
+        "schema": 1,
+        "mode": "operate",
+        "mobile": false,
+        "dark": false,
+        "sharedCopy": "src/content/feature-local-build.json",
+        "initialState": "helper-disconnected/no-files",
+        "localBuildOnly": true,
+        "uploadHeld": true,
+        "sharedLinkedComponents": true
+      },
+      "linked": [
+        {
+          "id": "cac28749-e268-802e-8008-bf9682273057",
+          "name": "Wordmark",
+          "componentId": "d862c4e5-8ca1-80d0-8008-b58b0c8a94df",
+          "component": "Wordmark",
+          "copy": true
+        },
+        {
+          "id": "cac28749-e268-802e-8008-bf968247302e",
+          "name": "Feature local selection (Desktop)",
+          "componentId": "cac28749-e268-802e-8008-bf960fc52b97",
+          "component": "Feature local selection (Desktop)",
+          "copy": true
+        },
+        {
+          "id": "cac28749-e268-802e-8008-bf9682473032",
+          "name": "Emulator action",
+          "componentId": "6bf32eef-e7db-8057-8008-bb287d8e3cdc",
+          "component": "Emulator action",
+          "copy": true
+        },
+        {
+          "id": "cac28749-e268-802e-8008-bf96824c889c",
+          "name": "Feature local helper (Desktop)",
+          "componentId": "cac28749-e268-802e-8008-bf9611b76e90",
+          "component": "Feature local helper (Desktop)",
+          "copy": true
+        },
+        {
+          "id": "cac28749-e268-802e-8008-bf96824c88a3",
+          "name": "Emulator action",
+          "componentId": "6bf32eef-e7db-8057-8008-bb287d8e3cdc",
+          "component": "Emulator action",
+          "copy": true
+        },
+        {
+          "id": "cac28749-e268-802e-8008-bf96824c88a6",
+          "name": "Emulator action",
+          "componentId": "6bf32eef-e7db-8057-8008-bb287d8e3cdc",
+          "component": "Emulator action",
+          "copy": true
+        },
+        {
+          "id": "cac28749-e268-802e-8008-bf9682525cdc",
+          "name": "Feature local receipt (Desktop)",
+          "componentId": "cac28749-e268-802e-8008-bf9613aca4fa",
+          "component": "Feature local receipt (Desktop)",
+          "copy": true
+        },
+        {
+          "id": "cac28749-e268-802e-8008-bf9682525ce0",
+          "name": "Feature receipt (Desktop)",
+          "componentId": "aef24b78-6c19-80a5-8008-bdf9f1d2cb51",
+          "component": "Feature receipt (Desktop)",
+          "copy": true
+        },
+        {
+          "id": "cac28749-e268-802e-8008-bf9682525ce4",
+          "name": "Emulator action",
+          "componentId": "6bf32eef-e7db-8057-8008-bb287d8e3cdc",
+          "component": "Emulator action",
+          "copy": true
+        },
+        {
+          "id": "cac28749-e268-802e-8008-bf9682525ce7",
+          "name": "Emulator action",
+          "componentId": "6bf32eef-e7db-8057-8008-bb287d8e3cdc",
+          "component": "Emulator action",
+          "copy": true
+        },
+        {
+          "id": "cac28749-e268-802e-8008-bf9682525cec",
+          "name": "Emulator action",
+          "componentId": "6bf32eef-e7db-8057-8008-bb287d8e3cdc",
+          "component": "Emulator action",
+          "copy": true
+        },
+        {
+          "id": "cac28749-e268-802e-8008-bf968259e369",
+          "name": "Feature local handoff (Desktop)",
+          "componentId": "cac28749-e268-802e-8008-bf9615a0d40b",
+          "component": "Feature local handoff (Desktop)",
+          "copy": true
+        },
+        {
+          "id": "cac28749-e268-802e-8008-bf968259e36e",
+          "name": "Emulator action",
+          "componentId": "6bf32eef-e7db-8057-8008-bb287d8e3cdc",
+          "component": "Emulator action",
+          "copy": true
+        }
+      ],
+      "text": [
+        {
+          "name": "Brand",
+          "text": "opensp",
+          "x": 64,
+          "y": 24,
+          "width": 120,
+          "height": 40,
+          "ink": {
+            "width": 96.015625,
+            "height": 30
+          }
+        },
+        {
+          "name": "Page navigation",
+          "text": "FEATURES",
+          "x": 600,
+          "y": 32,
+          "width": 240,
+          "height": 24,
+          "ink": {
+            "width": 67.21875,
+            "height": 16
+          }
+        },
+        {
+          "name": "copy / title",
+          "text": "Build your feature selection locally",
+          "x": 64,
+          "y": 120,
+          "width": 1312,
+          "height": 144,
+          "ink": {
+            "width": 725.71875,
+            "height": 53
+          }
+        },
+        {
+          "name": "copy / introduction",
+          "text": "Choose features and shortcuts in the picker, then build that exact configuration with the local helper.",
+          "x": 64,
+          "y": 288,
+          "width": 960,
+          "height": 80,
+          "ink": {
+            "width": 881.65625,
+            "height": 22
+          }
+        },
+        {
+          "name": "copy / selection / heading",
+          "text": "Your selection",
+          "x": 64,
+          "y": 424,
+          "width": 1312,
+          "height": 44,
+          "ink": {
+            "width": 174.875,
+            "height": 31
+          }
+        },
+        {
+          "name": "copy / selection / note",
+          "text": "Import the exported configuration or use the choices saved in this browser. Change features and shortcuts in the picker.",
+          "x": 64,
+          "y": 484,
+          "width": 960,
+          "height": 96,
+          "ink": {
+            "width": 950.546875,
+            "height": 20
+          }
+        },
+        {
+          "name": "Button label",
+          "text": "Import configuration",
+          "x": 76,
+          "y": 614,
+          "width": 236,
+          "height": 24,
+          "ink": {
+            "width": 141.40625,
+            "height": 17
+          }
+        },
+        {
+          "name": "Local selection state",
+          "text": "No configuration loaded.",
+          "x": 64,
+          "y": 672,
+          "width": 1312,
+          "height": 48,
+          "ink": {
+            "width": 173.453125,
+            "height": 17
+          }
+        },
+        {
+          "name": "copy / pickerLink",
+          "text": "Edit features and shortcuts",
+          "x": 64,
+          "y": 728,
+          "width": 1312,
+          "height": 48,
+          "ink": {
+            "width": 190.328125,
+            "height": 17
+          }
+        },
+        {
+          "name": "copy / helper / heading",
+          "text": "Local build helper",
+          "x": 64,
+          "y": 876,
+          "width": 1312,
+          "height": 44,
+          "ink": {
+            "width": 219.5,
+            "height": 31
+          }
+        },
+        {
+          "name": "copy / helper / note",
+          "text": "Start the source-only helper on your computer with your official v5.52 firmware and matching installed tools. Paste the connection supplied by that helper. Firmware and compiler inputs stay on your computer.",
+          "x": 64,
+          "y": 936,
+          "width": 960,
+          "height": 96,
+          "ink": {
+            "width": 940.140625,
+            "height": 47
+          }
+        },
+        {
+          "name": "copy / connectionLabel",
+          "text": "Local helper connection",
+          "x": 64,
+          "y": 1056,
+          "width": 1312,
+          "height": 32,
+          "ink": {
+            "width": 147.890625,
+            "height": 16
+          }
+        },
+        {
+          "name": "Local connection empty",
+          "text": "Paste the helper connection",
+          "x": 76,
+          "y": 1106,
+          "width": 676,
+          "height": 24,
+          "ink": {
+            "width": 198.359375,
+            "height": 17
+          }
+        },
+        {
+          "name": "Button label",
+          "text": "Connect local helper",
+          "x": 76,
+          "y": 1174,
+          "width": 236,
+          "height": 24,
+          "ink": {
+            "width": 145.875,
+            "height": 17
+          }
+        },
+        {
+          "name": "Button label",
+          "text": "Build locally",
+          "x": 360,
+          "y": 1174,
+          "width": 216,
+          "height": 24,
+          "ink": {
+            "width": 84.484375,
+            "height": 17
+          }
+        },
+        {
+          "name": "Local helper state",
+          "text": "Helper disconnected.",
+          "x": 64,
+          "y": 1228,
+          "width": 1312,
+          "height": 32,
+          "ink": {
+            "width": 150.3125,
+            "height": 17
+          }
+        },
+        {
+          "name": "copy / receipt / heading",
+          "text": "Inspect the matching build",
+          "x": 64,
+          "y": 1328,
+          "width": 1312,
+          "height": 44,
+          "ink": {
+            "width": 325.3125,
+            "height": 31
+          }
+        },
+        {
+          "name": "copy / receipt / note",
+          "text": "The helper checks the authenticated source transaction. This page checks the canonical selection, configuration and complete candidate bytes before preparing a USB handoff.",
+          "x": 64,
+          "y": 1388,
+          "width": 960,
+          "height": 96,
+          "ink": {
+            "width": 932.25,
+            "height": 47
+          }
+        },
+        {
+          "name": "copy / receiptHeading",
+          "text": "Choose both local files",
+          "x": 64,
+          "y": 1532,
+          "width": 1312,
+          "height": 42,
+          "ink": {
+            "width": 281.734375,
+            "height": 31
+          }
+        },
+        {
+          "name": "copy / receiptNote",
+          "text": "The helper checks the authenticated source transaction. This page checks the canonical selection, configuration and complete candidate bytes before preparing a USB handoff.",
+          "x": 64,
+          "y": 1590,
+          "width": 1000,
+          "height": 48,
+          "ink": {
+            "width": 971.859375,
+            "height": 41
+          }
+        },
+        {
+          "name": "Button label",
+          "text": "Choose standalone receipt",
+          "x": 76,
+          "y": 1658,
+          "width": 276,
+          "height": 24,
+          "ink": {
+            "width": 190.359375,
+            "height": 17
+          }
+        },
+        {
+          "name": "Button label",
+          "text": "Choose candidate file",
+          "x": 76,
+          "y": 1718,
+          "width": 276,
+          "height": 24,
+          "ink": {
+            "width": 153.890625,
+            "height": 17
+          }
+        },
+        {
+          "name": "copy / receiptLimit",
+          "text": "Local JSON receipt plus complete APP1 bytes.",
+          "x": 64,
+          "y": 1780,
+          "width": 1312,
+          "height": 48,
+          "ink": {
+            "width": 291.046875,
+            "height": 16
+          }
+        },
+        {
+          "name": "Receipt status",
+          "text": "No files inspected. Upload remains held.",
+          "x": 64,
+          "y": 1836,
+          "width": 1312,
+          "height": 48,
+          "ink": {
+            "width": 286.375,
+            "height": 17
+          }
+        },
+        {
+          "name": "Button label",
+          "text": "Inspect local files",
+          "x": 76,
+          "y": 1902,
+          "width": 256,
+          "height": 24,
+          "ink": {
+            "width": 121.84375,
+            "height": 17
+          }
+        },
+        {
+          "name": "copy / handoff / heading",
+          "text": "USB handoff held",
+          "x": 64,
+          "y": 2023.9999999999998,
+          "width": 1312,
+          "height": 44.00000000000023,
+          "ink": {
+            "width": 218.984375,
+            "height": 31
+          }
+        },
+        {
+          "name": "copy / handoff / note",
+          "text": "Selected expanded images remain held. Native runtime and physical evidence must match that exact image before any upload can be admitted. A checked source build does not qualify recording into pads or global capture.",
+          "x": 64,
+          "y": 2084,
+          "width": 960,
+          "height": 96,
+          "ink": {
+            "width": 954.53125,
+            "height": 47
+          }
+        },
+        {
+          "name": "USB held state",
+          "text": "Source and artifact checks do not admit a firmware upload.",
+          "x": 64,
+          "y": 2204,
+          "width": 960,
+          "height": 60,
+          "ink": {
+            "width": 469.25,
+            "height": 20
+          }
+        },
+        {
+          "name": "Button label",
+          "text": "Prepare USB handoff",
+          "x": 76,
+          "y": 2298,
+          "width": 276,
+          "height": 24,
+          "ink": {
+            "width": 151.8125,
+            "height": 17
+          }
+        },
+        {
+          "name": "copy / restorationNote",
+          "text": "The byte-identical P6S restoration is a separate release. Its qualified USB path never authorizes a different selected candidate.",
+          "x": 64,
+          "y": 2364,
+          "width": 960,
+          "height": 96,
+          "ink": {
+            "width": 897.125,
+            "height": 17
+          }
+        },
+        {
+          "name": "copy / footer",
+          "text": "Local build inspection. Selected-image USB delivery remains held.",
+          "x": 64,
+          "y": 2516,
+          "width": 1312,
+          "height": 40,
+          "ink": {
+            "width": 507.09375,
+            "height": 15
+          }
+        }
+      ]
+    },
+    {
+      "id": "cac28749-e268-802e-8008-bf9683a86fb3",
+      "name": "Feature local build / Desktop / Dark",
+      "width": 1440,
+      "height": 2628,
+      "metadata": {
+        "schema": 1,
+        "mode": "operate",
+        "mobile": false,
+        "dark": true,
+        "sharedCopy": "src/content/feature-local-build.json",
+        "initialState": "helper-disconnected/no-files",
+        "localBuildOnly": true,
+        "uploadHeld": true,
+        "sharedLinkedComponents": true
+      },
+      "linked": [
+        {
+          "id": "cac28749-e268-802e-8008-bf9683aca6b7",
+          "name": "Wordmark",
+          "componentId": "d862c4e5-8ca1-80d0-8008-b58b0c8a94df",
+          "component": "Wordmark",
+          "copy": true
+        },
+        {
+          "id": "cac28749-e268-802e-8008-bf9683cf7666",
+          "name": "Feature local selection (Desktop)",
+          "componentId": "cac28749-e268-802e-8008-bf960fc52b97",
+          "component": "Feature local selection (Desktop)",
+          "copy": true
+        },
+        {
+          "id": "cac28749-e268-802e-8008-bf9683cf766a",
+          "name": "Emulator action",
+          "componentId": "6bf32eef-e7db-8057-8008-bb287d8e3cdc",
+          "component": "Emulator action",
+          "copy": true
+        },
+        {
+          "id": "cac28749-e268-802e-8008-bf9683d87e43",
+          "name": "Feature local helper (Desktop)",
+          "componentId": "cac28749-e268-802e-8008-bf9611b76e90",
+          "component": "Feature local helper (Desktop)",
+          "copy": true
+        },
+        {
+          "id": "cac28749-e268-802e-8008-bf9683d87e4a",
+          "name": "Emulator action",
+          "componentId": "6bf32eef-e7db-8057-8008-bb287d8e3cdc",
+          "component": "Emulator action",
+          "copy": true
+        },
+        {
+          "id": "cac28749-e268-802e-8008-bf9683d87e4d",
+          "name": "Emulator action",
+          "componentId": "6bf32eef-e7db-8057-8008-bb287d8e3cdc",
+          "component": "Emulator action",
+          "copy": true
+        },
+        {
+          "id": "cac28749-e268-802e-8008-bf9683deac3a",
+          "name": "Feature local receipt (Desktop)",
+          "componentId": "cac28749-e268-802e-8008-bf9613aca4fa",
+          "component": "Feature local receipt (Desktop)",
+          "copy": true
+        },
+        {
+          "id": "cac28749-e268-802e-8008-bf9683deac3e",
+          "name": "Feature receipt (Desktop)",
+          "componentId": "aef24b78-6c19-80a5-8008-bdf9f1d2cb51",
+          "component": "Feature receipt (Desktop)",
+          "copy": true
+        },
+        {
+          "id": "cac28749-e268-802e-8008-bf9683deac42",
+          "name": "Emulator action",
+          "componentId": "6bf32eef-e7db-8057-8008-bb287d8e3cdc",
+          "component": "Emulator action",
+          "copy": true
+        },
+        {
+          "id": "cac28749-e268-802e-8008-bf9683deac45",
+          "name": "Emulator action",
+          "componentId": "6bf32eef-e7db-8057-8008-bb287d8e3cdc",
+          "component": "Emulator action",
+          "copy": true
+        },
+        {
+          "id": "cac28749-e268-802e-8008-bf9683deac4a",
+          "name": "Emulator action",
+          "componentId": "6bf32eef-e7db-8057-8008-bb287d8e3cdc",
+          "component": "Emulator action",
+          "copy": true
+        },
+        {
+          "id": "cac28749-e268-802e-8008-bf9683e59770",
+          "name": "Feature local handoff (Desktop)",
+          "componentId": "cac28749-e268-802e-8008-bf9615a0d40b",
+          "component": "Feature local handoff (Desktop)",
+          "copy": true
+        },
+        {
+          "id": "cac28749-e268-802e-8008-bf9683e59775",
+          "name": "Emulator action",
+          "componentId": "6bf32eef-e7db-8057-8008-bb287d8e3cdc",
+          "component": "Emulator action",
+          "copy": true
+        }
+      ],
+      "text": [
+        {
+          "name": "Brand",
+          "text": "opensp",
+          "x": 64,
+          "y": 24,
+          "width": 120,
+          "height": 40,
+          "ink": {
+            "width": 96.015625,
+            "height": 30
+          }
+        },
+        {
+          "name": "Page navigation",
+          "text": "FEATURES",
+          "x": 600,
+          "y": 32,
+          "width": 240,
+          "height": 24,
+          "ink": {
+            "width": 67.21875,
+            "height": 16
+          }
+        },
+        {
+          "name": "copy / title",
+          "text": "Build your feature selection locally",
+          "x": 64,
+          "y": 120,
+          "width": 1312,
+          "height": 144,
+          "ink": {
+            "width": 725.71875,
+            "height": 53
+          }
+        },
+        {
+          "name": "copy / introduction",
+          "text": "Choose features and shortcuts in the picker, then build that exact configuration with the local helper.",
+          "x": 64,
+          "y": 288,
+          "width": 960,
+          "height": 80,
+          "ink": {
+            "width": 881.65625,
+            "height": 22
+          }
+        },
+        {
+          "name": "copy / selection / heading",
+          "text": "Your selection",
+          "x": 64,
+          "y": 424,
+          "width": 1312,
+          "height": 44,
+          "ink": {
+            "width": 174.875,
+            "height": 31
+          }
+        },
+        {
+          "name": "copy / selection / note",
+          "text": "Import the exported configuration or use the choices saved in this browser. Change features and shortcuts in the picker.",
+          "x": 64,
+          "y": 484,
+          "width": 960,
+          "height": 96,
+          "ink": {
+            "width": 950.546875,
+            "height": 20
+          }
+        },
+        {
+          "name": "Button label",
+          "text": "Import configuration",
+          "x": 76,
+          "y": 614,
+          "width": 236,
+          "height": 24,
+          "ink": {
+            "width": 141.40625,
+            "height": 17
+          }
+        },
+        {
+          "name": "Local selection state",
+          "text": "No configuration loaded.",
+          "x": 64,
+          "y": 672,
+          "width": 1312,
+          "height": 48,
+          "ink": {
+            "width": 173.453125,
+            "height": 17
+          }
+        },
+        {
+          "name": "copy / pickerLink",
+          "text": "Edit features and shortcuts",
+          "x": 64,
+          "y": 728,
+          "width": 1312,
+          "height": 48,
+          "ink": {
+            "width": 190.328125,
+            "height": 17
+          }
+        },
+        {
+          "name": "copy / helper / heading",
+          "text": "Local build helper",
+          "x": 64,
+          "y": 876,
+          "width": 1312,
+          "height": 44,
+          "ink": {
+            "width": 219.5,
+            "height": 31
+          }
+        },
+        {
+          "name": "copy / helper / note",
+          "text": "Start the source-only helper on your computer with your official v5.52 firmware and matching installed tools. Paste the connection supplied by that helper. Firmware and compiler inputs stay on your computer.",
+          "x": 64,
+          "y": 936,
+          "width": 960,
+          "height": 96,
+          "ink": {
+            "width": 940.140625,
+            "height": 47
+          }
+        },
+        {
+          "name": "copy / connectionLabel",
+          "text": "Local helper connection",
+          "x": 64,
+          "y": 1056,
+          "width": 1312,
+          "height": 32,
+          "ink": {
+            "width": 147.890625,
+            "height": 16
+          }
+        },
+        {
+          "name": "Local connection empty",
+          "text": "Paste the helper connection",
+          "x": 76,
+          "y": 1106,
+          "width": 676,
+          "height": 24,
+          "ink": {
+            "width": 198.359375,
+            "height": 17
+          }
+        },
+        {
+          "name": "Button label",
+          "text": "Connect local helper",
+          "x": 76,
+          "y": 1174,
+          "width": 236,
+          "height": 24,
+          "ink": {
+            "width": 145.875,
+            "height": 17
+          }
+        },
+        {
+          "name": "Button label",
+          "text": "Build locally",
+          "x": 360,
+          "y": 1174,
+          "width": 216,
+          "height": 24,
+          "ink": {
+            "width": 84.484375,
+            "height": 17
+          }
+        },
+        {
+          "name": "Local helper state",
+          "text": "Helper disconnected.",
+          "x": 64,
+          "y": 1228,
+          "width": 1312,
+          "height": 32,
+          "ink": {
+            "width": 150.3125,
+            "height": 17
+          }
+        },
+        {
+          "name": "copy / receipt / heading",
+          "text": "Inspect the matching build",
+          "x": 64,
+          "y": 1328,
+          "width": 1312,
+          "height": 44,
+          "ink": {
+            "width": 325.3125,
+            "height": 31
+          }
+        },
+        {
+          "name": "copy / receipt / note",
+          "text": "The helper checks the authenticated source transaction. This page checks the canonical selection, configuration and complete candidate bytes before preparing a USB handoff.",
+          "x": 64,
+          "y": 1388,
+          "width": 960,
+          "height": 96,
+          "ink": {
+            "width": 932.25,
+            "height": 47
+          }
+        },
+        {
+          "name": "copy / receiptHeading",
+          "text": "Choose both local files",
+          "x": 64,
+          "y": 1532,
+          "width": 1312,
+          "height": 42,
+          "ink": {
+            "width": 281.734375,
+            "height": 31
+          }
+        },
+        {
+          "name": "copy / receiptNote",
+          "text": "The helper checks the authenticated source transaction. This page checks the canonical selection, configuration and complete candidate bytes before preparing a USB handoff.",
+          "x": 64,
+          "y": 1590,
+          "width": 1000,
+          "height": 48,
+          "ink": {
+            "width": 971.859375,
+            "height": 41
+          }
+        },
+        {
+          "name": "Button label",
+          "text": "Choose standalone receipt",
+          "x": 76,
+          "y": 1658,
+          "width": 276,
+          "height": 24,
+          "ink": {
+            "width": 190.359375,
+            "height": 17
+          }
+        },
+        {
+          "name": "Button label",
+          "text": "Choose candidate file",
+          "x": 76,
+          "y": 1718,
+          "width": 276,
+          "height": 24,
+          "ink": {
+            "width": 153.890625,
+            "height": 17
+          }
+        },
+        {
+          "name": "copy / receiptLimit",
+          "text": "Local JSON receipt plus complete APP1 bytes.",
+          "x": 64,
+          "y": 1780,
+          "width": 1312,
+          "height": 48,
+          "ink": {
+            "width": 291.046875,
+            "height": 16
+          }
+        },
+        {
+          "name": "Receipt status",
+          "text": "No files inspected. Upload remains held.",
+          "x": 64,
+          "y": 1836,
+          "width": 1312,
+          "height": 48,
+          "ink": {
+            "width": 286.375,
+            "height": 17
+          }
+        },
+        {
+          "name": "Button label",
+          "text": "Inspect local files",
+          "x": 76,
+          "y": 1902,
+          "width": 256,
+          "height": 24,
+          "ink": {
+            "width": 121.84375,
+            "height": 17
+          }
+        },
+        {
+          "name": "copy / handoff / heading",
+          "text": "USB handoff held",
+          "x": 64,
+          "y": 2023.9999999999998,
+          "width": 1312,
+          "height": 44.00000000000023,
+          "ink": {
+            "width": 218.984375,
+            "height": 31
+          }
+        },
+        {
+          "name": "copy / handoff / note",
+          "text": "Selected expanded images remain held. Native runtime and physical evidence must match that exact image before any upload can be admitted. A checked source build does not qualify recording into pads or global capture.",
+          "x": 64,
+          "y": 2084,
+          "width": 960,
+          "height": 96,
+          "ink": {
+            "width": 954.53125,
+            "height": 47
+          }
+        },
+        {
+          "name": "USB held state",
+          "text": "Source and artifact checks do not admit a firmware upload.",
+          "x": 64,
+          "y": 2204,
+          "width": 960,
+          "height": 60,
+          "ink": {
+            "width": 469.25,
+            "height": 20
+          }
+        },
+        {
+          "name": "Button label",
+          "text": "Prepare USB handoff",
+          "x": 76,
+          "y": 2298,
+          "width": 276,
+          "height": 24,
+          "ink": {
+            "width": 151.8125,
+            "height": 17
+          }
+        },
+        {
+          "name": "copy / restorationNote",
+          "text": "The byte-identical P6S restoration is a separate release. Its qualified USB path never authorizes a different selected candidate.",
+          "x": 64,
+          "y": 2364,
+          "width": 960,
+          "height": 96,
+          "ink": {
+            "width": 897.125,
+            "height": 17
+          }
+        },
+        {
+          "name": "copy / footer",
+          "text": "Local build inspection. Selected-image USB delivery remains held.",
+          "x": 64,
+          "y": 2516,
+          "width": 1312,
+          "height": 40,
+          "ink": {
+            "width": 507.09375,
+            "height": 15
+          }
+        }
+      ]
+    },
+    {
+      "id": "cac28749-e268-802e-8008-bf9685a42e9b",
+      "name": "Feature local build / Mobile / Light",
+      "width": 390,
+      "height": 3796,
+      "metadata": {
+        "schema": 1,
+        "mode": "operate",
+        "mobile": true,
+        "dark": false,
+        "sharedCopy": "src/content/feature-local-build.json",
+        "initialState": "helper-disconnected/no-files",
+        "localBuildOnly": true,
+        "uploadHeld": true,
+        "sharedLinkedComponents": true
+      },
+      "linked": [
+        {
+          "id": "cac28749-e268-802e-8008-bf9685a9c8d1",
+          "name": "Wordmark",
+          "componentId": "d862c4e5-8ca1-80d0-8008-b58b0c8a94df",
+          "component": "Wordmark",
+          "copy": true
+        },
+        {
+          "id": "cac28749-e268-802e-8008-bf9685d1711c",
+          "name": "Feature local selection (Mobile)",
+          "componentId": "cac28749-e268-802e-8008-bf961793de2d",
+          "component": "Feature local selection (Mobile)",
+          "copy": true
+        },
+        {
+          "id": "cac28749-e268-802e-8008-bf9685d17120",
+          "name": "Emulator action",
+          "componentId": "6bf32eef-e7db-8057-8008-bb287d8e3cdc",
+          "component": "Emulator action",
+          "copy": true
+        },
+        {
+          "id": "cac28749-e268-802e-8008-bf9685d75bb4",
+          "name": "Feature local helper (Mobile)",
+          "componentId": "cac28749-e268-802e-8008-bf96198b6fb8",
+          "component": "Feature local helper (Mobile)",
+          "copy": true
+        },
+        {
+          "id": "cac28749-e268-802e-8008-bf9685d75bbb",
+          "name": "Emulator action",
+          "componentId": "6bf32eef-e7db-8057-8008-bb287d8e3cdc",
+          "component": "Emulator action",
+          "copy": true
+        },
+        {
+          "id": "cac28749-e268-802e-8008-bf9685d75bbe",
+          "name": "Emulator action",
+          "componentId": "6bf32eef-e7db-8057-8008-bb287d8e3cdc",
+          "component": "Emulator action",
+          "copy": true
+        },
+        {
+          "id": "cac28749-e268-802e-8008-bf9685ddf13f",
+          "name": "Feature local receipt (Mobile)",
+          "componentId": "cac28749-e268-802e-8008-bf961c776e27",
+          "component": "Feature local receipt (Mobile)",
+          "copy": true
+        },
+        {
+          "id": "cac28749-e268-802e-8008-bf9685ddf143",
+          "name": "Feature receipt (Mobile)",
+          "componentId": "aef24b78-6c19-80a5-8008-bdfa02233856",
+          "component": "Feature receipt (Mobile)",
+          "copy": true
+        },
+        {
+          "id": "cac28749-e268-802e-8008-bf9685ddf147",
+          "name": "Emulator action",
+          "componentId": "6bf32eef-e7db-8057-8008-bb287d8e3cdc",
+          "component": "Emulator action",
+          "copy": true
+        },
+        {
+          "id": "cac28749-e268-802e-8008-bf9685ddf14a",
+          "name": "Emulator action",
+          "componentId": "6bf32eef-e7db-8057-8008-bb287d8e3cdc",
+          "component": "Emulator action",
+          "copy": true
+        },
+        {
+          "id": "cac28749-e268-802e-8008-bf9685ddf14f",
+          "name": "Emulator action",
+          "componentId": "6bf32eef-e7db-8057-8008-bb287d8e3cdc",
+          "component": "Emulator action",
+          "copy": true
+        },
+        {
+          "id": "cac28749-e268-802e-8008-bf9685e667f2",
+          "name": "Feature local handoff (Mobile)",
+          "componentId": "cac28749-e268-802e-8008-bf961e69b136",
+          "component": "Feature local handoff (Mobile)",
+          "copy": true
+        },
+        {
+          "id": "cac28749-e268-802e-8008-bf9685e667f7",
+          "name": "Emulator action",
+          "componentId": "6bf32eef-e7db-8057-8008-bb287d8e3cdc",
+          "component": "Emulator action",
+          "copy": true
+        }
+      ],
+      "text": [
+        {
+          "name": "Brand",
+          "text": "opensp",
+          "x": 24,
+          "y": 24,
+          "width": 120,
+          "height": 40,
+          "ink": {
+            "width": 96.015625,
+            "height": 30
+          }
+        },
+        {
+          "name": "Page navigation",
+          "text": "FEATURES",
+          "x": 160,
+          "y": 32,
+          "width": 240,
+          "height": 24,
+          "ink": {
+            "width": 67.21875,
+            "height": 16
+          }
+        },
+        {
+          "name": "copy / title",
+          "text": "Build your feature selection locally",
+          "x": 24,
+          "y": 120,
+          "width": 342,
+          "height": 176,
+          "ink": {
+            "width": 324.640625,
+            "height": 104
+          }
+        },
+        {
+          "name": "copy / introduction",
+          "text": "Choose features and shortcuts in the picker, then build that exact configuration with the local helper.",
+          "x": 24,
+          "y": 320,
+          "width": 342,
+          "height": 128,
+          "ink": {
+            "width": 331.21875,
+            "height": 74
+          }
+        },
+        {
+          "name": "copy / selection / heading",
+          "text": "Your selection",
+          "x": 24,
+          "y": 504,
+          "width": 342,
+          "height": 76,
+          "ink": {
+            "width": 174.875,
+            "height": 31
+          }
+        },
+        {
+          "name": "copy / selection / note",
+          "text": "Import the exported configuration or use the choices saved in this browser. Change features and shortcuts in the picker.",
+          "x": 24,
+          "y": 588,
+          "width": 342,
+          "height": 216,
+          "ink": {
+            "width": 324.1875,
+            "height": 101
+          }
+        },
+        {
+          "name": "Button label",
+          "text": "Import configuration",
+          "x": 36,
+          "y": 838,
+          "width": 318,
+          "height": 24,
+          "ink": {
+            "width": 141.40625,
+            "height": 17
+          }
+        },
+        {
+          "name": "Local selection state",
+          "text": "No configuration loaded.",
+          "x": 24,
+          "y": 896,
+          "width": 342,
+          "height": 48,
+          "ink": {
+            "width": 173.453125,
+            "height": 17
+          }
+        },
+        {
+          "name": "copy / pickerLink",
+          "text": "Edit features and shortcuts",
+          "x": 24,
+          "y": 952,
+          "width": 342,
+          "height": 48,
+          "ink": {
+            "width": 190.328125,
+            "height": 17
+          }
+        },
+        {
+          "name": "copy / helper / heading",
+          "text": "Local build helper",
+          "x": 24,
+          "y": 1196,
+          "width": 342,
+          "height": 76,
+          "ink": {
+            "width": 219.5,
+            "height": 31
+          }
+        },
+        {
+          "name": "copy / helper / note",
+          "text": "Start the source-only helper on your computer with your official v5.52 firmware and matching installed tools. Paste the connection supplied by that helper. Firmware and compiler inputs stay on your computer.",
+          "x": 24,
+          "y": 1280,
+          "width": 342,
+          "height": 216,
+          "ink": {
+            "width": 335.796875,
+            "height": 155
+          }
+        },
+        {
+          "name": "copy / connectionLabel",
+          "text": "Local helper connection",
+          "x": 24,
+          "y": 1520,
+          "width": 342,
+          "height": 32,
+          "ink": {
+            "width": 147.890625,
+            "height": 16
+          }
+        },
+        {
+          "name": "Local connection empty",
+          "text": "Paste the helper connection",
+          "x": 36,
+          "y": 1570,
+          "width": 318,
+          "height": 24,
+          "ink": {
+            "width": 198.359375,
+            "height": 17
+          }
+        },
+        {
+          "name": "Button label",
+          "text": "Connect local helper",
+          "x": 36,
+          "y": 1638,
+          "width": 318,
+          "height": 24,
+          "ink": {
+            "width": 145.875,
+            "height": 17
+          }
+        },
+        {
+          "name": "Button label",
+          "text": "Build locally",
+          "x": 36,
+          "y": 1698,
+          "width": 318,
+          "height": 24,
+          "ink": {
+            "width": 84.484375,
+            "height": 17
+          }
+        },
+        {
+          "name": "Local helper state",
+          "text": "Helper disconnected.",
+          "x": 24,
+          "y": 1752,
+          "width": 342,
+          "height": 32,
+          "ink": {
+            "width": 150.3125,
+            "height": 17
+          }
+        },
+        {
+          "name": "copy / receipt / heading",
+          "text": "Inspect the matching build",
+          "x": 24,
+          "y": 1888,
+          "width": 342,
+          "height": 76,
+          "ink": {
+            "width": 325.3125,
+            "height": 31
+          }
+        },
+        {
+          "name": "copy / receipt / note",
+          "text": "The helper checks the authenticated source transaction. This page checks the canonical selection, configuration and complete candidate bytes before preparing a USB handoff.",
+          "x": 24,
+          "y": 1972,
+          "width": 342,
+          "height": 216,
+          "ink": {
+            "width": 331.859375,
+            "height": 128
+          }
+        },
+        {
+          "name": "copy / receiptHeading",
+          "text": "Choose both local files",
+          "x": 24,
+          "y": 2236,
+          "width": 342,
+          "height": 42,
+          "ink": {
+            "width": 281.734375,
+            "height": 31
+          }
+        },
+        {
+          "name": "copy / receiptNote",
+          "text": "The helper checks the authenticated source transaction. This page checks the canonical selection, configuration and complete candidate bytes before preparing a USB handoff.",
+          "x": 24,
+          "y": 2294,
+          "width": 342,
+          "height": 120,
+          "ink": {
+            "width": 314.859375,
+            "height": 113
+          }
+        },
+        {
+          "name": "Button label",
+          "text": "Choose standalone receipt",
+          "x": 36,
+          "y": 2362,
+          "width": 318,
+          "height": 24,
+          "ink": {
+            "width": 190.359375,
+            "height": 17
+          }
+        },
+        {
+          "name": "Button label",
+          "text": "Choose candidate file",
+          "x": 36,
+          "y": 2422,
+          "width": 318,
+          "height": 24,
+          "ink": {
+            "width": 153.890625,
+            "height": 17
+          }
+        },
+        {
+          "name": "copy / receiptLimit",
+          "text": "Local JSON receipt plus complete APP1 bytes.",
+          "x": 24,
+          "y": 2484,
+          "width": 342,
+          "height": 48,
+          "ink": {
+            "width": 291.046875,
+            "height": 16
+          }
+        },
+        {
+          "name": "Receipt status",
+          "text": "No files inspected. Upload remains held.",
+          "x": 24,
+          "y": 2540,
+          "width": 342,
+          "height": 48,
+          "ink": {
+            "width": 286.375,
+            "height": 17
+          }
+        },
+        {
+          "name": "Button label",
+          "text": "Inspect local files",
+          "x": 36,
+          "y": 2806,
+          "width": 318,
+          "height": 24,
+          "ink": {
+            "width": 121.84375,
+            "height": 17
+          }
+        },
+        {
+          "name": "copy / handoff / heading",
+          "text": "USB handoff held",
+          "x": 24,
+          "y": 2928,
+          "width": 342,
+          "height": 76,
+          "ink": {
+            "width": 218.984375,
+            "height": 31
+          }
+        },
+        {
+          "name": "copy / handoff / note",
+          "text": "Selected expanded images remain held. Native runtime and physical evidence must match that exact image before any upload can be admitted. A checked source build does not qualify recording into pads or global capture.",
+          "x": 24,
+          "y": 3012,
+          "width": 342,
+          "height": 216,
+          "ink": {
+            "width": 326.21875,
+            "height": 155
+          }
+        },
+        {
+          "name": "USB held state",
+          "text": "Source and artifact checks do not admit a firmware upload.",
+          "x": 24,
+          "y": 3252,
+          "width": 342,
+          "height": 100,
+          "ink": {
+            "width": 336.1875,
+            "height": 47
+          }
+        },
+        {
+          "name": "Button label",
+          "text": "Prepare USB handoff",
+          "x": 36,
+          "y": 3390,
+          "width": 318,
+          "height": 24,
+          "ink": {
+            "width": 151.8125,
+            "height": 17
+          }
+        },
+        {
+          "name": "copy / restorationNote",
+          "text": "The byte-identical P6S restoration is a separate release. Its qualified USB path never authorizes a different selected candidate.",
+          "x": 24,
+          "y": 3460,
+          "width": 342,
+          "height": 160,
+          "ink": {
+            "width": 341.515625,
+            "height": 65
+          }
+        },
+        {
+          "name": "copy / footer",
+          "text": "Local build inspection. Selected-image USB delivery remains held.",
+          "x": 24,
+          "y": 3684,
+          "width": 342,
+          "height": 80,
+          "ink": {
+            "width": 335.46875,
+            "height": 34.5
+          }
+        }
+      ]
+    },
+    {
+      "id": "cac28749-e268-802e-8008-bf9687420b81",
+      "name": "Feature local build / Mobile / Dark",
+      "width": 390,
+      "height": 3796,
+      "metadata": {
+        "schema": 1,
+        "mode": "operate",
+        "mobile": true,
+        "dark": true,
+        "sharedCopy": "src/content/feature-local-build.json",
+        "initialState": "helper-disconnected/no-files",
+        "localBuildOnly": true,
+        "uploadHeld": true,
+        "sharedLinkedComponents": true
+      },
+      "linked": [
+        {
+          "id": "cac28749-e268-802e-8008-bf968745f76b",
+          "name": "Wordmark",
+          "componentId": "d862c4e5-8ca1-80d0-8008-b58b0c8a94df",
+          "component": "Wordmark",
+          "copy": true
+        },
+        {
+          "id": "cac28749-e268-802e-8008-bf96876c973d",
+          "name": "Feature local selection (Mobile)",
+          "componentId": "cac28749-e268-802e-8008-bf961793de2d",
+          "component": "Feature local selection (Mobile)",
+          "copy": true
+        },
+        {
+          "id": "cac28749-e268-802e-8008-bf96876c9741",
+          "name": "Emulator action",
+          "componentId": "6bf32eef-e7db-8057-8008-bb287d8e3cdc",
+          "component": "Emulator action",
+          "copy": true
+        },
+        {
+          "id": "cac28749-e268-802e-8008-bf96877106e2",
+          "name": "Feature local helper (Mobile)",
+          "componentId": "cac28749-e268-802e-8008-bf96198b6fb8",
+          "component": "Feature local helper (Mobile)",
+          "copy": true
+        },
+        {
+          "id": "cac28749-e268-802e-8008-bf96877106e9",
+          "name": "Emulator action",
+          "componentId": "6bf32eef-e7db-8057-8008-bb287d8e3cdc",
+          "component": "Emulator action",
+          "copy": true
+        },
+        {
+          "id": "cac28749-e268-802e-8008-bf9687716e52",
+          "name": "Emulator action",
+          "componentId": "6bf32eef-e7db-8057-8008-bb287d8e3cdc",
+          "component": "Emulator action",
+          "copy": true
+        },
+        {
+          "id": "cac28749-e268-802e-8008-bf968777740f",
+          "name": "Feature local receipt (Mobile)",
+          "componentId": "cac28749-e268-802e-8008-bf961c776e27",
+          "component": "Feature local receipt (Mobile)",
+          "copy": true
+        },
+        {
+          "id": "cac28749-e268-802e-8008-bf9687777413",
+          "name": "Feature receipt (Mobile)",
+          "componentId": "aef24b78-6c19-80a5-8008-bdfa02233856",
+          "component": "Feature receipt (Mobile)",
+          "copy": true
+        },
+        {
+          "id": "cac28749-e268-802e-8008-bf9687777417",
+          "name": "Emulator action",
+          "componentId": "6bf32eef-e7db-8057-8008-bb287d8e3cdc",
+          "component": "Emulator action",
+          "copy": true
+        },
+        {
+          "id": "cac28749-e268-802e-8008-bf9687778744",
+          "name": "Emulator action",
+          "componentId": "6bf32eef-e7db-8057-8008-bb287d8e3cdc",
+          "component": "Emulator action",
+          "copy": true
+        },
+        {
+          "id": "cac28749-e268-802e-8008-bf9687778749",
+          "name": "Emulator action",
+          "componentId": "6bf32eef-e7db-8057-8008-bb287d8e3cdc",
+          "component": "Emulator action",
+          "copy": true
+        },
+        {
+          "id": "cac28749-e268-802e-8008-bf9687818794",
+          "name": "Feature local handoff (Mobile)",
+          "componentId": "cac28749-e268-802e-8008-bf961e69b136",
+          "component": "Feature local handoff (Mobile)",
+          "copy": true
+        },
+        {
+          "id": "cac28749-e268-802e-8008-bf9687818799",
+          "name": "Emulator action",
+          "componentId": "6bf32eef-e7db-8057-8008-bb287d8e3cdc",
+          "component": "Emulator action",
+          "copy": true
+        }
+      ],
+      "text": [
+        {
+          "name": "Brand",
+          "text": "opensp",
+          "x": 24,
+          "y": 24,
+          "width": 120,
+          "height": 40,
+          "ink": {
+            "width": 96.015625,
+            "height": 30
+          }
+        },
+        {
+          "name": "Page navigation",
+          "text": "FEATURES",
+          "x": 160,
+          "y": 32,
+          "width": 240,
+          "height": 24,
+          "ink": {
+            "width": 67.21875,
+            "height": 16
+          }
+        },
+        {
+          "name": "copy / title",
+          "text": "Build your feature selection locally",
+          "x": 24,
+          "y": 120,
+          "width": 342,
+          "height": 176,
+          "ink": {
+            "width": 324.640625,
+            "height": 104
+          }
+        },
+        {
+          "name": "copy / introduction",
+          "text": "Choose features and shortcuts in the picker, then build that exact configuration with the local helper.",
+          "x": 24,
+          "y": 320,
+          "width": 342,
+          "height": 128,
+          "ink": {
+            "width": 331.21875,
+            "height": 74
+          }
+        },
+        {
+          "name": "copy / selection / heading",
+          "text": "Your selection",
+          "x": 24,
+          "y": 504,
+          "width": 342,
+          "height": 76,
+          "ink": {
+            "width": 174.875,
+            "height": 31
+          }
+        },
+        {
+          "name": "copy / selection / note",
+          "text": "Import the exported configuration or use the choices saved in this browser. Change features and shortcuts in the picker.",
+          "x": 24,
+          "y": 588,
+          "width": 342,
+          "height": 216,
+          "ink": {
+            "width": 324.1875,
+            "height": 101
+          }
+        },
+        {
+          "name": "Button label",
+          "text": "Import configuration",
+          "x": 36,
+          "y": 838,
+          "width": 318,
+          "height": 24,
+          "ink": {
+            "width": 141.40625,
+            "height": 17
+          }
+        },
+        {
+          "name": "Local selection state",
+          "text": "No configuration loaded.",
+          "x": 24,
+          "y": 896,
+          "width": 342,
+          "height": 48,
+          "ink": {
+            "width": 173.453125,
+            "height": 17
+          }
+        },
+        {
+          "name": "copy / pickerLink",
+          "text": "Edit features and shortcuts",
+          "x": 24,
+          "y": 952,
+          "width": 342,
+          "height": 48,
+          "ink": {
+            "width": 190.328125,
+            "height": 17
+          }
+        },
+        {
+          "name": "copy / helper / heading",
+          "text": "Local build helper",
+          "x": 24,
+          "y": 1196,
+          "width": 342,
+          "height": 76,
+          "ink": {
+            "width": 219.5,
+            "height": 31
+          }
+        },
+        {
+          "name": "copy / helper / note",
+          "text": "Start the source-only helper on your computer with your official v5.52 firmware and matching installed tools. Paste the connection supplied by that helper. Firmware and compiler inputs stay on your computer.",
+          "x": 24,
+          "y": 1280,
+          "width": 342,
+          "height": 216,
+          "ink": {
+            "width": 335.796875,
+            "height": 155
+          }
+        },
+        {
+          "name": "copy / connectionLabel",
+          "text": "Local helper connection",
+          "x": 24,
+          "y": 1520,
+          "width": 342,
+          "height": 32,
+          "ink": {
+            "width": 147.890625,
+            "height": 16
+          }
+        },
+        {
+          "name": "Local connection empty",
+          "text": "Paste the helper connection",
+          "x": 36,
+          "y": 1570,
+          "width": 318,
+          "height": 24,
+          "ink": {
+            "width": 198.359375,
+            "height": 17
+          }
+        },
+        {
+          "name": "Button label",
+          "text": "Connect local helper",
+          "x": 36,
+          "y": 1638,
+          "width": 318,
+          "height": 24,
+          "ink": {
+            "width": 145.875,
+            "height": 17
+          }
+        },
+        {
+          "name": "Button label",
+          "text": "Build locally",
+          "x": 36,
+          "y": 1698,
+          "width": 318,
+          "height": 24,
+          "ink": {
+            "width": 84.484375,
+            "height": 17
+          }
+        },
+        {
+          "name": "Local helper state",
+          "text": "Helper disconnected.",
+          "x": 24,
+          "y": 1752,
+          "width": 342,
+          "height": 32,
+          "ink": {
+            "width": 150.3125,
+            "height": 17
+          }
+        },
+        {
+          "name": "copy / receipt / heading",
+          "text": "Inspect the matching build",
+          "x": 24,
+          "y": 1888,
+          "width": 342,
+          "height": 76,
+          "ink": {
+            "width": 325.3125,
+            "height": 31
+          }
+        },
+        {
+          "name": "copy / receipt / note",
+          "text": "The helper checks the authenticated source transaction. This page checks the canonical selection, configuration and complete candidate bytes before preparing a USB handoff.",
+          "x": 24,
+          "y": 1972,
+          "width": 342,
+          "height": 216,
+          "ink": {
+            "width": 331.859375,
+            "height": 128
+          }
+        },
+        {
+          "name": "copy / receiptHeading",
+          "text": "Choose both local files",
+          "x": 24,
+          "y": 2236,
+          "width": 342,
+          "height": 42,
+          "ink": {
+            "width": 281.734375,
+            "height": 31
+          }
+        },
+        {
+          "name": "copy / receiptNote",
+          "text": "The helper checks the authenticated source transaction. This page checks the canonical selection, configuration and complete candidate bytes before preparing a USB handoff.",
+          "x": 24,
+          "y": 2294,
+          "width": 342,
+          "height": 120,
+          "ink": {
+            "width": 314.859375,
+            "height": 113
+          }
+        },
+        {
+          "name": "Button label",
+          "text": "Choose standalone receipt",
+          "x": 36,
+          "y": 2362,
+          "width": 318,
+          "height": 24,
+          "ink": {
+            "width": 190.359375,
+            "height": 17
+          }
+        },
+        {
+          "name": "Button label",
+          "text": "Choose candidate file",
+          "x": 36,
+          "y": 2422,
+          "width": 318,
+          "height": 24,
+          "ink": {
+            "width": 153.890625,
+            "height": 17
+          }
+        },
+        {
+          "name": "copy / receiptLimit",
+          "text": "Local JSON receipt plus complete APP1 bytes.",
+          "x": 24,
+          "y": 2484,
+          "width": 342,
+          "height": 48,
+          "ink": {
+            "width": 291.046875,
+            "height": 16
+          }
+        },
+        {
+          "name": "Receipt status",
+          "text": "No files inspected. Upload remains held.",
+          "x": 24,
+          "y": 2540,
+          "width": 342,
+          "height": 48,
+          "ink": {
+            "width": 286.375,
+            "height": 17
+          }
+        },
+        {
+          "name": "Button label",
+          "text": "Inspect local files",
+          "x": 36,
+          "y": 2806,
+          "width": 318,
+          "height": 24,
+          "ink": {
+            "width": 121.84375,
+            "height": 17
+          }
+        },
+        {
+          "name": "copy / handoff / heading",
+          "text": "USB handoff held",
+          "x": 24,
+          "y": 2928,
+          "width": 342,
+          "height": 76,
+          "ink": {
+            "width": 218.984375,
+            "height": 31
+          }
+        },
+        {
+          "name": "copy / handoff / note",
+          "text": "Selected expanded images remain held. Native runtime and physical evidence must match that exact image before any upload can be admitted. A checked source build does not qualify recording into pads or global capture.",
+          "x": 24,
+          "y": 3012,
+          "width": 342,
+          "height": 216,
+          "ink": {
+            "width": 326.21875,
+            "height": 155
+          }
+        },
+        {
+          "name": "USB held state",
+          "text": "Source and artifact checks do not admit a firmware upload.",
+          "x": 24,
+          "y": 3252,
+          "width": 342,
+          "height": 100,
+          "ink": {
+            "width": 336.1875,
+            "height": 47
+          }
+        },
+        {
+          "name": "Button label",
+          "text": "Prepare USB handoff",
+          "x": 36,
+          "y": 3390,
+          "width": 318,
+          "height": 24,
+          "ink": {
+            "width": 151.8125,
+            "height": 17
+          }
+        },
+        {
+          "name": "copy / restorationNote",
+          "text": "The byte-identical P6S restoration is a separate release. Its qualified USB path never authorizes a different selected candidate.",
+          "x": 24,
+          "y": 3460,
+          "width": 342,
+          "height": 160,
+          "ink": {
+            "width": 341.515625,
+            "height": 65
+          }
+        },
+        {
+          "name": "copy / footer",
+          "text": "Local build inspection. Selected-image USB delivery remains held.",
+          "x": 24,
+          "y": 3684,
+          "width": 342,
+          "height": 80,
+          "ink": {
+            "width": 335.46875,
+            "height": 34.5
+          }
+        }
+      ]
+    }
+  ]
+}

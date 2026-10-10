@@ -1,0 +1,910 @@
+{
+  "schema": "opensp-r13-machine-integration-v1",
+  "timestampUtc": "2026-10-03T04:13:19.877Z",
+  "passed": true,
+  "scope": "Exact original R13 executes in ARM WASM through startup, OLED GPIO, USB EP0/HID, RAM CRC, FlexSPI erase/program/IP readback and a model power cycle; two actual Node worker threads execute separate firmware sessions.",
+  "modeledClock": {
+    "gptHz": 24000000,
+    "counterReadIncrement": 24000,
+    "cpuCyclesMeasured": false
+  },
+  "modeledHost": {
+    "statusCompletion": "Guest services ENDPTCOMPLETE before the next SETUP",
+    "guestIdleInstructionsAfterEachControl": 25000,
+    "physicalElapsedTimeMeasured": false
+  },
+  "physicalDeviceAccess": false,
+  "firmwareBytesPublished": false,
+  "limitations": [
+    "APP1 begins at the captured resident handoff, not a cold ROM or resident-loader execution.",
+    "This is a same-image R13 update; a changed firmware identity and broader firmware families are separate evidence.",
+    "FCB geometry, busy completion, ADC conversion and bounded companion replies include explicit model fixtures.",
+    "NOR policy bounds are enforced by the executed R13 writer; the hardware model permits whole-chip mutations.",
+    "No physical USB, PHY, cache coherence, electrical timing, flash endurance or interrupted-update recovery is established.",
+    "Stock sampler, SD/filesystem, SAI/DMA audio, complete BMC and all peripheral behavior remain unverified.",
+    "Instruction counts and accelerated GPT reads do not establish device deadlines.",
+    "USB host idle turns are synthetic instruction intervals; physical host polling intervals are not measured."
+  ],
+  "sourceSha256": {
+    "src/lib/emulator/image.ts": "8ce61e1c0490c7588906a7d32c7e395db4eab5df40b5b0872908e38eca33e019",
+    "src/lib/emulator/cpu.ts": "fb27f37e31277b4e79d1847562c961de23acd25befc4015ffbfd2a3c7d7809b1",
+    "src/lib/emulator/board.ts": "c145f664b2a6ff74745a97a1c1f301b505694e81125daab52f30b43d66886ee3",
+    "src/lib/emulator/usb.ts": "68e5fa1b6b9c1d7de2da9a66ace01fb147077eb849ca9c6ef3c943e143ad85b2",
+    "src/lib/emulator/flash.ts": "2a887edf140feae0ed6ae450650ee2feb0c4bb8119c4a8d94d373a3c6d15d5bc",
+    "src/lib/emulator/exceptions.ts": "6412e7fc3086f2ab34f6f0127983521ccfb48cf7a2563249e5d09cf09a6d2e51",
+    "src/lib/emulator/exception-return.ts": "66ea775f49ab5db3cb395d1a200d01a2a9733cccf43157e873e4fc5f8e800f03",
+    "src/lib/emulator/session.ts": "da7671bc2ff356d99a643314f498749d15247323aec051f6395a6bf0fbf47563",
+    "tools/test-emulator-firmware.mjs": "91505b64767e94bf7b52e7f62f2a94cc1514ca256cc4998546b7bf55608016b7",
+    "tools/emulator-test-worker.mjs": "42587a6e6ddc756e7213e52eda24e79acbb301e5d04c9388593edb64b33dd2f2"
+  },
+  "runtime": {
+    "wrapperCommit": "1220477c7fb0f8fe4b500f4bd211de52f6dfe638",
+    "coreCommit": "8028ec436f2d9376525352dd38ed9ed6b9f6be10",
+    "jsSha256": "d8bc37b898ccbc5b429f17112add6ad33a8a9b35df4146034ba141b992dae007",
+    "wasmSha256": "16599c54af6da32ecce2ce52538890610a83c96e1152796ddffa2533d6440b35",
+    "provenanceSha256": "b3cdb377c331b2a8dc197425284704e91093acb65007c9a5c43e4b3e0717fb93",
+    "assetDirectory": "public/emulator/vendor",
+    "candidate": false,
+    "isPublishedBaseline": true,
+    "hasKnownR14Frontier": false
+  },
+  "firmware": {
+    "name": "ORIGINAL R13",
+    "bytes": 15396,
+    "sha256": "4891fd9451cd107f6f50f4fb85d75f538cf5b2eb3c7fb2680f36719b32f67e8a",
+    "marker": "0x523d0001",
+    "buildManifestSha256": "540b094a2588532d629376426870321ddc86c4f4ad75beb2bf4172ec5b488dbd",
+    "sourceSha256": {
+      "startup.S": "77a0da0310fd45e3e98951b0b4159f2ded3d4950ec710403031cffdd6120b0db",
+      "monitor.c": "11e7fa32e75c6492aad14667bb9873871478351343a22eeecc8b2153d96bf2bd",
+      "app1.ld": "cb050a7432145d737a86f8b1fb3afacc74745e4c4a409fcb37ecac37dc91fb94",
+      "board.c": "65481a65ddd24c9a7aa63ec75dfb4d8a0897f04587682ff107ec04292f0a1928",
+      "board.h": "1dc05396ad753251d792be4eb0059321c39a2e7dc43a8fac5946a2cf1e0d5bdb",
+      "screen.c": "7b193deaadcd30d62519a93c58c3aa5d5c02e99e1a979efc07e2f75f0afa7049",
+      "local_input.c": "c3eb4efa75b6adb6feff62c187a641ef11e78ffec17b736b36226039a0f34139",
+      "local_input.h": "837b0c884e9f5b0a99754ee631ec0cc98b6fd409ea25c299d9012bb201fcc2a8",
+      "usb_device.c": "4e856c4c6cc76f2064206112879e6b08f7a7e2e96a62bf668a15b6e3cd798bcd",
+      "usb_upload.c": "7e01690b8c3be5811ab056c164f96e9ea41a6254df115003b8d786cdb1790ff8",
+      "usb_upload.h": "c7ca78d4a3f5d70188a3fcc1066a3ac685423b540cff365e3053b743f8dd5035",
+      "build.py": "deddd6bcbfad2ba5cdc93e561432223fabccb280e314f480f032d8816a05c1cc",
+      "flash.c": "b58fd29e230c2447400315b9f76d42806018e9da7908c7cb26e0b39a3e50667a",
+      "flash.h": "bdb16538f71f22b1d6fa795e4fae0cca71691e09fa87c5c9d631345e419c8cf7",
+      "control_capture.c": "02f31a9f3522bb8b2cf8e8b10964334ff0b420fabf4e36c6fcfd3183f455c555",
+      "control_capture.h": "9b9da35671ec042f6452022c7036bb98b7b86398c7142eaab2d48e247de9ece2",
+      "controls.c": "e5bf77180e1ae56a66aaa56637d28483555c3eed1326ed69c111977217808e58",
+      "controls.h": "688918694507b9e8be7c8fdb85d3cb6896241ce2ca1677674b8dbffcb26f37c1",
+      "control_map.c": "18aececb50e73863b835bf41a7333bc3fbe607914329c1f12b38b23812750d39",
+      "named_input.c": "aca5df688eebee10745b0f488b3cd26a837e9fb9c8c80f9ef84cb0bc6a908479",
+      "named_input.h": "a628178fd98f752af1f8aecbbab6ac82be1ef6d2f243a20071d11f572414db74",
+      "generate_map.py": "98a76902c0b8c65d084a1c126a237a5577abedf5ec796b8a36b99a7adea936d2",
+      "control_profile.json": "42193d24ae9ddb94bea08f915533fa74cc9099db3e3f440091cb098eac329b4a"
+    }
+  },
+  "candidate": {
+    "name": "ORIGINAL R13",
+    "bytes": 15396,
+    "sha256": "4891fd9451cd107f6f50f4fb85d75f538cf5b2eb3c7fb2680f36719b32f67e8a",
+    "marker": "0x523d0001",
+    "buildManifestSha256": "540b094a2588532d629376426870321ddc86c4f4ad75beb2bf4172ec5b488dbd",
+    "sourceSha256": {
+      "startup.S": "77a0da0310fd45e3e98951b0b4159f2ded3d4950ec710403031cffdd6120b0db",
+      "monitor.c": "11e7fa32e75c6492aad14667bb9873871478351343a22eeecc8b2153d96bf2bd",
+      "app1.ld": "cb050a7432145d737a86f8b1fb3afacc74745e4c4a409fcb37ecac37dc91fb94",
+      "board.c": "65481a65ddd24c9a7aa63ec75dfb4d8a0897f04587682ff107ec04292f0a1928",
+      "board.h": "1dc05396ad753251d792be4eb0059321c39a2e7dc43a8fac5946a2cf1e0d5bdb",
+      "screen.c": "7b193deaadcd30d62519a93c58c3aa5d5c02e99e1a979efc07e2f75f0afa7049",
+      "local_input.c": "c3eb4efa75b6adb6feff62c187a641ef11e78ffec17b736b36226039a0f34139",
+      "local_input.h": "837b0c884e9f5b0a99754ee631ec0cc98b6fd409ea25c299d9012bb201fcc2a8",
+      "usb_device.c": "4e856c4c6cc76f2064206112879e6b08f7a7e2e96a62bf668a15b6e3cd798bcd",
+      "usb_upload.c": "7e01690b8c3be5811ab056c164f96e9ea41a6254df115003b8d786cdb1790ff8",
+      "usb_upload.h": "c7ca78d4a3f5d70188a3fcc1066a3ac685423b540cff365e3053b743f8dd5035",
+      "build.py": "deddd6bcbfad2ba5cdc93e561432223fabccb280e314f480f032d8816a05c1cc",
+      "flash.c": "b58fd29e230c2447400315b9f76d42806018e9da7908c7cb26e0b39a3e50667a",
+      "flash.h": "bdb16538f71f22b1d6fa795e4fae0cca71691e09fa87c5c9d631345e419c8cf7",
+      "control_capture.c": "02f31a9f3522bb8b2cf8e8b10964334ff0b420fabf4e36c6fcfd3183f455c555",
+      "control_capture.h": "9b9da35671ec042f6452022c7036bb98b7b86398c7142eaab2d48e247de9ece2",
+      "controls.c": "e5bf77180e1ae56a66aaa56637d28483555c3eed1326ed69c111977217808e58",
+      "controls.h": "688918694507b9e8be7c8fdb85d3cb6896241ce2ca1677674b8dbffcb26f37c1",
+      "control_map.c": "18aececb50e73863b835bf41a7333bc3fbe607914329c1f12b38b23812750d39",
+      "named_input.c": "aca5df688eebee10745b0f488b3cd26a837e9fb9c8c80f9ef84cb0bc6a908479",
+      "named_input.h": "a628178fd98f752af1f8aecbbab6ac82be1ef6d2f243a20071d11f572414db74",
+      "generate_map.py": "98a76902c0b8c65d084a1c126a237a5577abedf5ec796b8a36b99a7adea936d2",
+      "control_profile.json": "42193d24ae9ddb94bea08f915533fa74cc9099db3e3f440091cb098eac329b4a"
+    },
+    "abi": 1,
+    "entry": "0x60080001",
+    "flashBase": "0x60080000",
+    "checkpoint": "resident-app1-handoff",
+    "recipient": {
+      "marker": "0x523d0001",
+      "maximum": 65536,
+      "acceptedSourceAbi": 1,
+      "capacityFits": true
+    }
+  },
+  "references": [
+    "sdk/examples/original_r13/{USB.md,FLASH.md,monitor.c,screen.c,usb_upload.c,flash.c}",
+    "sdk/examples/original_r11/{USB.md,FLASH.md}",
+    "tools/{usb_upload.py,usb_flash_r13.py}",
+    "analysis/hardware/usb_r11_20260922T190757Z/preflight.json"
+  ],
+  "phase": "complete",
+  "boot": {
+    "checkpoint": "resident-app1-handoff",
+    "incoming": {
+      "r0": "0x60080001",
+      "msp": "0x202435b0",
+      "lr": 4,
+      "control": 0
+    },
+    "cpuModel": 10,
+    "cpuid": "0x411fc271",
+    "vtor": "0x80000000",
+    "marker": "0x523d0001",
+    "firmwareState": 2,
+    "heartbeat": 5,
+    "exceptions": {
+      "activeException": 0,
+      "activeExceptions": [],
+      "pendingExceptions": [],
+      "vectorTable": 2147483648,
+      "priorityGrouping": 0,
+      "delivered": 1,
+      "returned": 1,
+      "tailChains": 0,
+      "floatingPoint": {
+        "enabled": true,
+        "cpacr": 0,
+        "fpccr": 3221225472,
+        "fpcar": 0,
+        "fpdscr": 0,
+        "eagerFrames": 0,
+        "lazyFrames": 0,
+        "lazySaves": 0,
+        "lazyReturns": 0,
+        "restoredFrames": 0,
+        "unknownRegisterPolicy": "retain architecturally UNKNOWN caller-saved FP values"
+      },
+      "systick": {
+        "control": 0,
+        "reload": 0,
+        "current": 0,
+        "countFlag": false,
+        "sourceTicks": 0,
+        "timing": "modeled source ticks; no physical cycle calibration"
+      },
+      "unsupported": [
+        "late arrival",
+        "fault escalation",
+        "non-base Thread return",
+        "sleep",
+        "exclusive monitors",
+        "derived faults during FP stacking"
+      ]
+    },
+    "frames": [
+      {
+        "number": 1,
+        "bytes": 1024,
+        "sha256": "5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
+      },
+      {
+        "number": 2,
+        "bytes": 1024,
+        "sha256": "50083cabbaf22d8c50cacaa9155443850d3ec287459ff630a2791046ed416199"
+      },
+      {
+        "number": 3,
+        "bytes": 1024,
+        "sha256": "0c55f041ef4fcac2ef4009e404dd89eaab5b671d70c7d3b4a6a1d72b3a4123f2"
+      },
+      {
+        "number": 4,
+        "bytes": 1024,
+        "sha256": "41e0f21fcbc0a2dce1e525eb03097a6181df9148070f8037aa02fc8f6883aa41"
+      },
+      {
+        "number": 5,
+        "bytes": 1024,
+        "sha256": "fcdb19253e1d53a82baed2c9d2e406f95d697a2706f28076f53e3079359e0635"
+      }
+    ],
+    "instructions": 5800000
+  },
+  "usb": {
+    "enumeration": {
+      "device": [
+        18,
+        1,
+        0,
+        2,
+        0,
+        0,
+        0,
+        64,
+        254,
+        202,
+        77,
+        64,
+        19,
+        0,
+        1,
+        2,
+        0,
+        1
+      ],
+      "configuration": [
+        9,
+        2,
+        34,
+        0,
+        1,
+        1,
+        0,
+        128,
+        50,
+        9,
+        4,
+        0,
+        0,
+        1,
+        3,
+        0,
+        0,
+        0,
+        9,
+        33,
+        17,
+        1,
+        0,
+        1,
+        34,
+        21,
+        0,
+        7,
+        5,
+        129,
+        3,
+        64,
+        0,
+        10
+      ]
+    },
+    "hidDescriptorSha256": "a4208cb24eb64535458df6794fbcc4a6e435521cddc1c83437d2dee8da46f931",
+    "initialStatus": {
+      "version": 2,
+      "state": 0,
+      "error": 0,
+      "length": 0,
+      "received": 0,
+      "crc32": 0,
+      "maximum": 65536,
+      "capabilities": 1,
+      "jedec": 0,
+      "flash_status": 0,
+      "flash_error": 0,
+      "programmed": 0,
+      "flash_ready": 0,
+      "flash_crc32": 0,
+      "build_marker": 1379729409
+    }
+  },
+  "writerGuards": {
+    "oversize": {
+      "version": 2,
+      "state": 3,
+      "error": 2,
+      "length": 0,
+      "received": 0,
+      "crc32": 0,
+      "maximum": 65536,
+      "capabilities": 1,
+      "jedec": 0,
+      "flash_status": 0,
+      "flash_error": 0,
+      "programmed": 0,
+      "flash_ready": 0,
+      "flash_crc32": 0,
+      "build_marker": 1379729409
+    },
+    "prematureCommit": {
+      "version": 2,
+      "state": 3,
+      "error": 7,
+      "length": 0,
+      "received": 0,
+      "crc32": 0,
+      "maximum": 65536,
+      "capabilities": 1,
+      "jedec": 0,
+      "flash_status": 0,
+      "flash_error": 0,
+      "programmed": 0,
+      "flash_ready": 0,
+      "flash_crc32": 0,
+      "build_marker": 1379729409
+    },
+    "abortRestoresIdle": true,
+    "noNorCommands": true,
+    "norUnchanged": true
+  },
+  "preflight": {
+    "status": {
+      "version": 2,
+      "state": 0,
+      "error": 0,
+      "length": 0,
+      "received": 0,
+      "crc32": 0,
+      "maximum": 65536,
+      "capabilities": 1,
+      "jedec": 12722198,
+      "flash_status": 64,
+      "flash_error": 0,
+      "programmed": 0,
+      "flash_ready": 1,
+      "flash_crc32": 0,
+      "build_marker": 1379729409
+    },
+    "diagnostic": {
+      "phase": 5,
+      "bfpt_dwords": 9,
+      "bfpt_pointer": 48,
+      "legacy_profile": 1,
+      "jedec": 12722198,
+      "flash_status": 64,
+      "flash_error": 0,
+      "flash_ready": 1,
+      "reserved": 0,
+      "sha256": "ac8639b2d4f622535133c16a83d0a12e704cfcf78bc97b401d9c7c12fec42154",
+      "measuredProfileMatches": true,
+      "measuredProfileFile": "analysis/hardware/usb_r11_20260922T190757Z/preflight.json",
+      "measuredProfileSha256": "fa098817b8c8fd76d4ac19e46784f020c6fc8d1ad4fc205a0cdacb742c64c9cb"
+    },
+    "commandCount": 6,
+    "norUnchanged": true,
+    "fcbSource": "geometry fixture",
+    "sfdpSource": "R11 measured bytes with FF fixture padding"
+  },
+  "upload": {
+    "status": {
+      "version": 2,
+      "state": 2,
+      "error": 0,
+      "length": 15396,
+      "received": 15396,
+      "crc32": 3688201814,
+      "maximum": 65536,
+      "capabilities": 1,
+      "jedec": 12722198,
+      "flash_status": 64,
+      "flash_error": 0,
+      "programmed": 0,
+      "flash_ready": 1,
+      "flash_crc32": 0,
+      "build_marker": 1379729409
+    },
+    "packets": 275,
+    "crc32": 3688201814,
+    "actualStagingSha256": "4891fd9451cd107f6f50f4fb85d75f538cf5b2eb3c7fb2680f36719b32f67e8a",
+    "stagingReadMechanism": "Passive observation of guest RAM after the firmware reports its CRC",
+    "instructions": 56150000,
+    "norUnchanged": true
+  },
+  "flash": {
+    "status": {
+      "version": 2,
+      "state": 6,
+      "error": 0,
+      "length": 15396,
+      "received": 15396,
+      "crc32": 3688201814,
+      "maximum": 65536,
+      "capabilities": 1,
+      "jedec": 12722198,
+      "flash_status": 64,
+      "flash_error": 0,
+      "programmed": 16384,
+      "flash_ready": 1,
+      "flash_crc32": 3688201814,
+      "build_marker": 1379729409
+    },
+    "separateStatus": {
+      "version": 2,
+      "state": 6,
+      "error": 0,
+      "length": 15396,
+      "received": 15396,
+      "crc32": 3688201814,
+      "maximum": 65536,
+      "capabilities": 1,
+      "jedec": 12722198,
+      "flash_status": 64,
+      "flash_error": 0,
+      "programmed": 16384,
+      "flash_ready": 1,
+      "flash_crc32": 3688201814,
+      "build_marker": 1379729409
+    },
+    "programmedBytes": 16384,
+    "actualIpReadbackBytes": 16384,
+    "crc32": "0xdbd57e56",
+    "commandCount": 546,
+    "commandSha256": "336bdb673612fe7123a69fddbd147edc963d3cd7ebd5858a8ed3f6525c585fe9",
+    "erases": [
+      528384,
+      532480,
+      536576,
+      524288
+    ],
+    "pages": [
+      528384,
+      528640,
+      528896,
+      529152,
+      529408,
+      529664,
+      529920,
+      530176,
+      530432,
+      530688,
+      530944,
+      531200,
+      531456,
+      531712,
+      531968,
+      532224,
+      532480,
+      532736,
+      532992,
+      533248,
+      533504,
+      533760,
+      534016,
+      534272,
+      534528,
+      534784,
+      535040,
+      535296,
+      535552,
+      535808,
+      536064,
+      536320,
+      536576,
+      536832,
+      537088,
+      537344,
+      537600,
+      537856,
+      538112,
+      538368,
+      538624,
+      538880,
+      539136,
+      539392,
+      539648,
+      539904,
+      540160,
+      540416,
+      524288,
+      524544,
+      524800,
+      525056,
+      525312,
+      525568,
+      525824,
+      526080,
+      526336,
+      526592,
+      526848,
+      527104,
+      527360,
+      527616,
+      527872,
+      528128
+    ],
+    "eraseObservations": [
+      {
+        "address": 528384,
+        "changedBytes": 4008,
+        "erasedSha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6"
+      },
+      {
+        "address": 532480,
+        "changedBytes": 3961,
+        "erasedSha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6"
+      },
+      {
+        "address": 536576,
+        "changedBytes": 3020,
+        "erasedSha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6"
+      },
+      {
+        "address": 524288,
+        "changedBytes": 4046,
+        "erasedSha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6"
+      }
+    ],
+    "preservedResidentSha256": "79da075029b30b01f2cdbcee33dc9df7af6de269b96597d658a2efa2f20dd9d4",
+    "preservedTailSha256": "a60e6c5f1f168c36d8b12573e9e8a4ade97ccaf79dfb1220cebd2bdaf16eca1d",
+    "storedNorSha256": "f4561670cb1e081bbcee5cb74aa5217f2d80f990f432a43d293f41ad2890d0a3",
+    "instructions": 3650000,
+    "unchangedImageRestaged": true,
+    "candidateSha256": "4891fd9451cd107f6f50f4fb85d75f538cf5b2eb3c7fb2680f36719b32f67e8a"
+  },
+  "reboot": {
+    "checkpoint": "resident-app1-handoff",
+    "incoming": {
+      "r0": "0x60080001",
+      "msp": "0x202435b0",
+      "lr": 4,
+      "control": 0
+    },
+    "cpuModel": 10,
+    "cpuid": "0x411fc271",
+    "vtor": "0x80000000",
+    "marker": "0x523d0001",
+    "firmwareState": 2,
+    "heartbeat": 5,
+    "exceptions": {
+      "activeException": 0,
+      "activeExceptions": [],
+      "pendingExceptions": [],
+      "vectorTable": 2147483648,
+      "priorityGrouping": 0,
+      "delivered": 1,
+      "returned": 1,
+      "tailChains": 0,
+      "floatingPoint": {
+        "enabled": true,
+        "cpacr": 0,
+        "fpccr": 3221225472,
+        "fpcar": 0,
+        "fpdscr": 0,
+        "eagerFrames": 0,
+        "lazyFrames": 0,
+        "lazySaves": 0,
+        "lazyReturns": 0,
+        "restoredFrames": 0,
+        "unknownRegisterPolicy": "retain architecturally UNKNOWN caller-saved FP values"
+      },
+      "systick": {
+        "control": 0,
+        "reload": 0,
+        "current": 0,
+        "countFlag": false,
+        "sourceTicks": 0,
+        "timing": "modeled source ticks; no physical cycle calibration"
+      },
+      "unsupported": [
+        "late arrival",
+        "fault escalation",
+        "non-base Thread return",
+        "sleep",
+        "exclusive monitors",
+        "derived faults during FP stacking"
+      ]
+    },
+    "frames": [
+      {
+        "number": 1,
+        "bytes": 1024,
+        "sha256": "5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
+      },
+      {
+        "number": 2,
+        "bytes": 1024,
+        "sha256": "50083cabbaf22d8c50cacaa9155443850d3ec287459ff630a2791046ed416199"
+      },
+      {
+        "number": 3,
+        "bytes": 1024,
+        "sha256": "0c55f041ef4fcac2ef4009e404dd89eaab5b671d70c7d3b4a6a1d72b3a4123f2"
+      },
+      {
+        "number": 4,
+        "bytes": 1024,
+        "sha256": "41e0f21fcbc0a2dce1e525eb03097a6181df9148070f8037aa02fc8f6883aa41"
+      },
+      {
+        "number": 5,
+        "bytes": 1024,
+        "sha256": "fcdb19253e1d53a82baed2c9d2e406f95d697a2706f28076f53e3079359e0635"
+      }
+    ],
+    "instructions": 5800000,
+    "status": {
+      "version": 2,
+      "state": 0,
+      "error": 0,
+      "length": 0,
+      "received": 0,
+      "crc32": 0,
+      "maximum": 65536,
+      "capabilities": 1,
+      "jedec": 0,
+      "flash_status": 0,
+      "flash_error": 0,
+      "programmed": 0,
+      "flash_ready": 0,
+      "flash_crc32": 0,
+      "build_marker": 1379729409
+    },
+    "firmwareSha256": "4891fd9451cd107f6f50f4fb85d75f538cf5b2eb3c7fb2680f36719b32f67e8a",
+    "bytes": 15396,
+    "identityChanged": false,
+    "norSha256": "f4561670cb1e081bbcee5cb74aa5217f2d80f990f432a43d293f41ad2890d0a3"
+  },
+  "board": {
+    "unknownMmio": [],
+    "unknownMmioOverflow": 0
+  },
+  "mainInstructionLifetimes": {
+    "beforeModelReset": 72600000,
+    "afterModelReset": 6250000
+  },
+  "totalInstructions": 78850000,
+  "parallelWorkers": [
+    {
+      "volume": 0.25,
+      "expectedRaw": 3062,
+      "observedRaw": 3062,
+      "snapshotSha256": "e8cc0bd7a1789eb2e3f48d2717f0aa6665c3f4d8c2586286b1e9327d13c60452",
+      "startup": {
+        "checkpoint": "resident-app1-handoff",
+        "incoming": {
+          "r0": "0x60080001",
+          "msp": "0x202435b0",
+          "lr": 4,
+          "control": 0
+        },
+        "cpuModel": 10,
+        "cpuid": "0x411fc271",
+        "vtor": "0x80000000",
+        "marker": "0x523d0001",
+        "firmwareState": 2,
+        "heartbeat": 5,
+        "exceptions": {
+          "activeException": 0,
+          "activeExceptions": [],
+          "pendingExceptions": [],
+          "vectorTable": 2147483648,
+          "priorityGrouping": 0,
+          "delivered": 1,
+          "returned": 1,
+          "tailChains": 0,
+          "floatingPoint": {
+            "enabled": true,
+            "cpacr": 0,
+            "fpccr": 3221225472,
+            "fpcar": 0,
+            "fpdscr": 0,
+            "eagerFrames": 0,
+            "lazyFrames": 0,
+            "lazySaves": 0,
+            "lazyReturns": 0,
+            "restoredFrames": 0,
+            "unknownRegisterPolicy": "retain architecturally UNKNOWN caller-saved FP values"
+          },
+          "systick": {
+            "control": 0,
+            "reload": 0,
+            "current": 0,
+            "countFlag": false,
+            "sourceTicks": 0,
+            "timing": "modeled source ticks; no physical cycle calibration"
+          },
+          "unsupported": [
+            "late arrival",
+            "fault escalation",
+            "non-base Thread return",
+            "sleep",
+            "exclusive monitors",
+            "derived faults during FP stacking"
+          ]
+        },
+        "frames": [
+          {
+            "number": 1,
+            "bytes": 1024,
+            "sha256": "5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
+          },
+          {
+            "number": 2,
+            "bytes": 1024,
+            "sha256": "50083cabbaf22d8c50cacaa9155443850d3ec287459ff630a2791046ed416199"
+          },
+          {
+            "number": 3,
+            "bytes": 1024,
+            "sha256": "0c55f041ef4fcac2ef4009e404dd89eaab5b671d70c7d3b4a6a1d72b3a4123f2"
+          },
+          {
+            "number": 4,
+            "bytes": 1024,
+            "sha256": "41e0f21fcbc0a2dce1e525eb03097a6181df9148070f8037aa02fc8f6883aa41"
+          },
+          {
+            "number": 5,
+            "bytes": 1024,
+            "sha256": "fcdb19253e1d53a82baed2c9d2e406f95d697a2706f28076f53e3079359e0635"
+          }
+        ],
+        "instructions": 5800000
+      },
+      "status": {
+        "version": 2,
+        "state": 0,
+        "error": 0,
+        "length": 0,
+        "received": 0,
+        "crc32": 0,
+        "maximum": 65536,
+        "capabilities": 1,
+        "jedec": 0,
+        "flash_status": 0,
+        "flash_error": 0,
+        "programmed": 0,
+        "flash_ready": 0,
+        "flash_crc32": 0,
+        "build_marker": 1379729409
+      },
+      "capture": {
+        "opcodes": [
+          8,
+          9,
+          10
+        ],
+        "events": [
+          {
+            "ticks": 1154256704,
+            "sequence": 1,
+            "value": 3062,
+            "source": 2,
+            "slot": 16
+          }
+        ],
+        "dropped": 0
+      },
+      "instructions": 10050000,
+      "norSha256": "f4561670cb1e081bbcee5cb74aa5217f2d80f990f432a43d293f41ad2890d0a3",
+      "unknownMmio": []
+    },
+    {
+      "volume": 0.75,
+      "expectedRaw": 1021,
+      "observedRaw": 1021,
+      "snapshotSha256": "68a6d74e8970051e353547ca2a28ad478bf701b0787f10fb0310d0b594e6195d",
+      "startup": {
+        "checkpoint": "resident-app1-handoff",
+        "incoming": {
+          "r0": "0x60080001",
+          "msp": "0x202435b0",
+          "lr": 4,
+          "control": 0
+        },
+        "cpuModel": 10,
+        "cpuid": "0x411fc271",
+        "vtor": "0x80000000",
+        "marker": "0x523d0001",
+        "firmwareState": 2,
+        "heartbeat": 5,
+        "exceptions": {
+          "activeException": 0,
+          "activeExceptions": [],
+          "pendingExceptions": [],
+          "vectorTable": 2147483648,
+          "priorityGrouping": 0,
+          "delivered": 1,
+          "returned": 1,
+          "tailChains": 0,
+          "floatingPoint": {
+            "enabled": true,
+            "cpacr": 0,
+            "fpccr": 3221225472,
+            "fpcar": 0,
+            "fpdscr": 0,
+            "eagerFrames": 0,
+            "lazyFrames": 0,
+            "lazySaves": 0,
+            "lazyReturns": 0,
+            "restoredFrames": 0,
+            "unknownRegisterPolicy": "retain architecturally UNKNOWN caller-saved FP values"
+          },
+          "systick": {
+            "control": 0,
+            "reload": 0,
+            "current": 0,
+            "countFlag": false,
+            "sourceTicks": 0,
+            "timing": "modeled source ticks; no physical cycle calibration"
+          },
+          "unsupported": [
+            "late arrival",
+            "fault escalation",
+            "non-base Thread return",
+            "sleep",
+            "exclusive monitors",
+            "derived faults during FP stacking"
+          ]
+        },
+        "frames": [
+          {
+            "number": 1,
+            "bytes": 1024,
+            "sha256": "5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
+          },
+          {
+            "number": 2,
+            "bytes": 1024,
+            "sha256": "50083cabbaf22d8c50cacaa9155443850d3ec287459ff630a2791046ed416199"
+          },
+          {
+            "number": 3,
+            "bytes": 1024,
+            "sha256": "0c55f041ef4fcac2ef4009e404dd89eaab5b671d70c7d3b4a6a1d72b3a4123f2"
+          },
+          {
+            "number": 4,
+            "bytes": 1024,
+            "sha256": "41e0f21fcbc0a2dce1e525eb03097a6181df9148070f8037aa02fc8f6883aa41"
+          },
+          {
+            "number": 5,
+            "bytes": 1024,
+            "sha256": "fcdb19253e1d53a82baed2c9d2e406f95d697a2706f28076f53e3079359e0635"
+          }
+        ],
+        "instructions": 5800000
+      },
+      "status": {
+        "version": 2,
+        "state": 0,
+        "error": 0,
+        "length": 0,
+        "received": 0,
+        "crc32": 0,
+        "maximum": 65536,
+        "capabilities": 1,
+        "jedec": 0,
+        "flash_status": 0,
+        "flash_error": 0,
+        "programmed": 0,
+        "flash_ready": 0,
+        "flash_crc32": 0,
+        "build_marker": 1379729409
+      },
+      "capture": {
+        "opcodes": [
+          8,
+          9,
+          10
+        ],
+        "events": [
+          {
+            "ticks": 1154256704,
+            "sequence": 1,
+            "value": 1021,
+            "source": 2,
+            "slot": 16
+          }
+        ],
+        "dropped": 0
+      },
+      "instructions": 10050000,
+      "norSha256": "f4561670cb1e081bbcee5cb74aa5217f2d80f990f432a43d293f41ad2890d0a3",
+      "unknownMmio": []
+    }
+  ],
+  "parallelIsolation": {
+    "actualWorkerThreads": 2,
+    "divergentInputsAndFirmwareSnapshots": true,
+    "independentCpuBoardNor": true
+  },
+  "hostElapsedMs": 76661,
+  "replacedReport": {
+    "report": "tools/emulator-evidence/r13-integration-2026-10-03T030026-250Z.json",
+    "sha256": "0685c40be835ce0da38de46c63d00e2d8e9e062ecffd0da1422e6b1114ae4ce6",
+    "passed": true
+  }
+}

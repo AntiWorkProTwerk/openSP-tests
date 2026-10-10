@@ -1,0 +1,181 @@
+{
+  "schema": "opensp-sd-page-gpio-browser-checkpoint-v1",
+  "passed": true,
+  "deployment": "Local only",
+  "verification": {
+    "modelGroupsIncludingRetainedCandidates": 704,
+    "productionModelGroups": 583,
+    "retainedCandidateGroups": 121,
+    "cpuGroups": 12,
+    "completeBrowserCases": 170,
+    "skipped": 0,
+    "typecheckFiles": 101,
+    "errors": 0,
+    "warnings": 0,
+    "hints": 0,
+    "sourceStable": true,
+    "runtimeStable": true
+  },
+  "budgets": {
+    "initialEmulatorJavascriptGzipBytes": 9228,
+    "demandJavascriptGzipBytes": 60225,
+    "wasmBytes": 706188,
+    "maximumOrdinaryActiveJavascriptGzipBytes": 12880,
+    "wholeSiteJavascriptGzipBytes": 95778
+  },
+  "gpio": {
+    "productionBoardSha256": "cb680b8017f6ba9deb3f331b7528c3fe47f87e1d80899d5a2243779c070d0c0b",
+    "helperSha256": "2db391ab062fe75a494ecb0d7ef12af1484498f596bd481d3f78991d86f94f38",
+    "finiteGroups": 49,
+    "independentReview": "passed",
+    "sourceMasks": {
+      "threeBit": 11,
+      "fourBit": 53
+    },
+    "rejectedV1": "Uniform three-bit mux mask rejected before promotion; exact proposal and44-pass result preserved."
+  },
+  "guestRegression": {
+    "scope": "R13 toR14 toR13 actual virtualUSB flash/readback and fresh identities",
+    "elapsedMs": 75198,
+    "starts": 148450000,
+    "actualReadbackBytes": [
+      20480,
+      16384
+    ],
+    "wholeNorRestored": false
+  },
+  "stock": {
+    "scatterRegions": 12,
+    "scatterStarts": 19016151,
+    "subsequentStarts": 10000000,
+    "elapsedMs": 8187,
+    "pc": "0x0000d912",
+    "backendHealthy": true,
+    "oledFrames": 0,
+    "completeBootVerified": false
+  },
+  "sdPage": {
+    "slots": 2,
+    "imageBytesEach": 262144,
+    "realProductFileInputs": true,
+    "productionWorker": true,
+    "resetMetadataRetained": true,
+    "guestCommands": 0,
+    "guestReads": 0,
+    "filesystemQualified": false
+  },
+  "preservedFailures": {
+    "initialPageRun": "31 passes/1 failure; initial diagnostics and preparing busy fixes have separate qualification.",
+    "initialIntegratedRun": "169 passes/1 test assertion failure; exact spec/log/trace retained privately. Corrected affected case and later complete170-case run pass."
+  },
+  "views": [
+    {
+      "name": "emulator-390-light.png",
+      "bytes": 439126,
+      "sha256": "3a6511914be2b8cdbdb42f46a255b81dd7c28e7728dc4c18441d61b4243ff067",
+      "reviewed": true,
+      "published": false
+    },
+    {
+      "name": "emulator-390-dark.png",
+      "bytes": 462737,
+      "sha256": "becefc50fa5f0c335f8e377241e758a42d90f5068f0b772165251f6dd3d58814",
+      "reviewed": true,
+      "published": false
+    },
+    {
+      "name": "emulator-1440-light.png",
+      "bytes": 476029,
+      "sha256": "6e8bc11a8d80805f98568e8e34bd6d5d86b5bfae231540e384120dd5b1847727",
+      "reviewed": true,
+      "published": false
+    },
+    {
+      "name": "emulator-1440-dark.png",
+      "bytes": 496096,
+      "sha256": "8a02066fc5c89e55b5ee72140a97a1efcea49fa3764e6130a8d0180d3c77ed15",
+      "reviewed": true,
+      "published": false
+    }
+  ],
+  "rawLogPins": {
+    "check.public.log": {
+      "privateOriginal": "analysis/emulator/gpio_read_promotion_20261003/check-final.log",
+      "bytes": 294,
+      "sha256": "d078377478fd9b6b6b5d448644e1eab1f53d487cbec972536255cc01952c3bb8"
+    },
+    "build.public.log": {
+      "privateOriginal": "analysis/emulator/gpio_read_promotion_20261003/build.log",
+      "bytes": 33766,
+      "sha256": "21ee4f0b44e1b88c195b9f0a7de101b8370af348a4d6e76217ec5dcd39532807"
+    },
+    "complete-tests.public.log": {
+      "privateOriginal": "analysis/emulator/gpio_read_promotion_20261003/complete-tests-final.log",
+      "bytes": 94026,
+      "sha256": "e03d3b16791d2853ecadb9ea9822a6e4a768a795bb0b1e4187d500ed3c1aac90"
+    },
+    "sd-product-browser-corrected.public.log": {
+      "privateOriginal": "analysis/emulator/gpio_read_promotion_20261003/sd-product-browser-corrected.log",
+      "bytes": 587,
+      "sha256": "0e24935273fc39e5b4c215b1d808be19b7c4c296d27b11d18914a445221f0659"
+    }
+  },
+  "files": {
+    "build-info.json": {
+      "bytes": 9968,
+      "sha256": "1e6bd5678d631c7324ad98f42967c33c0edc4e3ce3d0aafaeedd90aeadcdaf20"
+    },
+    "browser-runtime.json": {
+      "bytes": 3225,
+      "sha256": "411c1c50a224ee1ee94eed43963241ae6ac07cd088286fa6d1e836398ede4faf"
+    },
+    "worker-rpc-browser-roundtrip.json": {
+      "bytes": 1342462,
+      "sha256": "9abc83d4b37821d3d850e40cb71975a5f353e72750f4303e9d7c4f64cdaa9f4e"
+    },
+    "sd-page-browser-runtime.json": {
+      "bytes": 11346,
+      "sha256": "d88d4ea1fb05b86c3da25c3ed9c5569f52007ebb79ae6ea3225139b0ffb6b804"
+    },
+    "emulator-sd-page-runtime.spec.ts": {
+      "bytes": 15674,
+      "sha256": "278189c6d2687130d045bb31e4df604c22d2dbf02c9c1900a3cc22d9712ce3b6"
+    },
+    "emulator-worker-roundtrip.spec.ts": {
+      "bytes": 27928,
+      "sha256": "5440efed836717c044acd0b68f180827a7e53adf01f99a06d0b1d85a2f58cd55"
+    },
+    "emulator.spec.ts": {
+      "bytes": 53583,
+      "sha256": "e63ef09b68c516771df3552590c98ad568e5f9eed0e7aec8c017563c0f6ec4eb"
+    },
+    "cpu-verification.json": {
+      "bytes": 2953,
+      "sha256": "f9429e17ea7f21b537bdb0c5c248efcd9acbfae0dd8d00f2134e372f111b2958"
+    },
+    "check.public.log": {
+      "bytes": 279,
+      "sha256": "faa454a339c8ad0a75b1cf2ff866a50d20e0fa4251ef0ed52183fd0d2c7e3a0c"
+    },
+    "build.public.log": {
+      "bytes": 33751,
+      "sha256": "3d6e411404eac24c809b50d4ab856239db76fe02ada6e2cdbfe78fec37b273db"
+    },
+    "complete-tests.public.log": {
+      "bytes": 94026,
+      "sha256": "e03d3b16791d2853ecadb9ea9822a6e4a768a795bb0b1e4187d500ed3c1aac90"
+    },
+    "sd-product-browser-corrected.public.log": {
+      "bytes": 587,
+      "sha256": "0e24935273fc39e5b4c215b1d808be19b7c4c296d27b11d18914a445221f0659"
+    }
+  },
+  "physicalDeviceAccess": false,
+  "firmwareBytesPublished": false,
+  "sdBytesPublished": false,
+  "limitations": [
+    "Stock RTOS, storage, audio and complete boot remain unqualified.",
+    "Ready pin and other pad samples remain synthetic; no physical timing or recovery proof.",
+    "Current stock RAM list traversal needs source-derived passive observations before attributing cause."
+  ]
+}

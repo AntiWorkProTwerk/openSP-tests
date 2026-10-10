@@ -1,0 +1,2050 @@
+{
+  "schema": "opensp-stock-startup-v1",
+  "source": "firmware/v552/extracted/sp404mk2_sys_v552/SP404MKII_APP1.bin",
+  "imageSha256": "4a3d67711e14dcc97d50249a4eee7dd6df0251a2f37757cbbe2556c233730d80",
+  "checkpoint": "Raw stock APP1 executes its own scatter loader, then enters its real C runtime",
+  "scope": "ARM WASM execution with deterministic peripherals; no physical device, ROM or reconstructed runtime substitution",
+  "regionChecks": [
+    {
+      "index": 0,
+      "mode": "copy",
+      "address": "0x00000000",
+      "bytes": 1024,
+      "expectedAfterSha256": "0ede7dd1033bed7dbb138d7bac9f6f759076dfe0c8e246a92f6bf27000fb6958",
+      "afterSha256": "0ede7dd1033bed7dbb138d7bac9f6f759076dfe0c8e246a92f6bf27000fb6958",
+      "matches": true
+    },
+    {
+      "index": 1,
+      "mode": "copy",
+      "address": "0x00000400",
+      "bytes": 129024,
+      "expectedAfterSha256": "f4a4c210c118f28c679485a091b4a9733532684c3e7da1fa631e597b002a4bd2",
+      "afterSha256": "f4a4c210c118f28c679485a091b4a9733532684c3e7da1fa631e597b002a4bd2",
+      "matches": true
+    },
+    {
+      "index": 2,
+      "mode": "decompress",
+      "address": "0x20000000",
+      "bytes": 37248,
+      "expectedAfterSha256": "46ecf08eb4be8371992acc9475462958e6b25afb0289942744ad1e7ed0547b8f",
+      "afterSha256": "46ecf08eb4be8371992acc9475462958e6b25afb0289942744ad1e7ed0547b8f",
+      "matches": true
+    },
+    {
+      "index": 3,
+      "mode": "decompress",
+      "address": "0x2023f000",
+      "bytes": 500304,
+      "expectedAfterSha256": "5c2f0bcd072684702d2926765d80f3560d076bebaf0b1e8de2b42a901cf6e0a0",
+      "afterSha256": "5c2f0bcd072684702d2926765d80f3560d076bebaf0b1e8de2b42a901cf6e0a0",
+      "matches": true
+    },
+    {
+      "index": 4,
+      "mode": "copy",
+      "address": "0x80000000",
+      "bytes": 2381632,
+      "expectedAfterSha256": "b1f2b8daebd11ba54149ae65469d9a8d20dae1be58588c8e1ac8d8bf5f3722fe",
+      "afterSha256": "b1f2b8daebd11ba54149ae65469d9a8d20dae1be58588c8e1ac8d8bf5f3722fe",
+      "matches": true
+    },
+    {
+      "index": 5,
+      "mode": "decompress",
+      "address": "0x80245740",
+      "bytes": 663744,
+      "expectedAfterSha256": "6be8be39a551d2f3f5f9cc746202c128622b7abb726e61bb482146b39222855d",
+      "afterSha256": "6be8be39a551d2f3f5f9cc746202c128622b7abb726e61bb482146b39222855d",
+      "matches": true
+    },
+    {
+      "index": 6,
+      "mode": "copy",
+      "address": "0x8383a30c",
+      "bytes": 280,
+      "expectedAfterSha256": "cb28143ebb95f181829e31cd4fcca7dd175c1dbc5e23846f44889fe905bb89e1",
+      "afterSha256": "cb28143ebb95f181829e31cd4fcca7dd175c1dbc5e23846f44889fe905bb89e1",
+      "matches": true
+    },
+    {
+      "index": 7,
+      "mode": "decompress",
+      "address": "0x83ff0000",
+      "bytes": 6144,
+      "expectedAfterSha256": "aab6263a2973cdba4cd2e7c1be9b46c1f808fd69ea36622681477c5e6f0d7d69",
+      "afterSha256": "aab6263a2973cdba4cd2e7c1be9b46c1f808fd69ea36622681477c5e6f0d7d69",
+      "matches": true
+    },
+    {
+      "index": 8,
+      "mode": "zero",
+      "address": "0x20009180",
+      "bytes": 856,
+      "beforeSha256": "3ccc99cac0f71865e2c50e10d7579d963951638d90540266a61e016093432586",
+      "expectedAfterSha256": "ab9ac8d62fd064748c921e6bd4c123f5cc8910a384d1804bec33ffe27da27c4c",
+      "afterSha256": "ab9ac8d62fd064748c921e6bd4c123f5cc8910a384d1804bec33ffe27da27c4c",
+      "matches": true
+    },
+    {
+      "index": 9,
+      "mode": "zero",
+      "address": "0x202b9250",
+      "bytes": 19896,
+      "beforeSha256": "45c94c8d5c3b5dbd61095586914a2014bd44f3e50b5ff914b4134d1d48a8e787",
+      "expectedAfterSha256": "2bebabcc7d4473104e1a9e35014246c591a8c5cc6d7ba2264d89af7b0e238090",
+      "afterSha256": "2bebabcc7d4473104e1a9e35014246c591a8c5cc6d7ba2264d89af7b0e238090",
+      "matches": true
+    },
+    {
+      "index": 10,
+      "mode": "zero",
+      "address": "0x802e7800",
+      "bytes": 52767500,
+      "beforeSha256": "85a19146eedb854122ad7965d59ca5d4f0f9cf775db778a4825ad8e2d926b13d",
+      "expectedAfterSha256": "17cffd736521f15d927c662c83fd3b087e18909fc84864203f2bada3d8435bf7",
+      "afterSha256": "17cffd736521f15d927c662c83fd3b087e18909fc84864203f2bada3d8435bf7",
+      "matches": true
+    },
+    {
+      "index": 11,
+      "mode": "zero",
+      "address": "0x83ff1800",
+      "bytes": 42840,
+      "beforeSha256": "70d9f33239589aea2ea902f001d53800f537dc1a9ec6ae0fa580e812a5426a58",
+      "expectedAfterSha256": "613da7b68c8851340b9dc0170c664778d32388aa5a447f1054ebb68885951cf4",
+      "afterSha256": "613da7b68c8851340b9dc0170c664778d32388aa5a447f1054ebb68885951cf4",
+      "matches": true
+    }
+  ],
+  "stages": [
+    {
+      "name": "actual scatter completion",
+      "instructions": 19016148,
+      "pc": "0x60080622",
+      "unknownMmio": [
+        {
+          "address": 3758157188,
+          "width": 4,
+          "operation": "write",
+          "count": 3
+        },
+        {
+          "address": 3758157184,
+          "width": 4,
+          "operation": "read",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "name": "real C runtime frontier",
+      "instructions": 19018667,
+      "postScatterInstructions": 2519,
+      "reason": "stopped",
+      "pc": "0x800003fe",
+      "registers": {
+        "r0": "0x401f8014",
+        "r1": "0x00000005",
+        "r2": "0x401f84a8",
+        "r3": "0x00000006",
+        "r4": "0x400c0000",
+        "r5": "0x00000003",
+        "r6": "0x00000000",
+        "r7": "0xfbf3cffa",
+        "sp": "0x202bdf60",
+        "lr": "0x0000000c",
+        "control": "0x00000004",
+        "basepri": "0x00000010",
+        "primask": "0x00000000",
+        "xpsr": "0x21000000"
+      },
+      "entered": [
+        {
+          "address": "0x60080622",
+          "size": 4,
+          "bytes": "40f2cb4c",
+          "byteSource": "uploaded XIP image"
+        },
+        {
+          "address": "0x60080626",
+          "size": 4,
+          "bytes": "c0f2000c",
+          "byteSource": "uploaded XIP image"
+        },
+        {
+          "address": "0x6008062a",
+          "size": 2,
+          "bytes": "6047",
+          "byteSource": "uploaded XIP image"
+        },
+        {
+          "address": "0x000004ca",
+          "size": 4,
+          "bytes": "dff810d0",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x000004ce",
+          "size": 4,
+          "bytes": "fff7dfff",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x00000490",
+          "size": 2,
+          "bytes": "1fb5",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x00000492",
+          "size": 4,
+          "bytes": "1ff0c5f8",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x0001f620",
+          "size": 4,
+          "bytes": "f1ee100a",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x0001f624",
+          "size": 4,
+          "bytes": "4ff6ff71",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x0001f628",
+          "size": 4,
+          "bytes": "c0f2c031",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x0001f62c",
+          "size": 4,
+          "bytes": "20ea0100",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x0001f630",
+          "size": 4,
+          "bytes": "40f04070",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x0001f634",
+          "size": 4,
+          "bytes": "e1ee100a",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x0001f638",
+          "size": 2,
+          "bytes": "7047",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x00000496",
+          "size": 4,
+          "bytes": "0ef02afe",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x0000f0ee",
+          "size": 2,
+          "bytes": "0120",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x0000f0f0",
+          "size": 2,
+          "bytes": "e8e7",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x0000f0c4",
+          "size": 2,
+          "bytes": "0b49",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x0000f0c6",
+          "size": 2,
+          "bytes": "10b5",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x0000f0c8",
+          "size": 4,
+          "bytes": "a1f17c02",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x0000f0cc",
+          "size": 2,
+          "bytes": "0a4c",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x0000f0ce",
+          "size": 4,
+          "bytes": "c2e93712",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x0000f0d2",
+          "size": 2,
+          "bytes": "3721",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x0000f0d4",
+          "size": 2,
+          "bytes": "06e0",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x0000f0e4",
+          "size": 2,
+          "bytes": "0b1e",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x0000f0e6",
+          "size": 4,
+          "bytes": "a1f10101",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x0000f0ea",
+          "size": 2,
+          "bytes": "f4dc",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x0000f0d6",
+          "size": 4,
+          "bytes": "00eb1043",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x0000f0da",
+          "size": 4,
+          "bytes": "42f82130",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x0000f0de",
+          "size": 2,
+          "bytes": "074b",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x0000f0e0",
+          "size": 4,
+          "bytes": "00fb0340",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x0000f0e4",
+          "size": 2,
+          "bytes": "0b1e",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x0000f0e6",
+          "size": 4,
+          "bytes": "a1f10101",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x0000f0ea",
+          "size": 2,
+          "bytes": "f4dc",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x0000f0d6",
+          "size": 4,
+          "bytes": "00eb1043",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x0000f0da",
+          "size": 4,
+          "bytes": "42f82130",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x0000f0de",
+          "size": 2,
+          "bytes": "074b",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x0000f0e0",
+          "size": 4,
+          "bytes": "00fb0340",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x0000f0e4",
+          "size": 2,
+          "bytes": "0b1e",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x0000f0e6",
+          "size": 4,
+          "bytes": "a1f10101",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x0000f0ea",
+          "size": 2,
+          "bytes": "f4dc",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x0000f0d6",
+          "size": 4,
+          "bytes": "00eb1043",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x0000f0da",
+          "size": 4,
+          "bytes": "42f82130",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x0000f0de",
+          "size": 2,
+          "bytes": "074b",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x0000f0e0",
+          "size": 4,
+          "bytes": "00fb0340",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x0000f0e4",
+          "size": 2,
+          "bytes": "0b1e",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x0000f0e6",
+          "size": 4,
+          "bytes": "a1f10101",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x0000f0ea",
+          "size": 2,
+          "bytes": "f4dc",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x0000f0d6",
+          "size": 4,
+          "bytes": "00eb1043",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x0000f0da",
+          "size": 4,
+          "bytes": "42f82130",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x0000f0de",
+          "size": 2,
+          "bytes": "074b",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x0000f0e0",
+          "size": 4,
+          "bytes": "00fb0340",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x0000f0e4",
+          "size": 2,
+          "bytes": "0b1e",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x0000f0e6",
+          "size": 4,
+          "bytes": "a1f10101",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x0000f0ea",
+          "size": 2,
+          "bytes": "f4dc",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x0000f0d6",
+          "size": 4,
+          "bytes": "00eb1043",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x0000f0da",
+          "size": 4,
+          "bytes": "42f82130",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x0000f0de",
+          "size": 2,
+          "bytes": "074b",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x0000f0e0",
+          "size": 4,
+          "bytes": "00fb0340",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x0000f0e4",
+          "size": 2,
+          "bytes": "0b1e",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x0000f0e6",
+          "size": 4,
+          "bytes": "a1f10101",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x0000f0ea",
+          "size": 2,
+          "bytes": "f4dc",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x0000f0d6",
+          "size": 4,
+          "bytes": "00eb1043",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x0000f0da",
+          "size": 4,
+          "bytes": "42f82130",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x0000f0de",
+          "size": 2,
+          "bytes": "074b",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x0000f0e0",
+          "size": 4,
+          "bytes": "00fb0340",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x0000f0e4",
+          "size": 2,
+          "bytes": "0b1e",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x0000f0e6",
+          "size": 4,
+          "bytes": "a1f10101",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x0000f0ea",
+          "size": 2,
+          "bytes": "f4dc",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x0000f0d6",
+          "size": 4,
+          "bytes": "00eb1043",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x0000f0da",
+          "size": 4,
+          "bytes": "42f82130",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x0000f0de",
+          "size": 2,
+          "bytes": "074b",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x0000f0e0",
+          "size": 4,
+          "bytes": "00fb0340",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x0000f0e4",
+          "size": 2,
+          "bytes": "0b1e",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x0000f0e6",
+          "size": 4,
+          "bytes": "a1f10101",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x0000f0ea",
+          "size": 2,
+          "bytes": "f4dc",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x0000f0d6",
+          "size": 4,
+          "bytes": "00eb1043",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x0000f0da",
+          "size": 4,
+          "bytes": "42f82130",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x0000f0de",
+          "size": 2,
+          "bytes": "074b",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x0000f0e0",
+          "size": 4,
+          "bytes": "00fb0340",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x0000f0e4",
+          "size": 2,
+          "bytes": "0b1e",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x0000f0e6",
+          "size": 4,
+          "bytes": "a1f10101",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x0000f0ea",
+          "size": 2,
+          "bytes": "f4dc",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x0000f0d6",
+          "size": 4,
+          "bytes": "00eb1043",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x0000f0da",
+          "size": 4,
+          "bytes": "42f82130",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x0000f0de",
+          "size": 2,
+          "bytes": "074b",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x0000f0e0",
+          "size": 4,
+          "bytes": "00fb0340",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x0000f0e4",
+          "size": 2,
+          "bytes": "0b1e",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x0000f0e6",
+          "size": 4,
+          "bytes": "a1f10101",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x0000f0ea",
+          "size": 2,
+          "bytes": "f4dc",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x0000f0d6",
+          "size": 4,
+          "bytes": "00eb1043",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x0000f0da",
+          "size": 4,
+          "bytes": "42f82130",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x0000f0de",
+          "size": 2,
+          "bytes": "074b",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x0000f0e0",
+          "size": 4,
+          "bytes": "00fb0340",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x0000f0e4",
+          "size": 2,
+          "bytes": "0b1e",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x0000f0e6",
+          "size": 4,
+          "bytes": "a1f10101",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        }
+      ],
+      "lastExecuted": [
+        {
+          "address": "0x800904fc",
+          "size": 2,
+          "bytes": "1029",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x800904fe",
+          "size": 2,
+          "bytes": "38bf",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x80090500",
+          "size": 2,
+          "bytes": "0a46",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x80090502",
+          "size": 2,
+          "bytes": "611e",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x80090504",
+          "size": 2,
+          "bytes": "c469",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x80090506",
+          "size": 2,
+          "bytes": "0429",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x80090508",
+          "size": 4,
+          "bytes": "04ea0c05",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x8009050c",
+          "size": 2,
+          "bytes": "c561",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x8009050e",
+          "size": 2,
+          "bytes": "34d8",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x8009057a",
+          "size": 2,
+          "bytes": "b0bd",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x8000036c",
+          "size": 2,
+          "bytes": "6a46",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x8000036e",
+          "size": 2,
+          "bytes": "0221",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x80000370",
+          "size": 2,
+          "bytes": "2046",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x80000372",
+          "size": 4,
+          "bytes": "8df80260",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x80000376",
+          "size": 4,
+          "bytes": "adf80060",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x8000037a",
+          "size": 4,
+          "bytes": "90f055f8",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x80090428",
+          "size": 2,
+          "bytes": "b0b5",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x8009042a",
+          "size": 4,
+          "bytes": "4bf6ff73",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x8009042e",
+          "size": 4,
+          "bytes": "c4f21b03",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x80090432",
+          "size": 2,
+          "bytes": "9842",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x80090434",
+          "size": 2,
+          "bytes": "14dd",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x80090460",
+          "size": 2,
+          "bytes": "0023",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x80090462",
+          "size": 4,
+          "bytes": "c4f20c03",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x80090466",
+          "size": 2,
+          "bytes": "9842",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x80090468",
+          "size": 2,
+          "bytes": "10d0",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x8009048c",
+          "size": 4,
+          "bytes": "4ff0050c",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x80090490",
+          "size": 2,
+          "bytes": "3aa3",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x80090492",
+          "size": 4,
+          "bytes": "4cf2680e",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x80090496",
+          "size": 4,
+          "bytes": "c4f20f0e",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x8009049a",
+          "size": 2,
+          "bytes": "0324",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x8009049c",
+          "size": 4,
+          "bytes": "33f91c30",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x800904a0",
+          "size": 4,
+          "bytes": "4fea132c",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x800904a4",
+          "size": 4,
+          "bytes": "03f01f03",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x800904a8",
+          "size": 4,
+          "bytes": "04fa03f3",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x800904ac",
+          "size": 4,
+          "bytes": "5ef82c50",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x800904b0",
+          "size": 2,
+          "bytes": "2b43",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x800904b2",
+          "size": 4,
+          "bytes": "4ef82c30",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x800904b6",
+          "size": 2,
+          "bytes": "0123",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x800904b8",
+          "size": 2,
+          "bytes": "4569",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x800904ba",
+          "size": 2,
+          "bytes": "8b40",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x800904bc",
+          "size": 2,
+          "bytes": "9d43",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x800904be",
+          "size": 2,
+          "bytes": "4561",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x800904c0",
+          "size": 2,
+          "bytes": "1578",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x800904c2",
+          "size": 4,
+          "bytes": "6fea030c",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x800904c6",
+          "size": 2,
+          "bytes": "6db1",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x800904e4",
+          "size": 2,
+          "bytes": "4568",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x800904e6",
+          "size": 4,
+          "bytes": "05ea0c05",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x800904ea",
+          "size": 2,
+          "bytes": "4560",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x800904ec",
+          "size": 4,
+          "bytes": "4ff0100e",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x800904f0",
+          "size": 2,
+          "bytes": "9478",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x800904f2",
+          "size": 4,
+          "bytes": "b1f11002",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x800904f6",
+          "size": 2,
+          "bytes": "38bf",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x800904f8",
+          "size": 4,
+          "bytes": "4ff00c0e",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x800904fc",
+          "size": 2,
+          "bytes": "1029",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x800904fe",
+          "size": 2,
+          "bytes": "38bf",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x80090500",
+          "size": 2,
+          "bytes": "0a46",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x80090502",
+          "size": 2,
+          "bytes": "611e",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x80090504",
+          "size": 2,
+          "bytes": "c469",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x80090506",
+          "size": 2,
+          "bytes": "0429",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x80090508",
+          "size": 4,
+          "bytes": "04ea0c05",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x8009050c",
+          "size": 2,
+          "bytes": "c561",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x8009050e",
+          "size": 2,
+          "bytes": "34d8",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x8009057a",
+          "size": 2,
+          "bytes": "b0bd",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x8000037e",
+          "size": 4,
+          "bytes": "48f21400",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x80000382",
+          "size": 4,
+          "bytes": "48f2a842",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x80000386",
+          "size": 4,
+          "bytes": "c4f21f00",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x8000038a",
+          "size": 4,
+          "bytes": "c4f21f02",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x8000038e",
+          "size": 2,
+          "bytes": "0521",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x80000390",
+          "size": 2,
+          "bytes": "0623",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x80000392",
+          "size": 4,
+          "bytes": "c0f8a810",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x80000396",
+          "size": 4,
+          "bytes": "4cf6fa77",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x8000039a",
+          "size": 4,
+          "bytes": "c0f8ac50",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x8000039e",
+          "size": 4,
+          "bytes": "cff6f337",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x800003a2",
+          "size": 4,
+          "bytes": "c0f8e063",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x800003a6",
+          "size": 4,
+          "bytes": "c0f8b010",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x800003aa",
+          "size": 4,
+          "bytes": "c0f8b480",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x800003ae",
+          "size": 4,
+          "bytes": "c2f8a8a0",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x800003b2",
+          "size": 4,
+          "bytes": "c0f8b860",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x800003b6",
+          "size": 4,
+          "bytes": "c0f8bc60",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x800003ba",
+          "size": 4,
+          "bytes": "c0f8c060",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x800003be",
+          "size": 4,
+          "bytes": "c0f8c460",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x800003c2",
+          "size": 4,
+          "bytes": "c0f8c860",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x800003c6",
+          "size": 4,
+          "bytes": "c0f8cc60",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x800003ca",
+          "size": 4,
+          "bytes": "c0f8d060",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x800003ce",
+          "size": 4,
+          "bytes": "c0f8d460",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x800003d2",
+          "size": 4,
+          "bytes": "c0f8d810",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x800003d6",
+          "size": 4,
+          "bytes": "c0f8dc10",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x800003da",
+          "size": 4,
+          "bytes": "c0f8e010",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x800003de",
+          "size": 4,
+          "bytes": "c0f8e410",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x800003e2",
+          "size": 4,
+          "bytes": "c0f8e810",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x800003e6",
+          "size": 4,
+          "bytes": "c0f8ec10",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x800003ea",
+          "size": 4,
+          "bytes": "c0f8f010",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x800003ee",
+          "size": 4,
+          "bytes": "c0f8f410",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x800003f2",
+          "size": 4,
+          "bytes": "c0f8f830",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x800003f6",
+          "size": 4,
+          "bytes": "c2f840a1",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        },
+        {
+          "address": "0x800003fa",
+          "size": 4,
+          "bytes": "c0f8fc30",
+          "byteSource": "runtime read and hashed at scatter checkpoint"
+        }
+      ],
+      "mmio": [
+        {
+          "operation": "read",
+          "address": "0x401bc014",
+          "width": 4,
+          "value": "0x00000000",
+          "pc": "0x800904b8"
+        },
+        {
+          "operation": "write",
+          "address": "0x401bc014",
+          "width": 4,
+          "value": "0x00000000",
+          "pc": "0x800904be"
+        },
+        {
+          "operation": "read",
+          "address": "0x401bc000",
+          "width": 4,
+          "value": "0x00000001",
+          "pc": "0x800904cc"
+        },
+        {
+          "operation": "write",
+          "address": "0x401bc000",
+          "width": 4,
+          "value": "0x00000001",
+          "pc": "0x800904dc"
+        },
+        {
+          "operation": "read",
+          "address": "0x401bc004",
+          "width": 4,
+          "value": "0x03800402",
+          "pc": "0x800904de"
+        },
+        {
+          "operation": "write",
+          "address": "0x401bc004",
+          "width": 4,
+          "value": "0x0b800402",
+          "pc": "0x800904ea"
+        },
+        {
+          "operation": "read",
+          "address": "0x401bc01c",
+          "width": 4,
+          "value": "0x00000000",
+          "pc": "0x80090504"
+        },
+        {
+          "operation": "write",
+          "address": "0x401bc01c",
+          "width": 4,
+          "value": "0x00000000",
+          "pc": "0x8009050c"
+        },
+        {
+          "operation": "read",
+          "address": "0x400fc068",
+          "width": 4,
+          "value": "0xc0000000",
+          "pc": "0x800904ac"
+        },
+        {
+          "operation": "write",
+          "address": "0x400fc068",
+          "width": 4,
+          "value": "0xc0000000",
+          "pc": "0x800904b2"
+        },
+        {
+          "operation": "read",
+          "address": "0x401bc014",
+          "width": 4,
+          "value": "0x00000000",
+          "pc": "0x800904b8"
+        },
+        {
+          "operation": "write",
+          "address": "0x401bc014",
+          "width": 4,
+          "value": "0x00000000",
+          "pc": "0x800904be"
+        },
+        {
+          "operation": "read",
+          "address": "0x401bc004",
+          "width": 4,
+          "value": "0x0b800402",
+          "pc": "0x800904e4"
+        },
+        {
+          "operation": "write",
+          "address": "0x401bc004",
+          "width": 4,
+          "value": "0x0b800402",
+          "pc": "0x800904ea"
+        },
+        {
+          "operation": "read",
+          "address": "0x401bc01c",
+          "width": 4,
+          "value": "0x00000000",
+          "pc": "0x80090504"
+        },
+        {
+          "operation": "write",
+          "address": "0x401bc01c",
+          "width": 4,
+          "value": "0x00000000",
+          "pc": "0x8009050c"
+        },
+        {
+          "operation": "read",
+          "address": "0x400fc068",
+          "width": 4,
+          "value": "0xc0000000",
+          "pc": "0x800904ac"
+        },
+        {
+          "operation": "write",
+          "address": "0x400fc068",
+          "width": 4,
+          "value": "0xc0000000",
+          "pc": "0x800904b2"
+        },
+        {
+          "operation": "read",
+          "address": "0x401bc014",
+          "width": 4,
+          "value": "0x00000000",
+          "pc": "0x800904b8"
+        },
+        {
+          "operation": "write",
+          "address": "0x401bc014",
+          "width": 4,
+          "value": "0x00000000",
+          "pc": "0x800904be"
+        },
+        {
+          "operation": "read",
+          "address": "0x401bc000",
+          "width": 4,
+          "value": "0x00000001",
+          "pc": "0x800904cc"
+        },
+        {
+          "operation": "write",
+          "address": "0x401bc000",
+          "width": 4,
+          "value": "0x00000001",
+          "pc": "0x800904dc"
+        },
+        {
+          "operation": "read",
+          "address": "0x401bc004",
+          "width": 4,
+          "value": "0x0b800402",
+          "pc": "0x800904de"
+        },
+        {
+          "operation": "write",
+          "address": "0x401bc004",
+          "width": 4,
+          "value": "0x4b800402",
+          "pc": "0x800904ea"
+        },
+        {
+          "operation": "read",
+          "address": "0x401bc01c",
+          "width": 4,
+          "value": "0x00000000",
+          "pc": "0x80090504"
+        },
+        {
+          "operation": "write",
+          "address": "0x401bc01c",
+          "width": 4,
+          "value": "0x00000000",
+          "pc": "0x8009050c"
+        },
+        {
+          "operation": "read",
+          "address": "0x400fc068",
+          "width": 4,
+          "value": "0xc0000000",
+          "pc": "0x800904ac"
+        },
+        {
+          "operation": "write",
+          "address": "0x400fc068",
+          "width": 4,
+          "value": "0xc0000000",
+          "pc": "0x800904b2"
+        },
+        {
+          "operation": "read",
+          "address": "0x401bc014",
+          "width": 4,
+          "value": "0x00000000",
+          "pc": "0x800904b8"
+        },
+        {
+          "operation": "write",
+          "address": "0x401bc014",
+          "width": 4,
+          "value": "0x00000000",
+          "pc": "0x800904be"
+        },
+        {
+          "operation": "read",
+          "address": "0x401bc000",
+          "width": 4,
+          "value": "0x00000001",
+          "pc": "0x800904cc"
+        },
+        {
+          "operation": "write",
+          "address": "0x401bc000",
+          "width": 4,
+          "value": "0x00000001",
+          "pc": "0x800904dc"
+        },
+        {
+          "operation": "read",
+          "address": "0x401bc004",
+          "width": 4,
+          "value": "0x4b800402",
+          "pc": "0x800904de"
+        },
+        {
+          "operation": "write",
+          "address": "0x401bc004",
+          "width": 4,
+          "value": "0xcb800402",
+          "pc": "0x800904ea"
+        },
+        {
+          "operation": "read",
+          "address": "0x401bc01c",
+          "width": 4,
+          "value": "0x00000000",
+          "pc": "0x80090504"
+        },
+        {
+          "operation": "write",
+          "address": "0x401bc01c",
+          "width": 4,
+          "value": "0x00000000",
+          "pc": "0x8009050c"
+        },
+        {
+          "operation": "read",
+          "address": "0x400fc070",
+          "width": 4,
+          "value": "0x00000030",
+          "pc": "0x800904ac"
+        },
+        {
+          "operation": "write",
+          "address": "0x400fc070",
+          "width": 4,
+          "value": "0x0c000030",
+          "pc": "0x800904b2"
+        },
+        {
+          "operation": "read",
+          "address": "0x401c0014",
+          "width": 4,
+          "value": "0x00000000",
+          "pc": "0x800904b8"
+        },
+        {
+          "operation": "write",
+          "address": "0x401c0014",
+          "width": 4,
+          "value": "0x00000000",
+          "pc": "0x800904be"
+        },
+        {
+          "operation": "read",
+          "address": "0x401c0004",
+          "width": 4,
+          "value": "0x00000000",
+          "pc": "0x800904e4"
+        },
+        {
+          "operation": "write",
+          "address": "0x401c0004",
+          "width": 4,
+          "value": "0x00000000",
+          "pc": "0x800904ea"
+        },
+        {
+          "operation": "read",
+          "address": "0x401c001c",
+          "width": 4,
+          "value": "0x00000000",
+          "pc": "0x80090504"
+        },
+        {
+          "operation": "write",
+          "address": "0x401c001c",
+          "width": 4,
+          "value": "0x00000000",
+          "pc": "0x8009050c"
+        },
+        {
+          "operation": "read",
+          "address": "0x400fc070",
+          "width": 4,
+          "value": "0x0c000030",
+          "pc": "0x800904ac"
+        },
+        {
+          "operation": "write",
+          "address": "0x400fc070",
+          "width": 4,
+          "value": "0x0c000030",
+          "pc": "0x800904b2"
+        },
+        {
+          "operation": "read",
+          "address": "0x401c0014",
+          "width": 4,
+          "value": "0x00000000",
+          "pc": "0x800904b8"
+        },
+        {
+          "operation": "write",
+          "address": "0x401c0014",
+          "width": 4,
+          "value": "0x00000000",
+          "pc": "0x800904be"
+        },
+        {
+          "operation": "read",
+          "address": "0x401c0000",
+          "width": 4,
+          "value": "0x00000000",
+          "pc": "0x800904cc"
+        },
+        {
+          "operation": "write",
+          "address": "0x401c0000",
+          "width": 4,
+          "value": "0x00000000",
+          "pc": "0x800904dc"
+        },
+        {
+          "operation": "read",
+          "address": "0x401c0004",
+          "width": 4,
+          "value": "0x00000000",
+          "pc": "0x800904de"
+        },
+        {
+          "operation": "write",
+          "address": "0x401c0004",
+          "width": 4,
+          "value": "0x04000000",
+          "pc": "0x800904ea"
+        },
+        {
+          "operation": "read",
+          "address": "0x401c001c",
+          "width": 4,
+          "value": "0x00000000",
+          "pc": "0x80090504"
+        },
+        {
+          "operation": "write",
+          "address": "0x401c001c",
+          "width": 4,
+          "value": "0x00000000",
+          "pc": "0x8009050c"
+        },
+        {
+          "operation": "read",
+          "address": "0x400fc06c",
+          "width": 4,
+          "value": "0x0c000000",
+          "pc": "0x800904ac"
+        },
+        {
+          "operation": "write",
+          "address": "0x400fc06c",
+          "width": 4,
+          "value": "0xcc000000",
+          "pc": "0x800904b2"
+        },
+        {
+          "operation": "read",
+          "address": "0x400c0014",
+          "width": 4,
+          "value": "0x00000000",
+          "pc": "0x800904b8"
+        },
+        {
+          "operation": "write",
+          "address": "0x400c0014",
+          "width": 4,
+          "value": "0x00000000",
+          "pc": "0x800904be"
+        },
+        {
+          "operation": "read",
+          "address": "0x400c0004",
+          "width": 4,
+          "value": "0x00000000",
+          "pc": "0x800904e4"
+        },
+        {
+          "operation": "write",
+          "address": "0x400c0004",
+          "width": 4,
+          "value": "0x00000000",
+          "pc": "0x800904ea"
+        },
+        {
+          "operation": "read",
+          "address": "0x400c001c",
+          "width": 4,
+          "value": "0x00000000",
+          "pc": "0x80090504"
+        },
+        {
+          "operation": "write",
+          "address": "0x400c001c",
+          "width": 4,
+          "value": "0x00000000",
+          "pc": "0x8009050c"
+        },
+        {
+          "operation": "read",
+          "address": "0x400fc06c",
+          "width": 4,
+          "value": "0xcc000000",
+          "pc": "0x800904ac"
+        },
+        {
+          "operation": "write",
+          "address": "0x400fc06c",
+          "width": 4,
+          "value": "0xcc000000",
+          "pc": "0x800904b2"
+        },
+        {
+          "operation": "read",
+          "address": "0x400c0014",
+          "width": 4,
+          "value": "0x00000000",
+          "pc": "0x800904b8"
+        },
+        {
+          "operation": "write",
+          "address": "0x400c0014",
+          "width": 4,
+          "value": "0x00000000",
+          "pc": "0x800904be"
+        },
+        {
+          "operation": "read",
+          "address": "0x400c0004",
+          "width": 4,
+          "value": "0x00000000",
+          "pc": "0x800904e4"
+        },
+        {
+          "operation": "write",
+          "address": "0x400c0004",
+          "width": 4,
+          "value": "0x00000000",
+          "pc": "0x800904ea"
+        },
+        {
+          "operation": "read",
+          "address": "0x400c001c",
+          "width": 4,
+          "value": "0x00000000",
+          "pc": "0x80090504"
+        },
+        {
+          "operation": "write",
+          "address": "0x400c001c",
+          "width": 4,
+          "value": "0x00000000",
+          "pc": "0x8009050c"
+        },
+        {
+          "operation": "write",
+          "address": "0x401f80bc",
+          "width": 4,
+          "value": "0x00000005",
+          "pc": "0x80000392"
+        },
+        {
+          "operation": "write",
+          "address": "0x401f80c0",
+          "width": 4,
+          "value": "0x00000003",
+          "pc": "0x8000039a"
+        },
+        {
+          "operation": "write",
+          "address": "0x401f83f4",
+          "width": 4,
+          "value": "0x00000000",
+          "pc": "0x800003a2"
+        },
+        {
+          "operation": "write",
+          "address": "0x401f80c4",
+          "width": 4,
+          "value": "0x00000005",
+          "pc": "0x800003a6"
+        },
+        {
+          "operation": "write",
+          "address": "0x401f80c8",
+          "width": 4,
+          "value": "0x00000002",
+          "pc": "0x800003aa"
+        },
+        {
+          "operation": "write",
+          "address": "0x401f8550",
+          "width": 4,
+          "value": "0x00000001",
+          "pc": "0x800003ae"
+        },
+        {
+          "operation": "write",
+          "address": "0x401f80cc",
+          "width": 4,
+          "value": "0x00000000",
+          "pc": "0x800003b2"
+        },
+        {
+          "operation": "write",
+          "address": "0x401f80d0",
+          "width": 4,
+          "value": "0x00000000",
+          "pc": "0x800003b6"
+        },
+        {
+          "operation": "write",
+          "address": "0x401f80d4",
+          "width": 4,
+          "value": "0x00000000",
+          "pc": "0x800003ba"
+        },
+        {
+          "operation": "write",
+          "address": "0x401f80d8",
+          "width": 4,
+          "value": "0x00000000",
+          "pc": "0x800003be"
+        },
+        {
+          "operation": "write",
+          "address": "0x401f80dc",
+          "width": 4,
+          "value": "0x00000000",
+          "pc": "0x800003c2"
+        },
+        {
+          "operation": "write",
+          "address": "0x401f80e0",
+          "width": 4,
+          "value": "0x00000000",
+          "pc": "0x800003c6"
+        },
+        {
+          "operation": "write",
+          "address": "0x401f80e4",
+          "width": 4,
+          "value": "0x00000000",
+          "pc": "0x800003ca"
+        },
+        {
+          "operation": "write",
+          "address": "0x401f80e8",
+          "width": 4,
+          "value": "0x00000000",
+          "pc": "0x800003ce"
+        },
+        {
+          "operation": "write",
+          "address": "0x401f80ec",
+          "width": 4,
+          "value": "0x00000005",
+          "pc": "0x800003d2"
+        },
+        {
+          "operation": "write",
+          "address": "0x401f80f0",
+          "width": 4,
+          "value": "0x00000005",
+          "pc": "0x800003d6"
+        },
+        {
+          "operation": "write",
+          "address": "0x401f80f4",
+          "width": 4,
+          "value": "0x00000005",
+          "pc": "0x800003da"
+        },
+        {
+          "operation": "write",
+          "address": "0x401f80f8",
+          "width": 4,
+          "value": "0x00000005",
+          "pc": "0x800003de"
+        },
+        {
+          "operation": "write",
+          "address": "0x401f80fc",
+          "width": 4,
+          "value": "0x00000005",
+          "pc": "0x800003e2"
+        },
+        {
+          "operation": "write",
+          "address": "0x401f8100",
+          "width": 4,
+          "value": "0x00000005",
+          "pc": "0x800003e6"
+        },
+        {
+          "operation": "write",
+          "address": "0x401f8104",
+          "width": 4,
+          "value": "0x00000005",
+          "pc": "0x800003ea"
+        },
+        {
+          "operation": "write",
+          "address": "0x401f8108",
+          "width": 4,
+          "value": "0x00000005",
+          "pc": "0x800003ee"
+        },
+        {
+          "operation": "write",
+          "address": "0x401f810c",
+          "width": 4,
+          "value": "0x00000006",
+          "pc": "0x800003f2"
+        },
+        {
+          "operation": "write",
+          "address": "0x401f85e8",
+          "width": 4,
+          "value": "0x00000001",
+          "pc": "0x800003f6"
+        },
+        {
+          "operation": "write",
+          "address": "0x401f8110",
+          "width": 4,
+          "value": "0x00000006",
+          "pc": "0x800003fa"
+        },
+        {
+          "operation": "write",
+          "address": "0x401f85ec",
+          "width": 4,
+          "value": "0x00000001",
+          "pc": "0x800003fe"
+        }
+      ],
+      "unknownMmio": [
+        {
+          "address": 3758157188,
+          "width": 4,
+          "operation": "write",
+          "count": 3
+        },
+        {
+          "address": 3758157184,
+          "width": 4,
+          "operation": "read",
+          "count": 3
+        }
+      ],
+      "displayFrames": 0
+    }
+  ],
+  "limitations": [
+    "The resident handoff is supplied; this is not a cold ROM/resident boot.",
+    "Unknown MMIO remains a recorded frontier, even when the mapped backing memory permits execution.",
+    "Instruction counts and read-driven GPT are functional-model work, not measured hardware timing.",
+    "This check does not establish sampler/audio/storage operation or complete stock startup."
+  ],
+  "emulatorSha256": {
+    "tools/test-emulator-stock.mjs": "2af4db3f16a1bb8b69d0c74d3499e1be382b6060a99baac1961e9e2aebc09aa8",
+    "src/lib/emulator/board.ts": "5de6520da56f4c09c0784d9c34b396af7baa382e569695db620485ce71b81bf9",
+    "src/lib/emulator/cpu.ts": "b263217c8738153fb904b89320013734847ff1d1b1fd00f03c8c7d15ae229d8b",
+    "src/lib/emulator/session.ts": "2a6f20da81e615b7d43c7748c37c0c1f3dc60f66c046948f0a1e2dfff59289af",
+    "src/lib/emulator/exceptions.ts": "9c0e526a640e837ab0bb1e91af200424eae23784a5c02a6fab4220cc64c3237d",
+    "src/lib/emulator/image.ts": "8ce61e1c0490c7588906a7d32c7e395db4eab5df40b5b0872908e38eca33e019",
+    "src/lib/emulator/usb.ts": "68e5fa1b6b9c1d7de2da9a66ace01fb147077eb849ca9c6ef3c943e143ad85b2",
+    "src/lib/emulator/flash.ts": "2a887edf140feae0ed6ae450650ee2feb0c4bb8119c4a8d94d373a3c6d15d5bc",
+    "public/emulator/vendor/unicorn-arm.js": "d8bc37b898ccbc5b429f17112add6ad33a8a9b35df4146034ba141b992dae007",
+    "public/emulator/vendor/unicorn-arm.wasm": "f9520f9aa55299b84d005390844082a1468f26137e239eb1167dde8473aecc6c"
+  },
+  "poisonPattern": "A5 throughout each declared zero destination, checked before execution",
+  "frontier": {
+    "function": "stock v5.52 pin-mux initialization sub_80000140",
+    "pc": "0x800003fe",
+    "nextBytes": "c2f844a1",
+    "classification": "WASM execution failure; cause unresolved, not a demonstrated peripheral failure",
+    "remainingCacheRegisters": [
+      "0xE000ED80 CCSIDR",
+      "0xE000ED84 CSSELR"
+    ],
+    "preservation": "stock-startup-first-trace-failure.json retains the first instrumented failure and its register snapshot"
+  },
+  "cloneDiagnostic": {
+    "scope": "Fresh ARM backend with captured full memory/registers and the same board state",
+    "startPc": "0x800003fe",
+    "instructions": 1,
+    "totalInstructions": 1,
+    "pc": "0x800003fe",
+    "reason": "fault",
+    "fault": "RuntimeError: memory access out of bounds",
+    "backendLost": true
+  }
+}

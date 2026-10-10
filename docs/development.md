@@ -178,7 +178,16 @@ keyboard navigation, disclosures, theme persistence, playback lifecycle,
 JavaScript-disabled and failed-media fallbacks. Axe checks desktop/mobile in
 both themes. Build checks reject private design references and unexpected source
 artifacts and verify asset paths. `tools/check-build.mjs` enforces a 15 KiB gzip
-ceiling for each complete page, including its active demonstration.
+ceiling for each page's initial scripts and its active chapter demonstration.
+On October2,2026, the owner approved a separate, measured runtime for the
+[firmware emulator](emulator.md), loaded only after Start. Its worker and engine
+have a128 KiB gzip JavaScript limit and a2 MiB raw WASM limit. Build information
+records both separately; this exception leaves the ordinary page budget intact.
+The October2 local21-page build measures7,786 bytes gzip of initial emulator
+scripts,35,913 bytes gzip for worker/engine JS, and704,806 raw/237,484 gzip WASM
+bytes. Maximum ordinary active-page JS remains13,463 bytes; the whole-site JS
+inventory is69,865 bytes. These measurements identify an undeployed working
+build; use its exact `build-info.json` hashes when comparing later revisions.
 
 The build record keeps three measurements distinct:
 
@@ -189,8 +198,16 @@ The build record keeps three measurements distinct:
   conservative bound; the browser selects only one group. The maximum across
   pages is reported as `javascriptGzipBytes` and must stay within 15 KiB.
 - `totalJavascriptGzipBytes`: every generated script plus the largest page's
-  inline total. This whole-site inventory is reported separately from the
-  enforced page budget.
+  inline total. This whole-site inventory includes the emulator JS and is
+  reported separately from the enforced page budget.
+
+`emulatorRuntime` records the worker dependency graph, engine artifact hashes,
+JavaScript gzip bytes and WASM raw/gzip bytes. The vendor provenance must match
+all emitted engine and license files. Browser tests verify that the engine is
+absent before Start, uses the production worker and never uploads selected
+firmware or connects to a physical SP. Native emulator models run through
+`npm run test:emulator`; actual firmware integration additionally requires the
+adjacent private research inputs. See [the coverage record](emulator.md).
 
 "Initial" names the static dependency graph, not a promise that the dynamic
 import waits for reader input or first paint. Check the actual browser requests

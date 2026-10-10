@@ -1,0 +1,20 @@
+--- a/src/unicorn-wrapper.js
++++ b/src/unicorn-wrapper.js
+@@ -490,6 +490,17 @@
+             }
+         }
+ 
++        // Private execution evidence; no allocation or callback runs in C.
++        this.arm_wfi_event = function () {
++            var handle = Module.getValue(this.handle_ptr, '*');
++            var field = function (index) {
++                return Module.ccall('uc_arm_wfi_event_field', 'number',
++                    ['pointer', 'number'], [handle, index]) >>> 0;
++            };
++            if (field(0) !== 1) return undefined;
++            return {kind: 'wfi', address: field(1), resumePc: field(2), size: field(3)};
++        }
++
+         this.emu_stop = function () {
+             var handle = Module.getValue(this.handle_ptr, '*');
+             var ret = Module.ccall('uc_emu_stop', 'number', ['pointer'], [handle]);

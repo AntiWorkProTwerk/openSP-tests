@@ -185,3 +185,14 @@ Article copy comes from `src/content/first-change.json`; scene labels, duration
 and final-state captions come from `src/content/guide-scenes.json`. Native
 posters are static. `AnimationTimeline.astro` and `guide-motion.ts` supply browser
 playback without a framework or a device connection.
+
+## Emulator layouts
+
+The current emulator API snapshots preserve fourteen native component mains,
+four linked responsive/theme layouts and an explicitly illustrative state sheet.
+The shared Footer and its linked Utility link are exported separately, with
+propagation and text-bound records for existing page layouts. Follow
+[the source mapping and authoring notes](../../docs/emulator-design.md) before
+using `tools/design-emulator.mjs` or `tools/design-emulator-footer.mjs`.
+The hidden partial session and footer failure record remain evidence; the
+helpers are staged authoring tools and do not rebuild the file automatically.

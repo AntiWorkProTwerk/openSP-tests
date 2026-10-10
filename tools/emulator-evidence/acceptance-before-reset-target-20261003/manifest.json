@@ -1,0 +1,24 @@
+{
+  "referenceBase": "OpenSP repository",
+  "reason": "Preserve normal acceptance runners before exact reset target forwarding and new peripheral source pins",
+  "sources": [
+    {
+      "path": "tools/test-emulator-update.mjs",
+      "archived": "test-emulator-update.mjs",
+      "bytes": 18152,
+      "sha256": "f90517c3d0d116400359c059cb279344a62ce610666ade4eab1cc14ed729a9d8"
+    },
+    {
+      "path": "tools/test-emulator-firmware.mjs",
+      "archived": "test-emulator-firmware.mjs",
+      "bytes": 39707,
+      "sha256": "025eaf7d1156d08024bb1398d779e3a227acbf0b3f3ba1b885fe71e2145c0279"
+    },
+    {
+      "path": "tests/emulator-worker-roundtrip.spec.ts",
+      "archived": "emulator-worker-roundtrip.spec.ts",
+      "bytes": 20200,
+      "sha256": "27d59b323d42e19e37c9ebbb14ea4f311847d7c5598906dd1f5749711bbeb543"
+    }
+  ]
+}

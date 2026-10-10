@@ -1,0 +1,1047 @@
+{
+  "schema": "opensp-gpio12-per-pad-mux-mode-fields-v2",
+  "scope": "Public derived field-layout fixture: numerical fields and source hash/line/page bindings only. Tests require no private repository, firmware, PDF or header.",
+  "sources": [
+    {
+      "path": "analysis/flash_research/IMXRT1060RM_rev3.pdf",
+      "bytes": 29973751,
+      "sha256": "a2e342e492eded2a1d626cf955de953ca28d8db8675b10937a5176fd6f2c9200"
+    },
+    {
+      "path": "references/fsl_iomuxc.h",
+      "bytes": 94094,
+      "sha256": "f5407a4cb8f44ce1cdd313f4be9ea0e3c68a2967fbd379a7675e4b9ae857ccd8"
+    }
+  ],
+  "summary": {
+    "threeBitPads": 11,
+    "fourBitPads": 53,
+    "gpioRegisterWidth": "Rev3 section12.6.1 printed958: GPIO supports32-bit accesses only; retained narrow adapter tests make no hardware-conformance claim."
+  },
+  "pads": [
+    {
+      "bank": 1,
+      "pin": 0,
+      "pad": "GPIO_AD_B0_00",
+      "muxAddress": "0x401F80BC",
+      "muxModeMask": 7,
+      "fieldBits": "2:0",
+      "bit3Reserved": true,
+      "manualSection": "11.6.43",
+      "manualPrintedStartPage": 468,
+      "manualTablePrintedPageRange": [
+        468,
+        469
+      ],
+      "headerLine": 380
+    },
+    {
+      "bank": 1,
+      "pin": 1,
+      "pad": "GPIO_AD_B0_01",
+      "muxAddress": "0x401F80C0",
+      "muxModeMask": 7,
+      "fieldBits": "2:0",
+      "bit3Reserved": true,
+      "manualSection": "11.6.44",
+      "manualPrintedStartPage": 469,
+      "manualTablePrintedPageRange": [
+        469,
+        470
+      ],
+      "headerLine": 389
+    },
+    {
+      "bank": 1,
+      "pin": 2,
+      "pad": "GPIO_AD_B0_02",
+      "muxAddress": "0x401F80C4",
+      "muxModeMask": 7,
+      "fieldBits": "2:0",
+      "bit3Reserved": true,
+      "manualSection": "11.6.45",
+      "manualPrintedStartPage": 471,
+      "manualTablePrintedPageRange": [
+        471,
+        472
+      ],
+      "headerLine": 398
+    },
+    {
+      "bank": 1,
+      "pin": 3,
+      "pad": "GPIO_AD_B0_03",
+      "muxAddress": "0x401F80C8",
+      "muxModeMask": 7,
+      "fieldBits": "2:0",
+      "bit3Reserved": true,
+      "manualSection": "11.6.46",
+      "manualPrintedStartPage": 472,
+      "manualTablePrintedPageRange": [
+        472,
+        473
+      ],
+      "headerLine": 407
+    },
+    {
+      "bank": 1,
+      "pin": 4,
+      "pad": "GPIO_AD_B0_04",
+      "muxAddress": "0x401F80CC",
+      "muxModeMask": 7,
+      "fieldBits": "2:0",
+      "bit3Reserved": true,
+      "manualSection": "11.6.47",
+      "manualPrintedStartPage": 474,
+      "manualTablePrintedPageRange": [
+        474,
+        475
+      ],
+      "headerLine": 416
+    },
+    {
+      "bank": 1,
+      "pin": 5,
+      "pad": "GPIO_AD_B0_05",
+      "muxAddress": "0x401F80D0",
+      "muxModeMask": 7,
+      "fieldBits": "2:0",
+      "bit3Reserved": true,
+      "manualSection": "11.6.48",
+      "manualPrintedStartPage": 475,
+      "manualTablePrintedPageRange": [
+        475,
+        476
+      ],
+      "headerLine": 425
+    },
+    {
+      "bank": 1,
+      "pin": 6,
+      "pad": "GPIO_AD_B0_06",
+      "muxAddress": "0x401F80D4",
+      "muxModeMask": 7,
+      "fieldBits": "2:0",
+      "bit3Reserved": true,
+      "manualSection": "11.6.49",
+      "manualPrintedStartPage": 477,
+      "manualTablePrintedPageRange": [
+        477,
+        478
+      ],
+      "headerLine": 434
+    },
+    {
+      "bank": 1,
+      "pin": 7,
+      "pad": "GPIO_AD_B0_07",
+      "muxAddress": "0x401F80D8",
+      "muxModeMask": 7,
+      "fieldBits": "2:0",
+      "bit3Reserved": true,
+      "manualSection": "11.6.50",
+      "manualPrintedStartPage": 478,
+      "manualTablePrintedPageRange": [
+        478,
+        479
+      ],
+      "headerLine": 443
+    },
+    {
+      "bank": 1,
+      "pin": 8,
+      "pad": "GPIO_AD_B0_08",
+      "muxAddress": "0x401F80DC",
+      "muxModeMask": 7,
+      "fieldBits": "2:0",
+      "bit3Reserved": true,
+      "manualSection": "11.6.51",
+      "manualPrintedStartPage": 480,
+      "manualTablePrintedPageRange": [
+        480,
+        481
+      ],
+      "headerLine": 452
+    },
+    {
+      "bank": 1,
+      "pin": 9,
+      "pad": "GPIO_AD_B0_09",
+      "muxAddress": "0x401F80E0",
+      "muxModeMask": 15,
+      "fieldBits": "3:0",
+      "bit3Reserved": false,
+      "manualSection": "11.6.52",
+      "manualPrintedStartPage": 481,
+      "manualTablePrintedPageRange": [
+        481,
+        482
+      ],
+      "headerLine": 461
+    },
+    {
+      "bank": 1,
+      "pin": 10,
+      "pad": "GPIO_AD_B0_10",
+      "muxAddress": "0x401F80E4",
+      "muxModeMask": 15,
+      "fieldBits": "3:0",
+      "bit3Reserved": false,
+      "manualSection": "11.6.53",
+      "manualPrintedStartPage": 482,
+      "manualTablePrintedPageRange": [
+        482,
+        483
+      ],
+      "headerLine": 471
+    },
+    {
+      "bank": 1,
+      "pin": 11,
+      "pad": "GPIO_AD_B0_11",
+      "muxAddress": "0x401F80E8",
+      "muxModeMask": 15,
+      "fieldBits": "3:0",
+      "bit3Reserved": false,
+      "manualSection": "11.6.54",
+      "manualPrintedStartPage": 483,
+      "manualTablePrintedPageRange": [
+        483,
+        484
+      ],
+      "headerLine": 482
+    },
+    {
+      "bank": 1,
+      "pin": 12,
+      "pad": "GPIO_AD_B0_12",
+      "muxAddress": "0x401F80EC",
+      "muxModeMask": 7,
+      "fieldBits": "2:0",
+      "bit3Reserved": true,
+      "manualSection": "11.6.55",
+      "manualPrintedStartPage": 484,
+      "manualTablePrintedPageRange": [
+        484,
+        485
+      ],
+      "headerLine": 493
+    },
+    {
+      "bank": 1,
+      "pin": 13,
+      "pad": "GPIO_AD_B0_13",
+      "muxAddress": "0x401F80F0",
+      "muxModeMask": 7,
+      "fieldBits": "2:0",
+      "bit3Reserved": true,
+      "manualSection": "11.6.56",
+      "manualPrintedStartPage": 485,
+      "manualTablePrintedPageRange": [
+        485,
+        486
+      ],
+      "headerLine": 502
+    },
+    {
+      "bank": 1,
+      "pin": 14,
+      "pad": "GPIO_AD_B0_14",
+      "muxAddress": "0x401F80F4",
+      "muxModeMask": 15,
+      "fieldBits": "3:0",
+      "bit3Reserved": false,
+      "manualSection": "11.6.57",
+      "manualPrintedStartPage": 486,
+      "manualTablePrintedPageRange": [
+        486,
+        487
+      ],
+      "headerLine": 511
+    },
+    {
+      "bank": 1,
+      "pin": 15,
+      "pad": "GPIO_AD_B0_15",
+      "muxAddress": "0x401F80F8",
+      "muxModeMask": 15,
+      "fieldBits": "3:0",
+      "bit3Reserved": false,
+      "manualSection": "11.6.58",
+      "manualPrintedStartPage": 487,
+      "manualTablePrintedPageRange": [
+        487,
+        488
+      ],
+      "headerLine": 520
+    },
+    {
+      "bank": 1,
+      "pin": 16,
+      "pad": "GPIO_AD_B1_00",
+      "muxAddress": "0x401F80FC",
+      "muxModeMask": 15,
+      "fieldBits": "3:0",
+      "bit3Reserved": false,
+      "manualSection": "11.6.59",
+      "manualPrintedStartPage": 488,
+      "manualTablePrintedPageRange": [
+        488,
+        489
+      ],
+      "headerLine": 530
+    },
+    {
+      "bank": 1,
+      "pin": 17,
+      "pad": "GPIO_AD_B1_01",
+      "muxAddress": "0x401F8100",
+      "muxModeMask": 15,
+      "fieldBits": "3:0",
+      "bit3Reserved": false,
+      "manualSection": "11.6.60",
+      "manualPrintedStartPage": 489,
+      "manualTablePrintedPageRange": [
+        489,
+        490
+      ],
+      "headerLine": 541
+    },
+    {
+      "bank": 1,
+      "pin": 18,
+      "pad": "GPIO_AD_B1_02",
+      "muxAddress": "0x401F8104",
+      "muxModeMask": 15,
+      "fieldBits": "3:0",
+      "bit3Reserved": false,
+      "manualSection": "11.6.61",
+      "manualPrintedStartPage": 490,
+      "manualTablePrintedPageRange": [
+        490,
+        491
+      ],
+      "headerLine": 552
+    },
+    {
+      "bank": 1,
+      "pin": 19,
+      "pad": "GPIO_AD_B1_03",
+      "muxAddress": "0x401F8108",
+      "muxModeMask": 15,
+      "fieldBits": "3:0",
+      "bit3Reserved": false,
+      "manualSection": "11.6.62",
+      "manualPrintedStartPage": 491,
+      "manualTablePrintedPageRange": [
+        491,
+        492
+      ],
+      "headerLine": 563
+    },
+    {
+      "bank": 1,
+      "pin": 20,
+      "pad": "GPIO_AD_B1_04",
+      "muxAddress": "0x401F810C",
+      "muxModeMask": 15,
+      "fieldBits": "3:0",
+      "bit3Reserved": false,
+      "manualSection": "11.6.63",
+      "manualPrintedStartPage": 492,
+      "manualTablePrintedPageRange": [
+        492,
+        493
+      ],
+      "headerLine": 574
+    },
+    {
+      "bank": 1,
+      "pin": 21,
+      "pad": "GPIO_AD_B1_05",
+      "muxAddress": "0x401F8110",
+      "muxModeMask": 15,
+      "fieldBits": "3:0",
+      "bit3Reserved": false,
+      "manualSection": "11.6.64",
+      "manualPrintedStartPage": 493,
+      "manualTablePrintedPageRange": [
+        493,
+        494
+      ],
+      "headerLine": 585
+    },
+    {
+      "bank": 1,
+      "pin": 22,
+      "pad": "GPIO_AD_B1_06",
+      "muxAddress": "0x401F8114",
+      "muxModeMask": 15,
+      "fieldBits": "3:0",
+      "bit3Reserved": false,
+      "manualSection": "11.6.65",
+      "manualPrintedStartPage": 494,
+      "manualTablePrintedPageRange": [
+        494,
+        495
+      ],
+      "headerLine": 596
+    },
+    {
+      "bank": 1,
+      "pin": 23,
+      "pad": "GPIO_AD_B1_07",
+      "muxAddress": "0x401F8118",
+      "muxModeMask": 15,
+      "fieldBits": "3:0",
+      "bit3Reserved": false,
+      "manualSection": "11.6.66",
+      "manualPrintedStartPage": 495,
+      "manualTablePrintedPageRange": [
+        495,
+        496
+      ],
+      "headerLine": 607
+    },
+    {
+      "bank": 1,
+      "pin": 24,
+      "pad": "GPIO_AD_B1_08",
+      "muxAddress": "0x401F811C",
+      "muxModeMask": 15,
+      "fieldBits": "3:0",
+      "bit3Reserved": false,
+      "manualSection": "11.6.67",
+      "manualPrintedStartPage": 496,
+      "manualTablePrintedPageRange": [
+        496,
+        497
+      ],
+      "headerLine": 618
+    },
+    {
+      "bank": 1,
+      "pin": 25,
+      "pad": "GPIO_AD_B1_09",
+      "muxAddress": "0x401F8120",
+      "muxModeMask": 15,
+      "fieldBits": "3:0",
+      "bit3Reserved": false,
+      "manualSection": "11.6.68",
+      "manualPrintedStartPage": 497,
+      "manualTablePrintedPageRange": [
+        497,
+        498
+      ],
+      "headerLine": 628
+    },
+    {
+      "bank": 1,
+      "pin": 26,
+      "pad": "GPIO_AD_B1_10",
+      "muxAddress": "0x401F8124",
+      "muxModeMask": 15,
+      "fieldBits": "3:0",
+      "bit3Reserved": false,
+      "manualSection": "11.6.69",
+      "manualPrintedStartPage": 498,
+      "manualTablePrintedPageRange": [
+        498,
+        499
+      ],
+      "headerLine": 638
+    },
+    {
+      "bank": 1,
+      "pin": 27,
+      "pad": "GPIO_AD_B1_11",
+      "muxAddress": "0x401F8128",
+      "muxModeMask": 15,
+      "fieldBits": "3:0",
+      "bit3Reserved": false,
+      "manualSection": "11.6.70",
+      "manualPrintedStartPage": 499,
+      "manualTablePrintedPageRange": [
+        499,
+        500
+      ],
+      "headerLine": 649
+    },
+    {
+      "bank": 1,
+      "pin": 28,
+      "pad": "GPIO_AD_B1_12",
+      "muxAddress": "0x401F812C",
+      "muxModeMask": 15,
+      "fieldBits": "3:0",
+      "bit3Reserved": false,
+      "manualSection": "11.6.71",
+      "manualPrintedStartPage": 500,
+      "manualTablePrintedPageRange": [
+        500,
+        501
+      ],
+      "headerLine": 660
+    },
+    {
+      "bank": 1,
+      "pin": 29,
+      "pad": "GPIO_AD_B1_13",
+      "muxAddress": "0x401F8130",
+      "muxModeMask": 15,
+      "fieldBits": "3:0",
+      "bit3Reserved": false,
+      "manualSection": "11.6.72",
+      "manualPrintedStartPage": 501,
+      "manualTablePrintedPageRange": [
+        501,
+        502
+      ],
+      "headerLine": 671
+    },
+    {
+      "bank": 1,
+      "pin": 30,
+      "pad": "GPIO_AD_B1_14",
+      "muxAddress": "0x401F8134",
+      "muxModeMask": 15,
+      "fieldBits": "3:0",
+      "bit3Reserved": false,
+      "manualSection": "11.6.73",
+      "manualPrintedStartPage": 502,
+      "manualTablePrintedPageRange": [
+        502,
+        503
+      ],
+      "headerLine": 682
+    },
+    {
+      "bank": 1,
+      "pin": 31,
+      "pad": "GPIO_AD_B1_15",
+      "muxAddress": "0x401F8138",
+      "muxModeMask": 15,
+      "fieldBits": "3:0",
+      "bit3Reserved": false,
+      "manualSection": "11.6.74",
+      "manualPrintedStartPage": 503,
+      "manualTablePrintedPageRange": [
+        503,
+        504
+      ],
+      "headerLine": 693
+    },
+    {
+      "bank": 2,
+      "pin": 0,
+      "pad": "GPIO_B0_00",
+      "muxAddress": "0x401F813C",
+      "muxModeMask": 15,
+      "fieldBits": "3:0",
+      "bit3Reserved": false,
+      "manualSection": "11.6.75",
+      "manualPrintedStartPage": 504,
+      "manualTablePrintedPageRange": [
+        504,
+        505
+      ],
+      "headerLine": 704
+    },
+    {
+      "bank": 2,
+      "pin": 1,
+      "pad": "GPIO_B0_01",
+      "muxAddress": "0x401F8140",
+      "muxModeMask": 15,
+      "fieldBits": "3:0",
+      "bit3Reserved": false,
+      "manualSection": "11.6.76",
+      "manualPrintedStartPage": 505,
+      "manualTablePrintedPageRange": [
+        505,
+        506
+      ],
+      "headerLine": 713
+    },
+    {
+      "bank": 2,
+      "pin": 2,
+      "pad": "GPIO_B0_02",
+      "muxAddress": "0x401F8144",
+      "muxModeMask": 15,
+      "fieldBits": "3:0",
+      "bit3Reserved": false,
+      "manualSection": "11.6.77",
+      "manualPrintedStartPage": 506,
+      "manualTablePrintedPageRange": [
+        506,
+        507
+      ],
+      "headerLine": 722
+    },
+    {
+      "bank": 2,
+      "pin": 3,
+      "pad": "GPIO_B0_03",
+      "muxAddress": "0x401F8148",
+      "muxModeMask": 15,
+      "fieldBits": "3:0",
+      "bit3Reserved": false,
+      "manualSection": "11.6.78",
+      "manualPrintedStartPage": 507,
+      "manualTablePrintedPageRange": [
+        507,
+        508
+      ],
+      "headerLine": 731
+    },
+    {
+      "bank": 2,
+      "pin": 4,
+      "pad": "GPIO_B0_04",
+      "muxAddress": "0x401F814C",
+      "muxModeMask": 15,
+      "fieldBits": "3:0",
+      "bit3Reserved": false,
+      "manualSection": "11.6.79",
+      "manualPrintedStartPage": 508,
+      "manualTablePrintedPageRange": [
+        508,
+        509
+      ],
+      "headerLine": 740
+    },
+    {
+      "bank": 2,
+      "pin": 5,
+      "pad": "GPIO_B0_05",
+      "muxAddress": "0x401F8150",
+      "muxModeMask": 15,
+      "fieldBits": "3:0",
+      "bit3Reserved": false,
+      "manualSection": "11.6.80",
+      "manualPrintedStartPage": 509,
+      "manualTablePrintedPageRange": [
+        509,
+        510
+      ],
+      "headerLine": 749
+    },
+    {
+      "bank": 2,
+      "pin": 6,
+      "pad": "GPIO_B0_06",
+      "muxAddress": "0x401F8154",
+      "muxModeMask": 15,
+      "fieldBits": "3:0",
+      "bit3Reserved": false,
+      "manualSection": "11.6.81",
+      "manualPrintedStartPage": 510,
+      "manualTablePrintedPageRange": [
+        510,
+        511
+      ],
+      "headerLine": 758
+    },
+    {
+      "bank": 2,
+      "pin": 7,
+      "pad": "GPIO_B0_07",
+      "muxAddress": "0x401F8158",
+      "muxModeMask": 15,
+      "fieldBits": "3:0",
+      "bit3Reserved": false,
+      "manualSection": "11.6.82",
+      "manualPrintedStartPage": 511,
+      "manualTablePrintedPageRange": [
+        511,
+        512
+      ],
+      "headerLine": 767
+    },
+    {
+      "bank": 2,
+      "pin": 8,
+      "pad": "GPIO_B0_08",
+      "muxAddress": "0x401F815C",
+      "muxModeMask": 15,
+      "fieldBits": "3:0",
+      "bit3Reserved": false,
+      "manualSection": "11.6.83",
+      "manualPrintedStartPage": 512,
+      "manualTablePrintedPageRange": [
+        512,
+        513
+      ],
+      "headerLine": 776
+    },
+    {
+      "bank": 2,
+      "pin": 9,
+      "pad": "GPIO_B0_09",
+      "muxAddress": "0x401F8160",
+      "muxModeMask": 15,
+      "fieldBits": "3:0",
+      "bit3Reserved": false,
+      "manualSection": "11.6.84",
+      "manualPrintedStartPage": 513,
+      "manualTablePrintedPageRange": [
+        513,
+        514
+      ],
+      "headerLine": 785
+    },
+    {
+      "bank": 2,
+      "pin": 10,
+      "pad": "GPIO_B0_10",
+      "muxAddress": "0x401F8164",
+      "muxModeMask": 15,
+      "fieldBits": "3:0",
+      "bit3Reserved": false,
+      "manualSection": "11.6.85",
+      "manualPrintedStartPage": 514,
+      "manualTablePrintedPageRange": [
+        514,
+        515
+      ],
+      "headerLine": 794
+    },
+    {
+      "bank": 2,
+      "pin": 11,
+      "pad": "GPIO_B0_11",
+      "muxAddress": "0x401F8168",
+      "muxModeMask": 15,
+      "fieldBits": "3:0",
+      "bit3Reserved": false,
+      "manualSection": "11.6.86",
+      "manualPrintedStartPage": 515,
+      "manualTablePrintedPageRange": [
+        515,
+        516
+      ],
+      "headerLine": 803
+    },
+    {
+      "bank": 2,
+      "pin": 12,
+      "pad": "GPIO_B0_12",
+      "muxAddress": "0x401F816C",
+      "muxModeMask": 15,
+      "fieldBits": "3:0",
+      "bit3Reserved": false,
+      "manualSection": "11.6.87",
+      "manualPrintedStartPage": 516,
+      "manualTablePrintedPageRange": [
+        516,
+        517
+      ],
+      "headerLine": 812
+    },
+    {
+      "bank": 2,
+      "pin": 13,
+      "pad": "GPIO_B0_13",
+      "muxAddress": "0x401F8170",
+      "muxModeMask": 15,
+      "fieldBits": "3:0",
+      "bit3Reserved": false,
+      "manualSection": "11.6.88",
+      "manualPrintedStartPage": 517,
+      "manualTablePrintedPageRange": [
+        517,
+        518
+      ],
+      "headerLine": 821
+    },
+    {
+      "bank": 2,
+      "pin": 14,
+      "pad": "GPIO_B0_14",
+      "muxAddress": "0x401F8174",
+      "muxModeMask": 15,
+      "fieldBits": "3:0",
+      "bit3Reserved": false,
+      "manualSection": "11.6.89",
+      "manualPrintedStartPage": 518,
+      "manualTablePrintedPageRange": [
+        518,
+        519
+      ],
+      "headerLine": 830
+    },
+    {
+      "bank": 2,
+      "pin": 15,
+      "pad": "GPIO_B0_15",
+      "muxAddress": "0x401F8178",
+      "muxModeMask": 15,
+      "fieldBits": "3:0",
+      "bit3Reserved": false,
+      "manualSection": "11.6.90",
+      "manualPrintedStartPage": 519,
+      "manualTablePrintedPageRange": [
+        519,
+        520
+      ],
+      "headerLine": 839
+    },
+    {
+      "bank": 2,
+      "pin": 16,
+      "pad": "GPIO_B1_00",
+      "muxAddress": "0x401F817C",
+      "muxModeMask": 15,
+      "fieldBits": "3:0",
+      "bit3Reserved": false,
+      "manualSection": "11.6.91",
+      "manualPrintedStartPage": 520,
+      "manualTablePrintedPageRange": [
+        520,
+        521
+      ],
+      "headerLine": 849
+    },
+    {
+      "bank": 2,
+      "pin": 17,
+      "pad": "GPIO_B1_01",
+      "muxAddress": "0x401F8180",
+      "muxModeMask": 15,
+      "fieldBits": "3:0",
+      "bit3Reserved": false,
+      "manualSection": "11.6.92",
+      "manualPrintedStartPage": 521,
+      "manualTablePrintedPageRange": [
+        521,
+        522
+      ],
+      "headerLine": 859
+    },
+    {
+      "bank": 2,
+      "pin": 18,
+      "pad": "GPIO_B1_02",
+      "muxAddress": "0x401F8184",
+      "muxModeMask": 15,
+      "fieldBits": "3:0",
+      "bit3Reserved": false,
+      "manualSection": "11.6.93",
+      "manualPrintedStartPage": 522,
+      "manualTablePrintedPageRange": [
+        522,
+        523
+      ],
+      "headerLine": 869
+    },
+    {
+      "bank": 2,
+      "pin": 19,
+      "pad": "GPIO_B1_03",
+      "muxAddress": "0x401F8188",
+      "muxModeMask": 15,
+      "fieldBits": "3:0",
+      "bit3Reserved": false,
+      "manualSection": "11.6.94",
+      "manualPrintedStartPage": 523,
+      "manualTablePrintedPageRange": [
+        523,
+        524
+      ],
+      "headerLine": 879
+    },
+    {
+      "bank": 2,
+      "pin": 20,
+      "pad": "GPIO_B1_04",
+      "muxAddress": "0x401F818C",
+      "muxModeMask": 15,
+      "fieldBits": "3:0",
+      "bit3Reserved": false,
+      "manualSection": "11.6.95",
+      "manualPrintedStartPage": 524,
+      "manualTablePrintedPageRange": [
+        524,
+        525
+      ],
+      "headerLine": 889
+    },
+    {
+      "bank": 2,
+      "pin": 21,
+      "pad": "GPIO_B1_05",
+      "muxAddress": "0x401F8190",
+      "muxModeMask": 15,
+      "fieldBits": "3:0",
+      "bit3Reserved": false,
+      "manualSection": "11.6.96",
+      "manualPrintedStartPage": 525,
+      "manualTablePrintedPageRange": [
+        525,
+        526
+      ],
+      "headerLine": 898
+    },
+    {
+      "bank": 2,
+      "pin": 22,
+      "pad": "GPIO_B1_06",
+      "muxAddress": "0x401F8194",
+      "muxModeMask": 15,
+      "fieldBits": "3:0",
+      "bit3Reserved": false,
+      "manualSection": "11.6.97",
+      "manualPrintedStartPage": 526,
+      "manualTablePrintedPageRange": [
+        526,
+        527
+      ],
+      "headerLine": 907
+    },
+    {
+      "bank": 2,
+      "pin": 23,
+      "pad": "GPIO_B1_07",
+      "muxAddress": "0x401F8198",
+      "muxModeMask": 15,
+      "fieldBits": "3:0",
+      "bit3Reserved": false,
+      "manualSection": "11.6.98",
+      "manualPrintedStartPage": 527,
+      "manualTablePrintedPageRange": [
+        527,
+        528
+      ],
+      "headerLine": 916
+    },
+    {
+      "bank": 2,
+      "pin": 24,
+      "pad": "GPIO_B1_08",
+      "muxAddress": "0x401F819C",
+      "muxModeMask": 15,
+      "fieldBits": "3:0",
+      "bit3Reserved": false,
+      "manualSection": "11.6.99",
+      "manualPrintedStartPage": 528,
+      "manualTablePrintedPageRange": [
+        528,
+        529
+      ],
+      "headerLine": 925
+    },
+    {
+      "bank": 2,
+      "pin": 25,
+      "pad": "GPIO_B1_09",
+      "muxAddress": "0x401F81A0",
+      "muxModeMask": 15,
+      "fieldBits": "3:0",
+      "bit3Reserved": false,
+      "manualSection": "11.6.100",
+      "manualPrintedStartPage": 529,
+      "manualTablePrintedPageRange": [
+        529,
+        530
+      ],
+      "headerLine": 935
+    },
+    {
+      "bank": 2,
+      "pin": 26,
+      "pad": "GPIO_B1_10",
+      "muxAddress": "0x401F81A4",
+      "muxModeMask": 15,
+      "fieldBits": "3:0",
+      "bit3Reserved": false,
+      "manualSection": "11.6.101",
+      "manualPrintedStartPage": 530,
+      "manualTablePrintedPageRange": [
+        530,
+        531
+      ],
+      "headerLine": 945
+    },
+    {
+      "bank": 2,
+      "pin": 27,
+      "pad": "GPIO_B1_11",
+      "muxAddress": "0x401F81A8",
+      "muxModeMask": 15,
+      "fieldBits": "3:0",
+      "bit3Reserved": false,
+      "manualSection": "11.6.102",
+      "manualPrintedStartPage": 531,
+      "manualTablePrintedPageRange": [
+        531,
+        532
+      ],
+      "headerLine": 954
+    },
+    {
+      "bank": 2,
+      "pin": 28,
+      "pad": "GPIO_B1_12",
+      "muxAddress": "0x401F81AC",
+      "muxModeMask": 15,
+      "fieldBits": "3:0",
+      "bit3Reserved": false,
+      "manualSection": "11.6.103",
+      "manualPrintedStartPage": 532,
+      "manualTablePrintedPageRange": [
+        532,
+        533
+      ],
+      "headerLine": 962
+    },
+    {
+      "bank": 2,
+      "pin": 29,
+      "pad": "GPIO_B1_13",
+      "muxAddress": "0x401F81B0",
+      "muxModeMask": 15,
+      "fieldBits": "3:0",
+      "bit3Reserved": false,
+      "manualSection": "11.6.104",
+      "manualPrintedStartPage": 533,
+      "manualTablePrintedPageRange": [
+        533,
+        534
+      ],
+      "headerLine": 971
+    },
+    {
+      "bank": 2,
+      "pin": 30,
+      "pad": "GPIO_B1_14",
+      "muxAddress": "0x401F81B4",
+      "muxModeMask": 15,
+      "fieldBits": "3:0",
+      "bit3Reserved": false,
+      "manualSection": "11.6.105",
+      "manualPrintedStartPage": 534,
+      "manualTablePrintedPageRange": [
+        534,
+        535
+      ],
+      "headerLine": 981
+    },
+    {
+      "bank": 2,
+      "pin": 31,
+      "pad": "GPIO_B1_15",
+      "muxAddress": "0x401F81B8",
+      "muxModeMask": 15,
+      "fieldBits": "3:0",
+      "bit3Reserved": false,
+      "manualSection": "11.6.106",
+      "manualPrintedStartPage": 535,
+      "manualTablePrintedPageRange": [
+        535,
+        536
+      ],
+      "headerLine": 991
+    }
+  ]
+}

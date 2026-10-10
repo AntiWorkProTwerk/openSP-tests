@@ -1,0 +1,245 @@
+{
+  "schema": "opensp-synth-usb-n1-withdrawal-regression-review-v1",
+  "version": 1,
+  "status": "PASS_OFFLINE_WITHDRAWAL_REGRESSION_N1_DELIVERY_HALTED",
+  "date": "2026-10-06",
+  "subject": {
+    "candidate_sha256": "7881b5c18e4cdd83a405349109c05822b23bd6e38f1df37b264eafe558756f48",
+    "module_elf_sha256": "5834f87701511527adade93e71efa1e42216a4baa1fd996efa0decbc5d92ff34",
+    "module_sha256": "a0bee79362406797c201d0861e1c07867dac2a3075d81156d89ffecc825e54bb",
+    "source_contract_sha256": "a11eafed062a87c459281274438f6bf9ef1bab453e356281e801a962c501c59b"
+  },
+  "currentAdmission": {
+    "registry": {
+      "role": "current_root_registry",
+      "path": "C:/Users/mryba/code/opensp/tools/synth-usb-release-v1/root-seals-v1.ts",
+      "bytes": 634,
+      "sha256": "ca85db5362e557ed751491b07cb7c9ce98bb3c98480623b0685cc936d8db9f47"
+    },
+    "entries": 0,
+    "candidateUsbUploadEnabled": false,
+    "publicReleaseEligible": false,
+    "rootRegistryChanged": false,
+    "oldManifestRefusedBeforeSealCandidateRestorationOrProofReads": true,
+    "v1BrowserConnectDisabled": true,
+    "v2BrowserConnectDisabled": true,
+    "hidPickerRequestsInBrowserModels": 0
+  },
+  "historicalEvidence": {
+    "manifest": {
+      "role": "historical_manifest",
+      "path": "C:/Users/mryba/code/sp404mk2-synth/build/openSynth-n1-sealed-final07-v2-01/OWNER_TEST_ELIGIBILITY.json",
+      "bytes": 6378,
+      "sha256": "0131a8dc07bb52408659fc896845d97cc40644349e04fb78aa238fb0aefad14c"
+    },
+    "seal": {
+      "role": "historical_seal",
+      "path": "C:/Users/mryba/code/sp404mk2-synth/build/openSynth-n1-sealed-final07-v2-01/ROOT_BENCH_SEAL.json",
+      "bytes": 918,
+      "sha256": "ce7e7162937004d5cacd74ba59cf7b88ebc744b5a3ffcaeb473e5690c24961ce"
+    },
+    "priorRegistry": {
+      "role": "historical_registry",
+      "path": "C:/Users/mryba/code/sp404mk2/analysis/hardware/opensynth_n1_missing_pads_20261006/root-seals-before-withdrawal.ts",
+      "bytes": 709,
+      "sha256": "bfdfbad83a19e39159c55e1c7241eb58f369c3a52f1de61a2382b3337fc3fae3"
+    },
+    "oldApprovedV2StructuralReviewPreserved": true,
+    "currentTransferAuthorityGranted": false,
+    "historicalV1PacketIsHeldNotAnInventedApprovedV1Seal": true,
+    "physicalUsbStorageReceiptPreserved": true,
+    "physicalUsbStorageProvesSamplePreservation": false
+  },
+  "verification": {
+    "command": "node --import ./tools/register-test-typescript.mjs --test tools/synth-usb-release-v1/test-n1-withdrawal.mjs",
+    "cwd": "C:/Users/mryba/code/opensp",
+    "tests": 12,
+    "pass": 12,
+    "fail": 0,
+    "skipped": 0,
+    "exitCode": 0,
+    "stdout": "✔ current withdrawn registry is pinned, frozen and empty; historical authority remains unchanged (3.3515ms)\n✔ actual historical approved V2 N1 manifest is refused before seal, candidate, restoration or proof reads (1.4033ms)\n✔ real V1 N1 preparation cannot bypass withdrawal or open a device picker (1.28ms)\n✔ replayed historical entry, approval booleans and V1/V2 flow-shaped objects confer no authority (0.744ms)\n✔ actual V1 browser entry refuses old N1 approval in a Node DOM model before Connect (18.5376ms)\n✔ actual V2 browser entry refuses old N1 approval in a Node DOM model before Connect (16.9676ms)\n✔ historical structural inspection preserves past review and explicitly grants no current transfer/public/hardware authority (212.9471ms)\n✔ current offline delivery inspector enables no N1 candidate and makes no stock-first/public claim (110.6952ms)\n✔ unadmitted N1 snapshot cannot send even profile opcode on an already opened model session (1.2513ms)\n✔ profile failure closes the model session and prevents reuse, forged preflight and all upload/commit commands (92.124ms)\n✔ profile command timeout is terminal and cannot advance to upload or commit (194.0007ms)\n✔ malformed initial status and normal Roland descriptors fail before profile or APP1 commands (0.3951ms)\nℹ tests 12\nℹ suites 0\nℹ pass 12\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 1175.2902\n",
+    "nodeDomModelOnly": true,
+    "hidHostModelOnly": true,
+    "profileFailureCommands": [
+      5
+    ],
+    "profileTimeoutCommands": [
+      5
+    ],
+    "app1UploadOrCommitCommandsInModels": 0,
+    "notesLocalLinksChecked": true,
+    "testDevelopmentCorrection": "The added timeout assertion initially expected 'timed out'; it was corrected to the existing driver's actual bounded feature-write error. Driver behavior and source were unchanged."
+  },
+  "restoration": {
+    "sha256": "7f9917ffb0871cca25b1ce5d281ac5c2bf790ae6b8278b04a5ffef8e3c06fd60",
+    "authenticatedEvidenceFiles": 21,
+    "existingP6SApp1TransportQualificationPreserved": true,
+    "sampleBackup": false,
+    "incidentRecoveryEstablished": false
+  },
+  "remainingGap": {
+    "correctedCandidateAdmitted": false,
+    "populatedProjectPreservationReviewRequired": true,
+    "preservationScope": [
+      "all-160-pad-rows",
+      "existing-sample-bytes",
+      "names-and-markers",
+      "other-project-sentinels",
+      "loading",
+      "idle-saving",
+      "failure-paths"
+    ],
+    "newExactArtifactAndRootReviewRequired": true,
+    "stockFirstInstallSupported": false
+  },
+  "operations": {
+    "device": false,
+    "browser": false,
+    "serverStarted": false,
+    "firmwareCompiled": false,
+    "firmwareDeployed": false,
+    "registryWritten": false,
+    "sharedRootDocumentationEdited": false
+  },
+  "pins": [
+    {
+      "role": "current_root_registry",
+      "path": "C:/Users/mryba/code/opensp/tools/synth-usb-release-v1/root-seals-v1.ts",
+      "bytes": 634,
+      "sha256": "ca85db5362e557ed751491b07cb7c9ce98bb3c98480623b0685cc936d8db9f47"
+    },
+    {
+      "role": "withdrawal_regression",
+      "path": "C:/Users/mryba/code/opensp/tools/synth-usb-release-v1/test-n1-withdrawal.mjs",
+      "bytes": 11858,
+      "sha256": "5497ac21d43fadda06a2be379f2a390788a32b449d141e9410db01c4673ef9f3"
+    },
+    {
+      "role": "withdrawal_notes",
+      "path": "C:/Users/mryba/code/opensp/tools/synth-usb-release-v1/N1_WITHDRAWAL_README.md",
+      "bytes": 3660,
+      "sha256": "5038feefa396e91b18c542cb0ff3dc1bb7986fc1181a49780b50187f278afe0a"
+    },
+    {
+      "role": "admission",
+      "path": "C:/Users/mryba/code/opensp/tools/synth-usb-release-v1/local-bench-v1.ts",
+      "bytes": 18023,
+      "sha256": "053ec07d52ff376af38009b8114864ba61f2c7e2fc027f958f8365f9574f2651"
+    },
+    {
+      "role": "driver",
+      "path": "C:/Users/mryba/code/opensp/tools/synth-usb-release-v1/b2-driver.ts",
+      "bytes": 25600,
+      "sha256": "d6d2eb38c58715d85564c0dfd2cf042cf19936d0ab6573653811963b06e67e9d"
+    },
+    {
+      "role": "image_resolver",
+      "path": "C:/Users/mryba/code/opensp/tools/synth-usb-release-v1/resolve-image.ts",
+      "bytes": 599,
+      "sha256": "374a8f72591e5612e724485e106edf12f8bb420862ebc92531353ca92d2354d3"
+    },
+    {
+      "role": "offline_inspector",
+      "path": "C:/Users/mryba/code/opensp/tools/synth-usb-release-v1/inspect.mjs",
+      "bytes": 2786,
+      "sha256": "76b8a1888280dd8c630c1681657a871af713c6d88b1d63590cdfc45299c3bd3e"
+    },
+    {
+      "role": "v1_browser",
+      "path": "C:/Users/mryba/code/opensp/tools/synth-usb-release-v1/bench-browser-v1.ts",
+      "bytes": 4362,
+      "sha256": "325071d20ca7a741e88e2c0abbbd4e02ba70829aa65bac4694a3540ce6d53114"
+    },
+    {
+      "role": "v2_browser",
+      "path": "C:/Users/mryba/code/opensp/tools/synth-usb-release-v1/bench-browser-v2.ts",
+      "bytes": 4288,
+      "sha256": "b7945fe98713d0cad085071ce075d7a9b4d791451a213552d2d5bfa1c6da85e1"
+    },
+    {
+      "role": "v1_browser_page",
+      "path": "C:/Users/mryba/code/opensp/tools/synth-usb-release-v1/bench-site-v1.html",
+      "bytes": 3094,
+      "sha256": "ac50c25fcb0f68ad0129d4d23d225f865ffdd299f3d9e7c05ae611b793a1a180"
+    },
+    {
+      "role": "v2_browser_page",
+      "path": "C:/Users/mryba/code/opensp/tools/synth-usb-release-v1/bench-site-v2.html",
+      "bytes": 3050,
+      "sha256": "be87c06a85a544afbc88a2d61eefec5055c48a711e3450672158b5f71e3d099b"
+    },
+    {
+      "role": "v1_flow",
+      "path": "C:/Users/mryba/code/opensp/tools/synth-usb-release-v1/bench-flow-v1.ts",
+      "bytes": 8344,
+      "sha256": "6d3d174b46331f6f8ce540c5a71655d3a489c7f5529c8329777be8149c19c1b4"
+    },
+    {
+      "role": "v2_flow",
+      "path": "C:/Users/mryba/code/opensp/tools/synth-usb-release-v1/bench-flow-v2.ts",
+      "bytes": 8747,
+      "sha256": "c2c9f4d5ab01c69139728bd61c449069e52abe05d766114cb066298554cc215d"
+    },
+    {
+      "role": "host_model",
+      "path": "C:/Users/mryba/code/opensp/tools/synth-usb-release-v1/mock-b2.mjs",
+      "bytes": 2888,
+      "sha256": "7d9fff4ed6b8f7fae4ee8f558b5686d1db5ac1fac89956a216f17351b4c8181d"
+    },
+    {
+      "role": "historical_manifest",
+      "path": "C:/Users/mryba/code/sp404mk2-synth/build/openSynth-n1-sealed-final07-v2-01/OWNER_TEST_ELIGIBILITY.json",
+      "bytes": 6378,
+      "sha256": "0131a8dc07bb52408659fc896845d97cc40644349e04fb78aa238fb0aefad14c"
+    },
+    {
+      "role": "historical_seal",
+      "path": "C:/Users/mryba/code/sp404mk2-synth/build/openSynth-n1-sealed-final07-v2-01/ROOT_BENCH_SEAL.json",
+      "bytes": 918,
+      "sha256": "ce7e7162937004d5cacd74ba59cf7b88ebc744b5a3ffcaeb473e5690c24961ce"
+    },
+    {
+      "role": "historical_authority_entry",
+      "path": "C:/Users/mryba/code/sp404mk2-synth/build/openSynth-n1-sealed-final07-v2-01/ROOT_BENCH_AUTHORITY_ENTRY.json",
+      "bytes": 228,
+      "sha256": "1f1da071a7782cb70c8b719745f217e5a61fa371f9f3b13e8c42dfc789dde91f"
+    },
+    {
+      "role": "historical_root_review",
+      "path": "C:/Users/mryba/code/sp404mk2-synth/build/openSynth-n1-sealed-final07-v2-01/ROOT_SOFTWARE_REVIEW.json",
+      "bytes": 6034,
+      "sha256": "fd6bb6927d333a7c8b6636f8feb24608c2571ab5213718b1da91948624115191"
+    },
+    {
+      "role": "historical_v1_manifest",
+      "path": "C:/Users/mryba/code/sp404mk2-synth/build/openSynth-n1-bench-core03-01/OWNER_TEST_ELIGIBILITY.json",
+      "bytes": 4931,
+      "sha256": "258021914c5f83ea2ddc22ea3b2916e04ad9187137ef4b92bcc17cc7468cae71"
+    },
+    {
+      "role": "historical_registry",
+      "path": "C:/Users/mryba/code/sp404mk2/analysis/hardware/opensynth_n1_missing_pads_20261006/root-seals-before-withdrawal.ts",
+      "bytes": 709,
+      "sha256": "bfdfbad83a19e39159c55e1c7241eb58f369c3a52f1de61a2382b3337fc3fae3"
+    },
+    {
+      "role": "incident",
+      "path": "C:/Users/mryba/code/sp404mk2/analysis/hardware/opensynth_n1_missing_pads_20261006/README.md",
+      "bytes": 5743,
+      "sha256": "7c2cd194c8b5d49d6ffc71465e9c811d036856b24b52e884ae0183dc8d1f8346"
+    },
+    {
+      "role": "physical_usb_storage_review",
+      "path": "C:/Users/mryba/code/sp404mk2/analysis/hardware/opensynth_n1_usb_install_20261006/ROOT_STORAGE_REVIEW.json",
+      "bytes": 1039,
+      "sha256": "d158eb3e299a248c27e9d416261a47ddcaff57d33f8611cb457dc3572883124d"
+    },
+    {
+      "role": "physical_usb_storage_raw",
+      "path": "C:/Users/mryba/code/sp404mk2/analysis/hardware/opensynth_n1_usb_install_20261006/browser-storage-01.json",
+      "bytes": 124757,
+      "sha256": "a5d6547f2c126eb399b15f6d35dc2825a1f18681aeb6e8472e125ca0506b58bb"
+    }
+  ]
+}

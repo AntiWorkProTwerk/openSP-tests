@@ -1,0 +1,234 @@
+{
+  "schema": "opensp-feature-config-vectors",
+  "version": 1,
+  "provenance": {
+    "selectionConsumer": {
+      "path": "sp404mk2-synth:diagnostics/synth_p6/release_usb_delivery_v1/configuration/profile_successor_v2/selection_v2.py",
+      "sha256": "16de78bfc70b9f3f13ea525c8eeb1be818587f6c3461fd79f43f60da4b88c8d8"
+    },
+    "markerConsumer": {
+      "path": "sp404mk2-synth:diagnostics/synth_p6/release_usb_delivery_v3/verify.py::_audit_config",
+      "sha256": "1aa38378710c573bdae6940507c90cee4f160b4be47ef45d36d89b93069093b9"
+    },
+    "policySource": {
+      "path": "sp404mk2-synth:diagnostics/synth_p6/release_profiles_v3/profile-family-v3-04.json",
+      "sha256": "edb04614b2bf7148ecb64d5c1ae707059f1f84d309ea5f963155e50d3bc7a867"
+    },
+    "catalogDigest": "3a8d5663482fc19a5c56079a7cc56880ee7dae6226f312dc4a0498b8a3ed648a",
+    "source16Adapter": {
+      "path": "sp404mk2-synth:diagnostics/synth_p6/source16_selection_v2/adapter.py",
+      "sha256": "89cb8dd35b9a72d6f843c0ddc2dc61fae6db2d19d22bffc1ffce7073cf3cbff2",
+      "scope": "Additional single-feature custom-shortcut vectors only."
+    }
+  },
+  "vectors": [
+    {
+      "id": "synth-only-default",
+      "selection": {
+        "schema": "opensp-feature-selection",
+        "version": 2,
+        "registryRevision": "2026-10-04.2",
+        "catalogDigest": "3a8d5663482fc19a5c56079a7cc56880ee7dae6226f312dc4a0498b8a3ed648a",
+        "board": "sp-404mkii",
+        "profile": "roland-5.52",
+        "features": [
+          {
+            "id": "synth",
+            "version": "p6s-1",
+            "shortcut": {
+              "controls": [
+                "SHIFT",
+                "RECORD_SETTING"
+              ],
+              "trigger": "press-last",
+              "scope": "sampler-idle",
+              "rearm": "release-all"
+            }
+          }
+        ]
+      },
+      "selectionSha256": "cf63ced01064a670dfb81528bf2b199234acc67dbc670e405bc7ee96a3b93473",
+      "intentSha256": "cf63ced01064a670dfb81528bf2b199234acc67dbc670e405bc7ee96a3b93473",
+      "featureMask": 1,
+      "policyId": "50544B32",
+      "configurationSha256": "143f5fabbec9bd1e2ed94bc57b5ff797ccfe34dd66442e9a97cefd1d62b4778e",
+      "markerHex": "A425AC80",
+      "expectedChooserLabel": "SYNTH P6 A425AC80"
+    },
+    {
+      "id": "recorder-only-default",
+      "selection": {
+        "schema": "opensp-feature-selection",
+        "version": 2,
+        "registryRevision": "2026-10-04.2",
+        "catalogDigest": "3a8d5663482fc19a5c56079a7cc56880ee7dae6226f312dc4a0498b8a3ed648a",
+        "board": "sp-404mkii",
+        "profile": "roland-5.52",
+        "features": [
+          {
+            "id": "usb-recorder",
+            "version": "spg1-v552-20",
+            "shortcut": {
+              "controls": [
+                "SHIFT",
+                "REMAIN"
+              ],
+              "trigger": "press-last",
+              "scope": "normal-ui",
+              "rearm": "release-all"
+            }
+          }
+        ]
+      },
+      "selectionSha256": "f8c45a19f925014880e93784e34d6845a684d936f5e1a4ca3db748c299ef756c",
+      "intentSha256": "f8c45a19f925014880e93784e34d6845a684d936f5e1a4ca3db748c299ef756c",
+      "featureMask": 2,
+      "policyId": "47524B32",
+      "configurationSha256": "0248636d8bc8a83e274023f6cf7b3840f69e790aaa04b3046202a15e9ed74232",
+      "markerHex": "38605096",
+      "expectedChooserLabel": null
+    },
+    {
+      "id": "combined-shared-chooser",
+      "selection": {
+        "schema": "opensp-feature-selection",
+        "version": 2,
+        "registryRevision": "2026-10-04.2",
+        "catalogDigest": "3a8d5663482fc19a5c56079a7cc56880ee7dae6226f312dc4a0498b8a3ed648a",
+        "board": "sp-404mkii",
+        "profile": "roland-5.52",
+        "features": [
+          {
+            "id": "synth",
+            "version": "p6s-1",
+            "shortcut": null
+          },
+          {
+            "id": "usb-recorder",
+            "version": "spg1-v552-20",
+            "shortcut": null
+          }
+        ]
+      },
+      "selectionSha256": "1649cc481dc51e3527e11a783148710ac3ce73b562c384e0787a40782f0823ff",
+      "intentSha256": "1649cc481dc51e3527e11a783148710ac3ce73b562c384e0787a40782f0823ff",
+      "featureMask": 3,
+      "policyId": "50544B32",
+      "configurationSha256": "0e4fef8cff5d6a7b1793ed1dcc41db2088a3cd6412b11291c121d6b605d8f7ce",
+      "markerHex": "F92C153B",
+      "expectedChooserLabel": "SYNTH P6 F92C153B"
+    },
+    {
+      "id": "combined-custom-valid-chords",
+      "selection": {
+        "schema": "opensp-feature-selection",
+        "version": 2,
+        "registryRevision": "2026-10-04.2",
+        "catalogDigest": "3a8d5663482fc19a5c56079a7cc56880ee7dae6226f312dc4a0498b8a3ed648a",
+        "board": "sp-404mkii",
+        "profile": "roland-5.52",
+        "features": [
+          {
+            "id": "synth",
+            "version": "p6s-1",
+            "shortcut": {
+              "controls": [
+                "SHIFT",
+                "PAD_1"
+              ],
+              "trigger": "press-last",
+              "scope": "sampler-idle",
+              "rearm": "release-all"
+            }
+          },
+          {
+            "id": "usb-recorder",
+            "version": "spg1-v552-20",
+            "shortcut": {
+              "controls": [
+                "SHIFT",
+                "REMAIN"
+              ],
+              "trigger": "press-last",
+              "scope": "normal-ui",
+              "rearm": "release-all"
+            }
+          }
+        ]
+      },
+      "selectionSha256": "9bd9e5a770ffc6f475acf039a8075731d88957b4e1e4417222bb6ecfd534cdcb",
+      "intentSha256": "9bd9e5a770ffc6f475acf039a8075731d88957b4e1e4417222bb6ecfd534cdcb",
+      "featureMask": 3,
+      "policyId": "50544B32",
+      "configurationSha256": "368ef0d853f7f5ce6b11366e8ea7a73b5de03675511814e5a1515d11e0f13bff",
+      "markerHex": "68CED400",
+      "expectedChooserLabel": "SYNTH P6 68CED400"
+    },
+    {
+      "id": "synth-only-custom",
+      "selection": {
+        "schema": "opensp-feature-selection",
+        "version": 2,
+        "registryRevision": "2026-10-04.2",
+        "catalogDigest": "3a8d5663482fc19a5c56079a7cc56880ee7dae6226f312dc4a0498b8a3ed648a",
+        "board": "sp-404mkii",
+        "profile": "roland-5.52",
+        "features": [
+          {
+            "id": "synth",
+            "version": "p6s-1",
+            "shortcut": {
+              "controls": [
+                "SHIFT",
+                "PAD_1"
+              ],
+              "trigger": "press-last",
+              "scope": "sampler-idle",
+              "rearm": "release-all"
+            }
+          }
+        ]
+      },
+      "selectionSha256": "c1f961c12af5d044f314dca33f815774086695ea324e83e267011509d03e1673",
+      "intentSha256": "c1f961c12af5d044f314dca33f815774086695ea324e83e267011509d03e1673",
+      "featureMask": 1,
+      "policyId": "50544B32",
+      "configurationSha256": "bbcf8448d11131584830337dd5b59ee4610cdc695f2f86c932a82eb793fd03f0",
+      "markerHex": "D8A880C3",
+      "expectedChooserLabel": "SYNTH P6 D8A880C3"
+    },
+    {
+      "id": "global-only-custom",
+      "selection": {
+        "schema": "opensp-feature-selection",
+        "version": 2,
+        "registryRevision": "2026-10-04.2",
+        "catalogDigest": "3a8d5663482fc19a5c56079a7cc56880ee7dae6226f312dc4a0498b8a3ed648a",
+        "board": "sp-404mkii",
+        "profile": "roland-5.52",
+        "features": [
+          {
+            "id": "usb-recorder",
+            "version": "spg1-v552-20",
+            "shortcut": {
+              "controls": [
+                "SHIFT",
+                "PAD_2"
+              ],
+              "trigger": "press-last",
+              "scope": "normal-ui",
+              "rearm": "release-all"
+            }
+          }
+        ]
+      },
+      "selectionSha256": "da3af9e2c7266a3be2d58beaa1152317d8991c4a289477637893f84eef04b6bf",
+      "intentSha256": "da3af9e2c7266a3be2d58beaa1152317d8991c4a289477637893f84eef04b6bf",
+      "featureMask": 2,
+      "policyId": "47524B32",
+      "configurationSha256": "e63d85fb71f2ca9ddd84c9a1fefc1b73ee12314a75df7d506ffd4ee7ac19a369",
+      "markerHex": "357AE477",
+      "expectedChooserLabel": null
+    }
+  ]
+}

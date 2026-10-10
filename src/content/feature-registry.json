@@ -1,0 +1,190 @@
+{
+  "schema": "opensp-feature-registry",
+  "version": 2,
+  "revision": "2026-10-04.2",
+  "board": "sp-404mkii",
+  "profiles": [
+    {
+      "id": "roland-5.52",
+      "label": "Roland v5.52",
+      "supported": true,
+      "writer": "b2-abi2",
+      "app1MaxBytes": 3665920
+    },
+    {
+      "id": "original-app1",
+      "label": "Original OpenSP APP1",
+      "supported": false,
+      "writer": null,
+      "app1MaxBytes": null
+    },
+    {
+      "id": "other-firmware",
+      "label": "Another firmware version",
+      "supported": false,
+      "writer": null,
+      "app1MaxBytes": null
+    }
+  ],
+  "features": [
+    {
+      "id": "synth",
+      "version": "p6s-1",
+      "shortcutScope": "sampler-idle",
+      "name": "Synth",
+      "description": "Play synth sounds from the pads and edit their parameters.",
+      "readiness": "Hardware trial",
+      "evidence": "P6S has owner-confirmed playing, EXIT, repeat entry and a short USB screen/audio take. Recording to a pad remains disabled. Later full-engine work has separate offline evidence.",
+      "profiles": [
+        "roland-5.52"
+      ],
+      "deliveryReady": false,
+      "blocker": "A selectable Synth build and configurable shortcut dispatcher have not been qualified.",
+      "requires": [
+        "panel-dispatch-v1",
+        "audio-owner-v1",
+        "b2-abi2"
+      ],
+      "exclusiveResources": [
+        "generator-entry-current-adapter"
+      ],
+      "defaultControls": [
+        "SHIFT",
+        "RECORD_SETTING"
+      ],
+      "footprint": {
+        "xipBytes": 54168,
+        "mutableBytes": 15344,
+        "scope": "Historical P6S module only; not an additive composition budget."
+      },
+      "source": {
+        "repository": "sp404mk2-synth",
+        "path": "diagnostics/synth_p6/HARDWARE_RESULT.md",
+        "sha256": "0feb1001a22727a55bd6c68b5267669a9bf937471e0f58650d559bf8fc7c3dd6"
+      },
+      "artifact": {
+        "sha256": "7f9917ffb0871cca25b1ce5d281ac5c2bf790ae6b8278b04a5ffef8e3c06fd60",
+        "bytes": 2741144,
+        "identity": "SYNTH P6S!"
+      },
+      "selectable": true
+    },
+    {
+      "id": "usb-recorder",
+      "version": "spg1-v552-20",
+      "shortcutScope": "normal-ui",
+      "name": "USB screen, controls & audio recorder",
+      "description": "Record an SP session on your computer, including screens, control changes and USB audio.",
+      "readiness": "Offline component",
+      "evidence": "The SPG1 v5.52 component passes 125 Cortex-M7 groups. Native screen packing and control delivery execute with supplied service boundaries. Global physical recording and audio/video timing remain unqualified.",
+      "profiles": [
+        "roland-5.52"
+      ],
+      "deliveryReady": false,
+      "blocker": "The global stream needs a complete firmware join and physical screen/control/audio verification.",
+      "requires": [
+        "normal-panel-stream-v1",
+        "roland-usb-audio",
+        "pc-recorder-spg1",
+        "b2-abi2"
+      ],
+      "exclusiveResources": [
+        "normal-cdc-stream-owner"
+      ],
+      "defaultControls": [
+        "SHIFT",
+        "REMAIN"
+      ],
+      "footprint": {
+        "xipBytes": null,
+        "mutableBytes": 6880,
+        "scope": "Alternative global stream owner; replaces historical stream objects and cannot be added to their size."
+      },
+      "source": {
+        "repository": "sp404mk2-synth",
+        "path": "diagnostics/global_usb_stream_v552/HANDOFF.json",
+        "sha256": "54fbd0bdb76cc6d1c635c5c20344a0b82225788cfb40440a07d40cacd7ef7df5"
+      },
+      "artifact": {
+        "sha256": "87f9f3106233da4348a3c7a3e748430b40879fb395f42db432f81efa3b3367a9",
+        "bytes": null,
+        "identity": "SPG1 verified-20 component archive"
+      },
+      "selectable": true
+    },
+    {
+      "id": "stem-splitting",
+      "version": "development-1",
+      "name": "Stem splitting",
+      "description": "Separate a sample into stems.",
+      "readiness": "In development",
+      "evidence": "No qualified device package or memory budget is registered for this feature yet.",
+      "profiles": [],
+      "deliveryReady": false,
+      "blocker": "The stem-splitting provider, firmware adapter and resource budget have not been registered.",
+      "requires": [
+        "stem-provider-v1",
+        "sample-storage-owner-v1",
+        "panel-dispatch-v1"
+      ],
+      "exclusiveResources": [],
+      "defaultControls": [
+        "SHIFT",
+        "COPY"
+      ],
+      "footprint": {
+        "xipBytes": null,
+        "mutableBytes": null,
+        "scope": "No qualified linked resource report."
+      },
+      "source": null,
+      "artifact": null,
+      "selectable": false
+    },
+    {
+      "id": "autotune",
+      "version": "t2p-1",
+      "name": "Autotune",
+      "description": "Correct or shift the pitch of a monophonic input.",
+      "readiness": "Offline listening candidate",
+      "evidence": "T2P is packaged with 22 CPU groups and two stock PCM checks. It has no physical listening result and does not include the full Input FX, key/scale interface or formant processor.",
+      "profiles": [
+        "roland-5.52"
+      ],
+      "deliveryReady": false,
+      "blocker": "The listening candidate and a shared Synth/Autotune entry must be qualified before selectable installation.",
+      "requires": [
+        "panel-dispatch-v1",
+        "audio-owner-v1",
+        "b2-abi2"
+      ],
+      "exclusiveResources": [
+        "generator-entry-current-adapter"
+      ],
+      "defaultControls": [
+        "SHIFT",
+        "PITCH_SPEED"
+      ],
+      "footprint": {
+        "xipBytes": 53984,
+        "mutableBytes": 29944,
+        "scope": "T2P prototype including inherited P6S owners; not an additive composition budget."
+      },
+      "source": {
+        "repository": "sp404mk2-autotune",
+        "path": "diagnostics/autotune_t2p/README.md",
+        "sha256": "23268c1b9f476723804df837c58933122f910ed342eb269522dcc24035202060"
+      },
+      "artifact": {
+        "sha256": "e9213576786f7b35d3f1286fdf1710a1fe86fc2c84311d894c79379c5cff4859",
+        "bytes": 2740960,
+        "identity": "AUTOTUNE T2P"
+      },
+      "selectable": false
+    }
+  ],
+  "releaseFeatures": [
+    "synth",
+    "usb-recorder"
+  ]
+}

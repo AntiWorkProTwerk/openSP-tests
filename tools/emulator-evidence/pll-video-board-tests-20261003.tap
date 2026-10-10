@@ -1,0 +1,220 @@
+TAP version 13
+# Subtest: VIDEO board routing owns only its control aliases and two fractional words
+ok 1 - VIDEO board routing owns only its control aliases and two fractional words
+  ---
+  duration_ms: 5.26
+  type: 'test'
+  ...
+# Subtest: VIDEO synthetic clock advances with GPT stopped and retains its failure fixture after reset
+ok 2 - VIDEO synthetic clock advances with GPT stopped and retains its failure fixture after reset
+  ---
+  duration_ms: 2.0816
+  type: 'test'
+  ...
+# Subtest: primary addresses masks and literal reset words match the NXP VIDEO contract
+ok 3 - primary addresses masks and literal reset words match the NXP VIDEO contract
+  ---
+  duration_ms: 2.326
+  type: 'test'
+  ...
+# Subtest: reset keeps the literal invalid divider powered down with valid fractional defaults
+ok 4 - reset keeps the literal invalid divider powered down with valid fractional defaults
+  ---
+  duration_ms: 0.5342
+  type: 'test'
+  ...
+# Subtest: the pinned SDK initializer preserves its exact RMW order and external MISC2 write
+ok 5 - the pinned SDK initializer preserves its exact RMW order and external MISC2 write
+  ---
+  duration_ms: 0.8854
+  type: 'test'
+  ...
+# Subtest: the SDK OR operation retains inherited POST bits including reserved code3
+ok 6 - the SDK OR operation retains inherited POST bits including reserved code3
+  ---
+  duration_ms: 0.8175
+  type: 'test'
+  ...
+# Subtest: reads and masked-identical writes never advance pending lock time
+ok 7 - reads and masked-identical writes never advance pending lock time
+  ---
+  duration_ms: 0.5204
+  type: 'test'
+  ...
+# Subtest: unchanged loop source and fractional writes preserve pending and completed lock
+ok 8 - unchanged loop source and fractional writes preserve pending and completed lock
+  ---
+  duration_ms: 0.2396
+  type: 'test'
+  ...
+# Subtest: actual loop changes clear pending and completed lock and restart the delay
+ok 9 - actual loop changes clear pending and completed lock and restart the delay
+  ---
+  duration_ms: 0.1809
+  type: 'test'
+  ...
+# Subtest: actual reference changes clear pending and completed lock
+ok 10 - actual reference changes clear pending and completed lock
+  ---
+  duration_ms: 0.117
+  type: 'test'
+  ...
+# Subtest: analog POWERDOWN polarity and all aliases cancel pending or completed lock
+ok 11 - analog POWERDOWN polarity and all aliases cancel pending or completed lock
+  ---
+  duration_ms: 0.1474
+  type: 'test'
+  ...
+# Subtest: ENABLE BYPASS and every post-divider code preserve valid analog lock progress
+ok 12 - ENABLE BYPASS and every post-divider code preserve valid analog lock progress
+  ---
+  duration_ms: 0.296
+  type: 'test'
+  ...
+# Subtest: all 128 loop divider encodings are retained and only documented27..54 can lock
+ok 13 - all 128 loop divider encodings are retained and only documented27..54 can lock
+  ---
+  duration_ms: 0.5465
+  type: 'test'
+  ...
+# Subtest: supported source availability comes only from the fixed environmental fixtures
+ok 14 - supported source availability comes only from the fixed environmental fixtures
+  ---
+  duration_ms: 0.1966
+  type: 'test'
+  ...
+# Subtest: reserved reference codes2 and3 remain stored and conservatively stall LOCK
+ok 15 - reserved reference codes2 and3 remain stored and conservatively stall LOCK
+  ---
+  duration_ms: 0.3713
+  type: 'test'
+  ...
+# Subtest: NUM is signed30 while DENOM is unsigned30 and upper bits read zero
+ok 16 - NUM is signed30 while DENOM is unsigned30 and upper bits read zero
+  ---
+  duration_ms: 0.2214
+  type: 'test'
+  ...
+# Subtest: fraction eligibility uses strict absolute signed numerator less than denominator
+ok 17 - fraction eligibility uses strict absolute signed numerator less than denominator
+  ---
+  duration_ms: 0.41
+  type: 'test'
+  ...
+# Subtest: zero denominator remains stored and conservatively stalls even zero numerator
+ok 18 - zero denominator remains stored and conservatively stalls even zero numerator
+  ---
+  duration_ms: 0.1717
+  type: 'test'
+  ...
+# Subtest: actual NUM and DENOM changes clear pending and completed lock independently
+ok 19 - actual NUM and DENOM changes clear pending and completed lock independently
+  ---
+  duration_ms: 0.1092
+  type: 'test'
+  ...
+# Subtest: invalid fractional changes discard stale LOCK and recovery needs a fresh delay
+ok 20 - invalid fractional changes discard stale LOCK and recovery needs a fresh delay
+  ---
+  duration_ms: 0.0793
+  type: 'test'
+  ...
+# Subtest: SET CLR TOG aliases read zero at all aligned lanes
+ok 21 - SET CLR TOG aliases read zero at all aligned lanes
+  ---
+  duration_ms: 0.189
+  type: 'test'
+  ...
+# Subtest: control aliases act only on selected ones and preserve zero writes
+ok 22 - control aliases act only on selected ones and preserve zero writes
+  ---
+  duration_ms: 0.1175
+  type: 'test'
+  ...
+# Subtest: control byte and halfword accesses preserve untouched lanes
+ok 23 - control byte and halfword accesses preserve untouched lanes
+  ---
+  duration_ms: 0.11
+  type: 'test'
+  ...
+# Subtest: fractional byte and halfword accesses are little endian with protected upper bits
+ok 24 - fractional byte and halfword accesses are little endian with protected upper bits
+  ---
+  duration_ms: 0.8361
+  type: 'test'
+  ...
+# Subtest: unwritten value bits cannot affect another lane or fractional upper fields
+ok 25 - unwritten value bits cannot affect another lane or fractional upper fields
+  ---
+  duration_ms: 0.1408
+  type: 'test'
+  ...
+# Subtest: LOCK stays read only through every control alias and lane width
+ok 26 - LOCK stays read only through every control alias and lane width
+  ---
+  duration_ms: 0.1333
+  type: 'test'
+  ...
+# Subtest: reserved control bits remain zero while every actual field remains writable
+ok 27 - reserved control bits remain zero while every actual field remains writable
+  ---
+  duration_ms: 0.0858
+  type: 'test'
+  ...
+# Subtest: equivalent batched ticks preserve the same pending and completed state
+ok 28 - equivalent batched ticks preserve the same pending and completed state
+  ---
+  duration_ms: 0.1065
+  type: 'test'
+  ...
+# Subtest: zero-delay lock still requires an explicit tick after eligibility or parameter change
+ok 29 - zero-delay lock still requires an explicit tick after eligibility or parameter change
+  ---
+  duration_ms: 0.0715
+  type: 'test'
+  ...
+# Subtest: tick bounds reject invalid counts and delays without changing model state
+ok 30 - tick bounds reject invalid counts and delays without changing model state
+  ---
+  duration_ms: 0.691
+  type: 'test'
+  ...
+# Subtest: fixed lock failure never completes and remains fixed after reset
+ok 31 - fixed lock failure never completes and remains fixed after reset
+  ---
+  duration_ms: 0.1946
+  type: 'test'
+  ...
+# Subtest: boolean fixtures are validated and status snapshots cannot alter future state
+ok 32 - boolean fixtures are validated and status snapshots cannot alter future state
+  ---
+  duration_ms: 0.3055
+  type: 'test'
+  ...
+# Subtest: reset restores all three words and progress but retains the fixed fixtures
+ok 33 - reset restores all three words and progress but retains the fixed fixtures
+  ---
+  duration_ms: 0.1201
+  type: 'test'
+  ...
+# Subtest: exact24-byte ownership leaves NUM DENOM reserved holes and neighboring blocks unhandled
+ok 34 - exact24-byte ownership leaves NUM DENOM reserved holes and neighboring blocks unhandled
+  ---
+  duration_ms: 0.2593
+  type: 'test'
+  ...
+# Subtest: malformed widths addresses and cross-lane accesses remain unhandled without mutation
+ok 35 - malformed widths addresses and cross-lane accesses remain unhandled without mutation
+  ---
+  duration_ms: 0.243
+  type: 'test'
+  ...
+1..35
+# tests 35
+# suites 0
+# pass 35
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 151.7548

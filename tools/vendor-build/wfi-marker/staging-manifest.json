@@ -1,0 +1,125 @@
+{
+  "schema": 1,
+  "wrapperCommit": "1220477c7fb0f8fe4b500f4bd211de52f6dfe638",
+  "coreCommit": "8028ec436f2d9376525352dd38ed9ed6b9f6be10",
+  "emscripten": "5.0.5",
+  "repository": "https://github.com/AlexAltea/unicorn.js",
+  "canonicalDriverSha256": "67c5f87ff2f6c361c93cb7468c40d9bf979655827778368b80737772f3b2efe1",
+  "markerProposalFreezeSha256": "f2ea2d43ed4e1e75fbd359dd49e2220da8ae83a4cca3f9880275720b2ed3fdd7",
+  "upstreamBuildBeforeSha256": "fc8da11a76a27b8931ff493cb032a610328123fe3947c5d917b1976deac9d732",
+  "upstreamBuildAfterExportSha256": "e990ae5d7fa88f99df7d04d82ef17c57361863cf93e3ef526f98ef214aea3288",
+  "wrapper": {
+    "path": "src/unicorn-wrapper.js",
+    "beforeSha256": "520dea1e1fb263c9d198f1bd9492f2b8b11dc111deaa7750d6d3bc687817e16a",
+    "afterSha256": "50a8ae8f65005725ab9192c45c51ca3dc723e49ee604218ec907b6ec29a1c005",
+    "afterBytes": 33550
+  },
+  "wrapperPatch": {
+    "path": "patches/marker-wrapper.patch",
+    "sha256": "806d6f52baa104388e881b2b862ad444bac2120a74e119c30f29284b3f227bb8"
+  },
+  "innerRepairs": [
+    {
+      "name": "temp-lifetime",
+      "patch": "patches/unicorn-arm-temp-lifetime.patch",
+      "sha256": "8f179f1cf100a1246bfbe5b5c4993f025b79ad614aa0b01c22df6589fc186fd3",
+      "affectedSources": [
+        {
+          "path": "qemu/tcg/tcg.c",
+          "beforeSha256": "fedab0cdaf17c3f7a27fb49a14e6847c08e8cf6b436ce474a39e3f58ef7ef1b4",
+          "afterSha256": "2e705fd88b03c1a13ff38f7341e442eed1421d9380ed49b6eff7361b265aad31"
+        }
+      ]
+    },
+    {
+      "name": "conditional-hook-stop",
+      "patch": "patches/unicorn-arm-conditional-hook-stop.patch",
+      "sha256": "5c666cd6b7cab4d0404f47cf2c3ea49b0b102cba44b23af03b1c288cccd4dc31",
+      "affectedSources": [
+        {
+          "path": "qemu/target/arm/translate.c",
+          "beforeSha256": "22102563894df046a957f7b80e2ecd385f7e4829584fa1b22e01a52d59fde53a",
+          "afterSha256": "cfa7819d862daac859aa282a67e0f24164a48171c52e4a15305e101d872e2674"
+        }
+      ]
+    },
+    {
+      "name": "host-xpsr-hflags",
+      "patch": "patches/unicorn-arm-xpsr-hflags.patch",
+      "sha256": "cff39b686f1dfc106f9aa17ea484babe020be8d7aa45a9fbbb4cf43549410423",
+      "affectedSources": [
+        {
+          "path": "qemu/target/arm/unicorn_arm.c",
+          "beforeSha256": "20f98c8a80ab2ca4b5af2904df03d14e0a2c659c4dc0608b3789166a8812b730",
+          "afterSha256": "60a0341b7f29f49501e4597912130560717d6d0852bb26baf1eb0cf5cf7ada40"
+        }
+      ]
+    },
+    {
+      "name": "m7-host-registers",
+      "patch": "patches/unicorn-arm-m7-host-registers.patch",
+      "sha256": "ce12796247de53c6e39d937fbdb65af3e949e1b1f20be448c651ae45404e161c",
+      "affectedSources": [
+        {
+          "path": "qemu/target/arm/unicorn_arm.c",
+          "beforeSha256": "60a0341b7f29f49501e4597912130560717d6d0852bb26baf1eb0cf5cf7ada40",
+          "afterSha256": "465773a48469cab471a4de6d8f4399696c5ce325eadb7dbb3cd4535148d26a75"
+        },
+        {
+          "path": "qemu/target/arm/m_helper.c",
+          "beforeSha256": "019fb1cf4bd7fb64addea8717cac2f2cd393375839df7c71e17b94af54f6d332",
+          "afterSha256": "ac641645a247cbfb1d22b60560e195209cfe6ff9762fa2c103687a74f98e8ccd"
+        }
+      ]
+    },
+    {
+      "name": "wfi-marker",
+      "patch": "patches/marker-inner.patch",
+      "sha256": "a52774b3a0590af340ada7e9839f23e845d4fbc2ae1d1e55a17fbda0592ce2a3",
+      "affectedSources": [
+        {
+          "path": "include/uc_priv.h",
+          "beforeSha256": "622e9eda4160f8f1c9d1b02730f11d8bcf352d3df0fc8b5732e353b31f43ab78",
+          "afterSha256": "c2fa82d9c91fcd504ffaebdcf2cf9bbffd82972cc2602ab4c8058c289de9c310",
+          "afterBytes": 21312
+        },
+        {
+          "path": "qemu/target/arm/helper.h",
+          "beforeSha256": "2b467d81360e4041c5094d604206bebfd648d9888eb2faa74b33391a818f8c03",
+          "afterSha256": "a0f38eba0001301a9e439e3ceab37301c4507439f1cbed131855744dacf9d8d8",
+          "afterBytes": 30315
+        },
+        {
+          "path": "qemu/target/arm/op_helper.c",
+          "beforeSha256": "7034de6c7f50181b33604e91dbbb42b07a5de3169c70bc585c3250a34dc3219c",
+          "afterSha256": "0e4cf2a56d7904479c74804e5e9032031c140c75709421aba8b5cca27795419d",
+          "afterBytes": 29490
+        },
+        {
+          "path": "qemu/target/arm/translate-a64.c",
+          "beforeSha256": "17d80312d69481116ba0137364037f7167e17f58104f6a7ed42799f63a4fb7b5",
+          "afterSha256": "25da61aaad5cad3661f06c54f223806f54c552e52b3b1918f1c13bc9a321edd3",
+          "afterBytes": 492670
+        },
+        {
+          "path": "qemu/target/arm/translate.c",
+          "beforeSha256": "cfa7819d862daac859aa282a67e0f24164a48171c52e4a15305e101d872e2674",
+          "afterSha256": "4728b10499bf4810cf89e862de31c8da6039bd4862d4f51616144ccda8896e18",
+          "afterBytes": 403257
+        },
+        {
+          "path": "qemu/target/arm/translate.h",
+          "beforeSha256": "c5ebcd1fb7c4749047ee9f327c9badf1190beddf8c1bcaa87c3c6801dd55ec18",
+          "afterSha256": "cb4150190aa655c5a9706ada7e534692b84ee42eca128b15dc3fd399543d641d",
+          "afterBytes": 10859
+        },
+        {
+          "path": "uc.c",
+          "beforeSha256": "af8d8281594036b2d3e7d65940999b444761e4410d3b5801c998667f59331364",
+          "afterSha256": "8f966bcbc98b52b6b5696cc9f08a6daaf5d994737f170f11c2cefd32f7b06a26",
+          "afterBytes": 82771
+        }
+      ]
+    }
+  ]
+}

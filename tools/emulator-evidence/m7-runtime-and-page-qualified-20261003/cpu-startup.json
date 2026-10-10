@@ -1,0 +1,108 @@
+{
+  "scope": "Real ARM WASM instructions and APP1 startup; no physical device evidence",
+  "cases": [
+    {
+      "name": "Scalar FP bits and aliases; wider register APIs rejected before engine invocation",
+      "scalarRegisters": [
+        "S30",
+        "S31",
+        "LR"
+      ],
+      "rejectedEngineCalls": 0
+    },
+    {
+      "name": "Cortex-M7 readback, exact repeated slices, special registers",
+      "instructions": 1200132,
+      "sliceSizes": [
+        11,
+        100000
+      ],
+      "repetitions": 12
+    },
+    {
+      "name": "Guest MMIO loads and stores call the board",
+      "instructions": 3
+    },
+    {
+      "name": "Repeated instruction preparation stops after 64 retries and remains resumable",
+      "preparations": 64,
+      "instructionStarts": 0
+    },
+    {
+      "name": "One preparation per progressing instruction preserves the original slice budget",
+      "preparations": 70,
+      "instructionStarts": 70
+    },
+    {
+      "name": "Injected public API and cleanup failures mark the backend terminal before reuse",
+      "injectedMethods": [
+        "reg_read_i32",
+        "reg_write_i32",
+        "mem_read",
+        "mem_write",
+        "ctl_remove_cache",
+        "emu_stop",
+        "hook_del",
+        "close"
+      ],
+      "backendCallsAfterFailure": 0
+    },
+    {
+      "name": "Ordinary memory API errors remain recoverable; closed CPU APIs are rejected"
+    },
+    {
+      "name": "Actual VFP single-precision VMOV/VADD",
+      "resultBits": "40800000"
+    },
+    {
+      "name": "Pre-instruction stop, resume, and unmapped fetch fault"
+    },
+    {
+      "name": "Injected terminal engine failure blocks backend reuse and permits worker teardown",
+      "attemptedPc": "80000000",
+      "instructionStarts": 0,
+      "backendLost": true
+    },
+    {
+      "name": "Instruction-boundary context publication precedes the guest load",
+      "instructions": 2,
+      "guestLoadedValue": 9
+    },
+    {
+      "name": "Retired device DMA and modified XIP resume within the original budget",
+      "instructions": 5,
+      "changedInstructionResult": 7,
+      "nextGuestLoad": "12345678"
+    },
+    {
+      "name": "R13 original APP1 startup reaches firmware_main",
+      "firmwareSha256": "4891fd9451cd107f6f50f4fb85d75f538cf5b2eb3c7fb2680f36719b32f67e8a",
+      "firmwareBytes": 15396,
+      "runtimeBytes": 14368,
+      "instructions": 25878,
+      "pc": 2147484780,
+      "checks": [
+        "Full runtime relocation",
+        "Initialized data copy",
+        "BSS cleared",
+        "Own VTOR/stack/control",
+        "Captured incoming arguments"
+      ]
+    }
+  ],
+  "limitations": [
+    "Board time counts instruction starts, not measured M7 cycles",
+    "FPU access permission faults and lazy exception stacking are not verified",
+    "This CPU test does not establish complete firmware peripherals or sampler operation"
+  ],
+  "runtime": {
+    "wrapperCommit": "1220477c7fb0f8fe4b500f4bd211de52f6dfe638",
+    "coreCommit": "8028ec436f2d9376525352dd38ed9ed6b9f6be10",
+    "jsSha256": "d8bc37b898ccbc5b429f17112add6ad33a8a9b35df4146034ba141b992dae007",
+    "wasmSha256": "399f9ca4eecc11d111d3182e251fbfb8ccc69e88f19f06650e945482eaf1a7d1"
+  },
+  "sourceSha256": {
+    "src/lib/emulator/cpu.ts": "fb27f37e31277b4e79d1847562c961de23acd25befc4015ffbfd2a3c7d7809b1",
+    "tools/test-emulator-cpu.mjs": "e3575911bcaa9ba62f5cd12efcd39fcc22cfe5e2284b0a6f4c334dd2261de52e"
+  }
+}

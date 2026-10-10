@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "scope": "Exact VIDEO/SD board, acceptance runners, component doc and built checkpoint before AUDIO routing",
+  "files": {
+    "src/lib/emulator/board.ts": {
+      "file": "board.ts",
+      "bytes": 37935,
+      "sha256": "e35cb1f5d82b50d2bdb01e5047d5143401a0ee4a80eb3460b384270a3922beea"
+    },
+    "tools/test-emulator-stock.mjs": {
+      "file": "test-emulator-stock.mjs",
+      "bytes": 19833,
+      "sha256": "3f27591c364af4d3075c8a98c7f1b9b005e0bcfd23d2568bb9c35928790cdae7"
+    },
+    "tools/test-emulator-firmware.mjs": {
+      "file": "test-emulator-firmware.mjs",
+      "bytes": 39960,
+      "sha256": "af455a3c5d82db0404d2a25a953d82a23064bcd1e646d5ef281424919b242ec1"
+    },
+    "tools/test-emulator-update.mjs": {
+      "file": "test-emulator-update.mjs",
+      "bytes": 19247,
+      "sha256": "79a09619f9aeaeb5787f0549fccdd93def7cd4cc2ce8dee19b2b51c62272defc"
+    },
+    "tests/emulator-worker-roundtrip.spec.ts": {
+      "file": "emulator-worker-roundtrip.spec.ts",
+      "bytes": 27862,
+      "sha256": "937ca5aec803bc111bc7b02e1378f2817430c23a79cbc229e9ca4496d4d9b53d"
+    },
+    "docs/emulator-board-contract.md": {
+      "file": "emulator-board-contract.md",
+      "bytes": 14631,
+      "sha256": "abd16d090e7d399d6ee185848e511cb3c3e40abb0576225f56d2f408c88f40de"
+    },
+    "docs/emulator-pll-audio.md": {
+      "file": "emulator-pll-audio.md",
+      "bytes": 4678,
+      "sha256": "b238bcaa46b1ba4a9553ef8cbca69db448395768e46d40064545dafbb73e4806"
+    },
+    "dist/build-info.json": {
+      "file": "build-info.json",
+      "bytes": 9968,
+      "sha256": "e43a675233ee6100cd2d1f5756c83927d736d9593d4e8dd20d119da7d3150095"
+    }
+  }
+}

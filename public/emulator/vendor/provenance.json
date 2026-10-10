@@ -1,0 +1,218 @@
+{
+  "repository": "https://github.com/AlexAltea/unicorn.js",
+  "wrapperCommit": "1220477c7fb0f8fe4b500f4bd211de52f6dfe638",
+  "coreCommit": "8028ec436f2d9376525352dd38ed9ed6b9f6be10",
+  "emscripten": "5.0.5",
+  "compiler": "emcc (Emscripten gcc/clang-like replacement + linker emulating GNU ld) 5.0.5 (bc569045b14c3fa7b960734ed2c50da7b20adea4)",
+  "architecture": "arm",
+  "license": "GPL-2.0",
+  "composition": "temp-lifetime-it-hook-stop-xpsr-hflags-m7-host-registers-wfi-marker",
+  "sourceDirectoryWasAbsent": true,
+  "outputDirectoryWasAbsent": true,
+  "upstreamBuildSource": {
+    "driver": {
+      "path": "build.py",
+      "url": "https://raw.githubusercontent.com/AlexAltea/unicorn.js/1220477c7fb0f8fe4b500f4bd211de52f6dfe638/build.py",
+      "sha256": "fc8da11a76a27b8931ff493cb032a610328123fe3947c5d917b1976deac9d732"
+    },
+    "transformations": [
+      {
+        "operation": "copy missing files",
+        "source": {
+          "path": "externals/qemu-5.0.1",
+          "url": "https://github.com/AlexAltea/unicorn.js/tree/1220477c7fb0f8fe4b500f4bd211de52f6dfe638/externals/qemu-5.0.1",
+          "gitTreeSha1": "49d518eaa03cf2481dff37d26f97def20d5bdaf0"
+        },
+        "destination": "unicorn/qemu"
+      },
+      {
+        "operation": "apply patch",
+        "source": {
+          "path": "src/patches/unicorn-tci.patch",
+          "url": "https://raw.githubusercontent.com/AlexAltea/unicorn.js/1220477c7fb0f8fe4b500f4bd211de52f6dfe638/src/patches/unicorn-tci.patch",
+          "sha256": "3b616f3b3c46ddbb7f811da2b6c5defb4020fa94ae15886610d11e07d3ff3704"
+        }
+      },
+      {
+        "operation": "copy if missing",
+        "source": {
+          "path": "src/qemu/helper-adapter.h",
+          "url": "https://raw.githubusercontent.com/AlexAltea/unicorn.js/1220477c7fb0f8fe4b500f4bd211de52f6dfe638/src/qemu/helper-adapter.h",
+          "sha256": "aaa8d3e88d933f7ad0ee48b64f7ecd4bb38e95f07f0ceb0ae6893495cdbf746d"
+        },
+        "destination": "unicorn/qemu/include/exec/helper-adapter.h"
+      },
+      {
+        "operation": "apply patch",
+        "source": {
+          "path": "src/patches/unicorn-adapters.patch",
+          "url": "https://raw.githubusercontent.com/AlexAltea/unicorn.js/1220477c7fb0f8fe4b500f4bd211de52f6dfe638/src/patches/unicorn-adapters.patch",
+          "sha256": "87c4e3d1f058bc3ad1b5b50f88aa5a1e6352c2bb79182559c2d5f025abf50ef8"
+        }
+      },
+      {
+        "operation": "apply patch",
+        "source": {
+          "path": "src/patches/unicorn-ppc-fix.patch",
+          "url": "https://raw.githubusercontent.com/AlexAltea/unicorn.js/1220477c7fb0f8fe4b500f4bd211de52f6dfe638/src/patches/unicorn-ppc-fix.patch",
+          "sha256": "31834496417f97e0d7c36aed9337837cb109853889291b1d9709834968881f2a"
+        }
+      },
+      {
+        "operation": "regenerate symbol aliases",
+        "command": [
+          "bash",
+          "symbols.sh"
+        ],
+        "workingDirectory": "unicorn"
+      }
+    ]
+  },
+  "upstreamBuildBeforeSha256": "fc8da11a76a27b8931ff493cb032a610328123fe3947c5d917b1976deac9d732",
+  "upstreamBuildAfterExportSha256": "e990ae5d7fa88f99df7d04d82ef17c57361863cf93e3ef526f98ef214aea3288",
+  "generatedBuildScriptSha256": "b73422d9c8c463c750d246e685c6703b775c96f4d8032181648e7c82caa005c8",
+  "manifestSha256": "db347e4557ad444097ae44be86bcac6d7adea006f577b88386eba70079029a81",
+  "stagingModuleSha256": "32f3863432a3fdcf725373ea1f42c504d37e844dda0244514d3fa001485f0c95",
+  "outerWrapperStage": {
+    "patchSha256": "806d6f52baa104388e881b2b862ad444bac2120a74e119c30f29284b3f227bb8",
+    "affectedSources": [
+      {
+        "path": "src/unicorn-wrapper.js",
+        "beforeSha256": "520dea1e1fb263c9d198f1bd9492f2b8b11dc111deaa7750d6d3bc687817e16a",
+        "afterSha256": "50a8ae8f65005725ab9192c45c51ca3dc723e49ee604218ec907b6ec29a1c005",
+        "afterBytes": 33550
+      }
+    ],
+    "applicationCount": 1
+  },
+  "innerStages": [
+    {
+      "name": "temp-lifetime",
+      "patchSha256": "8f179f1cf100a1246bfbe5b5c4993f025b79ad614aa0b01c22df6589fc186fd3",
+      "affectedSources": [
+        {
+          "path": "qemu/tcg/tcg.c",
+          "beforeSha256": "fedab0cdaf17c3f7a27fb49a14e6847c08e8cf6b436ce474a39e3f58ef7ef1b4",
+          "afterSha256": "2e705fd88b03c1a13ff38f7341e442eed1421d9380ed49b6eff7361b265aad31"
+        }
+      ],
+      "applicationCount": 1
+    },
+    {
+      "name": "conditional-hook-stop",
+      "patchSha256": "5c666cd6b7cab4d0404f47cf2c3ea49b0b102cba44b23af03b1c288cccd4dc31",
+      "affectedSources": [
+        {
+          "path": "qemu/target/arm/translate.c",
+          "beforeSha256": "22102563894df046a957f7b80e2ecd385f7e4829584fa1b22e01a52d59fde53a",
+          "afterSha256": "cfa7819d862daac859aa282a67e0f24164a48171c52e4a15305e101d872e2674"
+        }
+      ],
+      "applicationCount": 1
+    },
+    {
+      "name": "host-xpsr-hflags",
+      "patchSha256": "cff39b686f1dfc106f9aa17ea484babe020be8d7aa45a9fbbb4cf43549410423",
+      "affectedSources": [
+        {
+          "path": "qemu/target/arm/unicorn_arm.c",
+          "beforeSha256": "20f98c8a80ab2ca4b5af2904df03d14e0a2c659c4dc0608b3789166a8812b730",
+          "afterSha256": "60a0341b7f29f49501e4597912130560717d6d0852bb26baf1eb0cf5cf7ada40"
+        }
+      ],
+      "applicationCount": 1
+    },
+    {
+      "name": "m7-host-registers",
+      "patchSha256": "ce12796247de53c6e39d937fbdb65af3e949e1b1f20be448c651ae45404e161c",
+      "affectedSources": [
+        {
+          "path": "qemu/target/arm/unicorn_arm.c",
+          "beforeSha256": "60a0341b7f29f49501e4597912130560717d6d0852bb26baf1eb0cf5cf7ada40",
+          "afterSha256": "465773a48469cab471a4de6d8f4399696c5ce325eadb7dbb3cd4535148d26a75"
+        },
+        {
+          "path": "qemu/target/arm/m_helper.c",
+          "beforeSha256": "019fb1cf4bd7fb64addea8717cac2f2cd393375839df7c71e17b94af54f6d332",
+          "afterSha256": "ac641645a247cbfb1d22b60560e195209cfe6ff9762fa2c103687a74f98e8ccd"
+        }
+      ],
+      "applicationCount": 1
+    },
+    {
+      "name": "wfi-marker",
+      "patchSha256": "a52774b3a0590af340ada7e9839f23e845d4fbc2ae1d1e55a17fbda0592ce2a3",
+      "affectedSources": [
+        {
+          "path": "include/uc_priv.h",
+          "beforeSha256": "622e9eda4160f8f1c9d1b02730f11d8bcf352d3df0fc8b5732e353b31f43ab78",
+          "afterSha256": "c2fa82d9c91fcd504ffaebdcf2cf9bbffd82972cc2602ab4c8058c289de9c310",
+          "afterBytes": 21312
+        },
+        {
+          "path": "qemu/target/arm/helper.h",
+          "beforeSha256": "2b467d81360e4041c5094d604206bebfd648d9888eb2faa74b33391a818f8c03",
+          "afterSha256": "a0f38eba0001301a9e439e3ceab37301c4507439f1cbed131855744dacf9d8d8",
+          "afterBytes": 30315
+        },
+        {
+          "path": "qemu/target/arm/op_helper.c",
+          "beforeSha256": "7034de6c7f50181b33604e91dbbb42b07a5de3169c70bc585c3250a34dc3219c",
+          "afterSha256": "0e4cf2a56d7904479c74804e5e9032031c140c75709421aba8b5cca27795419d",
+          "afterBytes": 29490
+        },
+        {
+          "path": "qemu/target/arm/translate-a64.c",
+          "beforeSha256": "17d80312d69481116ba0137364037f7167e17f58104f6a7ed42799f63a4fb7b5",
+          "afterSha256": "25da61aaad5cad3661f06c54f223806f54c552e52b3b1918f1c13bc9a321edd3",
+          "afterBytes": 492670
+        },
+        {
+          "path": "qemu/target/arm/translate.c",
+          "beforeSha256": "cfa7819d862daac859aa282a67e0f24164a48171c52e4a15305e101d872e2674",
+          "afterSha256": "4728b10499bf4810cf89e862de31c8da6039bd4862d4f51616144ccda8896e18",
+          "afterBytes": 403257
+        },
+        {
+          "path": "qemu/target/arm/translate.h",
+          "beforeSha256": "c5ebcd1fb7c4749047ee9f327c9badf1190beddf8c1bcaa87c3c6801dd55ec18",
+          "afterSha256": "cb4150190aa655c5a9706ada7e534692b84ee42eca128b15dc3fd399543d641d",
+          "afterBytes": 10859
+        },
+        {
+          "path": "uc.c",
+          "beforeSha256": "af8d8281594036b2d3e7d65940999b444761e4410d3b5801c998667f59331364",
+          "afterSha256": "8f966bcbc98b52b6b5696cc9f08a6daaf5d994737f170f11c2cefd32f7b06a26",
+          "afterBytes": 82771
+        }
+      ],
+      "applicationCount": 1
+    }
+  ],
+  "files": {
+    "unicorn-arm.js": {
+      "bytes": 43715,
+      "sha256": "55481e3d0277fed2481ca1159ace9ae5929c330eec95e8b08986336f1c349e88"
+    },
+    "unicorn-arm.wasm": {
+      "bytes": 706883,
+      "sha256": "5f10e3d7e94165c63ccd8e5a87dc4eacea5ca777220d76b81e1fb8302ed139dc"
+    },
+    "LICENSE-GPL-2.0.txt": {
+      "bytes": 18092,
+      "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643"
+    },
+    "UNICORN-COPYING.txt": {
+      "bytes": 17992,
+      "sha256": "6f04ae8364d0079a192b14635f4b1da294ce18724c034c39a6a41d1b09df6100"
+    },
+    "UNICORN-AUTHORS.txt": {
+      "bytes": 81,
+      "sha256": "6dff517f42f12f2c64d0864cc06a7d2a1cc10c7435a1167a49c625e60813f51c"
+    },
+    "UNICORN-CREDITS.txt": {
+      "bytes": 2197,
+      "sha256": "ea18f463dee60f35024f5116f2c7fd553cb355fcf21843ac71e5406f0aa3279d"
+    }
+  }
+}

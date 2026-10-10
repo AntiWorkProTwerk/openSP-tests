@@ -1,0 +1,36 @@
+--- a/qemu/tcg/tcg.c
++++ b/qemu/tcg/tcg.c
+@@ -1441,6 +1441,10 @@
+     unsigned sizemask, flags;
+     TCGHelperInfo *info;
+     TCGOp *op;
++#if defined(CONFIG_TCG_INTERPRETER) && TCG_TARGET_REG_BITS == 32
++    TCGv_i64 adapter_ext_temps[MAX_OPC_PARAM_IARGS];
++    int adapter_ext_count = 0;
++#endif
+ 
+     info = g_hash_table_lookup(tcg_ctx->helper_table, (gpointer)func);
+     flags = info->flags;
+@@ -1501,6 +1505,9 @@
+             TCGv_i64 ext_orig = temp_tcgv_i64(tcg_ctx, args[i]);
+             tcg_gen_ext32u_i64(tcg_ctx, ext_temp, ext_orig);
+             args[i] = tcgv_i64_temp(tcg_ctx, ext_temp);
++#if defined(CONFIG_TCG_INTERPRETER) && TCG_TARGET_REG_BITS == 32
++            adapter_ext_temps[adapter_ext_count++] = ext_temp;
++#endif
+         }
+     }
+ 
+@@ -1612,6 +1619,12 @@
+         }
+     }
+ #endif /* TCG_TARGET_EXTEND_ARGS */
++#if defined(CONFIG_TCG_INTERPRETER) && TCG_TARGET_REG_BITS == 32
++    /* The emitted call owns temp IDs; release adapter scratch handles. */
++    for (i = 0; i < adapter_ext_count; ++i) {
++        tcg_temp_free_i64(tcg_ctx, adapter_ext_temps[i]);
++    }
++#endif
+ }
+ 
+ static void tcg_reg_alloc_start(TCGContext *s)

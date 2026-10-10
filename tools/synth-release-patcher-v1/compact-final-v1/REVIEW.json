@@ -1,0 +1,191 @@
+{
+  "schema": "opensp-compact-final11-patcher-review-v1",
+  "date": "2026-10-06",
+  "product": "openSynth",
+  "source_scope": "sealed-kit11/final-package05",
+  "recipe": "opensynth-n1-final11",
+  "status": "PASS_STATIC_SOURCE_AND_BYTE_REPLAY_RELEASE_HELD",
+  "tests": {
+    "passed": 44,
+    "failed": 0,
+    "skipped": 0,
+    "firmware_compiler_invoked": false,
+    "browser_operated": false,
+    "device_operated": false,
+    "actual_incomplete_tool_entry_refusal": true,
+    "inert_child_exit_code": 23,
+    "actual_historical_kit09_refused": true,
+    "actual_historical_core03_refused": true,
+    "changed_link_receipts_refused": true,
+    "promoted_component_qualification_refused": true
+  },
+  "source_files": {
+    "tools/synth-release-patcher-v1/compact-final-v1/build.mjs": {
+      "bytes": 8933,
+      "sha256": "2d44d51e62eb9dbcde4b45b475c752c7c67296b394cafe9fd71182d54b4586eb"
+    },
+    "tools/synth-release-patcher-v1/compact-final-v1/common.mjs": {
+      "bytes": 3401,
+      "sha256": "900ecb04d683d77bad14bb148c44949fb7c4a68db0c3345b094436d815612ee8"
+    },
+    "tools/synth-release-patcher-v1/compact-final-v1/DEPENDENCIES.md": {
+      "bytes": 2971,
+      "sha256": "5d05c93b6e2c20cf72aec0461b578173ded2d55299701e1bda2d6ff87ed90d35"
+    },
+    "tools/synth-release-patcher-v1/compact-final-v1/handoff.mjs": {
+      "bytes": 4329,
+      "sha256": "a59628cde553645e6941e017dd256efa4d67904ea49dbd58759b9b79741ef493"
+    },
+    "tools/synth-release-patcher-v1/compact-final-v1/inspect.mjs": {
+      "bytes": 15446,
+      "sha256": "ef48821de4b3ce256d081217cb8cd485198b6ad73ffb7955a34c9d556bfed0ce"
+    },
+    "tools/synth-release-patcher-v1/compact-final-v1/LICENSE": {
+      "bytes": 1073,
+      "sha256": "44bc8794b54c0619e36391be64c21b2a5c6d8d8f157a532266d3ff3f53af0aa2"
+    },
+    "tools/synth-release-patcher-v1/compact-final-v1/NOTICE": {
+      "bytes": 1621,
+      "sha256": "702102d3d588cf3e1b21e190ba2dbdc115df5ae6967e7a753cf2fd0d4aadb9ac"
+    },
+    "tools/synth-release-patcher-v1/compact-final-v1/package-source.mjs": {
+      "bytes": 6338,
+      "sha256": "fb10e30d23f18b95fcb9a768b7bd70d965cbe2c3347751f9271b034f00d2deea"
+    },
+    "tools/synth-release-patcher-v1/compact-final-v1/pins.mjs": {
+      "bytes": 3480,
+      "sha256": "e69c549efab7f00d16d79bf77bb36373efaf634223d3520f2879df654cb13af3"
+    },
+    "tools/synth-release-patcher-v1/compact-final-v1/README.md": {
+      "bytes": 4841,
+      "sha256": "f160e88770dc4d3036e2bad92a7e72e7f72b6063e405d265851254ac65719b60"
+    },
+    "tools/synth-release-patcher-v1/compact-final-v1/run.mjs": {
+      "bytes": 902,
+      "sha256": "56623676a2b643b36d055e36b6a946bd4fc9c02fc9bc08801ca1d212ecdd3648"
+    },
+    "tools/synth-release-patcher-v1/compact-final-v1/source-final11.zip": {
+      "bytes": 773860,
+      "sha256": "9a2cf2547002893cc76113263a7c9b3e06fa212e79a057d35f710b3d4ac4ac55"
+    },
+    "tools/synth-release-patcher-v1/compact-final-v1/source.mjs": {
+      "bytes": 5893,
+      "sha256": "aca7d6ff90c356663d09da47503cc3cb061e68894029b59ea86171aa39980686"
+    },
+    "tools/synth-release-patcher-v1/compact-final-v1/test-compact.mjs": {
+      "bytes": 16776,
+      "sha256": "a132dc25d2a47ff2d0135f46614ccb9430db44c05bb711a441508d871d512664"
+    },
+    "tools/synth-release-patcher-v1/official.mjs": {
+      "bytes": 1103,
+      "sha256": "2188b30067205e89d753b0642d4102cf9f785a8064332aae53238c10aa4c0ebc"
+    }
+  },
+  "source_archive": {
+    "bytes": 773860,
+    "sha256": "9a2cf2547002893cc76113263a7c9b3e06fa212e79a057d35f710b3d4ac4ac55"
+  },
+  "reference_report_sha256": "928b91437a894c8aefa305d5c4b25f9a5b25ac0355ec9acd6a31873294f95614",
+  "features": {
+    "synth": true,
+    "record_to_pad": true,
+    "global_usb": false,
+    "expanded128": false,
+    "pattern_transport": true,
+    "native_record_click": true
+  },
+  "component_join": {
+    "pattern_handoff_sha256": "1dbe57a9a05caef529a526107b2dc31dc08a531eab4ac84937a3e24e07926ef1",
+    "metronome_handoff_sha256": "15a276f57c47c15f9fe6e2ae32f0c874e28a0c78c06f53a7c3fe0d9fee0929df",
+    "veneer_claim_sha256": "53493a858d44099ddeefbac5e06697dbf60fc73cd21606913cfbe20930390977",
+    "native_veneer_address": 2148545508,
+    "added_private_bss_bytes": 28,
+    "pattern_normal_route_qualified": false,
+    "metronome_combined_start_pcm_qualified": false,
+    "manual_stopped_start_defect_preserved": false,
+    "manual_timing_review_sha256": "02dd4c2550c1e243b785877cbc98a5469d8256e7808d448049a890db39c4cf97",
+    "manual_save_predicate_review_sha256": "44ffc92ef068d155ede870fd50bbe32df557af1450d8aeea7c5fb573136f74e1",
+    "prior_core_manual_checkpoint_sha256": "4052255bc72475d8f7d9f4b5e6bdadde2b4298f5a265cb9a59b7200edc208ad0",
+    "prior_core_save_failure_sha256": "7913dd79fc8113a0b4396945f67e604e1401ecf693dbb2dabcd287cde556e65a",
+    "joined_candidate_qualified": false
+  },
+  "module_inputs_checked": 310,
+  "objects_checked": 109,
+  "native_patches_replayed": 202,
+  "current_transaction_reuse_rows": 101,
+  "successful_compile_command_rows": 8,
+  "fresh_module_link_receipt_checked": true,
+  "canonical_entry_completed": false,
+  "source_review_package": {
+    "path": "build/synth-release-patcher-v1/opensynth-final11-source-review-01.zip",
+    "bytes": 1791324,
+    "sha256": "fade214a5ed91e3b8c17fff8d40c618f2c723081e52975e10bacb68eca345df5"
+  },
+  "source_package_verification": {
+    "independent_zip_reader": true,
+    "manifested_files": 20,
+    "outer_members": 21,
+    "recursive_archives": 5,
+    "recursive_source_members": 908,
+    "private_pattern_matches": 0,
+    "firmware_and_tool_binary_members": 0,
+    "all_manifested_hashes_checked": true,
+    "extracted_cli_executed": true,
+    "receipts_byte_identical": true,
+    "source_promotion_performed": false,
+    "publication_performed": false
+  },
+  "receipts": {
+    "COMPACT_INSPECTION.json": {
+      "retained": {
+        "path": "build/synth-release-patcher-v1/compact-final11-inspection-01/COMPACT_INSPECTION.json",
+        "bytes": 3499,
+        "sha256": "2cdb642cc1db04f780eb316b2e5fd392a3b602c5400dec7744c130dab9d1e032"
+      },
+      "isolated": {
+        "path": "build/synth-release-patcher-v1/final11-package-review-01/isolated-inspection/COMPACT_INSPECTION.json",
+        "bytes": 3499,
+        "sha256": "2cdb642cc1db04f780eb316b2e5fd392a3b602c5400dec7744c130dab9d1e032"
+      },
+      "byte_identical": true
+    },
+    "COMPACT_HANDOFF.json": {
+      "retained": {
+        "path": "build/synth-release-patcher-v1/compact-final11-inspection-01/COMPACT_HANDOFF.json",
+        "bytes": 3392,
+        "sha256": "5b8808b0cfddf67ee6c92a3a823f887d045631b5299b7879e5ad56613337cf29"
+      },
+      "isolated": {
+        "path": "build/synth-release-patcher-v1/final11-package-review-01/isolated-inspection/COMPACT_HANDOFF.json",
+        "bytes": 3392,
+        "sha256": "5b8808b0cfddf67ee6c92a3a823f887d045631b5299b7879e5ad56613337cf29"
+      },
+      "byte_identical": true
+    },
+    "COMPACT_INPUT_BINDING.json": {
+      "retained": {
+        "path": "build/synth-release-patcher-v1/compact-final11-inspection-01/COMPACT_INPUT_BINDING.json",
+        "bytes": 920,
+        "sha256": "abfa106e7418db0638aed961761ae84e3e2c81766485f8ef6bfe56ad2523294d"
+      },
+      "isolated": {
+        "path": "build/synth-release-patcher-v1/final11-package-review-01/isolated-inspection/COMPACT_INPUT_BINDING.json",
+        "bytes": 920,
+        "sha256": "abfa106e7418db0638aed961761ae84e3e2c81766485f8ef6bfe56ad2523294d"
+      },
+      "byte_identical": true
+    }
+  },
+  "historical_core09_source_snapshots_preserved": true,
+  "historical_26_case_sources_preserved": true,
+  "software_eligible_for_owner_test": false,
+  "hardware_qualified": false,
+  "public_release_eligible": false,
+  "release_ready": false,
+  "delivery_enabled": false,
+  "upload_enabled": false,
+  "browser_enabled": false,
+  "writer_authority_granted": false,
+  "delivery": "DO_NOT_DELIVER",
+  "known_followup": "Pattern runtime owner reported actual offer20 rejection by the generic translator after final05 packaging. This exact kit11/final05 review remains static history. Any corrected successor needs distinct sealed source, entry, recipe and candidate pins; physical and public eligibility remain separate."
+}

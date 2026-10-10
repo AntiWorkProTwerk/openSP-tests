@@ -1,0 +1,14 @@
+{
+  "fixture.S": {
+    "bytes": 699,
+    "sha256": "932485e1e26c1f03734ea29d02ea1c4558444a09f0cfa70ec5bad6a7ae41dea6"
+  },
+  "fixture.o": {
+    "bytes": 880,
+    "sha256": "2f220fd30386baddb84741121f0c79ae8f31637b784b1b9e58e06877f517607c"
+  },
+  "qualification-tool.mjs": {
+    "bytes": 9689,
+    "sha256": "d461bede4c9cc21e9ca7192eefa65ac3fb9fa0f9d2d6cd646231c573c243f89b"
+  }
+}

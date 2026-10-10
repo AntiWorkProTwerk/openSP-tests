@@ -1,15 +1,13 @@
 ---
-import {getCollection} from 'astro:content';
 import Base from '../layouts/Base.astro';
 import SiteHeader from '../components/SiteHeader.astro';
 import SiteFooter from '../components/SiteFooter.astro';
 import SPInstrument from '../components/SPInstrument.astro';
 import Section from '../components/Section.astro';
-import GuideRow from '../components/GuideRow.astro';
 import copy from '../../design/studies/home-copy.json';
 import design from '../../design/penpot/homepage.json';
-const published=(await getCollection('guides',g=>!g.data.draft)).sort((a,b)=>a.data.order-b.data.order);
-const guides=published.length?published.map(g=>({...g.data,href:`/guides/${g.id}/`})) : design.guides.map(g=>({...g,href:undefined}));
+import opensynth from '../content/releases/opensynth.json';
+import '../styles/opensynth.css';
 const repoParts=copy.repository.split('github');
 ---
 <Base description={copy.intro}>
@@ -21,10 +19,14 @@ const repoParts=copy.repository.split('github');
     </section>
     <Section id="releases" label="RELEASES" description={copy.releasesHeading}>
       <p>{copy.releaseBody}</p><div class="release-preview"><div class="status">{copy.releaseStatus}</div><p>{copy.releasePlaceholder}</p></div>
+      <a class="opensynth-card" href="/opensynth/">
+        <img src={opensynth.screen.src} width={opensynth.screen.width} height={opensynth.screen.height} alt={opensynth.screen.alt}/>
+        <span><span class="opensynth-card-label">{opensynth.card.label}</span><span class="opensynth-card-title">{opensynth.card.title}</span><span class="opensynth-card-text">{opensynth.card.text}</span></span>
+        <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg>
+      </a>
     </Section>
     <Section id="guides" label="GUIDES" description={copy.guidesHeading}>
-      {!published.length&&<p class="publication-note">Planned guides. Not published yet.</p>}
-      {guides.map((g,i)=><GuideRow {...g} index={i}/>)}
+      <p>In progress.</p>
     </Section>
   </main>
   <SiteFooter/>

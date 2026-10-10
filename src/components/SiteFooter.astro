@@ -1,6 +1,8 @@
 ---
 import copy from '../../design/studies/home-copy.json';
+import emulatorCopy from '../content/emulator.json';
 interface Props {page?:string;}
 const {page=copy.footerPage}=Astro.props;
+const emulator=Astro.url.pathname.replace(/\/+$/,'')==='/emulator';
 ---
-<footer class="site-footer"><span>{copy.footerProject}</span><span>{page}</span></footer>
+<footer class="site-footer"><span>{copy.footerProject}</span><span class="footer-links"><span>{page}</span><a href="/emulator/" aria-current={emulator?'page':undefined}>{emulatorCopy.title}</a></span></footer>

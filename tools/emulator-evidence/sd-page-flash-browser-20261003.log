@@ -1,0 +1,87 @@
+[WebServer] (node:20076) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 32 tests using 4 workers
+
+(node:43384) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:45932) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:20664) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:23880) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   3 [chromium] › tests\emulator.spec.ts:197:1 › emulator introduction stays readable without JavaScript (888ms)
+  ✓   2 [chromium] › tests\emulator.spec.ts:210:1 › the homepage footer opens the emulator with native keyboard navigation and no JavaScript (1.2s)
+  ✓   5 [chromium] › tests\emulator.spec.ts:234:3 › emulator interface with a mocked ARM worker › firmware remains local and worker creation waits for Start (837ms)
+  ✓   7 [chromium] › tests\emulator.spec.ts:288:3 › emulator interface with a mocked ARM worker › USB stays busy after its payload until its own status arrives (638ms)
+  ✓   8 [chromium] › tests\emulator.spec.ts:314:3 › emulator interface with a mocked ARM worker › generic stock reset clears stale mailbox fields without stepping guest code (551ms)
+  ✓   9 [chromium] › tests\emulator.spec.ts:337:5 › emulator interface with a mocked ARM worker › a completed load cannot publish or run after file replaces its session (621ms)
+  ✓  10 [chromium] › tests\emulator.spec.ts:337:5 › emulator interface with a mocked ARM worker › a completed load cannot publish or run after remove replaces its session (466ms)
+  ✓   1 [chromium] › tests\emulator-runtime.spec.ts:115:3 › actual ARM browser runtime with private R13 › runtime downloads on Start, real R13 draws its OLED and answers virtual USB locally (4.7s)
+  ✓  11 [chromium] › tests\emulator.spec.ts:337:5 › emulator interface with a mocked ARM worker › a completed load cannot publish or run after pagehide replaces its session (628ms)
+  ✓  13 [chromium] › tests\emulator.spec.ts:382:3 › emulator interface with a mocked ARM worker › replacing a file after USB acknowledgment discards its asynchronous result (669ms)
+  ✓  14 [chromium] › tests\emulator.spec.ts:411:3 › emulator interface with a mocked ARM worker › keyboard pause, step and reset update diagnostics and the OLED (591ms)
+  ✓  15 [chromium] › tests\emulator.spec.ts:439:3 › emulator interface with a mocked ARM worker › sessions use independent workers and removal terminates only its worker (823ms)
+  ✘   6 [chromium] › tests\emulator.spec.ts:264:3 › emulator interface with a mocked ARM worker › load stays busy and cannot run before its trailing same-ID status (5.7s)
+(node:31372) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  16 [chromium] › tests\emulator.spec.ts:466:3 › emulator interface with a mocked ARM worker › USB reports reject invalid hex and route valid bytes to the chosen session (1.5s)
+  ✓  17 [chromium] › tests\emulator.spec.ts:492:3 › emulator interface with a mocked ARM worker › trace export carries the session identity, firmware hash and current diagnostics (909ms)
+  ✓  18 [chromium] › tests\emulator.spec.ts:517:3 › emulator interface with a mocked ARM worker › a stalled load stops after 45 seconds and leaves recovery controls available (745ms)
+  ✓  20 [chromium] › tests\emulator.spec.ts:594:3 › emulator interface with a mocked ARM worker › continuous running stops after 15 seconds without a published status (798ms)
+  ✓  19 [chromium] › tests\emulator.spec.ts:541:3 › emulator interface with a mocked ARM worker › a stalled USB request stops after 30 seconds and late replies cannot replace a new worker (1.4s)
+  ✓  21 [chromium] › tests\emulator.spec.ts:614:3 › emulator interface with a mocked ARM worker › worker load errors are visible and preserve another running session (871ms)
+  ✓  22 [chromium] › tests\emulator.spec.ts:628:3 › emulator interface with a mocked ARM worker › named controls, momentary pads and virtual power requests stay in their session (1.5s)
+  ✓  12 [chromium] › tests\emulator-runtime.spec.ts:182:3 › actual ARM browser runtime with private R13 › SHIFT UART and pad pressure reach real firmware snapshots (7.2s)
+  ✓  23 [chromium] › tests\emulator.spec.ts:669:3 › emulator interface with a mocked ARM worker › the four-session limit releases a slot when a session is removed (992ms)
+  ✓  24 [chromium] › tests\emulator.spec.ts:688:3 › mocked emulator sessions fit 320px light and pass Axe (2.6s)
+  ✓  26 [chromium] › tests\emulator.spec.ts:688:3 › mocked emulator sessions fit 320px dark and pass Axe (2.6s)
+  ✓  27 [chromium] › tests\emulator.spec.ts:688:3 › mocked emulator sessions fit 390px light and pass Axe (2.5s)
+  ✓  28 [chromium] › tests\emulator.spec.ts:688:3 › mocked emulator sessions fit 390px dark and pass Axe (2.5s)
+  ✓  29 [chromium] › tests\emulator.spec.ts:688:3 › mocked emulator sessions fit 1440px light and pass Axe (2.6s)
+  ✓  30 [chromium] › tests\emulator.spec.ts:688:3 › mocked emulator sessions fit 1440px dark and pass Axe (2.5s)
+  ✓  25 [chromium] › tests\emulator-runtime.spec.ts:210:3 › actual ARM browser runtime with private R13 › two production workers keep execution and staged RAM CRC results independent (7.9s)
+  ✓  31 [chromium] › tests\emulator-runtime.spec.ts:241:3 › actual ARM browser runtime with private R13 › real image parser rejects invalid input and the session then boots R13 (3.1s)
+  ✓  32 [chromium] › tests\emulator-runtime.spec.ts:258:3 › actual ARM browser runtime with private R13 › ordinary guest fetch error retains a trace and permits worker replacement (2.9s)
+  ✓   4 [chromium] › tests\emulator-worker-roundtrip.spec.ts:40:1 › production Worker bridge retains synthetic SD fixtures through fresh R13/R14 update boots (1.2m)
+
+
+  1) [chromium] › tests\emulator.spec.ts:264:3 › emulator interface with a mocked ARM worker › load stays busy and cannot run before its trailing same-ID status 
+
+    Error: expect(locator).toHaveText(expected) failed
+
+    Locator:  locator('[data-emulator]').locator('[data-session]').first().locator('[data-diagnostic="hash"]')
+    Expected: "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    Received: "Available after load"
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toHaveText" locator('[data-emulator]').locator('[data-session]').first().locator('[data-diagnostic="hash"]') with timeout 5000ms
+      - waiting for locator('[data-emulator]').locator('[data-session]').first().locator('[data-diagnostic="hash"]')
+        14 × locator resolved to <dd data-diagnostic="hash">Available after load</dd>
+           - unexpected value "Available after load"
+
+
+      269 |     await action(session, 'start').click();
+      270 |     await expect.poll(async () => (await heldStatuses(page)).length).toBe(1);
+    > 271 |     await expect(session.locator('[data-diagnostic="hash"]')).toHaveText('a'.repeat(64));
+          |                                                               ^
+      272 |     await expect(session).toHaveAttribute('aria-busy', 'true');
+      273 |     await expect(session.locator('[data-session-state]')).toHaveText('Loading runtime');
+      274 |     expect((await workers(page))[0].commands.map(request => request.command)).toEqual(['load']);
+        at [opensp workspace]\tests\emulator.spec.ts:271:63
+
+    Error Context: test-results\emulator-emulator-interfac-3ef33-its-trailing-same-ID-status-chromium\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\emulator-emulator-interfac-3ef33-its-trailing-same-ID-status-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\emulator-emulator-interfac-3ef33-its-trailing-same-ID-status-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    [chromium] › tests\emulator.spec.ts:264:3 › emulator interface with a mocked ARM worker › load stays busy and cannot run before its trailing same-ID status 
+  31 passed (1.3m)

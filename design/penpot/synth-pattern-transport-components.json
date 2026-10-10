@@ -1,0 +1,1240 @@
+{
+  "source": {
+    "fileId": "24d9d841-759d-81bc-8008-b518bc70d8b3",
+    "pageId": "bfe8c086-048d-80e0-8008-b6d351be8e7a",
+    "kind": "native-component-api-export"
+  },
+  "components": [
+    {
+      "id": "cac28749-e268-802e-8008-bf9f40e20f02",
+      "name": "openSynth pattern chooser",
+      "path": "OpenSP / Synth / Pattern transport",
+      "mainId": "cac28749-e268-802e-8008-bf9f3ddcdc87",
+      "shape": {
+        "id": "cac28749-e268-802e-8008-bf9f3ddcdc87",
+        "name": "OpenSP / Synth / Pattern transport / openSynth pattern chooser",
+        "type": "board",
+        "x": 0,
+        "y": 0,
+        "width": 128,
+        "height": 64,
+        "rotation": 0,
+        "componentId": "cac28749-e268-802e-8008-bf9f40e20f02",
+        "componentName": "openSynth pattern chooser",
+        "fills": [
+          {
+            "color": "#000000",
+            "opacity": 1,
+            "ref": "88ef66de-c84d-8075-8008-b5cd50e1aa42"
+          }
+        ],
+        "children": [
+          {
+            "id": "cac28749-e268-802e-8008-bf9f3e0a35f6",
+            "name": "OpenSP / Synth / OLED header",
+            "type": "board",
+            "x": 0,
+            "y": 0,
+            "width": 128,
+            "height": 10,
+            "rotation": 0,
+            "componentId": "bfe8c086-048d-80e0-8008-b6d35f386630",
+            "componentName": "OLED header",
+            "fills": [
+              {
+                "color": "#000000",
+                "opacity": 1,
+                "ref": "88ef66de-c84d-8075-8008-b5cd50e1aa42"
+              }
+            ],
+            "children": [
+              {
+                "id": "cac28749-e268-802e-8008-bf9f3e0a35f7",
+                "name": "Heading",
+                "type": "text",
+                "x": 3,
+                "y": 1,
+                "width": 122,
+                "height": 8,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#ffffff",
+                    "opacity": 1,
+                    "ref": "88ef66de-c84d-8075-8008-b5cd515b360e"
+                  }
+                ],
+                "text": "PATTERN A",
+                "fontFamily": "Cousine",
+                "fontSize": 6,
+                "fontWeight": "400",
+                "lineHeight": 1,
+                "letterSpacing": 0,
+                "align": "left"
+              },
+              {
+                "id": "cac28749-e268-802e-8008-bf9f3e0a35f8",
+                "name": "Header rule",
+                "type": "rectangle",
+                "x": 0,
+                "y": 9,
+                "width": 128,
+                "height": 1,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#ffffff",
+                    "opacity": 1,
+                    "ref": "88ef66de-c84d-8075-8008-b5cd515b360e"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "cac28749-e268-802e-8008-bf9f3e370b2a",
+            "name": "OpenSP / Synth / OLED footer",
+            "type": "board",
+            "x": 0,
+            "y": 55,
+            "width": 128,
+            "height": 9,
+            "rotation": 0,
+            "componentId": "bfe8c086-048d-80e0-8008-b6d35f4ae7d8",
+            "componentName": "OLED footer",
+            "fills": [
+              {
+                "color": "#000000",
+                "opacity": 1,
+                "ref": "88ef66de-c84d-8075-8008-b5cd50e1aa42"
+              }
+            ],
+            "children": [
+              {
+                "id": "cac28749-e268-802e-8008-bf9f3e370b2b",
+                "name": "Footer rule",
+                "type": "rectangle",
+                "x": 0,
+                "y": 0,
+                "width": 128,
+                "height": 1,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#ffffff",
+                    "opacity": 1,
+                    "ref": "88ef66de-c84d-8075-8008-b5cd515b360e"
+                  }
+                ]
+              },
+              {
+                "id": "cac28749-e268-802e-8008-bf9f3e370b2c",
+                "name": "Hint",
+                "type": "text",
+                "x": 3,
+                "y": 1,
+                "width": 122,
+                "height": 7,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#ffffff",
+                    "opacity": 1,
+                    "ref": "88ef66de-c84d-8075-8008-b5cd515b360e"
+                  }
+                ],
+                "text": "PAD:SELECT EXIT:BACK",
+                "fontFamily": "Cousine",
+                "fontSize": 5,
+                "fontWeight": "400",
+                "lineHeight": 1,
+                "letterSpacing": 0,
+                "align": "left"
+              }
+            ]
+          },
+          {
+            "id": "cac28749-e268-802e-8008-bf9f3e641708",
+            "name": "Pattern slot 01",
+            "type": "board",
+            "x": 3,
+            "y": 13,
+            "width": 28,
+            "height": 8,
+            "rotation": 0,
+            "componentId": "cac28749-e268-802e-8008-bf97d577f5a0",
+            "componentName": "P6N record pad cell",
+            "fills": [
+              {
+                "color": "#000000",
+                "opacity": 1,
+                "ref": "88ef66de-c84d-8075-8008-b5cd50e1aa42"
+              }
+            ],
+            "children": [
+              {
+                "id": "cac28749-e268-802e-8008-bf9f3e641709",
+                "name": "Pad cell outline",
+                "type": "rectangle",
+                "x": 0,
+                "y": 0,
+                "width": 28,
+                "height": 8,
+                "rotation": 0,
+                "strokes": [
+                  {
+                    "color": "#ffffff",
+                    "width": 0.5,
+                    "opacity": 1,
+                    "ref": "88ef66de-c84d-8075-8008-b5cd515b360e"
+                  }
+                ]
+              },
+              {
+                "id": "cac28749-e268-802e-8008-bf9f3e64170a",
+                "name": "Pad number",
+                "type": "text",
+                "x": 3,
+                "y": 1,
+                "width": 14,
+                "height": 6,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#ffffff",
+                    "opacity": 1,
+                    "ref": "88ef66de-c84d-8075-8008-b5cd515b360e"
+                  }
+                ],
+                "text": "01",
+                "fontFamily": "Cousine",
+                "fontSize": 5,
+                "fontWeight": "400",
+                "lineHeight": 1,
+                "letterSpacing": 0,
+                "align": "left"
+              }
+            ]
+          },
+          {
+            "id": "cac28749-e268-802e-8008-bf9f3e89759e",
+            "name": "Pattern slot 02",
+            "type": "board",
+            "x": 33,
+            "y": 13,
+            "width": 28,
+            "height": 8,
+            "rotation": 0,
+            "componentId": "cac28749-e268-802e-8008-bf97d577f5a0",
+            "componentName": "P6N record pad cell",
+            "fills": [
+              {
+                "color": "#000000",
+                "opacity": 1,
+                "ref": "88ef66de-c84d-8075-8008-b5cd50e1aa42"
+              }
+            ],
+            "children": [
+              {
+                "id": "cac28749-e268-802e-8008-bf9f3e89759f",
+                "name": "Pad cell outline",
+                "type": "rectangle",
+                "x": 0,
+                "y": 0,
+                "width": 28,
+                "height": 8,
+                "rotation": 0,
+                "strokes": [
+                  {
+                    "color": "#ffffff",
+                    "width": 0.5,
+                    "opacity": 1,
+                    "ref": "88ef66de-c84d-8075-8008-b5cd515b360e"
+                  }
+                ]
+              },
+              {
+                "id": "cac28749-e268-802e-8008-bf9f3e8975a0",
+                "name": "Pad number",
+                "type": "text",
+                "x": 3,
+                "y": 1,
+                "width": 14,
+                "height": 6,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#ffffff",
+                    "opacity": 1,
+                    "ref": "88ef66de-c84d-8075-8008-b5cd515b360e"
+                  }
+                ],
+                "text": "02",
+                "fontFamily": "Cousine",
+                "fontSize": 5,
+                "fontWeight": "400",
+                "lineHeight": 1,
+                "letterSpacing": 0,
+                "align": "left"
+              }
+            ]
+          },
+          {
+            "id": "cac28749-e268-802e-8008-bf9f3eae2665",
+            "name": "Pattern slot 03",
+            "type": "board",
+            "x": 63,
+            "y": 13,
+            "width": 28,
+            "height": 8,
+            "rotation": 0,
+            "componentId": "cac28749-e268-802e-8008-bf97d577f5a0",
+            "componentName": "P6N record pad cell",
+            "fills": [
+              {
+                "color": "#000000",
+                "opacity": 1,
+                "ref": "88ef66de-c84d-8075-8008-b5cd50e1aa42"
+              }
+            ],
+            "children": [
+              {
+                "id": "cac28749-e268-802e-8008-bf9f3eae2666",
+                "name": "Pad cell outline",
+                "type": "rectangle",
+                "x": 0,
+                "y": 0,
+                "width": 28,
+                "height": 8,
+                "rotation": 0,
+                "strokes": [
+                  {
+                    "color": "#ffffff",
+                    "width": 0.5,
+                    "opacity": 1,
+                    "ref": "88ef66de-c84d-8075-8008-b5cd515b360e"
+                  }
+                ]
+              },
+              {
+                "id": "cac28749-e268-802e-8008-bf9f3eae2667",
+                "name": "Pad number",
+                "type": "text",
+                "x": 3,
+                "y": 1,
+                "width": 14,
+                "height": 6,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#ffffff",
+                    "opacity": 1,
+                    "ref": "88ef66de-c84d-8075-8008-b5cd515b360e"
+                  }
+                ],
+                "text": "03",
+                "fontFamily": "Cousine",
+                "fontSize": 5,
+                "fontWeight": "400",
+                "lineHeight": 1,
+                "letterSpacing": 0,
+                "align": "left"
+              },
+              {
+                "id": "cac28749-e268-802e-8008-bf9f3eae2668",
+                "name": "Occupied marker",
+                "type": "text",
+                "x": 20,
+                "y": 1,
+                "width": 6,
+                "height": 6,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#ffffff",
+                    "opacity": 1,
+                    "ref": "88ef66de-c84d-8075-8008-b5cd515b360e"
+                  }
+                ],
+                "text": "X",
+                "fontFamily": "Cousine",
+                "fontSize": 5,
+                "fontWeight": "400",
+                "lineHeight": 1,
+                "letterSpacing": 0,
+                "align": "left"
+              }
+            ]
+          },
+          {
+            "id": "cac28749-e268-802e-8008-bf9f3ed632d1",
+            "name": "Pattern slot 04",
+            "type": "board",
+            "x": 93,
+            "y": 13,
+            "width": 28,
+            "height": 8,
+            "rotation": 0,
+            "componentId": "cac28749-e268-802e-8008-bf97d577f5a0",
+            "componentName": "P6N record pad cell",
+            "fills": [
+              {
+                "color": "#000000",
+                "opacity": 1,
+                "ref": "88ef66de-c84d-8075-8008-b5cd50e1aa42"
+              }
+            ],
+            "children": [
+              {
+                "id": "cac28749-e268-802e-8008-bf9f3ed632d2",
+                "name": "Pad cell outline",
+                "type": "rectangle",
+                "x": 0,
+                "y": 0,
+                "width": 28,
+                "height": 8,
+                "rotation": 0,
+                "strokes": [
+                  {
+                    "color": "#ffffff",
+                    "width": 0.5,
+                    "opacity": 1,
+                    "ref": "88ef66de-c84d-8075-8008-b5cd515b360e"
+                  }
+                ]
+              },
+              {
+                "id": "cac28749-e268-802e-8008-bf9f3ed632d3",
+                "name": "Pad number",
+                "type": "text",
+                "x": 3,
+                "y": 1,
+                "width": 14,
+                "height": 6,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#ffffff",
+                    "opacity": 1,
+                    "ref": "88ef66de-c84d-8075-8008-b5cd515b360e"
+                  }
+                ],
+                "text": "04",
+                "fontFamily": "Cousine",
+                "fontSize": 5,
+                "fontWeight": "400",
+                "lineHeight": 1,
+                "letterSpacing": 0,
+                "align": "left"
+              }
+            ]
+          },
+          {
+            "id": "cac28749-e268-802e-8008-bf9f3ef9791f",
+            "name": "Pattern slot 05",
+            "type": "board",
+            "x": 3,
+            "y": 23,
+            "width": 28,
+            "height": 8,
+            "rotation": 0,
+            "componentId": "cac28749-e268-802e-8008-bf97d577f5a0",
+            "componentName": "P6N record pad cell",
+            "fills": [
+              {
+                "color": "#000000",
+                "opacity": 1,
+                "ref": "88ef66de-c84d-8075-8008-b5cd50e1aa42"
+              }
+            ],
+            "children": [
+              {
+                "id": "cac28749-e268-802e-8008-bf9f3ef97920",
+                "name": "Pad cell outline",
+                "type": "rectangle",
+                "x": 0,
+                "y": 0,
+                "width": 28,
+                "height": 8,
+                "rotation": 0,
+                "strokes": [
+                  {
+                    "color": "#ffffff",
+                    "width": 0.5,
+                    "opacity": 1,
+                    "ref": "88ef66de-c84d-8075-8008-b5cd515b360e"
+                  }
+                ]
+              },
+              {
+                "id": "cac28749-e268-802e-8008-bf9f3ef97921",
+                "name": "Pad number",
+                "type": "text",
+                "x": 3,
+                "y": 1,
+                "width": 14,
+                "height": 6,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#ffffff",
+                    "opacity": 1,
+                    "ref": "88ef66de-c84d-8075-8008-b5cd515b360e"
+                  }
+                ],
+                "text": "05",
+                "fontFamily": "Cousine",
+                "fontSize": 5,
+                "fontWeight": "400",
+                "lineHeight": 1,
+                "letterSpacing": 0,
+                "align": "left"
+              }
+            ]
+          },
+          {
+            "id": "cac28749-e268-802e-8008-bf9f3f1f4a82",
+            "name": "Pattern slot 06",
+            "type": "board",
+            "x": 33,
+            "y": 23,
+            "width": 28,
+            "height": 8,
+            "rotation": 0,
+            "componentId": "cac28749-e268-802e-8008-bf97d577f5a0",
+            "componentName": "P6N record pad cell",
+            "fills": [
+              {
+                "color": "#000000",
+                "opacity": 1,
+                "ref": "88ef66de-c84d-8075-8008-b5cd50e1aa42"
+              }
+            ],
+            "children": [
+              {
+                "id": "cac28749-e268-802e-8008-bf9f3f1f4a83",
+                "name": "Pad cell outline",
+                "type": "rectangle",
+                "x": 0,
+                "y": 0,
+                "width": 28,
+                "height": 8,
+                "rotation": 0,
+                "strokes": [
+                  {
+                    "color": "#ffffff",
+                    "width": 0.5,
+                    "opacity": 1,
+                    "ref": "88ef66de-c84d-8075-8008-b5cd515b360e"
+                  }
+                ]
+              },
+              {
+                "id": "cac28749-e268-802e-8008-bf9f3f1f4a84",
+                "name": "Pad number",
+                "type": "text",
+                "x": 3,
+                "y": 1,
+                "width": 14,
+                "height": 6,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#ffffff",
+                    "opacity": 1,
+                    "ref": "88ef66de-c84d-8075-8008-b5cd515b360e"
+                  }
+                ],
+                "text": "06",
+                "fontFamily": "Cousine",
+                "fontSize": 5,
+                "fontWeight": "400",
+                "lineHeight": 1,
+                "letterSpacing": 0,
+                "align": "left"
+              },
+              {
+                "id": "cac28749-e268-802e-8008-bf9f3f1f4a85",
+                "name": "Occupied marker",
+                "type": "text",
+                "x": 20,
+                "y": 1,
+                "width": 6,
+                "height": 6,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#ffffff",
+                    "opacity": 1,
+                    "ref": "88ef66de-c84d-8075-8008-b5cd515b360e"
+                  }
+                ],
+                "text": "X",
+                "fontFamily": "Cousine",
+                "fontSize": 5,
+                "fontWeight": "400",
+                "lineHeight": 1,
+                "letterSpacing": 0,
+                "align": "left"
+              }
+            ]
+          },
+          {
+            "id": "cac28749-e268-802e-8008-bf9f3f46c2c1",
+            "name": "Pattern slot 07",
+            "type": "board",
+            "x": 63,
+            "y": 23,
+            "width": 28,
+            "height": 8,
+            "rotation": 0,
+            "componentId": "cac28749-e268-802e-8008-bf97d577f5a0",
+            "componentName": "P6N record pad cell",
+            "fills": [
+              {
+                "color": "#000000",
+                "opacity": 1,
+                "ref": "88ef66de-c84d-8075-8008-b5cd50e1aa42"
+              }
+            ],
+            "children": [
+              {
+                "id": "cac28749-e268-802e-8008-bf9f3f46c2c2",
+                "name": "Pad cell outline",
+                "type": "rectangle",
+                "x": 0,
+                "y": 0,
+                "width": 28,
+                "height": 8,
+                "rotation": 0,
+                "strokes": [
+                  {
+                    "color": "#ffffff",
+                    "width": 0.5,
+                    "opacity": 1,
+                    "ref": "88ef66de-c84d-8075-8008-b5cd515b360e"
+                  }
+                ]
+              },
+              {
+                "id": "cac28749-e268-802e-8008-bf9f3f46c2c3",
+                "name": "Pad number",
+                "type": "text",
+                "x": 3,
+                "y": 1,
+                "width": 14,
+                "height": 6,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#ffffff",
+                    "opacity": 1,
+                    "ref": "88ef66de-c84d-8075-8008-b5cd515b360e"
+                  }
+                ],
+                "text": "07",
+                "fontFamily": "Cousine",
+                "fontSize": 5,
+                "fontWeight": "400",
+                "lineHeight": 1,
+                "letterSpacing": 0,
+                "align": "left"
+              }
+            ]
+          },
+          {
+            "id": "cac28749-e268-802e-8008-bf9f3f6ba33d",
+            "name": "Pattern slot 08",
+            "type": "board",
+            "x": 93,
+            "y": 23,
+            "width": 28,
+            "height": 8,
+            "rotation": 0,
+            "componentId": "cac28749-e268-802e-8008-bf97d577f5a0",
+            "componentName": "P6N record pad cell",
+            "fills": [
+              {
+                "color": "#000000",
+                "opacity": 1,
+                "ref": "88ef66de-c84d-8075-8008-b5cd50e1aa42"
+              }
+            ],
+            "children": [
+              {
+                "id": "cac28749-e268-802e-8008-bf9f3f6ba33e",
+                "name": "Pad cell outline",
+                "type": "rectangle",
+                "x": 0,
+                "y": 0,
+                "width": 28,
+                "height": 8,
+                "rotation": 0,
+                "strokes": [
+                  {
+                    "color": "#ffffff",
+                    "width": 0.5,
+                    "opacity": 1,
+                    "ref": "88ef66de-c84d-8075-8008-b5cd515b360e"
+                  }
+                ]
+              },
+              {
+                "id": "cac28749-e268-802e-8008-bf9f3f6ba33f",
+                "name": "Pad number",
+                "type": "text",
+                "x": 3,
+                "y": 1,
+                "width": 14,
+                "height": 6,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#ffffff",
+                    "opacity": 1,
+                    "ref": "88ef66de-c84d-8075-8008-b5cd515b360e"
+                  }
+                ],
+                "text": "08",
+                "fontFamily": "Cousine",
+                "fontSize": 5,
+                "fontWeight": "400",
+                "lineHeight": 1,
+                "letterSpacing": 0,
+                "align": "left"
+              }
+            ]
+          },
+          {
+            "id": "cac28749-e268-802e-8008-bf9f3f909338",
+            "name": "Pattern slot 09",
+            "type": "board",
+            "x": 3,
+            "y": 33,
+            "width": 28,
+            "height": 8,
+            "rotation": 0,
+            "componentId": "cac28749-e268-802e-8008-bf97d577f5a0",
+            "componentName": "P6N record pad cell",
+            "fills": [
+              {
+                "color": "#000000",
+                "opacity": 1,
+                "ref": "88ef66de-c84d-8075-8008-b5cd50e1aa42"
+              }
+            ],
+            "children": [
+              {
+                "id": "cac28749-e268-802e-8008-bf9f3f909339",
+                "name": "Pad cell outline",
+                "type": "rectangle",
+                "x": 0,
+                "y": 0,
+                "width": 28,
+                "height": 8,
+                "rotation": 0,
+                "strokes": [
+                  {
+                    "color": "#ffffff",
+                    "width": 0.5,
+                    "opacity": 1,
+                    "ref": "88ef66de-c84d-8075-8008-b5cd515b360e"
+                  }
+                ]
+              },
+              {
+                "id": "cac28749-e268-802e-8008-bf9f3f90933a",
+                "name": "Pad number",
+                "type": "text",
+                "x": 3,
+                "y": 1,
+                "width": 14,
+                "height": 6,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#ffffff",
+                    "opacity": 1,
+                    "ref": "88ef66de-c84d-8075-8008-b5cd515b360e"
+                  }
+                ],
+                "text": "09",
+                "fontFamily": "Cousine",
+                "fontSize": 5,
+                "fontWeight": "400",
+                "lineHeight": 1,
+                "letterSpacing": 0,
+                "align": "left"
+              }
+            ]
+          },
+          {
+            "id": "cac28749-e268-802e-8008-bf9f3fb4cd0d",
+            "name": "Pattern slot 10",
+            "type": "board",
+            "x": 33,
+            "y": 33,
+            "width": 28,
+            "height": 8,
+            "rotation": 0,
+            "componentId": "cac28749-e268-802e-8008-bf97d577f5a0",
+            "componentName": "P6N record pad cell",
+            "fills": [
+              {
+                "color": "#000000",
+                "opacity": 1,
+                "ref": "88ef66de-c84d-8075-8008-b5cd50e1aa42"
+              }
+            ],
+            "children": [
+              {
+                "id": "cac28749-e268-802e-8008-bf9f3fb4cd0e",
+                "name": "Pad cell outline",
+                "type": "rectangle",
+                "x": 0,
+                "y": 0,
+                "width": 28,
+                "height": 8,
+                "rotation": 0,
+                "strokes": [
+                  {
+                    "color": "#ffffff",
+                    "width": 0.5,
+                    "opacity": 1,
+                    "ref": "88ef66de-c84d-8075-8008-b5cd515b360e"
+                  }
+                ]
+              },
+              {
+                "id": "cac28749-e268-802e-8008-bf9f3fb4cd0f",
+                "name": "Pad number",
+                "type": "text",
+                "x": 3,
+                "y": 1,
+                "width": 14,
+                "height": 6,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#ffffff",
+                    "opacity": 1,
+                    "ref": "88ef66de-c84d-8075-8008-b5cd515b360e"
+                  }
+                ],
+                "text": "10",
+                "fontFamily": "Cousine",
+                "fontSize": 5,
+                "fontWeight": "400",
+                "lineHeight": 1,
+                "letterSpacing": 0,
+                "align": "left"
+              }
+            ]
+          },
+          {
+            "id": "cac28749-e268-802e-8008-bf9f3fd9518d",
+            "name": "Pattern slot 11",
+            "type": "board",
+            "x": 63,
+            "y": 33,
+            "width": 28,
+            "height": 8,
+            "rotation": 0,
+            "componentId": "cac28749-e268-802e-8008-bf97d577f5a0",
+            "componentName": "P6N record pad cell",
+            "fills": [
+              {
+                "color": "#000000",
+                "opacity": 1,
+                "ref": "88ef66de-c84d-8075-8008-b5cd50e1aa42"
+              }
+            ],
+            "children": [
+              {
+                "id": "cac28749-e268-802e-8008-bf9f3fd9518e",
+                "name": "Pad cell outline",
+                "type": "rectangle",
+                "x": 0,
+                "y": 0,
+                "width": 28,
+                "height": 8,
+                "rotation": 0,
+                "strokes": [
+                  {
+                    "color": "#ffffff",
+                    "width": 0.5,
+                    "opacity": 1,
+                    "ref": "88ef66de-c84d-8075-8008-b5cd515b360e"
+                  }
+                ]
+              },
+              {
+                "id": "cac28749-e268-802e-8008-bf9f3fd9518f",
+                "name": "Pad number",
+                "type": "text",
+                "x": 3,
+                "y": 1,
+                "width": 14,
+                "height": 6,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#ffffff",
+                    "opacity": 1,
+                    "ref": "88ef66de-c84d-8075-8008-b5cd515b360e"
+                  }
+                ],
+                "text": "11",
+                "fontFamily": "Cousine",
+                "fontSize": 5,
+                "fontWeight": "400",
+                "lineHeight": 1,
+                "letterSpacing": 0,
+                "align": "left"
+              },
+              {
+                "id": "cac28749-e268-802e-8008-bf9f3fd95190",
+                "name": "Occupied marker",
+                "type": "text",
+                "x": 20,
+                "y": 1,
+                "width": 6,
+                "height": 6,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#ffffff",
+                    "opacity": 1,
+                    "ref": "88ef66de-c84d-8075-8008-b5cd515b360e"
+                  }
+                ],
+                "text": "X",
+                "fontFamily": "Cousine",
+                "fontSize": 5,
+                "fontWeight": "400",
+                "lineHeight": 1,
+                "letterSpacing": 0,
+                "align": "left"
+              }
+            ]
+          },
+          {
+            "id": "cac28749-e268-802e-8008-bf9f4002061d",
+            "name": "Pattern slot 12",
+            "type": "board",
+            "x": 93,
+            "y": 33,
+            "width": 28,
+            "height": 8,
+            "rotation": 0,
+            "componentId": "cac28749-e268-802e-8008-bf97d577f5a0",
+            "componentName": "P6N record pad cell",
+            "fills": [
+              {
+                "color": "#000000",
+                "opacity": 1,
+                "ref": "88ef66de-c84d-8075-8008-b5cd50e1aa42"
+              }
+            ],
+            "children": [
+              {
+                "id": "cac28749-e268-802e-8008-bf9f4002061e",
+                "name": "Pad cell outline",
+                "type": "rectangle",
+                "x": 0,
+                "y": 0,
+                "width": 28,
+                "height": 8,
+                "rotation": 0,
+                "strokes": [
+                  {
+                    "color": "#ffffff",
+                    "width": 0.5,
+                    "opacity": 1,
+                    "ref": "88ef66de-c84d-8075-8008-b5cd515b360e"
+                  }
+                ]
+              },
+              {
+                "id": "cac28749-e268-802e-8008-bf9f4002061f",
+                "name": "Pad number",
+                "type": "text",
+                "x": 3,
+                "y": 1,
+                "width": 14,
+                "height": 6,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#ffffff",
+                    "opacity": 1,
+                    "ref": "88ef66de-c84d-8075-8008-b5cd515b360e"
+                  }
+                ],
+                "text": "12",
+                "fontFamily": "Cousine",
+                "fontSize": 5,
+                "fontWeight": "400",
+                "lineHeight": 1,
+                "letterSpacing": 0,
+                "align": "left"
+              }
+            ]
+          },
+          {
+            "id": "cac28749-e268-802e-8008-bf9f40271d04",
+            "name": "Pattern slot 13",
+            "type": "board",
+            "x": 3,
+            "y": 43,
+            "width": 28,
+            "height": 8,
+            "rotation": 0,
+            "componentId": "cac28749-e268-802e-8008-bf97d577f5a0",
+            "componentName": "P6N record pad cell",
+            "fills": [
+              {
+                "color": "#000000",
+                "opacity": 1,
+                "ref": "88ef66de-c84d-8075-8008-b5cd50e1aa42"
+              }
+            ],
+            "children": [
+              {
+                "id": "cac28749-e268-802e-8008-bf9f40271d05",
+                "name": "Pad cell outline",
+                "type": "rectangle",
+                "x": 0,
+                "y": 0,
+                "width": 28,
+                "height": 8,
+                "rotation": 0,
+                "strokes": [
+                  {
+                    "color": "#ffffff",
+                    "width": 0.5,
+                    "opacity": 1,
+                    "ref": "88ef66de-c84d-8075-8008-b5cd515b360e"
+                  }
+                ]
+              },
+              {
+                "id": "cac28749-e268-802e-8008-bf9f40271d06",
+                "name": "Pad number",
+                "type": "text",
+                "x": 3,
+                "y": 1,
+                "width": 14,
+                "height": 6,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#ffffff",
+                    "opacity": 1,
+                    "ref": "88ef66de-c84d-8075-8008-b5cd515b360e"
+                  }
+                ],
+                "text": "13",
+                "fontFamily": "Cousine",
+                "fontSize": 5,
+                "fontWeight": "400",
+                "lineHeight": 1,
+                "letterSpacing": 0,
+                "align": "left"
+              }
+            ]
+          },
+          {
+            "id": "cac28749-e268-802e-8008-bf9f404e4691",
+            "name": "Pattern slot 14",
+            "type": "board",
+            "x": 33,
+            "y": 43,
+            "width": 28,
+            "height": 8,
+            "rotation": 0,
+            "componentId": "cac28749-e268-802e-8008-bf97d577f5a0",
+            "componentName": "P6N record pad cell",
+            "fills": [
+              {
+                "color": "#000000",
+                "opacity": 1,
+                "ref": "88ef66de-c84d-8075-8008-b5cd50e1aa42"
+              }
+            ],
+            "children": [
+              {
+                "id": "cac28749-e268-802e-8008-bf9f404e4692",
+                "name": "Pad cell outline",
+                "type": "rectangle",
+                "x": 0,
+                "y": 0,
+                "width": 28,
+                "height": 8,
+                "rotation": 0,
+                "strokes": [
+                  {
+                    "color": "#ffffff",
+                    "width": 0.5,
+                    "opacity": 1,
+                    "ref": "88ef66de-c84d-8075-8008-b5cd515b360e"
+                  }
+                ]
+              },
+              {
+                "id": "cac28749-e268-802e-8008-bf9f404e4693",
+                "name": "Pad number",
+                "type": "text",
+                "x": 3,
+                "y": 1,
+                "width": 14,
+                "height": 6,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#ffffff",
+                    "opacity": 1,
+                    "ref": "88ef66de-c84d-8075-8008-b5cd515b360e"
+                  }
+                ],
+                "text": "14",
+                "fontFamily": "Cousine",
+                "fontSize": 5,
+                "fontWeight": "400",
+                "lineHeight": 1,
+                "letterSpacing": 0,
+                "align": "left"
+              }
+            ]
+          },
+          {
+            "id": "cac28749-e268-802e-8008-bf9f4074443d",
+            "name": "Pattern slot 15",
+            "type": "board",
+            "x": 63,
+            "y": 43,
+            "width": 28,
+            "height": 8,
+            "rotation": 0,
+            "componentId": "cac28749-e268-802e-8008-bf97d577f5a0",
+            "componentName": "P6N record pad cell",
+            "fills": [
+              {
+                "color": "#000000",
+                "opacity": 1,
+                "ref": "88ef66de-c84d-8075-8008-b5cd50e1aa42"
+              }
+            ],
+            "children": [
+              {
+                "id": "cac28749-e268-802e-8008-bf9f4074443e",
+                "name": "Pad cell outline",
+                "type": "rectangle",
+                "x": 0,
+                "y": 0,
+                "width": 28,
+                "height": 8,
+                "rotation": 0,
+                "strokes": [
+                  {
+                    "color": "#ffffff",
+                    "width": 0.5,
+                    "opacity": 1,
+                    "ref": "88ef66de-c84d-8075-8008-b5cd515b360e"
+                  }
+                ]
+              },
+              {
+                "id": "cac28749-e268-802e-8008-bf9f4074443f",
+                "name": "Pad number",
+                "type": "text",
+                "x": 3,
+                "y": 1,
+                "width": 14,
+                "height": 6,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#ffffff",
+                    "opacity": 1,
+                    "ref": "88ef66de-c84d-8075-8008-b5cd515b360e"
+                  }
+                ],
+                "text": "15",
+                "fontFamily": "Cousine",
+                "fontSize": 5,
+                "fontWeight": "400",
+                "lineHeight": 1,
+                "letterSpacing": 0,
+                "align": "left"
+              }
+            ]
+          },
+          {
+            "id": "cac28749-e268-802e-8008-bf9f4099a904",
+            "name": "Pattern slot 16",
+            "type": "board",
+            "x": 93,
+            "y": 43,
+            "width": 28,
+            "height": 8,
+            "rotation": 0,
+            "componentId": "cac28749-e268-802e-8008-bf97d577f5a0",
+            "componentName": "P6N record pad cell",
+            "fills": [
+              {
+                "color": "#000000",
+                "opacity": 1,
+                "ref": "88ef66de-c84d-8075-8008-b5cd50e1aa42"
+              }
+            ],
+            "children": [
+              {
+                "id": "cac28749-e268-802e-8008-bf9f4099a905",
+                "name": "Pad cell outline",
+                "type": "rectangle",
+                "x": 0,
+                "y": 0,
+                "width": 28,
+                "height": 8,
+                "rotation": 0,
+                "strokes": [
+                  {
+                    "color": "#ffffff",
+                    "width": 0.5,
+                    "opacity": 1,
+                    "ref": "88ef66de-c84d-8075-8008-b5cd515b360e"
+                  }
+                ]
+              },
+              {
+                "id": "cac28749-e268-802e-8008-bf9f4099a906",
+                "name": "Pad number",
+                "type": "text",
+                "x": 3,
+                "y": 1,
+                "width": 14,
+                "height": 6,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#ffffff",
+                    "opacity": 1,
+                    "ref": "88ef66de-c84d-8075-8008-b5cd515b360e"
+                  }
+                ],
+                "text": "16",
+                "fontFamily": "Cousine",
+                "fontSize": 5,
+                "fontWeight": "400",
+                "lineHeight": 1,
+                "letterSpacing": 0,
+                "align": "left"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

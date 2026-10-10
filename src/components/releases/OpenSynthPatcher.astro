@@ -1,0 +1,30 @@
+---
+import copy from '../../content/releases/synth.json';
+import patch from '../../content/releases/synth-patch.json';
+const p = copy.patcher;
+const stages = Object.entries(p.stages) as [string, string][];
+---
+<div class="patcher" data-patcher data-state="idle" data-component="openSynth patcher" hidden
+  data-patch-url={patch.patch.url} data-patch-sha256={patch.patch.sha256} data-messages={JSON.stringify(p.messages)}>
+  <label class="patcher-drop" data-patcher-drop>
+    <input class="patcher-input" type="file" accept=".zip,.bin,application/zip,application/octet-stream"/>
+    <span class="patcher-drop-title">{p.dropTitle}</span>
+    <span class="patcher-drop-hint">{p.dropHint}</span>
+    <span class="patcher-choose" aria-hidden="true">{p.chooseLabel}</span>
+  </label>
+  <div class="patcher-progress">
+    <p class="patcher-file" data-patcher-file></p>
+    <ol class="patcher-stages" aria-label={p.progressLabel}>
+      {stages.map(([id, label]) => <li data-stage={id} data-status="waiting">{label}</li>)}
+    </ol>
+    <div class="patcher-bar"><progress max="100" value="0" aria-label={p.progressLabel}></progress><span data-patcher-percent>0%</span></div>
+  </div>
+  <p class="patcher-status" role="status" aria-live="polite" data-patcher-status></p>
+  <div class="patcher-result">
+    <a class="patcher-save" data-patcher-save download={patch.output.name}>{p.saveLabel}</a>
+    <dl class="patcher-sha"><dt>{p.shaLabel}</dt><dd><code data-patcher-sha></code></dd></dl>
+    <button type="button" class="patcher-reset" data-patcher-reset>{p.resetLabel}</button>
+  </div>
+</div>
+<noscript><p class="patcher-noscript">{p.noscript}</p></noscript>
+<script src="../../scripts/opensynth-patcher.ts"></script>

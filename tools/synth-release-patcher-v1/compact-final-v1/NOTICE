@@ -1,0 +1,27 @@
+Copyright (c) 2026 AntiWorkProTwerk
+
+The project owner authorizes MIT terms for the original project code and
+associated project documentation. Preserve the copyright and permission
+notice in LICENSE when copying or distributing substantial portions.
+
+The grant covers original project contributions in these source packages,
+including original synth/recorder components, R3 and B1/B2 code, build glue,
+extraction templates and project metadata. It does not grant or change rights
+in Roland's official firmware, instructions extracted from that firmware at
+build time, external compiler/vendor libraries, or any material governed by
+separate third-party terms. Owners supply the official firmware and compiler
+separately. The source package contains no official firmware image, extracted
+instruction block, compiler binary or hardware capture.
+
+Frozen source snapshots establish exact input identity and existing provenance
+labels. They are preserved without changing their original status fields.
+Those labels do not independently establish every contributor's authorship.
+DISTRIBUTION_PROVENANCE.json records the remaining snapshot-origin uncertainty
+and the limited scope of this owner's original-code authorization. Any
+separately licensed material retains its applicable terms.
+
+This is a private licensed source review package. It is not a firmware update
+or a published release. The license decision adds no hardware/runtime
+qualification. Release-status flags describe the project evidence; they add
+no restrictions to the MIT grant. No source promotion, publication or device
+operation accompanies this package.

@@ -1,0 +1,6595 @@
+{
+  "source": {
+    "fileId": "24d9d841-759d-81bc-8008-b518bc70d8b3",
+    "kind": "native-footer-text-bounds",
+    "activePage": "Emulator",
+    "method": "Read-only page proxies; matching component filter precedes visibility"
+  },
+  "pages": [
+    {
+      "page": "Homepage",
+      "footers": [
+        {
+          "id": "ab2e7837-e348-80fc-8008-b594d89587d3",
+          "name": "Footer",
+          "width": 1312,
+          "height": 72,
+          "links": [
+            {
+              "name": "Utility link",
+              "componentId": "6bf32eef-e7db-8057-8008-bb2c247b9a4d",
+              "component": "Utility link",
+              "x": 1152,
+              "y": 24,
+              "width": 160,
+              "height": 24
+            }
+          ],
+          "text": [
+            {
+              "name": "Project note",
+              "text": "OPENSP / INDEPENDENT, COMMUNITY-MINDED SOFTWARE",
+              "x": 0,
+              "y": 24,
+              "width": 498.55999999999995,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 26,
+                "width": 378.890625,
+                "height": 15
+              }
+            },
+            {
+              "name": "Preview note",
+              "text": "HOMEPAGE",
+              "x": 524.8000000000001,
+              "y": 24,
+              "width": 603.1999999999999,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 1063.4875000000002,
+                "y": 26,
+                "width": 64.5,
+                "height": 15
+              }
+            },
+            {
+              "name": "Utility label",
+              "text": "Firmware emulator",
+              "x": 1152,
+              "y": 24,
+              "width": 160,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 1152,
+                "y": 26,
+                "width": 132.625,
+                "height": 15
+              }
+            }
+          ]
+        },
+        {
+          "id": "ab2e7837-e348-80fc-8008-b59583ba9825",
+          "name": "Footer",
+          "width": 1312,
+          "height": 72,
+          "links": [
+            {
+              "name": "Utility link",
+              "componentId": "6bf32eef-e7db-8057-8008-bb2c247b9a4d",
+              "component": "Utility link",
+              "x": 1152,
+              "y": 24,
+              "width": 160,
+              "height": 24
+            }
+          ],
+          "text": [
+            {
+              "name": "Project note",
+              "text": "OPENSP / INDEPENDENT, COMMUNITY-MINDED SOFTWARE",
+              "x": 0,
+              "y": 24,
+              "width": 498.55999999999995,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": -2.2737367544323206e-13,
+                "y": 26,
+                "width": 378.8906250000002,
+                "height": 15
+              }
+            },
+            {
+              "name": "Preview note",
+              "text": "HOMEPAGE",
+              "x": 524.8000000000002,
+              "y": 24,
+              "width": 603.1999999999998,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 1063.4875000000002,
+                "y": 26,
+                "width": 64.5,
+                "height": 15
+              }
+            },
+            {
+              "name": "Utility label",
+              "text": "Firmware emulator",
+              "x": 1152,
+              "y": 24,
+              "width": 160,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 1152,
+                "y": 26,
+                "width": 132.625,
+                "height": 15
+              }
+            }
+          ]
+        },
+        {
+          "id": "ab2e7837-e348-80fc-8008-b5957bbcee87",
+          "name": "Footer",
+          "width": 342,
+          "height": 132,
+          "links": [
+            {
+              "name": "Utility link",
+              "componentId": "6bf32eef-e7db-8057-8008-bb2c247b9a4d",
+              "component": "Utility link",
+              "x": 0,
+              "y": 104,
+              "width": 342,
+              "height": 24
+            }
+          ],
+          "text": [
+            {
+              "name": "Project note",
+              "text": "OPENSP / INDEPENDENT, COMMUNITY-MINDED SOFTWARE",
+              "x": 0,
+              "y": 24,
+              "width": 342,
+              "height": 48,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 26,
+                "width": 314.390625,
+                "height": 35.015625
+              }
+            },
+            {
+              "name": "Preview note",
+              "text": "HOMEPAGE",
+              "x": 0,
+              "y": 76,
+              "width": 342,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 78,
+                "width": 64.5,
+                "height": 15
+              }
+            },
+            {
+              "name": "Utility label",
+              "text": "Firmware emulator",
+              "x": 0,
+              "y": 104,
+              "width": 160,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 106,
+                "width": 132.625,
+                "height": 15
+              }
+            }
+          ]
+        },
+        {
+          "id": "ab2e7837-e348-80fc-8008-b595b1ded37e",
+          "name": "Footer",
+          "width": 342,
+          "height": 132,
+          "links": [
+            {
+              "name": "Utility link",
+              "componentId": "6bf32eef-e7db-8057-8008-bb2c247b9a4d",
+              "component": "Utility link",
+              "x": 0,
+              "y": 104,
+              "width": 342,
+              "height": 24
+            }
+          ],
+          "text": [
+            {
+              "name": "Project note",
+              "text": "OPENSP / INDEPENDENT, COMMUNITY-MINDED SOFTWARE",
+              "x": 0,
+              "y": 24,
+              "width": 342,
+              "height": 48,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 26,
+                "width": 314.390625,
+                "height": 35.015625
+              }
+            },
+            {
+              "name": "Preview note",
+              "text": "HOMEPAGE",
+              "x": 0,
+              "y": 76,
+              "width": 342,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 78,
+                "width": 64.5,
+                "height": 15
+              }
+            },
+            {
+              "name": "Utility label",
+              "text": "Firmware emulator",
+              "x": 0,
+              "y": 104,
+              "width": 160,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 106,
+                "width": 132.625,
+                "height": 15
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page": "First guide",
+      "footers": [
+        {
+          "id": "88ef66de-c84d-8075-8008-b5f3e5044890",
+          "name": "Footer",
+          "width": 1312,
+          "height": 72,
+          "links": [
+            {
+              "name": "Utility link",
+              "componentId": "6bf32eef-e7db-8057-8008-bb2c247b9a4d",
+              "component": "Utility link",
+              "x": 1152,
+              "y": 24,
+              "width": 160,
+              "height": 24
+            }
+          ],
+          "text": [
+            {
+              "name": "Project note",
+              "text": "OPENSP / INDEPENDENT, COMMUNITY-MINDED SOFTWARE",
+              "x": 0,
+              "y": 24,
+              "width": 498.55999999999995,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 26,
+                "width": 378.890625,
+                "height": 15
+              }
+            },
+            {
+              "name": "Preview note",
+              "text": "GUIDE / FIRST CHANGE",
+              "x": 524.8000000000001,
+              "y": 24,
+              "width": 603.1999999999999,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 966.7531250000002,
+                "y": 26,
+                "width": 161.234375,
+                "height": 15
+              }
+            },
+            {
+              "name": "Utility label",
+              "text": "Firmware emulator",
+              "x": 1152,
+              "y": 24,
+              "width": 160,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 1152,
+                "y": 26,
+                "width": 132.625,
+                "height": 15
+              }
+            }
+          ]
+        },
+        {
+          "id": "88ef66de-c84d-8075-8008-b5fcb54612df",
+          "name": "Footer",
+          "width": 1312,
+          "height": 72,
+          "links": [
+            {
+              "name": "Utility link",
+              "componentId": "6bf32eef-e7db-8057-8008-bb2c247b9a4d",
+              "component": "Utility link",
+              "x": 1152,
+              "y": 24,
+              "width": 160,
+              "height": 24
+            }
+          ],
+          "text": [
+            {
+              "name": "Project note",
+              "text": "OPENSP / INDEPENDENT, COMMUNITY-MINDED SOFTWARE",
+              "x": 0,
+              "y": 24,
+              "width": 498.55999999999995,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 26,
+                "width": 378.890625,
+                "height": 15
+              }
+            },
+            {
+              "name": "Preview note",
+              "text": "GUIDE / FIRST CHANGE",
+              "x": 524.8000000000002,
+              "y": 24,
+              "width": 603.1999999999998,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 966.7531250000002,
+                "y": 26,
+                "width": 161.234375,
+                "height": 15
+              }
+            },
+            {
+              "name": "Utility label",
+              "text": "Firmware emulator",
+              "x": 1152,
+              "y": 24,
+              "width": 160,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 1152,
+                "y": 26,
+                "width": 132.625,
+                "height": 15
+              }
+            }
+          ]
+        },
+        {
+          "id": "88ef66de-c84d-8075-8008-b5f4b9010157",
+          "name": "Footer",
+          "width": 342,
+          "height": 132,
+          "links": [
+            {
+              "name": "Utility link",
+              "componentId": "6bf32eef-e7db-8057-8008-bb2c247b9a4d",
+              "component": "Utility link",
+              "x": 0,
+              "y": 104,
+              "width": 342,
+              "height": 24
+            }
+          ],
+          "text": [
+            {
+              "name": "Project note",
+              "text": "OPENSP / INDEPENDENT, COMMUNITY-MINDED SOFTWARE",
+              "x": 0,
+              "y": 24,
+              "width": 342,
+              "height": 48,
+              "fontSize": 11,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 26,
+                "width": 322.484375,
+                "height": 12
+              }
+            },
+            {
+              "name": "Preview note",
+              "text": "GUIDE / FIRST CHANGE",
+              "x": 0,
+              "y": 76,
+              "width": 342,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 180.765625,
+                "y": 78,
+                "width": 161.234375,
+                "height": 15
+              }
+            },
+            {
+              "name": "Utility label",
+              "text": "Firmware emulator",
+              "x": 0,
+              "y": 104,
+              "width": 160,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 106,
+                "width": 132.625,
+                "height": 15
+              }
+            }
+          ]
+        },
+        {
+          "id": "88ef66de-c84d-8075-8008-b5fcd08378ae",
+          "name": "Footer",
+          "width": 342,
+          "height": 132,
+          "links": [
+            {
+              "name": "Utility link",
+              "componentId": "6bf32eef-e7db-8057-8008-bb2c247b9a4d",
+              "component": "Utility link",
+              "x": 0,
+              "y": 104,
+              "width": 342,
+              "height": 24
+            }
+          ],
+          "text": [
+            {
+              "name": "Project note",
+              "text": "OPENSP / INDEPENDENT, COMMUNITY-MINDED SOFTWARE",
+              "x": 0,
+              "y": 24,
+              "width": 342,
+              "height": 48,
+              "fontSize": 11,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 26,
+                "width": 322.484375,
+                "height": 12
+              }
+            },
+            {
+              "name": "Preview note",
+              "text": "GUIDE / FIRST CHANGE",
+              "x": 0,
+              "y": 76,
+              "width": 342,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 78,
+                "width": 161.234375,
+                "height": 15
+              }
+            },
+            {
+              "name": "Utility label",
+              "text": "Firmware emulator",
+              "x": 0,
+              "y": 104,
+              "width": 160,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 106,
+                "width": 132.625,
+                "height": 15
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page": "Guide series",
+      "footers": [
+        {
+          "id": "86caedfe-ea67-80b3-8008-b6f6b5ae1d94",
+          "name": "Footer",
+          "width": 1312,
+          "height": 72,
+          "links": [
+            {
+              "name": "Utility link",
+              "componentId": "6bf32eef-e7db-8057-8008-bb2c247b9a4d",
+              "component": "Utility link",
+              "x": 1152,
+              "y": 24,
+              "width": 160,
+              "height": 24
+            }
+          ],
+          "text": [
+            {
+              "name": "Project note",
+              "text": "OPENSP / INDEPENDENT, COMMUNITY-MINDED SOFTWARE",
+              "x": 0,
+              "y": 24,
+              "width": 500,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 26,
+                "width": 378.890625,
+                "height": 15
+              }
+            },
+            {
+              "name": "Preview note",
+              "text": "GUIDE / DISPLAY",
+              "x": 520,
+              "y": 24,
+              "width": 607.9999999999999,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 1191.078125,
+                "y": 26,
+                "width": 120.921875,
+                "height": 15
+              }
+            },
+            {
+              "name": "Utility label",
+              "text": "Firmware emulator",
+              "x": 1152,
+              "y": 24,
+              "width": 160,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 1152,
+                "y": 26,
+                "width": 132.625,
+                "height": 15
+              }
+            }
+          ]
+        },
+        {
+          "id": "86caedfe-ea67-80b3-8008-b6f6e6dcdba0",
+          "name": "Footer",
+          "width": 1312,
+          "height": 72,
+          "links": [
+            {
+              "name": "Utility link",
+              "componentId": "6bf32eef-e7db-8057-8008-bb2c247b9a4d",
+              "component": "Utility link",
+              "x": 1152,
+              "y": 24,
+              "width": 160,
+              "height": 24
+            }
+          ],
+          "text": [
+            {
+              "name": "Project note",
+              "text": "OPENSP / INDEPENDENT, COMMUNITY-MINDED SOFTWARE",
+              "x": 0,
+              "y": 24,
+              "width": 500,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 26,
+                "width": 378.890625,
+                "height": 15
+              }
+            },
+            {
+              "name": "Preview note",
+              "text": "GUIDE / DISPLAY",
+              "x": 520,
+              "y": 24,
+              "width": 607.9999999999999,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 1191.078125,
+                "y": 26,
+                "width": 120.921875,
+                "height": 15
+              }
+            },
+            {
+              "name": "Utility label",
+              "text": "Firmware emulator",
+              "x": 1152,
+              "y": 24,
+              "width": 160,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 1152,
+                "y": 26,
+                "width": 132.625,
+                "height": 15
+              }
+            }
+          ]
+        },
+        {
+          "id": "86caedfe-ea67-80b3-8008-b6f742094b34",
+          "name": "Footer",
+          "width": 342,
+          "height": 132,
+          "links": [
+            {
+              "name": "Utility link",
+              "componentId": "6bf32eef-e7db-8057-8008-bb2c247b9a4d",
+              "component": "Utility link",
+              "x": 0,
+              "y": 104,
+              "width": 342,
+              "height": 24
+            }
+          ],
+          "text": [
+            {
+              "name": "Project note",
+              "text": "OPENSP / INDEPENDENT, COMMUNITY-MINDED SOFTWARE",
+              "x": 0,
+              "y": 24,
+              "width": 342,
+              "height": 48,
+              "fontSize": 11,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 26,
+                "width": 322.484375,
+                "height": 12
+              }
+            },
+            {
+              "name": "Preview note",
+              "text": "GUIDE / DISPLAY",
+              "x": 0,
+              "y": 76,
+              "width": 342,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 221.078125,
+                "y": 78,
+                "width": 120.921875,
+                "height": 15
+              }
+            },
+            {
+              "name": "Utility label",
+              "text": "Firmware emulator",
+              "x": 0,
+              "y": 104,
+              "width": 160,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 106,
+                "width": 132.625,
+                "height": 15
+              }
+            }
+          ]
+        },
+        {
+          "id": "86caedfe-ea67-80b3-8008-b6f745786170",
+          "name": "Footer",
+          "width": 342,
+          "height": 132,
+          "links": [
+            {
+              "name": "Utility link",
+              "componentId": "6bf32eef-e7db-8057-8008-bb2c247b9a4d",
+              "component": "Utility link",
+              "x": 0,
+              "y": 104,
+              "width": 342.0000000000009,
+              "height": 24
+            }
+          ],
+          "text": [
+            {
+              "name": "Project note",
+              "text": "OPENSP / INDEPENDENT, COMMUNITY-MINDED SOFTWARE",
+              "x": 0,
+              "y": 24,
+              "width": 342,
+              "height": 48,
+              "fontSize": 11,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 26,
+                "width": 322.484375,
+                "height": 12
+              }
+            },
+            {
+              "name": "Preview note",
+              "text": "GUIDE / DISPLAY",
+              "x": 0,
+              "y": 76,
+              "width": 342,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 78,
+                "width": 120.921875,
+                "height": 15
+              }
+            },
+            {
+              "name": "Utility label",
+              "text": "Firmware emulator",
+              "x": 0,
+              "y": 104,
+              "width": 160,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 106,
+                "width": 132.625,
+                "height": 15
+              }
+            }
+          ]
+        },
+        {
+          "id": "86caedfe-ea67-80b3-8008-b6f7be1cf8a3",
+          "name": "Footer",
+          "width": 1312,
+          "height": 72,
+          "links": [
+            {
+              "name": "Utility link",
+              "componentId": "6bf32eef-e7db-8057-8008-bb2c247b9a4d",
+              "component": "Utility link",
+              "x": 1152,
+              "y": 24,
+              "width": 160,
+              "height": 24
+            }
+          ],
+          "text": [
+            {
+              "name": "Project note",
+              "text": "OPENSP / INDEPENDENT, COMMUNITY-MINDED SOFTWARE",
+              "x": 0,
+              "y": 24,
+              "width": 500,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 26,
+                "width": 378.890625,
+                "height": 15
+              }
+            },
+            {
+              "name": "Preview note",
+              "text": "GUIDE / DISPLAY",
+              "x": 520,
+              "y": 24,
+              "width": 607.9999999999999,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 1191.078125,
+                "y": 26,
+                "width": 120.921875,
+                "height": 15
+              }
+            },
+            {
+              "name": "Utility label",
+              "text": "Firmware emulator",
+              "x": 1152,
+              "y": 24,
+              "width": 160,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 1152,
+                "y": 26,
+                "width": 132.625,
+                "height": 15
+              }
+            }
+          ]
+        },
+        {
+          "id": "86caedfe-ea67-80b3-8008-b6f7c1dfcccb",
+          "name": "Footer",
+          "width": 1312,
+          "height": 72,
+          "links": [
+            {
+              "name": "Utility link",
+              "componentId": "6bf32eef-e7db-8057-8008-bb2c247b9a4d",
+              "component": "Utility link",
+              "x": 1152,
+              "y": 24,
+              "width": 160,
+              "height": 24
+            }
+          ],
+          "text": [
+            {
+              "name": "Project note",
+              "text": "OPENSP / INDEPENDENT, COMMUNITY-MINDED SOFTWARE",
+              "x": 0,
+              "y": 24,
+              "width": 500,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 26,
+                "width": 378.890625,
+                "height": 15
+              }
+            },
+            {
+              "name": "Preview note",
+              "text": "GUIDE / DISPLAY",
+              "x": 520,
+              "y": 24,
+              "width": 607.9999999999999,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 1191.078125,
+                "y": 26,
+                "width": 120.921875,
+                "height": 15
+              }
+            },
+            {
+              "name": "Utility label",
+              "text": "Firmware emulator",
+              "x": 1152,
+              "y": 24,
+              "width": 160,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 1152,
+                "y": 26,
+                "width": 132.625,
+                "height": 15
+              }
+            }
+          ]
+        },
+        {
+          "id": "86caedfe-ea67-80b3-8008-b6f7ea04b0d7",
+          "name": "Footer",
+          "width": 342,
+          "height": 132,
+          "links": [
+            {
+              "name": "Utility link",
+              "componentId": "6bf32eef-e7db-8057-8008-bb2c247b9a4d",
+              "component": "Utility link",
+              "x": 0,
+              "y": 104,
+              "width": 342,
+              "height": 24
+            }
+          ],
+          "text": [
+            {
+              "name": "Project note",
+              "text": "OPENSP / INDEPENDENT, COMMUNITY-MINDED SOFTWARE",
+              "x": 0,
+              "y": 24,
+              "width": 342,
+              "height": 48,
+              "fontSize": 11,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 26,
+                "width": 322.484375,
+                "height": 12
+              }
+            },
+            {
+              "name": "Preview note",
+              "text": "GUIDE / DISPLAY",
+              "x": 0,
+              "y": 76,
+              "width": 342,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 221.078125,
+                "y": 78,
+                "width": 120.921875,
+                "height": 15
+              }
+            },
+            {
+              "name": "Utility label",
+              "text": "Firmware emulator",
+              "x": 0,
+              "y": 104,
+              "width": 160,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 106,
+                "width": 132.625,
+                "height": 15
+              }
+            }
+          ]
+        },
+        {
+          "id": "86caedfe-ea67-80b3-8008-b6f7ee4266d5",
+          "name": "Footer",
+          "width": 342,
+          "height": 132,
+          "links": [
+            {
+              "name": "Utility link",
+              "componentId": "6bf32eef-e7db-8057-8008-bb2c247b9a4d",
+              "component": "Utility link",
+              "x": 0,
+              "y": 104,
+              "width": 342.0000000000009,
+              "height": 24
+            }
+          ],
+          "text": [
+            {
+              "name": "Project note",
+              "text": "OPENSP / INDEPENDENT, COMMUNITY-MINDED SOFTWARE",
+              "x": 0,
+              "y": 24,
+              "width": 342,
+              "height": 48,
+              "fontSize": 11,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 26,
+                "width": 322.484375,
+                "height": 12
+              }
+            },
+            {
+              "name": "Preview note",
+              "text": "GUIDE / DISPLAY",
+              "x": 0,
+              "y": 76,
+              "width": 342,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 78,
+                "width": 120.921875,
+                "height": 15
+              }
+            },
+            {
+              "name": "Utility label",
+              "text": "Firmware emulator",
+              "x": 0,
+              "y": 104,
+              "width": 160,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 106,
+                "width": 132.625,
+                "height": 15
+              }
+            }
+          ]
+        },
+        {
+          "id": "86caedfe-ea67-80b3-8008-b6f831441f5f",
+          "name": "Footer",
+          "width": 1312,
+          "height": 72,
+          "links": [
+            {
+              "name": "Utility link",
+              "componentId": "6bf32eef-e7db-8057-8008-bb2c247b9a4d",
+              "component": "Utility link",
+              "x": 1152,
+              "y": 24,
+              "width": 160,
+              "height": 24
+            }
+          ],
+          "text": [
+            {
+              "name": "Project note",
+              "text": "OPENSP / INDEPENDENT, COMMUNITY-MINDED SOFTWARE",
+              "x": 0,
+              "y": 24,
+              "width": 500,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 26,
+                "width": 378.890625,
+                "height": 15
+              }
+            },
+            {
+              "name": "Preview note",
+              "text": "GUIDE / SDK",
+              "x": 520,
+              "y": 24,
+              "width": 607.9999999999999,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 1223.3125,
+                "y": 26,
+                "width": 88.6875,
+                "height": 15
+              }
+            },
+            {
+              "name": "Utility label",
+              "text": "Firmware emulator",
+              "x": 1152,
+              "y": 24,
+              "width": 160,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 1152,
+                "y": 26,
+                "width": 132.625,
+                "height": 15
+              }
+            }
+          ]
+        },
+        {
+          "id": "86caedfe-ea67-80b3-8008-b6f835ba0831",
+          "name": "Footer",
+          "width": 1312,
+          "height": 72,
+          "links": [
+            {
+              "name": "Utility link",
+              "componentId": "6bf32eef-e7db-8057-8008-bb2c247b9a4d",
+              "component": "Utility link",
+              "x": 1152,
+              "y": 24,
+              "width": 160,
+              "height": 24
+            }
+          ],
+          "text": [
+            {
+              "name": "Project note",
+              "text": "OPENSP / INDEPENDENT, COMMUNITY-MINDED SOFTWARE",
+              "x": 0,
+              "y": 24,
+              "width": 500,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 26,
+                "width": 378.890625,
+                "height": 15
+              }
+            },
+            {
+              "name": "Preview note",
+              "text": "GUIDE / SDK",
+              "x": 520,
+              "y": 24,
+              "width": 607.9999999999999,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 1223.3125,
+                "y": 26,
+                "width": 88.6875,
+                "height": 15
+              }
+            },
+            {
+              "name": "Utility label",
+              "text": "Firmware emulator",
+              "x": 1152,
+              "y": 24,
+              "width": 160,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 1152,
+                "y": 26,
+                "width": 132.625,
+                "height": 15
+              }
+            }
+          ]
+        },
+        {
+          "id": "86caedfe-ea67-80b3-8008-b6f866bfd696",
+          "name": "Footer",
+          "width": 342,
+          "height": 132,
+          "links": [
+            {
+              "name": "Utility link",
+              "componentId": "6bf32eef-e7db-8057-8008-bb2c247b9a4d",
+              "component": "Utility link",
+              "x": 0,
+              "y": 104,
+              "width": 342,
+              "height": 24
+            }
+          ],
+          "text": [
+            {
+              "name": "Project note",
+              "text": "OPENSP / INDEPENDENT, COMMUNITY-MINDED SOFTWARE",
+              "x": 0,
+              "y": 24,
+              "width": 342,
+              "height": 48,
+              "fontSize": 11,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 26,
+                "width": 322.484375,
+                "height": 12
+              }
+            },
+            {
+              "name": "Preview note",
+              "text": "GUIDE / SDK",
+              "x": 0,
+              "y": 76,
+              "width": 342,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 253.3125,
+                "y": 78,
+                "width": 88.6875,
+                "height": 15
+              }
+            },
+            {
+              "name": "Utility label",
+              "text": "Firmware emulator",
+              "x": 0,
+              "y": 104,
+              "width": 160,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 106,
+                "width": 132.625,
+                "height": 15
+              }
+            }
+          ]
+        },
+        {
+          "id": "86caedfe-ea67-80b3-8008-b6f86bdce36f",
+          "name": "Footer",
+          "width": 342,
+          "height": 132,
+          "links": [
+            {
+              "name": "Utility link",
+              "componentId": "6bf32eef-e7db-8057-8008-bb2c247b9a4d",
+              "component": "Utility link",
+              "x": 0,
+              "y": 104,
+              "width": 342.0000000000009,
+              "height": 24
+            }
+          ],
+          "text": [
+            {
+              "name": "Project note",
+              "text": "OPENSP / INDEPENDENT, COMMUNITY-MINDED SOFTWARE",
+              "x": 0,
+              "y": 24,
+              "width": 342,
+              "height": 48,
+              "fontSize": 11,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 26,
+                "width": 322.484375,
+                "height": 12
+              }
+            },
+            {
+              "name": "Preview note",
+              "text": "GUIDE / SDK",
+              "x": 0,
+              "y": 76,
+              "width": 342,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 78,
+                "width": 88.6875,
+                "height": 15
+              }
+            },
+            {
+              "name": "Utility label",
+              "text": "Firmware emulator",
+              "x": 0,
+              "y": 104,
+              "width": 160,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 106,
+                "width": 132.625,
+                "height": 15
+              }
+            }
+          ]
+        },
+        {
+          "id": "86caedfe-ea67-80b3-8008-b6f8a0055889",
+          "name": "Footer",
+          "width": 1312,
+          "height": 72,
+          "links": [
+            {
+              "name": "Utility link",
+              "componentId": "6bf32eef-e7db-8057-8008-bb2c247b9a4d",
+              "component": "Utility link",
+              "x": 1152,
+              "y": 24,
+              "width": 160,
+              "height": 24
+            }
+          ],
+          "text": [
+            {
+              "name": "Project note",
+              "text": "OPENSP / INDEPENDENT, COMMUNITY-MINDED SOFTWARE",
+              "x": 0,
+              "y": 24,
+              "width": 500,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 26,
+                "width": 378.890625,
+                "height": 15
+              }
+            },
+            {
+              "name": "Preview note",
+              "text": "GUIDE / SDK",
+              "x": 520,
+              "y": 24,
+              "width": 607.9999999999999,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 1223.3125,
+                "y": 26,
+                "width": 88.6875,
+                "height": 15
+              }
+            },
+            {
+              "name": "Utility label",
+              "text": "Firmware emulator",
+              "x": 1152,
+              "y": 24,
+              "width": 160,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 1152,
+                "y": 26,
+                "width": 132.625,
+                "height": 15
+              }
+            }
+          ]
+        },
+        {
+          "id": "86caedfe-ea67-80b3-8008-b6f8a45163c0",
+          "name": "Footer",
+          "width": 1312,
+          "height": 72,
+          "links": [
+            {
+              "name": "Utility link",
+              "componentId": "6bf32eef-e7db-8057-8008-bb2c247b9a4d",
+              "component": "Utility link",
+              "x": 1152,
+              "y": 24,
+              "width": 160,
+              "height": 24
+            }
+          ],
+          "text": [
+            {
+              "name": "Project note",
+              "text": "OPENSP / INDEPENDENT, COMMUNITY-MINDED SOFTWARE",
+              "x": 0,
+              "y": 24,
+              "width": 500,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 26,
+                "width": 378.890625,
+                "height": 15
+              }
+            },
+            {
+              "name": "Preview note",
+              "text": "GUIDE / SDK",
+              "x": 520,
+              "y": 24,
+              "width": 607.9999999999999,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 1223.3125,
+                "y": 26,
+                "width": 88.6875,
+                "height": 15
+              }
+            },
+            {
+              "name": "Utility label",
+              "text": "Firmware emulator",
+              "x": 1152,
+              "y": 24,
+              "width": 160,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 1152,
+                "y": 26,
+                "width": 132.625,
+                "height": 15
+              }
+            }
+          ]
+        },
+        {
+          "id": "86caedfe-ea67-80b3-8008-b6f8dcace776",
+          "name": "Footer",
+          "width": 342,
+          "height": 132,
+          "links": [
+            {
+              "name": "Utility link",
+              "componentId": "6bf32eef-e7db-8057-8008-bb2c247b9a4d",
+              "component": "Utility link",
+              "x": 0,
+              "y": 104,
+              "width": 342,
+              "height": 24
+            }
+          ],
+          "text": [
+            {
+              "name": "Project note",
+              "text": "OPENSP / INDEPENDENT, COMMUNITY-MINDED SOFTWARE",
+              "x": 0,
+              "y": 24,
+              "width": 342,
+              "height": 48,
+              "fontSize": 11,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 26,
+                "width": 322.484375,
+                "height": 12
+              }
+            },
+            {
+              "name": "Preview note",
+              "text": "GUIDE / SDK",
+              "x": 0,
+              "y": 76,
+              "width": 342,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 253.3125,
+                "y": 78,
+                "width": 88.6875,
+                "height": 15
+              }
+            },
+            {
+              "name": "Utility label",
+              "text": "Firmware emulator",
+              "x": 0,
+              "y": 104,
+              "width": 160,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 106,
+                "width": 132.625,
+                "height": 15
+              }
+            }
+          ]
+        },
+        {
+          "id": "86caedfe-ea67-80b3-8008-b6f8e1eb56b4",
+          "name": "Footer",
+          "width": 342,
+          "height": 132,
+          "links": [
+            {
+              "name": "Utility link",
+              "componentId": "6bf32eef-e7db-8057-8008-bb2c247b9a4d",
+              "component": "Utility link",
+              "x": 0,
+              "y": 104,
+              "width": 342.0000000000009,
+              "height": 24
+            }
+          ],
+          "text": [
+            {
+              "name": "Project note",
+              "text": "OPENSP / INDEPENDENT, COMMUNITY-MINDED SOFTWARE",
+              "x": 0,
+              "y": 24,
+              "width": 342,
+              "height": 48,
+              "fontSize": 11,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 26,
+                "width": 322.484375,
+                "height": 12
+              }
+            },
+            {
+              "name": "Preview note",
+              "text": "GUIDE / SDK",
+              "x": 0,
+              "y": 76,
+              "width": 342,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 78,
+                "width": 88.6875,
+                "height": 15
+              }
+            },
+            {
+              "name": "Utility label",
+              "text": "Firmware emulator",
+              "x": 0,
+              "y": 104,
+              "width": 160,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 106,
+                "width": 132.625,
+                "height": 15
+              }
+            }
+          ]
+        },
+        {
+          "id": "86caedfe-ea67-80b3-8008-b6f9367d6e00",
+          "name": "Footer",
+          "width": 1312,
+          "height": 72,
+          "links": [
+            {
+              "name": "Utility link",
+              "componentId": "6bf32eef-e7db-8057-8008-bb2c247b9a4d",
+              "component": "Utility link",
+              "x": 1152,
+              "y": 24,
+              "width": 160,
+              "height": 24
+            }
+          ],
+          "text": [
+            {
+              "name": "Project note",
+              "text": "OPENSP / INDEPENDENT, COMMUNITY-MINDED SOFTWARE",
+              "x": 0,
+              "y": 24,
+              "width": 500,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 26,
+                "width": 378.890625,
+                "height": 15
+              }
+            },
+            {
+              "name": "Preview note",
+              "text": "GUIDE / CONTROLS",
+              "x": 520,
+              "y": 24,
+              "width": 607.9999999999999,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 1183.015625,
+                "y": 26,
+                "width": 128.984375,
+                "height": 15
+              }
+            },
+            {
+              "name": "Utility label",
+              "text": "Firmware emulator",
+              "x": 1152,
+              "y": 24,
+              "width": 160,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 1152,
+                "y": 26,
+                "width": 132.625,
+                "height": 15
+              }
+            }
+          ]
+        },
+        {
+          "id": "86caedfe-ea67-80b3-8008-b6f93b7757b6",
+          "name": "Footer",
+          "width": 1312,
+          "height": 72,
+          "links": [
+            {
+              "name": "Utility link",
+              "componentId": "6bf32eef-e7db-8057-8008-bb2c247b9a4d",
+              "component": "Utility link",
+              "x": 1152,
+              "y": 24,
+              "width": 160,
+              "height": 24
+            }
+          ],
+          "text": [
+            {
+              "name": "Project note",
+              "text": "OPENSP / INDEPENDENT, COMMUNITY-MINDED SOFTWARE",
+              "x": 0,
+              "y": 24,
+              "width": 500,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 26,
+                "width": 378.890625,
+                "height": 15
+              }
+            },
+            {
+              "name": "Preview note",
+              "text": "GUIDE / CONTROLS",
+              "x": 520,
+              "y": 24,
+              "width": 607.9999999999999,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 1183.015625,
+                "y": 26,
+                "width": 128.984375,
+                "height": 15
+              }
+            },
+            {
+              "name": "Utility label",
+              "text": "Firmware emulator",
+              "x": 1152,
+              "y": 24,
+              "width": 160,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 1152,
+                "y": 26,
+                "width": 132.625,
+                "height": 15
+              }
+            }
+          ]
+        },
+        {
+          "id": "86caedfe-ea67-80b3-8008-b6f9c0e416b1",
+          "name": "Footer",
+          "width": 342,
+          "height": 132,
+          "links": [
+            {
+              "name": "Utility link",
+              "componentId": "6bf32eef-e7db-8057-8008-bb2c247b9a4d",
+              "component": "Utility link",
+              "x": 0,
+              "y": 104,
+              "width": 342,
+              "height": 24
+            }
+          ],
+          "text": [
+            {
+              "name": "Project note",
+              "text": "OPENSP / INDEPENDENT, COMMUNITY-MINDED SOFTWARE",
+              "x": 0,
+              "y": 24,
+              "width": 342,
+              "height": 48,
+              "fontSize": 11,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 26,
+                "width": 322.484375,
+                "height": 12
+              }
+            },
+            {
+              "name": "Preview note",
+              "text": "GUIDE / CONTROLS",
+              "x": 0,
+              "y": 76,
+              "width": 342,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 213.015625,
+                "y": 78,
+                "width": 128.984375,
+                "height": 15
+              }
+            },
+            {
+              "name": "Utility label",
+              "text": "Firmware emulator",
+              "x": 0,
+              "y": 104,
+              "width": 160,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 106,
+                "width": 132.625,
+                "height": 15
+              }
+            }
+          ]
+        },
+        {
+          "id": "86caedfe-ea67-80b3-8008-b6f9d2f2161b",
+          "name": "Footer",
+          "width": 342,
+          "height": 132,
+          "links": [
+            {
+              "name": "Utility link",
+              "componentId": "6bf32eef-e7db-8057-8008-bb2c247b9a4d",
+              "component": "Utility link",
+              "x": 0,
+              "y": 104,
+              "width": 342.0000000000009,
+              "height": 24
+            }
+          ],
+          "text": [
+            {
+              "name": "Project note",
+              "text": "OPENSP / INDEPENDENT, COMMUNITY-MINDED SOFTWARE",
+              "x": 0,
+              "y": 24,
+              "width": 342,
+              "height": 48,
+              "fontSize": 11,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 26,
+                "width": 322.484375,
+                "height": 12
+              }
+            },
+            {
+              "name": "Preview note",
+              "text": "GUIDE / CONTROLS",
+              "x": 0,
+              "y": 76,
+              "width": 342,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 78,
+                "width": 128.984375,
+                "height": 15
+              }
+            },
+            {
+              "name": "Utility label",
+              "text": "Firmware emulator",
+              "x": 0,
+              "y": 104,
+              "width": 160,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 106,
+                "width": 132.625,
+                "height": 15
+              }
+            }
+          ]
+        },
+        {
+          "id": "86caedfe-ea67-80b3-8008-b6fa17d42a2e",
+          "name": "Footer",
+          "width": 1312,
+          "height": 72,
+          "links": [
+            {
+              "name": "Utility link",
+              "componentId": "6bf32eef-e7db-8057-8008-bb2c247b9a4d",
+              "component": "Utility link",
+              "x": 1152,
+              "y": 24,
+              "width": 160,
+              "height": 24
+            }
+          ],
+          "text": [
+            {
+              "name": "Project note",
+              "text": "OPENSP / INDEPENDENT, COMMUNITY-MINDED SOFTWARE",
+              "x": 0,
+              "y": 24,
+              "width": 500,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 26,
+                "width": 378.890625,
+                "height": 15
+              }
+            },
+            {
+              "name": "Preview note",
+              "text": "GUIDE / CONTROLS",
+              "x": 520,
+              "y": 24,
+              "width": 607.9999999999999,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 1183.015625,
+                "y": 26,
+                "width": 128.984375,
+                "height": 15
+              }
+            },
+            {
+              "name": "Utility label",
+              "text": "Firmware emulator",
+              "x": 1152,
+              "y": 24,
+              "width": 160,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 1152,
+                "y": 26,
+                "width": 132.625,
+                "height": 15
+              }
+            }
+          ]
+        },
+        {
+          "id": "86caedfe-ea67-80b3-8008-b6fa1c1dce7e",
+          "name": "Footer",
+          "width": 1312,
+          "height": 72,
+          "links": [
+            {
+              "name": "Utility link",
+              "componentId": "6bf32eef-e7db-8057-8008-bb2c247b9a4d",
+              "component": "Utility link",
+              "x": 1152,
+              "y": 24,
+              "width": 160,
+              "height": 24
+            }
+          ],
+          "text": [
+            {
+              "name": "Project note",
+              "text": "OPENSP / INDEPENDENT, COMMUNITY-MINDED SOFTWARE",
+              "x": 0,
+              "y": 24,
+              "width": 500,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 26,
+                "width": 378.890625,
+                "height": 15
+              }
+            },
+            {
+              "name": "Preview note",
+              "text": "GUIDE / CONTROLS",
+              "x": 520,
+              "y": 24,
+              "width": 607.9999999999999,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 1183.015625,
+                "y": 26,
+                "width": 128.984375,
+                "height": 15
+              }
+            },
+            {
+              "name": "Utility label",
+              "text": "Firmware emulator",
+              "x": 1152,
+              "y": 24,
+              "width": 160,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 1152,
+                "y": 26,
+                "width": 132.625,
+                "height": 15
+              }
+            }
+          ]
+        },
+        {
+          "id": "86caedfe-ea67-80b3-8008-b6fa58014972",
+          "name": "Footer",
+          "width": 342,
+          "height": 132,
+          "links": [
+            {
+              "name": "Utility link",
+              "componentId": "6bf32eef-e7db-8057-8008-bb2c247b9a4d",
+              "component": "Utility link",
+              "x": 0,
+              "y": 104,
+              "width": 342,
+              "height": 24
+            }
+          ],
+          "text": [
+            {
+              "name": "Project note",
+              "text": "OPENSP / INDEPENDENT, COMMUNITY-MINDED SOFTWARE",
+              "x": 0,
+              "y": 24,
+              "width": 342,
+              "height": 48,
+              "fontSize": 11,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 26,
+                "width": 322.484375,
+                "height": 12
+              }
+            },
+            {
+              "name": "Preview note",
+              "text": "GUIDE / CONTROLS",
+              "x": 0,
+              "y": 76,
+              "width": 342,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 213.015625,
+                "y": 78,
+                "width": 128.984375,
+                "height": 15
+              }
+            },
+            {
+              "name": "Utility label",
+              "text": "Firmware emulator",
+              "x": 0,
+              "y": 104,
+              "width": 160,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 106,
+                "width": 132.625,
+                "height": 15
+              }
+            }
+          ]
+        },
+        {
+          "id": "86caedfe-ea67-80b3-8008-b6fa5d738f7b",
+          "name": "Footer",
+          "width": 342,
+          "height": 132,
+          "links": [
+            {
+              "name": "Utility link",
+              "componentId": "6bf32eef-e7db-8057-8008-bb2c247b9a4d",
+              "component": "Utility link",
+              "x": 0,
+              "y": 104,
+              "width": 342.0000000000009,
+              "height": 24
+            }
+          ],
+          "text": [
+            {
+              "name": "Project note",
+              "text": "OPENSP / INDEPENDENT, COMMUNITY-MINDED SOFTWARE",
+              "x": 0,
+              "y": 24,
+              "width": 342,
+              "height": 48,
+              "fontSize": 11,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 26,
+                "width": 322.484375,
+                "height": 12
+              }
+            },
+            {
+              "name": "Preview note",
+              "text": "GUIDE / CONTROLS",
+              "x": 0,
+              "y": 76,
+              "width": 342,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 78,
+                "width": 128.984375,
+                "height": 15
+              }
+            },
+            {
+              "name": "Utility label",
+              "text": "Firmware emulator",
+              "x": 0,
+              "y": 104,
+              "width": 160,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 106,
+                "width": 132.625,
+                "height": 15
+              }
+            }
+          ]
+        },
+        {
+          "id": "86caedfe-ea67-80b3-8008-b6fa9fc159bf",
+          "name": "Footer",
+          "width": 1312,
+          "height": 72,
+          "links": [
+            {
+              "name": "Utility link",
+              "componentId": "6bf32eef-e7db-8057-8008-bb2c247b9a4d",
+              "component": "Utility link",
+              "x": 1152,
+              "y": 24,
+              "width": 160,
+              "height": 24
+            }
+          ],
+          "text": [
+            {
+              "name": "Project note",
+              "text": "OPENSP / INDEPENDENT, COMMUNITY-MINDED SOFTWARE",
+              "x": 0,
+              "y": 24,
+              "width": 500,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 26,
+                "width": 378.890625,
+                "height": 15
+              }
+            },
+            {
+              "name": "Preview note",
+              "text": "GUIDE / USB",
+              "x": 520,
+              "y": 24,
+              "width": 607.9999999999999,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 1223.3125,
+                "y": 26,
+                "width": 88.6875,
+                "height": 15
+              }
+            },
+            {
+              "name": "Utility label",
+              "text": "Firmware emulator",
+              "x": 1152,
+              "y": 24,
+              "width": 160,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 1152,
+                "y": 26,
+                "width": 132.625,
+                "height": 15
+              }
+            }
+          ]
+        },
+        {
+          "id": "86caedfe-ea67-80b3-8008-b6faa4764230",
+          "name": "Footer",
+          "width": 1312,
+          "height": 72,
+          "links": [
+            {
+              "name": "Utility link",
+              "componentId": "6bf32eef-e7db-8057-8008-bb2c247b9a4d",
+              "component": "Utility link",
+              "x": 1152,
+              "y": 24,
+              "width": 160,
+              "height": 24
+            }
+          ],
+          "text": [
+            {
+              "name": "Project note",
+              "text": "OPENSP / INDEPENDENT, COMMUNITY-MINDED SOFTWARE",
+              "x": 0,
+              "y": 24,
+              "width": 500,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 26,
+                "width": 378.890625,
+                "height": 15
+              }
+            },
+            {
+              "name": "Preview note",
+              "text": "GUIDE / USB",
+              "x": 520,
+              "y": 24,
+              "width": 607.9999999999999,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 1223.3125,
+                "y": 26,
+                "width": 88.6875,
+                "height": 15
+              }
+            },
+            {
+              "name": "Utility label",
+              "text": "Firmware emulator",
+              "x": 1152,
+              "y": 24,
+              "width": 160,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 1152,
+                "y": 26,
+                "width": 132.625,
+                "height": 15
+              }
+            }
+          ]
+        },
+        {
+          "id": "86caedfe-ea67-80b3-8008-b6faed3e9c9d",
+          "name": "Footer",
+          "width": 342,
+          "height": 132,
+          "links": [
+            {
+              "name": "Utility link",
+              "componentId": "6bf32eef-e7db-8057-8008-bb2c247b9a4d",
+              "component": "Utility link",
+              "x": 0,
+              "y": 104,
+              "width": 342,
+              "height": 24
+            }
+          ],
+          "text": [
+            {
+              "name": "Project note",
+              "text": "OPENSP / INDEPENDENT, COMMUNITY-MINDED SOFTWARE",
+              "x": 0,
+              "y": 24,
+              "width": 342,
+              "height": 48,
+              "fontSize": 11,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 26,
+                "width": 322.484375,
+                "height": 12
+              }
+            },
+            {
+              "name": "Preview note",
+              "text": "GUIDE / USB",
+              "x": 0,
+              "y": 76,
+              "width": 342,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 253.3125,
+                "y": 78,
+                "width": 88.6875,
+                "height": 15
+              }
+            },
+            {
+              "name": "Utility label",
+              "text": "Firmware emulator",
+              "x": 0,
+              "y": 104,
+              "width": 160,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 106,
+                "width": 132.625,
+                "height": 15
+              }
+            }
+          ]
+        },
+        {
+          "id": "86caedfe-ea67-80b3-8008-b6faf3635aba",
+          "name": "Footer",
+          "width": 342,
+          "height": 132,
+          "links": [
+            {
+              "name": "Utility link",
+              "componentId": "6bf32eef-e7db-8057-8008-bb2c247b9a4d",
+              "component": "Utility link",
+              "x": 0,
+              "y": 104,
+              "width": 342.0000000000009,
+              "height": 24
+            }
+          ],
+          "text": [
+            {
+              "name": "Project note",
+              "text": "OPENSP / INDEPENDENT, COMMUNITY-MINDED SOFTWARE",
+              "x": 0,
+              "y": 24,
+              "width": 342,
+              "height": 48,
+              "fontSize": 11,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 26,
+                "width": 322.484375,
+                "height": 12
+              }
+            },
+            {
+              "name": "Preview note",
+              "text": "GUIDE / USB",
+              "x": 0,
+              "y": 76,
+              "width": 342,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 78,
+                "width": 88.6875,
+                "height": 15
+              }
+            },
+            {
+              "name": "Utility label",
+              "text": "Firmware emulator",
+              "x": 0,
+              "y": 104,
+              "width": 160,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 106,
+                "width": 132.625,
+                "height": 15
+              }
+            }
+          ]
+        },
+        {
+          "id": "86caedfe-ea67-80b3-8008-b6fb4697d06e",
+          "name": "Footer",
+          "width": 1312,
+          "height": 72,
+          "links": [
+            {
+              "name": "Utility link",
+              "componentId": "6bf32eef-e7db-8057-8008-bb2c247b9a4d",
+              "component": "Utility link",
+              "x": 1152,
+              "y": 24,
+              "width": 160,
+              "height": 24
+            }
+          ],
+          "text": [
+            {
+              "name": "Project note",
+              "text": "OPENSP / INDEPENDENT, COMMUNITY-MINDED SOFTWARE",
+              "x": 0,
+              "y": 24,
+              "width": 500,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 26,
+                "width": 378.890625,
+                "height": 15
+              }
+            },
+            {
+              "name": "Preview note",
+              "text": "GUIDE / USB",
+              "x": 520,
+              "y": 24,
+              "width": 607.9999999999999,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 1223.3125,
+                "y": 26,
+                "width": 88.6875,
+                "height": 15
+              }
+            },
+            {
+              "name": "Utility label",
+              "text": "Firmware emulator",
+              "x": 1152,
+              "y": 24,
+              "width": 160,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 1152,
+                "y": 26,
+                "width": 132.625,
+                "height": 15
+              }
+            }
+          ]
+        },
+        {
+          "id": "86caedfe-ea67-80b3-8008-b6fb4be59f94",
+          "name": "Footer",
+          "width": 1312,
+          "height": 72,
+          "links": [
+            {
+              "name": "Utility link",
+              "componentId": "6bf32eef-e7db-8057-8008-bb2c247b9a4d",
+              "component": "Utility link",
+              "x": 1152,
+              "y": 24,
+              "width": 160,
+              "height": 24
+            }
+          ],
+          "text": [
+            {
+              "name": "Project note",
+              "text": "OPENSP / INDEPENDENT, COMMUNITY-MINDED SOFTWARE",
+              "x": 0,
+              "y": 24,
+              "width": 500,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 26,
+                "width": 378.890625,
+                "height": 15
+              }
+            },
+            {
+              "name": "Preview note",
+              "text": "GUIDE / USB",
+              "x": 520,
+              "y": 24,
+              "width": 607.9999999999999,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 1223.3125,
+                "y": 26,
+                "width": 88.6875,
+                "height": 15
+              }
+            },
+            {
+              "name": "Utility label",
+              "text": "Firmware emulator",
+              "x": 1152,
+              "y": 24,
+              "width": 160,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 1152,
+                "y": 26,
+                "width": 132.625,
+                "height": 15
+              }
+            }
+          ]
+        },
+        {
+          "id": "86caedfe-ea67-80b3-8008-b6fb9bfa3885",
+          "name": "Footer",
+          "width": 342,
+          "height": 132,
+          "links": [
+            {
+              "name": "Utility link",
+              "componentId": "6bf32eef-e7db-8057-8008-bb2c247b9a4d",
+              "component": "Utility link",
+              "x": 0,
+              "y": 104,
+              "width": 342,
+              "height": 24
+            }
+          ],
+          "text": [
+            {
+              "name": "Project note",
+              "text": "OPENSP / INDEPENDENT, COMMUNITY-MINDED SOFTWARE",
+              "x": 0,
+              "y": 24,
+              "width": 342,
+              "height": 48,
+              "fontSize": 11,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 26,
+                "width": 322.484375,
+                "height": 12
+              }
+            },
+            {
+              "name": "Preview note",
+              "text": "GUIDE / USB",
+              "x": 0,
+              "y": 76,
+              "width": 342,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 253.3125,
+                "y": 78,
+                "width": 88.6875,
+                "height": 15
+              }
+            },
+            {
+              "name": "Utility label",
+              "text": "Firmware emulator",
+              "x": 0,
+              "y": 104,
+              "width": 160,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 106,
+                "width": 132.625,
+                "height": 15
+              }
+            }
+          ]
+        },
+        {
+          "id": "86caedfe-ea67-80b3-8008-b6fba2b138fb",
+          "name": "Footer",
+          "width": 342,
+          "height": 132,
+          "links": [
+            {
+              "name": "Utility link",
+              "componentId": "6bf32eef-e7db-8057-8008-bb2c247b9a4d",
+              "component": "Utility link",
+              "x": 0,
+              "y": 104,
+              "width": 342.0000000000009,
+              "height": 24
+            }
+          ],
+          "text": [
+            {
+              "name": "Project note",
+              "text": "OPENSP / INDEPENDENT, COMMUNITY-MINDED SOFTWARE",
+              "x": 0,
+              "y": 24,
+              "width": 342,
+              "height": 48,
+              "fontSize": 11,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 26,
+                "width": 322.484375,
+                "height": 12
+              }
+            },
+            {
+              "name": "Preview note",
+              "text": "GUIDE / USB",
+              "x": 0,
+              "y": 76,
+              "width": 342,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 78,
+                "width": 88.6875,
+                "height": 15
+              }
+            },
+            {
+              "name": "Utility label",
+              "text": "Firmware emulator",
+              "x": 0,
+              "y": 104,
+              "width": 160,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 106,
+                "width": 132.625,
+                "height": 15
+              }
+            }
+          ]
+        },
+        {
+          "id": "86caedfe-ea67-80b3-8008-b6fbf317b45b",
+          "name": "Footer",
+          "width": 1312,
+          "height": 72,
+          "links": [
+            {
+              "name": "Utility link",
+              "componentId": "6bf32eef-e7db-8057-8008-bb2c247b9a4d",
+              "component": "Utility link",
+              "x": 1152,
+              "y": 24,
+              "width": 160,
+              "height": 24
+            }
+          ],
+          "text": [
+            {
+              "name": "Project note",
+              "text": "OPENSP / INDEPENDENT, COMMUNITY-MINDED SOFTWARE",
+              "x": 0,
+              "y": 24,
+              "width": 500,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 26,
+                "width": 378.890625,
+                "height": 15
+              }
+            },
+            {
+              "name": "Preview note",
+              "text": "GUIDE / USB",
+              "x": 520,
+              "y": 24,
+              "width": 607.9999999999999,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 1223.3125,
+                "y": 26,
+                "width": 88.6875,
+                "height": 15
+              }
+            },
+            {
+              "name": "Utility label",
+              "text": "Firmware emulator",
+              "x": 1152,
+              "y": 24,
+              "width": 160,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 1152,
+                "y": 26,
+                "width": 132.625,
+                "height": 15
+              }
+            }
+          ]
+        },
+        {
+          "id": "86caedfe-ea67-80b3-8008-b6fbf8c3594c",
+          "name": "Footer",
+          "width": 1312,
+          "height": 72,
+          "links": [
+            {
+              "name": "Utility link",
+              "componentId": "6bf32eef-e7db-8057-8008-bb2c247b9a4d",
+              "component": "Utility link",
+              "x": 1152,
+              "y": 24,
+              "width": 160,
+              "height": 24
+            }
+          ],
+          "text": [
+            {
+              "name": "Project note",
+              "text": "OPENSP / INDEPENDENT, COMMUNITY-MINDED SOFTWARE",
+              "x": 0,
+              "y": 24,
+              "width": 500,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 26,
+                "width": 378.890625,
+                "height": 15
+              }
+            },
+            {
+              "name": "Preview note",
+              "text": "GUIDE / USB",
+              "x": 520,
+              "y": 24,
+              "width": 607.9999999999999,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 1223.3125,
+                "y": 26,
+                "width": 88.6875,
+                "height": 15
+              }
+            },
+            {
+              "name": "Utility label",
+              "text": "Firmware emulator",
+              "x": 1152,
+              "y": 24,
+              "width": 160,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 1152,
+                "y": 26,
+                "width": 132.625,
+                "height": 15
+              }
+            }
+          ]
+        },
+        {
+          "id": "86caedfe-ea67-80b3-8008-b6fc516cae3f",
+          "name": "Footer",
+          "width": 342,
+          "height": 132,
+          "links": [
+            {
+              "name": "Utility link",
+              "componentId": "6bf32eef-e7db-8057-8008-bb2c247b9a4d",
+              "component": "Utility link",
+              "x": 0,
+              "y": 104,
+              "width": 342,
+              "height": 24
+            }
+          ],
+          "text": [
+            {
+              "name": "Project note",
+              "text": "OPENSP / INDEPENDENT, COMMUNITY-MINDED SOFTWARE",
+              "x": 0,
+              "y": 24,
+              "width": 342,
+              "height": 48,
+              "fontSize": 11,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 26,
+                "width": 322.484375,
+                "height": 12
+              }
+            },
+            {
+              "name": "Preview note",
+              "text": "GUIDE / USB",
+              "x": 0,
+              "y": 76,
+              "width": 342,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 253.3125,
+                "y": 78,
+                "width": 88.6875,
+                "height": 15
+              }
+            },
+            {
+              "name": "Utility label",
+              "text": "Firmware emulator",
+              "x": 0,
+              "y": 104,
+              "width": 160,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 106,
+                "width": 132.625,
+                "height": 15
+              }
+            }
+          ]
+        },
+        {
+          "id": "86caedfe-ea67-80b3-8008-b6fc58f8dd44",
+          "name": "Footer",
+          "width": 342,
+          "height": 132,
+          "links": [
+            {
+              "name": "Utility link",
+              "componentId": "6bf32eef-e7db-8057-8008-bb2c247b9a4d",
+              "component": "Utility link",
+              "x": 0,
+              "y": 104,
+              "width": 342.0000000000009,
+              "height": 24
+            }
+          ],
+          "text": [
+            {
+              "name": "Project note",
+              "text": "OPENSP / INDEPENDENT, COMMUNITY-MINDED SOFTWARE",
+              "x": 0,
+              "y": 24,
+              "width": 342,
+              "height": 48,
+              "fontSize": 11,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 26,
+                "width": 322.484375,
+                "height": 12
+              }
+            },
+            {
+              "name": "Preview note",
+              "text": "GUIDE / USB",
+              "x": 0,
+              "y": 76,
+              "width": 342,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 78,
+                "width": 88.6875,
+                "height": 15
+              }
+            },
+            {
+              "name": "Utility label",
+              "text": "Firmware emulator",
+              "x": 0,
+              "y": 104,
+              "width": 160,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 106,
+                "width": 132.625,
+                "height": 15
+              }
+            }
+          ]
+        },
+        {
+          "id": "86caedfe-ea67-80b3-8008-b6fcb98c497b",
+          "name": "Footer",
+          "width": 1312,
+          "height": 72,
+          "links": [
+            {
+              "name": "Utility link",
+              "componentId": "6bf32eef-e7db-8057-8008-bb2c247b9a4d",
+              "component": "Utility link",
+              "x": 1152,
+              "y": 24,
+              "width": 160,
+              "height": 24
+            }
+          ],
+          "text": [
+            {
+              "name": "Project note",
+              "text": "OPENSP / INDEPENDENT, COMMUNITY-MINDED SOFTWARE",
+              "x": 0,
+              "y": 24,
+              "width": 500,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 26,
+                "width": 378.890625,
+                "height": 15
+              }
+            },
+            {
+              "name": "Preview note",
+              "text": "GUIDE / USB",
+              "x": 520,
+              "y": 24,
+              "width": 607.9999999999999,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 1223.3125,
+                "y": 26,
+                "width": 88.6875,
+                "height": 15
+              }
+            },
+            {
+              "name": "Utility label",
+              "text": "Firmware emulator",
+              "x": 1152,
+              "y": 24,
+              "width": 160,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 1152,
+                "y": 26,
+                "width": 132.625,
+                "height": 15
+              }
+            }
+          ]
+        },
+        {
+          "id": "86caedfe-ea67-80b3-8008-b6fcc012cc2e",
+          "name": "Footer",
+          "width": 1312,
+          "height": 72,
+          "links": [
+            {
+              "name": "Utility link",
+              "componentId": "6bf32eef-e7db-8057-8008-bb2c247b9a4d",
+              "component": "Utility link",
+              "x": 1152,
+              "y": 24,
+              "width": 160,
+              "height": 24
+            }
+          ],
+          "text": [
+            {
+              "name": "Project note",
+              "text": "OPENSP / INDEPENDENT, COMMUNITY-MINDED SOFTWARE",
+              "x": 0,
+              "y": 24,
+              "width": 500,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 26,
+                "width": 378.890625,
+                "height": 15
+              }
+            },
+            {
+              "name": "Preview note",
+              "text": "GUIDE / USB",
+              "x": 520,
+              "y": 24,
+              "width": 607.9999999999999,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 1223.3125,
+                "y": 26,
+                "width": 88.6875,
+                "height": 15
+              }
+            },
+            {
+              "name": "Utility label",
+              "text": "Firmware emulator",
+              "x": 1152,
+              "y": 24,
+              "width": 160,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 1152,
+                "y": 26,
+                "width": 132.625,
+                "height": 15
+              }
+            }
+          ]
+        },
+        {
+          "id": "86caedfe-ea67-80b3-8008-b6fd23e14ae6",
+          "name": "Footer",
+          "width": 342,
+          "height": 132,
+          "links": [
+            {
+              "name": "Utility link",
+              "componentId": "6bf32eef-e7db-8057-8008-bb2c247b9a4d",
+              "component": "Utility link",
+              "x": 0,
+              "y": 104,
+              "width": 342,
+              "height": 24
+            }
+          ],
+          "text": [
+            {
+              "name": "Project note",
+              "text": "OPENSP / INDEPENDENT, COMMUNITY-MINDED SOFTWARE",
+              "x": 0,
+              "y": 24,
+              "width": 342,
+              "height": 48,
+              "fontSize": 11,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 26,
+                "width": 322.484375,
+                "height": 12
+              }
+            },
+            {
+              "name": "Preview note",
+              "text": "GUIDE / USB",
+              "x": 0,
+              "y": 76,
+              "width": 342,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 253.3125,
+                "y": 78,
+                "width": 88.6875,
+                "height": 15
+              }
+            },
+            {
+              "name": "Utility label",
+              "text": "Firmware emulator",
+              "x": 0,
+              "y": 104,
+              "width": 160,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 106,
+                "width": 132.625,
+                "height": 15
+              }
+            }
+          ]
+        },
+        {
+          "id": "86caedfe-ea67-80b3-8008-b6fd2b4659b4",
+          "name": "Footer",
+          "width": 342,
+          "height": 132,
+          "links": [
+            {
+              "name": "Utility link",
+              "componentId": "6bf32eef-e7db-8057-8008-bb2c247b9a4d",
+              "component": "Utility link",
+              "x": 0,
+              "y": 104,
+              "width": 342.0000000000009,
+              "height": 24
+            }
+          ],
+          "text": [
+            {
+              "name": "Project note",
+              "text": "OPENSP / INDEPENDENT, COMMUNITY-MINDED SOFTWARE",
+              "x": 0,
+              "y": 24,
+              "width": 342,
+              "height": 48,
+              "fontSize": 11,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 26,
+                "width": 322.484375,
+                "height": 12
+              }
+            },
+            {
+              "name": "Preview note",
+              "text": "GUIDE / USB",
+              "x": 0,
+              "y": 76,
+              "width": 342,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 78,
+                "width": 88.6875,
+                "height": 15
+              }
+            },
+            {
+              "name": "Utility label",
+              "text": "Firmware emulator",
+              "x": 0,
+              "y": 104,
+              "width": 160,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 106,
+                "width": 132.625,
+                "height": 15
+              }
+            }
+          ]
+        },
+        {
+          "id": "86caedfe-ea67-80b3-8008-b6fdaa0d06eb",
+          "name": "Footer",
+          "width": 1312,
+          "height": 72,
+          "links": [
+            {
+              "name": "Utility link",
+              "componentId": "6bf32eef-e7db-8057-8008-bb2c247b9a4d",
+              "component": "Utility link",
+              "x": 1152,
+              "y": 24,
+              "width": 160,
+              "height": 24
+            }
+          ],
+          "text": [
+            {
+              "name": "Project note",
+              "text": "OPENSP / INDEPENDENT, COMMUNITY-MINDED SOFTWARE",
+              "x": 0,
+              "y": 24,
+              "width": 500,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 26,
+                "width": 378.890625,
+                "height": 15
+              }
+            },
+            {
+              "name": "Preview note",
+              "text": "GUIDE / AUDIO",
+              "x": 520,
+              "y": 24,
+              "width": 607.9999999999999,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 1207.203125,
+                "y": 26,
+                "width": 104.796875,
+                "height": 15
+              }
+            },
+            {
+              "name": "Utility label",
+              "text": "Firmware emulator",
+              "x": 1152,
+              "y": 24,
+              "width": 160,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 1152,
+                "y": 26,
+                "width": 132.625,
+                "height": 15
+              }
+            }
+          ]
+        },
+        {
+          "id": "86caedfe-ea67-80b3-8008-b6fdb13f809f",
+          "name": "Footer",
+          "width": 1312,
+          "height": 72,
+          "links": [
+            {
+              "name": "Utility link",
+              "componentId": "6bf32eef-e7db-8057-8008-bb2c247b9a4d",
+              "component": "Utility link",
+              "x": 1152,
+              "y": 24,
+              "width": 160,
+              "height": 24
+            }
+          ],
+          "text": [
+            {
+              "name": "Project note",
+              "text": "OPENSP / INDEPENDENT, COMMUNITY-MINDED SOFTWARE",
+              "x": 0,
+              "y": 24,
+              "width": 500,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 26,
+                "width": 378.890625,
+                "height": 15
+              }
+            },
+            {
+              "name": "Preview note",
+              "text": "GUIDE / AUDIO",
+              "x": 520,
+              "y": 24,
+              "width": 607.9999999999999,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 1207.203125,
+                "y": 26,
+                "width": 104.796875,
+                "height": 15
+              }
+            },
+            {
+              "name": "Utility label",
+              "text": "Firmware emulator",
+              "x": 1152,
+              "y": 24,
+              "width": 160,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 1152,
+                "y": 26,
+                "width": 132.625,
+                "height": 15
+              }
+            }
+          ]
+        },
+        {
+          "id": "86caedfe-ea67-80b3-8008-b6fe1f334916",
+          "name": "Footer",
+          "width": 342,
+          "height": 132,
+          "links": [
+            {
+              "name": "Utility link",
+              "componentId": "6bf32eef-e7db-8057-8008-bb2c247b9a4d",
+              "component": "Utility link",
+              "x": 0,
+              "y": 104,
+              "width": 342,
+              "height": 24
+            }
+          ],
+          "text": [
+            {
+              "name": "Project note",
+              "text": "OPENSP / INDEPENDENT, COMMUNITY-MINDED SOFTWARE",
+              "x": 0,
+              "y": 24,
+              "width": 342,
+              "height": 48,
+              "fontSize": 11,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 26,
+                "width": 322.484375,
+                "height": 12
+              }
+            },
+            {
+              "name": "Preview note",
+              "text": "GUIDE / AUDIO",
+              "x": 0,
+              "y": 76,
+              "width": 342,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 237.203125,
+                "y": 78,
+                "width": 104.796875,
+                "height": 15
+              }
+            },
+            {
+              "name": "Utility label",
+              "text": "Firmware emulator",
+              "x": 0,
+              "y": 104,
+              "width": 160,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 106,
+                "width": 132.625,
+                "height": 15
+              }
+            }
+          ]
+        },
+        {
+          "id": "86caedfe-ea67-80b3-8008-b6fe27f371c1",
+          "name": "Footer",
+          "width": 342,
+          "height": 132,
+          "links": [
+            {
+              "name": "Utility link",
+              "componentId": "6bf32eef-e7db-8057-8008-bb2c247b9a4d",
+              "component": "Utility link",
+              "x": 0,
+              "y": 104,
+              "width": 342.0000000000009,
+              "height": 24
+            }
+          ],
+          "text": [
+            {
+              "name": "Project note",
+              "text": "OPENSP / INDEPENDENT, COMMUNITY-MINDED SOFTWARE",
+              "x": 0,
+              "y": 24,
+              "width": 342,
+              "height": 48,
+              "fontSize": 11,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 26,
+                "width": 322.484375,
+                "height": 12
+              }
+            },
+            {
+              "name": "Preview note",
+              "text": "GUIDE / AUDIO",
+              "x": 0,
+              "y": 76,
+              "width": 342,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 78,
+                "width": 104.796875,
+                "height": 15
+              }
+            },
+            {
+              "name": "Utility label",
+              "text": "Firmware emulator",
+              "x": 0,
+              "y": 104,
+              "width": 160,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 106,
+                "width": 132.625,
+                "height": 15
+              }
+            }
+          ]
+        },
+        {
+          "id": "86caedfe-ea67-80b3-8008-b6fe96731781",
+          "name": "Footer",
+          "width": 1312,
+          "height": 72,
+          "links": [
+            {
+              "name": "Utility link",
+              "componentId": "6bf32eef-e7db-8057-8008-bb2c247b9a4d",
+              "component": "Utility link",
+              "x": 1152,
+              "y": 24,
+              "width": 160,
+              "height": 24
+            }
+          ],
+          "text": [
+            {
+              "name": "Project note",
+              "text": "OPENSP / INDEPENDENT, COMMUNITY-MINDED SOFTWARE",
+              "x": 0,
+              "y": 24,
+              "width": 500,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 26,
+                "width": 378.890625,
+                "height": 15
+              }
+            },
+            {
+              "name": "Preview note",
+              "text": "GUIDE / AUDIO",
+              "x": 520,
+              "y": 24,
+              "width": 607.9999999999999,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 1207.203125,
+                "y": 26,
+                "width": 104.796875,
+                "height": 15
+              }
+            },
+            {
+              "name": "Utility label",
+              "text": "Firmware emulator",
+              "x": 1152,
+              "y": 24,
+              "width": 160,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 1152,
+                "y": 26,
+                "width": 132.625,
+                "height": 15
+              }
+            }
+          ]
+        },
+        {
+          "id": "86caedfe-ea67-80b3-8008-b6fe9d16c622",
+          "name": "Footer",
+          "width": 1312,
+          "height": 72,
+          "links": [
+            {
+              "name": "Utility link",
+              "componentId": "6bf32eef-e7db-8057-8008-bb2c247b9a4d",
+              "component": "Utility link",
+              "x": 1152,
+              "y": 24,
+              "width": 160,
+              "height": 24
+            }
+          ],
+          "text": [
+            {
+              "name": "Project note",
+              "text": "OPENSP / INDEPENDENT, COMMUNITY-MINDED SOFTWARE",
+              "x": 0,
+              "y": 24,
+              "width": 500,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 26,
+                "width": 378.890625,
+                "height": 15
+              }
+            },
+            {
+              "name": "Preview note",
+              "text": "GUIDE / AUDIO",
+              "x": 520,
+              "y": 24,
+              "width": 607.9999999999999,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 1207.203125,
+                "y": 26,
+                "width": 104.796875,
+                "height": 15
+              }
+            },
+            {
+              "name": "Utility label",
+              "text": "Firmware emulator",
+              "x": 1152,
+              "y": 24,
+              "width": 160,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 1152,
+                "y": 26,
+                "width": 132.625,
+                "height": 15
+              }
+            }
+          ]
+        },
+        {
+          "id": "86caedfe-ea67-80b3-8008-b6ff0f9a41ad",
+          "name": "Footer",
+          "width": 342,
+          "height": 132,
+          "links": [
+            {
+              "name": "Utility link",
+              "componentId": "6bf32eef-e7db-8057-8008-bb2c247b9a4d",
+              "component": "Utility link",
+              "x": 0,
+              "y": 104,
+              "width": 342,
+              "height": 24
+            }
+          ],
+          "text": [
+            {
+              "name": "Project note",
+              "text": "OPENSP / INDEPENDENT, COMMUNITY-MINDED SOFTWARE",
+              "x": 0,
+              "y": 24,
+              "width": 342,
+              "height": 48,
+              "fontSize": 11,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 26,
+                "width": 322.484375,
+                "height": 12
+              }
+            },
+            {
+              "name": "Preview note",
+              "text": "GUIDE / AUDIO",
+              "x": 0,
+              "y": 76,
+              "width": 342,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 237.203125,
+                "y": 78,
+                "width": 104.796875,
+                "height": 15
+              }
+            },
+            {
+              "name": "Utility label",
+              "text": "Firmware emulator",
+              "x": 0,
+              "y": 104,
+              "width": 160,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 106,
+                "width": 132.625,
+                "height": 15
+              }
+            }
+          ]
+        },
+        {
+          "id": "86caedfe-ea67-80b3-8008-b6ff174d82eb",
+          "name": "Footer",
+          "width": 342,
+          "height": 132,
+          "links": [
+            {
+              "name": "Utility link",
+              "componentId": "6bf32eef-e7db-8057-8008-bb2c247b9a4d",
+              "component": "Utility link",
+              "x": 0,
+              "y": 104,
+              "width": 342.0000000000009,
+              "height": 24
+            }
+          ],
+          "text": [
+            {
+              "name": "Project note",
+              "text": "OPENSP / INDEPENDENT, COMMUNITY-MINDED SOFTWARE",
+              "x": 0,
+              "y": 24,
+              "width": 342,
+              "height": 48,
+              "fontSize": 11,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 26,
+                "width": 322.484375,
+                "height": 12
+              }
+            },
+            {
+              "name": "Preview note",
+              "text": "GUIDE / AUDIO",
+              "x": 0,
+              "y": 76,
+              "width": 342,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 78,
+                "width": 104.796875,
+                "height": 15
+              }
+            },
+            {
+              "name": "Utility label",
+              "text": "Firmware emulator",
+              "x": 0,
+              "y": 104,
+              "width": 160,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 106,
+                "width": 132.625,
+                "height": 15
+              }
+            }
+          ]
+        },
+        {
+          "id": "86caedfe-ea67-80b3-8008-b6ff87154eb7",
+          "name": "Footer",
+          "width": 1312,
+          "height": 72,
+          "links": [
+            {
+              "name": "Utility link",
+              "componentId": "6bf32eef-e7db-8057-8008-bb2c247b9a4d",
+              "component": "Utility link",
+              "x": 1152,
+              "y": 24,
+              "width": 160,
+              "height": 24
+            }
+          ],
+          "text": [
+            {
+              "name": "Project note",
+              "text": "OPENSP / INDEPENDENT, COMMUNITY-MINDED SOFTWARE",
+              "x": 0,
+              "y": 24,
+              "width": 500,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 26,
+                "width": 378.890625,
+                "height": 15
+              }
+            },
+            {
+              "name": "Preview note",
+              "text": "GUIDE / SDK",
+              "x": 520,
+              "y": 24,
+              "width": 607.9999999999999,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 1223.3125,
+                "y": 26,
+                "width": 88.6875,
+                "height": 15
+              }
+            },
+            {
+              "name": "Utility label",
+              "text": "Firmware emulator",
+              "x": 1152,
+              "y": 24,
+              "width": 160,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 1152,
+                "y": 26,
+                "width": 132.625,
+                "height": 15
+              }
+            }
+          ]
+        },
+        {
+          "id": "86caedfe-ea67-80b3-8008-b6ff8e2ab6ae",
+          "name": "Footer",
+          "width": 1312,
+          "height": 72,
+          "links": [
+            {
+              "name": "Utility link",
+              "componentId": "6bf32eef-e7db-8057-8008-bb2c247b9a4d",
+              "component": "Utility link",
+              "x": 1152,
+              "y": 24,
+              "width": 160,
+              "height": 24
+            }
+          ],
+          "text": [
+            {
+              "name": "Project note",
+              "text": "OPENSP / INDEPENDENT, COMMUNITY-MINDED SOFTWARE",
+              "x": 0,
+              "y": 24,
+              "width": 500,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 26,
+                "width": 378.890625,
+                "height": 15
+              }
+            },
+            {
+              "name": "Preview note",
+              "text": "GUIDE / SDK",
+              "x": 520,
+              "y": 24,
+              "width": 607.9999999999999,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 1223.3125,
+                "y": 26,
+                "width": 88.6875,
+                "height": 15
+              }
+            },
+            {
+              "name": "Utility label",
+              "text": "Firmware emulator",
+              "x": 1152,
+              "y": 24,
+              "width": 160,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 1152,
+                "y": 26,
+                "width": 132.625,
+                "height": 15
+              }
+            }
+          ]
+        },
+        {
+          "id": "86caedfe-ea67-80b3-8008-b6fffcfcd442",
+          "name": "Footer",
+          "width": 342,
+          "height": 132,
+          "links": [
+            {
+              "name": "Utility link",
+              "componentId": "6bf32eef-e7db-8057-8008-bb2c247b9a4d",
+              "component": "Utility link",
+              "x": 0,
+              "y": 104,
+              "width": 342,
+              "height": 24
+            }
+          ],
+          "text": [
+            {
+              "name": "Project note",
+              "text": "OPENSP / INDEPENDENT, COMMUNITY-MINDED SOFTWARE",
+              "x": 0,
+              "y": 24,
+              "width": 342,
+              "height": 48,
+              "fontSize": 11,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 26,
+                "width": 322.484375,
+                "height": 12
+              }
+            },
+            {
+              "name": "Preview note",
+              "text": "GUIDE / SDK",
+              "x": 0,
+              "y": 76,
+              "width": 342,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 253.3125,
+                "y": 78,
+                "width": 88.6875,
+                "height": 15
+              }
+            },
+            {
+              "name": "Utility label",
+              "text": "Firmware emulator",
+              "x": 0,
+              "y": 104,
+              "width": 160,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 106,
+                "width": 132.625,
+                "height": 15
+              }
+            }
+          ]
+        },
+        {
+          "id": "86caedfe-ea67-80b3-8008-b70006eb1671",
+          "name": "Footer",
+          "width": 342,
+          "height": 132,
+          "links": [
+            {
+              "name": "Utility link",
+              "componentId": "6bf32eef-e7db-8057-8008-bb2c247b9a4d",
+              "component": "Utility link",
+              "x": 0,
+              "y": 104,
+              "width": 342.0000000000009,
+              "height": 24
+            }
+          ],
+          "text": [
+            {
+              "name": "Project note",
+              "text": "OPENSP / INDEPENDENT, COMMUNITY-MINDED SOFTWARE",
+              "x": 0,
+              "y": 24,
+              "width": 342,
+              "height": 48,
+              "fontSize": 11,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 26,
+                "width": 322.484375,
+                "height": 12
+              }
+            },
+            {
+              "name": "Preview note",
+              "text": "GUIDE / SDK",
+              "x": 0,
+              "y": 76,
+              "width": 342,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 78,
+                "width": 88.6875,
+                "height": 15
+              }
+            },
+            {
+              "name": "Utility label",
+              "text": "Firmware emulator",
+              "x": 0,
+              "y": 104,
+              "width": 160,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 106,
+                "width": 132.625,
+                "height": 15
+              }
+            }
+          ]
+        },
+        {
+          "id": "86caedfe-ea67-80b3-8008-b70083b68e3a",
+          "name": "Footer",
+          "width": 1312,
+          "height": 72,
+          "links": [
+            {
+              "name": "Utility link",
+              "componentId": "6bf32eef-e7db-8057-8008-bb2c247b9a4d",
+              "component": "Utility link",
+              "x": 1152,
+              "y": 24,
+              "width": 160,
+              "height": 24
+            }
+          ],
+          "text": [
+            {
+              "name": "Project note",
+              "text": "OPENSP / INDEPENDENT, COMMUNITY-MINDED SOFTWARE",
+              "x": 0,
+              "y": 24,
+              "width": 500,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 26,
+                "width": 378.890625,
+                "height": 15
+              }
+            },
+            {
+              "name": "Preview note",
+              "text": "GUIDE / RESEARCH",
+              "x": 520,
+              "y": 24,
+              "width": 607.9999999999999,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 1183.015625,
+                "y": 26,
+                "width": 128.984375,
+                "height": 15
+              }
+            },
+            {
+              "name": "Utility label",
+              "text": "Firmware emulator",
+              "x": 1152,
+              "y": 24,
+              "width": 160,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 1152,
+                "y": 26,
+                "width": 132.625,
+                "height": 15
+              }
+            }
+          ]
+        },
+        {
+          "id": "86caedfe-ea67-80b3-8008-b7008b445031",
+          "name": "Footer",
+          "width": 1312,
+          "height": 72,
+          "links": [
+            {
+              "name": "Utility link",
+              "componentId": "6bf32eef-e7db-8057-8008-bb2c247b9a4d",
+              "component": "Utility link",
+              "x": 1152,
+              "y": 24,
+              "width": 160,
+              "height": 24
+            }
+          ],
+          "text": [
+            {
+              "name": "Project note",
+              "text": "OPENSP / INDEPENDENT, COMMUNITY-MINDED SOFTWARE",
+              "x": 0,
+              "y": 24,
+              "width": 500,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 26,
+                "width": 378.890625,
+                "height": 15
+              }
+            },
+            {
+              "name": "Preview note",
+              "text": "GUIDE / RESEARCH",
+              "x": 520,
+              "y": 24,
+              "width": 607.9999999999999,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 1183.015625,
+                "y": 26,
+                "width": 128.984375,
+                "height": 15
+              }
+            },
+            {
+              "name": "Utility label",
+              "text": "Firmware emulator",
+              "x": 1152,
+              "y": 24,
+              "width": 160,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 1152,
+                "y": 26,
+                "width": 132.625,
+                "height": 15
+              }
+            }
+          ]
+        },
+        {
+          "id": "86caedfe-ea67-80b3-8008-b7012c23e043",
+          "name": "Footer",
+          "width": 342,
+          "height": 132,
+          "links": [
+            {
+              "name": "Utility link",
+              "componentId": "6bf32eef-e7db-8057-8008-bb2c247b9a4d",
+              "component": "Utility link",
+              "x": 0,
+              "y": 104,
+              "width": 342,
+              "height": 24
+            }
+          ],
+          "text": [
+            {
+              "name": "Project note",
+              "text": "OPENSP / INDEPENDENT, COMMUNITY-MINDED SOFTWARE",
+              "x": 0,
+              "y": 24,
+              "width": 342,
+              "height": 48,
+              "fontSize": 11,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 26,
+                "width": 322.484375,
+                "height": 12
+              }
+            },
+            {
+              "name": "Preview note",
+              "text": "GUIDE / RESEARCH",
+              "x": 0,
+              "y": 76,
+              "width": 342,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 213.015625,
+                "y": 78,
+                "width": 128.984375,
+                "height": 15
+              }
+            },
+            {
+              "name": "Utility label",
+              "text": "Firmware emulator",
+              "x": 0,
+              "y": 104,
+              "width": 160,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 106,
+                "width": 132.625,
+                "height": 15
+              }
+            }
+          ]
+        },
+        {
+          "id": "86caedfe-ea67-80b3-8008-b70136cfba74",
+          "name": "Footer",
+          "width": 342,
+          "height": 132,
+          "links": [
+            {
+              "name": "Utility link",
+              "componentId": "6bf32eef-e7db-8057-8008-bb2c247b9a4d",
+              "component": "Utility link",
+              "x": 0,
+              "y": 104,
+              "width": 342.0000000000009,
+              "height": 24
+            }
+          ],
+          "text": [
+            {
+              "name": "Project note",
+              "text": "OPENSP / INDEPENDENT, COMMUNITY-MINDED SOFTWARE",
+              "x": 0,
+              "y": 24,
+              "width": 342,
+              "height": 48,
+              "fontSize": 11,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 26,
+                "width": 322.484375,
+                "height": 12
+              }
+            },
+            {
+              "name": "Preview note",
+              "text": "GUIDE / RESEARCH",
+              "x": 0,
+              "y": 76,
+              "width": 342,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 78,
+                "width": 128.984375,
+                "height": 15
+              }
+            },
+            {
+              "name": "Utility label",
+              "text": "Firmware emulator",
+              "x": 0,
+              "y": 104,
+              "width": 160,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 106,
+                "width": 132.625,
+                "height": 15
+              }
+            }
+          ]
+        },
+        {
+          "id": "86caedfe-ea67-80b3-8008-b701cbc4d2b2",
+          "name": "Footer",
+          "width": 1312,
+          "height": 72,
+          "links": [
+            {
+              "name": "Utility link",
+              "componentId": "6bf32eef-e7db-8057-8008-bb2c247b9a4d",
+              "component": "Utility link",
+              "x": 1152,
+              "y": 24,
+              "width": 160,
+              "height": 24
+            }
+          ],
+          "text": [
+            {
+              "name": "Project note",
+              "text": "OPENSP / INDEPENDENT, COMMUNITY-MINDED SOFTWARE",
+              "x": 0,
+              "y": 24,
+              "width": 500,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 26,
+                "width": 378.890625,
+                "height": 15
+              }
+            },
+            {
+              "name": "Preview note",
+              "text": "GUIDE / RESEARCH",
+              "x": 520,
+              "y": 24,
+              "width": 607.9999999999999,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 1183.015625,
+                "y": 26,
+                "width": 128.984375,
+                "height": 15
+              }
+            },
+            {
+              "name": "Utility label",
+              "text": "Firmware emulator",
+              "x": 1152,
+              "y": 24,
+              "width": 160,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 1152,
+                "y": 26,
+                "width": 132.625,
+                "height": 15
+              }
+            }
+          ]
+        },
+        {
+          "id": "86caedfe-ea67-80b3-8008-b701d4a86e2a",
+          "name": "Footer",
+          "width": 1312,
+          "height": 72,
+          "links": [
+            {
+              "name": "Utility link",
+              "componentId": "6bf32eef-e7db-8057-8008-bb2c247b9a4d",
+              "component": "Utility link",
+              "x": 1152,
+              "y": 24,
+              "width": 160,
+              "height": 24
+            }
+          ],
+          "text": [
+            {
+              "name": "Project note",
+              "text": "OPENSP / INDEPENDENT, COMMUNITY-MINDED SOFTWARE",
+              "x": 0,
+              "y": 24,
+              "width": 500,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 26,
+                "width": 378.890625,
+                "height": 15
+              }
+            },
+            {
+              "name": "Preview note",
+              "text": "GUIDE / RESEARCH",
+              "x": 520,
+              "y": 24,
+              "width": 607.9999999999999,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 1183.015625,
+                "y": 26,
+                "width": 128.984375,
+                "height": 15
+              }
+            },
+            {
+              "name": "Utility label",
+              "text": "Firmware emulator",
+              "x": 1152,
+              "y": 24,
+              "width": 160,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 1152,
+                "y": 26,
+                "width": 132.625,
+                "height": 15
+              }
+            }
+          ]
+        },
+        {
+          "id": "86caedfe-ea67-80b3-8008-b702beb311d5",
+          "name": "Footer",
+          "width": 342,
+          "height": 132,
+          "links": [
+            {
+              "name": "Utility link",
+              "componentId": "6bf32eef-e7db-8057-8008-bb2c247b9a4d",
+              "component": "Utility link",
+              "x": 0,
+              "y": 104,
+              "width": 342,
+              "height": 24
+            }
+          ],
+          "text": [
+            {
+              "name": "Project note",
+              "text": "OPENSP / INDEPENDENT, COMMUNITY-MINDED SOFTWARE",
+              "x": 0,
+              "y": 24,
+              "width": 342,
+              "height": 48,
+              "fontSize": 11,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 26,
+                "width": 322.484375,
+                "height": 12
+              }
+            },
+            {
+              "name": "Preview note",
+              "text": "GUIDE / RESEARCH",
+              "x": 0,
+              "y": 76,
+              "width": 342,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 213.015625,
+                "y": 78,
+                "width": 128.984375,
+                "height": 15
+              }
+            },
+            {
+              "name": "Utility label",
+              "text": "Firmware emulator",
+              "x": 0,
+              "y": 104,
+              "width": 160,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 106,
+                "width": 132.625,
+                "height": 15
+              }
+            }
+          ]
+        },
+        {
+          "id": "86caedfe-ea67-80b3-8008-b702c84c69b3",
+          "name": "Footer",
+          "width": 342,
+          "height": 132,
+          "links": [
+            {
+              "name": "Utility link",
+              "componentId": "6bf32eef-e7db-8057-8008-bb2c247b9a4d",
+              "component": "Utility link",
+              "x": 0,
+              "y": 104,
+              "width": 342.0000000000009,
+              "height": 24
+            }
+          ],
+          "text": [
+            {
+              "name": "Project note",
+              "text": "OPENSP / INDEPENDENT, COMMUNITY-MINDED SOFTWARE",
+              "x": 0,
+              "y": 24,
+              "width": 342,
+              "height": 48,
+              "fontSize": 11,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 26,
+                "width": 322.484375,
+                "height": 12
+              }
+            },
+            {
+              "name": "Preview note",
+              "text": "GUIDE / RESEARCH",
+              "x": 0,
+              "y": 76,
+              "width": 342,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 78,
+                "width": 128.984375,
+                "height": 15
+              }
+            },
+            {
+              "name": "Utility label",
+              "text": "Firmware emulator",
+              "x": 0,
+              "y": 104,
+              "width": 160,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 106,
+                "width": 132.625,
+                "height": 15
+              }
+            }
+          ]
+        },
+        {
+          "id": "86caedfe-ea67-80b3-8008-b7038f8e5789",
+          "name": "Footer",
+          "width": 1312,
+          "height": 72,
+          "links": [
+            {
+              "name": "Utility link",
+              "componentId": "6bf32eef-e7db-8057-8008-bb2c247b9a4d",
+              "component": "Utility link",
+              "x": 1152,
+              "y": 24,
+              "width": 160,
+              "height": 24
+            }
+          ],
+          "text": [
+            {
+              "name": "Project note",
+              "text": "OPENSP / INDEPENDENT, COMMUNITY-MINDED SOFTWARE",
+              "x": 0,
+              "y": 24,
+              "width": 500,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 26,
+                "width": 378.890625,
+                "height": 15
+              }
+            },
+            {
+              "name": "Preview note",
+              "text": "GUIDE / RESEARCH",
+              "x": 520,
+              "y": 24,
+              "width": 607.9999999999999,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 1183.015625,
+                "y": 26,
+                "width": 128.984375,
+                "height": 15
+              }
+            },
+            {
+              "name": "Utility label",
+              "text": "Firmware emulator",
+              "x": 1152,
+              "y": 24,
+              "width": 160,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 1152,
+                "y": 26,
+                "width": 132.625,
+                "height": 15
+              }
+            }
+          ]
+        },
+        {
+          "id": "86caedfe-ea67-80b3-8008-b7039c89459d",
+          "name": "Footer",
+          "width": 1312,
+          "height": 72,
+          "links": [
+            {
+              "name": "Utility link",
+              "componentId": "6bf32eef-e7db-8057-8008-bb2c247b9a4d",
+              "component": "Utility link",
+              "x": 1152,
+              "y": 24,
+              "width": 160,
+              "height": 24
+            }
+          ],
+          "text": [
+            {
+              "name": "Project note",
+              "text": "OPENSP / INDEPENDENT, COMMUNITY-MINDED SOFTWARE",
+              "x": 0,
+              "y": 24,
+              "width": 500,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 26,
+                "width": 378.890625,
+                "height": 15
+              }
+            },
+            {
+              "name": "Preview note",
+              "text": "GUIDE / RESEARCH",
+              "x": 520,
+              "y": 24,
+              "width": 607.9999999999999,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 1183.015625,
+                "y": 26,
+                "width": 128.984375,
+                "height": 15
+              }
+            },
+            {
+              "name": "Utility label",
+              "text": "Firmware emulator",
+              "x": 1152,
+              "y": 24,
+              "width": 160,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 1152,
+                "y": 26,
+                "width": 132.625,
+                "height": 15
+              }
+            }
+          ]
+        },
+        {
+          "id": "86caedfe-ea67-80b3-8008-b70474a865ff",
+          "name": "Footer",
+          "width": 342,
+          "height": 132,
+          "links": [
+            {
+              "name": "Utility link",
+              "componentId": "6bf32eef-e7db-8057-8008-bb2c247b9a4d",
+              "component": "Utility link",
+              "x": 0,
+              "y": 104,
+              "width": 342,
+              "height": 24
+            }
+          ],
+          "text": [
+            {
+              "name": "Project note",
+              "text": "OPENSP / INDEPENDENT, COMMUNITY-MINDED SOFTWARE",
+              "x": 0,
+              "y": 24,
+              "width": 342,
+              "height": 48,
+              "fontSize": 11,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 26,
+                "width": 322.484375,
+                "height": 12
+              }
+            },
+            {
+              "name": "Preview note",
+              "text": "GUIDE / RESEARCH",
+              "x": 0,
+              "y": 76,
+              "width": 342,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 213.015625,
+                "y": 78,
+                "width": 128.984375,
+                "height": 15
+              }
+            },
+            {
+              "name": "Utility label",
+              "text": "Firmware emulator",
+              "x": 0,
+              "y": 104,
+              "width": 160,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 106,
+                "width": 132.625,
+                "height": 15
+              }
+            }
+          ]
+        },
+        {
+          "id": "86caedfe-ea67-80b3-8008-b704874bd6be",
+          "name": "Footer",
+          "width": 342,
+          "height": 132,
+          "links": [
+            {
+              "name": "Utility link",
+              "componentId": "6bf32eef-e7db-8057-8008-bb2c247b9a4d",
+              "component": "Utility link",
+              "x": 0,
+              "y": 104,
+              "width": 342.0000000000009,
+              "height": 24
+            }
+          ],
+          "text": [
+            {
+              "name": "Project note",
+              "text": "OPENSP / INDEPENDENT, COMMUNITY-MINDED SOFTWARE",
+              "x": 0,
+              "y": 24,
+              "width": 342,
+              "height": 48,
+              "fontSize": 11,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 26,
+                "width": 322.484375,
+                "height": 12
+              }
+            },
+            {
+              "name": "Preview note",
+              "text": "GUIDE / RESEARCH",
+              "x": 0,
+              "y": 76,
+              "width": 342,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 78,
+                "width": 128.984375,
+                "height": 15
+              }
+            },
+            {
+              "name": "Utility label",
+              "text": "Firmware emulator",
+              "x": 0,
+              "y": 104,
+              "width": 160,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 106,
+                "width": 132.625,
+                "height": 15
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page": "Guide index",
+      "footers": [
+        {
+          "id": "75bd9fed-c454-80e0-8008-b70803e49d67",
+          "name": "Footer",
+          "width": 1312,
+          "height": 72,
+          "links": [
+            {
+              "name": "Utility link",
+              "componentId": "6bf32eef-e7db-8057-8008-bb2c247b9a4d",
+              "component": "Utility link",
+              "x": 1152,
+              "y": 24,
+              "width": 160,
+              "height": 24
+            }
+          ],
+          "text": [
+            {
+              "name": "Project note",
+              "text": "OPENSP / INDEPENDENT, COMMUNITY-MINDED SOFTWARE",
+              "x": 0,
+              "y": 24,
+              "width": 740,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 26,
+                "width": 378.890625,
+                "height": 15
+              }
+            },
+            {
+              "name": "Preview note",
+              "text": "GUIDES",
+              "x": 952,
+              "y": 24,
+              "width": 360,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 1263.625,
+                "y": 26,
+                "width": 48.375,
+                "height": 15
+              }
+            },
+            {
+              "name": "Utility label",
+              "text": "Firmware emulator",
+              "x": 1152,
+              "y": 24,
+              "width": 160,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 1152,
+                "y": 26,
+                "width": 132.625,
+                "height": 15
+              }
+            }
+          ]
+        },
+        {
+          "id": "75bd9fed-c454-80e0-8008-b708067dd4f6",
+          "name": "Footer",
+          "width": 1312,
+          "height": 72,
+          "links": [
+            {
+              "name": "Utility link",
+              "componentId": "6bf32eef-e7db-8057-8008-bb2c247b9a4d",
+              "component": "Utility link",
+              "x": 1152,
+              "y": 24,
+              "width": 160,
+              "height": 24
+            }
+          ],
+          "text": [
+            {
+              "name": "Project note",
+              "text": "OPENSP / INDEPENDENT, COMMUNITY-MINDED SOFTWARE",
+              "x": 0,
+              "y": 24,
+              "width": 740,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 26,
+                "width": 378.890625,
+                "height": 15
+              }
+            },
+            {
+              "name": "Preview note",
+              "text": "GUIDES",
+              "x": 952,
+              "y": 24,
+              "width": 360,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 1263.625,
+                "y": 26,
+                "width": 48.375,
+                "height": 15
+              }
+            },
+            {
+              "name": "Utility label",
+              "text": "Firmware emulator",
+              "x": 1152,
+              "y": 24,
+              "width": 160,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 1152,
+                "y": 26,
+                "width": 132.625,
+                "height": 15
+              }
+            }
+          ]
+        },
+        {
+          "id": "75bd9fed-c454-80e0-8008-b708153a7b6a",
+          "name": "Footer",
+          "width": 342,
+          "height": 132,
+          "links": [
+            {
+              "name": "Utility link",
+              "componentId": "6bf32eef-e7db-8057-8008-bb2c247b9a4d",
+              "component": "Utility link",
+              "x": 0,
+              "y": 104,
+              "width": 342,
+              "height": 24
+            }
+          ],
+          "text": [
+            {
+              "name": "Project note",
+              "text": "OPENSP / INDEPENDENT, COMMUNITY-MINDED SOFTWARE",
+              "x": 0,
+              "y": 24,
+              "width": 342,
+              "height": 48,
+              "fontSize": 11,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 26,
+                "width": 322.484375,
+                "height": 12
+              }
+            },
+            {
+              "name": "Preview note",
+              "text": "GUIDES",
+              "x": 0,
+              "y": 76,
+              "width": 342,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 293.625,
+                "y": 78,
+                "width": 48.375,
+                "height": 15
+              }
+            },
+            {
+              "name": "Utility label",
+              "text": "Firmware emulator",
+              "x": 0,
+              "y": 104,
+              "width": 160,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 106,
+                "width": 132.625,
+                "height": 15
+              }
+            }
+          ]
+        },
+        {
+          "id": "75bd9fed-c454-80e0-8008-b70818a60163",
+          "name": "Footer",
+          "width": 342,
+          "height": 132,
+          "links": [
+            {
+              "name": "Utility link",
+              "componentId": "6bf32eef-e7db-8057-8008-bb2c247b9a4d",
+              "component": "Utility link",
+              "x": 0,
+              "y": 104,
+              "width": 342.0000000000009,
+              "height": 24
+            }
+          ],
+          "text": [
+            {
+              "name": "Project note",
+              "text": "OPENSP / INDEPENDENT, COMMUNITY-MINDED SOFTWARE",
+              "x": 0,
+              "y": 24,
+              "width": 342,
+              "height": 48,
+              "fontSize": 11,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 26,
+                "width": 322.484375,
+                "height": 12
+              }
+            },
+            {
+              "name": "Preview note",
+              "text": "GUIDES",
+              "x": 0,
+              "y": 76,
+              "width": 342,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 78,
+                "width": 48.375,
+                "height": 15
+              }
+            },
+            {
+              "name": "Utility label",
+              "text": "Firmware emulator",
+              "x": 0,
+              "y": 104,
+              "width": 160,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 106,
+                "width": 132.625,
+                "height": 15
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page": "Emulator",
+      "footers": [
+        {
+          "id": "6bf32eef-e7db-8057-8008-bb2c54e8e401",
+          "name": "Footer",
+          "width": 1312,
+          "height": 72,
+          "links": [
+            {
+              "name": "Utility link",
+              "componentId": "6bf32eef-e7db-8057-8008-bb2c247b9a4d",
+              "component": "Utility link",
+              "x": 1152,
+              "y": 24,
+              "width": 160,
+              "height": 24
+            }
+          ],
+          "text": [
+            {
+              "name": "Project note",
+              "text": "OPENSP / INDEPENDENT, COMMUNITY-MINDED SOFTWARE",
+              "x": 0,
+              "y": 24,
+              "width": 500,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 26,
+                "width": 378.890625,
+                "height": 15
+              }
+            },
+            {
+              "name": "Preview note",
+              "text": "Firmware emulator / research build",
+              "x": 520,
+              "y": 24,
+              "width": 607.9999999999999,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 853.9062500000001,
+                "y": 26,
+                "width": 274.0937499999999,
+                "height": 15
+              }
+            },
+            {
+              "name": "Utility label",
+              "text": "Firmware emulator",
+              "x": 1152,
+              "y": 24,
+              "width": 160,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 1152,
+                "y": 26,
+                "width": 132.625,
+                "height": 15
+              }
+            }
+          ]
+        },
+        {
+          "id": "6bf32eef-e7db-8057-8008-bb2c57f5a385",
+          "name": "Footer",
+          "width": 1312,
+          "height": 72,
+          "links": [
+            {
+              "name": "Utility link",
+              "componentId": "6bf32eef-e7db-8057-8008-bb2c247b9a4d",
+              "component": "Utility link",
+              "x": 1152,
+              "y": 24,
+              "width": 160,
+              "height": 24
+            }
+          ],
+          "text": [
+            {
+              "name": "Project note",
+              "text": "OPENSP / INDEPENDENT, COMMUNITY-MINDED SOFTWARE",
+              "x": 0,
+              "y": 24,
+              "width": 500,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 26,
+                "width": 378.890625,
+                "height": 15
+              }
+            },
+            {
+              "name": "Preview note",
+              "text": "Firmware emulator / research build",
+              "x": 520,
+              "y": 24,
+              "width": 608,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 853.90625,
+                "y": 26,
+                "width": 274.09375,
+                "height": 15
+              }
+            },
+            {
+              "name": "Utility label",
+              "text": "Firmware emulator",
+              "x": 1152,
+              "y": 24,
+              "width": 160,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 1152,
+                "y": 26,
+                "width": 132.625,
+                "height": 15
+              }
+            }
+          ]
+        },
+        {
+          "id": "6bf32eef-e7db-8057-8008-bb2c6b2f9c73",
+          "name": "Footer",
+          "width": 342,
+          "height": 144.00000000000045,
+          "links": [
+            {
+              "name": "Utility link",
+              "componentId": "6bf32eef-e7db-8057-8008-bb2c247b9a4d",
+              "component": "Utility link",
+              "x": 0,
+              "y": 116,
+              "width": 342,
+              "height": 24
+            }
+          ],
+          "text": [
+            {
+              "name": "Project note",
+              "text": "OPENSP / INDEPENDENT, COMMUNITY-MINDED SOFTWARE",
+              "x": 0,
+              "y": 24,
+              "width": 342,
+              "height": 48,
+              "fontSize": 11,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 26,
+                "width": 322.484375,
+                "height": 12
+              }
+            },
+            {
+              "name": "Preview note",
+              "text": "Firmware emulator / research build",
+              "x": 0,
+              "y": 88,
+              "width": 342,
+              "height": 40,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 90,
+                "width": 274.09375,
+                "height": 15
+              }
+            },
+            {
+              "name": "Utility label",
+              "text": "Firmware emulator",
+              "x": 0,
+              "y": 116,
+              "width": 160,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 118,
+                "width": 132.625,
+                "height": 15
+              }
+            }
+          ]
+        },
+        {
+          "id": "6bf32eef-e7db-8057-8008-bb2c6e4e1297",
+          "name": "Footer",
+          "width": 342,
+          "height": 144.00000000000045,
+          "links": [
+            {
+              "name": "Utility link",
+              "componentId": "6bf32eef-e7db-8057-8008-bb2c247b9a4d",
+              "component": "Utility link",
+              "x": 0,
+              "y": 116,
+              "width": 342.0000000000009,
+              "height": 24
+            }
+          ],
+          "text": [
+            {
+              "name": "Project note",
+              "text": "OPENSP / INDEPENDENT, COMMUNITY-MINDED SOFTWARE",
+              "x": 0,
+              "y": 24,
+              "width": 342,
+              "height": 48,
+              "fontSize": 11,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 26,
+                "width": 322.484375,
+                "height": 12
+              }
+            },
+            {
+              "name": "Preview note",
+              "text": "Firmware emulator / research build",
+              "x": 0,
+              "y": 88,
+              "width": 342,
+              "height": 40,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 90,
+                "width": 274.09375,
+                "height": 15
+              }
+            },
+            {
+              "name": "Utility label",
+              "text": "Firmware emulator",
+              "x": 0,
+              "y": 116,
+              "width": 160,
+              "height": 24,
+              "fontSize": 13,
+              "colors": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 0,
+                "y": 118,
+                "width": 132.625,
+                "height": 15
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

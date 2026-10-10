@@ -1,0 +1,35 @@
+---
+import Base from '../../../layouts/Base.astro';
+import SiteHeader from '../../../components/SiteHeader.astro';
+import SiteFooter from '../../../components/SiteFooter.astro';
+import '../../../styles/features.css';
+import '../../../styles/feature-local-build.css';
+---
+<Base title="Build Full15 source features · OpenSP" description="Compile the selected openSynth Full15 Synth shortcut source module locally." noindex>
+ <SiteHeader/>
+ <main id="main" class="feature-page local-feature-page" data-source-preview-build>
+  <div class="feature-introduction"><h1>Build your Full15 source selection</h1><p>Compile Synth with its chosen shortcut and optional global recorder using your own v5.52 input and ARM tools. The native chooser remains available when no Synth chord is selected.</p></div>
+  <p data-source-no-script>Enable JavaScript to connect the local source helper. Firmware installation remains disabled.</p>
+  <p data-source-error role="alert" hidden></p>
+  <section class="feature-receipt" data-component="Feature local selection" aria-labelledby="source-selection-title">
+   <h2 id="source-selection-title">Your source selection</h2><p>The Full15 Synth shortcut source catalog is separate from historical P6S selections.</p>
+   <div class="feature-file-actions"><label class="feature-import-button">Import source configuration<input type="file" accept=".json,application/json" data-source-selection disabled/></label><a href="/features/source-preview-full15/">Edit source features</a><a href="/features/">Historical P6S preview</a></div>
+   <p data-source-selection-status role="status">No source configuration loaded.</p><ul class="feature-selection-list" data-source-selection-list></ul>
+  </section>
+  <section class="feature-receipt" data-component="Feature local helper" aria-labelledby="source-helper-title">
+   <h2 id="source-helper-title">Local source helper</h2><p>Start the matching helper from your OpenSP checkout. The official firmware and toolchain stay on your computer. Use an existing output folder inside the SP source checkout, outside the website.</p>
+   <details><summary>Start the Full15 Synth shortcut helper</summary><pre><code data-source-helper-command>node --import ./tools/register-test-typescript.mjs tools/feature-picker-release-v1/full15-synth-shortcut-source-preview/local-server.mjs --sp-root ../sp404mk2 --python PYTHON.exe --tool-prefix ../sp404mk2/toolchains/bin/arm-none-eabi- --official OWNER_V552.zip --output-root ../sp404mk2/diagnostics/source-preview-runs --site-origin LOCAL_PREVIEW_ORIGIN</code></pre><p>This recipe requires the reviewed SP source checkout. It does not use the P6S standalone source archive.</p></details>
+   <label class="feature-target"><span>Source helper connection</span><input type="password" autocomplete="off" spellcheck="false" data-source-connection disabled/></label>
+   <div class="feature-file-actions"><button type="button" data-source-connect disabled>Connect source helper</button><button type="button" data-source-build disabled>Build selected source module</button><button type="button" data-source-latest disabled>Inspect matching source build</button></div>
+   <p data-source-helper-status role="status" aria-live="polite">Source helper disconnected.</p>
+  </section>
+  <section class="feature-receipt" data-component="Feature local receipt" aria-labelledby="source-result-title">
+   <h2 id="source-result-title">Linked source module</h2><p>The helper checks the requested selection, completed compile/link result and complete ELF bytes. This result does not authorize firmware installation.</p>
+   <p data-source-result-status role="status" aria-live="polite">No selected source build inspected.</p><dl data-source-proof hidden></dl>
+   <div class="feature-file-actions"><button type="button" data-source-save-receipt disabled>Save source receipt</button><button type="button" data-source-save-module disabled>Save non-installable module ELF</button><button type="button" disabled>Firmware installation unavailable</button></div>
+   <p>Both selected recipes compile all 129 units afresh. The Synth-only reference has 25 fresh and 104 inherited objects; the combined global reference has 129 fresh and no inherited objects. Native launch, global capture, firmware admission and hardware remain unqualified. The recorder starts from the PC.</p>
+  </section>
+ </main>
+ <SiteFooter page="Full15 Synth shortcut source builds. No device commands."/>
+</Base>
+<script>import '../../../scripts/feature-source-build-full15';</script>

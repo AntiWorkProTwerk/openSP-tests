@@ -1,0 +1,84 @@
+{
+  "schema": "opensynth-release-incident-copy-handoff",
+  "version": 1,
+  "status": "OFFLINE_SOURCE_COPY_CORRECTED_RELEASE_HELD",
+  "subject": {
+    "product": "openSynth",
+    "withdrawnTrial": "openSynth N1",
+    "installedIncidentApp1Sha256": "7881b5c18e4cdd83a405349109c05822b23bd6e38f1df37b264eafe558756f48"
+  },
+  "facts": {
+    "ownerReportedAllPadsMissing": true,
+    "physicalDestinationSelectionFailed": true,
+    "physicalStartOrSaveReported": false,
+    "causeKnown": false,
+    "storedSampleDeletionEstablished": false,
+    "recordingPersistenceAndPreservationQualified": false,
+    "deliveryHeld": true,
+    "ownerCanceledSdInspectionAndReplacementImports": true
+  },
+  "changedSources": [
+    {
+      "path": "src/content/releases/synth.json",
+      "sha256": "c14dc643b443d65f522567de297c6ef3924757491bb3bad0109b6cbf629e9854"
+    },
+    {
+      "path": "src/content/releases/synth-recording-figure.json",
+      "sha256": "b9827af81a38ca93c8c5cb6ee2da23a10158fe9aeefe791c69c5d5bc90c28e4b"
+    },
+    {
+      "path": "docs/synth-release.md",
+      "sha256": "fa37e1bd58fcf72e03a09d1b25fde1a50a2d27bb852079437359adb2c6f8c1e6"
+    },
+    {
+      "path": "docs/reports/opensynth-n1-copy-audit.md",
+      "sha256": "4e8783b500c5c58617cc8efcb4ce9987d5cfcb3614d091cc0dc226ba64a21d9e"
+    },
+    {
+      "path": ".impeccable/surfaces/src-pages-releases-synth.md",
+      "sha256": "11bd41c29f855e57bb5220bbd81dab36114c1ab77fae518d1bce369ef6ff9a97"
+    }
+  ],
+  "frozenDirectRecording": [
+    {
+      "path": "src/content/releases/synth-direct-recording-design.json",
+      "sha256": "2ec7d9d3b0881cbbb2edfcdbc9e38510654e3740d05f13555e1c8c6454a1b4a7"
+    },
+    {
+      "path": "design/penpot/synth-direct-recording-components.json",
+      "sha256": "a118f7ad105aa6b4ecec885db807857468ebad08b9d51f9669b72c7bdd74b8be"
+    },
+    {
+      "path": "design/penpot/synth-direct-recording-contract.json",
+      "sha256": "cccb0fdf90fe1e8b903284c96bdbeaa0009455641635af6cf0b1a6baf6da61c1"
+    }
+  ],
+  "nativeReleaseLayouts": {
+    "changed": false,
+    "copyRefreshRequiredBeforePublication": true,
+    "livePenpotSyncClaimed": false
+  },
+  "validation": {
+    "focusedSharedCopyAndFrozenPinChecks": "PASS",
+    "astroCheck": {
+      "files": 163,
+      "errors": 0,
+      "warnings": 0,
+      "hints": 0
+    },
+    "broadBrowserSuiteRerun": false,
+    "buildRun": false,
+    "deviceOperations": false,
+    "publication": false
+  },
+  "evidence": [
+    {
+      "path": "../sp404mk2/analysis/hardware/opensynth_n1_missing_pads_20261006/README.md",
+      "sha256": "7c2cd194c8b5d49d6ffc71465e9c811d036856b24b52e884ae0183dc8d1f8346"
+    },
+    {
+      "path": "../sp404mk2-synth/diagnostics/synth_p6/priority1_pad_recording_v1/incident_readonly_v1/README.md",
+      "sha256": "064a99cf29b42ef0e99c5bce407e11d7f69c0cfa604d8a1b273eaa0b4d6dcf36"
+    }
+  ]
+}

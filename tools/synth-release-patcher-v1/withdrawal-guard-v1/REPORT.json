@@ -1,0 +1,117 @@
+{
+  "schema": "opensp-n1-withdrawal-patcher-guard-review-v1",
+  "date": "2026-10-06",
+  "status": "PASS_WITHDRAWAL_GUARD_INCIDENT_UNRESOLVED",
+  "incident": "opensynth_n1_missing_pads_20261006",
+  "candidate_sha256": "7881b5c18e4cdd83a405349109c05822b23bd6e38f1df37b264eafe558756f48",
+  "tests": {
+    "passed": 28,
+    "failed": 0,
+    "skipped": 0,
+    "firmware_compiler_invoked": false,
+    "cpu_suite_invoked": false,
+    "browser_operated": false,
+    "device_operated": false,
+    "registry_edited": false,
+    "server_started": false,
+    "frozen_kit13_source_files_unchanged": 16,
+    "actual_current_cli_withdrawal_passed": true,
+    "actual_build_cli_refused_before_missing_input_read": true,
+    "sample_backup_claims_refused": true,
+    "root_bench_registry_confirmed_empty": true
+  },
+  "source_files": {
+    "tools/synth-release-patcher-v1/current.mjs": {
+      "path": "tools/synth-release-patcher-v1/current.mjs",
+      "bytes": 249,
+      "sha256": "6b9fe88ec32925542db75cb6cc7ed08ca9d248f6b77fdf8dad226863c6008637"
+    },
+    "tools/synth-release-patcher-v1/withdrawal-guard-v1/guard.mjs": {
+      "path": "tools/synth-release-patcher-v1/withdrawal-guard-v1/guard.mjs",
+      "bytes": 4208,
+      "sha256": "5761c74cd3ffd2ae2a4703eab1d6a97466cf9987ea84485859e2ed5f6873cc5e"
+    },
+    "tools/synth-release-patcher-v1/withdrawal-guard-v1/run.mjs": {
+      "path": "tools/synth-release-patcher-v1/withdrawal-guard-v1/run.mjs",
+      "bytes": 1974,
+      "sha256": "f3d68dbc6b7801be48c6cda303a72ac01b7732b5faa69fd2a4ec69b265e60571"
+    },
+    "tools/synth-release-patcher-v1/withdrawal-guard-v1/test-guard.mjs": {
+      "path": "tools/synth-release-patcher-v1/withdrawal-guard-v1/test-guard.mjs",
+      "bytes": 5959,
+      "sha256": "4314eaaa5e0edccdf096e771eb27c5adf1360cde3bb2901b26ccaca0df386c94"
+    },
+    "tools/synth-release-patcher-v1/withdrawal-guard-v1/README.md": {
+      "path": "tools/synth-release-patcher-v1/withdrawal-guard-v1/README.md",
+      "bytes": 3473,
+      "sha256": "1f70b8962299367d7d2aba9226f964da5fe2cb8e454885946e5f944bf90323fc"
+    },
+    "tools/synth-release-patcher-v1/withdrawal-guard-v1/SOURCE_AUDIT.md": {
+      "path": "tools/synth-release-patcher-v1/withdrawal-guard-v1/SOURCE_AUDIT.md",
+      "bytes": 3307,
+      "sha256": "855d54282dc6fbcf448a40f59a210119ebb381bd26527231b50519cb3a2f214b"
+    }
+  },
+  "audited_source_roles": {
+    "build_candidate.py": {
+      "path": "build/priority1-release-candidate-v1/source-review-kit-13/source-kit/build_candidate.py",
+      "bytes": 14270,
+      "sha256": "6d72c18f8bd64eb644be1bc60cf1fa748338885138f8803c965c9d6364313a78"
+    },
+    "inputs/module-plan.json": {
+      "path": "build/priority1-release-candidate-v1/source-review-kit-13/source-kit/inputs/module-plan.json",
+      "bytes": 341763,
+      "sha256": "a11eafed062a87c459281274438f6bf9ef1bab453e356281e801a962c501c59b"
+    },
+    "inputs/module-source/adapter/src/sp_synth_project_save_v552.c": {
+      "path": "build/priority1-release-candidate-v1/source-review-kit-13/source-kit/inputs/module-source/adapter/src/sp_synth_project_save_v552.c",
+      "bytes": 10592,
+      "sha256": "a4dbfcdff2d55aceb90b22b6eb35bd668c2534df908ad1f6eec02e80d46a2659"
+    },
+    "inputs/module-source/joined/generated/capture.c": {
+      "path": "build/priority1-release-candidate-v1/source-review-kit-13/source-kit/inputs/module-source/joined/generated/capture.c",
+      "bytes": 82433,
+      "sha256": "c1b0aa0bec29114a5468135c643ae0581350152839fa85e3d4465de2836f261d"
+    },
+    "inputs/bridge-source/flash.c": {
+      "path": "build/priority1-release-candidate-v1/source-review-kit-13/source-kit/inputs/bridge-source/flash.c",
+      "bytes": 10986,
+      "sha256": "89f970c81027815e879349759f5e0d41396c456dd61930123522c32228c37da3"
+    }
+  },
+  "withdrawal_receipt": {
+    "path": "build/synth-release-patcher-v1/withdrawal-guard-v1-inspection-01.json",
+    "bytes": 1812,
+    "sha256": "76c1698af06876348b1ba78bad478d7ca7764bbc99e77f753e443074db16dfca"
+  },
+  "browser_registry": {
+    "path": "tools/synth-usb-release-v1/root-seals-v1.ts",
+    "bytes": 634,
+    "sha256": "ca85db5362e557ed751491b07cb7c9ce98bb3c98480623b0685cc936d8db9f47"
+  },
+  "approved_candidate_authorities": 0,
+  "source_build_execution_allowed": false,
+  "recording_test_allowed": false,
+  "writer_authority_granted": false,
+  "software_eligible_for_owner_test": false,
+  "hardware_qualified": false,
+  "public_release_eligible": false,
+  "release_ready": false,
+  "delivery_enabled": false,
+  "upload_enabled": false,
+  "browser_enabled": false,
+  "firmware_restoration_is_sample_backup": false,
+  "firmware_restoration_is_project_backup": false,
+  "missing_pad_recovery_established": false,
+  "physical_sample_deletion_established": false,
+  "incident_cause_established": false,
+  "delivery": "DO_NOT_DELIVER",
+  "audit_findings": [
+    "Selected project saver constructs PADCONF path and serializes 52,000 bytes through native 800CF218 after setting PARAM+28 dirty.",
+    "Adapter enforces current project/task/path/FILE/length checks but has no populated-project snapshot, backup copy or content rollback.",
+    "Unselected project adapter calls and capture FREE project-save calls delegate to native operations; selected SAVE proof does not cover transitive idle/load persistence.",
+    "Host patcher artifacts and APP1 restoration include no owner project/sample backup.",
+    "The physical incident has no reported START/SAVE; the source write path is not an established cause."
+  ],
+  "corrected_candidate_gap": "Correct diagnosed load/save behavior, bind exact source/image to populated-project preservation evidence for 160 pad rows/sample bytes/metadata and other-project sentinels, cover native normal/failure/fallback paths, then obtain separate root/physical acceptance. No preservation authority exists now."
+}

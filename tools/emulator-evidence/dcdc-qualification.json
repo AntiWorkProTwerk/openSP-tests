@@ -1,0 +1,158 @@
+{
+  "schema": "opensp-dcdc-model-qualification-v1",
+  "createdUtc": "2026-10-03T05:15:25.933694+00:00",
+  "scope": {
+    "isolatedRegisterModel": true,
+    "guestFirmwareExecuted": false,
+    "boardIntegrationExercised": false,
+    "physicalDeviceTransportOpened": false,
+    "physicalTimingVerified": false,
+    "electricalOutputVerified": false
+  },
+  "modelReferenceBase": "OpenSP repository",
+  "primaryReferenceBase": "sp404mk2 repository",
+  "sources": {
+    "src/lib/emulator/dcdc.ts": {
+      "sha256": "5e025bd74a48d2550c24f634589fb53bc0456cc78e7e5a0b11438b46611adbae",
+      "bytes": 9513
+    },
+    "tests/emulator-dcdc.test.mjs": {
+      "sha256": "6595c4ce5e91f0c6dca3cd05b7ce6398e01ca96db4ce15a2fe604956cca6009e",
+      "bytes": 16796
+    },
+    "docs/emulator-dcdc.md": {
+      "sha256": "1fb5a74164bce3bf27e26abb366fc666821a1cd07a755c7515eea0f5c98146e8",
+      "bytes": 6110
+    }
+  },
+  "inputsStableDuringQualification": true,
+  "preservedInitialQualification": {
+    "path": "tools/emulator-evidence/dcdc-before-hot-path-20261003/qualification.json",
+    "sha256": "dbb9ee0f0df2cc6933af22bec1baa6ee9f7d1bf5747dfbe879ab347bbe2ab4ee",
+    "bytes": 5678,
+    "source": "tools/emulator-evidence/dcdc-before-hot-path-20261003/dcdc.ts"
+  },
+  "primarySources": {
+    "manual": {
+      "path": "analysis/flash_research/IMXRT1060RM_rev3.pdf",
+      "sha256": "a2e342e492eded2a1d626cf955de953ca28d8db8675b10937a5176fd6f2c9200",
+      "bytes": 29973751
+    },
+    "header": {
+      "path": "references/MIMXRT1062.h",
+      "sha256": "1ee70ed9eb7f3a75ed89943dd799314e8330538f54c6990ea7d9cae96fd263aa",
+      "bytes": 2797765
+    },
+    "driver": {
+      "path": "analysis/emulator/dcdc_sources_20261003/fsl_dcdc.c",
+      "sha256": "454f11c1d72b1ceab2b563d20e76fff7d23d335747eb52a91a4de4a2d52fa6ea",
+      "bytes": 32978
+    },
+    "driverHeader": {
+      "path": "analysis/emulator/dcdc_sources_20261003/fsl_dcdc.h",
+      "sha256": "b5d41c8df513868fe0fe97b9c3ff3ded6a66d3a522eff75f619aac8c93f6982a",
+      "bytes": 29074
+    },
+    "featureHeader": {
+      "path": "analysis/emulator/dcdc_sources_20261003/MIMXRT1062_features.h",
+      "sha256": "88eee5514afdd1b365e0ad3ad09bd760ec225e60ac103af7628e6d834f9278b0",
+      "bytes": 40755
+    }
+  },
+  "upstream": {
+    "repository": "https://github.com/nxp-mcuxpresso/legacy-mcux-sdk",
+    "commit": "6f3fd257cdcf978a4d26e7d6e9eed9240037422b",
+    "driverPath": "drivers/dcdc_1/fsl_dcdc.c",
+    "driverHeaderPath": "drivers/dcdc_1/fsl_dcdc.h",
+    "featureHeaderPath": "devices/MIMXRT1062/MIMXRT1062_features.h",
+    "license": "BSD-3-Clause",
+    "reviewedDriverLines": "200..225;404..414;718..801"
+  },
+  "sourceReview": {
+    "manualSections": "18.4.1;18.4.2;18.5.1.1..18.5.1.5",
+    "manualPrintedPages": "1202..1214",
+    "registerMap": "Four adjacent words at40080000,+4,+8,+C; no SET/CLR/TOG aliases",
+    "resetHex": {
+      "REG0": "14030111",
+      "REG1": "111BA29C",
+      "REG2": "00000002",
+      "REG3": "0000010E"
+    },
+    "reservedResetBitsHex": {
+      "REG0": "00000000",
+      "REG1": "001B801C",
+      "REG2": "00000002",
+      "REG3": "00000000"
+    },
+    "readOnlyStatus": "REG0.STS_DC_OK bit31",
+    "writableStatusLikeControl": "REG0.XTAL_24M_OK bit29 is explicitly written by NXP driver",
+    "maskChecks": {
+      "REG0": {
+        "definedFieldCount": 19,
+        "writableMask": "3C3F0FFF",
+        "matched": true
+      },
+      "REG1": {
+        "definedFieldCount": 6,
+        "writableMask": "1FA03380",
+        "matched": true
+      },
+      "REG2": {
+        "definedFieldCount": 6,
+        "writableMask": "18003FC0",
+        "matched": true
+      },
+      "REG3": {
+        "definedFieldCount": 4,
+        "writableMask": "4100071F",
+        "matched": true
+      }
+    },
+    "selectedVariant": {
+      "controlRegisters": false,
+      "outputCount": 1,
+      "differentialMode": false
+    },
+    "independentStaticReviewPassed": true
+  },
+  "command": "node --test --test-reporter=tap tests/emulator-dcdc.test.mjs",
+  "nodeVersion": "v24.20.0",
+  "summary": {
+    "tests": 29,
+    "passed": 29,
+    "failed": 0,
+    "skipped": 0,
+    "exitCode": 0
+  },
+  "typeCheck": {
+    "passed": true,
+    "command": "node node_modules/typescript/bin/tsc --ignoreConfig --noEmit --strict --target ES2022 --module ESNext --moduleResolution bundler src/lib/emulator/dcdc.ts"
+  },
+  "transcript": {
+    "path": "tools/emulator-evidence/dcdc-model-tests.tap",
+    "sha256": "0f5bb77652a893d4b1ce5c0f011d2577e1bdfca98ef29142ddaef6bcc66d228a",
+    "bytes": 6370
+  },
+  "modelPolicy": {
+    "settleTicks": 1,
+    "settlingFailure": false,
+    "converterEnabled": true,
+    "internalClockAvailable": true,
+    "externalClockAvailable": false,
+    "reset": "literal manual values and pending settling, with fixed fixtures retained",
+    "targetChange": "TRG or TARGET_LP change clears DC_OK and restarts synthetic delay",
+    "unchangedTarget": "keeps pending progress or completed DC_OK",
+    "selectedClockChange": "clears DC_OK and restarts delay; this is model policy",
+    "automaticSource": "requested available external fixture, otherwise powered available internal fixture; explicit model fallback",
+    "unsupportedLowPowerTarget": "codes5..7 stored/visible and conservatively hold DC_OK low; hardware response unspecified",
+    "reservedCurrentThreshold": "codes6..7 visible as unsupported without current-detector effects",
+    "zeroDelay": "requires explicit tick, including tick(0)",
+    "busAccess": "aligned1/2/4-byte lanes; unsigned reads; reserved/reset and read-only bits protected"
+  },
+  "limits": [
+    "No electrical voltage or timing",
+    "No analog loop/protection/current-alert/IRQ behavior",
+    "No CCGR, PSWITCH, PMIC_ON_REQ, fuse trim or oscillator detector coupling",
+    "No board integration or guest stock execution"
+  ]
+}

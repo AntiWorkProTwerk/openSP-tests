@@ -1,0 +1,110 @@
+.emulator-page{padding-block:48px 64px}
+.emulator-introduction{max-width:76ch;margin-bottom:48px}
+.emulator-introduction h1{font-size:48px;line-height:1.12;margin-bottom:24px}
+.emulator-introduction>p{font-size:20px;line-height:1.6;margin:0 0 16px}
+.emulator-introduction>.emulator-limit,.emulator-introduction>.emulator-local{font-size:16px;line-height:1.5;color:var(--muted)}
+.emulator-no-script{padding:16px;background:var(--soft);line-height:1.6}
+.emulator-toolbar{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:24px}
+.emulator-toolbar h2{font:22px/1.3 var(--font-reading);margin:0}
+.emulator-page button{color:var(--ink);background:var(--paper);border:1px solid var(--line);border-radius:0;padding:10px 16px;min-height:44px;font:16px/1.4 var(--font-reading);cursor:pointer}
+.emulator-page button:hover:enabled{border-color:var(--ink);background:var(--soft)}
+.emulator-page button:active:enabled{background:var(--ink);color:var(--paper)}
+.emulator-page button:disabled{cursor:default;color:var(--muted);opacity:.55}
+.emulator-page button.emulator-primary{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.emulator-page button.emulator-primary:hover:enabled{background:var(--paper);color:var(--ink)}
+.emulator-page button:focus-visible,.emulator-page input:focus-visible,.emulator-page textarea:focus-visible{outline:2px solid var(--ink);outline-offset:4px}
+.emulator-page input,.emulator-page select,.emulator-page textarea{color:var(--ink);background:var(--paper);border:1px solid var(--line);border-radius:0;min-height:44px;max-width:100%;padding:10px 12px}
+.emulator-page input:disabled,.emulator-page select:disabled,.emulator-page textarea:disabled{color:var(--muted)}
+.emulator-page input::placeholder,.emulator-page textarea::placeholder{color:var(--muted);opacity:1}
+.emulator-page label{display:flex;flex-direction:column;gap:8px;font-size:16px;line-height:1.4;min-width:0}
+.emulator-session{border-top:1px solid var(--line);padding:24px 0 32px}
+.emulator-session-heading{display:grid;grid-template-columns:minmax(120px,1fr) auto auto;align-items:center;gap:24px;margin-bottom:32px}
+.emulator-session-heading .emulator-name-label{max-width:320px}
+.emulator-name-label input{border-color:transparent;font-size:22px;width:100%;background:none}
+.emulator-name-label input:hover,.emulator-name-label input:focus-visible{border-color:var(--line)}
+.emulator-session-state{font:14px/1.5 var(--font-label);overflow-wrap:anywhere}
+.emulator-session-workspace{display:grid;grid-template-columns:minmax(240px,352px) minmax(0,1fr);column-gap:48px;align-items:start}
+.emulator-instrument .instrument{width:100%;max-width:352px}
+.emulator-oled{position:absolute;display:block;aspect-ratio:2;background:var(--color-oled-black);image-rendering:pixelated}
+.emulator-instrument figcaption{font-size:14px;line-height:1.5;color:var(--muted);max-width:40ch;margin:16px auto 0}
+.emulator-file-fields{display:grid;grid-template-columns:minmax(0,1fr);gap:16px}
+.emulator-file-fields input{width:100%;font-size:14px;padding:8px}
+.emulator-file-fields select{width:100%;font-size:16px}
+.emulator-file-fields input::file-selector-button{background:var(--soft);border:0;border-right:1px solid var(--line);color:var(--ink);min-height:32px;padding:4px 8px;margin-right:8px;cursor:pointer}
+.emulator-file-name{overflow-wrap:anywhere;font:13px/1.5 var(--font-label);margin:16px 0 8px;color:var(--muted)}
+.emulator-format-note{font-size:14px;line-height:1.5;color:var(--muted);margin:0 0 24px;max-width:66ch}
+.emulator-transport{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px}
+.emulator-session-error{background:var(--soft);padding:12px 16px;line-height:1.5;font-size:16px;overflow-wrap:anywhere;margin:0 0 24px}
+.emulator-diagnostics{margin:0;display:grid;grid-template-columns:1fr 1fr;gap:16px 24px;font-size:14px;line-height:1.5}
+.emulator-diagnostics dt{color:var(--muted);margin-bottom:4px}
+.emulator-diagnostics dd{margin:0;font-family:var(--font-label);font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
+.emulator-diagnostics .emulator-hash{grid-column:1/-1}
+.emulator-hash dd{font-size:13px;max-width:72ch}
+.emulator-model-details{margin-top:16px}
+.emulator-model-details summary{display:flex;justify-content:space-between;gap:16px;font-size:14px;min-height:44px;padding:4px 0}
+.emulator-model-details ul{font-size:14px;line-height:1.5;color:var(--muted);padding-left:20px;margin:8px 0 16px}
+.emulator-model-details li+li{margin-top:8px}
+.emulator-model-details pre{white-space:pre-wrap;overflow-wrap:anywhere;font:13px/1.5 var(--font-label);margin:0;background:var(--soft);padding:12px}
+.emulator-trace-actions{display:flex;align-items:center;gap:16px;margin-top:24px}
+.emulator-trace-actions span{font-size:14px;line-height:1.5;max-width:34ch;color:var(--muted)}
+.emulator-usb,.emulator-inputs{margin-top:32px;border-top:1px solid var(--line)}
+.emulator-sd{margin-top:32px;border-top:1px solid var(--line)}
+.emulator-sd summary{display:flex;justify-content:space-between;gap:16px;padding:16px 0;min-height:64px;font-size:18px}
+.emulator-sd>p{font-size:16px;line-height:1.5;max-width:74ch;margin:0 0 24px;color:var(--muted)}
+.emulator-sd-slots{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.emulator-sd-slot{min-width:0}
+.emulator-sd-slot input{width:100%;font-size:14px;padding:8px}
+.emulator-sd-slot input::file-selector-button{background:var(--soft);border:0;border-right:1px solid var(--line);color:var(--ink);min-height:32px;padding:4px 8px;margin-right:8px;cursor:pointer}
+.emulator-sd-selection{display:flex;align-items:start;justify-content:space-between;gap:16px;margin-top:12px}
+.emulator-sd-selection p{margin:0;overflow-wrap:anywhere;font:13px/1.5 var(--font-label);color:var(--muted)}
+.emulator-sd-selection button{flex-shrink:0}
+.emulator-sd-error{font-size:14px;line-height:1.5;background:var(--soft);padding:12px;margin:12px 0 0;overflow-wrap:anywhere}
+.emulator-sd>.emulator-sd-change{font-size:14px;margin:24px 0 0;max-width:88ch}
+@media(max-width:600px){.emulator-sd-slots{grid-template-columns:minmax(0,1fr);gap:24px}}
+.emulator-usb summary,.emulator-inputs summary{display:flex;justify-content:space-between;gap:16px;padding:16px 0;min-height:64px;font-size:18px}
+.emulator-usb>p,.emulator-inputs>p{font-size:16px;line-height:1.5;max-width:74ch;margin:0 0 24px;color:var(--muted)}
+.emulator-usb form{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:end}
+.emulator-usb h3{font:18px/1.4 var(--font-reading);margin:0 0 16px}
+.emulator-usb .emulator-update{display:block}
+.emulator-update-files{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.emulator-update-files input{width:100%;font-size:14px;padding:8px}
+.emulator-update-summary,.emulator-update-receipt{overflow-wrap:anywhere;font:14px/1.5 var(--font-label);color:var(--muted)}
+.emulator-update-summary{margin:16px 0}
+.emulator-update-actions{display:flex;flex-wrap:wrap;gap:8px}
+.emulator-update-status{margin-top:16px}
+.emulator-update-status>p{margin:0 0 16px;line-height:1.5}
+.emulator-update-status>.emulator-update-receipt{margin-bottom:8px}
+.emulator-update-status progress{width:100%;height:8px;accent-color:var(--ink);margin-bottom:16px}
+.emulator-update-status progress::-webkit-progress-bar{background:var(--soft)}
+.emulator-update-status progress::-webkit-progress-value{background:var(--ink)}
+.emulator-update-error{background:var(--soft);padding:12px 16px;overflow-wrap:anywhere}
+.emulator-usb>.emulator-update-note{font-size:14px;max-width:74ch;margin:0 0 24px}
+.emulator-usb-advanced{border-top:1px solid var(--line)}
+.emulator-usb-advanced summary{display:flex;justify-content:space-between;gap:16px;min-height:44px;padding:0;align-items:center;font-size:16px}
+.emulator-usb-advanced:not([open])>summary .disclosure-mark:after{display:block}
+.emulator-usb-advanced>p{font-size:14px;line-height:1.5;color:var(--muted);max-width:74ch}
+@media(max-width:600px){.emulator-update-files{grid-template-columns:1fr;gap:16px}.emulator-update-actions{flex-direction:column}.emulator-update-actions button{width:100%}}
+.emulator-usb textarea{font:14px/1.6 var(--font-label);resize:vertical;min-height:88px;width:100%}
+.emulator-usb-actions{display:flex;flex-direction:column;gap:8px}
+.emulator-usb-response{margin-top:24px;font-size:16px;line-height:1.4}
+.emulator-usb-response pre{white-space:pre-wrap;overflow-wrap:anywhere;font:14px/1.6 var(--font-label);margin:8px 0 0;padding:16px;background:var(--soft);min-height:54px}
+.emulator-session-limit{font-size:14px;line-height:1.5;color:var(--muted);margin:0}
+.emulator-session-limit:empty{display:none}
+.emulator-pad-inputs{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:8px;margin-bottom:24px}
+.emulator-pad-inputs button{touch-action:none;user-select:none}
+.emulator-pad-inputs button[aria-pressed=true]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.emulator-inputs [data-input-form]{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) auto;align-items:end;gap:24px}
+.emulator-inputs [data-input-control]{font-size:16px;width:100%}
+.emulator-inputs [data-input-level]{font:13px/1.5 var(--font-label)}
+.emulator-input-level{position:relative}
+.emulator-input-level output{position:absolute;right:0;top:0}
+.emulator-encoder-note{font-size:14px;line-height:1.5;color:var(--muted);margin:16px 0 0}
+.emulator-inputs [data-input-value]{width:100%;accent-color:var(--ink);padding:0;border:0;cursor:pointer}
+.emulator-input-footer{display:flex;align-items:center;justify-content:space-between;gap:24px;margin-top:16px}
+.emulator-input-footer p{font-size:14px;line-height:1.5;color:var(--muted);max-width:64ch;margin:0}
+.emulator-instrument .input-active [data-part="Pad face"] rect{fill:var(--ink)}
+.emulator-instrument .input-active [data-part="Pad number"] text{fill:var(--paper)}
+@media(min-width:1280px){.emulator-file-fields{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}}
+@media(max-width:1100px){.emulator-session-workspace{grid-template-columns:minmax(240px,300px) minmax(0,1fr);column-gap:32px}.emulator-session-heading{gap:16px}}
+@media(max-width:800px){.emulator-session-workspace{grid-template-columns:1fr;gap:32px}.emulator-instrument{max-width:352px;justify-self:center}.emulator-session-heading{grid-template-columns:minmax(0,1fr) auto}.emulator-session-state{grid-column:1;grid-row:2}.emulator-remove{grid-column:2;grid-row:1}.emulator-trace-actions span{max-width:none}}
+@media(max-width:600px){.emulator-page{padding-block:32px 40px}.emulator-introduction{margin-bottom:32px}.emulator-introduction h1{font-size:48px}.emulator-introduction>p{font-size:18px}.emulator-introduction>.emulator-limit,.emulator-introduction>.emulator-local{font-size:16px}.emulator-session-heading{gap:8px 12px;margin-bottom:24px}.emulator-name-label input{font-size:20px}.emulator-page button{font-size:14px;padding-inline:12px}.emulator-remove{max-width:100px}.emulator-instrument{width:100%}.emulator-usb form{grid-template-columns:1fr}.emulator-usb-actions{flex-direction:row;flex-wrap:wrap}.emulator-usb form button{justify-self:start}.emulator-diagnostics{gap:16px}.emulator-trace-actions{align-items:flex-start}.emulator-trace-actions span{font-size:13px}.emulator-pad-inputs{grid-template-columns:repeat(4,minmax(0,1fr))}.emulator-inputs [data-input-form]{grid-template-columns:minmax(0,1fr);gap:16px}.emulator-inputs form button{justify-self:start}.emulator-input-footer{align-items:flex-start;flex-direction:column;gap:16px}}

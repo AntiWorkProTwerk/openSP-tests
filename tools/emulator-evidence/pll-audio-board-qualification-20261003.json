@@ -1,0 +1,63 @@
+{
+  "scope": "Original AUDIO model routed through board; finite MMIO and ownership tests only",
+  "schema": 1,
+  "verification": {
+    "componentGroups": 35,
+    "strictBoardTypecheck": "passed",
+    "groups": 37,
+    "boardGroups": 2,
+    "failed": 0
+  },
+  "independentReadOnlyReview": "No material finding; retained source pins, 35 model tests and strict typing passed",
+  "guestFirmwareExecuted": false,
+  "physicalDeviceAccess": false,
+  "beforeIntegration": "board-before-audio-pll-20261003/manifest.json",
+  "files": {
+    "src/lib/emulator/board.ts": {
+      "sha256": "198e3cdd1d92674cc517ac5476a4cfc882db900e083265e24ac009e80ff8d73e",
+      "bytes": 38663
+    },
+    "src/lib/emulator/pll-audio.ts": {
+      "sha256": "ed60c0518ea61450e85ef1ac35a220a14a5f7a97e0179d683ad9897dd0cc578f",
+      "bytes": 10778
+    },
+    "tests/emulator-pll-audio.test.mjs": {
+      "sha256": "83c3587de46980b8e9721da69dc1b1d62f334dc3f19982abff1b020a757d529b",
+      "bytes": 26840
+    },
+    "tests/emulator-pll-audio-board.test.mjs": {
+      "sha256": "d89bd39e903a800f8dfb75d39c2567a2c319607656ab0458279435be46755574",
+      "bytes": 2103
+    },
+    "docs/emulator-board-contract.md": {
+      "sha256": "1aaf766d3f12f80eb0a3ccaa5a46fc6e67a5f66ca1e3762f64bd5c7bff49ba49",
+      "bytes": 14890
+    },
+    "docs/emulator-pll-audio.md": {
+      "sha256": "2bea5d0d0635730f5803f87511d422f6fca3fbfd022d15228f7d6d21b3cfae8c",
+      "bytes": 5124
+    },
+    "tools/test-emulator-stock.mjs": {
+      "sha256": "81ebbcee2505d439383090de1f3bec72c483ebb39bf4c524fbc5f82f94dd08a8",
+      "bytes": 19915
+    },
+    "tools/test-emulator-firmware.mjs": {
+      "sha256": "bb548ebccf02d9ff0dde75d50d26ed318a33023015bfe74cb866657f2d27485d",
+      "bytes": 39995
+    },
+    "tools/test-emulator-update.mjs": {
+      "sha256": "c69c197f935f2ca3b7ec1b01f4913aa2d13e5d87ef02342391cce6a375dfc578",
+      "bytes": 19282
+    },
+    "tests/emulator-worker-roundtrip.spec.ts": {
+      "sha256": "5007e316d853eedce5bf5f68c3138b0a2e4f7ad140af3680b2b4a875c86bf6fa",
+      "bytes": 27895
+    },
+    "tools/emulator-evidence/pll-audio-board-tests-20261003.tap": {
+      "sha256": "e6bea94cb9555b23048bce87862abb79937195523bcb8a4c30df0bc4c9965506",
+      "bytes": 8375
+    }
+  },
+  "componentReceipt": "pll-audio-qualification.json",
+  "beforeProseSync": "audio-integration-pre-doc-sync-20261003/manifest.json"
+}

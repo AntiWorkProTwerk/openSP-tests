@@ -16,3 +16,16 @@ test-results/
 *.pfx
 *secret-audit*.json
 *privacy-audit*.json
+
+# Raw emulator logs retain local paths. Publish the mapped .public.log copies.
+/tools/emulator-evidence/audio-sd-build-20261003.log
+/tools/emulator-evidence/audio-sd-check-20261003.log
+/tools/emulator-evidence/current-build-20261003.log
+/tools/emulator-evidence/current-check-20261003.log
+/tools/emulator-evidence/sd-page-flash-build-20261003.log
+/tools/emulator-evidence/video-sd-build-20261003.log
+/tools/emulator-evidence/video-sd-check-20261003.log
+/tools/emulator-evidence/audio-sd-card-qualified-20261003/build.log
+/tools/emulator-evidence/audio-sd-card-qualified-20261003/check.log
+/tools/emulator-evidence/m7-runtime-and-page-qualified-20261003/check.log
+/tools/emulator-evidence/video-sd-qualified-20261003/check.log

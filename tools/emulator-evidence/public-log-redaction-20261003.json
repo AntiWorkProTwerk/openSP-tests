@@ -1,0 +1,198 @@
+{
+  "schema": "opensp-public-log-redaction-v1",
+  "scope": "Publication copies of eleven retained build/check logs",
+  "qualification": "Byte-for-byte equality after replacing the absolute OpenSP workspace prefix with <workspace>; no other log text changes",
+  "rawLogRetention": "Byte-exact raw logs and frozen receipts remain local and private. Frozen receipts retain their original hashes and results. Derived public logs do not replace the raw logs referenced by those receipts.",
+  "runtimeReexecuted": false,
+  "physicalDeviceAccess": false,
+  "logs": [
+    {
+      "original": {
+        "path": "tools/emulator-evidence/audio-sd-build-20261003.log",
+        "bytes": 33765,
+        "sha256": "af24e446d16fd2c29965834a5855d0e493659e7709de1d640fbd9ce005e80175",
+        "publication": "Private raw log; excluded from public Git set"
+      },
+      "derived": {
+        "path": "tools/emulator-evidence/audio-sd-build-20261003.public.log",
+        "bytes": 33750,
+        "sha256": "3771ffa1b65b107e9ce50acfe1936d316aff2886cd63968171796f15d5084b42"
+      },
+      "redactedWorkspacePrefixes": 1
+    },
+    {
+      "original": {
+        "path": "tools/emulator-evidence/audio-sd-check-20261003.log",
+        "bytes": 293,
+        "sha256": "94c5f95ac86467878a2cca996e92a42eb3046df79fca45dabe1f2eebcefcb2b0",
+        "publication": "Private raw log; excluded from public Git set"
+      },
+      "derived": {
+        "path": "tools/emulator-evidence/audio-sd-check-20261003.public.log",
+        "bytes": 278,
+        "sha256": "c0d742752e9282afc1eb905144f2009f6e42875840fc35191ab277c08eee4144"
+      },
+      "redactedWorkspacePrefixes": 1
+    },
+    {
+      "original": {
+        "path": "tools/emulator-evidence/current-build-20261003.log",
+        "bytes": 33767,
+        "sha256": "882e44c764c089e144f688b62faa85ee4771a455952716ebd4d9b1332bad16b5",
+        "publication": "Private raw log; excluded from public Git set"
+      },
+      "derived": {
+        "path": "tools/emulator-evidence/current-build-20261003.public.log",
+        "bytes": 33752,
+        "sha256": "f12538932615ebb1e4f3347cc80287ba8fc30153302e581861e3501212873b54"
+      },
+      "redactedWorkspacePrefixes": 1
+    },
+    {
+      "original": {
+        "path": "tools/emulator-evidence/current-check-20261003.log",
+        "bytes": 293,
+        "sha256": "6e0e63eb2a9d336f135c45e78e5c144b58d559d849b2d8d097db491783f808c8",
+        "publication": "Private raw log; excluded from public Git set"
+      },
+      "derived": {
+        "path": "tools/emulator-evidence/current-check-20261003.public.log",
+        "bytes": 278,
+        "sha256": "22c6e09ad066ca81ebba0f9acaba9f2b76ffc8af95e7aa189d01eccf713a72e6"
+      },
+      "redactedWorkspacePrefixes": 1
+    },
+    {
+      "original": {
+        "path": "tools/emulator-evidence/sd-page-flash-build-20261003.log",
+        "bytes": 33765,
+        "sha256": "73e62da5ebeb372c76983c40700dac71cc9dfa0505adbbd4dd77e4c82a9080f1",
+        "publication": "Private raw log; excluded from public Git set"
+      },
+      "derived": {
+        "path": "tools/emulator-evidence/sd-page-flash-build-20261003.public.log",
+        "bytes": 33750,
+        "sha256": "a2de25e759bd341f57616f40dfa0c428b96d14a5ae7da8dd2c7fd2b0f384fc02"
+      },
+      "redactedWorkspacePrefixes": 1
+    },
+    {
+      "original": {
+        "path": "tools/emulator-evidence/video-sd-build-20261003.log",
+        "bytes": 33796,
+        "sha256": "937b8001d75de71a517d31119247b4bf36d2960433319d3e18334585c7e840a9",
+        "publication": "Private raw log; excluded from public Git set"
+      },
+      "derived": {
+        "path": "tools/emulator-evidence/video-sd-build-20261003.public.log",
+        "bytes": 33781,
+        "sha256": "2747fbc092abeb7bee30a2be3d7a45f3a580b57190830b49e95c814d413e2d9a"
+      },
+      "redactedWorkspacePrefixes": 1
+    },
+    {
+      "original": {
+        "path": "tools/emulator-evidence/video-sd-check-20261003.log",
+        "bytes": 293,
+        "sha256": "d3b6581ccdd903db6669719361802d7ed381c1b65ee9b7eecabbfd5ad8bb0b68",
+        "publication": "Private raw log; excluded from public Git set"
+      },
+      "derived": {
+        "path": "tools/emulator-evidence/video-sd-check-20261003.public.log",
+        "bytes": 278,
+        "sha256": "4523626c4910453d00b7960af3978bd99a2471313b9a85d5a1229e1b0e74d825"
+      },
+      "redactedWorkspacePrefixes": 1
+    },
+    {
+      "original": {
+        "path": "tools/emulator-evidence/audio-sd-card-qualified-20261003/build.log",
+        "bytes": 33765,
+        "sha256": "af24e446d16fd2c29965834a5855d0e493659e7709de1d640fbd9ce005e80175",
+        "publication": "Private raw log; excluded from public Git set"
+      },
+      "derived": {
+        "path": "tools/emulator-evidence/audio-sd-card-qualified-20261003/build.public.log",
+        "bytes": 33750,
+        "sha256": "3771ffa1b65b107e9ce50acfe1936d316aff2886cd63968171796f15d5084b42"
+      },
+      "redactedWorkspacePrefixes": 1
+    },
+    {
+      "original": {
+        "path": "tools/emulator-evidence/audio-sd-card-qualified-20261003/check.log",
+        "bytes": 293,
+        "sha256": "94c5f95ac86467878a2cca996e92a42eb3046df79fca45dabe1f2eebcefcb2b0",
+        "publication": "Private raw log; excluded from public Git set"
+      },
+      "derived": {
+        "path": "tools/emulator-evidence/audio-sd-card-qualified-20261003/check.public.log",
+        "bytes": 278,
+        "sha256": "c0d742752e9282afc1eb905144f2009f6e42875840fc35191ab277c08eee4144"
+      },
+      "redactedWorkspacePrefixes": 1
+    },
+    {
+      "original": {
+        "path": "tools/emulator-evidence/m7-runtime-and-page-qualified-20261003/check.log",
+        "bytes": 293,
+        "sha256": "6e0e63eb2a9d336f135c45e78e5c144b58d559d849b2d8d097db491783f808c8",
+        "publication": "Private raw log; excluded from public Git set"
+      },
+      "derived": {
+        "path": "tools/emulator-evidence/m7-runtime-and-page-qualified-20261003/check.public.log",
+        "bytes": 278,
+        "sha256": "22c6e09ad066ca81ebba0f9acaba9f2b76ffc8af95e7aa189d01eccf713a72e6"
+      },
+      "redactedWorkspacePrefixes": 1
+    },
+    {
+      "original": {
+        "path": "tools/emulator-evidence/video-sd-qualified-20261003/check.log",
+        "bytes": 293,
+        "sha256": "d3b6581ccdd903db6669719361802d7ed381c1b65ee9b7eecabbfd5ad8bb0b68",
+        "publication": "Private raw log; excluded from public Git set"
+      },
+      "derived": {
+        "path": "tools/emulator-evidence/video-sd-qualified-20261003/check.public.log",
+        "bytes": 278,
+        "sha256": "4523626c4910453d00b7960af3978bd99a2471313b9a85d5a1229e1b0e74d825"
+      },
+      "redactedWorkspacePrefixes": 1
+    }
+  ],
+  "frozenReceipts": [
+    {
+      "path": "tools/emulator-evidence/audio-sd-card-qualified-20261003/receipt.json",
+      "bytes": 2369,
+      "sha256": "28dd9177be2fde208db019b688667480055dd58d312beafab6b91f80102152c8",
+      "originalLogs": [
+        "tools/emulator-evidence/audio-sd-build-20261003.log",
+        "tools/emulator-evidence/audio-sd-check-20261003.log",
+        "tools/emulator-evidence/audio-sd-card-qualified-20261003/build.log",
+        "tools/emulator-evidence/audio-sd-card-qualified-20261003/check.log"
+      ],
+      "semantics": "Existing file hashes still identify the private raw logs; this mapping qualifies the public copies separately"
+    },
+    {
+      "path": "tools/emulator-evidence/m7-runtime-and-page-qualified-20261003/receipt.json",
+      "bytes": 1889,
+      "sha256": "f018cc1d8ed5dab47b87719c84470e9137ea2db40036e545982398cba5bd8358",
+      "originalLogs": [
+        "tools/emulator-evidence/current-check-20261003.log",
+        "tools/emulator-evidence/m7-runtime-and-page-qualified-20261003/check.log"
+      ],
+      "semantics": "Existing file hashes still identify the private raw logs; this mapping qualifies the public copies separately"
+    },
+    {
+      "path": "tools/emulator-evidence/video-sd-qualified-20261003/receipt.json",
+      "bytes": 1693,
+      "sha256": "8f1a1f2de700561e38b072bf7aee19c53a53f981bf6cf0e08513dbbc3e163e05",
+      "originalLogs": [
+        "tools/emulator-evidence/video-sd-check-20261003.log",
+        "tools/emulator-evidence/video-sd-qualified-20261003/check.log"
+      ],
+      "semantics": "Existing file hashes still identify the private raw logs; this mapping qualifies the public copies separately"
+    }
+  ]
+}

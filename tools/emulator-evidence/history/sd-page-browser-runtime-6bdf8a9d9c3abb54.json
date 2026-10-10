@@ -1,0 +1,276 @@
+{
+  "schema": "opensp-sd-product-browser-runtime-v1",
+  "passed": true,
+  "browser": {
+    "name": "Chromium",
+    "version": "153.0.8010.12",
+    "isolatedProcess": true
+  },
+  "sourceSha256": {
+    "src/scripts/emulator.ts": "2c99b13dc947b0be24db390ff01b80aaea7f4d9ac103a562aff8b5d916e943c0",
+    "src/pages/emulator.astro": "25eacdd7b338486ca1d98d945c666266ae131284f061ff56d75ce96353e84091",
+    "src/lib/emulator/worker-rpc.ts": "bd07bdfcabbe52968d142c0f19278df14a96cac027531db581c83d537585e5bf",
+    "src/scripts/emulator-worker.ts": "befa7fd052b10c2b8392116e0ea38095100d903f059bef95b9e435b6ef9ee65f",
+    "src/lib/emulator/session.ts": "0dd848eb5ec4087a50a18797f8dfad9a7bfcd9ea2baff46159e404b2f9b3ce5d",
+    "src/lib/emulator/instruction-boundary.ts": "fdd7e693be5aa9a38078aa15d8f04af413cb7ed34419aec6806cd8c77d34bc11",
+    "src/lib/emulator/sd-fixtures.ts": "7ca00c9ec9b39ad8ed7d1b7913b38aef9ec4102de7ed848658888813566da993",
+    "src/lib/emulator/cpu.ts": "b9a2de731be7c1ebdaf76125186c6cb7ef1c4c1e47fd2aa04ce255d29d770d8d",
+    "src/lib/emulator/image.ts": "9ad75aa988f49534c53e9d477dbebc49c7b8533459ebdb7564a534b04b0b5bfb",
+    "src/lib/emulator/board.ts": "d3b00dcc022a27d02d8ef228acc1a54b7815a74614cb6ac180d45db0941b676f",
+    "src/lib/emulator/gpio-read.ts": "2db391ab062fe75a494ecb0d7ef12af1484498f596bd481d3f78991d86f94f38",
+    "src/lib/emulator/flash.ts": "8745a56201956d3c8d67c74fbe821f751600eea549f8ed9cb258be51ec96f4c0",
+    "src/lib/emulator/usb.ts": "68e5fa1b6b9c1d7de2da9a66ace01fb147077eb849ca9c6ef3c943e143ad85b2",
+    "src/lib/emulator/usdhc.ts": "fe74790fd62040aba4a4908943bf2b99c5082958988dae59a4721fec1e430c28",
+    "src/lib/emulator/oscillator.ts": "3b9a557fb37d4f859742b9c89b9b51f22c397d0e4da40ef9f3df9bf8b5d887c9",
+    "src/lib/emulator/dcdc.ts": "5e025bd74a48d2550c24f634589fb53bc0456cc78e7e5a0b11438b46611adbae",
+    "src/lib/emulator/pll-arm.ts": "88eecf9007c2f9ab55332ecbae9b9dfa34137e4c0c7f9813970e930a8f8acfe0",
+    "src/lib/emulator/pll-usb2.ts": "9b54796d35a8b531acb58a1ed76ce637b01f181e1f343fc30f369e1191997bfd",
+    "src/lib/emulator/pll-video.ts": "a685474127671538d65eb05e490265fcfe807df3516aec75ddd7bcb060c2bd08",
+    "src/lib/emulator/pll-audio.ts": "ed60c0518ea61450e85ef1ac35a220a14a5f7a97e0179d683ad9897dd0cc578f",
+    "src/lib/emulator/exceptions.ts": "aba054f30fb2023590f9f4aa08f4405d66f3edd10efde7a5b61d8fc2b73a0e8b",
+    "src/lib/emulator/exception-return.ts": "66ea775f49ab5db3cb395d1a200d01a2a9733cccf43157e873e4fc5f8e800f03",
+    "src/lib/emulator/run-scheduler.ts": "1153bf1e3db2c7d99d67a1bd5fc4b20ffdc4fa73bdc4b7e6f6d02197d01fd27d",
+    "src/lib/emulator/wfi-idle.ts": "290a241a772c7b2aa8456132ee13a71c73e76060fc31fc11d676f6c09ec88c4e",
+    "src/content/emulator.json": "7d05b52548452cf30ceb77cf953c0ec8bdcde432f621b62f7f0e8d01b0d1af9d",
+    "tests/emulator-sd-page-runtime.spec.ts": "d4122caeed1497ba6c0f67d7da7e49cf9ce47e5804de3fd0f51be39e08c310ed"
+  },
+  "buildInfoSha256": "f88d40e3249e5d419b8db6e3485dc110c114b6eedbd16a455043ff4a2e0ce891",
+  "page": {
+    "path": "emulator/index.html",
+    "sha256": "24189b25da579df0906f1a8debaede0a4feb831b95ab724f94ee19326672059c",
+    "bytes": 51379
+  },
+  "createdWorkers": [
+    "/_astro/emulator-worker-Dt4c18ga.js"
+  ],
+  "downloaded": [
+    {
+      "path": "/_astro/page.BDh2vuYI.js",
+      "status": 200,
+      "sha256": "fce9ccf60de44254eba97ea656fca7a30a6777271d9e2d84564c59b6fdef9a35",
+      "bytes": 2487
+    },
+    {
+      "path": "/_astro/emulator.astro_astro_type_script_index_0_lang.uoO_UUQG.js",
+      "status": 200,
+      "sha256": "eebc8d7ae2795f389f2bac56a86976dccc11a903c32520a60d0c392949ba7ca5",
+      "bytes": 32383
+    },
+    {
+      "path": "/_astro/preload-helper.B3nfOi5I.js",
+      "status": 200,
+      "sha256": "298e58483be1903930c5a1661df3e66b3ef02723b34237990ad3a5f5e6052628",
+      "bytes": 1364
+    },
+    {
+      "path": "/_astro/worker-rpc.DrXUdy1A.js",
+      "status": 200,
+      "sha256": "986b404becfb8954da948578fbe554b2cee5b659aec524e0c76a816915428f3b",
+      "bytes": 17963
+    },
+    {
+      "path": "/_astro/emulator-worker-Dt4c18ga.js",
+      "status": 200,
+      "sha256": "202690795b641e934b9156d1553ac77ad2cf297b1cc01ed9e3dc4d3faa3c555b",
+      "bytes": 204001
+    },
+    {
+      "path": "/emulator/vendor/unicorn-arm.js",
+      "status": 200,
+      "sha256": "55481e3d0277fed2481ca1159ace9ae5929c330eec95e8b08986336f1c349e88",
+      "bytes": 43715
+    },
+    {
+      "path": "/emulator/vendor/unicorn-arm.wasm",
+      "status": 200,
+      "sha256": "5f10e3d7e94165c63ccd8e5a87dc4eacea5ca777220d76b81e1fb8302ed139dc",
+      "bytes": 706883
+    },
+    {
+      "path": "/emulator/vendor/unicorn-arm.wasm",
+      "status": 200,
+      "sha256": "5f10e3d7e94165c63ccd8e5a87dc4eacea5ca777220d76b81e1fb8302ed139dc",
+      "bytes": 706883
+    }
+  ],
+  "workerAssets": [
+    {
+      "path": "_astro/emulator-worker-Dt4c18ga.js",
+      "bytes": 204001,
+      "sha256": "202690795b641e934b9156d1553ac77ad2cf297b1cc01ed9e3dc4d3faa3c555b"
+    }
+  ],
+  "runtime": {
+    "wrapperCommit": "1220477c7fb0f8fe4b500f4bd211de52f6dfe638",
+    "coreCommit": "8028ec436f2d9376525352dd38ed9ed6b9f6be10",
+    "files": {
+      "unicorn-arm.js": {
+        "bytes": 43715,
+        "sha256": "55481e3d0277fed2481ca1159ace9ae5929c330eec95e8b08986336f1c349e88"
+      },
+      "unicorn-arm.wasm": {
+        "bytes": 706883,
+        "sha256": "5f10e3d7e94165c63ccd8e5a87dc4eacea5ca777220d76b81e1fb8302ed139dc"
+      },
+      "LICENSE-GPL-2.0.txt": {
+        "bytes": 18092,
+        "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643"
+      },
+      "UNICORN-COPYING.txt": {
+        "bytes": 17992,
+        "sha256": "6f04ae8364d0079a192b14635f4b1da294ce18724c034c39a6a41d1b09df6100"
+      },
+      "UNICORN-AUTHORS.txt": {
+        "bytes": 81,
+        "sha256": "6dff517f42f12f2c64d0864cc06a7d2a1cc10c7435a1167a49c625e60813f51c"
+      },
+      "UNICORN-CREDITS.txt": {
+        "bytes": 2197,
+        "sha256": "ea18f463dee60f35024f5116f2c7fd553cb355fcf21843ac71e5406f0aa3279d"
+      }
+    },
+    "provenanceSha256": "0102552fe87bbb94fa2ca9bd5f1d97328dc7cfd69f127b559cba1338e04c6abf"
+  },
+  "firmware": {
+    "sha256": "4891fd9451cd107f6f50f4fb85d75f538cf5b2eb3c7fb2680f36719b32f67e8a",
+    "published": false
+  },
+  "sdFixtures": {
+    "synthetic": true,
+    "slots": 2,
+    "imageBytesEach": 262144
+  },
+  "traces": [
+    {
+      "afterReset": false,
+      "sd1": {
+        "profile": "synthetic read-only SDSC / CSD v1",
+        "imageBytes": 262144,
+        "readOnly": true,
+        "baseAddress": 1076625408,
+        "irq": 110,
+        "blockLength": 512,
+        "transferBytes": 0,
+        "transferReadBytes": 0,
+        "fifoWords": 0,
+        "completedCommands": 0,
+        "completedReads": 0,
+        "bytesRead": 0,
+        "unsupportedOverflow": 0,
+        "irqAsserted": false,
+        "inserted": true,
+        "cardBusWidth": 1,
+        "cardState": "idle",
+        "pendingCommand": null,
+        "lastError": null,
+        "unsupported": [],
+        "limitations": [
+          "Synthetic SDSC CID/CSD/SCR; no physical card identity or route established.",
+          "Nominal command/busy/reset ticks and acknowledged PIO batches; no electrical clock or cycle timing.",
+          "Only little-endian32-bit PIO,512-byte blocks, finite CMD18 and one/ four-bit native SD.",
+          "DMA/ADMA, writes/erase, MMC/SDIO, high-speed/UHS/tuning, block gaps and SD status remain unqualified.",
+          "This component is not integrated into guest boot or a filesystem; it establishes no stock storage result."
+        ]
+      },
+      "sd2": {
+        "profile": "synthetic read-only SDSC / CSD v1",
+        "imageBytes": 262144,
+        "readOnly": true,
+        "baseAddress": 1076641792,
+        "irq": 111,
+        "blockLength": 512,
+        "transferBytes": 0,
+        "transferReadBytes": 0,
+        "fifoWords": 0,
+        "completedCommands": 0,
+        "completedReads": 0,
+        "bytesRead": 0,
+        "unsupportedOverflow": 0,
+        "irqAsserted": false,
+        "inserted": true,
+        "cardBusWidth": 1,
+        "cardState": "idle",
+        "pendingCommand": null,
+        "lastError": null,
+        "unsupported": [],
+        "limitations": [
+          "Synthetic SDSC CID/CSD/SCR; no physical card identity or route established.",
+          "Nominal command/busy/reset ticks and acknowledged PIO batches; no electrical clock or cycle timing.",
+          "Only little-endian32-bit PIO,512-byte blocks, finite CMD18 and one/ four-bit native SD.",
+          "DMA/ADMA, writes/erase, MMC/SDIO, high-speed/UHS/tuning, block gaps and SD status remain unqualified.",
+          "This component is not integrated into guest boot or a filesystem; it establishes no stock storage result."
+        ]
+      },
+      "instructions": 2675000
+    },
+    {
+      "afterReset": true,
+      "sd1": {
+        "profile": "synthetic read-only SDSC / CSD v1",
+        "imageBytes": 262144,
+        "readOnly": true,
+        "baseAddress": 1076625408,
+        "irq": 110,
+        "blockLength": 512,
+        "transferBytes": 0,
+        "transferReadBytes": 0,
+        "fifoWords": 0,
+        "completedCommands": 0,
+        "completedReads": 0,
+        "bytesRead": 0,
+        "unsupportedOverflow": 0,
+        "irqAsserted": false,
+        "inserted": true,
+        "cardBusWidth": 1,
+        "cardState": "idle",
+        "pendingCommand": null,
+        "lastError": null,
+        "unsupported": [],
+        "limitations": [
+          "Synthetic SDSC CID/CSD/SCR; no physical card identity or route established.",
+          "Nominal command/busy/reset ticks and acknowledged PIO batches; no electrical clock or cycle timing.",
+          "Only little-endian32-bit PIO,512-byte blocks, finite CMD18 and one/ four-bit native SD.",
+          "DMA/ADMA, writes/erase, MMC/SDIO, high-speed/UHS/tuning, block gaps and SD status remain unqualified.",
+          "This component is not integrated into guest boot or a filesystem; it establishes no stock storage result."
+        ]
+      },
+      "sd2": {
+        "profile": "synthetic read-only SDSC / CSD v1",
+        "imageBytes": 262144,
+        "readOnly": true,
+        "baseAddress": 1076641792,
+        "irq": 111,
+        "blockLength": 512,
+        "transferBytes": 0,
+        "transferReadBytes": 0,
+        "fifoWords": 0,
+        "completedCommands": 0,
+        "completedReads": 0,
+        "bytesRead": 0,
+        "unsupportedOverflow": 0,
+        "irqAsserted": false,
+        "inserted": true,
+        "cardBusWidth": 1,
+        "cardState": "idle",
+        "pendingCommand": null,
+        "lastError": null,
+        "unsupported": [],
+        "limitations": [
+          "Synthetic SDSC CID/CSD/SCR; no physical card identity or route established.",
+          "Nominal command/busy/reset ticks and acknowledged PIO batches; no electrical clock or cycle timing.",
+          "Only little-endian32-bit PIO,512-byte blocks, finite CMD18 and one/ four-bit native SD.",
+          "DMA/ADMA, writes/erase, MMC/SDIO, high-speed/UHS/tuning, block gaps and SD status remain unqualified.",
+          "This component is not integrated into guest boot or a filesystem; it establishes no stock storage result."
+        ]
+      },
+      "instructions": 0
+    }
+  ],
+  "physicalDeviceAccess": false,
+  "sdBytesPublished": false,
+  "scope": "Product File selectors deliver optional cards to production Worker/board and retain safe metadata through reset.",
+  "limitations": [
+    "R13 performs no SD commands here; card reads and filesystem behavior remain unqualified.",
+    "Reset retains modeled card presence/state; no physical power-cycle or insertion result is established."
+  ]
+}

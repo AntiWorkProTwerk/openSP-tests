@@ -1,0 +1,220 @@
+{
+  "schema": 2,
+  "title": "openSynth",
+  "description": "openSynth adds a playable synthesizer to the SP-404MKII. Every screen and control, playing over patterns, recording to a pad, installation and why it is designed not to brick your SP.",
+  "updated": "8 October 2026",
+  "card": {
+    "label": "OPENSYNTH / IN TESTING",
+    "title": "openSynth",
+    "text": "A synth you play on the pads, with a screen that shows the sound. Read about its features, installation and safety."
+  },
+  "screen": {
+    "src": "/opensynth/screens/play-tone-wide-saw-chord.png",
+    "width": 256,
+    "height": 128,
+    "alt": "openSynth TONE page: sound 05 WIDE SAW playing in POLY4, with its live waveform and the CUT, RES and ENV values."
+  },
+  "screensNote": "Screens on this page are drawn by openSynth's own display code from the current test build (openSynth P10). Waveforms are real synth output. Pattern contents are examples. Some screens still show the test name SYNTH P6, which will change before release.",
+  "introduction": "openSynth turns your SP-404MKII into a synthesizer. Play notes and chords on the pads, shape the sound with the knobs, play along with your patterns and record what you play straight to a pad.",
+  "status": "openSynth is in testing and can't be downloaded as a release yet. Playing the synth works on the developer's SP. Playing over patterns and recording to a pad are still being fixed in the current test build.",
+  "contentsLabel": "On this page",
+  "baseline": "Test build: openSynth P10",
+  "sections": [
+    {
+      "id": "start",
+      "heading": "Start the synth",
+      "paragraphs": [
+        "Hold SHIFT and press RECORD SETTING. The SP asks which sound generator to use. Turn VALUE to pick SYNTH P6, then press VALUE. After a moment the synth is ready and the pads play notes.",
+        "If the screen says TAP SHIFT, tap SHIFT once."
+      ],
+      "screens": [
+        {"src": "entry-chooser-synth-selected.png", "alt": "SOUND GENERATOR chooser with SYNTH P6 selected above ORIGINAL GENERATOR.", "caption": "Choose the synth or Roland's original generator."},
+        {"src": "entry-starting-synth.png", "alt": "STARTING SYNTH, PLEASE WAIT, NOTES PAUSED.", "caption": "The synth starts. Notes wait until it's ready."}
+      ],
+      "controls": [
+        ["SHIFT + RECORD SETTING", "Open the sound generator chooser."],
+        ["Turn VALUE", "Left for the synth, right for Roland's original generator."],
+        ["Press VALUE", "Start the one you picked."]
+      ]
+    },
+    {
+      "id": "play",
+      "heading": "Play and shape the sound",
+      "paragraphs": [
+        "The 16 pads play notes. Pad 1 is middle C and each pad goes up a semitone. In POLY4, up to four notes sound at once.",
+        "The waveform in the middle of the screen is the synth's real output, so you see every note and every edit. Each page puts three settings on CTRL 1, 2 and 3. Press VALUE to go to the next page: TONE, OSC, AMP, then MOD."
+      ],
+      "screens": [
+        {"src": "play-tone-wide-saw-chord.png", "alt": "TONE page for 05 WIDE SAW: waveform, filter curve, CUT 79, RES 22, ENV 23.", "caption": "TONE: the filter."},
+        {"src": "play-osc-wide-saw-chord.png", "alt": "OSC page for 05 WIDE SAW: waveform, pulse shape, MIX 51, DET 34, PW 50.", "caption": "OSC: the oscillators."},
+        {"src": "play-amp-slow-pad.png", "alt": "AMP page for 07 SLOW PAD: waveform, envelope, ATK 63, DEC 59, REL 73.", "caption": "AMP: the volume envelope."},
+        {"src": "play-mod-soft-sine.png", "alt": "MOD page for 01 SOFT SINE: waveform, LFO shape, RATE 24, DEP 0, GLD 0.", "caption": "MOD: vibrato and glide."}
+      ],
+      "pages": {
+        "head": ["Page", "CTRL 1", "CTRL 2", "CTRL 3"],
+        "rows": [
+          ["TONE", "CUT: filter cutoff", "RES: resonance", "ENV: filter envelope"],
+          ["OSC", "MIX: oscillator mix", "DET: detune", "PW: pulse width"],
+          ["AMP", "ATK: attack", "DEC: decay", "REL: release"],
+          ["MOD", "RATE: LFO speed", "DEP: LFO depth", "GLD: glide"]
+        ]
+      },
+      "reading": [
+        ["Top row", "The page, the voice mode (POLY4 or MONO) and how many of the four voices are sounding."],
+        ["Sound row", "The sound's number and name. A * means you've edited it, and OCT shows the octave."],
+        ["Right side", "PLAY while notes sound and REL while they fade out. The small diagram shows what the current page controls."],
+        ["Bottom", "The three CTRL values, from 0 to 100, with a bar for each."]
+      ],
+      "controls": [
+        ["Pads 1–16", "Play notes."],
+        ["CTRL 1–3", "Change the settings shown at the bottom. A knob takes over as soon as you move it, so switching page or sound doesn't change anything by itself."],
+        ["Press VALUE", "Go to the next page when you let go."],
+        ["VOLUME", "Set the synth's volume smoothly."]
+      ]
+    },
+    {
+      "id": "sounds",
+      "heading": "Sounds and octave",
+      "paragraphs": [
+        "Turn VALUE to step through the 16 sounds. Hold VALUE and turn it to move the octave between −2 and +2. Your edits stay until you load the sound again."
+      ],
+      "screens": [
+        {"src": "play-tone-edited-oct-plus-1.png", "alt": "TONE page for 05 WIDE SAW marked with a star for edited, at OCT +1.", "caption": "Edited sound (*) one octave up."}
+      ],
+      "list": ["01 Soft Sine", "02 Warm Triangle", "03 Round Bass", "04 Acid Pulse", "05 Wide Saw", "06 Pluck", "07 Slow Pad", "08 Hollow Lead", "09 Dust Keys", "10 Sub Bass", "11 Buzzy Brass", "12 Pure Fifth", "13 Air Noise", "14 Soft Organ", "15 Vibrato Lead", "16 Pulse Chord"],
+      "controls": [
+        ["Turn VALUE", "Previous or next sound."],
+        ["Hold VALUE and turn", "Octave down or up."]
+      ]
+    },
+    {
+      "id": "options",
+      "heading": "Options menu",
+      "paragraphs": [
+        "Hold SHIFT and press VALUE to open Options. Do it again, or press EXIT, to go back to playing. Turn VALUE to move the arrow and press VALUE to open an item."
+      ],
+      "screens": [
+        {"src": "options-sel0-sound-voice-logo.png", "alt": "Options: SOUND 05 WIDE SAW, VOICE POLY4 and LOGO, with the arrow on SOUND.", "caption": "Options: Sound, Voice and Logo."},
+        {"src": "sound-list-cursor05.png", "alt": "Sound list with 05 WIDE SAW selected and marked as loaded.", "caption": "Sound: pick from the list and press VALUE to load it."},
+        {"src": "options-voice-editing-mono4.png", "alt": "Options with VOICE set to MONO4 and the footer TURN:VOICE VAL:SET EXIT:BACK.", "caption": "Voice: turn for MONO4 or POLY4, press VALUE to apply."},
+        {"src": "logo-phase00.png", "alt": "The spinning dot-matrix AntiWork ProTwerk logo.", "caption": "Logo: the spinning AntiWorkProTwerk logo."}
+      ],
+      "controls": [
+        ["SHIFT + press VALUE", "Open or close Options."],
+        ["Sound", "A list of all 16 sounds. Press VALUE to load the one under the arrow."],
+        ["Voice", "Press VALUE, turn left for MONO4 or right for POLY4, then press VALUE to apply."],
+        ["Logo", "Shows the spinning logo until you press EXIT."],
+        ["EXIT", "Back out of an item, then back to playing."]
+      ]
+    },
+    {
+      "id": "patterns",
+      "heading": "Play over a pattern",
+      "badge": "In testing",
+      "paragraphs": [
+        "Your SP's patterns keep running while you play the synth. Press PATTERN SELECT to open the pattern chooser. Each box is one pattern in the current bank: X is an empty slot, C is the pattern that's playing and N is the one queued next.",
+        "Press a pad to start that pattern. Press the same pad again to stop it, or another pad to queue it next. The chooser closes and the pads play synth notes on top of the pattern."
+      ],
+      "screens": [
+        {"src": "pattern-chooser-stopped-click-on.png", "alt": "Pattern chooser for bank A, nothing playing, REC CLK ON.", "caption": "Nothing playing yet."},
+        {"src": "pattern-chooser-playing-a03.png", "alt": "Pattern chooser with A03 marked C for current.", "caption": "A03 is playing."},
+        {"src": "pattern-chooser-a03-queued-a06-click-off.png", "alt": "Pattern chooser with A03 current, A06 marked N for next, REC CLK OFF.", "caption": "A06 is queued next, and the recording click is off."}
+      ],
+      "controls": [
+        ["PATTERN SELECT", "Open or close the pattern chooser."],
+        ["Pad", "Start a pattern, stop the playing one, or queue another next."],
+        ["Bank buttons", "Change bank."],
+        ["SHIFT + PATTERN SELECT", "Turn the recording click on or off (REC CLK). Your SP's own metronome settings aren't changed."],
+        ["EXIT", "Close the chooser."]
+      ]
+    },
+    {
+      "id": "recording",
+      "heading": "Record to a pad",
+      "badge": "In testing",
+      "paragraphs": [
+        "Press REC and the empty pads flash. The screen shows the pads in the current bank: + is empty and X already has a sample. Press an empty pad to choose it, then press REC to start.",
+        "Press REC again to stop. The take is saved straight to that pad, and your other samples are left alone. Only the synth is recorded, not the pattern or click."
+      ],
+      "screens": [
+        {"src": "rec-01-choose-empty-pad.png", "alt": "REC CHOOSE EMPTY PAD for bank A: pads marked + for empty and X for occupied.", "caption": "Choose an empty pad."},
+        {"src": "rec-02-armed-pad3.png", "alt": "REC ARMED on bank A pad 3, with pad 3 underlined.", "caption": "Pad 3 is ready. Press REC to start."},
+        {"src": "rec-04-recording.png", "alt": "REC RECORDING to bank A pad 3, FRAMES 192000.", "caption": "Recording. Press REC to stop and save."},
+        {"src": "rec-07-saving.png", "alt": "REC SAVING to bank A pad 3.", "caption": "Saving to the pad."},
+        {"src": "rec-08-saved.png", "alt": "REC SAVED to bank A pad 3, FRAMES 240000.", "caption": "Saved. Press VALUE or EXIT to return."},
+        {"src": "rec-01c-pad-occupied.png", "alt": "REC CHOOSE EMPTY PAD showing PAD OCCUPIED.", "caption": "That pad already has a sample, so pick another."}
+      ],
+      "controls": [
+        ["REC", "Open the pad chooser. When a pad is ready, REC starts recording, and pressing it again stops and saves."],
+        ["Pad", "Choose an empty pad."],
+        ["Bank buttons", "Change bank. Press again for the F–J half: its bank light flashes."],
+        ["EXIT", "Cancel, except while saving."]
+      ],
+      "note": "Recording isn't working yet in the current test build: it stops with ERROR 3 on the first press. If REC CHECK appears instead of the chooser, the recorder didn't start; press REC to try again or EXIT to go back."
+    },
+    {
+      "id": "exit",
+      "heading": "Leave the synth",
+      "paragraphs": [
+        "Press EXIT on the playing screen to go back to the sampler. Your samples play as normal again. SHIFT+EXIT stops all notes straight away.",
+        "If something goes wrong, the synth stops and shows SYNTH STOPPED. Press EXIT to return to the sampler."
+      ],
+      "screens": [
+        {"src": "exit-returning.png", "alt": "SYNTH P6 TEST: RETURNING..., PLEASE WAIT, NOTES PAUSED.", "caption": "Returning to the sampler."},
+        {"src": "fault-synth-stopped-audio.png", "alt": "SYNTH STOPPED, NOTES PAUSED, ERROR 00000010, EXIT:RETURN.", "caption": "If the synth has to stop."}
+      ],
+      "controls": [
+        ["EXIT", "Back out of a menu, or leave the synth from the playing screen."],
+        ["SHIFT + EXIT", "Stop all notes immediately."]
+      ]
+    }
+  ],
+  "install": {
+    "id": "install",
+    "heading": "How to install",
+    "paragraphs": [
+      "openSynth is installed from your own copy of Roland's firmware, so no Roland files come from this site. The patcher below runs entirely in your browser. You only need the SD card once; after that, updates go over USB-C."
+    ],
+    "steps": [
+      "Copy everything on your SP's SD card to your computer, so your projects and samples are backed up.",
+      "Download the official SP-404MKII version 5.52 system update ZIP from Roland.",
+      "Choose that ZIP in the patcher below. It checks the file and builds SP404MKII_APP1.bin on your computer.",
+      "Copy SP404MKII_APP1.bin to the top level of an SD card formatted by the SP. Hold SHIFT while you turn the SP on, choose the update and wait for it to finish.",
+      "Turn the SP off and on again. Your samples and projects are where you left them."
+    ],
+    "note": "For later updates, hold DEL while turning the SP on to start openSynth's USB updater, then run the uploader on your computer. To go back to stock, install Roland's official update from the SD card in the usual way."
+  },
+  "patcher": {
+    "title": "openSynth patcher",
+    "build": {
+      "label": "TEST BUILD",
+      "title": "SYNTH P6S",
+      "text": "The patcher currently builds the owner-tested P6S checkpoint: the synth engine, waveform screen and sound choice. The full build described above arrives when testing is finished."
+    },
+    "patch": "/opensynth/patches/p6s.json",
+    "rolandLink": {"href": "https://support.roland.com/hc/en-us/articles/4409641783579-SP-404MK2-System-Program-Version-Update", "label": "Roland's SP-404MKII update page"},
+    "drop": "Choose Roland's update ZIP, or drop it here",
+    "idle": "No file chosen yet.",
+    "save": "Save SP404MKII_APP1.bin",
+    "noscript": "The patcher needs JavaScript. It runs only in your browser.",
+    "privacy": "Your file stays on your computer. The patch contains only openSynth's own code; everything else comes from your copy of Roland's update. The result is checked against the exact expected file before you can save it."
+  },
+  "safety": {
+    "id": "safety",
+    "heading": "Why it won't brick your SP",
+    "paragraphs": [
+      "Your SP keeps its recovery mode in a protected start-up area called the bootloader. openSynth never writes to it. It replaces only the main application, which is the same part a normal Roland update replaces.",
+      "The recovery mode starts before the application does. So if an install is interrupted, or a build doesn't work, you can still hold SHIFT while turning the SP on and reinstall from the SD card.",
+      "This has been tested for real. When a USB install was cut off halfway through on the developer's SP, this SD recovery brought it back to a working build."
+    ],
+    "controls": [
+      ["Never touched", "The bootloader and its recovery mode, the companion firmware (APP0) and the security fuses."],
+      ["Checked before writing", "The file's size and format, and the SP's flash chip. Anything unexpected stops the update before a single byte is written."],
+      ["Verified after writing", "Every written block is read back and compared, and the new build must start after a real restart before an update counts as done."],
+      ["Separate from your music", "The uploader only talks to openSynth's own updater, never to the SP's USB audio and MIDI connection. Your SD card isn't changed by an update."]
+    ],
+    "note": "No software can fix failing hardware, such as a damaged power circuit or flash chip. openSynth has so far been tested on one SP, so keep a known-good Roland update on a separate SD card."
+  },
+  "guideLink": {"href": "/guides/synth-design/", "label": "How the synth was designed"},
+  "footer": "OPENSYNTH"
+}

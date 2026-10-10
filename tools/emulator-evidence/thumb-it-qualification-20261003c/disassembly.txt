@@ -1,0 +1,101 @@
+
+fixture.elf:     file format elf32-littlearm
+
+
+Disassembly of section .text:
+
+80000000 <single>:
+80000000:	2800      	cmp	r0, #0
+80000002:	bf08      	it	eq
+80000004:	2171      	moveq	r1, #113	@ 0x71
+80000006:	f04f 0666 	mov.w	r6, #102	@ 0x66
+
+8000000a <single_exit>:
+8000000a:	bf00      	nop
+8000000c:	e7fe      	b.n	8000000c <single_exit+0x2>
+8000000e:	bf00      	nop
+80000010:	f3af 8000 	nop.w
+80000014:	f3af 8000 	nop.w
+80000018:	f3af 8000 	nop.w
+8000001c:	f3af 8000 	nop.w
+
+80000020 <alternate>:
+80000020:	2800      	cmp	r0, #0
+80000022:	bf0c      	ite	eq
+80000024:	3103      	addeq	r1, #3
+80000026:	3a02      	subne	r2, #2
+80000028:	f04f 0666 	mov.w	r6, #102	@ 0x66
+
+8000002c <alternate_exit>:
+8000002c:	bf00      	nop
+8000002e:	e7fe      	b.n	8000002e <alternate_exit+0x2>
+80000030:	f3af 8000 	nop.w
+80000034:	f3af 8000 	nop.w
+80000038:	f3af 8000 	nop.w
+8000003c:	f3af 8000 	nop.w
+
+80000040 <four>:
+80000040:	2800      	cmp	r0, #0
+80000042:	bf01      	itttt	eq
+80000044:	3101      	addeq	r1, #1
+80000046:	3a02      	subeq	r2, #2
+80000048:	2343      	moveq	r3, #67	@ 0x43
+8000004a:	406c      	eoreq	r4, r5
+8000004c:	f04f 0666 	mov.w	r6, #102	@ 0x66
+
+80000050 <four_exit>:
+80000050:	bf00      	nop
+80000052:	e7fe      	b.n	80000052 <four_exit+0x2>
+80000054:	f3af 8000 	nop.w
+80000058:	f3af 8000 	nop.w
+8000005c:	f3af 8000 	nop.w
+
+80000060 <final_bx>:
+80000060:	2800      	cmp	r0, #0
+80000062:	bf08      	it	eq
+80000064:	4738      	bxeq	r7
+80000066:	f04f 0666 	mov.w	r6, #102	@ 0x66
+
+8000006a <final_bx_exit>:
+8000006a:	bf00      	nop
+8000006c:	e7fe      	b.n	8000006c <final_bx_exit+0x2>
+8000006e:	bf00      	nop
+80000070:	f3af 8000 	nop.w
+80000074:	f3af 8000 	nop.w
+80000078:	f3af 8000 	nop.w
+8000007c:	f3af 8000 	nop.w
+
+80000080 <final_bx_target>:
+80000080:	f04f 0677 	mov.w	r6, #119	@ 0x77
+
+80000084 <final_bx_target_exit>:
+80000084:	bf00      	nop
+80000086:	e7fe      	b.n	80000086 <final_bx_target_exit+0x2>
+80000088:	f3af 8000 	nop.w
+8000008c:	f3af 8000 	nop.w
+80000090:	f3af 8000 	nop.w
+80000094:	f3af 8000 	nop.w
+80000098:	f3af 8000 	nop.w
+8000009c:	f3af 8000 	nop.w
+
+800000a0 <final_pop>:
+800000a0:	2800      	cmp	r0, #0
+800000a2:	bf08      	it	eq
+800000a4:	bd00      	popeq	{pc}
+800000a6:	f04f 0666 	mov.w	r6, #102	@ 0x66
+
+800000aa <final_pop_exit>:
+800000aa:	bf00      	nop
+800000ac:	e7fe      	b.n	800000ac <final_pop_exit+0x2>
+800000ae:	bf00      	nop
+800000b0:	f3af 8000 	nop.w
+800000b4:	f3af 8000 	nop.w
+800000b8:	f3af 8000 	nop.w
+800000bc:	f3af 8000 	nop.w
+
+800000c0 <final_pop_target>:
+800000c0:	f04f 0677 	mov.w	r6, #119	@ 0x77
+
+800000c4 <final_pop_target_exit>:
+800000c4:	bf00      	nop
+800000c6:	e7fe      	b.n	800000c6 <final_pop_target_exit+0x2>

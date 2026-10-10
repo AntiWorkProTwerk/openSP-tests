@@ -1,0 +1,43 @@
+---
+import Base from '../../layouts/Base.astro';
+import SiteHeader from '../../components/SiteHeader.astro';
+import SiteFooter from '../../components/SiteFooter.astro';
+import ReleaseSection from '../../components/releases/ReleaseSection.astro';
+import OpenSynthScreens from '../../components/releases/OpenSynthScreens.astro';
+import OpenSynthScreen from '../../components/releases/OpenSynthScreen.astro';
+import copy from '../../content/releases/synth.json';
+import '../../styles/synth-release.css';
+---
+<Base title={`${copy.title} · OpenSP`} description={copy.description} noindex>
+  <SiteHeader/>
+  <main id="main" class="synth-release">
+    <aside class="release-contents" aria-label={copy.contentsLabel}>
+      <p>{copy.contentsLabel}</p>
+      <ul>{copy.sections.map(section => <li><a href={`#${section.id}`}>{section.heading}</a></li>)}</ul>
+      <p class="release-baseline">{copy.baseline}<br/>{copy.baselineNote}</p>
+      <a class="release-picker-link" href={copy.featureLink.href}>{copy.featureLink.label}</a>
+    </aside>
+    <article class="release-reading">
+      <OpenSynthScreens>
+        <header class="release-introduction" data-component="Synth release introduction">
+          <h1>{copy.title}</h1>
+          <p>{copy.introduction}</p>
+          <p class="release-status">{copy.status}</p>
+          <div class="opensynth-hero" aria-label={copy.screensLabel} role="group">
+            <OpenSynthScreen id={copy.hero.screen} size="hero"/>
+            <div class="opensynth-hero-note">
+              <p>{copy.screensNote}</p>
+              <button type="button" class="opensynth-screens-toggle" data-screens-toggle aria-pressed="false" hidden>Play animations</button>
+            </div>
+          </div>
+          <div class="release-links">
+            <a href={copy.patcherLink.href}>{copy.patcherLink.label}</a>
+            <a href={copy.guideLink.href}>{copy.guideLink.label}</a>
+          </div>
+        </header>
+        {copy.sections.map(section => <ReleaseSection section={section}/>)}
+      </OpenSynthScreens>
+    </article>
+  </main>
+  <SiteFooter page={copy.footer}/>
+</Base>

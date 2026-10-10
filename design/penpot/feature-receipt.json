@@ -1,0 +1,145 @@
+{
+  "file": "24d9d841-759d-81bc-8008-b518bc70d8b3",
+  "page": "7d39c61f-08fe-80d5-8008-bcada934b82f",
+  "status": "PERSISTED_AFTER_OWNED_TAB_RELOAD",
+  "layouts": [
+    {
+      "board": "7d39c61f-08fe-80d5-8008-bcaea0dcddfd",
+      "name": "Feature picker / Desktop / Light",
+      "instance": "aef24b78-6c19-80a5-8008-bdfa3571564d",
+      "component": "aef24b78-6c19-80a5-8008-bdf9f1d2cb51",
+      "width": 1312,
+      "height": 304,
+      "text": [
+        {
+          "name": "copy / receiptHeading",
+          "text": "Check a build receipt"
+        },
+        {
+          "name": "copy / receiptNote",
+          "text": "Choose a local JSON receipt to compare it with your current choices. Only metadata is checked; firmware files and device results remain unverified."
+        },
+        {
+          "name": "Button label",
+          "text": "Choose receipt"
+        },
+        {
+          "name": "Button label",
+          "text": "Clear receipt"
+        },
+        {
+          "name": "copy / receiptLimit",
+          "text": "JSON, up to 128 KiB. This check does not connect to your SP."
+        },
+        {
+          "name": "Receipt status",
+          "text": "No receipt selected."
+        }
+      ]
+    },
+    {
+      "board": "7d39c61f-08fe-80d5-8008-bcaea61632a4",
+      "name": "Feature picker / Desktop / Dark",
+      "instance": "aef24b78-6c19-80a5-8008-bdfa35835404",
+      "component": "aef24b78-6c19-80a5-8008-bdf9f1d2cb51",
+      "width": 1312,
+      "height": 304,
+      "text": [
+        {
+          "name": "copy / receiptHeading",
+          "text": "Check a build receipt"
+        },
+        {
+          "name": "copy / receiptNote",
+          "text": "Choose a local JSON receipt to compare it with your current choices. Only metadata is checked; firmware files and device results remain unverified."
+        },
+        {
+          "name": "Button label",
+          "text": "Choose receipt"
+        },
+        {
+          "name": "Button label",
+          "text": "Clear receipt"
+        },
+        {
+          "name": "copy / receiptLimit",
+          "text": "JSON, up to 128 KiB. This check does not connect to your SP."
+        },
+        {
+          "name": "Receipt status",
+          "text": "No receipt selected."
+        }
+      ]
+    },
+    {
+      "board": "7d39c61f-08fe-80d5-8008-bcaeacbf8a59",
+      "name": "Feature picker / Mobile / Light",
+      "instance": "aef24b78-6c19-80a5-8008-bdfa35a63f00",
+      "component": "aef24b78-6c19-80a5-8008-bdfa02233856",
+      "width": 342,
+      "height": 388,
+      "text": [
+        {
+          "name": "copy / receiptHeading",
+          "text": "Check a build receipt"
+        },
+        {
+          "name": "copy / receiptNote",
+          "text": "Choose a local JSON receipt to compare it with your current choices. Only metadata is checked; firmware files and device results remain unverified."
+        },
+        {
+          "name": "Button label",
+          "text": "Choose receipt"
+        },
+        {
+          "name": "Button label",
+          "text": "Clear receipt"
+        },
+        {
+          "name": "copy / receiptLimit",
+          "text": "JSON, up to 128 KiB. This check does not connect to your SP."
+        },
+        {
+          "name": "Receipt status",
+          "text": "No receipt selected."
+        }
+      ]
+    },
+    {
+      "board": "7d39c61f-08fe-80d5-8008-bcaeaf07ba91",
+      "name": "Feature picker / Mobile / Dark",
+      "instance": "aef24b78-6c19-80a5-8008-bdfa35b8fe07",
+      "component": "aef24b78-6c19-80a5-8008-bdfa02233856",
+      "width": 342,
+      "height": 388,
+      "text": [
+        {
+          "name": "copy / receiptHeading",
+          "text": "Check a build receipt"
+        },
+        {
+          "name": "copy / receiptNote",
+          "text": "Choose a local JSON receipt to compare it with your current choices. Only metadata is checked; firmware files and device results remain unverified."
+        },
+        {
+          "name": "Button label",
+          "text": "Choose receipt"
+        },
+        {
+          "name": "Button label",
+          "text": "Clear receipt"
+        },
+        {
+          "name": "copy / receiptLimit",
+          "text": "JSON, up to 128 KiB. This check does not connect to your SP."
+        },
+        {
+          "name": "Receipt status",
+          "text": "No receipt selected."
+        }
+      ]
+    }
+  ],
+  "kind": "native-linked-receipt-panel",
+  "physicalEvidence": false
+}

@@ -1,0 +1,186 @@
+--- a/include/uc_priv.h
++++ b/include/uc_priv.h
+@@ -335,6 +335,12 @@
+     TargetPageBits *init_target_page;
+     int target_bits; // User defined page bits by uc_ctl
+     int cpu_model;
++
++    /* Private M7 Thumb-WFI execution evidence for the current emu_start.
++     * Fields: present, instruction PC, resume PC, instruction bytes. */
++    uint32_t arm_wfi_event[4];
++    /* Any nested native call invalidates evidence for the outer attempt. */
++    bool arm_wfi_nested_seen;
+     BounceBuffer bounce;                // qemu/cpu-exec.c
+     volatile sig_atomic_t exit_request; // qemu/cpu-exec.c
+     /* qemu/accel/tcg/cpu-exec-common.c */
+@@ -521,6 +527,9 @@
+                                 length);
+ }
+ 
++/* Private wrapper observation, called only with a valid live engine. */
++uint32_t uc_arm_wfi_event_field(uc_engine *uc, uint32_t field);
++
+ /*
+  break translation loop:
+  This is done in two cases:
+--- a/qemu/target/arm/helper.h
++++ b/qemu/target/arm/helper.h
+@@ -51,7 +51,7 @@
+ DEF_HELPER_4(exception_with_syndrome, void, env, i32, i32, i32)
+ DEF_HELPER_2(exception_bkpt_insn, void, env, i32)
+ DEF_HELPER_1(setend, void, env)
+-DEF_HELPER_2(wfi, void, env, i32)
++DEF_HELPER_3(wfi, void, env, i32, i32)
+ DEF_HELPER_1(wfe, void, env)
+ DEF_HELPER_1(yield, void, env)
+ DEF_HELPER_1(pre_hvc, void, env)
+--- a/qemu/target/arm/op_helper.c
++++ b/qemu/target/arm/op_helper.c
+@@ -19,6 +19,8 @@
+ #include "qemu/osdep.h"
+ #include "qemu/log.h"
+ #include "cpu.h"
++#include "uc_priv.h"
++#include "unicorn/arm.h"
+ #include "exec/helper-proto.h"
+ #include "internals.h"
+ #include "exec/exec-all.h"
+@@ -280,10 +282,24 @@
+     return 0;
+ }
+ 
+-void HELPER(wfi)(CPUARMState *env, uint32_t insn_len)
++void HELPER(wfi)(CPUARMState *env, uint32_t insn_len,
++                 uint32_t actual_instruction)
+ {
+     CPUState *cs = env_cpu(env);
+     int target_el = check_wfx_trap(env, false);
++
++    /* This is runtime evidence from the emitted WFI body. Configured exits
++     * call this helper too, but never set actual_instruction. */
++    if (actual_instruction && insn_len == 2 && env->uc &&
++        env->uc->cpu_model == UC_CPU_ARM_CORTEX_M7 &&
++        env->uc->nested_level == 1 && !env->uc->arm_wfi_nested_seen &&
++        arm_feature(env, ARM_FEATURE_M) &&
++        !arm_feature(env, ARM_FEATURE_M_SECURITY)) {
++        env->uc->arm_wfi_event[0] = 1;
++        env->uc->arm_wfi_event[1] = env->regs[15] - insn_len;
++        env->uc->arm_wfi_event[2] = env->regs[15];
++        env->uc->arm_wfi_event[3] = insn_len;
++    }
+ 
+     if (cpu_has_work(cs)) {
+         /* Don't bother to go into our "low power state" if
+--- a/qemu/target/arm/translate-a64.c
++++ b/qemu/target/arm/translate-a64.c
+@@ -14822,7 +14822,9 @@
+             TCGv_i32 tmp = tcg_const_i32(tcg_ctx, 4);
+ 
+             gen_a64_set_pc_im(tcg_ctx, dc->base.pc_next);
+-            gen_helper_wfi(tcg_ctx, tcg_ctx->cpu_env, tmp);
++            TCGv_i32 actual = tcg_const_i32(tcg_ctx, 0);
++            gen_helper_wfi(tcg_ctx, tcg_ctx->cpu_env, tmp, actual);
++            tcg_temp_free_i32(tcg_ctx, actual);
+             tcg_temp_free_i32(tcg_ctx, tmp);
+             /* The helper doesn't necessarily throw an exception, but we
+              * must go back to the main loop to check for interrupts anyway.
+--- a/qemu/target/arm/translate.c
++++ b/qemu/target/arm/translate.c
+@@ -8551,6 +8551,7 @@
+ static bool trans_WFI(DisasContext *s, arg_WFI *a)
+ {
+     /* For WFI, halt the vCPU until an IRQ. */
++    s->wfi_instruction = true;
+     gen_set_pc_im(s, s->base.pc_next);
+     s->base.is_jmp = DISAS_WFI;
+     return true;
+@@ -11339,6 +11340,8 @@
+ {
+     DisasContext *dc = container_of(dcbase, DisasContext, base);
+     TCGContext *tcg_ctx = dc->uc->tcg_ctx;
++
++    dc->wfi_instruction = false;
+ 
+     /* A note on handling of the condexec (IT) bits:
+      *
+@@ -11457,6 +11460,9 @@
+     CPUARMState *env = cpu->env_ptr;
+     unsigned int insn;
+ 
++    /* Clear before every instruction and configured-exit path. */
++    dc->wfi_instruction = false;
++
+     if (arm_pre_translate_insn(dc)) {
+         return;
+     }
+@@ -11549,6 +11555,9 @@
+     uint32_t insn;
+     bool is_16bit;
+     uint32_t insn_size;
++
++    /* Clear before every instruction and configured-exit path. */
++    dc->wfi_instruction = false;
+ 
+     if (arm_pre_translate_insn(dc)) {
+         return;
+@@ -11741,7 +11750,9 @@
+             TCGv_i32 tmp = tcg_const_i32(tcg_ctx, (dc->thumb &&
+                                           !(dc->insn & (1U << 31))) ? 2 : 4);
+ 
+-            gen_helper_wfi(tcg_ctx, tcg_ctx->cpu_env, tmp);
++            TCGv_i32 actual = tcg_const_i32(tcg_ctx, dc->wfi_instruction);
++            gen_helper_wfi(tcg_ctx, tcg_ctx->cpu_env, tmp, actual);
++            tcg_temp_free_i32(tcg_ctx, actual);
+             tcg_temp_free_i32(tcg_ctx, tmp);
+             /* The helper doesn't necessarily throw an exception, but we
+              * must go back to the main loop to check for interrupts anyway.
+--- a/qemu/target/arm/translate.h
++++ b/qemu/target/arm/translate.h
+@@ -15,6 +15,8 @@
+     target_ulong pc_curr;
+     target_ulong page_start;
+     uint32_t insn;
++    /* Real WFI decoding, separate from configured exits which imitate WFI. */
++    bool wfi_instruction;
+     /* Nonzero if this instruction has been conditionally skipped.  */
+     int condjmp;
+     /* The label that will be jumped to when the instruction is skipped.  */
+--- a/uc.c
++++ b/uc.c
+@@ -1072,13 +1072,35 @@
+     list_clear(&uc->hooks_to_del);
+ }
+ 
++/* Private scalar observation; valid live M7 handles, outside native execution. */
++UNICORN_EXPORT
++uint32_t uc_arm_wfi_event_field(uc_engine *uc, uint32_t field)
++{
++#ifdef UNICORN_HAS_ARM
++    if (uc && uc->arch == UC_ARCH_ARM &&
++        uc->cpu_model == UC_CPU_ARM_CORTEX_M7 && uc->nested_level == 0 &&
++        !uc->arm_wfi_nested_seen &&
++        field < 4) {
++        return uc->arm_wfi_event[field];
++    }
++#endif
++    return 0;
++}
++
+ UNICORN_EXPORT
+ uc_err uc_emu_start(uc_engine *uc, uint64_t begin, uint64_t until,
+                     uint64_t timeout, size_t count)
+ {
+     uc_err err;
+ 
+-    // reset the counter
++    // Only a new outer attempt clears the sticky nested-call exclusion.
++    if (uc->nested_level == 0) {
++        uc->arm_wfi_nested_seen = false;
++    } else {
++        uc->arm_wfi_nested_seen = true;
++    }
++    // reset the counter and private WFI event for every native attempt
++    memset(uc->arm_wfi_event, 0, sizeof(uc->arm_wfi_event));
+     uc->emu_counter = 0;
+     uc->invalid_error = UC_ERR_OK;
+     uc->emulation_done = false;

@@ -1,0 +1,355 @@
+{
+  "source": {
+    "fileId": "24d9d841-759d-81bc-8008-b518bc70d8b3",
+    "pageId": "6bf32eef-e7db-8057-8008-bb287467b2ff",
+    "kind": "native-state-api-export"
+  },
+  "id": "6bf32eef-e7db-8057-8008-bb2caa07964f",
+  "name": "Emulator interaction states",
+  "width": 1440,
+  "height": 840,
+  "metadata": {
+    "illustrative": true,
+    "firmwareProvided": false,
+    "states": [
+      "ready",
+      "loading",
+      "paused",
+      "fault"
+    ]
+  },
+  "linkedComponents": [
+    {
+      "id": "6bf32eef-e7db-8057-8008-bb2caa5bf277",
+      "componentId": "6bf32eef-e7db-8057-8008-bb2ca11c67fd",
+      "component": "Emulator status (Desktop)"
+    },
+    {
+      "id": "6bf32eef-e7db-8057-8008-bb2caa5bf27c",
+      "componentId": "6bf32eef-e7db-8057-8008-bb287d8e3cdc",
+      "component": "Emulator action"
+    },
+    {
+      "id": "6bf32eef-e7db-8057-8008-bb2caa5bf27f",
+      "componentId": "6bf32eef-e7db-8057-8008-bb287d8e3cdc",
+      "component": "Emulator action"
+    },
+    {
+      "id": "6bf32eef-e7db-8057-8008-bb2caa9126b7",
+      "componentId": "6bf32eef-e7db-8057-8008-bb2ca11c67fd",
+      "component": "Emulator status (Desktop)"
+    },
+    {
+      "id": "6bf32eef-e7db-8057-8008-bb2caa916f78",
+      "componentId": "6bf32eef-e7db-8057-8008-bb287d8e3cdc",
+      "component": "Emulator action"
+    },
+    {
+      "id": "6bf32eef-e7db-8057-8008-bb2caa916f7b",
+      "componentId": "6bf32eef-e7db-8057-8008-bb287d8e3cdc",
+      "component": "Emulator action"
+    },
+    {
+      "id": "6bf32eef-e7db-8057-8008-bb2caabe21b2",
+      "componentId": "6bf32eef-e7db-8057-8008-bb2ca11c67fd",
+      "component": "Emulator status (Desktop)"
+    },
+    {
+      "id": "6bf32eef-e7db-8057-8008-bb2caabe21b7",
+      "componentId": "6bf32eef-e7db-8057-8008-bb287d8e3cdc",
+      "component": "Emulator action"
+    },
+    {
+      "id": "6bf32eef-e7db-8057-8008-bb2caabe21ba",
+      "componentId": "6bf32eef-e7db-8057-8008-bb287d8e3cdc",
+      "component": "Emulator action"
+    },
+    {
+      "id": "6bf32eef-e7db-8057-8008-bb2caae7fe2b",
+      "componentId": "6bf32eef-e7db-8057-8008-bb2ca11c67fd",
+      "component": "Emulator status (Desktop)"
+    },
+    {
+      "id": "6bf32eef-e7db-8057-8008-bb2caae7fe30",
+      "componentId": "6bf32eef-e7db-8057-8008-bb287d8e3cdc",
+      "component": "Emulator action"
+    },
+    {
+      "id": "6bf32eef-e7db-8057-8008-bb2caae7fe33",
+      "componentId": "6bf32eef-e7db-8057-8008-bb287d8e3cdc",
+      "component": "Emulator action"
+    }
+  ],
+  "text": [
+    {
+      "name": "State sheet title",
+      "text": "Interaction states",
+      "x": 64,
+      "y": 48,
+      "width": 1312,
+      "height": 52,
+      "size": 32,
+      "ink": {
+        "x": 64,
+        "y": 54,
+        "width": 243.6875,
+        "height": 36
+      }
+    },
+    {
+      "name": "State sheet scope",
+      "text": "Design examples. Firmware does not run on the Penpot canvas.",
+      "x": 64,
+      "y": 100,
+      "width": 1312,
+      "height": 28,
+      "size": 16,
+      "ink": {
+        "x": 64,
+        "y": 103,
+        "width": 455.359375,
+        "height": 17
+      }
+    },
+    {
+      "name": "State label",
+      "text": "Ready to start",
+      "x": 64,
+      "y": 186,
+      "width": 608,
+      "height": 25,
+      "size": 14,
+      "ink": {
+        "x": 64,
+        "y": 188,
+        "width": 117.625,
+        "height": 16
+      }
+    },
+    {
+      "name": "State message",
+      "text": "Select a local firmware file, then press Start.",
+      "x": 80,
+      "y": 240,
+      "width": 576,
+      "height": 74,
+      "size": 16,
+      "ink": {
+        "x": 80,
+        "y": 243,
+        "width": 312.125,
+        "height": 17
+      }
+    },
+    {
+      "name": "copy / start",
+      "text": "Start",
+      "x": 76,
+      "y": 360,
+      "width": 80,
+      "height": 24,
+      "size": 16,
+      "ink": {
+        "x": 99.09375,
+        "y": 363,
+        "width": 33.796875,
+        "height": 17
+      }
+    },
+    {
+      "name": "copy / reset",
+      "text": "Reset",
+      "x": 196,
+      "y": 360,
+      "width": 56,
+      "height": 24,
+      "size": 16,
+      "ink": {
+        "x": 203.09375,
+        "y": 363,
+        "width": 41.796875,
+        "height": 17
+      }
+    },
+    {
+      "name": "State label",
+      "text": "Loading runtime",
+      "x": 768,
+      "y": 186,
+      "width": 608,
+      "height": 25,
+      "size": 14,
+      "ink": {
+        "x": 768,
+        "y": 188,
+        "width": 126.03125,
+        "height": 16
+      }
+    },
+    {
+      "name": "State message",
+      "text": "The engine downloads when Start is pressed. Each session has its own worker.",
+      "x": 784,
+      "y": 240,
+      "width": 576,
+      "height": 74,
+      "size": 16,
+      "ink": {
+        "x": 784,
+        "y": 243,
+        "width": 563.859375,
+        "height": 17
+      }
+    },
+    {
+      "name": "copy / start",
+      "text": "Loading…",
+      "x": 780,
+      "y": 360,
+      "width": 80,
+      "height": 24,
+      "size": 16,
+      "ink": {
+        "x": 780,
+        "y": 363,
+        "width": 72.953125,
+        "height": 17
+      }
+    },
+    {
+      "name": "copy / reset",
+      "text": "Reset",
+      "x": 900,
+      "y": 360,
+      "width": 56,
+      "height": 24,
+      "size": 16,
+      "ink": {
+        "x": 907.09375,
+        "y": 363,
+        "width": 41.796875,
+        "height": 17
+      }
+    },
+    {
+      "name": "State label",
+      "text": "Paused",
+      "x": 64,
+      "y": 476,
+      "width": 608,
+      "height": 25,
+      "size": 14,
+      "ink": {
+        "x": 64,
+        "y": 478,
+        "width": 50.421875,
+        "height": 16
+      }
+    },
+    {
+      "name": "State message",
+      "text": "Execution is paused. Step runs one instruction; Resume continues this session.",
+      "x": 80,
+      "y": 530,
+      "width": 576,
+      "height": 74,
+      "size": 16,
+      "ink": {
+        "x": 80,
+        "y": 533,
+        "width": 562.984375,
+        "height": 17
+      }
+    },
+    {
+      "name": "copy / start",
+      "text": "Resume",
+      "x": 76,
+      "y": 650,
+      "width": 80,
+      "height": 24,
+      "size": 16,
+      "ink": {
+        "x": 76,
+        "y": 653,
+        "width": 59.578125,
+        "height": 17
+      }
+    },
+    {
+      "name": "copy / reset",
+      "text": "Reset",
+      "x": 196,
+      "y": 650,
+      "width": 56,
+      "height": 24,
+      "size": 16,
+      "ink": {
+        "x": 203.09375,
+        "y": 653,
+        "width": 41.796875,
+        "height": 17
+      }
+    },
+    {
+      "name": "State label",
+      "text": "Stopped on error",
+      "x": 768,
+      "y": 476,
+      "width": 608,
+      "height": 25,
+      "size": 14,
+      "ink": {
+        "x": 768,
+        "y": 478,
+        "width": 134.421875,
+        "height": 16
+      }
+    },
+    {
+      "name": "State message",
+      "text": "Emulator worker stopped responding while running. This session was stopped. Reset it or select the file again to retry.",
+      "x": 784,
+      "y": 530,
+      "width": 576,
+      "height": 74,
+      "size": 16,
+      "ink": {
+        "x": 784,
+        "y": 533,
+        "width": 560.90625,
+        "height": 41
+      }
+    },
+    {
+      "name": "copy / start",
+      "text": "Start",
+      "x": 780,
+      "y": 650,
+      "width": 80,
+      "height": 24,
+      "size": 16,
+      "ink": {
+        "x": 803.09375,
+        "y": 653,
+        "width": 33.796875,
+        "height": 17
+      }
+    },
+    {
+      "name": "copy / reset",
+      "text": "Reset",
+      "x": 900,
+      "y": 650,
+      "width": 56,
+      "height": 24,
+      "size": 16,
+      "ink": {
+        "x": 907.09375,
+        "y": 653,
+        "width": 41.796875,
+        "height": 17
+      }
+    }
+  ]
+}

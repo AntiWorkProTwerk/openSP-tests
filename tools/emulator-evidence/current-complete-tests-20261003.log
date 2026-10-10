@@ -1,0 +1,841 @@
+
+> opensp@1.0.0 test
+> node tools/check-journey.mjs --exercises && node tools/check-demos.mjs && npm run test:emulator && playwright test --workers=4
+
+Validated 16 guide chapters and their Python exercise output.
+{
+  "models": {
+    "demos": 17,
+    "states": 672,
+    "frames": 6720,
+    "actionCalls": 92,
+    "details": [
+      {
+        "slug": "pad-information",
+        "states": 4,
+        "marks": 19
+      },
+      {
+        "slug": "first-animation",
+        "states": 28,
+        "marks": 78
+      },
+      {
+        "slug": "verified-capture",
+        "states": 4,
+        "marks": 82
+      },
+      {
+        "slug": "original-boot",
+        "states": 3,
+        "marks": 38
+      },
+      {
+        "slug": "mapping-controls",
+        "states": 2,
+        "marks": 38
+      },
+      {
+        "slug": "named-inputs",
+        "states": 14,
+        "marks": 27
+      },
+      {
+        "slug": "usb-updates",
+        "states": 10,
+        "marks": 28
+      },
+      {
+        "slug": "keeping-the-updater",
+        "states": 4,
+        "marks": 19
+      },
+      {
+        "slug": "partial-update",
+        "states": 12,
+        "marks": 48
+      },
+      {
+        "slug": "ram-loader",
+        "states": 10,
+        "marks": 17
+      },
+      {
+        "slug": "bootloader-boundaries",
+        "states": 4,
+        "marks": 20
+      },
+      {
+        "slug": "original-sdk",
+        "states": 24,
+        "marks": 38
+      },
+      {
+        "slug": "finding-audio",
+        "states": 4,
+        "marks": 41
+      },
+      {
+        "slug": "audio-stream",
+        "states": 8,
+        "marks": 21
+      },
+      {
+        "slug": "pitch-correction",
+        "states": 524,
+        "marks": 48
+      },
+      {
+        "slug": "synth-design",
+        "states": 13,
+        "marks": 25
+      },
+      {
+        "slug": "first-change",
+        "states": 4,
+        "marks": 107
+      }
+    ]
+  },
+  "native": {
+    "components": 17,
+    "marks": 694,
+    "paths": 96,
+    "pathSegments": 323
+  },
+  "pathRegression": {
+    "components": 17,
+    "paths": 96,
+    "segments": 323,
+    "alteredPointRejected": true,
+    "tolerance": 0.01
+  },
+  "scope": "models-and-native-posters"
+}
+
+> opensp@1.0.0 test:emulator
+> node --test tests/emulator-*.test.mjs && node tools/test-emulator-cpu.mjs
+
+✔ source contract names original firmware, without a stock equivalence claim (10.7175ms)
+✔ oscillator MMIO and aliases advance independently of disabled GPT and reset with the board (4.5462ms)
+✔ board preserves the stalled oscillator fixture and unknown neighboring register evidence (2.9868ms)
+✔ system registers retain unsigned E000 addresses and correct M7 identity (2.9257ms)
+✔ subword NVIC priority writes preserve nearby priorities (2.2983ms)
+✔ NVIC ISER/ICER and pending registers implement W1S/W1C (2.0148ms)
+✔ GPT advances only after firmware clock selection and via explicit ticks (2.5001ms)
+✔ GPT reset, enable reset and modulo32 wrap are deterministic (3.1353ms)
+✔ optional read-driven GPT matches the retained Python functional fixture (3.5415ms)
+✔ all40 matrix slots drive the selected active-low row and preserve OLED (3.1785ms)
+✔ GPIO set/clear/toggle/direct/subword writes preserve neighboring outputs (2.0257ms)
+✔ ADC HC0 maps channels4/5/6/3 and analog mux to all32 slots (5.1364ms)
+✔ ADC calibration and conversion faults stay observable (2.2738ms)
+✔ named inputs use their recorded raw path and DEL mirrors all columns (3.1786ms)
+✔ UART FIFO, errors, exact SHIFT bytes and IRQ22 follow the firmware path (2.2029ms)
+✔ companion fixture replies to startup and removes modeled power only on shutdown ACK (7.1522ms)
+✔ encoder levels remain separate from matrix row pins (1.8575ms)
+✔ GPIO SPI produces exact page-packed OLED bytes from transfer writes (21.6843ms)
+✔ OLED partial horizontal-window data updates only addressed RAM (2.3275ms)
+✔ SAI injected FIFO pointers, overflow clear and collected TX writes are observable (7.477ms)
+✔ SAI receiver/channel gates affect injection while existing FIFO data can still be drained (1.7605ms)
+✔ SAI RX request uses count greater than watermark and warning uses exactly32 enabled entries (6.6392ms)
+✔ SAI RX pointers wrap modulo64 across repeated full FIFO and retain exact word order (2.6161ms)
+✔ SAI RX FIFO reset preserves nonzero write phase and sticky flags; software reset is held (1.7314ms)
+✔ SAI RX W1C writes honor byte lanes and selected-word/sync events remain sticky across reads (2.4439ms)
+✔ SAI RX narrow reads each consume one unpacked entry; empty and RO writes preserve pointers (4.5596ms)
+✔ SAI RX overflow preserves queued words; FCONT1 permits explicit continuation despite stickyFEF (1.9256ms)
+✔ SAI RX FCONT0 discards injected continuation until FEF clears and a new explicit frame begins (1.8239ms)
+✔ SAI RX flags drive their matching IRQ56 enables and requests fall when occupancy drops (1.7701ms)
+✔ SAI additional channels, packing, combine, masks, DMA and individual FIFO reset remain visible as unsupported (23.3297ms)
+✔ unknown MMIO remains undefined and carries operation/address/count (3.538ms)
+✔ reset clears volatile board inputs/display and preserves NOR bytes (3.9354ms)
+✔ board routes DCDC targets, status and independent settling while GPT is disabled (10.337ms)
+✔ board preserves stalled DCDC across reset and does not advance it on timer reads (4.0313ms)
+✔ evidence pins the reviewed RT1062 source and discloses synthetic readiness (3.721ms)
+✔ manual resets preserve nonzero reserved lanes and leave DC_OK low (5.3254ms)
+✔ all documented field masks retain the source values (5.7473ms)
+✔ adjacent words are separate registers and do not perform SET CLR or TOG (0.3782ms)
+✔ reads and unchanged writes never advance or complete settling (8.7569ms)
+✔ target adjustment reaches protected DC_OK only at the configured explicit tick (0.5353ms)
+✔ a second changed target restarts pending settling without stale readiness (0.2244ms)
+✔ rewriting unchanged targets preserves pending progress and completed DC_OK (0.2755ms)
+✔ the NXP one-output adjustment sequence preserves fields and restarts target settling (0.2699ms)
+✔ DISABLE_STEP retains configuration while admitting target writes (0.2867ms)
+✔ all 32 documented TRG encodings remain admitted (0.5372ms)
+✔ a low-power target change restarts status while all documented codes settle (0.279ms)
+✔ undocumented low-power targets are retained, visible and conservatively stalled (0.5297ms)
+✔ CUR_SNS reserved codes are visible without inventing current-detector behavior (0.2237ms)
+✔ DC_OK cannot be software-written or cleared as W1C in any byte lane (0.1659ms)
+✔ byte and halfword writes preserve the other defined and reserved lanes (0.1724ms)
+✔ unwritten high value bits cannot change clock selection or DISABLE_STEP (0.2221ms)
+✔ fixed settling failure and disabled converter never fabricate DC_OK (0.2956ms)
+✔ forced internal selection requires its explicit availability and powered oscillator (0.2247ms)
+✔ forced external selection needs an explicit source fixture despite writable XTAL controls (0.2242ms)
+✔ auto selection uses only available fixture clocks and discloses its fallback policy (0.2743ms)
+✔ changing the selected available clock restarts the explicit settling delay (0.1754ms)
+✔ configuration controls retain values without resetting unrelated target progress (0.1412ms)
+✔ tick batching has the same complete and pending state as smaller ticks (0.2646ms)
+✔ zero-duration settling still requires an explicit tick including tick zero (0.1568ms)
+✔ bounded tick validation leaves state unchanged on invalid inputs (1.1948ms)
+✔ fixture values require booleans and snapshots cannot mutate the configuration (0.68ms)
+✔ reset restores source registers and time while retaining fixed environment fixtures (0.3065ms)
+✔ all exact register lanes are owned and neighboring or malformed accesses remain unhandled (0.4319ms)
+✔ native emulator mains have unique identities and retain their editable structure (1.6182ms)
+✔ each responsive session keeps the shared Instrument and an empty linked OLED (4.1618ms)
+✔ pad inputs use sixteen linked action instances with distinct labels (16.1928ms)
+✔ four linked layouts cover both themes and sizes without invented firmware output (13.7536ms)
+✔ visible native copy agrees with the browser source and reading text fits its frames (1.3165ms)
+✔ interaction examples are linked and explicitly illustrative (0.8693ms)
+✔ shared Footer utility stays linked across all eighty existing layout instances (4.2431ms)
+✔ model BX LR captures strict token and only software-owned effects (3.8595ms)
+✔ model BX R4 captures strict token and only software-owned effects (0.3507ms)
+✔ model POP R4/PC captures strict token and only software-owned effects (0.8369ms)
+✔ model POP PC captures strict token and only software-owned effects (0.3464ms)
+✔ model POP.W R4/R8/PC captures strict token and only software-owned effects (0.3606ms)
+✔ model LDMIA R4! R5/PC captures strict token and only software-owned effects (0.2633ms)
+✔ model LDMIA R0 R4/PC captures strict token and only software-owned effects (0.2791ms)
+✔ model LDMDB R4! R5/PC captures strict token and only software-owned effects (0.2147ms)
+✔ model LDR positive immediate captures strict token and only software-owned effects (0.2584ms)
+✔ model LDR negative immediate captures strict token and only software-owned effects (0.2531ms)
+✔ model LDR pre-index writeback captures strict token and only software-owned effects (0.4118ms)
+✔ model LDR post-index positive captures strict token and only software-owned effects (0.3014ms)
+✔ model LDR post-index negative captures strict token and only software-owned effects (0.1152ms)
+✔ model LDR register shifted captures strict token and only software-owned effects (0.1324ms)
+✔ model LDR positive literal captures strict token and only software-owned effects (0.0861ms)
+✔ model LDR negative literal captures strict token and only software-owned effects (0.1139ms)
+✔ model POP.W PC (LDR alias) captures strict token and only software-owned effects (0.0881ms)
+✔ unrelated PC writers and Thread mode cannot become exception returns (0.6423ms)
+✔ every supported raw basic/extended token remains exact; even/reserved values fail (0.3227ms)
+✔ passing final IT instruction qualifies; skipped or nonfinal return never applies (0.1994ms)
+✔ reserved and unpredictable multiple-load/LDR forms are refused as model errors (0.3419ms)
+✔ general LDM writeback through restored or banked registers remains explicitly unqualified (3.5482ms)
+✔ unaligned or device-memory PC loads refuse prediction without reading device backing (0.6303ms)
+✔ stale instruction, memory, register or mode plans fail before software writes (6.2322ms)
+✔ injected JavaScript read failure cannot produce a partial software transfer (0.3738ms)
+✔ software POP then hardware unstack restores frame registers and preserves loaded R4 (1.4717ms)
+✔ real M7 benign BX LR matches decoded software loads/writeback (89.2295ms)
+✔ real M7 benign BX R4 matches decoded software loads/writeback (28.4852ms)
+✔ real M7 benign POP R4/PC matches decoded software loads/writeback (175.5303ms)
+✔ real M7 benign POP PC matches decoded software loads/writeback (47.8748ms)
+✔ real M7 benign POP.W R4/R8/PC matches decoded software loads/writeback (56.6057ms)
+✔ real M7 benign LDMIA R4! R5/PC matches decoded software loads/writeback (136.1193ms)
+✔ real M7 benign LDMIA R0 R4/PC matches decoded software loads/writeback (49.4368ms)
+✔ real M7 benign LDMDB R4! R5/PC matches decoded software loads/writeback (81.2684ms)
+✔ real M7 benign LDR positive immediate matches decoded software loads/writeback (42.0685ms)
+✔ real M7 benign LDR negative immediate matches decoded software loads/writeback (50.9704ms)
+✔ real M7 benign LDR pre-index writeback matches decoded software loads/writeback (34.325ms)
+✔ real M7 benign LDR post-index positive matches decoded software loads/writeback (36.171ms)
+✔ real M7 benign LDR post-index negative matches decoded software loads/writeback (26.118ms)
+✔ real M7 benign LDR register shifted matches decoded software loads/writeback (29.6249ms)
+✔ real M7 benign LDR positive literal matches decoded software loads/writeback (24.8271ms)
+✔ real M7 benign LDR negative literal matches decoded software loads/writeback (26.2427ms)
+✔ real M7 benign POP.W PC (LDR alias) matches decoded software loads/writeback (22.6495ms)
+✔ real M7 omits the skipped IT BX and captures its passing final BX (47.8345ms)
+✔ real M7 stop-before-transfer leaves a fresh immutable plan for software application (25.8082ms)
+✔ eager extended frame stores core then S0-S15/FPSCR, preserving reserved words and S16-S31 (4.6334ms)
+✔ lazy entry reserves the FP extension without storing it; unused return performs no FP reads (1.1172ms)
+✔ lazy preservation saves the interrupted low FP state once and extended return restores it (0.5756ms)
+✔ nested basic handlers preserve the outer lazy address and LSPACT through return (0.5499ms)
+✔ nested FP handlers reserve independent frames after the previous lazy save (0.7038ms)
+✔ tail chaining retains the lazy frame until final unstack (0.335ms)
+✔ manual ASPEN=0 still stacks extended when software sets FPCA (0.3324ms)
+✔ RTOS extended return reads the newly selected PSP rather than a saved host snapshot (0.405ms)
+✔ basic return clears FPCA and leaves handler FP data untouched (0.2946ms)
+✔ failed lazy store preserves LSPACT and frame ownership for an explicit error (1.1766ms)
+✔ CPACR gates eager entry and lazy preserve; reserved/mismatched access fails explicitly (0.7223ms)
+✔ privileged-only CPACR checks the interrupted entry and the restored Thread context (0.3828ms)
+✔ lazy unused return skips FP permissions and memory even with handler FPCA set (0.2673ms)
+✔ lazy FPCCR records origin privilege and masked fault readiness (0.298ms)
+✔ FP core MMIO masks reserved bits and rejects unsafe automatic-policy changes (0.3074ms)
+✔ overlapping software-activated lazy context is refused without corrupting the outer frame (0.2837ms)
+✔ real M7 eager handler FP use restores low registers and leaves S16 software-owned (129.2043ms)
+✔ real M7 lazy handler FP use restores low registers and leaves S16 software-owned (70.5911ms)
+✔ real M7 IT-skipped VFP does not consume an outstanding lazy context (95.6578ms)
+✔ real M7 automatic FP activation applies modeled FPDSCR; manual ASPEN retains FPCA=0 (149.3473ms)
+✔ real M7 VLDR/VSTR/VPUSH/VPOP/VMRS/VMSR are recognized FP instructions (105.4801ms)
+✔ real M7 first FP context applies FPDSCR rounding during arithmetic (65.2651ms)
+✔ real M7 modeled CPACR denial stops before the FP instruction changes context (74.5127ms)
+✔ external pending survives disable and delivery writes precisely the basic frame (5.5086ms)
+✔ return restores only the hardware frame and retains handler r4-r11 and masks (1.7224ms)
+✔ Thread PSP entry stages PSP, runs Handler on MSP and restores CONTROL.SPSEL (1.2984ms)
+✔ M7 aligns an initially four-byte-aligned stack and preserves IT/APSR in the frame (2.2662ms)
+✔ RTOS can replace PSP and select a new task frame before EXC_RETURN (0.804ms)
+✔ crafted frame restoration uses the architecture alignment OR, not addition (0.6958ms)
+✔ higher group priority nests; returning Handler restores the preempted frame (1.3014ms)
+✔ subpriority chooses a pending winner but cannot preempt the same priority group (7.4076ms)
+✔ equal priorities use the lower exception number, including SysTick before IRQ0 (1.6452ms)
+✔ BASEPRI uses group priority and zero disables the threshold (1.5837ms)
+✔ PRIMASK allows HardFault and NMI; FAULTMASK allows NMI only (1.078ms)
+✔ tail chain preserves the frame and handler register values until final unstack (0.9191ms)
+✔ a held external level re-pends; deassertion permits final return (0.6253ms)
+✔ a rising level during an active IRQ remains active and pending while held (0.9275ms)
+✔ SysTick reload is a separate edge; ticks and wrap count are deterministic (0.8002ms)
+✔ SysTick zero reload has no event; CVR clears COUNTFLAG independently of pending (0.4886ms)
+✔ SysTick gates interrupt requests, enable, and selected clock independently (0.905ms)
+✔ bulk SysTick advancement matches independently stepped edges across reload changes (2.5185ms)
+✔ NVIC set/clear aliases preserve other bits; priority bytes mask unimplemented bits (1.2221ms)
+✔ AIRCR needs its key; VTOR masks implementation alignment; ICSR reports and clears pending (1.3457ms)
+✔ M7 VECTPENDING reflects BASEPRI/FAULTMASK but ignores PRIMASK (0.6823ms)
+✔ configurable fault enables and SHCSR active/pending state remain distinct (0.759ms)
+✔ invalid vector stops before staging a frame or consuming pending state (1.2139ms)
+✔ invalid return tokens are strict; fetch normalization is explicit (0.5883ms)
+✔ archived integer-only option still rejects extended, active and lazy FPU frames (1.6561ms)
+✔ invalid stacked state/context and unsupported non-base Thread return remain failures (2.2064ms)
+✔ reserved/unimplemented IDs, unsupported widths and unprivileged core writes are rejected (1.0447ms)
+✔ CPU writeMemory alternative and constructor option validation (0.3289ms)
+✔ real Cortex-M7 WASM handler edits its frame and callee-saved state remains software-owned (144.2316ms)
+✔ real M7 VFP execution sets FPCA and the archived integer-only option refuses it (67.5472ms)
+✔ real M7 stops before POP, applies its software effects and returns through the raw instruction target (54.3702ms)
+✔ default profile exposes measured ID/status/SFDP and labeled FCB fixture (6.0899ms)
+✔ caller flash and SFDP bytes replace fixtures without being rewritten (3.0817ms)
+✔ unknown, reserved, unaligned and read-only MMIO accesses remain explicit (4.8658ms)
+✔ LUT writes require key/unlock and can execute any of sixteen slots (2.5823ms)
+✔ full sector erase/page programming/IP readback and FF padding match traffic (13.3099ms)
+✔ virtual chip permits offset0 and final-sector writes; writer must own APP1 policy (2.2307ms)
+✔ programming performs NOR bitwise AND and consumes WEL (3.7573ms)
+✔ busy transitions are deterministic status polls, never physical timing evidence (3.5089ms)
+✔ reset preserves storage, clears controller/FIFO and requires fresh WREN (3.1305ms)
+✔ controller software reset clears transient work without corrupting programmed bytes (9.3649ms)
+✔ capacity, page crossing, erase alignment, missing WEL and unknown commands reject before mutation (53.3882ms)
+✔ altered LUT pad/address/dummy/data instructions and chained sequences remain unsupported (41.454ms)
+✔ unsupported protection profile, injected command/RX/WEL/idle failures stay visible (4.7052ms)
+✔ XIP callback follows completed mutations and exposes optional corrupt-page readback (3.769ms)
+✔ exported fixtures are independent arrays for parallel virtual boards (32.5095ms)
+✔ APP1 uses the captured direct Thumb handoff and retains the raw bytes (51.0419ms)
+✔ loader snapshots subarray and ArrayBuffer inputs before asynchronous hashing (3.2191ms)
+✔ APP1 admission covers the full application slot beyond historical 64 KiB (11.4472ms)
+✔ container, companion-image, blank and truncated inputs are refused (1.2832ms)
+✔ original ABI1 metadata admits large images without changing the launch checkpoint (3.2721ms)
+✔ original ABI2 CRC detects payload and metadata changes (8.91ms)
+✔ full flash uses the resident IVT rather than treating the FCB as vectors (35.007ms)
+✔ full-flash structural validation refuses wrong size, pointers and non-Thumb entries (52.0276ms)
+✔ DCD lengths cannot escape their envelope or leave a truncated command (9.8301ms)
+✔ pinned original R13 is identified by exact hash, without guessed markers (30.4758ms)
+✔ pinned stock v5.52 bytes remain unchanged for their own scatter startup (16.2369ms)
+✔ pinned APP0 is refused even when its file name is absent or misleading (62.2976ms)
+✔ preserved offline P1 envelope passes captured FCB, IVT and DCD structural checks (28.1275ms)
+✔ source pins identify the reviewed NXP driver, manual, and header (1.9738ms)
+✔ reset uses source values with power-down clear and both oscillator statuses low (1.342ms)
+✔ reads and control writes leave synthetic time unchanged (0.6356ms)
+✔ NXP initialization sequence reaches each status only after its explicit tick phase (0.3736ms)
+✔ early detection uses only ticks after power-up, independent of tick batching (0.4146ms)
+✔ power-down cancels a pending power-up and holds both status bits low (0.2645ms)
+✔ toggle power-down clears a completed result and starts a fresh power-up (0.2387ms)
+✔ detector disable retains completed XTALOK and re-enable starts a new detection (0.1868ms)
+✔ detector disable cancels partial progress without completing it (0.227ms)
+✔ power-up failure leaves both statuses low even with detection enabled (0.3802ms)
+✔ frequency failure permits power-up readiness but never XTALOK or a fictitious bit17 error (0.2262ms)
+✔ every SET/CLR/TOG alias reads zero at every aligned byte lane (0.4046ms)
+✔ primary byte and halfword writes preserve other documented control lanes (0.2367ms)
+✔ SET/CLR/TOG operate only on selected ones in the written byte lanes (0.2362ms)
+✔ unwritten high value bits cannot power down or enable detection during a narrow write (0.2098ms)
+✔ oscillator status and fixed source/bandgap fixtures cannot be written through any alias (0.2379ms)
+✔ status lanes remain protected on byte and halfword writes (0.2521ms)
+✔ unsigned VID_PLL_PREDIV survives word and subword reads without changing readiness (0.4482ms)
+✔ unrelated documented controls retain values while reserved fields stay zero (0.1429ms)
+✔ register delay fields retain their source encoding without changing configured synthetic delays (0.1301ms)
+✔ unknown, out-of-range, unaligned, and invalid-width accesses remain unhandled (0.3286ms)
+✔ reset restores registers and timing while keeping configured delay/failure fixtures (0.2319ms)
+✔ status returns independent configuration data (0.125ms)
+✔ zero-duration phases need an explicit tick and invalid tick configuration is rejected (2.4947ms)
+(node:41644) ExperimentalWarning: stripTypeScriptTypes is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ the page waits for load and USB same-ID status while unsolicited replies only publish (230.2849ms)
+✔ the page generic reset clears an old mailbox and needs no guest boot steps (16.6638ms)
+✔ file replacement cancels a pending bridge import before worker creation (8.1696ms)
+✔ old load rejection and completion cannot change a replacement file or release its busy state (29.5971ms)
+✔ close cancels pending file reads and worker operations (8.1639ms)
+✔ suspend cancels pending file reads and worker operations (14.1044ms)
+✔ file read results and errors remain fresh across replacement (8.5701ms)
+✔ bridge observations preserve bounded command and USB ledgers without firmware bytes (240.6935ms)
+✔ a stalled bridge chunk times out before Worker creation and a late import cannot revive it (9.9922ms)
+✔ the run-publication watchdog closes only its owned bridge and leaves cached diagnostics (26.5197ms)
+✔ only the most recent export intent downloads and replacement discards an old trace (22.291ms)
+✔ board routes ARM PLL aliases and lock ticks independently of a disabled GPT (8.654ms)
+✔ board preserves ARM PLL missing-reference fixtures and chunks large independent ticks (4.3961ms)
+✔ evidence identifies source-qualified ARM control and explicit synthetic limits (6.4451ms)
+✔ literal reset is powered down, bypassed and output-enabled with LOCK low (1.1905ms)
+✔ the independent NXP ARM initialization caller locks while bypass remains set (0.7263ms)
+✔ reads and writes alone do not advance pending lock time (3.363ms)
+✔ unchanged divider/source writes preserve pending progress and completed lock (0.3658ms)
+✔ a changed divider removes stale LOCK and restarts its explicit delay (0.2282ms)
+✔ changing reference source restarts pending and completed lock (0.2377ms)
+✔ POWERDOWN clear enables locking and set cancels completed or pending progress (0.1865ms)
+✔ toggled POWERDOWN follows the non-USB power polarity (0.266ms)
+✔ ENABLE and BYPASS do not block analog locking or reset valid progress (0.2973ms)
+✔ both supported reference sources require their explicit available fixtures (0.5846ms)
+✔ reserved source codes remain stored and visible while conservatively holding LOCK low (0.4553ms)
+✔ all 128 divider encodings are retained and only documented54..108 can lock (0.5662ms)
+✔ fixed lock failure never completes and survives reset (0.321ms)
+✔ every SET CLR TOG alias reads zero at each aligned lane (0.1985ms)
+✔ SET CLR TOG modify selected ones only and zeros leave state unchanged (0.216ms)
+✔ primary and alias byte/halfword writes preserve untouched lanes (0.1641ms)
+✔ unwritten high value bits cannot power down select a reference or request a reserved selector (0.1771ms)
+✔ LOCK is protected through primary and alias full and narrow writes (0.2324ms)
+✔ reserved PLL_SEL writes stay zero, remain visible and cannot disturb valid lock (0.3089ms)
+✔ configuration mask excludes LOCK and all reserved bits without losing actual fields (0.1525ms)
+✔ equivalent batched ticks preserve pending and completed states (0.1764ms)
+✔ zero-delay lock still needs an explicit tick after eligible power-up (0.1232ms)
+✔ tick bounds reject invalid delays and counts without mutating model state (1.161ms)
+✔ boolean fixtures are validated and status returns independent diagnostic copies (0.457ms)
+✔ reset restores source controls and clears progress while retaining fixed reference fixtures (0.1889ms)
+✔ exact16-byte ownership leaves USB1 other PLLs PFD and handshakes unhandled (0.2924ms)
+✔ malformed widths addresses and cross-lane accesses remain unhandled (0.2641ms)
+✔ board owns USB2 aliases, lock ticks and status without changing neighboring PLL routes (6.5932ms)
+✔ USB2 board ticks remain independent of GPT and retain a failure fixture through reset (3.5263ms)
+✔ reset USB2 controls retain output/bypass with analog power off and no lock (1.8954ms)
+✔ NXP USB2 initializer waits while bypassed then selects locked output (0.5595ms)
+✔ POWER has USB polarity and TOG powers off without trusting read-only LOCK (0.2033ms)
+✔ output gates and bypass do not prevent analog lock or disturb progress (0.2355ms)
+✔ same configuration preserves delay but power divider and reference changes restart it (0.2604ms)
+✔ source availability is explicit and reserved selectors remain visible without lock (0.4226ms)
+✔ fixed failures and unavailable references survive reset without synthesized power (0.3266ms)
+✔ all alias reads are zero and byte operations preserve independent lanes (0.241ms)
+✔ read-only LOCK and reserved bits cannot be written through any alias or bus lane (0.2423ms)
+✔ reads and writes do not advance time; batches and explicit zero delay are deterministic (1.2866ms)
+✔ exact USB2 ownership leaves ARM USB1 SYS and adjacent reserved bytes unhandled (0.2693ms)
+✔ invalid ticks fixtures and mutable status copies cannot change the controller (0.7507ms)
+✔ reset contract parser owns its exact bounded request and normalizes complete hashes (1.6422ms)
+✔ reset contracts reject missing identities, invalid extents and arbitrary entry controls (0.6552ms)
+✔ explicit raw APP1 extent admits every target byte beyond the old image length (10.4692ms)
+✔ explicit target identity rejects partial programming and incomplete retained NOR (2.8187ms)
+✔ matching SHA cannot bypass original APP1 structural admission (4.545ms)
+✔ reset helper rejects stale current hashes and full-flash sessions (2.7343ms)
+✔ reset helper snapshots the request and detects retained target mutation during hashing (2.8499ms)
+✔ reset helper detects running-image byte mutation during hashing (2.5162ms)
+✔ B1 selector source admission requires its exact wrapped-R3 length and SHA (3.6163ms)
+✔ exact B1 source pin still requires the complete retained target hash (10.3331ms)
+✔ explicit session reset validates the complete larger target before recreating a fake CPU (41.1148ms)
+✔ malformed, stale and mismatched reset contracts leave the live session intact (8.0909ms)
+✔ reset rehashes the owned running image rather than trusting stale hash metadata (7.7166ms)
+✔ session reset detects any retained NOR mutation during async SHA before closing its CPU (5.0774ms)
+✔ session reset refuses a replaced running image during async validation (4.5124ms)
+✔ session reset detects executable image metadata changes during async validation (40.0979ms)
+✔ session reset does not reopen a session closed during SHA validation (7.2713ms)
+✔ legacy reset preserves old raw-image length and original ABI declared-length behavior (5.1961ms)
+✔ B1 DEL runtime reset remains blocked before any CPU, image or board mutation (2.0802ms)
+✔ R16B small ABI1 update pins the recipient and forwards the complete reset extent (30.6963ms)
+✔ R16B normal marker alone cannot admit an unpinned, stale or substituted running image (8.8998ms)
+✔ R16B capacity does not admit generic larger ABI1 or ABI2 (5.6829ms)
+✔ R16B stale replacement and partial completion cannot reach reset (13.9207ms)
+✔ R48 small ABI1 update pins the recipient and forwards the complete reset extent (16.0673ms)
+✔ R48 normal marker alone cannot admit an unpinned, stale or substituted running image (22.3034ms)
+✔ R48 capacity does not admit generic larger ABI1 or ABI2 (5.5723ms)
+✔ R48 stale replacement and partial completion cannot reach reset (8.4053ms)
+✔ unretained R48 proof and excluded R16B proof are not recipient profiles (0.7399ms)
+✔ small preparation owns caller bytes and identifies both target and bounded protocol work (2.3087ms)
+✔ R16B exact full target is prepared with explicit execution blockers (105.5236ms)
+✔ R48 exact full target is prepared with explicit execution blockers (92.972ms)
+✔ CRC matches independent IEEE vectors and command payload has no report-ID prefix (1.3278ms)
+✔ separate preflight is read-only and validates both fixed diagnostic pages (0.9265ms)
+✔ complete R13 to R14 requires separate status and exact fresh boot identity (6.4675ms)
+✔ complete R14 to R13 requires separate status and exact fresh boot identity (7.8506ms)
+✔ complete R15 to R15 proof requires separate status and exact fresh boot identity (11.2847ms)
+✔ 65536-byte ABI1 upper bound uploads exact ordered chunks and verifies all 16 sectors (99.1511ms)
+✔ invalid image size, ABI metadata, hash or unsupported target sends no USB command (11.2316ms)
+✔ unknown running writer, non-idle transaction and mismatched pinned marker stop before probe (4.9643ms)
+✔ probe errors, chip mismatch and bounded pending probe never send BEGIN (3.1494ms)
+✔ diagnostic signature, page index, measured bytes and geometry flags are checked before upload (4.0481ms)
+✔ report-ID-prefixed and truncated responses fail the 64-byte virtual transport contract (0.9803ms)
+✔ ordered DATA acknowledgement and RAM verification each gate COMMIT (14.2224ms)
+✔ programmed byte count alone cannot establish full-sector flash verification (16.7822ms)
+✔ separate completion status failure preserves session without attempting reset (3.289ms)
+✔ pre-reset unsupported MMIO and stale model diagnostics cannot be erased by a successful reset (16.4092ms)
+✔ fresh marker, fresh BSS and executed candidate hash all gate boot completion (15.938ms)
+✔ the host owns candidate bytes and accepts the same entry envelope as the source validator (8.3266ms)
+✔ a guest fault or unsupported MMIO after new-image boot prevents a completed receipt (7.9156ms)
+✔ missing snapshot and invalid polling bounds fail setup (0.46ms)
+✔ concurrent clients and timeout retries cannot overlap an outstanding transport call (46.4021ms)
+✔ cancellation after COMMIT neither resets the guest nor sends an automatic ABORT (4.3403ms)
+✔ USB1 uses documented base/IRQ and rejects unknown or crossing MMIO accesses (2.4508ms)
+✔ controller reset self-clears and masks the endpoint-list alignment (0.9445ms)
+✔ SETUP copies eight bytes to dQH+40 and breaks the setup tripwire (2.872ms)
+✔ R13/R16B dTD layout sends descriptor bytes and updates DMA token/overlay (1.3695ms)
+✔ OUT report DMA preserves all 64 payload bytes and retires ACTIVE (0.5168ms)
+✔ short OUT packets expose residual length for firmware validation (0.4914ms)
+✔ host IN packets honor endpoint packet size until the dTD is complete (0.6232ms)
+✔ IN and OUT DMA cross noncontiguous descriptor pages (0.7873ms)
+✔ chained active descriptors continue without another firmware prime (0.6043ms)
+✔ all eight endpoint pairs own separate dQHs and completion bits (1.6405ms)
+✔ automatic IN zero termination emits a ZLP after an exact packet multiple (0.7837ms)
+✔ staged device address activates only when EP0 status IN is acknowledged (0.6661ms)
+✔ STALL blocks data tokens and a fresh SETUP clears STALL/old endpoint queues (0.5601ms)
+✔ flush synchronously cancels queues without fabricating completed packets (0.45ms)
+✔ bus reset clears controller transaction state and preserves firmware RAM (0.656ms)
+✔ enabled IRQ113 reflects latched W1C status and byte-lane acknowledgments (0.678ms)
+✔ oversized OUT packets halt the dTD and raise a controller error (0.5022ms)
+✔ unmapped DMA fails visibly and can be rebound before a new transfer (0.8618ms)
+✔ absent SD fixtures retain unknown MMIO across both exact windows and boundaries (46.4874ms)
+✔ runtime instance and callback overrides cannot change fixed board routes (43.2954ms)
+✔ register lanes preserve neighboring bytes and reads apply the lane exactly once (22.6708ms)
+✔ unsupported status/force writes retain unknown evidence while qualified read-only writes are ignored (24.3967ms)
+✔ board MMIO completes single-sector and finite two-block PIO with short block tails (27.2382ms)
+✔ byte-lane W1C deasserts the controller IRQ while NVIC pending needs its own acknowledgment (20.8275ms)
+✔ SD commands advance with disabled, stalled and read-driven GPT without read-driven SD time (72.7293ms)
+✔ unsupported lanes and write classification cannot consume active PIO data or launch commands (24.307ms)
+✔ board reset preserves card protocol, owned image and diagnostics while clearing controller work and IRQs (15.6951ms)
+✔ removal abandons active PIO without fabricated completion and presence W1C reasserts (13.0489ms)
+✔ two boards and two controllers retain independent owned images, commands, presence and IRQs (40.3651ms)
+✔ board fixture transfer bounds are forwarded and do not invent oversized read completion (16.7446ms)
+✔ board SD status omits image data and returns independent diagnostic snapshots (19.0316ms)
+✔ image geometry is exactly representable, owned and read-only (58.3237ms)
+✔ CSD decoded through actual controller response packing reports exact image capacity (628.4011ms)
+✔ CID is a named synthetic profile and short responses preserve RSP1..3 (20.7ms)
+✔ initialization follows SD states and CMD55 authorizes only the next command (15.2031ms)
+✔ 8-byte SCR completes through a final short PIO burst with a128-word watermark (9.981ms)
+✔ PIO single-block data and readiness honor watermark boundaries1/40/128 (38.7394ms)
+✔ CMD18 uses finite block count and short bursts restart at each block boundary (10.6168ms)
+✔ AutoCMD12 returns card to transfer state and places its response in RSP3 (10.9229ms)
+✔ capacity, alignment, block size and finite-transfer bounds reject without data or mutation (11.0091ms)
+✔ block-count zero means no data transfer and infinite CMD18 is refused visibly (10.0277ms)
+✔ status generation and signal delivery are separate, with byte-lane W1C (9.3559ms)
+✔ card insertion/removal status reasserts until its status enable is disabled (9.3781ms)
+✔ command inhibit protects a pending command and ordinary data commands cannot replace reads (19.9331ms)
+✔ RSTC preserves data and errors; RSTD clears data flags while sticky errors survive (11.1391ms)
+✔ full controller reset preserves protocol state/capabilities and requires explicit card CMD0 (11.6633ms)
+✔ INITA is write-one-start, cannot be cancelled by zero, and does not reset card state (14.9727ms)
+✔ DMA, DDR, endian, width, watermark and missing data flags fail visibly (95.9364ms)
+✔ ACMD6 and matching host width allow4-bit PIO; response-format mismatch is diagnosed (11.9479ms)
+✔ write/erase attempts return write protection and leave original sectors intact (11.8432ms)
+✔ unknown MMIO and invalid accesses stay visible with bounded diagnostics (14.9813ms)
+✔ upstream total-transfer burst rule is rejected at non-dividing multiblock watermark (19.7351ms)
+✔ card state restrictions prevent CID/CSD and CMD8 queries from becoming fabricated success (9.5016ms)
+✔ repeated CMD55 retains authorization and an absent card cannot delay a no-response command (20.5865ms)
+✔ CMD13 command-only status can coexist with PIO data without consuming or replacing its batch (9.7793ms)
+✔ aggregated ticks preserve command, initialization and busy phase ordering (37.7041ms)
+(node:43136) ExperimentalWarning: stripTypeScriptTypes is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ production reset handler forwards an owned validated target to the session (18.8625ms)
+✔ production reset handler rejects malformed target messages before stopping or resetting (76.3785ms)
+✔ production reset handler preserves generic reset and surfaces selector refusal (9.4351ms)
+✔ load copies local bytes and awaits loaded plus the same-ID status (65.8464ms)
+✔ USB waits for its own report and status despite interleaved run publications (2.9555ms)
+✔ older correlated responses resolve their caller without overwriting newer diagnostics (1.4518ms)
+✔ retired duplicate, unknown and paused unsolicited replies cannot replace diagnostics (0.6654ms)
+✔ a delayed run acknowledgment cannot reverse a newer pause intent (0.6195ms)
+✔ an already-aborted control request does not change an active run intent (1.1411ms)
+✔ duplicate USB primaries reject the unsettled call and close the ambiguous connection (0.5199ms)
+✔ USB rejects invalid correlated status/order replies (0.3033ms)
+✔ USB rejects invalid correlated usb/63 replies (0.266ms)
+✔ USB rejects invalid correlated usb/64 replies (0.2928ms)
+✔ matching remote errors reject only their request and leave diagnostics available (0.4232ms)
+✔ asynchronous run errors reject pending work and preserve the latest healthy observation (0.3423ms)
+✔ native error events close pending RPCs and detach listeners (0.3803ms)
+✔ native messageerror events close pending RPCs and detach listeners (0.2874ms)
+✔ timeout closes the owned worker and late replies cannot resurrect it (4.6812ms)
+✔ a primary load reply without its trailing status still times out (0.9824ms)
+✔ snapshot rejects missing or malformed correlated evidence (0.4008ms)
+✔ trace rejects missing or malformed correlated evidence (0.1958ms)
+✔ already-aborted calls are not sent; in-flight abort rejects all work and terminates (0.4655ms)
+✔ close is idempotent, removes abort listeners and rejects all pending calls (0.5128ms)
+✔ send failures reject and terminate without retaining listeners (0.2446ms)
+✔ argument bounds reject before posting and do not close a healthy bridge (0.9795ms)
+✔ step/input/run/pause/trace use distinct IDs and expected reply shapes (0.8139ms)
+✔ reset steps from a cleared mailbox and ignores header marker as readiness (0.8265ms)
+✔ reset rejects stale mailbox fields even when reset instruction count is zero (0.3522ms)
+✔ bounded reset rejects injected engine-failed without accepting a ready marker (0.433ms)
+✔ bounded reset rejects injected guest-stopped without accepting a ready marker (0.2977ms)
+✔ bounded reset rejects injected boot-no-progress without accepting a ready marker (0.2696ms)
+✔ mailbox boot instruction budget is exact and does not fall back to an image header (0.6348ms)
+✔ mailbox readiness rejects missing heartbeat (0.4435ms)
+✔ mailbox readiness rejects missing backend health (0.3393ms)
+✔ mailbox readiness rejects missing cache health (0.2501ms)
+✔ mailbox readiness rejects unexpected running state (0.248ms)
+✔ whole reset boot deadline bounds a missing step reply and cleans pending requests (47.4501ms)
+✔ reset has exclusive access; cancellation leaves no parallel request queued (0.862ms)
+✔ bound update adapter runs VirtualFirmwareUpdater inspect over virtual feature payloads (5.0753ms)
+✔ a bound adapter signal cancels an outstanding update-host transport and closes its worker (1.4457ms)
+✔ browser factory starts on demand and cleans up a worker when setup validation fails (1.479ms)
+✔ generic restart accepts stock diagnostics and sends no mailbox boot steps (0.5869ms)
+✔ explicit APP1 reset contracts are copied and forwarded through the bound update bridge (4.7474ms)
+✔ explicit reset targets reject unsupported fields and retain bound cancellation options (1.0014ms)
+✔ legacy reset call options and no-target bound reset preserve the mailbox boot contract (0.6907ms)
+✔ generic restart requires a zero-instruction loaded acknowledgment and excludes new calls (0.5965ms)
+✔ generic restart queues behind earlier page input and trace calls without requiring a mailbox (0.5531ms)
+✔ observers are isolated copies and throws cannot corrupt load or USB settlement (2.9189ms)
+✔ snapshot observers see only accepted IDs and unsubscribe suppresses queued deliveries (1.5118ms)
+✔ terminal observers receive copied errors once and cannot interfere with shutdown (0.9563ms)
+✔ malformed observational display fields reject before publication (0.7146ms)
+✔ malformed observational displayOn fields reject before publication (0.508ms)
+✔ malformed observational limitations fields reject before publication (0.7243ms)
+✔ malformed observational unknownMmio fields reject before publication (0.4895ms)
+ℹ tests 438
+ℹ suites 0
+ℹ pass 438
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2130.9041
+{
+  "scope": "Real ARM WASM instructions and APP1 startup; no physical device evidence",
+  "cases": [
+    {
+      "name": "Scalar FP bits and aliases; wider register APIs rejected before engine invocation",
+      "scalarRegisters": [
+        "S30",
+        "S31",
+        "LR"
+      ],
+      "rejectedEngineCalls": 0
+    },
+    {
+      "name": "Cortex-M7 readback, exact repeated slices, special registers",
+      "instructions": 1200132,
+      "sliceSizes": [
+        11,
+        100000
+      ],
+      "repetitions": 12
+    },
+    {
+      "name": "Guest MMIO loads and stores call the board",
+      "instructions": 3
+    },
+    {
+      "name": "Repeated instruction preparation stops after 64 retries and remains resumable",
+      "preparations": 64,
+      "instructionStarts": 0
+    },
+    {
+      "name": "One preparation per progressing instruction preserves the original slice budget",
+      "preparations": 70,
+      "instructionStarts": 70
+    },
+    {
+      "name": "Injected public API and cleanup failures mark the backend terminal before reuse",
+      "injectedMethods": [
+        "reg_read_i32",
+        "reg_write_i32",
+        "mem_read",
+        "mem_write",
+        "ctl_remove_cache",
+        "emu_stop",
+        "hook_del",
+        "close"
+      ],
+      "backendCallsAfterFailure": 0
+    },
+    {
+      "name": "Ordinary memory API errors remain recoverable; closed CPU APIs are rejected"
+    },
+    {
+      "name": "Actual VFP single-precision VMOV/VADD",
+      "resultBits": "40800000"
+    },
+    {
+      "name": "Pre-instruction stop, resume, and unmapped fetch fault"
+    },
+    {
+      "name": "Injected terminal engine failure blocks backend reuse and permits worker teardown",
+      "attemptedPc": "80000000",
+      "instructionStarts": 0,
+      "backendLost": true
+    },
+    {
+      "name": "Instruction-boundary context publication precedes the guest load",
+      "instructions": 2,
+      "guestLoadedValue": 9
+    },
+    {
+      "name": "Retired device DMA and modified XIP resume within the original budget",
+      "instructions": 5,
+      "changedInstructionResult": 7,
+      "nextGuestLoad": "12345678"
+    }
+  ],
+  "limitations": [
+    "Board time counts instruction starts, not measured M7 cycles",
+    "FPU access permission faults and lazy exception stacking are not verified",
+    "This CPU test does not establish complete firmware peripherals or sampler operation"
+  ],
+  "runtime": {
+    "wrapperCommit": "1220477c7fb0f8fe4b500f4bd211de52f6dfe638",
+    "coreCommit": "8028ec436f2d9376525352dd38ed9ed6b9f6be10",
+    "jsSha256": "d8bc37b898ccbc5b429f17112add6ad33a8a9b35df4146034ba141b992dae007",
+    "wasmSha256": "399f9ca4eecc11d111d3182e251fbfb8ccc69e88f19f06650e945482eaf1a7d1"
+  },
+  "sourceSha256": {
+    "src/lib/emulator/cpu.ts": "fb27f37e31277b4e79d1847562c961de23acd25befc4015ffbfd2a3c7d7809b1",
+    "tools/test-emulator-cpu.mjs": "e3575911bcaa9ba62f5cd12efcd39fcc22cfe5e2284b0a6f4c334dd2261de52e"
+  }
+}
+[WebServer] (node:20012) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 165 tests using 4 workers
+
+(node:46236) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:33924) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:40792) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:43592) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓    1 [chromium] › tests\demos.spec.ts:137:1 › widget phase wraps, holds for another pad or external mode, and resets on recreation (8ms)
+  ✓    4 [chromium] › tests\demos.spec.ts:148:1 › counter deltas and alias filtering do not turn one signal into several controls (12ms)
+  ✓    3 [chromium] › tests\demos.spec.ts:113:1 › record comparison distinguishes length, terminator and surrounding bytes (12ms)
+  ✓    5 [chromium] › tests\demos.spec.ts:163:1 › raw, published and visible control values stay separate (6ms)
+  ✓    2 [chromium] › tests\demos.spec.ts:125:1 › route and capture models preserve the evidence distinctions (12ms)
+  ✓    8 [chromium] › tests\demos.spec.ts:205:1 › sample comparison and timer arithmetic expose their different failure modes (7ms)
+  ✓    7 [chromium] › tests\demos.spec.ts:178:1 › update evidence, package ownership and bounded work have distinct outcomes (9ms)
+  ✓    9 [chromium] › tests\demos.spec.ts:194:1 › RAM ownership and a committed journal do not imply fresh recovery (9ms)
+  ✓   11 [chromium] › tests\demos.spec.ts:228:1 › pitch selection computes a target while synth confirmation preserves its held take (5ms)
+  ✓   10 [chromium] › tests\demos.spec.ts:219:1 › signed sample packing clips and rejects insufficient capacity before writing (9ms)
+  ✓   12 [chromium] › tests\demos.spec.ts:244:1 › moving route markers keep clear of their result and value labels (9ms)
+  ✓   13 [chromium] › tests\demos.spec.ts:269:1 › all demonstrations retain exported native component identities (46ms)
+  ✓    6 [chromium] › tests\demos.spec.ts:63:1 › every published chapter has a distinct, deterministic demonstration (258ms)
+  ✓   15 [chromium] › tests\demos.spec.ts:292:3 › pad-information: demonstration renders and reader controls change its result (1.8s)
+  ✓   14 [chromium] › tests\demos.spec.ts:292:3 › first-change: demonstration renders and reader controls change its result (2.3s)
+  ✓   17 [chromium] › tests\demos.spec.ts:292:3 › verified-capture: demonstration renders and reader controls change its result (1.7s)
+  ✓   18 [chromium] › tests\demos.spec.ts:292:3 › original-boot: demonstration renders and reader controls change its result (1.3s)
+  ✓   16 [chromium] › tests\demos.spec.ts:292:3 › first-animation: demonstration renders and reader controls change its result (3.4s)
+  ✓   19 [chromium] › tests\demos.spec.ts:292:3 › mapping-controls: demonstration renders and reader controls change its result (1.3s)
+  ✓   20 [chromium] › tests\demos.spec.ts:292:3 › named-inputs: demonstration renders and reader controls change its result (1.5s)
+  ✓   21 [chromium] › tests\demos.spec.ts:292:3 › usb-updates: demonstration renders and reader controls change its result (1.4s)
+  ✓   22 [chromium] › tests\demos.spec.ts:292:3 › keeping-the-updater: demonstration renders and reader controls change its result (1.5s)
+  ✓   23 [chromium] › tests\demos.spec.ts:292:3 › partial-update: demonstration renders and reader controls change its result (1.4s)
+  ✓   24 [chromium] › tests\demos.spec.ts:292:3 › ram-loader: demonstration renders and reader controls change its result (1.3s)
+  ✓   25 [chromium] › tests\demos.spec.ts:292:3 › finding-audio: demonstration renders and reader controls change its result (1.5s)
+  ✓   28 [chromium] › tests\demos.spec.ts:292:3 › bootloader-boundaries: demonstration renders and reader controls change its result (1.2s)
+  ✓   26 [chromium] › tests\demos.spec.ts:292:3 › audio-stream: demonstration renders and reader controls change its result (1.5s)
+  ✓   27 [chromium] › tests\demos.spec.ts:292:3 › original-sdk: demonstration renders and reader controls change its result (1.8s)
+  ✓   29 [chromium] › tests\demos.spec.ts:292:3 › pitch-correction: demonstration renders and reader controls change its result (1.6s)
+  ✓   33 [chromium] › tests\demos.spec.ts:453:1 › demonstration seeking and playback remain keyboard accessible with reduced motion (1.1s)
+  ✓   31 [chromium] › tests\demos.spec.ts:360:1 › synth confirmation states support keyboard actions and disable unavailable choices (2.3s)
+  ✓   30 [chromium] › tests\demos.spec.ts:292:3 › synth-design: demonstration renders and reader controls change its result (3.2s)
+  ✓   35 [chromium] › tests\demos.spec.ts:527:1 › a completed demonstration stays completed when it enters the viewport again (1.1s)
+  ✓   37 [chromium] › tests\demos.spec.ts:570:1 › a failed lazy model keeps the native poster and static explanation (738ms)
+  ✓   36 [chromium] › tests\demos.spec.ts:544:1 › a reconnected demonstration honors reduced motion and does not duplicate handlers (1.2s)
+  ✓   34 [chromium] › tests\demos.spec.ts:479:1 › demonstrations autoplay once, suspend offscreen or hidden, and respect reader pause (2.3s)
+  ✓   38 [chromium] › tests\demos.spec.ts:586:1 › slow model loading preserves the poster and does not consume playback (1.6s)
+  ✓   39 [chromium] › tests\demos.spec.ts:607:3 › demonstration controls and artwork fit 320px light (1.8s)
+  ✓   40 [chromium] › tests\demos.spec.ts:607:3 › demonstration controls and artwork fit 320px dark (1.7s)
+  ✓   32 [chromium] › tests\demos.spec.ts:424:1 › all 17 demonstrations retain a readable static result without JavaScript (6.8s)
+  ✓   41 [chromium] › tests\demos.spec.ts:607:3 › demonstration controls and artwork fit 390px light (1.7s)
+  ✓   42 [chromium] › tests\demos.spec.ts:607:3 › demonstration controls and artwork fit 390px dark (1.7s)
+  ✓   43 [chromium] › tests\demos.spec.ts:607:3 › demonstration controls and artwork fit 1440px light (1.7s)
+  ✓   46 [chromium] › tests\emulator.spec.ts:197:1 › emulator introduction stays readable without JavaScript (615ms)
+  ✓   44 [chromium] › tests\demos.spec.ts:607:3 › demonstration controls and artwork fit 1440px dark (1.7s)
+  ✓   48 [chromium] › tests\emulator.spec.ts:210:1 › the homepage footer opens the emulator with native keyboard navigation and no JavaScript (916ms)
+  ✓   49 [chromium] › tests\emulator.spec.ts:234:3 › emulator interface with a mocked ARM worker › firmware remains local and worker creation waits for Start (833ms)
+  ✓   50 [chromium] › tests\emulator.spec.ts:264:3 › emulator interface with a mocked ARM worker › load stays busy and cannot run before its trailing same-ID status (862ms)
+  ✓   51 [chromium] › tests\emulator.spec.ts:288:3 › emulator interface with a mocked ARM worker › USB stays busy after its payload until its own status arrives (1.0s)
+  ✓   52 [chromium] › tests\emulator.spec.ts:314:3 › emulator interface with a mocked ARM worker › generic stock reset clears stale mailbox fields without stepping guest code (940ms)
+  ✓   53 [chromium] › tests\emulator.spec.ts:337:5 › emulator interface with a mocked ARM worker › a completed load cannot publish or run after file replaces its session (894ms)
+  ✓   54 [chromium] › tests\emulator.spec.ts:337:5 › emulator interface with a mocked ARM worker › a completed load cannot publish or run after remove replaces its session (701ms)
+  ✓   45 [chromium] › tests\emulator-runtime.spec.ts:115:3 › actual ARM browser runtime with private R13 › runtime downloads on Start, real R13 draws its OLED and answers virtual USB locally (5.0s)
+  ✓   55 [chromium] › tests\emulator.spec.ts:337:5 › emulator interface with a mocked ARM worker › a completed load cannot publish or run after pagehide replaces its session (930ms)
+  ✓   56 [chromium] › tests\emulator.spec.ts:382:3 › emulator interface with a mocked ARM worker › replacing a file after USB acknowledgment discards its asynchronous result (1.0s)
+  ✓   58 [chromium] › tests\emulator.spec.ts:411:3 › emulator interface with a mocked ARM worker › keyboard pause, step and reset update diagnostics and the OLED (1.1s)
+  ✓   59 [chromium] › tests\emulator.spec.ts:439:3 › emulator interface with a mocked ARM worker › sessions use independent workers and removal terminates only its worker (1.4s)
+  ✓   60 [chromium] › tests\emulator.spec.ts:466:3 › emulator interface with a mocked ARM worker › USB reports reject invalid hex and route valid bytes to the chosen session (1.7s)
+  ✓   61 [chromium] › tests\emulator.spec.ts:492:3 › emulator interface with a mocked ARM worker › trace export carries the session identity, firmware hash and current diagnostics (1.1s)
+  ✓   62 [chromium] › tests\emulator.spec.ts:517:3 › emulator interface with a mocked ARM worker › a stalled load stops after 45 seconds and leaves recovery controls available (690ms)
+  ✓   63 [chromium] › tests\emulator.spec.ts:541:3 › emulator interface with a mocked ARM worker › a stalled USB request stops after 30 seconds and late replies cannot replace a new worker (1.2s)
+  ✓   64 [chromium] › tests\emulator.spec.ts:594:3 › emulator interface with a mocked ARM worker › continuous running stops after 15 seconds without a published status (778ms)
+  ✓   65 [chromium] › tests\emulator.spec.ts:614:3 › emulator interface with a mocked ARM worker › worker load errors are visible and preserve another running session (813ms)
+  ✓   66 [chromium] › tests\emulator.spec.ts:628:3 › emulator interface with a mocked ARM worker › named controls, momentary pads and virtual power requests stay in their session (1.6s)
+  ✓   67 [chromium] › tests\emulator.spec.ts:669:3 › emulator interface with a mocked ARM worker › the four-session limit releases a slot when a session is removed (1.1s)
+  ✓   57 [chromium] › tests\emulator-runtime.spec.ts:182:3 › actual ARM browser runtime with private R13 › SHIFT UART and pad pressure reach real firmware snapshots (8.5s)
+  ✓   68 [chromium] › tests\emulator.spec.ts:688:3 › mocked emulator sessions fit 320px light and pass Axe (3.0s)
+  ✓   69 [chromium] › tests\emulator.spec.ts:688:3 › mocked emulator sessions fit 320px dark and pass Axe (3.1s)
+  ✓   71 [chromium] › tests\emulator.spec.ts:688:3 › mocked emulator sessions fit 390px light and pass Axe (3.2s)
+  ✓   72 [chromium] › tests\emulator.spec.ts:688:3 › mocked emulator sessions fit 390px dark and pass Axe (3.2s)
+  ✓   73 [chromium] › tests\emulator.spec.ts:688:3 › mocked emulator sessions fit 1440px light and pass Axe (3.4s)
+  ✓   75 [chromium] › tests\guide.spec.ts:7:1 › all four native layouts retain shared walkthrough copy and component links (74ms)
+  ✓   74 [chromium] › tests\emulator.spec.ts:688:3 › mocked emulator sessions fit 1440px dark and pass Axe (3.4s)
+  ✓   76 [chromium] › tests\guide.spec.ts:19:3 › first guide 320px light (1.0s)
+  ✓   77 [chromium] › tests\guide.spec.ts:19:3 › first guide 320px dark (1.1s)
+  ✓   70 [chromium] › tests\emulator-runtime.spec.ts:210:3 › actual ARM browser runtime with private R13 › two production workers keep execution and staged RAM CRC results independent (9.6s)
+  ✓   79 [chromium] › tests\guide.spec.ts:19:3 › first guide 390px dark (4.5s)
+  ✓   78 [chromium] › tests\guide.spec.ts:19:3 › first guide 390px light (4.8s)
+  ✓   81 [chromium] › tests\guide.spec.ts:19:3 › first guide 600px light (984ms)
+  ✓   82 [chromium] › tests\guide.spec.ts:19:3 › first guide 600px dark (1.1s)
+  ✓   80 [chromium] › tests\emulator-runtime.spec.ts:241:3 › actual ARM browser runtime with private R13 › real image parser rejects invalid input and the session then boots R13 (5.0s)
+  ✓   83 [chromium] › tests\guide.spec.ts:19:3 › first guide 768px light (938ms)
+  ✓   84 [chromium] › tests\guide.spec.ts:19:3 › first guide 768px dark (989ms)
+  ✓   86 [chromium] › tests\guide.spec.ts:19:3 › first guide 900px light (947ms)
+  ✓   87 [chromium] › tests\guide.spec.ts:19:3 › first guide 900px dark (958ms)
+  ✓   88 [chromium] › tests\guide.spec.ts:19:3 › first guide 1100px light (894ms)
+  ✓   89 [chromium] › tests\guide.spec.ts:19:3 › first guide 1100px dark (925ms)
+  ✓   85 [chromium] › tests\emulator-runtime.spec.ts:258:3 › actual ARM browser runtime with private R13 › ordinary guest fetch error retains a trace and permits worker replacement (4.3s)
+  ✓   92 [chromium] › tests\guide.spec.ts:19:3 › first guide 1920px light (936ms)
+  ✓   93 [chromium] › tests\guide.spec.ts:19:3 › first guide 1920px dark (830ms)
+  ✓   90 [chromium] › tests\guide.spec.ts:19:3 › first guide 1440px light (3.9s)
+  ✓   91 [chromium] › tests\guide.spec.ts:19:3 › first guide 1440px dark (3.9s)
+  ✓   96 [chromium] › tests\guide.spec.ts:83:1 › desktop contents stays open with keyboard activation (779ms)
+  ✓   94 [chromium] › tests\guide.spec.ts:44:1 › contents and keyboard controls (1.7s)
+  ✓   97 [chromium] › tests\guide.spec.ts:89:1 › mobile contents starts collapsed before deferred scripts (675ms)
+  ✓   98 [chromium] › tests\guide.spec.ts:100:1 › complete guide without JavaScript and valid source record (855ms)
+  ✓   95 [chromium] › tests\guide.spec.ts:61:1 › animation pauses and remains reader-controlled (2.6s)
+  ✓  101 [chromium] › tests\home.spec.ts:12:3 › homepage 320px light (684ms)
+  ✓  100 [chromium] › tests\guide.spec.ts:122:1 › visibility lifecycle suspends the clock without losing playback intent (1.2s)
+  ✓  102 [chromium] › tests\home.spec.ts:12:3 › homepage 320px dark (747ms)
+  ✓   99 [chromium] › tests\guide.spec.ts:109:1 › all timelines seek, complete and allow explicit reduced-motion playback (3.5s)
+  ✓  103 [chromium] › tests\home.spec.ts:12:3 › homepage 390px light (2.1s)
+  ✓  105 [chromium] › tests\home.spec.ts:12:3 › homepage 600px light (666ms)
+  ✓  104 [chromium] › tests\home.spec.ts:12:3 › homepage 390px dark (2.1s)
+  ✓  106 [chromium] › tests\home.spec.ts:12:3 › homepage 600px dark (702ms)
+  ✓  107 [chromium] › tests\home.spec.ts:12:3 › homepage 720px light (746ms)
+  ✓  108 [chromium] › tests\home.spec.ts:12:3 › homepage 720px dark (725ms)
+  ✓  109 [chromium] › tests\home.spec.ts:12:3 › homepage 768px light (800ms)
+  ✓  110 [chromium] › tests\home.spec.ts:12:3 › homepage 768px dark (764ms)
+  ✓  111 [chromium] › tests\home.spec.ts:12:3 › homepage 1100px light (889ms)
+  ✓  112 [chromium] › tests\home.spec.ts:12:3 › homepage 1100px dark (775ms)
+  ✓  115 [chromium] › tests\home.spec.ts:12:3 › homepage 1920px light (762ms)
+  ✓  116 [chromium] › tests\home.spec.ts:12:3 › homepage 1920px dark (817ms)
+  ✓  113 [chromium] › tests\home.spec.ts:12:3 › homepage 1440px light (2.4s)
+  ✓  114 [chromium] › tests\home.spec.ts:12:3 › homepage 1440px dark (2.3s)
+  ✓  118 [chromium] › tests\home.spec.ts:59:1 › screen playback suspends offscreen and respects motion changes (965ms)
+  ✓  117 [chromium] › tests\home.spec.ts:42:1 › disclosures, navigation, themes and keyboard playback (1.2s)
+  ✓  119 [chromium] › tests\home.spec.ts:69:1 › static page works without JavaScript (878ms)
+  ✓  120 [chromium] › tests\home.spec.ts:76:1 › failed screen asset keeps its poster (593ms)
+  ✓  121 [chromium] › tests\home.spec.ts:82:1 › published surface has no dead guide links or private design references (611ms)
+  ✓  122 [chromium] › tests\journey.spec.ts:133:1 › all four native index layouts retain the full linked guide list (437ms)
+  ✓  125 [chromium] › tests\journey.spec.ts:233:3 › pad-information: shared copy, metadata, links and evidence (930ms)
+  ✓  124 [chromium] › tests\journey.spec.ts:213:1 › all four first-guide native layouts link the record demonstration inside its section (1.2s)
+  ✓  126 [chromium] › tests\journey.spec.ts:233:3 › first-animation: shared copy, metadata, links and evidence (901ms)
+  ✓  127 [chromium] › tests\journey.spec.ts:233:3 › verified-capture: shared copy, metadata, links and evidence (1.0s)
+  ✓  128 [chromium] › tests\journey.spec.ts:233:3 › original-boot: shared copy, metadata, links and evidence (1.1s)
+  ✓  129 [chromium] › tests\journey.spec.ts:233:3 › mapping-controls: shared copy, metadata, links and evidence (1.2s)
+  ✓  130 [chromium] › tests\journey.spec.ts:233:3 › named-inputs: shared copy, metadata, links and evidence (1.2s)
+  ✓  131 [chromium] › tests\journey.spec.ts:233:3 › usb-updates: shared copy, metadata, links and evidence (1.2s)
+  ✓  132 [chromium] › tests\journey.spec.ts:233:3 › keeping-the-updater: shared copy, metadata, links and evidence (1.1s)
+  ✓  133 [chromium] › tests\journey.spec.ts:233:3 › partial-update: shared copy, metadata, links and evidence (1.0s)
+  ✓  134 [chromium] › tests\journey.spec.ts:233:3 › ram-loader: shared copy, metadata, links and evidence (1.0s)
+  ✓  135 [chromium] › tests\journey.spec.ts:233:3 › finding-audio: shared copy, metadata, links and evidence (1.1s)
+  ✓  136 [chromium] › tests\journey.spec.ts:233:3 › audio-stream: shared copy, metadata, links and evidence (1.1s)
+  ✓  137 [chromium] › tests\journey.spec.ts:233:3 › original-sdk: shared copy, metadata, links and evidence (1.1s)
+  ✓  138 [chromium] › tests\journey.spec.ts:233:3 › bootloader-boundaries: shared copy, metadata, links and evidence (1.1s)
+  ✓  139 [chromium] › tests\journey.spec.ts:233:3 › pitch-correction: shared copy, metadata, links and evidence (1.1s)
+  ✓  140 [chromium] › tests\journey.spec.ts:233:3 › synth-design: shared copy, metadata, links and evidence (1.2s)
+  ✓  141 [chromium] › tests\journey.spec.ts:291:3 › guide series 320px light (761ms)
+  ✓  142 [chromium] › tests\journey.spec.ts:291:3 › guide series 320px dark (748ms)
+  ✓  143 [chromium] › tests\journey.spec.ts:291:3 › guide series 390px light (2.2s)
+  ✓  144 [chromium] › tests\journey.spec.ts:291:3 › guide series 390px dark (2.1s)
+  ✓  145 [chromium] › tests\journey.spec.ts:291:3 › guide series 1440px light (2.5s)
+  ✓  146 [chromium] › tests\journey.spec.ts:291:3 › guide series 1440px dark (2.4s)
+  ✓  147 [chromium] › tests\journey.spec.ts:315:1 › series index and first chapter connect every published guide (811ms)
+  ✓  149 [chromium] › tests\journey.spec.ts:348:1 › journey timeline supports keyboard seeking and explicit reduced-motion playback (1.3s)
+  ✓  150 [chromium] › tests\journey.spec.ts:381:1 › journey autoplay pauses offscreen, when hidden and after a reader pause (1.7s)
+  ✓  151 [chromium] › tests\journey.spec.ts:418:1 › journey mobile contents settles before deferred scripts (480ms)
+  ✓  152 [chromium] › tests\journey.spec.ts:430:1 › original renderer replay scrubs preserved frames and labels its limits (589ms)
+  ✓  153 [chromium] › tests\journey.spec.ts:444:1 › renderer replay keeps its original poster when the sprite fails (576ms)
+  ✓  148 [chromium] › tests\journey.spec.ts:325:1 › all chapter text and exercises work without JavaScript (8.2s)
+  ✓  155 [chromium] › tests\journey.spec.ts:482:1 › a reconnected timeline honors a reduced-motion change while detached (649ms)
+  ✓  154 [chromium] › tests\journey.spec.ts:454:1 › slow renderer media does not consume the animation before it loads (4.1s)
+  ✓  157 [chromium] › tests\sp-parts.spec.ts:4:1 › native SP parts retain the shared surrounds and circular viewport (4ms)
+  ✓  158 [chromium] › tests\sp-parts.spec.ts:23:3 › SP geometry / 390px light (635ms)
+  ✓  156 [chromium] › tests\journey.spec.ts:511:1 › an early animation-frame timestamp cannot produce a negative phase (1.2s)
+  ✓  159 [chromium] › tests\sp-parts.spec.ts:23:3 › SP geometry / 390px dark (740ms)
+  ✓  160 [chromium] › tests\sp-parts.spec.ts:23:3 › SP geometry / 1440px light (690ms)
+  ✓  161 [chromium] › tests\sp-parts.spec.ts:23:3 › SP geometry / 1440px dark (716ms)
+  ✓  162 [chromium] › tests\sp-parts.spec.ts:23:3 › SP geometry /guides/first-change/ 390px light (844ms)
+  ✓  163 [chromium] › tests\sp-parts.spec.ts:23:3 › SP geometry /guides/first-change/ 390px dark (841ms)
+  ✓  164 [chromium] › tests\sp-parts.spec.ts:23:3 › SP geometry /guides/first-change/ 1440px light (869ms)
+  ✓  165 [chromium] › tests\sp-parts.spec.ts:23:3 › SP geometry /guides/first-change/ 1440px dark (913ms)
+  ✓  123 [chromium] › tests\journey.spec.ts:164:1 › all 64 native layouts keep shared chapter copy and linked components (51.5s)
+  ✓   47 [chromium] › tests\emulator-worker-roundtrip.spec.ts:38:1 › production Worker bridge updates private R13 to R14 and back with fresh boots (1.7m)
+
+  165 passed (2.1m)

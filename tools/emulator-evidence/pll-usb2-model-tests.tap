@@ -1,0 +1,82 @@
+TAP version 13
+# Subtest: reset USB2 controls retain output/bypass with analog power off and no lock
+ok 1 - reset USB2 controls retain output/bypass with analog power off and no lock
+  ---
+  duration_ms: 0.9981
+  type: 'test'
+  ...
+# Subtest: NXP USB2 initializer waits while bypassed then selects locked output
+ok 2 - NXP USB2 initializer waits while bypassed then selects locked output
+  ---
+  duration_ms: 0.2681
+  type: 'test'
+  ...
+# Subtest: POWER has USB polarity and TOG powers off without trusting read-only LOCK
+ok 3 - POWER has USB polarity and TOG powers off without trusting read-only LOCK
+  ---
+  duration_ms: 0.1131
+  type: 'test'
+  ...
+# Subtest: output gates and bypass do not prevent analog lock or disturb progress
+ok 4 - output gates and bypass do not prevent analog lock or disturb progress
+  ---
+  duration_ms: 0.1347
+  type: 'test'
+  ...
+# Subtest: same configuration preserves delay but power divider and reference changes restart it
+ok 5 - same configuration preserves delay but power divider and reference changes restart it
+  ---
+  duration_ms: 0.1347
+  type: 'test'
+  ...
+# Subtest: source availability is explicit and reserved selectors remain visible without lock
+ok 6 - source availability is explicit and reserved selectors remain visible without lock
+  ---
+  duration_ms: 0.8942
+  type: 'test'
+  ...
+# Subtest: fixed failures and unavailable references survive reset without synthesized power
+ok 7 - fixed failures and unavailable references survive reset without synthesized power
+  ---
+  duration_ms: 0.159
+  type: 'test'
+  ...
+# Subtest: all alias reads are zero and byte operations preserve independent lanes
+ok 8 - all alias reads are zero and byte operations preserve independent lanes
+  ---
+  duration_ms: 0.1327
+  type: 'test'
+  ...
+# Subtest: read-only LOCK and reserved bits cannot be written through any alias or bus lane
+ok 9 - read-only LOCK and reserved bits cannot be written through any alias or bus lane
+  ---
+  duration_ms: 0.1539
+  type: 'test'
+  ...
+# Subtest: reads and writes do not advance time; batches and explicit zero delay are deterministic
+ok 10 - reads and writes do not advance time; batches and explicit zero delay are deterministic
+  ---
+  duration_ms: 0.753
+  type: 'test'
+  ...
+# Subtest: exact USB2 ownership leaves ARM USB1 SYS and adjacent reserved bytes unhandled
+ok 11 - exact USB2 ownership leaves ARM USB1 SYS and adjacent reserved bytes unhandled
+  ---
+  duration_ms: 0.2279
+  type: 'test'
+  ...
+# Subtest: invalid ticks fixtures and mutable status copies cannot change the controller
+ok 12 - invalid ticks fixtures and mutable status copies cannot change the controller
+  ---
+  duration_ms: 0.5264
+  type: 'test'
+  ...
+1..12
+# tests 12
+# suites 0
+# pass 12
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 115.9572

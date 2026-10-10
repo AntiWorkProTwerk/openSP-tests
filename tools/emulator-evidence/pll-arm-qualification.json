@@ -1,0 +1,143 @@
+{
+  "schema": "opensp-arm-pll-model-qualification-v1",
+  "createdUtc": "2026-10-03T06:03:30.664235+00:00",
+  "scope": {
+    "isolatedRegisterModel": true,
+    "guestFirmwareExecuted": false,
+    "boardIntegrationExercised": false,
+    "physicalDeviceTransportOpened": false,
+    "physicalLockTimingVerified": false,
+    "clockOutputVerified": false
+  },
+  "modelReferenceBase": "OpenSP repository",
+  "primaryReferenceBase": "sp404mk2 repository",
+  "sources": {
+    "src/lib/emulator/pll-arm.ts": {
+      "sha256": "88eecf9007c2f9ab55332ecbae9b9dfa34137e4c0c7f9813970e930a8f8acfe0",
+      "bytes": 8904
+    },
+    "tests/emulator-pll-arm.test.mjs": {
+      "sha256": "9fc765f3a30ee724d214c5b8ed91528e420d0009e1a866bc1fccc1e8cb7b44ab",
+      "bytes": 16876
+    },
+    "docs/emulator-pll-arm.md": {
+      "sha256": "d8cbd780877648a2903d73853364527341b4ab42f2feaffa9d933c9cbc0458ad",
+      "bytes": 4319
+    }
+  },
+  "inputsStableDuringQualification": true,
+  "primarySources": {
+    "manual": {
+      "path": "analysis/flash_research/IMXRT1060RM_rev3.pdf",
+      "sha256": "a2e342e492eded2a1d626cf955de953ca28d8db8675b10937a5176fd6f2c9200",
+      "bytes": 29973751
+    },
+    "header": {
+      "path": "references/MIMXRT1062.h",
+      "sha256": "1ee70ed9eb7f3a75ed89943dd799314e8330538f54c6990ea7d9cae96fd263aa",
+      "bytes": 2797765
+    },
+    "clockDriver": {
+      "path": "analysis/emulator/pll_static_20261003/fsl_clock.c",
+      "sha256": "669e2698ea0be01db0ac656f4ceef6106670d1f116b2da9f3b2ac961945a5eb3",
+      "bytes": 49394
+    }
+  },
+  "staticContract": {
+    "path": "analysis/emulator/pll_static_20261003/source-contract.json",
+    "sha256": "ae9e5f19da29303b79894e34c96ec2b9fde34cdd121f7b2bfe67aaf8fc552d9c",
+    "bytes": 19827
+  },
+  "selectingStockReport": {
+    "path": "analysis/emulator/dcdc_stock_20261003/whole-image.json",
+    "sha256": "4259614236e98678131fc96c95216ebf1561d7c60a988025a7a97e0dcb424d5d",
+    "bytes": 81633,
+    "boundedCheckpointsPassed": true,
+    "completeBootVerified": false,
+    "unknownArmReadCount": 332283,
+    "unknownArmWriteCount": 2,
+    "stockWriteValuesCaptured": false
+  },
+  "upstream": {
+    "url": "https://raw.githubusercontent.com/nxp-mcuxpresso/legacy-mcux-sdk/6f3fd257cdcf978a4d26e7d6e9eed9240037422b/devices/MIMXRT1062/drivers/fsl_clock.c",
+    "commit": "6f3fd257cdcf978a4d26e7d6e9eed9240037422b",
+    "reviewedDriverLines": "581..597",
+    "license": "BSD-3-Clause"
+  },
+  "sourceReview": {
+    "baseHex": "400D8000",
+    "ownedBytes": 16,
+    "resetHex": "00013063",
+    "scopedConfigurationMaskHex": "0001F07F",
+    "rawHeaderMaskWithoutLockHex": "0009F07F",
+    "fieldsHex": {
+      "DIV_SELECT": "0000007F",
+      "POWERDOWN": "00001000",
+      "ENABLE": "00002000",
+      "BYPASS_CLK_SRC": "0000C000",
+      "BYPASS": "00010000",
+      "PLL_SEL": "00080000",
+      "LOCK": "80000000"
+    },
+    "aliases": {
+      "SET": {
+        "offset": 4,
+        "read": 0
+      },
+      "CLR": {
+        "offset": 8,
+        "read": 0
+      },
+      "TOG": {
+        "offset": 12,
+        "read": 0
+      }
+    },
+    "manualSections": "1.5.2;14.6.1.5.3;14.6.1.6;14.8.1",
+    "manualPrintedPages": "25;1031..1033;1090;1093..1094",
+    "power": "POWERDOWN bit12=1 prevents analog lock",
+    "outputs": "ENABLE and BYPASS are output controls; driver polls LOCK while bypassed",
+    "reservedSelector": "Header PLL_SEL bit19 is reserved per manual; ignored with nonblocking request counter",
+    "independentStaticCodeAndTestsReviewPassed": true,
+    "validTickPathAllocatesDiagnosticArrays": false
+  },
+  "command": "node --test --test-reporter=tap tests/emulator-pll-arm.test.mjs",
+  "nodeVersion": "v24.20.0",
+  "summary": {
+    "tests": 28,
+    "passed": 28,
+    "failed": 0,
+    "skipped": 0,
+    "exitCode": 0
+  },
+  "typeCheck": {
+    "passed": true,
+    "command": "node node_modules/typescript/bin/tsc --ignoreConfig --noEmit --strict --target ES2022 --module ESNext --moduleResolution bundler src/lib/emulator/pll-arm.ts"
+  },
+  "transcript": {
+    "path": "tools/emulator-evidence/pll-arm-model-tests.tap",
+    "sha256": "8e04d4defcd3d9c6cf543910b64a7c4bdef9317eb4a71161326f1ef032c81776",
+    "bytes": 6053
+  },
+  "modelPolicy": {
+    "lockTicks": 1,
+    "lockFailure": false,
+    "reference24MAvailable": true,
+    "referenceClk1Available": false,
+    "fixedFixturesSurviveReset": true,
+    "reset": "Literal controls with power-down set; clear LOCK/progress/request diagnostics",
+    "lockChanges": "Power/source/divider changes clear synthetic LOCK and progress; unchanged writes preserve them",
+    "bypassAndOutput": "BYPASS/ENABLE changes preserve lock eligibility and progress",
+    "unsupportedDivider": "All7-bit encodings retained; only54..108 admitted to synthetic locking, otherwise visible conservative stall",
+    "unsupportedSource": "Codes2/3 retained and visible; conservative stall",
+    "referenceAvailability": "Explicit fixed inputs; no clock inferred from stored selector or resident state",
+    "tickBounds": "Integer0..4294967295 per call and configured delay; no reads/writes advance time",
+    "zeroDelay": "Requires explicit tick including tick(0) after eligible power-up"
+  },
+  "limits": [
+    "No whole stock or custom firmware execution in this component qualification",
+    "No physical timing, clock waveform/output frequency or routing",
+    "Other6PLL groups, PFD and CCM handshake remain outside ownership",
+    "No oscillator coupling or cold resident/ROM state reconstruction"
+  ]
+}

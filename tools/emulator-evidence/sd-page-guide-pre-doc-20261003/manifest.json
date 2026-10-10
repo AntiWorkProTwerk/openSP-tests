@@ -1,0 +1,12 @@
+{
+  "schema": "opensp-sd-page-guide-preservation-v1",
+  "purpose": "Exact guide before focused SD usage and evidence update",
+  "files": [
+    {
+      "path": "docs/emulator.md",
+      "preservedPath": "tools/emulator-evidence/sd-page-guide-pre-doc-20261003/docs/emulator.md",
+      "bytes": 23326,
+      "sha256": "12f7f61d9b5195b85f7f1d5dfd30d0bb610fc19149d24324e5fe46cff4a2962d"
+    }
+  ]
+}

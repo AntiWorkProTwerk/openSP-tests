@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>openSynth private bench</title>
+<style>body{max-width:850px;margin:32px auto;padding:0 20px;font:16px/1.5 system-ui;background:#111;color:#eee}button{padding:10px 16px;margin:8px 8px 8px 0}label{display:block;margin:8px 0}textarea{display:block;width:95%;min-height:70px}pre{white-space:pre-wrap;overflow-wrap:anywhere;border:1px solid #666;padding:16px}fieldset{margin:20px 0;border:1px solid #666}button:disabled{opacity:.5}</style>
+<h1>openSynth private bench</h1>
+<p>This local first-test tool requires an exact root-installed software seal. Public release and candidate hardware qualification remain pending. The exact P6S restoration is authenticated alongside the candidate.</p>
+<fieldset><legend>Current B2 connection</legend>
+<label><input id="device-authorized" type="checkbox"> Root has authorized this device operation.</label>
+<label><input id="del-title" type="checkbox"> The current cold DEL screen reads USB BRIDGE B2.</label>
+<button id="connect" disabled>Connect and check B2 profile</button><button id="write" disabled>Write the sealed first-test image</button>
+</fieldset>
+<p>Storage readback leaves the reboot check pending. Fully remove power, then boot normally before completing the next checks.</p>
+<fieldset><legend>Normal boot owner report</legend>
+<label><input id="normal-power" type="checkbox"> Power was fully removed before this normal boot.</label>
+<label><input id="normal-title" type="checkbox"> Utility shows openSynth N1.</label>
+<label><input id="normal-sample" type="checkbox"> A known sample plays.</label>
+<label><input id="normal-synth" type="checkbox"> Synth plays and its controls work.</label>
+<label><input id="normal-reentry" type="checkbox"> Two EXIT and Synth reentry cycles work.</label>
+<label><input id="normal-record" type="checkbox"> Recording starts while the pattern is stopped.</label>
+<label><input id="normal-save" type="checkbox"> Pad chooser, recording, stop/save and destination-pad playback work.</label>
+<label><input id="normal-repeat" type="checkbox"> Another recording works after save.</label>
+<label><input id="normal-pattern" type="checkbox"> Pattern and click controls work.</label>
+<label for="normal-reply">Owner's exact result</label><textarea id="normal-reply"></textarea><button id="normal" disabled>Record normal boot result</button>
+</fieldset>
+<fieldset><legend>Separate cold DEL check</legend>
+<label><input id="cold-power" type="checkbox"> Power was fully removed again before this DEL boot.</label>
+<label><input id="cold-title" type="checkbox"> The new DEL screen reads USB BRIDGE B2.</label>
+<label for="cold-reply">Owner's exact result</label><textarea id="cold-reply"></textarea><button id="cold" disabled>Connect for a fresh idle status check</button>
+</fieldset>
+<button id="download" disabled>Download attempt receipt</button><pre id="status" role="status" aria-live="polite">Checking the exact local transaction...</pre>
+<script type="module" src="/bench.js"></script></html>

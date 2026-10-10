@@ -1,0 +1,43 @@
+{
+  "schema": "opensp-stock-tool-history-v1",
+  "timestampUtc": "2026-10-03T03:50:35.014Z",
+  "scope": "Exact prior stock tool and its existing diagnostic reports, preserved before ordinary qualification changes",
+  "files": [
+    {
+      "source": "tools/test-emulator-stock.mjs",
+      "snapshot": "tools/emulator-evidence/stock-pre-ordinary-qualification-2026-10-03T035034-963Z/test-emulator-stock.mjs",
+      "bytes": 11743,
+      "sha256": "2af4db3f16a1bb8b69d0c74d3499e1be382b6060a99baac1961e9e2aebc09aa8"
+    },
+    {
+      "source": "tools/emulator-evidence/stock-terminal-current.json",
+      "snapshot": "tools/emulator-evidence/stock-pre-ordinary-qualification-2026-10-03T035034-963Z/stock-terminal-current.json",
+      "bytes": 58559,
+      "sha256": "64b1572d5ada901530ee611a41c552b93700d644b417f7609431bf7359ea0db7"
+    },
+    {
+      "source": "tools/emulator-evidence/stock-startup.json",
+      "snapshot": "tools/emulator-evidence/stock-pre-ordinary-qualification-2026-10-03T035034-963Z/stock-startup.json",
+      "bytes": 58559,
+      "sha256": "ae554adbd62308178b5dc25f6a21e01cbec309cd47db930fd0fd1fb492884332"
+    },
+    {
+      "source": "tools/emulator-evidence/stock-startup-first-trace-failure.json",
+      "snapshot": "tools/emulator-evidence/stock-pre-ordinary-qualification-2026-10-03T035034-963Z/stock-startup-first-trace-failure.json",
+      "bytes": 42436,
+      "sha256": "197c31ee48ebb04ceb86df5d11d593c9ec72185cd46f7179830971bd1c653f9d"
+    },
+    {
+      "source": "tools/emulator-evidence/stock-flush-after-scatter.json",
+      "snapshot": "tools/emulator-evidence/stock-pre-ordinary-qualification-2026-10-03T035034-963Z/stock-flush-after-scatter.json",
+      "bytes": 58670,
+      "sha256": "753fcd8f20d6644435ec37d07e7f7cf220dafe787b3d1bb5d256207761c574f1"
+    },
+    {
+      "source": "tools/emulator-evidence/stock-clone-before-trap.json",
+      "snapshot": "tools/emulator-evidence/stock-pre-ordinary-qualification-2026-10-03T035034-963Z/stock-clone-before-trap.json",
+      "bytes": 59023,
+      "sha256": "7f1558da1999edad55035544077f7e5bbb22f2e02d16fe3c92c9b88a6813d6f1"
+    }
+  ]
+}

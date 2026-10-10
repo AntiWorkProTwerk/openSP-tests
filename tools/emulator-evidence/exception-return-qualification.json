@@ -1,0 +1,113 @@
+{
+  "scope": "Offline instruction decoding, model transfers, and benign mapped-target Cortex-M7 branches; no engine EXC_RETURN faults or physical SP operations",
+  "files": {
+    "src/lib/emulator/exception-return.ts": {
+      "bytes": 10860,
+      "sha256": "66ea775f49ab5db3cb395d1a200d01a2a9733cccf43157e873e4fc5f8e800f03"
+    },
+    "src/lib/emulator/exceptions.ts": {
+      "bytes": 35024,
+      "sha256": "6412e7fc3086f2ab34f6f0127983521ccfb48cf7a2563249e5d09cf09a6d2e51"
+    },
+    "src/lib/emulator/cpu.ts": {
+      "bytes": 16624,
+      "sha256": "fb27f37e31277b4e79d1847562c961de23acd25befc4015ffbfd2a3c7d7809b1"
+    },
+    "src/lib/emulator/session.ts": {
+      "bytes": 15220,
+      "sha256": "da7671bc2ff356d99a643314f498749d15247323aec051f6395a6bf0fbf47563"
+    },
+    "tests/emulator-exception-return.test.mjs": {
+      "bytes": 13786,
+      "sha256": "791287d70fafc91d8dfb0830a1c87155b4bf6bfbb4acb9da9aee170b76562115"
+    },
+    "tools/fixtures/emulator-exception-return.S": {
+      "bytes": 372,
+      "sha256": "2d79f3da9ce3c36fdaef07519175f767b14de03ad6f4a591b68b08b5f6897e0a"
+    },
+    "tools/emulator-evidence/exception-return-fixture.o": {
+      "bytes": 660,
+      "sha256": "756abd7c1dc512b1efb5b44491adb245ef188181da0fe9b0ed840221ce5f8013"
+    },
+    "docs/emulator-exception-return.md": {
+      "bytes": 4910,
+      "sha256": "8df8e8fea7af9e8813be8a9c15ee75be0dbcfd632749f3be6925e2f256e2b25f"
+    },
+    "tools/test-emulator-exception-return.mjs": {
+      "bytes": 5539,
+      "sha256": "0c69e3c4c3c0850a886e79d922435c52af24e658f18ac7fc29c78b551fa82a4f"
+    }
+  },
+  "source": {
+    "document": "Arm DDI0403E.e, ID021621",
+    "url": "https://documentation-service.arm.com/static/606dc36485368c4c2b1bf62f",
+    "sha256": "76500176d20f897eaf05eeadb5a6202cef641e332073b107905c8898e0ee0747",
+    "printedPages": [
+      "A2-31: BXWritePC and LoadWritePC",
+      "A7-215: BX",
+      "A7-242..245: LDMIA/LDMDB encodings and post-PC writeback",
+      "A7-246..251: LDR immediate/literal/register",
+      "A7-319..320: POP encodings and pre-load SP update",
+      "B1-539..543: exception return interpretation and unstack"
+    ],
+    "method": "Retained manual text/pseudocode checked; independent read-only architecture review confirmed masks and writeback boundary"
+  },
+  "validation": {
+    "command": "node --test tests/emulator-exception-return.test.mjs",
+    "passedGroups": 45,
+    "failedGroups": 0,
+    "registerMemoryGroups": 26,
+    "benignRealM7Groups": 19,
+    "strictTypecheck": "passed"
+  },
+  "qualified": [
+    "BX register",
+    "POP narrow/wide and single-register LDR alias",
+    "LDMIA/LDMDB without writeback, with all otherwise legal bases",
+    "General LDM writeback limited to R4-R11; LDMIA SP! is POP alias",
+    "LDR PC immediate positive/negative, pre/post-indexed, shifted register, literal positive/negative",
+    "Passing condition, final IT position, aligned source memory, exact six raw tokens",
+    "Fresh immutable transfer applies only software loads/writeback, never hidden context or PC"
+  ],
+  "executedEvidence": {
+    "ordinaryInstructionForms": 17,
+    "target": "80002001 (mapped normal branch)",
+    "observations": [
+      "Each form retires one instruction, reaches80002000, and matches its decoded load/writeback values",
+      "Passing final IT BX is hooked; skipped IT BX is omitted",
+      "Stopping before a normal POP leaves a fresh plan; software application updatesR4/SP while PC/IPSR remain unchanged"
+    ],
+    "boundary": "The real-engine tests do not execute EXC_RETURN. Hardware-unstack interaction is a separate register/memory fixture."
+  },
+  "failedAttempt": {
+    "observation": "The first17 benign-branch assertions compared unsigned decoded targets with a signed JavaScript bitwise expected value",
+    "correction": "Expected target converted to unsigned with >>>0; no instruction-byte or engine change was required"
+  },
+  "refused": [
+    "Thread mode and unrelated PC writers cannot be interpreted as EXC_RETURN",
+    "Raw even/reserved tokens are not normalized from fetch PCs",
+    "Stale source code, data, registers or mode",
+    "Reserved/unpredictable operands and unaligned PC-load addresses",
+    "Device/system-memory source reads",
+    "General LDM writeback through R0-R3, R12, LR, and LDMDB SP"
+  ],
+  "unmodeled": [
+    "Post-return behavior for excluded general LDM writebacks",
+    "Fault rollback, MPU/MMIO load effects and interrupted multiple-load continuation",
+    "Physical timing, stock RTOS completion, complete USB/audio/sampler behavior"
+  ],
+  "runtime": {
+    "wrapperCommit": "1220477c7fb0f8fe4b500f4bd211de52f6dfe638",
+    "coreCommit": "8028ec436f2d9376525352dd38ed9ed6b9f6be10",
+    "files": {
+      "unicorn-arm.js": {
+        "bytes": 43313,
+        "sha256": "d8bc37b898ccbc5b429f17112add6ad33a8a9b35df4146034ba141b992dae007"
+      },
+      "unicorn-arm.wasm": {
+        "bytes": 704978,
+        "sha256": "16599c54af6da32ecce2ce52538890610a83c96e1152796ddffa2533d6440b35"
+      }
+    }
+  }
+}

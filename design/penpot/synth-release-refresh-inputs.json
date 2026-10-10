@@ -1,0 +1,328 @@
+{
+  "schema": "opensynth.native-refresh-inputs/v1",
+  "fileId": "24d9d841-759d-81bc-8008-b518bc70d8b3",
+  "pages": {
+    "Release components": "cac28749-e268-802e-8008-bf94ee8c8ef3",
+    "Synth release": "cac28749-e268-802e-8008-bf94ee9149bb"
+  },
+  "copySha256": "c3d4a22a4fcb2a51c32e002d1db38b8789bd05982b4b8e545182294278d40c91",
+  "figureSha256": "56e773253ca0e4b9bd4231b5cdf4cf7d8c386f6705a1c46685e3bcd2b54a6df4",
+  "dependenciesSha256": "9d5593ee8a2a9dcba5cebd9bb7d3b5c4db803812be4439035a908922e4e2e149",
+  "basis": {
+    "design/penpot/production.json": {
+      "sha256": "b348105939dd665ab46f3fc559ae81139d94f0135f2fcc7aaf205a4f1621fdf3",
+      "bytes": 382476
+    },
+    "design/penpot/guide-components.json": {
+      "sha256": "dd86b8ccb59ea092ec81f677563d5bf695c35b4a2e6a3c471558b9ff6f37a177",
+      "bytes": 447258
+    },
+    "design/penpot/synth-release-components.json": {
+      "sha256": "c88733f88afa7bdaa75811e1229aed728dcfbe7420476229d19b9c85bd8bee75",
+      "bytes": 430837
+    },
+    "design/penpot/synth-release-layouts.json": {
+      "sha256": "b35ae389f44d6534d389a23ece3d6f58028729f5252e182fc0f44d91d51399e7",
+      "bytes": 213431
+    },
+    "design/penpot/synth-direct-recording-components.json": {
+      "sha256": "a118f7ad105aa6b4ecec885db807857468ebad08b9d51f9669b72c7bdd74b8be",
+      "bytes": 64676
+    },
+    "design/penpot/synth-release-library.js": {
+      "sha256": "67a0bc28e31b6a6152f0f2e2000de5bc5b4a70bed91dbba7140cbbc7f68c616a",
+      "bytes": 6172
+    },
+    "design/penpot/export-guide-components.js": {
+      "sha256": "72a4dcc912ba6213c15afa99d39ae893421f36c6a3c62dcd97ffbbb0f9369bfa",
+      "bytes": 1575
+    },
+    "tools/penpot-call.mjs": {
+      "sha256": "6245bedb84ce107f4f9a8f366a4891970b5ccab4f86d1576a6b31032b571f2ed",
+      "bytes": 3056
+    }
+  },
+  "helpers": {
+    "design/penpot/synth-release-fit.js": {
+      "sha256": "b6f1c571b29c4055124d701341a5b6b5c57e214a3960b4b83dfd90f5dc164832",
+      "bytes": 5315
+    },
+    "design/penpot/synth-release-refresh.js": {
+      "sha256": "913eefabaad4a157a66386b648dc3864e346b1db5c9c89464a6dcc92463ca8a0",
+      "bytes": 9435
+    }
+  },
+  "native": {
+    "releaseMains": [
+      {
+        "name": "Synth release installation (Desktop)",
+        "id": "cac28749-e268-802e-8008-bf950ae554dd",
+        "mainId": "cac28749-e268-802e-8008-bf950a911331",
+        "width": 928
+      },
+      {
+        "name": "Synth release evidence (Mobile)",
+        "id": "cac28749-e268-802e-8008-bf951749f52e",
+        "mainId": "cac28749-e268-802e-8008-bf95171122e6",
+        "width": 342
+      },
+      {
+        "name": "Synth release recording (Desktop)",
+        "id": "cac28749-e268-802e-8008-bf9508f0d107",
+        "mainId": "cac28749-e268-802e-8008-bf950899e107",
+        "width": 928
+      },
+      {
+        "name": "Synth release current (Mobile)",
+        "id": "cac28749-e268-802e-8008-bf951041176e",
+        "mainId": "cac28749-e268-802e-8008-bf950ff3f5f0",
+        "width": 342
+      },
+      {
+        "name": "Synth release evidence (Desktop)",
+        "id": "cac28749-e268-802e-8008-bf950c8d8514",
+        "mainId": "cac28749-e268-802e-8008-bf950c58e8c1",
+        "width": 928
+      },
+      {
+        "name": "Synth release recording (Mobile)",
+        "id": "cac28749-e268-802e-8008-bf9513eb3ed1",
+        "mainId": "cac28749-e268-802e-8008-bf951386d079",
+        "width": 342
+      },
+      {
+        "name": "Synth release current (Desktop)",
+        "id": "cac28749-e268-802e-8008-bf95053be627",
+        "mainId": "cac28749-e268-802e-8008-bf9504eaa141",
+        "width": 928
+      },
+      {
+        "name": "Synth release introduction (Desktop)",
+        "id": "cac28749-e268-802e-8008-bf94f550e59d",
+        "mainId": "cac28749-e268-802e-8008-bf94f4fb4e76",
+        "width": 928
+      },
+      {
+        "name": "Synth release introduction (Mobile)",
+        "id": "cac28749-e268-802e-8008-bf950e503e31",
+        "mainId": "cac28749-e268-802e-8008-bf950e122c7f",
+        "width": 342
+      },
+      {
+        "name": "openSynth recording figure (Mobile)",
+        "id": "cac28749-e268-802e-8008-bf9d212c578c",
+        "mainId": "cac28749-e268-802e-8008-bf9d1de17c14",
+        "width": 342
+      },
+      {
+        "name": "openSynth recording figure (Desktop)",
+        "id": "cac28749-e268-802e-8008-bf9d1c37c0ae",
+        "mainId": "cac28749-e268-802e-8008-bf9d1957eb15",
+        "width": 760
+      },
+      {
+        "name": "Synth release controls (Mobile)",
+        "id": "cac28749-e268-802e-8008-bf9511fd5a55",
+        "mainId": "cac28749-e268-802e-8008-bf9511b40ce5",
+        "width": 342
+      },
+      {
+        "name": "Synth release installation (Mobile)",
+        "id": "cac28749-e268-802e-8008-bf9515cc8762",
+        "mainId": "cac28749-e268-802e-8008-bf95156651b2",
+        "width": 342
+      },
+      {
+        "name": "Synth release controls (Desktop)",
+        "id": "cac28749-e268-802e-8008-bf9506f6bd1b",
+        "mainId": "cac28749-e268-802e-8008-bf9506b29fa1",
+        "width": 928
+      }
+    ],
+    "shared": [
+      {
+        "name": "Article paragraph",
+        "id": "88ef66de-c84d-8075-8008-b5f305790ea5"
+      },
+      {
+        "name": "Article heading",
+        "id": "88ef66de-c84d-8075-8008-b5f3058158ba"
+      },
+      {
+        "name": "Contents rail",
+        "id": "88ef66de-c84d-8075-8008-b5f305c5bbde"
+      },
+      {
+        "name": "P6N direct record armed",
+        "id": "cac28749-e268-802e-8008-bf97fba9aa7a"
+      },
+      {
+        "name": "P6N direct record chooser",
+        "id": "cac28749-e268-802e-8008-bf97e346eec3"
+      },
+      {
+        "name": "P6N record pad cell",
+        "id": "cac28749-e268-802e-8008-bf97d577f5a0"
+      },
+      {
+        "name": "P6N direct record saving",
+        "id": "cac28749-e268-802e-8008-bf9814647a86"
+      },
+      {
+        "name": "P6N direct record recording",
+        "id": "cac28749-e268-802e-8008-bf980770caae"
+      }
+    ],
+    "typography": [
+      {
+        "name": "Hero mobile",
+        "id": "d862c4e5-8ca1-80d0-8008-b5895d73e127"
+      },
+      {
+        "name": "Label",
+        "id": "d862c4e5-8ca1-80d0-8008-b5895e55a1d1"
+      },
+      {
+        "name": "Heading mobile",
+        "id": "d862c4e5-8ca1-80d0-8008-b5895da5ee53"
+      },
+      {
+        "name": "Body",
+        "id": "d862c4e5-8ca1-80d0-8008-b5895dd83082"
+      },
+      {
+        "name": "Hero",
+        "id": "d862c4e5-8ca1-80d0-8008-b5895d597c62"
+      },
+      {
+        "name": "Micro",
+        "id": "d862c4e5-8ca1-80d0-8008-b5895e6f6f0a"
+      },
+      {
+        "name": "Heading",
+        "id": "d862c4e5-8ca1-80d0-8008-b5895d8d30cb"
+      },
+      {
+        "name": "Intro",
+        "id": "d862c4e5-8ca1-80d0-8008-b5895dbece45"
+      },
+      {
+        "name": "Pad number",
+        "id": "d862c4e5-8ca1-80d0-8008-b5895e888ce7"
+      },
+      {
+        "name": "Brand",
+        "id": "d862c4e5-8ca1-80d0-8008-b5895ebce925"
+      },
+      {
+        "name": "Display text",
+        "id": "d862c4e5-8ca1-80d0-8008-b5895ea43e95"
+      },
+      {
+        "name": "Article title",
+        "id": "88ef66de-c84d-8075-8008-b5f3051c77de"
+      },
+      {
+        "name": "Caption mobile",
+        "id": "d862c4e5-8ca1-80d0-8008-b5895e3cfb71"
+      },
+      {
+        "name": "Caption",
+        "id": "d862c4e5-8ca1-80d0-8008-b5895e2426e6"
+      },
+      {
+        "name": "Body mobile",
+        "id": "d862c4e5-8ca1-80d0-8008-b5895df1fa1c"
+      },
+      {
+        "name": "Navigation",
+        "id": "d862c4e5-8ca1-80d0-8008-b5895e0ad1d8"
+      },
+      {
+        "name": "Code",
+        "id": "88ef66de-c84d-8075-8008-b5f30550700f"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Line",
+        "id": "d862c4e5-8ca1-80d0-8008-b5895c1a9c52"
+      },
+      {
+        "name": "Dark line",
+        "id": "d862c4e5-8ca1-80d0-8008-b5895cfe1f4a"
+      },
+      {
+        "name": "Dark paper",
+        "id": "d862c4e5-8ca1-80d0-8008-b5895c75a407"
+      },
+      {
+        "name": "Dark muted",
+        "id": "d862c4e5-8ca1-80d0-8008-b5895cd03ecd"
+      },
+      {
+        "name": "Surface",
+        "id": "d862c4e5-8ca1-80d0-8008-b5895c482f60"
+      },
+      {
+        "name": "Muted",
+        "id": "d862c4e5-8ca1-80d0-8008-b5895bec83b8"
+      },
+      {
+        "name": "Dark ink",
+        "id": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+      },
+      {
+        "name": "OLED pixel",
+        "id": "88ef66de-c84d-8075-8008-b5cd515b360e"
+      },
+      {
+        "name": "Dark surface",
+        "id": "d862c4e5-8ca1-80d0-8008-b5895d2b9f0e"
+      },
+      {
+        "name": "Ink",
+        "id": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+      },
+      {
+        "name": "OLED black",
+        "id": "88ef66de-c84d-8075-8008-b5cd50e1aa42"
+      },
+      {
+        "name": "Paper",
+        "id": "d862c4e5-8ca1-80d0-8008-b5895a888366"
+      }
+    ],
+    "layouts": [
+      {
+        "name": "Synth release / Desktop / Light",
+        "id": "cac28749-e268-802e-8008-bf952a60a147",
+        "width": 1440,
+        "mobile": false,
+        "dark": false
+      },
+      {
+        "name": "Synth release / Desktop / Dark",
+        "id": "cac28749-e268-802e-8008-bf952c308aa8",
+        "width": 1440,
+        "mobile": false,
+        "dark": true
+      },
+      {
+        "name": "Synth release / Mobile / Light",
+        "id": "cac28749-e268-802e-8008-bf952e9745ed",
+        "width": 390,
+        "mobile": true,
+        "dark": false
+      },
+      {
+        "name": "Synth release / Mobile / Dark",
+        "id": "cac28749-e268-802e-8008-bf953102af4c",
+        "width": 390,
+        "mobile": true,
+        "dark": true
+      }
+    ]
+  },
+  "sourceBaseline": "D14"
+}

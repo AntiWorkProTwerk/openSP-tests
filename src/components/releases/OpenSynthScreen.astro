@@ -1,0 +1,16 @@
+---
+// One openSynth OLED animation: a vertical sprite of 128x64 frames from opensynth-screens.json,
+// stepped by the enclosing <opensynth-screens> controller. Without JavaScript the first frame shows.
+import screens from '../../content/releases/opensynth-screens.json';
+interface Props {id: string; caption?: string; size?: 'hero' | 'row';}
+const {id, caption, size = 'row'} = Astro.props;
+const animation = screens.animations.find(a => a.id === id);
+if (!animation) throw new Error(`Unknown openSynth screen animation: ${id}`);
+const text = caption ?? animation.caption;
+---
+<figure class={`opensynth-screen opensynth-screen-${size}`} data-component="openSynth screen tile">
+  <div class="opensynth-oled" data-screen={animation.id} data-durations={animation.durations.join(',')} style={`--frames:${animation.frames}`}>
+    <img src={animation.src} width={screens.width} height={screens.height * animation.frames} alt={`${animation.title}: ${text}`} loading="lazy" decoding="async"/>
+  </div>
+  <figcaption>{text}</figcaption>
+</figure>

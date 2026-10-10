@@ -1,0 +1,1291 @@
+{
+  "source": {
+    "fileId": "24d9d841-759d-81bc-8008-b518bc70d8b3",
+    "pageId": "cac28749-e268-802e-8008-bf94ee9149bb",
+    "kind": "native-layout-api-export"
+  },
+  "boards": [
+    {
+      "id": "14d55a1e-72ea-80d5-8008-c3ec1a0062fa",
+      "name": "openSynth page / Desktop / Light",
+      "width": 1440,
+      "height": 6295.999999999999,
+      "metadata": {
+        "schema": 2,
+        "page": "opensynth",
+        "mobile": false,
+        "dark": false,
+        "releaseReady": true,
+        "sharedCopy": "src/content/releases/synth.json",
+        "screens": "src/content/releases/opensynth-screens.json",
+        "sharedLinkedComponents": true
+      },
+      "linked": [
+        {
+          "name": "OpenSP / Wordmark",
+          "component": "Wordmark",
+          "copy": true
+        },
+        {
+          "name": "OpenSP / Guide / Contents rail",
+          "component": "Contents rail",
+          "copy": true
+        },
+        {
+          "name": "OpenSP / Releases / openSynth page introduction (Desktop)",
+          "component": "openSynth page introduction (Desktop)",
+          "copy": true
+        },
+        {
+          "name": "copy / introduction",
+          "component": "Article paragraph",
+          "copy": true
+        },
+        {
+          "name": "copy / status",
+          "component": "Article paragraph",
+          "copy": true
+        },
+        {
+          "name": "Hero screen / detune",
+          "component": "openSynth screen tile",
+          "copy": true
+        },
+        {
+          "name": "OpenSP / Releases / Synth release features (Desktop)",
+          "component": "Synth release features (Desktop)",
+          "copy": true
+        },
+        {
+          "name": "OpenSP / Guide / Article heading",
+          "component": "Article heading",
+          "copy": true
+        },
+        {
+          "name": "copy / features / paragraph / 0",
+          "component": "Article paragraph",
+          "copy": true
+        },
+        {
+          "name": "copy / features / row / 0",
+          "component": "Article paragraph",
+          "copy": true
+        },
+        {
+          "name": "Feature screen / sounds",
+          "component": "openSynth screen tile",
+          "copy": true
+        },
+        {
+          "name": "copy / features / row / 1",
+          "component": "Article paragraph",
+          "copy": true
+        },
+        {
+          "name": "Feature screen / pages",
+          "component": "openSynth screen tile",
+          "copy": true
+        },
+        {
+          "name": "copy / features / row / 2",
+          "component": "Article paragraph",
+          "copy": true
+        },
+        {
+          "name": "Feature screen / amp",
+          "component": "openSynth screen tile",
+          "copy": true
+        },
+        {
+          "name": "copy / features / row / 3",
+          "component": "Article paragraph",
+          "copy": true
+        },
+        {
+          "name": "Feature screen / mix-pw",
+          "component": "openSynth screen tile",
+          "copy": true
+        },
+        {
+          "name": "copy / features / row / 4",
+          "component": "Article paragraph",
+          "copy": true
+        },
+        {
+          "name": "Feature screen / voice",
+          "component": "openSynth screen tile",
+          "copy": true
+        },
+        {
+          "name": "copy / features / row / 5",
+          "component": "Article paragraph",
+          "copy": true
+        },
+        {
+          "name": "Feature screen / level",
+          "component": "openSynth screen tile",
+          "copy": true
+        },
+        {
+          "name": "copy / features / row / 6",
+          "component": "Article paragraph",
+          "copy": true
+        },
+        {
+          "name": "Feature screen / scope",
+          "component": "openSynth screen tile",
+          "copy": true
+        },
+        {
+          "name": "copy / features / row / 7",
+          "component": "Article paragraph",
+          "copy": true
+        },
+        {
+          "name": "Feature screen / velocity",
+          "component": "openSynth screen tile",
+          "copy": true
+        },
+        {
+          "name": "copy / features / row / 8",
+          "component": "Article paragraph",
+          "copy": true
+        },
+        {
+          "name": "Feature screen / patterns",
+          "component": "openSynth screen tile",
+          "copy": true
+        },
+        {
+          "name": "copy / features / row / 9",
+          "component": "Article paragraph",
+          "copy": true
+        },
+        {
+          "name": "Feature screen / record",
+          "component": "openSynth screen tile",
+          "copy": true
+        },
+        {
+          "name": "OpenSP / Releases / Synth release patch (Desktop)",
+          "component": "Synth release patch (Desktop)",
+          "copy": true
+        },
+        {
+          "name": "OpenSP / Guide / Article heading",
+          "component": "Article heading",
+          "copy": true
+        },
+        {
+          "name": "copy / patch / paragraph / 0",
+          "component": "Article paragraph",
+          "copy": true
+        },
+        {
+          "name": "copy / patch / step / 0",
+          "component": "Article paragraph",
+          "copy": true
+        },
+        {
+          "name": "copy / patch / step / 1",
+          "component": "Article paragraph",
+          "copy": true
+        },
+        {
+          "name": "copy / patch / step / 2",
+          "component": "Article paragraph",
+          "copy": true
+        },
+        {
+          "name": "copy / patch / step / 3",
+          "component": "Article paragraph",
+          "copy": true
+        },
+        {
+          "name": "copy / patch / step / 4",
+          "component": "Article paragraph",
+          "copy": true
+        },
+        {
+          "name": "copy / patch / step / 5",
+          "component": "Article paragraph",
+          "copy": true
+        },
+        {
+          "name": "copy / patch / note",
+          "component": "Article paragraph",
+          "copy": true
+        },
+        {
+          "name": "OpenSP / Releases / Synth release safety (Desktop)",
+          "component": "Synth release safety (Desktop)",
+          "copy": true
+        },
+        {
+          "name": "OpenSP / Guide / Article heading",
+          "component": "Article heading",
+          "copy": true
+        },
+        {
+          "name": "copy / safety / paragraph / 0",
+          "component": "Article paragraph",
+          "copy": true
+        },
+        {
+          "name": "copy / safety / paragraph / 1",
+          "component": "Article paragraph",
+          "copy": true
+        },
+        {
+          "name": "copy / safety / row / 0",
+          "component": "Article paragraph",
+          "copy": true
+        },
+        {
+          "name": "copy / safety / row / 1",
+          "component": "Article paragraph",
+          "copy": true
+        },
+        {
+          "name": "copy / safety / row / 2",
+          "component": "Article paragraph",
+          "copy": true
+        },
+        {
+          "name": "copy / safety / note",
+          "component": "Article paragraph",
+          "copy": true
+        }
+      ],
+      "text": [
+        "opensp",
+        "RELEASES   GUIDES",
+        "ON THIS PAGE",
+        "Features and how to use them",
+        "How to patch",
+        "Why it won't brick your SP",
+        "A smaller question",
+        "Twelve characters",
+        "Before hardware",
+        "On the SP",
+        "FOR FIRMWARE V5.52\nUPDATED 9 OCTOBER 2026",
+        "Choose features and shortcuts",
+        "openSynth for the SP-404MKII",
+        "openSynth adds a synth to the SP-404MKII. Pick one of sixteen sounds, play it on the pads and shape it on four pages while the screen draws the waveform. It plays through BUS FX and over your patterns, and you can record a take straight to an empty pad.",
+        "For SP-404MKII firmware v5.52. You build openSynth in your browser from Roland's official update and install it with the SP's SD card updater.",
+        "DETUNE",
+        "Soft Sine: with DETUNE up, the two oscillator waves drift past each other.",
+        "Every screen on this page is drawn by the openSynth display code at the SP's 128 by 64 pixels.",
+        "PLAY ANIMATIONS",
+        "How to patch    Read how the synth works",
+        "Features and how to use them",
+        "The bottom line of the synth screen is the short version: VALUE picks sounds and pages, SHIFT opens the menu.",
+        "PLAY ANIMATIONS",
+        "SIXTEEN SOUNDS ON THE PADS\nOpen SYNTH and play notes or chords on the pads. In POLY, up to four notes sound at once. Turn VALUE to change the sound, or hold VALUE while you turn it to change the octave.",
+        "SIXTEEN SOUNDS",
+        "Soft Sine, Wide Saw as a chord, Acid Pulse, Slow Pad, Soft Organ and Sub Bass, each played on the pads.",
+        "TONE, OSC, AMP AND MOD PAGES\nPress VALUE to go to the next page: TONE, OSC, AMP, then MOD. CTRL 1, 2 and 3 edit the three settings named on screen: CUT, RES and ENV on TONE; MIX, DET and PW on OSC; ATK, DEC and REL on AMP; RATE, DEP and GLD on MOD.",
+        "PAGES",
+        "Wide Saw with a chord held: TONE, OSC, AMP and MOD, each with its own picture and knob values.",
+        "SCOPE AND PICTURES\nThe top of the screen draws what the synth is playing, release tails included. Each page adds its own picture. AMP shows the ADSR envelope with a dot on the newest note. OSC shows the two oscillator waves, which drift against each other as you raise DET. TONE shows the filter curve and MOD shows the LFO.",
+        "AMP ENVELOPE",
+        "Slow Pad on AMP: the scope draws the note and the dot follows it from attack through release.",
+        "MIX AND PW\nMIX is a single line with a slider between oscillator A and oscillator B. PW sets the width of a pulse wave. Nine of the sounds have no pulse oscillator, so on those PW is greyed out, reads -- and ignores the knob.",
+        "MIX AND PW",
+        "MIX at 0, 50 and 100 on Soft Organ, PW at 10, 50 and 90 percent on Acid Pulse, then PW greyed out on Soft Sine, Warm Triangle and Wide Saw.",
+        "MONO OR POLY\nPress SHIFT + VALUE to open the menu, choose VOICE and turn VALUE to pick MONO or POLY. GLIDE slides between notes in MONO.",
+        "MONO OR POLY",
+        "The same three-pad chord on Wide Saw: POLY4 plays three voices, MONO plays one.",
+        "SYNTH LEVEL\nThe VOLUME knob stays the SP's master volume. To change only the synth, hold SHIFT and turn VALUE.",
+        "SYNTH LEVEL",
+        "SHIFT + VALUE: the bottom line shows VOL and a bar while you turn, with a tick at the default level.",
+        "BUS FX\nTurn on a BUS FX the usual way and the synth plays through it.",
+        "SCOPE",
+        "Slow Pad releasing on the play page. The scope draws the synth's own output, before BUS FX.",
+        "FIXED VELOCITY\nSHIFT + pad 1 turns fixed velocity on and off, as it does on the stock SP.",
+        "FIXED VELOCITY",
+        "Pluck played on four pads in turn. Synth notes have no velocity, so this screen looks the same with fixed velocity on or off.",
+        "PATTERNS\nPress PATTERN SELECT and choose a pattern pad to start it, then play the synth over it. Choose the same pattern again to stop it. PATTERN SELECT or EXIT closes the chooser and the pads go back to playing synth notes.",
+        "PATTERNS",
+        "The pattern chooser: A03 starts, A06 waits as the next pattern, then the pads play Wide Saw over it.",
+        "RECORD TO A PAD\nPress REC and choose an empty pad. Press REC to start, play, then press REC again to stop. The take is saved to that pad.",
+        "RECORD TO A PAD",
+        "REC asks for an empty pad, pad 3 is armed, the frame count rises while you play, then SAVED.",
+        "How to patch",
+        "openSynth comes as a source patcher with no Roland code in it. You download Roland's official v5.52 update yourself, and the patcher builds openSynth from it on your computer. OpenSP never hosts or sends Roland firmware.",
+        "1. Download the SP-404MKII system program v5.52 from Roland's support site and keep the ZIP unchanged. The patcher rejects any other version and any modified file.",
+        "2. Download the source patcher below, unzip it and install the tools listed with it.",
+        "3. From the unzipped folder, run the build command with the path to your Roland ZIP and your toolchain. The patcher checks its own files, your ZIP and the finished image against fixed hashes, then writes the openSynth APP1 file to the output folder.",
+        "4. Format an SD card in the SP. Copy the APP1 file to the root of the card as SP404MKII_APP1.bin, with no other update files beside it.",
+        "5. With the SP off, insert the card, hold SHIFT and switch on. The updater shows APP1 UPDATER FOUND. Confirm the update as in Roland's instructions and leave the power on until it shows UPDATE COMPLETE PLEASE POWER OFF.",
+        "6. Switch off, take out the card and switch on normally. Open SYNTH and press SHIFT + VALUE: the menu title reads openSynth.",
+        "Firmware goes onto the SP through its SD card updater. The SP's USB audio and MIDI connection does not install firmware.",
+        "Why it won't brick your SP",
+        "The SP-404MKII keeps its firmware in separate parts. A small resident bootloader starts the unit and holds Roland's SD card updater, the one you reach by holding SHIFT at power-on. Next to it sit a second firmware part, APP0, and the processor's one-time fuses. openSynth replaces only the application image, APP1, and never writes the bootloader, APP0 or the fuses.",
+        "So the updater is always there to put an application back. If an update is interrupted or you want to go back, hold SHIFT at power-on and install Roland's official firmware from an SD card. This has already been done on an SP that was left with a half-written application after an interrupted update.",
+        "Never written\nThe resident bootloader with Roland's SHIFT + power SD updater, APP0 and the fuses.",
+        "Replaced\nThe application image only. Roland's normal SD update puts the official firmware back.",
+        "Checked before you install\nThe patcher accepts only the exact official v5.52 file and checks the image it builds against fixed hashes.",
+        "Before you install, keep an SD card ready with Roland's official v5.52 update files in its root, so you can go back at any time. The protection covers the firmware openSynth writes; it cannot fix a hardware fault or damage from another cause.",
+        "openSynth for SP-404MKII firmware v5.52. OpenSP does not host or distribute Roland firmware."
+      ]
+    },
+    {
+      "id": "14d55a1e-72ea-80d5-8008-c3ec1ca3bd5a",
+      "name": "openSynth page / Desktop / Dark",
+      "width": 1440,
+      "height": 6295.999999999999,
+      "metadata": {
+        "schema": 2,
+        "page": "opensynth",
+        "mobile": false,
+        "dark": true,
+        "releaseReady": true,
+        "sharedCopy": "src/content/releases/synth.json",
+        "screens": "src/content/releases/opensynth-screens.json",
+        "sharedLinkedComponents": true
+      },
+      "linked": [
+        {
+          "name": "OpenSP / Wordmark",
+          "component": "Wordmark",
+          "copy": true
+        },
+        {
+          "name": "OpenSP / Guide / Contents rail",
+          "component": "Contents rail",
+          "copy": true
+        },
+        {
+          "name": "OpenSP / Releases / openSynth page introduction (Desktop)",
+          "component": "openSynth page introduction (Desktop)",
+          "copy": true
+        },
+        {
+          "name": "copy / introduction",
+          "component": "Article paragraph",
+          "copy": true
+        },
+        {
+          "name": "copy / status",
+          "component": "Article paragraph",
+          "copy": true
+        },
+        {
+          "name": "Hero screen / detune",
+          "component": "openSynth screen tile",
+          "copy": true
+        },
+        {
+          "name": "OpenSP / Releases / Synth release features (Desktop)",
+          "component": "Synth release features (Desktop)",
+          "copy": true
+        },
+        {
+          "name": "OpenSP / Guide / Article heading",
+          "component": "Article heading",
+          "copy": true
+        },
+        {
+          "name": "copy / features / paragraph / 0",
+          "component": "Article paragraph",
+          "copy": true
+        },
+        {
+          "name": "copy / features / row / 0",
+          "component": "Article paragraph",
+          "copy": true
+        },
+        {
+          "name": "Feature screen / sounds",
+          "component": "openSynth screen tile",
+          "copy": true
+        },
+        {
+          "name": "copy / features / row / 1",
+          "component": "Article paragraph",
+          "copy": true
+        },
+        {
+          "name": "Feature screen / pages",
+          "component": "openSynth screen tile",
+          "copy": true
+        },
+        {
+          "name": "copy / features / row / 2",
+          "component": "Article paragraph",
+          "copy": true
+        },
+        {
+          "name": "Feature screen / amp",
+          "component": "openSynth screen tile",
+          "copy": true
+        },
+        {
+          "name": "copy / features / row / 3",
+          "component": "Article paragraph",
+          "copy": true
+        },
+        {
+          "name": "Feature screen / mix-pw",
+          "component": "openSynth screen tile",
+          "copy": true
+        },
+        {
+          "name": "copy / features / row / 4",
+          "component": "Article paragraph",
+          "copy": true
+        },
+        {
+          "name": "Feature screen / voice",
+          "component": "openSynth screen tile",
+          "copy": true
+        },
+        {
+          "name": "copy / features / row / 5",
+          "component": "Article paragraph",
+          "copy": true
+        },
+        {
+          "name": "Feature screen / level",
+          "component": "openSynth screen tile",
+          "copy": true
+        },
+        {
+          "name": "copy / features / row / 6",
+          "component": "Article paragraph",
+          "copy": true
+        },
+        {
+          "name": "Feature screen / scope",
+          "component": "openSynth screen tile",
+          "copy": true
+        },
+        {
+          "name": "copy / features / row / 7",
+          "component": "Article paragraph",
+          "copy": true
+        },
+        {
+          "name": "Feature screen / velocity",
+          "component": "openSynth screen tile",
+          "copy": true
+        },
+        {
+          "name": "copy / features / row / 8",
+          "component": "Article paragraph",
+          "copy": true
+        },
+        {
+          "name": "Feature screen / patterns",
+          "component": "openSynth screen tile",
+          "copy": true
+        },
+        {
+          "name": "copy / features / row / 9",
+          "component": "Article paragraph",
+          "copy": true
+        },
+        {
+          "name": "Feature screen / record",
+          "component": "openSynth screen tile",
+          "copy": true
+        },
+        {
+          "name": "OpenSP / Releases / Synth release patch (Desktop)",
+          "component": "Synth release patch (Desktop)",
+          "copy": true
+        },
+        {
+          "name": "OpenSP / Guide / Article heading",
+          "component": "Article heading",
+          "copy": true
+        },
+        {
+          "name": "copy / patch / paragraph / 0",
+          "component": "Article paragraph",
+          "copy": true
+        },
+        {
+          "name": "copy / patch / step / 0",
+          "component": "Article paragraph",
+          "copy": true
+        },
+        {
+          "name": "copy / patch / step / 1",
+          "component": "Article paragraph",
+          "copy": true
+        },
+        {
+          "name": "copy / patch / step / 2",
+          "component": "Article paragraph",
+          "copy": true
+        },
+        {
+          "name": "copy / patch / step / 3",
+          "component": "Article paragraph",
+          "copy": true
+        },
+        {
+          "name": "copy / patch / step / 4",
+          "component": "Article paragraph",
+          "copy": true
+        },
+        {
+          "name": "copy / patch / step / 5",
+          "component": "Article paragraph",
+          "copy": true
+        },
+        {
+          "name": "copy / patch / note",
+          "component": "Article paragraph",
+          "copy": true
+        },
+        {
+          "name": "OpenSP / Releases / Synth release safety (Desktop)",
+          "component": "Synth release safety (Desktop)",
+          "copy": true
+        },
+        {
+          "name": "OpenSP / Guide / Article heading",
+          "component": "Article heading",
+          "copy": true
+        },
+        {
+          "name": "copy / safety / paragraph / 0",
+          "component": "Article paragraph",
+          "copy": true
+        },
+        {
+          "name": "copy / safety / paragraph / 1",
+          "component": "Article paragraph",
+          "copy": true
+        },
+        {
+          "name": "copy / safety / row / 0",
+          "component": "Article paragraph",
+          "copy": true
+        },
+        {
+          "name": "copy / safety / row / 1",
+          "component": "Article paragraph",
+          "copy": true
+        },
+        {
+          "name": "copy / safety / row / 2",
+          "component": "Article paragraph",
+          "copy": true
+        },
+        {
+          "name": "copy / safety / note",
+          "component": "Article paragraph",
+          "copy": true
+        }
+      ],
+      "text": [
+        "opensp",
+        "RELEASES   GUIDES",
+        "ON THIS PAGE",
+        "Features and how to use them",
+        "How to patch",
+        "Why it won't brick your SP",
+        "A smaller question",
+        "Twelve characters",
+        "Before hardware",
+        "On the SP",
+        "FOR FIRMWARE V5.52\nUPDATED 9 OCTOBER 2026",
+        "Choose features and shortcuts",
+        "openSynth for the SP-404MKII",
+        "openSynth adds a synth to the SP-404MKII. Pick one of sixteen sounds, play it on the pads and shape it on four pages while the screen draws the waveform. It plays through BUS FX and over your patterns, and you can record a take straight to an empty pad.",
+        "For SP-404MKII firmware v5.52. You build openSynth in your browser from Roland's official update and install it with the SP's SD card updater.",
+        "DETUNE",
+        "Soft Sine: with DETUNE up, the two oscillator waves drift past each other.",
+        "Every screen on this page is drawn by the openSynth display code at the SP's 128 by 64 pixels.",
+        "PLAY ANIMATIONS",
+        "How to patch    Read how the synth works",
+        "Features and how to use them",
+        "The bottom line of the synth screen is the short version: VALUE picks sounds and pages, SHIFT opens the menu.",
+        "PLAY ANIMATIONS",
+        "SIXTEEN SOUNDS ON THE PADS\nOpen SYNTH and play notes or chords on the pads. In POLY, up to four notes sound at once. Turn VALUE to change the sound, or hold VALUE while you turn it to change the octave.",
+        "SIXTEEN SOUNDS",
+        "Soft Sine, Wide Saw as a chord, Acid Pulse, Slow Pad, Soft Organ and Sub Bass, each played on the pads.",
+        "TONE, OSC, AMP AND MOD PAGES\nPress VALUE to go to the next page: TONE, OSC, AMP, then MOD. CTRL 1, 2 and 3 edit the three settings named on screen: CUT, RES and ENV on TONE; MIX, DET and PW on OSC; ATK, DEC and REL on AMP; RATE, DEP and GLD on MOD.",
+        "PAGES",
+        "Wide Saw with a chord held: TONE, OSC, AMP and MOD, each with its own picture and knob values.",
+        "SCOPE AND PICTURES\nThe top of the screen draws what the synth is playing, release tails included. Each page adds its own picture. AMP shows the ADSR envelope with a dot on the newest note. OSC shows the two oscillator waves, which drift against each other as you raise DET. TONE shows the filter curve and MOD shows the LFO.",
+        "AMP ENVELOPE",
+        "Slow Pad on AMP: the scope draws the note and the dot follows it from attack through release.",
+        "MIX AND PW\nMIX is a single line with a slider between oscillator A and oscillator B. PW sets the width of a pulse wave. Nine of the sounds have no pulse oscillator, so on those PW is greyed out, reads -- and ignores the knob.",
+        "MIX AND PW",
+        "MIX at 0, 50 and 100 on Soft Organ, PW at 10, 50 and 90 percent on Acid Pulse, then PW greyed out on Soft Sine, Warm Triangle and Wide Saw.",
+        "MONO OR POLY\nPress SHIFT + VALUE to open the menu, choose VOICE and turn VALUE to pick MONO or POLY. GLIDE slides between notes in MONO.",
+        "MONO OR POLY",
+        "The same three-pad chord on Wide Saw: POLY4 plays three voices, MONO plays one.",
+        "SYNTH LEVEL\nThe VOLUME knob stays the SP's master volume. To change only the synth, hold SHIFT and turn VALUE.",
+        "SYNTH LEVEL",
+        "SHIFT + VALUE: the bottom line shows VOL and a bar while you turn, with a tick at the default level.",
+        "BUS FX\nTurn on a BUS FX the usual way and the synth plays through it.",
+        "SCOPE",
+        "Slow Pad releasing on the play page. The scope draws the synth's own output, before BUS FX.",
+        "FIXED VELOCITY\nSHIFT + pad 1 turns fixed velocity on and off, as it does on the stock SP.",
+        "FIXED VELOCITY",
+        "Pluck played on four pads in turn. Synth notes have no velocity, so this screen looks the same with fixed velocity on or off.",
+        "PATTERNS\nPress PATTERN SELECT and choose a pattern pad to start it, then play the synth over it. Choose the same pattern again to stop it. PATTERN SELECT or EXIT closes the chooser and the pads go back to playing synth notes.",
+        "PATTERNS",
+        "The pattern chooser: A03 starts, A06 waits as the next pattern, then the pads play Wide Saw over it.",
+        "RECORD TO A PAD\nPress REC and choose an empty pad. Press REC to start, play, then press REC again to stop. The take is saved to that pad.",
+        "RECORD TO A PAD",
+        "REC asks for an empty pad, pad 3 is armed, the frame count rises while you play, then SAVED.",
+        "How to patch",
+        "openSynth comes as a source patcher with no Roland code in it. You download Roland's official v5.52 update yourself, and the patcher builds openSynth from it on your computer. OpenSP never hosts or sends Roland firmware.",
+        "1. Download the SP-404MKII system program v5.52 from Roland's support site and keep the ZIP unchanged. The patcher rejects any other version and any modified file.",
+        "2. Download the source patcher below, unzip it and install the tools listed with it.",
+        "3. From the unzipped folder, run the build command with the path to your Roland ZIP and your toolchain. The patcher checks its own files, your ZIP and the finished image against fixed hashes, then writes the openSynth APP1 file to the output folder.",
+        "4. Format an SD card in the SP. Copy the APP1 file to the root of the card as SP404MKII_APP1.bin, with no other update files beside it.",
+        "5. With the SP off, insert the card, hold SHIFT and switch on. The updater shows APP1 UPDATER FOUND. Confirm the update as in Roland's instructions and leave the power on until it shows UPDATE COMPLETE PLEASE POWER OFF.",
+        "6. Switch off, take out the card and switch on normally. Open SYNTH and press SHIFT + VALUE: the menu title reads openSynth.",
+        "Firmware goes onto the SP through its SD card updater. The SP's USB audio and MIDI connection does not install firmware.",
+        "Why it won't brick your SP",
+        "The SP-404MKII keeps its firmware in separate parts. A small resident bootloader starts the unit and holds Roland's SD card updater, the one you reach by holding SHIFT at power-on. Next to it sit a second firmware part, APP0, and the processor's one-time fuses. openSynth replaces only the application image, APP1, and never writes the bootloader, APP0 or the fuses.",
+        "So the updater is always there to put an application back. If an update is interrupted or you want to go back, hold SHIFT at power-on and install Roland's official firmware from an SD card. This has already been done on an SP that was left with a half-written application after an interrupted update.",
+        "Never written\nThe resident bootloader with Roland's SHIFT + power SD updater, APP0 and the fuses.",
+        "Replaced\nThe application image only. Roland's normal SD update puts the official firmware back.",
+        "Checked before you install\nThe patcher accepts only the exact official v5.52 file and checks the image it builds against fixed hashes.",
+        "Before you install, keep an SD card ready with Roland's official v5.52 update files in its root, so you can go back at any time. The protection covers the firmware openSynth writes; it cannot fix a hardware fault or damage from another cause.",
+        "openSynth for SP-404MKII firmware v5.52. OpenSP does not host or distribute Roland firmware."
+      ]
+    },
+    {
+      "id": "14d55a1e-72ea-80d5-8008-c3ec20b06173",
+      "name": "openSynth page / Mobile / Light",
+      "width": 390,
+      "height": 10025.999999999984,
+      "metadata": {
+        "schema": 2,
+        "page": "opensynth",
+        "mobile": true,
+        "dark": false,
+        "releaseReady": true,
+        "sharedCopy": "src/content/releases/synth.json",
+        "screens": "src/content/releases/opensynth-screens.json",
+        "sharedLinkedComponents": true
+      },
+      "linked": [
+        {
+          "name": "OpenSP / Wordmark",
+          "component": "Wordmark",
+          "copy": true
+        },
+        {
+          "name": "OpenSP / Releases / openSynth page introduction (Mobile)",
+          "component": "openSynth page introduction (Mobile)",
+          "copy": true
+        },
+        {
+          "name": "copy / introduction",
+          "component": "Article paragraph",
+          "copy": true
+        },
+        {
+          "name": "copy / status",
+          "component": "Article paragraph",
+          "copy": true
+        },
+        {
+          "name": "Hero screen / detune",
+          "component": "openSynth screen tile",
+          "copy": true
+        },
+        {
+          "name": "Release contents",
+          "component": "Article paragraph",
+          "copy": true
+        },
+        {
+          "name": "OpenSP / Releases / Synth release features (Mobile)",
+          "component": "Synth release features (Mobile)",
+          "copy": true
+        },
+        {
+          "name": "OpenSP / Guide / Article heading",
+          "component": "Article heading",
+          "copy": true
+        },
+        {
+          "name": "copy / features / paragraph / 0",
+          "component": "Article paragraph",
+          "copy": true
+        },
+        {
+          "name": "copy / features / row / 0",
+          "component": "Article paragraph",
+          "copy": true
+        },
+        {
+          "name": "Feature screen / sounds",
+          "component": "openSynth screen tile",
+          "copy": true
+        },
+        {
+          "name": "copy / features / row / 1",
+          "component": "Article paragraph",
+          "copy": true
+        },
+        {
+          "name": "Feature screen / pages",
+          "component": "openSynth screen tile",
+          "copy": true
+        },
+        {
+          "name": "copy / features / row / 2",
+          "component": "Article paragraph",
+          "copy": true
+        },
+        {
+          "name": "Feature screen / amp",
+          "component": "openSynth screen tile",
+          "copy": true
+        },
+        {
+          "name": "copy / features / row / 3",
+          "component": "Article paragraph",
+          "copy": true
+        },
+        {
+          "name": "Feature screen / mix-pw",
+          "component": "openSynth screen tile",
+          "copy": true
+        },
+        {
+          "name": "copy / features / row / 4",
+          "component": "Article paragraph",
+          "copy": true
+        },
+        {
+          "name": "Feature screen / voice",
+          "component": "openSynth screen tile",
+          "copy": true
+        },
+        {
+          "name": "copy / features / row / 5",
+          "component": "Article paragraph",
+          "copy": true
+        },
+        {
+          "name": "Feature screen / level",
+          "component": "openSynth screen tile",
+          "copy": true
+        },
+        {
+          "name": "copy / features / row / 6",
+          "component": "Article paragraph",
+          "copy": true
+        },
+        {
+          "name": "Feature screen / scope",
+          "component": "openSynth screen tile",
+          "copy": true
+        },
+        {
+          "name": "copy / features / row / 7",
+          "component": "Article paragraph",
+          "copy": true
+        },
+        {
+          "name": "Feature screen / velocity",
+          "component": "openSynth screen tile",
+          "copy": true
+        },
+        {
+          "name": "copy / features / row / 8",
+          "component": "Article paragraph",
+          "copy": true
+        },
+        {
+          "name": "Feature screen / patterns",
+          "component": "openSynth screen tile",
+          "copy": true
+        },
+        {
+          "name": "copy / features / row / 9",
+          "component": "Article paragraph",
+          "copy": true
+        },
+        {
+          "name": "Feature screen / record",
+          "component": "openSynth screen tile",
+          "copy": true
+        },
+        {
+          "name": "OpenSP / Releases / Synth release patch (Mobile)",
+          "component": "Synth release patch (Mobile)",
+          "copy": true
+        },
+        {
+          "name": "OpenSP / Guide / Article heading",
+          "component": "Article heading",
+          "copy": true
+        },
+        {
+          "name": "copy / patch / paragraph / 0",
+          "component": "Article paragraph",
+          "copy": true
+        },
+        {
+          "name": "copy / patch / step / 0",
+          "component": "Article paragraph",
+          "copy": true
+        },
+        {
+          "name": "copy / patch / step / 1",
+          "component": "Article paragraph",
+          "copy": true
+        },
+        {
+          "name": "copy / patch / step / 2",
+          "component": "Article paragraph",
+          "copy": true
+        },
+        {
+          "name": "copy / patch / step / 3",
+          "component": "Article paragraph",
+          "copy": true
+        },
+        {
+          "name": "copy / patch / step / 4",
+          "component": "Article paragraph",
+          "copy": true
+        },
+        {
+          "name": "copy / patch / step / 5",
+          "component": "Article paragraph",
+          "copy": true
+        },
+        {
+          "name": "copy / patch / note",
+          "component": "Article paragraph",
+          "copy": true
+        },
+        {
+          "name": "OpenSP / Releases / Synth release safety (Mobile)",
+          "component": "Synth release safety (Mobile)",
+          "copy": true
+        },
+        {
+          "name": "OpenSP / Guide / Article heading",
+          "component": "Article heading",
+          "copy": true
+        },
+        {
+          "name": "copy / safety / paragraph / 0",
+          "component": "Article paragraph",
+          "copy": true
+        },
+        {
+          "name": "copy / safety / paragraph / 1",
+          "component": "Article paragraph",
+          "copy": true
+        },
+        {
+          "name": "copy / safety / row / 0",
+          "component": "Article paragraph",
+          "copy": true
+        },
+        {
+          "name": "copy / safety / row / 1",
+          "component": "Article paragraph",
+          "copy": true
+        },
+        {
+          "name": "copy / safety / row / 2",
+          "component": "Article paragraph",
+          "copy": true
+        },
+        {
+          "name": "copy / safety / note",
+          "component": "Article paragraph",
+          "copy": true
+        }
+      ],
+      "text": [
+        "opensp",
+        "RELEASES   GUIDES",
+        "openSynth for the SP-404MKII",
+        "openSynth adds a synth to the SP-404MKII. Pick one of sixteen sounds, play it on the pads and shape it on four pages while the screen draws the waveform. It plays through BUS FX and over your patterns, and you can record a take straight to an empty pad.",
+        "For SP-404MKII firmware v5.52. You build openSynth in your browser from Roland's official update and install it with the SP's SD card updater.",
+        "DETUNE",
+        "Soft Sine: with DETUNE up, the two oscillator waves drift past each other.",
+        "Every screen on this page is drawn by the openSynth display code at the SP's 128 by 64 pixels.",
+        "PLAY ANIMATIONS",
+        "How to patch    Read how the synth works",
+        "Features and how to use them\nHow to patch\nWhy it won't brick your SP",
+        "Features and how to use them",
+        "The bottom line of the synth screen is the short version: VALUE picks sounds and pages, SHIFT opens the menu.",
+        "PLAY ANIMATIONS",
+        "SIXTEEN SOUNDS ON THE PADS\nOpen SYNTH and play notes or chords on the pads. In POLY, up to four notes sound at once. Turn VALUE to change the sound, or hold VALUE while you turn it to change the octave.",
+        "SIXTEEN SOUNDS",
+        "Soft Sine, Wide Saw as a chord, Acid Pulse, Slow Pad, Soft Organ and Sub Bass, each played on the pads.",
+        "TONE, OSC, AMP AND MOD PAGES\nPress VALUE to go to the next page: TONE, OSC, AMP, then MOD. CTRL 1, 2 and 3 edit the three settings named on screen: CUT, RES and ENV on TONE; MIX, DET and PW on OSC; ATK, DEC and REL on AMP; RATE, DEP and GLD on MOD.",
+        "PAGES",
+        "Wide Saw with a chord held: TONE, OSC, AMP and MOD, each with its own picture and knob values.",
+        "SCOPE AND PICTURES\nThe top of the screen draws what the synth is playing, release tails included. Each page adds its own picture. AMP shows the ADSR envelope with a dot on the newest note. OSC shows the two oscillator waves, which drift against each other as you raise DET. TONE shows the filter curve and MOD shows the LFO.",
+        "AMP ENVELOPE",
+        "Slow Pad on AMP: the scope draws the note and the dot follows it from attack through release.",
+        "MIX AND PW\nMIX is a single line with a slider between oscillator A and oscillator B. PW sets the width of a pulse wave. Nine of the sounds have no pulse oscillator, so on those PW is greyed out, reads -- and ignores the knob.",
+        "MIX AND PW",
+        "MIX at 0, 50 and 100 on Soft Organ, PW at 10, 50 and 90 percent on Acid Pulse, then PW greyed out on Soft Sine, Warm Triangle and Wide Saw.",
+        "MONO OR POLY\nPress SHIFT + VALUE to open the menu, choose VOICE and turn VALUE to pick MONO or POLY. GLIDE slides between notes in MONO.",
+        "MONO OR POLY",
+        "The same three-pad chord on Wide Saw: POLY4 plays three voices, MONO plays one.",
+        "SYNTH LEVEL\nThe VOLUME knob stays the SP's master volume. To change only the synth, hold SHIFT and turn VALUE.",
+        "SYNTH LEVEL",
+        "SHIFT + VALUE: the bottom line shows VOL and a bar while you turn, with a tick at the default level.",
+        "BUS FX\nTurn on a BUS FX the usual way and the synth plays through it.",
+        "SCOPE",
+        "Slow Pad releasing on the play page. The scope draws the synth's own output, before BUS FX.",
+        "FIXED VELOCITY\nSHIFT + pad 1 turns fixed velocity on and off, as it does on the stock SP.",
+        "FIXED VELOCITY",
+        "Pluck played on four pads in turn. Synth notes have no velocity, so this screen looks the same with fixed velocity on or off.",
+        "PATTERNS\nPress PATTERN SELECT and choose a pattern pad to start it, then play the synth over it. Choose the same pattern again to stop it. PATTERN SELECT or EXIT closes the chooser and the pads go back to playing synth notes.",
+        "PATTERNS",
+        "The pattern chooser: A03 starts, A06 waits as the next pattern, then the pads play Wide Saw over it.",
+        "RECORD TO A PAD\nPress REC and choose an empty pad. Press REC to start, play, then press REC again to stop. The take is saved to that pad.",
+        "RECORD TO A PAD",
+        "REC asks for an empty pad, pad 3 is armed, the frame count rises while you play, then SAVED.",
+        "How to patch",
+        "openSynth comes as a source patcher with no Roland code in it. You download Roland's official v5.52 update yourself, and the patcher builds openSynth from it on your computer. OpenSP never hosts or sends Roland firmware.",
+        "1. Download the SP-404MKII system program v5.52 from Roland's support site and keep the ZIP unchanged. The patcher rejects any other version and any modified file.",
+        "2. Download the source patcher below, unzip it and install the tools listed with it.",
+        "3. From the unzipped folder, run the build command with the path to your Roland ZIP and your toolchain. The patcher checks its own files, your ZIP and the finished image against fixed hashes, then writes the openSynth APP1 file to the output folder.",
+        "4. Format an SD card in the SP. Copy the APP1 file to the root of the card as SP404MKII_APP1.bin, with no other update files beside it.",
+        "5. With the SP off, insert the card, hold SHIFT and switch on. The updater shows APP1 UPDATER FOUND. Confirm the update as in Roland's instructions and leave the power on until it shows UPDATE COMPLETE PLEASE POWER OFF.",
+        "6. Switch off, take out the card and switch on normally. Open SYNTH and press SHIFT + VALUE: the menu title reads openSynth.",
+        "Firmware goes onto the SP through its SD card updater. The SP's USB audio and MIDI connection does not install firmware.",
+        "Why it won't brick your SP",
+        "The SP-404MKII keeps its firmware in separate parts. A small resident bootloader starts the unit and holds Roland's SD card updater, the one you reach by holding SHIFT at power-on. Next to it sit a second firmware part, APP0, and the processor's one-time fuses. openSynth replaces only the application image, APP1, and never writes the bootloader, APP0 or the fuses.",
+        "So the updater is always there to put an application back. If an update is interrupted or you want to go back, hold SHIFT at power-on and install Roland's official firmware from an SD card. This has already been done on an SP that was left with a half-written application after an interrupted update.",
+        "Never written\nThe resident bootloader with Roland's SHIFT + power SD updater, APP0 and the fuses.",
+        "Replaced\nThe application image only. Roland's normal SD update puts the official firmware back.",
+        "Checked before you install\nThe patcher accepts only the exact official v5.52 file and checks the image it builds against fixed hashes.",
+        "Before you install, keep an SD card ready with Roland's official v5.52 update files in its root, so you can go back at any time. The protection covers the firmware openSynth writes; it cannot fix a hardware fault or damage from another cause.",
+        "openSynth for SP-404MKII firmware v5.52. OpenSP does not host or distribute Roland firmware."
+      ]
+    },
+    {
+      "id": "14d55a1e-72ea-80d5-8008-c3ec239ed1f0",
+      "name": "openSynth page / Mobile / Dark",
+      "width": 390,
+      "height": 10025.999999999984,
+      "metadata": {
+        "schema": 2,
+        "page": "opensynth",
+        "mobile": true,
+        "dark": true,
+        "releaseReady": true,
+        "sharedCopy": "src/content/releases/synth.json",
+        "screens": "src/content/releases/opensynth-screens.json",
+        "sharedLinkedComponents": true
+      },
+      "linked": [
+        {
+          "name": "OpenSP / Wordmark",
+          "component": "Wordmark",
+          "copy": true
+        },
+        {
+          "name": "OpenSP / Releases / openSynth page introduction (Mobile)",
+          "component": "openSynth page introduction (Mobile)",
+          "copy": true
+        },
+        {
+          "name": "copy / introduction",
+          "component": "Article paragraph",
+          "copy": true
+        },
+        {
+          "name": "copy / status",
+          "component": "Article paragraph",
+          "copy": true
+        },
+        {
+          "name": "Hero screen / detune",
+          "component": "openSynth screen tile",
+          "copy": true
+        },
+        {
+          "name": "Release contents",
+          "component": "Article paragraph",
+          "copy": true
+        },
+        {
+          "name": "OpenSP / Releases / Synth release features (Mobile)",
+          "component": "Synth release features (Mobile)",
+          "copy": true
+        },
+        {
+          "name": "OpenSP / Guide / Article heading",
+          "component": "Article heading",
+          "copy": true
+        },
+        {
+          "name": "copy / features / paragraph / 0",
+          "component": "Article paragraph",
+          "copy": true
+        },
+        {
+          "name": "copy / features / row / 0",
+          "component": "Article paragraph",
+          "copy": true
+        },
+        {
+          "name": "Feature screen / sounds",
+          "component": "openSynth screen tile",
+          "copy": true
+        },
+        {
+          "name": "copy / features / row / 1",
+          "component": "Article paragraph",
+          "copy": true
+        },
+        {
+          "name": "Feature screen / pages",
+          "component": "openSynth screen tile",
+          "copy": true
+        },
+        {
+          "name": "copy / features / row / 2",
+          "component": "Article paragraph",
+          "copy": true
+        },
+        {
+          "name": "Feature screen / amp",
+          "component": "openSynth screen tile",
+          "copy": true
+        },
+        {
+          "name": "copy / features / row / 3",
+          "component": "Article paragraph",
+          "copy": true
+        },
+        {
+          "name": "Feature screen / mix-pw",
+          "component": "openSynth screen tile",
+          "copy": true
+        },
+        {
+          "name": "copy / features / row / 4",
+          "component": "Article paragraph",
+          "copy": true
+        },
+        {
+          "name": "Feature screen / voice",
+          "component": "openSynth screen tile",
+          "copy": true
+        },
+        {
+          "name": "copy / features / row / 5",
+          "component": "Article paragraph",
+          "copy": true
+        },
+        {
+          "name": "Feature screen / level",
+          "component": "openSynth screen tile",
+          "copy": true
+        },
+        {
+          "name": "copy / features / row / 6",
+          "component": "Article paragraph",
+          "copy": true
+        },
+        {
+          "name": "Feature screen / scope",
+          "component": "openSynth screen tile",
+          "copy": true
+        },
+        {
+          "name": "copy / features / row / 7",
+          "component": "Article paragraph",
+          "copy": true
+        },
+        {
+          "name": "Feature screen / velocity",
+          "component": "openSynth screen tile",
+          "copy": true
+        },
+        {
+          "name": "copy / features / row / 8",
+          "component": "Article paragraph",
+          "copy": true
+        },
+        {
+          "name": "Feature screen / patterns",
+          "component": "openSynth screen tile",
+          "copy": true
+        },
+        {
+          "name": "copy / features / row / 9",
+          "component": "Article paragraph",
+          "copy": true
+        },
+        {
+          "name": "Feature screen / record",
+          "component": "openSynth screen tile",
+          "copy": true
+        },
+        {
+          "name": "OpenSP / Releases / Synth release patch (Mobile)",
+          "component": "Synth release patch (Mobile)",
+          "copy": true
+        },
+        {
+          "name": "OpenSP / Guide / Article heading",
+          "component": "Article heading",
+          "copy": true
+        },
+        {
+          "name": "copy / patch / paragraph / 0",
+          "component": "Article paragraph",
+          "copy": true
+        },
+        {
+          "name": "copy / patch / step / 0",
+          "component": "Article paragraph",
+          "copy": true
+        },
+        {
+          "name": "copy / patch / step / 1",
+          "component": "Article paragraph",
+          "copy": true
+        },
+        {
+          "name": "copy / patch / step / 2",
+          "component": "Article paragraph",
+          "copy": true
+        },
+        {
+          "name": "copy / patch / step / 3",
+          "component": "Article paragraph",
+          "copy": true
+        },
+        {
+          "name": "copy / patch / step / 4",
+          "component": "Article paragraph",
+          "copy": true
+        },
+        {
+          "name": "copy / patch / step / 5",
+          "component": "Article paragraph",
+          "copy": true
+        },
+        {
+          "name": "copy / patch / note",
+          "component": "Article paragraph",
+          "copy": true
+        },
+        {
+          "name": "OpenSP / Releases / Synth release safety (Mobile)",
+          "component": "Synth release safety (Mobile)",
+          "copy": true
+        },
+        {
+          "name": "OpenSP / Guide / Article heading",
+          "component": "Article heading",
+          "copy": true
+        },
+        {
+          "name": "copy / safety / paragraph / 0",
+          "component": "Article paragraph",
+          "copy": true
+        },
+        {
+          "name": "copy / safety / paragraph / 1",
+          "component": "Article paragraph",
+          "copy": true
+        },
+        {
+          "name": "copy / safety / row / 0",
+          "component": "Article paragraph",
+          "copy": true
+        },
+        {
+          "name": "copy / safety / row / 1",
+          "component": "Article paragraph",
+          "copy": true
+        },
+        {
+          "name": "copy / safety / row / 2",
+          "component": "Article paragraph",
+          "copy": true
+        },
+        {
+          "name": "copy / safety / note",
+          "component": "Article paragraph",
+          "copy": true
+        }
+      ],
+      "text": [
+        "opensp",
+        "RELEASES   GUIDES",
+        "openSynth for the SP-404MKII",
+        "openSynth adds a synth to the SP-404MKII. Pick one of sixteen sounds, play it on the pads and shape it on four pages while the screen draws the waveform. It plays through BUS FX and over your patterns, and you can record a take straight to an empty pad.",
+        "For SP-404MKII firmware v5.52. You build openSynth in your browser from Roland's official update and install it with the SP's SD card updater.",
+        "DETUNE",
+        "Soft Sine: with DETUNE up, the two oscillator waves drift past each other.",
+        "Every screen on this page is drawn by the openSynth display code at the SP's 128 by 64 pixels.",
+        "PLAY ANIMATIONS",
+        "How to patch    Read how the synth works",
+        "Features and how to use them\nHow to patch\nWhy it won't brick your SP",
+        "Features and how to use them",
+        "The bottom line of the synth screen is the short version: VALUE picks sounds and pages, SHIFT opens the menu.",
+        "PLAY ANIMATIONS",
+        "SIXTEEN SOUNDS ON THE PADS\nOpen SYNTH and play notes or chords on the pads. In POLY, up to four notes sound at once. Turn VALUE to change the sound, or hold VALUE while you turn it to change the octave.",
+        "SIXTEEN SOUNDS",
+        "Soft Sine, Wide Saw as a chord, Acid Pulse, Slow Pad, Soft Organ and Sub Bass, each played on the pads.",
+        "TONE, OSC, AMP AND MOD PAGES\nPress VALUE to go to the next page: TONE, OSC, AMP, then MOD. CTRL 1, 2 and 3 edit the three settings named on screen: CUT, RES and ENV on TONE; MIX, DET and PW on OSC; ATK, DEC and REL on AMP; RATE, DEP and GLD on MOD.",
+        "PAGES",
+        "Wide Saw with a chord held: TONE, OSC, AMP and MOD, each with its own picture and knob values.",
+        "SCOPE AND PICTURES\nThe top of the screen draws what the synth is playing, release tails included. Each page adds its own picture. AMP shows the ADSR envelope with a dot on the newest note. OSC shows the two oscillator waves, which drift against each other as you raise DET. TONE shows the filter curve and MOD shows the LFO.",
+        "AMP ENVELOPE",
+        "Slow Pad on AMP: the scope draws the note and the dot follows it from attack through release.",
+        "MIX AND PW\nMIX is a single line with a slider between oscillator A and oscillator B. PW sets the width of a pulse wave. Nine of the sounds have no pulse oscillator, so on those PW is greyed out, reads -- and ignores the knob.",
+        "MIX AND PW",
+        "MIX at 0, 50 and 100 on Soft Organ, PW at 10, 50 and 90 percent on Acid Pulse, then PW greyed out on Soft Sine, Warm Triangle and Wide Saw.",
+        "MONO OR POLY\nPress SHIFT + VALUE to open the menu, choose VOICE and turn VALUE to pick MONO or POLY. GLIDE slides between notes in MONO.",
+        "MONO OR POLY",
+        "The same three-pad chord on Wide Saw: POLY4 plays three voices, MONO plays one.",
+        "SYNTH LEVEL\nThe VOLUME knob stays the SP's master volume. To change only the synth, hold SHIFT and turn VALUE.",
+        "SYNTH LEVEL",
+        "SHIFT + VALUE: the bottom line shows VOL and a bar while you turn, with a tick at the default level.",
+        "BUS FX\nTurn on a BUS FX the usual way and the synth plays through it.",
+        "SCOPE",
+        "Slow Pad releasing on the play page. The scope draws the synth's own output, before BUS FX.",
+        "FIXED VELOCITY\nSHIFT + pad 1 turns fixed velocity on and off, as it does on the stock SP.",
+        "FIXED VELOCITY",
+        "Pluck played on four pads in turn. Synth notes have no velocity, so this screen looks the same with fixed velocity on or off.",
+        "PATTERNS\nPress PATTERN SELECT and choose a pattern pad to start it, then play the synth over it. Choose the same pattern again to stop it. PATTERN SELECT or EXIT closes the chooser and the pads go back to playing synth notes.",
+        "PATTERNS",
+        "The pattern chooser: A03 starts, A06 waits as the next pattern, then the pads play Wide Saw over it.",
+        "RECORD TO A PAD\nPress REC and choose an empty pad. Press REC to start, play, then press REC again to stop. The take is saved to that pad.",
+        "RECORD TO A PAD",
+        "REC asks for an empty pad, pad 3 is armed, the frame count rises while you play, then SAVED.",
+        "How to patch",
+        "openSynth comes as a source patcher with no Roland code in it. You download Roland's official v5.52 update yourself, and the patcher builds openSynth from it on your computer. OpenSP never hosts or sends Roland firmware.",
+        "1. Download the SP-404MKII system program v5.52 from Roland's support site and keep the ZIP unchanged. The patcher rejects any other version and any modified file.",
+        "2. Download the source patcher below, unzip it and install the tools listed with it.",
+        "3. From the unzipped folder, run the build command with the path to your Roland ZIP and your toolchain. The patcher checks its own files, your ZIP and the finished image against fixed hashes, then writes the openSynth APP1 file to the output folder.",
+        "4. Format an SD card in the SP. Copy the APP1 file to the root of the card as SP404MKII_APP1.bin, with no other update files beside it.",
+        "5. With the SP off, insert the card, hold SHIFT and switch on. The updater shows APP1 UPDATER FOUND. Confirm the update as in Roland's instructions and leave the power on until it shows UPDATE COMPLETE PLEASE POWER OFF.",
+        "6. Switch off, take out the card and switch on normally. Open SYNTH and press SHIFT + VALUE: the menu title reads openSynth.",
+        "Firmware goes onto the SP through its SD card updater. The SP's USB audio and MIDI connection does not install firmware.",
+        "Why it won't brick your SP",
+        "The SP-404MKII keeps its firmware in separate parts. A small resident bootloader starts the unit and holds Roland's SD card updater, the one you reach by holding SHIFT at power-on. Next to it sit a second firmware part, APP0, and the processor's one-time fuses. openSynth replaces only the application image, APP1, and never writes the bootloader, APP0 or the fuses.",
+        "So the updater is always there to put an application back. If an update is interrupted or you want to go back, hold SHIFT at power-on and install Roland's official firmware from an SD card. This has already been done on an SP that was left with a half-written application after an interrupted update.",
+        "Never written\nThe resident bootloader with Roland's SHIFT + power SD updater, APP0 and the fuses.",
+        "Replaced\nThe application image only. Roland's normal SD update puts the official firmware back.",
+        "Checked before you install\nThe patcher accepts only the exact official v5.52 file and checks the image it builds against fixed hashes.",
+        "Before you install, keep an SD card ready with Roland's official v5.52 update files in its root, so you can go back at any time. The protection covers the firmware openSynth writes; it cannot fix a hardware fault or damage from another cause.",
+        "openSynth for SP-404MKII firmware v5.52. OpenSP does not host or distribute Roland firmware."
+      ]
+    }
+  ]
+}

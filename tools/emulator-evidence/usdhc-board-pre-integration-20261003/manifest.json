@@ -1,0 +1,24 @@
+{
+  "kind": "pre-usdhc-board-integration-source-preservation",
+  "timestampUtc": "2026-10-03T05:19:14.787Z",
+  "files": [
+    {
+      "source": "src/lib/emulator/board.ts",
+      "preserved": "board.ts",
+      "bytes": 32356,
+      "sha256": "fddafa0d1563b6865948990665c1127c973678abe24c1b3514c980338970b412"
+    },
+    {
+      "source": "docs/emulator-usdhc-contract.md",
+      "preserved": "emulator-usdhc-contract.md",
+      "bytes": 9593,
+      "sha256": "33a1b6a3742487e505e36aa6d63de002ef6c1f24b73e7886f4071a01cdbe0e59"
+    }
+  ],
+  "unchangedComponent": {
+    "path": "src/lib/emulator/usdhc.ts",
+    "bytes": 31404,
+    "sha256": "fe74790fd62040aba4a4908943bf2b99c5082958988dae59a4721fec1e430c28"
+  },
+  "scope": "Source preservation only; no firmware, browser or physical device execution"
+}

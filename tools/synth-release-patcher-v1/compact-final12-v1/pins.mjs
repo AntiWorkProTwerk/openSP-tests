@@ -1,0 +1,41 @@
+/** Sealed kit12/final-package06 source and artifact authority; qualification stays separate. */
+export const FINAL12=Object.freeze({
+  recipe:'opensynth-n1-final12',identity:'openSynth N1',policy_id:'50544E31',
+  archive:Object.freeze({bytes:774200,sha256:'bfb8d7183919ccbac434ff9e00fe20e3bb0222fe5cea8fb76301a57743ccbbd6'}),
+  authority_sha256:'3c54d6c1c2c737c9f78a3dc06e1422da251f1ebf641e368171491cb198a2d374',
+  entry_sha256:'d9d1069d6bccedeae8ae0f949fd5ecac182562575cdf0f46e251409f6ac22659',
+  source_contract_sha256:'eeb9fec53cb9c149240fb2cf2fe46761ad2d9c1cdcc45a699e2c5034e203ab21',
+  toolchain_authority_sha256:'94324fd817876ecbce31931e47561e25b8b24b71b935904ff2bc8ee0d658a8f2',
+  source_members:358,module_source_files:310,compile_units:109,native_intervals:67,native_patches:202,
+  module_sha256:'f133b7050d1d73cb5bfd480cd2c5e20a5ecc2e646a4300396319038c97972a18',
+  module_elf_sha256:'58fcd493672590808f6b0d6aee600b441fa55de77b740be823b41b26e37c086b',
+  recipe_sha256:'ff59e22fee0e470349be3787c7d991b837eed4da01b98928c8fc6987d02bd0c8',
+  source_app1_sha256:'443aed7e52ed860d72ec6cfb31adab5e0b5562524495e7e96df54b9507c8792c',
+  candidate:Object.freeze({bytes:2954632,sha256:'26cb4f1d99696eb0cda014a74f34719836eb2aa02fe2995966038907b8ee95b8',crc32:0x98834f31}),
+  r3_sha256:'2740e108d710217a3203b964a9433c123d2bb62800896dc10ae40d13b8b7dbdc',
+  b2_tail_sha256:'b0b1697152804f8a5770e4931a36b9e44c518f8431474534621cd102fdb94cb2',
+  b2_hook_sha256:'81a965eb7484ed76736063cd0533f429f8d6ff7b7ccd472470c4dd07d78b5ce8',
+  file_header_sha256:'83557fa50ef526c1025d00611147e6e894fccdd649509c0b0bfc7c7fb6df433d',
+  reference_report_sha256:'7328f3c8f614cfcea9c2acb927c9a87b4fedbdee6b4298d4ed4de27faf1a829f',
+  reference_owner_handoff_sha256:'adfae91a12ed777841ff81c03bdaa8e93e011c8c312193c32eba207ad28c0db7',
+  features:Object.freeze({synth:true,record_to_pad:true,global_usb:false,expanded128:false,pattern_transport:true,native_record_click:true}),
+  component_join:Object.freeze({
+    pattern_handoff_sha256:'1dbe57a9a05caef529a526107b2dc31dc08a531eab4ac84937a3e24e07926ef1',
+    metronome_handoff_sha256:'15a276f57c47c15f9fe6e2ae32f0c874e28a0c78c06f53a7c3fe0d9fee0929df',
+    veneer_claim_sha256:'53493a858d44099ddeefbac5e06697dbf60fc73cd21606913cfbe20930390977',
+    native_veneer_address:2148545508,added_private_bss_bytes:28,
+    pattern_normal_route_qualified:false,metronome_combined_start_pcm_qualified:false,
+    manual_stopped_start_defect_preserved:false,
+    manual_timing_review_sha256:'02dd4c2550c1e243b785877cbc98a5469d8256e7808d448049a890db39c4cf97',
+    manual_save_predicate_review_sha256:'44ffc92ef068d155ede870fd50bbe32df557af1450d8aeea7c5fb573136f74e1',
+    prior_core_manual_checkpoint_sha256:'4052255bc72475d8f7d9f4b5e6bdadde2b4298f5a265cb9a59b7200edc208ad0',
+    prior_core_save_failure_sha256:'7913dd79fc8113a0b4396945f67e604e1401ecf693dbb2dabcd287cde556e65a',
+    joined_candidate_qualified:false,
+    pattern_offer20_source_review_sha256:'ebba57b6f9d334783bcf374de657cf201dd35d4bc9118b73cdbc6282c8ea09e3',
+    pattern_offer20_source_sha256:'bdd455f0266ef9e282748b01968cd874398e8ceb60bdf7264bbdc87f2fdfbe9e',
+  }),
+  pattern_join:true,metronome_join:true,software_eligible_for_owner_test:false,
+});
+export const P6S=Object.freeze({identity:'SYNTH P6S!',bytes:2741144,sha256:'7f9917ffb0871cca25b1ce5d281ac5c2bf790ae6b8278b04a5ffef8e3c06fd60',crc32:0xba6967b2});
+export const RESTORATION_SOURCE=Object.freeze({bytes:1032317,sha256:'3abb90aafe7ecc1ca669a3f3e35885ddbf3803200db96768ef43fdd16b424117'});
+export const QUALIFICATION=Object.freeze({software_eligible_for_owner_test:false,hardware_qualified:false,public_release_eligible:false,release_ready:false,delivery_enabled:false,upload_enabled:false,browser_enabled:false,public_ready:false,delivery:'DO_NOT_DELIVER'});

@@ -1,0 +1,937 @@
+{
+  "source": {
+    "fileId": "24d9d841-759d-81bc-8008-b518bc70d8b3",
+    "pageId": "6bf32eef-e7db-8057-8008-bb287467b2ff",
+    "kind": "native-sd-main-propagation-readback"
+  },
+  "mains": [
+    {
+      "id": "968cb989-21d8-805d-8008-bb76ba047d06",
+      "name": "Emulator SD images (Mobile)",
+      "mainId": "968cb989-21d8-805d-8008-bb76b88c9515",
+      "metadata": {
+        "revision": "2026-10-03",
+        "readOnly": true,
+        "staged": true,
+        "slotCount": 2,
+        "minimum": 262144,
+        "maximum": 134217728,
+        "unit": 262144,
+        "firmwareProvided": false
+      }
+    },
+    {
+      "id": "968cb989-21d8-805d-8008-bb76aee05cc4",
+      "name": "Emulator SD images (Desktop)",
+      "mainId": "968cb989-21d8-805d-8008-bb76ad6a078b",
+      "metadata": {
+        "revision": "2026-10-03",
+        "readOnly": true,
+        "staged": true,
+        "slotCount": 2,
+        "minimum": 262144,
+        "maximum": 134217728,
+        "unit": 262144,
+        "firmwareProvided": false
+      }
+    }
+  ],
+  "layouts": [
+    {
+      "id": "6bf32eef-e7db-8057-8008-bb2c53c5a8c8",
+      "name": "Firmware emulator / Desktop / Light",
+      "width": 1440,
+      "height": 2681,
+      "metadata": {
+        "revision": "2026-10-03",
+        "session": "6bf32eef-e7db-8057-8008-bb2c53e9d565",
+        "sd": "968cb989-21d8-805d-8008-bb76b19e746d",
+        "componentId": "968cb989-21d8-805d-8008-bb76aee05cc4",
+        "linked": true,
+        "mobile": false,
+        "dark": false
+      },
+      "sd": [
+        {
+          "id": "968cb989-21d8-805d-8008-bb76b19e746d",
+          "componentId": "968cb989-21d8-805d-8008-bb76aee05cc4",
+          "linked": true,
+          "width": 1312,
+          "height": 338,
+          "text": [
+            {
+              "name": "copy / sdImages",
+              "text": "Optional SD images",
+              "width": 1312,
+              "height": 31,
+              "fills": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 64,
+                "y": 1296,
+                "width": 160.078125,
+                "height": 20
+              }
+            },
+            {
+              "name": "copy / sdNote",
+              "text": "Choose raw, read-only images from 256 KiB to 128 MiB, in 256 KiB units. Compressed files are not supported. Files stay in this browser; filesystem compatibility is unverified.",
+              "width": 1032,
+              "height": 52,
+              "fills": [
+                {
+                  "color": "#555555",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bec83b8"
+                }
+              ],
+              "ink": {
+                "x": 64,
+                "y": 1344,
+                "width": 969.34375,
+                "height": 41
+              }
+            },
+            {
+              "name": "copy / sd1File",
+              "text": "SD1 image",
+              "width": 644,
+              "height": 28,
+              "fills": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 64,
+                "y": 1420,
+                "width": 79.15625,
+                "height": 17
+              }
+            },
+            {
+              "name": "Value / sd1File",
+              "text": "Choose file  /  No file chosen",
+              "width": 620,
+              "height": 28,
+              "fills": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 76,
+                "y": 1462,
+                "width": 203.671875,
+                "height": 17
+              }
+            },
+            {
+              "name": "copy / sdNoImage",
+              "text": "No card selected.",
+              "width": 500,
+              "height": 24,
+              "fills": [
+                {
+                  "color": "#555555",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bec83b8"
+                }
+              ],
+              "ink": {
+                "x": 64,
+                "y": 1511,
+                "width": 132.625,
+                "height": 15
+              }
+            },
+            {
+              "name": "copy / sdRemove",
+              "text": "Remove card",
+              "width": 104,
+              "height": 24,
+              "fills": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 596.421875,
+                "y": 1514,
+                "width": 95.15625,
+                "height": 17
+              }
+            },
+            {
+              "name": "copy / sd2File",
+              "text": "SD2 image",
+              "width": 644,
+              "height": 28,
+              "fills": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 732,
+                "y": 1420,
+                "width": 79.15625,
+                "height": 17
+              }
+            },
+            {
+              "name": "Value / sd2File",
+              "text": "Choose file  /  No file chosen",
+              "width": 620,
+              "height": 28,
+              "fills": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 744,
+                "y": 1462,
+                "width": 203.671875,
+                "height": 17
+              }
+            },
+            {
+              "name": "copy / sdNoImage",
+              "text": "No card selected.",
+              "width": 500,
+              "height": 24,
+              "fills": [
+                {
+                  "color": "#555555",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bec83b8"
+                }
+              ],
+              "ink": {
+                "x": 732,
+                "y": 1511,
+                "width": 132.625,
+                "height": 15
+              }
+            },
+            {
+              "name": "copy / sdRemove",
+              "text": "Remove card",
+              "width": 104,
+              "height": 24,
+              "fills": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 1264.421875,
+                "y": 1514,
+                "width": 95.15625,
+                "height": 17
+              }
+            },
+            {
+              "name": "copy / sdChangeNote",
+              "text": "Pause before changing cards. Applying changed cards starts a new session from the selected firmware and discards this session’s virtual flash changes.",
+              "width": 1032,
+              "height": 46,
+              "fills": [
+                {
+                  "color": "#555555",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bec83b8"
+                }
+              ],
+              "ink": {
+                "x": 64,
+                "y": 1571,
+                "width": 943.6875,
+                "height": 16
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "6bf32eef-e7db-8057-8008-bb2c56a00a8b",
+      "name": "Firmware emulator / Desktop / Dark",
+      "width": 1440,
+      "height": 2681,
+      "metadata": {
+        "revision": "2026-10-03",
+        "session": "6bf32eef-e7db-8057-8008-bb2c56e36e60",
+        "sd": "968cb989-21d8-805d-8008-bb76b15a8c4e",
+        "componentId": "968cb989-21d8-805d-8008-bb76aee05cc4",
+        "linked": true,
+        "mobile": false,
+        "dark": true
+      },
+      "sd": [
+        {
+          "id": "968cb989-21d8-805d-8008-bb76b15a8c4e",
+          "componentId": "968cb989-21d8-805d-8008-bb76aee05cc4",
+          "linked": true,
+          "width": 1312,
+          "height": 338,
+          "text": [
+            {
+              "name": "copy / sdImages",
+              "text": "Optional SD images",
+              "width": 1312,
+              "height": 31,
+              "fills": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 2064,
+                "y": 1296,
+                "width": 160.078125,
+                "height": 20
+              }
+            },
+            {
+              "name": "copy / sdNote",
+              "text": "Choose raw, read-only images from 256 KiB to 128 MiB, in 256 KiB units. Compressed files are not supported. Files stay in this browser; filesystem compatibility is unverified.",
+              "width": 1032,
+              "height": 52,
+              "fills": [
+                {
+                  "color": "#b6b9b5",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895cd03ecd"
+                }
+              ],
+              "ink": {
+                "x": 2064,
+                "y": 1344,
+                "width": 969.34375,
+                "height": 41
+              }
+            },
+            {
+              "name": "copy / sd1File",
+              "text": "SD1 image",
+              "width": 644,
+              "height": 28,
+              "fills": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 2064,
+                "y": 1420,
+                "width": 79.15625,
+                "height": 17
+              }
+            },
+            {
+              "name": "Value / sd1File",
+              "text": "Choose file  /  No file chosen",
+              "width": 620,
+              "height": 28,
+              "fills": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 2076,
+                "y": 1462,
+                "width": 203.671875,
+                "height": 17
+              }
+            },
+            {
+              "name": "copy / sdNoImage",
+              "text": "No card selected.",
+              "width": 500,
+              "height": 24,
+              "fills": [
+                {
+                  "color": "#b6b9b5",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895cd03ecd"
+                }
+              ],
+              "ink": {
+                "x": 2064,
+                "y": 1511,
+                "width": 132.625,
+                "height": 15
+              }
+            },
+            {
+              "name": "copy / sdRemove",
+              "text": "Remove card",
+              "width": 104,
+              "height": 24,
+              "fills": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 2596.421875,
+                "y": 1514,
+                "width": 95.15625,
+                "height": 17
+              }
+            },
+            {
+              "name": "copy / sd2File",
+              "text": "SD2 image",
+              "width": 644,
+              "height": 28,
+              "fills": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 2732,
+                "y": 1420,
+                "width": 79.15625,
+                "height": 17
+              }
+            },
+            {
+              "name": "Value / sd2File",
+              "text": "Choose file  /  No file chosen",
+              "width": 620,
+              "height": 28,
+              "fills": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 2744,
+                "y": 1462,
+                "width": 203.671875,
+                "height": 17
+              }
+            },
+            {
+              "name": "copy / sdNoImage",
+              "text": "No card selected.",
+              "width": 500,
+              "height": 24,
+              "fills": [
+                {
+                  "color": "#b6b9b5",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895cd03ecd"
+                }
+              ],
+              "ink": {
+                "x": 2732,
+                "y": 1511,
+                "width": 132.625,
+                "height": 15
+              }
+            },
+            {
+              "name": "copy / sdRemove",
+              "text": "Remove card",
+              "width": 104,
+              "height": 24,
+              "fills": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 3264.421875,
+                "y": 1514,
+                "width": 95.15625,
+                "height": 17
+              }
+            },
+            {
+              "name": "copy / sdChangeNote",
+              "text": "Pause before changing cards. Applying changed cards starts a new session from the selected firmware and discards this session’s virtual flash changes.",
+              "width": 1032,
+              "height": 46,
+              "fills": [
+                {
+                  "color": "#b6b9b5",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895cd03ecd"
+                }
+              ],
+              "ink": {
+                "x": 2064,
+                "y": 1571,
+                "width": 943.6875,
+                "height": 16
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "6bf32eef-e7db-8057-8008-bb2c69d49d80",
+      "name": "Firmware emulator / Mobile / Light",
+      "width": 390,
+      "height": 4463.35,
+      "metadata": {
+        "revision": "2026-10-03",
+        "session": "6bf32eef-e7db-8057-8008-bb2c6a364fa9",
+        "sd": "968cb989-21d8-805d-8008-bb76bce634b4",
+        "componentId": "968cb989-21d8-805d-8008-bb76ba047d06",
+        "linked": true,
+        "mobile": true,
+        "dark": false
+      },
+      "sd": [
+        {
+          "id": "968cb989-21d8-805d-8008-bb76bce634b4",
+          "componentId": "968cb989-21d8-805d-8008-bb76ba047d06",
+          "linked": true,
+          "width": 342,
+          "height": 604,
+          "text": [
+            {
+              "name": "copy / sdImages",
+              "text": "Optional SD images",
+              "width": 342,
+              "height": 31,
+              "fills": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 1524,
+                "y": 2258.3500000000004,
+                "width": 160.078125,
+                "height": 20
+              }
+            },
+            {
+              "name": "copy / sdNote",
+              "text": "Choose raw, read-only images from 256 KiB to 128 MiB, in 256 KiB units. Compressed files are not supported. Files stay in this browser; filesystem compatibility is unverified.",
+              "width": 342,
+              "height": 124,
+              "fills": [
+                {
+                  "color": "#555555",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bec83b8"
+                }
+              ],
+              "ink": {
+                "x": 1524,
+                "y": 2306.3500000000004,
+                "width": 335.28125,
+                "height": 89
+              }
+            },
+            {
+              "name": "copy / sd1File",
+              "text": "SD1 image",
+              "width": 342,
+              "height": 28,
+              "fills": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 1524,
+                "y": 2454.3500000000004,
+                "width": 79.15625,
+                "height": 17
+              }
+            },
+            {
+              "name": "Value / sd1File",
+              "text": "Choose file  /  No file chosen",
+              "width": 318,
+              "height": 28,
+              "fills": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 1536,
+                "y": 2496.3500000000004,
+                "width": 203.671875,
+                "height": 17
+              }
+            },
+            {
+              "name": "copy / sdNoImage",
+              "text": "No card selected.",
+              "width": 198,
+              "height": 24,
+              "fills": [
+                {
+                  "color": "#555555",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bec83b8"
+                }
+              ],
+              "ink": {
+                "x": 1524,
+                "y": 2545.3500000000004,
+                "width": 132.625,
+                "height": 15
+              }
+            },
+            {
+              "name": "copy / sdRemove",
+              "text": "Remove card",
+              "width": 104,
+              "height": 24,
+              "fills": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 1754.421875,
+                "y": 2548.3500000000004,
+                "width": 95.15625,
+                "height": 17
+              }
+            },
+            {
+              "name": "copy / sd2File",
+              "text": "SD2 image",
+              "width": 342,
+              "height": 28,
+              "fills": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 1524,
+                "y": 2606.3500000000004,
+                "width": 79.15625,
+                "height": 17
+              }
+            },
+            {
+              "name": "Value / sd2File",
+              "text": "Choose file  /  No file chosen",
+              "width": 318,
+              "height": 28,
+              "fills": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 1536,
+                "y": 2648.3500000000004,
+                "width": 203.671875,
+                "height": 17
+              }
+            },
+            {
+              "name": "copy / sdNoImage",
+              "text": "No card selected.",
+              "width": 198,
+              "height": 24,
+              "fills": [
+                {
+                  "color": "#555555",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bec83b8"
+                }
+              ],
+              "ink": {
+                "x": 1524,
+                "y": 2697.3500000000004,
+                "width": 132.625,
+                "height": 15
+              }
+            },
+            {
+              "name": "copy / sdRemove",
+              "text": "Remove card",
+              "width": 104,
+              "height": 24,
+              "fills": [
+                {
+                  "color": "#111111",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                }
+              ],
+              "ink": {
+                "x": 1754.421875,
+                "y": 2700.3500000000004,
+                "width": 95.15625,
+                "height": 17
+              }
+            },
+            {
+              "name": "copy / sdChangeNote",
+              "text": "Pause before changing cards. Applying changed cards starts a new session from the selected firmware and discards this session’s virtual flash changes.",
+              "width": 342,
+              "height": 88,
+              "fills": [
+                {
+                  "color": "#555555",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895bec83b8"
+                }
+              ],
+              "ink": {
+                "x": 1524,
+                "y": 2757.3500000000004,
+                "width": 337.6875,
+                "height": 58
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "6bf32eef-e7db-8057-8008-bb2c6cd5e371",
+      "name": "Firmware emulator / Mobile / Dark",
+      "width": 390,
+      "height": 4463.35,
+      "metadata": {
+        "revision": "2026-10-03",
+        "session": "6bf32eef-e7db-8057-8008-bb2c6d5594c2",
+        "sd": "968cb989-21d8-805d-8008-bb76bc9b8208",
+        "componentId": "968cb989-21d8-805d-8008-bb76ba047d06",
+        "linked": true,
+        "mobile": true,
+        "dark": true
+      },
+      "sd": [
+        {
+          "id": "968cb989-21d8-805d-8008-bb76bc9b8208",
+          "componentId": "968cb989-21d8-805d-8008-bb76ba047d06",
+          "linked": true,
+          "width": 342,
+          "height": 604,
+          "text": [
+            {
+              "name": "copy / sdImages",
+              "text": "Optional SD images",
+              "width": 342,
+              "height": 31,
+              "fills": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 3524,
+                "y": 2258.3500000000004,
+                "width": 160.078125,
+                "height": 20
+              }
+            },
+            {
+              "name": "copy / sdNote",
+              "text": "Choose raw, read-only images from 256 KiB to 128 MiB, in 256 KiB units. Compressed files are not supported. Files stay in this browser; filesystem compatibility is unverified.",
+              "width": 342,
+              "height": 124,
+              "fills": [
+                {
+                  "color": "#b6b9b5",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895cd03ecd"
+                }
+              ],
+              "ink": {
+                "x": 3524,
+                "y": 2306.3500000000004,
+                "width": 335.28125,
+                "height": 89
+              }
+            },
+            {
+              "name": "copy / sd1File",
+              "text": "SD1 image",
+              "width": 342,
+              "height": 28,
+              "fills": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 3524,
+                "y": 2454.3500000000004,
+                "width": 79.15625,
+                "height": 17
+              }
+            },
+            {
+              "name": "Value / sd1File",
+              "text": "Choose file  /  No file chosen",
+              "width": 318,
+              "height": 28,
+              "fills": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 3536,
+                "y": 2496.3500000000004,
+                "width": 203.671875,
+                "height": 17
+              }
+            },
+            {
+              "name": "copy / sdNoImage",
+              "text": "No card selected.",
+              "width": 198,
+              "height": 24,
+              "fills": [
+                {
+                  "color": "#b6b9b5",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895cd03ecd"
+                }
+              ],
+              "ink": {
+                "x": 3524,
+                "y": 2545.3500000000004,
+                "width": 132.625,
+                "height": 15
+              }
+            },
+            {
+              "name": "copy / sdRemove",
+              "text": "Remove card",
+              "width": 104,
+              "height": 24,
+              "fills": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 3754.421875,
+                "y": 2548.3500000000004,
+                "width": 95.15625,
+                "height": 17
+              }
+            },
+            {
+              "name": "copy / sd2File",
+              "text": "SD2 image",
+              "width": 342,
+              "height": 28,
+              "fills": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 3524,
+                "y": 2606.3500000000004,
+                "width": 79.15625,
+                "height": 17
+              }
+            },
+            {
+              "name": "Value / sd2File",
+              "text": "Choose file  /  No file chosen",
+              "width": 318,
+              "height": 28,
+              "fills": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 3536,
+                "y": 2648.3500000000004,
+                "width": 203.671875,
+                "height": 17
+              }
+            },
+            {
+              "name": "copy / sdNoImage",
+              "text": "No card selected.",
+              "width": 198,
+              "height": 24,
+              "fills": [
+                {
+                  "color": "#b6b9b5",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895cd03ecd"
+                }
+              ],
+              "ink": {
+                "x": 3524,
+                "y": 2697.3500000000004,
+                "width": 132.625,
+                "height": 15
+              }
+            },
+            {
+              "name": "copy / sdRemove",
+              "text": "Remove card",
+              "width": 104,
+              "height": 24,
+              "fills": [
+                {
+                  "color": "#eef0ec",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                }
+              ],
+              "ink": {
+                "x": 3754.421875,
+                "y": 2700.3500000000004,
+                "width": 95.15625,
+                "height": 17
+              }
+            },
+            {
+              "name": "copy / sdChangeNote",
+              "text": "Pause before changing cards. Applying changed cards starts a new session from the selected firmware and discards this session’s virtual flash changes.",
+              "width": 342,
+              "height": 88,
+              "fills": [
+                {
+                  "color": "#b6b9b5",
+                  "ref": "d862c4e5-8ca1-80d0-8008-b5895cd03ecd"
+                }
+              ],
+              "ink": {
+                "x": 3524,
+                "y": 2757.3500000000004,
+                "width": 337.6875,
+                "height": 58
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

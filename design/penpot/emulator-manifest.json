@@ -1,0 +1,97 @@
+{
+  "schema": "opensp-emulator-native-manifest-v1",
+  "revision": "2026-10-03",
+  "source": {
+    "fileId": "24d9d841-759d-81bc-8008-b518bc70d8b3",
+    "componentPageId": "6bf32eef-e7db-8057-8008-bb287464969a",
+    "layoutPageId": "6bf32eef-e7db-8057-8008-bb287467b2ff"
+  },
+  "status": "Native SD extension saved and reviewed; local page browser acceptance pending; undeployed",
+  "coverage": {
+    "emulatorMains": 16,
+    "pageLayouts": 4,
+    "linkedHeadsPerLayout": 99,
+    "readingTextsPerLayout": 88,
+    "illustrativeStates": 4,
+    "footerInstances": 80,
+    "mobileFooters": 40,
+    "darkFooters": 40
+  },
+  "validation": {
+    "command": "node --test tests/emulator-design.test.mjs",
+    "passed": 8,
+    "failed": 0,
+    "kind": "Native snapshot structure, shared copy, component identity and measured text bounds"
+  },
+  "review": {
+    "disposition": "ready-for-parent-review",
+    "scope": "Optional SD images extension in the four existing native layouts; browser and guest acceptance excluded",
+    "method": "SD page agent reviewed four unedited owned-canvas section crops together; native component, shared-copy, color and text-bound checks passed",
+    "materialFixes": [],
+    "captureLimitation": "One small PNG export timed out after 60 seconds; used four owned-canvas crops.",
+    "reviewArtifacts": ".impeccable/review/emulator-sd-native/",
+    "incumbentSystem": "Existing monochrome assets, Arimo/Cousine and linked session/Instrument remain shared"
+  },
+  "snapshots": [
+    {
+      "path": "design/penpot/emulator-components.json",
+      "bytes": 791981,
+      "sha256": "bb5b6df751a1347382e7f793386b905c2f39345595083466ae26894fcbdde65c"
+    },
+    {
+      "path": "design/penpot/emulator-layouts.json",
+      "bytes": 368969,
+      "sha256": "04145c5921a85b28fe181de9977b6be9890a6d3ffbb19577be52b124a6fbe1a2"
+    },
+    {
+      "path": "design/penpot/emulator-states.json",
+      "bytes": 7671,
+      "sha256": "769f47551a99d2d78525e47b85fd164f358f673fe1a31d838ffe9540d60915a6"
+    },
+    {
+      "path": "design/penpot/emulator-footer-components.json",
+      "bytes": 5075,
+      "sha256": "4969530c032b10d156cc132a14ecc0ddbe19a5299fa69085b2ee70ecccc5df8e"
+    },
+    {
+      "path": "design/penpot/emulator-footer-propagation.json",
+      "bytes": 27793,
+      "sha256": "38194adc20453433d45580488a158ef7e51d85bedfbf90a9cca2b14b53d14b3e"
+    },
+    {
+      "path": "design/penpot/emulator-footer-bounds.json",
+      "bytes": 182529,
+      "sha256": "8286db9cfc27e56a4f6e8be8514ed4fac1b4aed599fc37914e11903413030aeb"
+    },
+    {
+      "path": "design/penpot/emulator-footer-failed-pass.json",
+      "bytes": 1093,
+      "sha256": "bc83f57588f1627c9fc3ab5ad4580164524b85f8abc3a75b4ee83b2ca6df7b7f"
+    },
+    {
+      "path": "design/penpot/emulator-image-export-status.json",
+      "bytes": 1352,
+      "sha256": "ef3b7ac0304bce9527023417fc7168052f73875e32deb97acc2160c9d1f6b030"
+    },
+    {
+      "path": "src/content/emulator.json",
+      "bytes": 5187,
+      "sha256": "bdb095cacc14906409276cf3455b61a9c5207d96124ba29a5357025a1740eefc"
+    },
+    {
+      "path": "design/penpot/emulator-sd-propagation.json",
+      "bytes": 27825,
+      "sha256": "8bb78feec1ed48468dbe0db323d630a28d1204138b608ab028c9363412c43f00"
+    }
+  ],
+  "previousReview": {
+    "disposition": "ship",
+    "scope": "Native emulator layouts and shared Footer; engine completeness and deployment excluded",
+    "method": "Parent reviewed all four actual native canvas PNGs in one batch; fresh reviewer spawn rejected at agent thread limit",
+    "materialFixes": [],
+    "captureLimitation": "Desktop light canvas has a violet editor hover outline; clean native SVG exists. Hosted export timeouts and assembled pixel-strip method are documented.",
+    "reviewArtifacts": ".impeccable/review/emulator-native/",
+    "incumbentSystem": "DESIGN.md and .impeccable/design.json preserved; extension reuses the existing semantic colors, Arimo/Cousine, thin rules and square controls"
+  },
+  "preservation": "tools/emulator-evidence/sd-page-pre-20261003/manifest.json"
+}

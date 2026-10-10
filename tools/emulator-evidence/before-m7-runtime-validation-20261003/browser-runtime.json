@@ -1,0 +1,98 @@
+{
+  "schema": "opensp-emulator-real-browser-verification-v1",
+  "timestampUtc": "2026-10-03T04:14:46.199Z",
+  "browser": {
+    "name": "Chromium",
+    "version": "157.0.8081.0",
+    "isolatedProcess": true
+  },
+  "page": "/emulator/",
+  "privateFirmware": {
+    "sha256": "4891fd9451cd107f6f50f4fb85d75f538cf5b2eb3c7fb2680f36719b32f67e8a",
+    "bytes": 15396,
+    "published": false
+  },
+  "runtime": {
+    "wasmSha256": "16599c54af6da32ecce2ce52538890610a83c96e1152796ddffa2533d6440b35",
+    "wrapperCommit": "1220477c7fb0f8fe4b500f4bd211de52f6dfe638",
+    "coreCommit": "8028ec436f2d9376525352dd38ed9ed6b9f6be10",
+    "workerAssets": [
+      {
+        "path": "_astro/emulator-worker-CiVqlls1.js",
+        "bytes": 78862,
+        "sha256": "aebc69d70ce439c41f1b17ed0fb8a40b7beb9effb2242fea7df2891343d70682"
+      }
+    ],
+    "pageSha256": "f0f5bcc3242f1f33cf9e62f0304be54b5ef93ba35c162e71a3399b2bee65d568",
+    "workerScope": "Production worker, CPU, board and USB models; Worker was not replaced"
+  },
+  "cases": [
+    {
+      "name": "Demand load, actual R13 OLED and USB status, local-only transport",
+      "workers": 1,
+      "marker": "523D0001",
+      "litPixels": 1866,
+      "usbSignature": "SP13",
+      "downloadedEngine": [
+        {
+          "path": "/emulator/vendor/unicorn-arm.js",
+          "sha256": "d8bc37b898ccbc5b429f17112add6ad33a8a9b35df4146034ba141b992dae007",
+          "bytes": 43313
+        },
+        {
+          "path": "/emulator/vendor/unicorn-arm.wasm",
+          "sha256": "16599c54af6da32ecce2ce52538890610a83c96e1152796ddffa2533d6440b35",
+          "bytes": 704978
+        }
+      ],
+      "outboundPayloadRequests": 0,
+      "physicalUsbAccesses": 0
+    },
+    {
+      "name": "Actual compiled input capture",
+      "baseline": {
+        "shift": 0,
+        "pad1": 4083
+      },
+      "pressed": {
+        "shift": 1,
+        "pad1": 1114
+      },
+      "released": {
+        "shift": 0,
+        "pad1": 4083
+      },
+      "scope": "Injected UART SHIFT and ADC pad level; physical pressure and velocity remain unverified"
+    },
+    {
+      "name": "Concurrent actual workers and private RAM state",
+      "workers": 2,
+      "payloadBytesPerWorker": 16,
+      "firstCrc32": "84bbfd6",
+      "secondCrc32": "1dc66fc7",
+      "verification": "Guest CRC includes rereading staged RAM; clearing A leaves B verified",
+      "flashCommandsSent": 0
+    },
+    {
+      "name": "Actual image parser rejection and worker replacement recovery",
+      "marker": "523D0001"
+    },
+    {
+      "name": "Ordinary guest fetch error trace and worker replacement",
+      "guestInstructions": 2,
+      "attemptedFetch": "90000000",
+      "backendLost": false,
+      "replacementMarker": "523D0001"
+    }
+  ],
+  "separateUiSuite": {
+    "file": "tests/emulator.spec.ts",
+    "mockedUiChecks": 19,
+    "scope": "Mocked worker interface checks establish no ARM execution or firmware boot"
+  },
+  "limitations": [
+    "R13 only in this suite; complete stock firmware, sampler, audio and storage remain unfinished",
+    "GPT counter-read clock is a fast regression fixture, not hardware timing",
+    "Results do not establish physical boot, recovery, USB firmware installation or calibrated input"
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "scope": "VIDEO routed board and optional session/Worker/RPC SD admission; browser R13/R14 update uses no card fixtures at this checkpoint",
+  "deployed": false,
+  "physicalDeviceAccess": false,
+  "firmwareBytesPublished": false,
+  "guestSdStorageVerified": false,
+  "verification": {
+    "modelGroups": 500,
+    "excludedIsolatedAudioComponent": true,
+    "browserTests": 32,
+    "typecheckFiles": 90,
+    "errors": 0,
+    "warnings": 0,
+    "hints": 0,
+    "countsOverlap": true
+  },
+  "budgets": {
+    "ordinaryMaxJavascriptGzipBytes": 12880,
+    "initialEmulatorJavascriptGzipBytes": 7903,
+    "demandJavascriptGzipBytes": 59009,
+    "wasmBytes": 706188
+  },
+  "files": {
+    "build-info.json": {
+      "bytes": 9968,
+      "sha256": "e43a675233ee6100cd2d1f5756c83927d736d9593d4e8dd20d119da7d3150095"
+    },
+    "browser-tests.log": {
+      "bytes": 6242,
+      "sha256": "e0a3415d5bd53325da13ee6d734dbc7e5bedca6bc87974447ff11058ed270542"
+    },
+    "model-tests.tap": {
+      "bytes": 114114,
+      "sha256": "c67030db3e8e4c311e4aa47b0cf63e6f009fa29dc4684bb5f2c8f2c0b4888bb4"
+    },
+    "check.log": {
+      "bytes": 293,
+      "sha256": "d3b6581ccdd903db6669719361802d7ed381c1b65ee9b7eecabbfd5ad8bb0b68"
+    },
+    "browser-runtime.json": {
+      "bytes": 3225,
+      "sha256": "c7a6595affca1e69bd81f309176aea134f7b80a4082a0a9e2668cac8b98a8284"
+    },
+    "worker-rpc-browser-roundtrip.json": {
+      "bytes": 746433,
+      "sha256": "17f6694215ce3e7798c99b573b704443fc9ede7736e8129b6e9797659b39f32e"
+    },
+    "emulator-worker-roundtrip.spec.ts": {
+      "bytes": 20496,
+      "sha256": "f9e93aac9e4260ba276b30c7a386226101e24e6c32b79c54e72c1a418b8b9005"
+    }
+  }
+}

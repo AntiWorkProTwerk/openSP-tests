@@ -85,6 +85,12 @@ offscreen or hidden playback. Do not connect the public site to the physical SP.
   do not compare the former all-site budget directly with a per-page result.
   Preserve playback/accessibility checks and distinguish lab measurements from
   physical-device/field evidence.
+- The owner approved a separate on-demand emulator runtime on October2,2026.
+  Keep initial page scripts and chapter demonstrations within15 KiB gzip.
+  Measure emulator worker/engine JS and WASM separately, enforce their
+  128 KiB gzip JS/2 MiB raw WASM limits, verify provenance and load only on Start.
+  Follow [the emulator scope and evidence](docs/emulator.md); an R13 model pass
+  does not establish full stock firmware or physical recovery.
 - Deployment is GitHub Actions to GitHub Pages, with Cloudflare DNS-only and
   enforced HTTPS. Only `dist/` is public output. Do not move hosting, add an app
   server or expose a design credential as an incidental change.

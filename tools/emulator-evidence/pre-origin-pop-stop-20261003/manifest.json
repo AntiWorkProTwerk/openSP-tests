@@ -1,0 +1,21 @@
+{
+  "scope": "Exact sources and qualification before changing the legacy POP fetch test to exercise instruction-origin interception",
+  "guestExecuted": false,
+  "files": [
+    {
+      "source": "tests/emulator-exceptions.test.mjs",
+      "retained": "emulator-exceptions.test.mjs",
+      "sha256": "3b3d05259c58a57113847b58154e4dea0936687c37b086f784ddc27073855c1c"
+    },
+    {
+      "source": "tools/test-emulator-exceptions.mjs",
+      "retained": "test-emulator-exceptions.mjs",
+      "sha256": "cfb9f695018f715c47115d51ffd2582244b6a9a943792f0bcc6eee5f6388273a"
+    },
+    {
+      "source": "tools/emulator-evidence/exception-fpu-qualification.json",
+      "retained": "exception-fpu-qualification.json",
+      "sha256": "9a0a331ef77c73543061e1682a889900e7f836b64a5ca018ecfe1953b89e81a6"
+    }
+  ]
+}

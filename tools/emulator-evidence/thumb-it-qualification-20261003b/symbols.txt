@@ -1,0 +1,15 @@
+00080000 B _stack
+80000000 T single
+8000000a T single_exit
+80000020 T alternate
+8000002c T alternate_exit
+80000040 T four
+80000050 T four_exit
+80001054 T __bss_end__
+80001054 T __bss_start
+80001054 T __bss_start__
+80001054 T __data_start
+80001054 T __end__
+80001054 T _bss_end__
+80001054 T _edata
+80001054 T _end

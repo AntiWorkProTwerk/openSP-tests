@@ -1,0 +1,184 @@
+TAP version 13
+# Subtest: evidence pins the reviewed RT1062 source and discloses synthetic readiness
+ok 1 - evidence pins the reviewed RT1062 source and discloses synthetic readiness
+  ---
+  duration_ms: 1.5697
+  type: 'test'
+  ...
+# Subtest: manual resets preserve nonzero reserved lanes and leave DC_OK low
+ok 2 - manual resets preserve nonzero reserved lanes and leave DC_OK low
+  ---
+  duration_ms: 0.8364
+  type: 'test'
+  ...
+# Subtest: all documented field masks retain the source values
+ok 3 - all documented field masks retain the source values
+  ---
+  duration_ms: 0.228
+  type: 'test'
+  ...
+# Subtest: adjacent words are separate registers and do not perform SET CLR or TOG
+ok 4 - adjacent words are separate registers and do not perform SET CLR or TOG
+  ---
+  duration_ms: 0.1502
+  type: 'test'
+  ...
+# Subtest: reads and unchanged writes never advance or complete settling
+ok 5 - reads and unchanged writes never advance or complete settling
+  ---
+  duration_ms: 0.8527
+  type: 'test'
+  ...
+# Subtest: target adjustment reaches protected DC_OK only at the configured explicit tick
+ok 6 - target adjustment reaches protected DC_OK only at the configured explicit tick
+  ---
+  duration_ms: 0.246
+  type: 'test'
+  ...
+# Subtest: a second changed target restarts pending settling without stale readiness
+ok 7 - a second changed target restarts pending settling without stale readiness
+  ---
+  duration_ms: 0.1068
+  type: 'test'
+  ...
+# Subtest: rewriting unchanged targets preserves pending progress and completed DC_OK
+ok 8 - rewriting unchanged targets preserves pending progress and completed DC_OK
+  ---
+  duration_ms: 0.1313
+  type: 'test'
+  ...
+# Subtest: the NXP one-output adjustment sequence preserves fields and restarts target settling
+ok 9 - the NXP one-output adjustment sequence preserves fields and restarts target settling
+  ---
+  duration_ms: 0.126
+  type: 'test'
+  ...
+# Subtest: DISABLE_STEP retains configuration while admitting target writes
+ok 10 - DISABLE_STEP retains configuration while admitting target writes
+  ---
+  duration_ms: 0.1681
+  type: 'test'
+  ...
+# Subtest: all 32 documented TRG encodings remain admitted
+ok 11 - all 32 documented TRG encodings remain admitted
+  ---
+  duration_ms: 0.3905
+  type: 'test'
+  ...
+# Subtest: a low-power target change restarts status while all documented codes settle
+ok 12 - a low-power target change restarts status while all documented codes settle
+  ---
+  duration_ms: 0.1425
+  type: 'test'
+  ...
+# Subtest: undocumented low-power targets are retained, visible and conservatively stalled
+ok 13 - undocumented low-power targets are retained, visible and conservatively stalled
+  ---
+  duration_ms: 0.2442
+  type: 'test'
+  ...
+# Subtest: CUR_SNS reserved codes are visible without inventing current-detector behavior
+ok 14 - CUR_SNS reserved codes are visible without inventing current-detector behavior
+  ---
+  duration_ms: 0.2534
+  type: 'test'
+  ...
+# Subtest: DC_OK cannot be software-written or cleared as W1C in any byte lane
+ok 15 - DC_OK cannot be software-written or cleared as W1C in any byte lane
+  ---
+  duration_ms: 0.0976
+  type: 'test'
+  ...
+# Subtest: byte and halfword writes preserve the other defined and reserved lanes
+ok 16 - byte and halfword writes preserve the other defined and reserved lanes
+  ---
+  duration_ms: 0.08
+  type: 'test'
+  ...
+# Subtest: unwritten high value bits cannot change clock selection or DISABLE_STEP
+ok 17 - unwritten high value bits cannot change clock selection or DISABLE_STEP
+  ---
+  duration_ms: 0.083
+  type: 'test'
+  ...
+# Subtest: fixed settling failure and disabled converter never fabricate DC_OK
+ok 18 - fixed settling failure and disabled converter never fabricate DC_OK
+  ---
+  duration_ms: 0.1511
+  type: 'test'
+  ...
+# Subtest: forced internal selection requires its explicit availability and powered oscillator
+ok 19 - forced internal selection requires its explicit availability and powered oscillator
+  ---
+  duration_ms: 0.1198
+  type: 'test'
+  ...
+# Subtest: forced external selection needs an explicit source fixture despite writable XTAL controls
+ok 20 - forced external selection needs an explicit source fixture despite writable XTAL controls
+  ---
+  duration_ms: 0.0885
+  type: 'test'
+  ...
+# Subtest: auto selection uses only available fixture clocks and discloses its fallback policy
+ok 21 - auto selection uses only available fixture clocks and discloses its fallback policy
+  ---
+  duration_ms: 0.0853
+  type: 'test'
+  ...
+# Subtest: changing the selected available clock restarts the explicit settling delay
+ok 22 - changing the selected available clock restarts the explicit settling delay
+  ---
+  duration_ms: 0.0774
+  type: 'test'
+  ...
+# Subtest: configuration controls retain values without resetting unrelated target progress
+ok 23 - configuration controls retain values without resetting unrelated target progress
+  ---
+  duration_ms: 0.0828
+  type: 'test'
+  ...
+# Subtest: tick batching has the same complete and pending state as smaller ticks
+ok 24 - tick batching has the same complete and pending state as smaller ticks
+  ---
+  duration_ms: 0.1135
+  type: 'test'
+  ...
+# Subtest: zero-duration settling still requires an explicit tick including tick zero
+ok 25 - zero-duration settling still requires an explicit tick including tick zero
+  ---
+  duration_ms: 0.0688
+  type: 'test'
+  ...
+# Subtest: bounded tick validation leaves state unchanged on invalid inputs
+ok 26 - bounded tick validation leaves state unchanged on invalid inputs
+  ---
+  duration_ms: 0.5268
+  type: 'test'
+  ...
+# Subtest: fixture values require booleans and snapshots cannot mutate the configuration
+ok 27 - fixture values require booleans and snapshots cannot mutate the configuration
+  ---
+  duration_ms: 0.277
+  type: 'test'
+  ...
+# Subtest: reset restores source registers and time while retaining fixed environment fixtures
+ok 28 - reset restores source registers and time while retaining fixed environment fixtures
+  ---
+  duration_ms: 0.1128
+  type: 'test'
+  ...
+# Subtest: all exact register lanes are owned and neighboring or malformed accesses remain unhandled
+ok 29 - all exact register lanes are owned and neighboring or malformed accesses remain unhandled
+  ---
+  duration_ms: 0.2012
+  type: 'test'
+  ...
+1..29
+# tests 29
+# suites 0
+# pass 29
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 105.7194

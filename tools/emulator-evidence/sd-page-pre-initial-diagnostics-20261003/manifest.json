@@ -1,0 +1,35 @@
+{
+  "schema": "opensp-sd-page-pre-diagnostics-busy-repair-v1",
+  "files": [
+    {
+      "file": "src/scripts/emulator.ts",
+      "bytes": 27630,
+      "sha256": "348d3591a3622a2dda75725252514765a932dafaff5f6d9b04ac4e047b21c38d"
+    },
+    {
+      "file": "tests/emulator-page-bridge.test.mjs",
+      "bytes": 23008,
+      "sha256": "cb4d8174e97dd2241ef9ba5165b2bf23c83ba5f408daeabd8834dcf858f1d059"
+    },
+    {
+      "file": "tests/emulator.spec.ts",
+      "bytes": 40761,
+      "sha256": "a41181fb9e416cd890a3154ea0677d197c2f5face68e5e9a114748ffae2b8363"
+    },
+    {
+      "file": "tools/emulator-evidence/sd-page-qualification-20261003.json",
+      "bytes": 7171,
+      "sha256": "9600024768882971e5a72f459e288e3d0aa0d5c9873c16be0d28d21dccbbfcbc"
+    },
+    {
+      "file": "docs/emulator-sd-fixtures.md",
+      "bytes": 7178,
+      "sha256": "dc915004f813911189fab0dd7d928b6a4a90506b19f1192944b8c139410d792c"
+    },
+    {
+      "file": "docs/emulator-design.md",
+      "bytes": 8946,
+      "sha256": "9603bb1d7b0810126fc1a26cefc4c1918eaf73ca1690bdd7ed0e27ea362ad240"
+    }
+  ]
+}

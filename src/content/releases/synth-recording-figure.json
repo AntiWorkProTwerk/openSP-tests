@@ -1,0 +1,9 @@
+{
+  "captions": [
+    "Earlier concept: REC opens an empty-pad chooser",
+    "Earlier concept: select a destination, then REC starts",
+    "Earlier concept: play a phrase, then REC stops",
+    "Earlier concept: wait for native SAVE confirmation"
+  ],
+  "evidence": "Original interface concepts from linked Penpot components, not device captures. P11's owner-tested chooser has a different layout. SAVE, saved-pad playback and project preservation remain unqualified; these concepts do not establish those results."
+}

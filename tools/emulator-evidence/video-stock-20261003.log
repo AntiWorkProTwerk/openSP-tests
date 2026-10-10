@@ -1,0 +1,745 @@
+PASS: whole stock image executes its own scatter startup; all twelve region hashes match (19016151 instructions).
+{
+  "passed": true,
+  "report": "../sp404mk2/analysis/emulator/video_pll_stock_20261003/whole-image.json",
+  "phase": "bounded checkpoints complete",
+  "scatterPassed": true,
+  "boundedExecutionPassed": true,
+  "completeStockBootVerified": false,
+  "frontier": {
+    "phase": "bounded stock C runtime",
+    "pc": "0x8001aff8",
+    "outcome": "budget",
+    "state": "paused",
+    "cpuBackendFailed": false,
+    "unknownMmio": [
+      {
+        "address": 3758157188,
+        "width": 4,
+        "operation": "write",
+        "count": 3
+      },
+      {
+        "address": 3758157184,
+        "width": 4,
+        "operation": "read",
+        "count": 3
+      },
+      {
+        "address": 1075807728,
+        "width": 4,
+        "operation": "write",
+        "count": 1
+      },
+      {
+        "address": 1075807732,
+        "width": 4,
+        "operation": "write",
+        "count": 1
+      },
+      {
+        "address": 1075807716,
+        "width": 4,
+        "operation": "write",
+        "count": 1
+      },
+      {
+        "address": 1075807708,
+        "width": 4,
+        "operation": "write",
+        "count": 1
+      },
+      {
+        "address": 1075807736,
+        "width": 4,
+        "operation": "write",
+        "count": 1
+      },
+      {
+        "address": 1075807740,
+        "width": 4,
+        "operation": "write",
+        "count": 1
+      },
+      {
+        "address": 1075807744,
+        "width": 4,
+        "operation": "write",
+        "count": 1
+      },
+      {
+        "address": 1075807748,
+        "width": 4,
+        "operation": "write",
+        "count": 1
+      },
+      {
+        "address": 1075807704,
+        "width": 4,
+        "operation": "write",
+        "count": 1
+      },
+      {
+        "address": 1075806228,
+        "width": 4,
+        "operation": "write",
+        "count": 1
+      },
+      {
+        "address": 1075806232,
+        "width": 4,
+        "operation": "write",
+        "count": 1
+      },
+      {
+        "address": 1075806236,
+        "width": 4,
+        "operation": "write",
+        "count": 1
+      },
+      {
+        "address": 1075806240,
+        "width": 4,
+        "operation": "write",
+        "count": 1
+      },
+      {
+        "address": 1075806244,
+        "width": 4,
+        "operation": "write",
+        "count": 1
+      },
+      {
+        "address": 1075806248,
+        "width": 4,
+        "operation": "write",
+        "count": 1
+      },
+      {
+        "address": 1075806252,
+        "width": 4,
+        "operation": "write",
+        "count": 1
+      },
+      {
+        "address": 1075806256,
+        "width": 4,
+        "operation": "write",
+        "count": 1
+      },
+      {
+        "address": 1075806260,
+        "width": 4,
+        "operation": "write",
+        "count": 1
+      },
+      {
+        "address": 1075806264,
+        "width": 4,
+        "operation": "write",
+        "count": 1
+      },
+      {
+        "address": 1075806268,
+        "width": 4,
+        "operation": "write",
+        "count": 1
+      },
+      {
+        "address": 1075806272,
+        "width": 4,
+        "operation": "write",
+        "count": 1
+      },
+      {
+        "address": 1075806276,
+        "width": 4,
+        "operation": "write",
+        "count": 1
+      },
+      {
+        "address": 1075806280,
+        "width": 4,
+        "operation": "write",
+        "count": 1
+      },
+      {
+        "address": 1075806284,
+        "width": 4,
+        "operation": "write",
+        "count": 1
+      },
+      {
+        "address": 1075806288,
+        "width": 4,
+        "operation": "write",
+        "count": 1
+      },
+      {
+        "address": 1075806292,
+        "width": 4,
+        "operation": "write",
+        "count": 1
+      },
+      {
+        "address": 1075806296,
+        "width": 4,
+        "operation": "write",
+        "count": 1
+      },
+      {
+        "address": 1075806300,
+        "width": 4,
+        "operation": "write",
+        "count": 1
+      },
+      {
+        "address": 1075806304,
+        "width": 4,
+        "operation": "write",
+        "count": 1
+      },
+      {
+        "address": 1075806308,
+        "width": 4,
+        "operation": "write",
+        "count": 1
+      },
+      {
+        "address": 1075806312,
+        "width": 4,
+        "operation": "write",
+        "count": 1
+      },
+      {
+        "address": 1075806316,
+        "width": 4,
+        "operation": "write",
+        "count": 1
+      },
+      {
+        "address": 1075806320,
+        "width": 4,
+        "operation": "write",
+        "count": 1
+      },
+      {
+        "address": 1075806324,
+        "width": 4,
+        "operation": "write",
+        "count": 1
+      },
+      {
+        "address": 1075806328,
+        "width": 4,
+        "operation": "write",
+        "count": 1
+      },
+      {
+        "address": 1075806332,
+        "width": 4,
+        "operation": "write",
+        "count": 1
+      },
+      {
+        "address": 1075806336,
+        "width": 4,
+        "operation": "write",
+        "count": 1
+      },
+      {
+        "address": 1075806340,
+        "width": 4,
+        "operation": "write",
+        "count": 1
+      },
+      {
+        "address": 1075806344,
+        "width": 4,
+        "operation": "write",
+        "count": 1
+      },
+      {
+        "address": 1075806348,
+        "width": 4,
+        "operation": "write",
+        "count": 1
+      },
+      {
+        "address": 1075806352,
+        "width": 4,
+        "operation": "write",
+        "count": 1
+      },
+      {
+        "address": 1075806356,
+        "width": 4,
+        "operation": "write",
+        "count": 1
+      },
+      {
+        "address": 1075806360,
+        "width": 4,
+        "operation": "write",
+        "count": 1
+      },
+      {
+        "address": 1075806364,
+        "width": 4,
+        "operation": "write",
+        "count": 1
+      },
+      {
+        "address": 1075806368,
+        "width": 4,
+        "operation": "write",
+        "count": 1
+      },
+      {
+        "address": 1075806372,
+        "width": 4,
+        "operation": "write",
+        "count": 1
+      },
+      {
+        "address": 1075806376,
+        "width": 4,
+        "operation": "write",
+        "count": 1
+      },
+      {
+        "address": 1075806380,
+        "width": 4,
+        "operation": "write",
+        "count": 1
+      },
+      {
+        "address": 1075806388,
+        "width": 4,
+        "operation": "write",
+        "count": 2
+      },
+      {
+        "address": 1075806392,
+        "width": 4,
+        "operation": "write",
+        "count": 1
+      },
+      {
+        "address": 1074446448,
+        "width": 4,
+        "operation": "read",
+        "count": 1
+      },
+      {
+        "address": 1074446448,
+        "width": 4,
+        "operation": "write",
+        "count": 1
+      },
+      {
+        "address": 1074429956,
+        "width": 4,
+        "operation": "write",
+        "count": 1
+      },
+      {
+        "address": 1074429960,
+        "width": 4,
+        "operation": "write",
+        "count": 1
+      },
+      {
+        "address": 1074429980,
+        "width": 4,
+        "operation": "write",
+        "count": 1
+      },
+      {
+        "address": 1074429984,
+        "width": 4,
+        "operation": "write",
+        "count": 1
+      },
+      {
+        "address": 1074627264,
+        "width": 4,
+        "operation": "read",
+        "count": 2
+      },
+      {
+        "address": 1074627264,
+        "width": 4,
+        "operation": "write",
+        "count": 2
+      },
+      {
+        "address": 1074774016,
+        "width": 4,
+        "operation": "read",
+        "count": 1
+      },
+      {
+        "address": 1074774016,
+        "width": 4,
+        "operation": "write",
+        "count": 1
+      },
+      {
+        "address": 1074774040,
+        "width": 4,
+        "operation": "read",
+        "count": 9
+      },
+      {
+        "address": 1074774040,
+        "width": 4,
+        "operation": "write",
+        "count": 9
+      },
+      {
+        "address": 1074774036,
+        "width": 4,
+        "operation": "read",
+        "count": 5
+      },
+      {
+        "address": 1074774036,
+        "width": 4,
+        "operation": "write",
+        "count": 5
+      },
+      {
+        "address": 1074774088,
+        "width": 4,
+        "operation": "read",
+        "count": 4
+      },
+      {
+        "address": 1074774032,
+        "width": 4,
+        "operation": "read",
+        "count": 1
+      },
+      {
+        "address": 1074774032,
+        "width": 4,
+        "operation": "write",
+        "count": 1
+      },
+      {
+        "address": 1074774148,
+        "width": 4,
+        "operation": "read",
+        "count": 3
+      },
+      {
+        "address": 1074774148,
+        "width": 4,
+        "operation": "write",
+        "count": 3
+      },
+      {
+        "address": 1074774076,
+        "width": 4,
+        "operation": "read",
+        "count": 2
+      },
+      {
+        "address": 1074774076,
+        "width": 4,
+        "operation": "write",
+        "count": 2
+      },
+      {
+        "address": 1074774056,
+        "width": 4,
+        "operation": "read",
+        "count": 6
+      },
+      {
+        "address": 1074774056,
+        "width": 4,
+        "operation": "write",
+        "count": 6
+      },
+      {
+        "address": 1074774060,
+        "width": 4,
+        "operation": "read",
+        "count": 2
+      },
+      {
+        "address": 1074774060,
+        "width": 4,
+        "operation": "write",
+        "count": 2
+      },
+      {
+        "address": 1074774072,
+        "width": 4,
+        "operation": "read",
+        "count": 4
+      },
+      {
+        "address": 1074774072,
+        "width": 4,
+        "operation": "write",
+        "count": 4
+      },
+      {
+        "address": 1074774048,
+        "width": 4,
+        "operation": "read",
+        "count": 3
+      },
+      {
+        "address": 1074774048,
+        "width": 4,
+        "operation": "write",
+        "count": 3
+      },
+      {
+        "address": 1074774132,
+        "width": 4,
+        "operation": "read",
+        "count": 4
+      },
+      {
+        "address": 1074774132,
+        "width": 4,
+        "operation": "write",
+        "count": 4
+      },
+      {
+        "address": 1074774064,
+        "width": 4,
+        "operation": "read",
+        "count": 6
+      },
+      {
+        "address": 1074774064,
+        "width": 4,
+        "operation": "write",
+        "count": 6
+      },
+      {
+        "address": 1074774028,
+        "width": 4,
+        "operation": "read",
+        "count": 1
+      },
+      {
+        "address": 1074774028,
+        "width": 4,
+        "operation": "write",
+        "count": 1
+      },
+      {
+        "address": 1074626672,
+        "width": 4,
+        "operation": "write",
+        "count": 2
+      },
+      {
+        "address": 1074626676,
+        "width": 4,
+        "operation": "write",
+        "count": 1
+      },
+      {
+        "address": 1074626928,
+        "width": 4,
+        "operation": "read",
+        "count": 3
+      },
+      {
+        "address": 1074626928,
+        "width": 4,
+        "operation": "write",
+        "count": 3
+      },
+      {
+        "address": 1074626672,
+        "width": 4,
+        "operation": "read",
+        "count": 1
+      },
+      {
+        "address": 1074626784,
+        "width": 4,
+        "operation": "write",
+        "count": 6
+      },
+      {
+        "address": 1074626788,
+        "width": 4,
+        "operation": "write",
+        "count": 1
+      },
+      {
+        "address": 1074626784,
+        "width": 4,
+        "operation": "read",
+        "count": 5
+      },
+      {
+        "address": 1074626912,
+        "width": 4,
+        "operation": "read",
+        "count": 1
+      },
+      {
+        "address": 1074626912,
+        "width": 4,
+        "operation": "write",
+        "count": 1
+      },
+      {
+        "address": 1074774112,
+        "width": 4,
+        "operation": "read",
+        "count": 7
+      },
+      {
+        "address": 1074774112,
+        "width": 4,
+        "operation": "write",
+        "count": 7
+      },
+      {
+        "address": 1074446340,
+        "width": 4,
+        "operation": "read",
+        "count": 7
+      },
+      {
+        "address": 1074446340,
+        "width": 4,
+        "operation": "write",
+        "count": 7
+      },
+      {
+        "address": 1074446344,
+        "width": 4,
+        "operation": "read",
+        "count": 1
+      },
+      {
+        "address": 1074446344,
+        "width": 4,
+        "operation": "write",
+        "count": 1
+      },
+      {
+        "address": 1074774100,
+        "width": 4,
+        "operation": "read",
+        "count": 1
+      },
+      {
+        "address": 1074774100,
+        "width": 4,
+        "operation": "write",
+        "count": 1
+      },
+      {
+        "address": 1074626800,
+        "width": 4,
+        "operation": "read",
+        "count": 4
+      },
+      {
+        "address": 1074626800,
+        "width": 4,
+        "operation": "write",
+        "count": 8
+      },
+      {
+        "address": 1074282496,
+        "width": 4,
+        "operation": "read",
+        "count": 2
+      },
+      {
+        "address": 1074282496,
+        "width": 4,
+        "operation": "write",
+        "count": 2
+      },
+      {
+        "address": 1074282760,
+        "width": 4,
+        "operation": "read",
+        "count": 2
+      },
+      {
+        "address": 1074282760,
+        "width": 4,
+        "operation": "write",
+        "count": 2
+      },
+      {
+        "address": 1074282776,
+        "width": 4,
+        "operation": "read",
+        "count": 2
+      },
+      {
+        "address": 1074282776,
+        "width": 4,
+        "operation": "write",
+        "count": 2
+      },
+      {
+        "address": 1074282792,
+        "width": 4,
+        "operation": "read",
+        "count": 2
+      },
+      {
+        "address": 1074282792,
+        "width": 4,
+        "operation": "write",
+        "count": 2
+      },
+      {
+        "address": 1074282808,
+        "width": 4,
+        "operation": "read",
+        "count": 2
+      },
+      {
+        "address": 1074282808,
+        "width": 4,
+        "operation": "write",
+        "count": 2
+      },
+      {
+        "address": 1074626624,
+        "width": 4,
+        "operation": "write",
+        "count": 1
+      },
+      {
+        "address": 1074626640,
+        "width": 4,
+        "operation": "write",
+        "count": 1
+      },
+      {
+        "address": 1074626656,
+        "width": 4,
+        "operation": "write",
+        "count": 1
+      }
+    ],
+    "unknownMmioOverflow": 0,
+    "displayFrames": 0,
+    "pendingInterrupts": [],
+    "completeStockBootVerified": false
+  },
+  "sourcesStable": true,
+  "runtimeStable": true,
+  "hostElapsedMs": 7212
+}

@@ -1,0 +1,2016 @@
+{
+  "source": {
+    "fileId": "24d9d841-759d-81bc-8008-b518bc70d8b3",
+    "pageId": "bfe8c086-048d-80e0-8008-b6d351be8e7a",
+    "kind": "native-component-api-export"
+  },
+  "components": [
+    {
+      "id": "cac28749-e268-802e-8008-bf97fba9aa7a",
+      "name": "P6N direct record armed",
+      "path": "OpenSP / Synth / Direct recording",
+      "mainId": "cac28749-e268-802e-8008-bf97fa2dbf3a",
+      "shape": {
+        "id": "cac28749-e268-802e-8008-bf97fa2dbf3a",
+        "name": "OpenSP / Synth / Direct recording / P6N direct record armed",
+        "type": "board",
+        "x": 0,
+        "y": 0,
+        "width": 128,
+        "height": 64,
+        "rotation": 0,
+        "componentId": "cac28749-e268-802e-8008-bf97fba9aa7a",
+        "componentName": "P6N direct record armed",
+        "fills": [
+          {
+            "color": "#000000",
+            "opacity": 1,
+            "ref": "88ef66de-c84d-8075-8008-b5cd50e1aa42"
+          }
+        ],
+        "children": [
+          {
+            "id": "cac28749-e268-802e-8008-bf97fa510e5b",
+            "name": "OpenSP / Synth / OLED header",
+            "type": "board",
+            "x": 0,
+            "y": 0,
+            "width": 128,
+            "height": 10,
+            "rotation": 0,
+            "componentId": "bfe8c086-048d-80e0-8008-b6d35f386630",
+            "componentName": "OLED header",
+            "fills": [
+              {
+                "color": "#000000",
+                "opacity": 1,
+                "ref": "88ef66de-c84d-8075-8008-b5cd50e1aa42"
+              }
+            ],
+            "children": [
+              {
+                "id": "cac28749-e268-802e-8008-bf97fa510e5c",
+                "name": "Heading",
+                "type": "text",
+                "x": 3,
+                "y": 1,
+                "width": 122,
+                "height": 8,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#ffffff",
+                    "opacity": 1,
+                    "ref": "88ef66de-c84d-8075-8008-b5cd515b360e"
+                  }
+                ],
+                "text": "ARMED A01",
+                "fontFamily": "Cousine",
+                "fontSize": 6,
+                "fontWeight": "400",
+                "lineHeight": 1,
+                "letterSpacing": 0,
+                "align": "left"
+              },
+              {
+                "id": "cac28749-e268-802e-8008-bf97fa510e5d",
+                "name": "Header rule",
+                "type": "rectangle",
+                "x": 0,
+                "y": 9,
+                "width": 128,
+                "height": 1,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#ffffff",
+                    "opacity": 1,
+                    "ref": "88ef66de-c84d-8075-8008-b5cd515b360e"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "cac28749-e268-802e-8008-bf97fa953172",
+            "name": "OpenSP / Synth / OLED footer",
+            "type": "board",
+            "x": 0,
+            "y": 55,
+            "width": 128,
+            "height": 9,
+            "rotation": 0,
+            "componentId": "bfe8c086-048d-80e0-8008-b6d35f4ae7d8",
+            "componentName": "OLED footer",
+            "fills": [
+              {
+                "color": "#000000",
+                "opacity": 1,
+                "ref": "88ef66de-c84d-8075-8008-b5cd50e1aa42"
+              }
+            ],
+            "children": [
+              {
+                "id": "cac28749-e268-802e-8008-bf97fa953173",
+                "name": "Footer rule",
+                "type": "rectangle",
+                "x": 0,
+                "y": 0,
+                "width": 128,
+                "height": 1,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#ffffff",
+                    "opacity": 1,
+                    "ref": "88ef66de-c84d-8075-8008-b5cd515b360e"
+                  }
+                ]
+              },
+              {
+                "id": "cac28749-e268-802e-8008-bf97fa953174",
+                "name": "Hint",
+                "type": "text",
+                "x": 3,
+                "y": 1,
+                "width": 122,
+                "height": 7,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#ffffff",
+                    "opacity": 1,
+                    "ref": "88ef66de-c84d-8075-8008-b5cd515b360e"
+                  }
+                ],
+                "text": "REC:START EXIT:BACK",
+                "fontFamily": "Cousine",
+                "fontSize": 5,
+                "fontWeight": "400",
+                "lineHeight": 1,
+                "letterSpacing": 0,
+                "align": "left"
+              }
+            ]
+          },
+          {
+            "id": "cac28749-e268-802e-8008-bf97fadf1b75",
+            "name": "Destination prompt",
+            "type": "text",
+            "x": 3,
+            "y": 14,
+            "width": 122,
+            "height": 10,
+            "rotation": 0,
+            "fills": [
+              {
+                "color": "#ffffff",
+                "opacity": 1,
+                "ref": "88ef66de-c84d-8075-8008-b5cd515b360e"
+              }
+            ],
+            "text": "REC TO START",
+            "fontFamily": "Cousine",
+            "fontSize": 7,
+            "fontWeight": "400",
+            "lineHeight": 1,
+            "letterSpacing": 0,
+            "align": "left"
+          },
+          {
+            "id": "cac28749-e268-802e-8008-bf97fb3e0986",
+            "name": "Recording status",
+            "type": "text",
+            "x": 3,
+            "y": 27,
+            "width": 122,
+            "height": 8,
+            "rotation": 0,
+            "fills": [
+              {
+                "color": "#ffffff",
+                "opacity": 1,
+                "ref": "88ef66de-c84d-8075-8008-b5cd515b360e"
+              }
+            ],
+            "text": "EMPTY PAD SELECTED",
+            "fontFamily": "Cousine",
+            "fontSize": 6,
+            "fontWeight": "400",
+            "lineHeight": 1,
+            "letterSpacing": 0,
+            "align": "left"
+          }
+        ]
+      }
+    },
+    {
+      "id": "cac28749-e268-802e-8008-bf97e346eec3",
+      "name": "P6N direct record chooser",
+      "path": "OpenSP / Synth / Direct recording",
+      "mainId": "cac28749-e268-802e-8008-bf97dfb26fdf",
+      "shape": {
+        "id": "cac28749-e268-802e-8008-bf97dfb26fdf",
+        "name": "OpenSP / Synth / Direct recording / P6N direct record chooser",
+        "type": "board",
+        "x": 0,
+        "y": 0,
+        "width": 128,
+        "height": 64,
+        "rotation": 0,
+        "componentId": "cac28749-e268-802e-8008-bf97e346eec3",
+        "componentName": "P6N direct record chooser",
+        "fills": [
+          {
+            "color": "#000000",
+            "opacity": 1,
+            "ref": "88ef66de-c84d-8075-8008-b5cd50e1aa42"
+          }
+        ],
+        "children": [
+          {
+            "id": "cac28749-e268-802e-8008-bf97dfe0c13e",
+            "name": "OpenSP / Synth / OLED header",
+            "type": "board",
+            "x": 0,
+            "y": 0,
+            "width": 128,
+            "height": 10,
+            "rotation": 0,
+            "componentId": "bfe8c086-048d-80e0-8008-b6d35f386630",
+            "componentName": "OLED header",
+            "fills": [
+              {
+                "color": "#000000",
+                "opacity": 1,
+                "ref": "88ef66de-c84d-8075-8008-b5cd50e1aa42"
+              }
+            ],
+            "children": [
+              {
+                "id": "cac28749-e268-802e-8008-bf97dfe0c13f",
+                "name": "Heading",
+                "type": "text",
+                "x": 3,
+                "y": 1,
+                "width": 122,
+                "height": 8,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#ffffff",
+                    "opacity": 1,
+                    "ref": "88ef66de-c84d-8075-8008-b5cd515b360e"
+                  }
+                ],
+                "text": "CHOOSE EMPTY PAD",
+                "fontFamily": "Cousine",
+                "fontSize": 6,
+                "fontWeight": "400",
+                "lineHeight": 1,
+                "letterSpacing": 0,
+                "align": "left"
+              },
+              {
+                "id": "cac28749-e268-802e-8008-bf97dfe103cd",
+                "name": "Header rule",
+                "type": "rectangle",
+                "x": 0,
+                "y": 9,
+                "width": 128,
+                "height": 1,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#ffffff",
+                    "opacity": 1,
+                    "ref": "88ef66de-c84d-8075-8008-b5cd515b360e"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "cac28749-e268-802e-8008-bf97e01aa36d",
+            "name": "OpenSP / Synth / OLED footer",
+            "type": "board",
+            "x": 0,
+            "y": 55,
+            "width": 128,
+            "height": 9,
+            "rotation": 0,
+            "componentId": "bfe8c086-048d-80e0-8008-b6d35f4ae7d8",
+            "componentName": "OLED footer",
+            "fills": [
+              {
+                "color": "#000000",
+                "opacity": 1,
+                "ref": "88ef66de-c84d-8075-8008-b5cd50e1aa42"
+              }
+            ],
+            "children": [
+              {
+                "id": "cac28749-e268-802e-8008-bf97e01aa36e",
+                "name": "Footer rule",
+                "type": "rectangle",
+                "x": 0,
+                "y": 0,
+                "width": 128,
+                "height": 1,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#ffffff",
+                    "opacity": 1,
+                    "ref": "88ef66de-c84d-8075-8008-b5cd515b360e"
+                  }
+                ]
+              },
+              {
+                "id": "cac28749-e268-802e-8008-bf97e01aa36f",
+                "name": "Hint",
+                "type": "text",
+                "x": 3,
+                "y": 1,
+                "width": 122,
+                "height": 7,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#ffffff",
+                    "opacity": 1,
+                    "ref": "88ef66de-c84d-8075-8008-b5cd515b360e"
+                  }
+                ],
+                "text": "PAD:SELECT EXIT:BACK",
+                "fontFamily": "Cousine",
+                "fontSize": 5,
+                "fontWeight": "400",
+                "lineHeight": 1,
+                "letterSpacing": 0,
+                "align": "left"
+              }
+            ]
+          },
+          {
+            "id": "cac28749-e268-802e-8008-bf97e05e36ea",
+            "name": "OpenSP / Synth / Direct recording / P6N record pad cell",
+            "type": "board",
+            "x": 3,
+            "y": 13,
+            "width": 28,
+            "height": 8,
+            "rotation": 0,
+            "componentId": "cac28749-e268-802e-8008-bf97d577f5a0",
+            "componentName": "P6N record pad cell",
+            "fills": [
+              {
+                "color": "#000000",
+                "opacity": 1,
+                "ref": "88ef66de-c84d-8075-8008-b5cd50e1aa42"
+              }
+            ],
+            "children": [
+              {
+                "id": "cac28749-e268-802e-8008-bf97e05e36eb",
+                "name": "Pad cell outline",
+                "type": "rectangle",
+                "x": 0,
+                "y": 0,
+                "width": 28,
+                "height": 8,
+                "rotation": 0,
+                "strokes": [
+                  {
+                    "color": "#ffffff",
+                    "width": 0.5,
+                    "opacity": 1,
+                    "ref": "88ef66de-c84d-8075-8008-b5cd515b360e"
+                  }
+                ]
+              },
+              {
+                "id": "cac28749-e268-802e-8008-bf97e05e36ec",
+                "name": "Pad number",
+                "type": "text",
+                "x": 3,
+                "y": 1,
+                "width": 14,
+                "height": 6,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#ffffff",
+                    "opacity": 1,
+                    "ref": "88ef66de-c84d-8075-8008-b5cd515b360e"
+                  }
+                ],
+                "text": "01",
+                "fontFamily": "Cousine",
+                "fontSize": 5,
+                "fontWeight": "400",
+                "lineHeight": 1,
+                "letterSpacing": 0,
+                "align": "left"
+              }
+            ]
+          },
+          {
+            "id": "cac28749-e268-802e-8008-bf97e0917c20",
+            "name": "OpenSP / Synth / Direct recording / P6N record pad cell",
+            "type": "board",
+            "x": 33,
+            "y": 13,
+            "width": 28,
+            "height": 8,
+            "rotation": 0,
+            "componentId": "cac28749-e268-802e-8008-bf97d577f5a0",
+            "componentName": "P6N record pad cell",
+            "fills": [
+              {
+                "color": "#000000",
+                "opacity": 1,
+                "ref": "88ef66de-c84d-8075-8008-b5cd50e1aa42"
+              }
+            ],
+            "children": [
+              {
+                "id": "cac28749-e268-802e-8008-bf97e0917c21",
+                "name": "Pad cell outline",
+                "type": "rectangle",
+                "x": 0,
+                "y": 0,
+                "width": 28,
+                "height": 8,
+                "rotation": 0,
+                "strokes": [
+                  {
+                    "color": "#ffffff",
+                    "width": 0.5,
+                    "opacity": 1,
+                    "ref": "88ef66de-c84d-8075-8008-b5cd515b360e"
+                  }
+                ]
+              },
+              {
+                "id": "cac28749-e268-802e-8008-bf97e0917c22",
+                "name": "Pad number",
+                "type": "text",
+                "x": 3,
+                "y": 1,
+                "width": 14,
+                "height": 6,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#ffffff",
+                    "opacity": 1,
+                    "ref": "88ef66de-c84d-8075-8008-b5cd515b360e"
+                  }
+                ],
+                "text": "02",
+                "fontFamily": "Cousine",
+                "fontSize": 5,
+                "fontWeight": "400",
+                "lineHeight": 1,
+                "letterSpacing": 0,
+                "align": "left"
+              }
+            ]
+          },
+          {
+            "id": "cac28749-e268-802e-8008-bf97e0c81bb2",
+            "name": "OpenSP / Synth / Direct recording / P6N record pad cell",
+            "type": "board",
+            "x": 63,
+            "y": 13,
+            "width": 28,
+            "height": 8,
+            "rotation": 0,
+            "componentId": "cac28749-e268-802e-8008-bf97d577f5a0",
+            "componentName": "P6N record pad cell",
+            "fills": [
+              {
+                "color": "#000000",
+                "opacity": 1,
+                "ref": "88ef66de-c84d-8075-8008-b5cd50e1aa42"
+              }
+            ],
+            "children": [
+              {
+                "id": "cac28749-e268-802e-8008-bf97e0c81bb3",
+                "name": "Pad cell outline",
+                "type": "rectangle",
+                "x": 0,
+                "y": 0,
+                "width": 28,
+                "height": 8,
+                "rotation": 0,
+                "strokes": [
+                  {
+                    "color": "#ffffff",
+                    "width": 0.5,
+                    "opacity": 1,
+                    "ref": "88ef66de-c84d-8075-8008-b5cd515b360e"
+                  }
+                ]
+              },
+              {
+                "id": "cac28749-e268-802e-8008-bf97e0c81bb4",
+                "name": "Pad number",
+                "type": "text",
+                "x": 3,
+                "y": 1,
+                "width": 14,
+                "height": 6,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#ffffff",
+                    "opacity": 1,
+                    "ref": "88ef66de-c84d-8075-8008-b5cd515b360e"
+                  }
+                ],
+                "text": "03",
+                "fontFamily": "Cousine",
+                "fontSize": 5,
+                "fontWeight": "400",
+                "lineHeight": 1,
+                "letterSpacing": 0,
+                "align": "left"
+              },
+              {
+                "id": "cac28749-e268-802e-8008-bf97e0c81bb5",
+                "name": "Occupied marker",
+                "type": "text",
+                "x": 20,
+                "y": 1,
+                "width": 6,
+                "height": 6,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#ffffff",
+                    "opacity": 1,
+                    "ref": "88ef66de-c84d-8075-8008-b5cd515b360e"
+                  }
+                ],
+                "text": "X",
+                "fontFamily": "Cousine",
+                "fontSize": 5,
+                "fontWeight": "400",
+                "lineHeight": 1,
+                "letterSpacing": 0,
+                "align": "left"
+              }
+            ]
+          },
+          {
+            "id": "cac28749-e268-802e-8008-bf97e1036f4d",
+            "name": "OpenSP / Synth / Direct recording / P6N record pad cell",
+            "type": "board",
+            "x": 93,
+            "y": 13,
+            "width": 28,
+            "height": 8,
+            "rotation": 0,
+            "componentId": "cac28749-e268-802e-8008-bf97d577f5a0",
+            "componentName": "P6N record pad cell",
+            "fills": [
+              {
+                "color": "#000000",
+                "opacity": 1,
+                "ref": "88ef66de-c84d-8075-8008-b5cd50e1aa42"
+              }
+            ],
+            "children": [
+              {
+                "id": "cac28749-e268-802e-8008-bf97e1036f4e",
+                "name": "Pad cell outline",
+                "type": "rectangle",
+                "x": 0,
+                "y": 0,
+                "width": 28,
+                "height": 8,
+                "rotation": 0,
+                "strokes": [
+                  {
+                    "color": "#ffffff",
+                    "width": 0.5,
+                    "opacity": 1,
+                    "ref": "88ef66de-c84d-8075-8008-b5cd515b360e"
+                  }
+                ]
+              },
+              {
+                "id": "cac28749-e268-802e-8008-bf97e1036f4f",
+                "name": "Pad number",
+                "type": "text",
+                "x": 3,
+                "y": 1,
+                "width": 14,
+                "height": 6,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#ffffff",
+                    "opacity": 1,
+                    "ref": "88ef66de-c84d-8075-8008-b5cd515b360e"
+                  }
+                ],
+                "text": "04",
+                "fontFamily": "Cousine",
+                "fontSize": 5,
+                "fontWeight": "400",
+                "lineHeight": 1,
+                "letterSpacing": 0,
+                "align": "left"
+              }
+            ]
+          },
+          {
+            "id": "cac28749-e268-802e-8008-bf97e13640cc",
+            "name": "OpenSP / Synth / Direct recording / P6N record pad cell",
+            "type": "board",
+            "x": 3,
+            "y": 23,
+            "width": 28,
+            "height": 8,
+            "rotation": 0,
+            "componentId": "cac28749-e268-802e-8008-bf97d577f5a0",
+            "componentName": "P6N record pad cell",
+            "fills": [
+              {
+                "color": "#000000",
+                "opacity": 1,
+                "ref": "88ef66de-c84d-8075-8008-b5cd50e1aa42"
+              }
+            ],
+            "children": [
+              {
+                "id": "cac28749-e268-802e-8008-bf97e13640cd",
+                "name": "Pad cell outline",
+                "type": "rectangle",
+                "x": 0,
+                "y": 0,
+                "width": 28,
+                "height": 8,
+                "rotation": 0,
+                "strokes": [
+                  {
+                    "color": "#ffffff",
+                    "width": 0.5,
+                    "opacity": 1,
+                    "ref": "88ef66de-c84d-8075-8008-b5cd515b360e"
+                  }
+                ]
+              },
+              {
+                "id": "cac28749-e268-802e-8008-bf97e13640ce",
+                "name": "Pad number",
+                "type": "text",
+                "x": 3,
+                "y": 1,
+                "width": 14,
+                "height": 6,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#ffffff",
+                    "opacity": 1,
+                    "ref": "88ef66de-c84d-8075-8008-b5cd515b360e"
+                  }
+                ],
+                "text": "05",
+                "fontFamily": "Cousine",
+                "fontSize": 5,
+                "fontWeight": "400",
+                "lineHeight": 1,
+                "letterSpacing": 0,
+                "align": "left"
+              }
+            ]
+          },
+          {
+            "id": "cac28749-e268-802e-8008-bf97e1697694",
+            "name": "OpenSP / Synth / Direct recording / P6N record pad cell",
+            "type": "board",
+            "x": 33,
+            "y": 23,
+            "width": 28,
+            "height": 8,
+            "rotation": 0,
+            "componentId": "cac28749-e268-802e-8008-bf97d577f5a0",
+            "componentName": "P6N record pad cell",
+            "fills": [
+              {
+                "color": "#000000",
+                "opacity": 1,
+                "ref": "88ef66de-c84d-8075-8008-b5cd50e1aa42"
+              }
+            ],
+            "children": [
+              {
+                "id": "cac28749-e268-802e-8008-bf97e1697695",
+                "name": "Pad cell outline",
+                "type": "rectangle",
+                "x": 0,
+                "y": 0,
+                "width": 28,
+                "height": 8,
+                "rotation": 0,
+                "strokes": [
+                  {
+                    "color": "#ffffff",
+                    "width": 0.5,
+                    "opacity": 1,
+                    "ref": "88ef66de-c84d-8075-8008-b5cd515b360e"
+                  }
+                ]
+              },
+              {
+                "id": "cac28749-e268-802e-8008-bf97e1697696",
+                "name": "Pad number",
+                "type": "text",
+                "x": 3,
+                "y": 1,
+                "width": 14,
+                "height": 6,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#ffffff",
+                    "opacity": 1,
+                    "ref": "88ef66de-c84d-8075-8008-b5cd515b360e"
+                  }
+                ],
+                "text": "06",
+                "fontFamily": "Cousine",
+                "fontSize": 5,
+                "fontWeight": "400",
+                "lineHeight": 1,
+                "letterSpacing": 0,
+                "align": "left"
+              },
+              {
+                "id": "cac28749-e268-802e-8008-bf97e1698726",
+                "name": "Occupied marker",
+                "type": "text",
+                "x": 20,
+                "y": 1,
+                "width": 6,
+                "height": 6,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#ffffff",
+                    "opacity": 1,
+                    "ref": "88ef66de-c84d-8075-8008-b5cd515b360e"
+                  }
+                ],
+                "text": "X",
+                "fontFamily": "Cousine",
+                "fontSize": 5,
+                "fontWeight": "400",
+                "lineHeight": 1,
+                "letterSpacing": 0,
+                "align": "left"
+              }
+            ]
+          },
+          {
+            "id": "cac28749-e268-802e-8008-bf97e1a91517",
+            "name": "OpenSP / Synth / Direct recording / P6N record pad cell",
+            "type": "board",
+            "x": 63,
+            "y": 23,
+            "width": 28,
+            "height": 8,
+            "rotation": 0,
+            "componentId": "cac28749-e268-802e-8008-bf97d577f5a0",
+            "componentName": "P6N record pad cell",
+            "fills": [
+              {
+                "color": "#000000",
+                "opacity": 1,
+                "ref": "88ef66de-c84d-8075-8008-b5cd50e1aa42"
+              }
+            ],
+            "children": [
+              {
+                "id": "cac28749-e268-802e-8008-bf97e1a91518",
+                "name": "Pad cell outline",
+                "type": "rectangle",
+                "x": 0,
+                "y": 0,
+                "width": 28,
+                "height": 8,
+                "rotation": 0,
+                "strokes": [
+                  {
+                    "color": "#ffffff",
+                    "width": 0.5,
+                    "opacity": 1,
+                    "ref": "88ef66de-c84d-8075-8008-b5cd515b360e"
+                  }
+                ]
+              },
+              {
+                "id": "cac28749-e268-802e-8008-bf97e1a91519",
+                "name": "Pad number",
+                "type": "text",
+                "x": 3,
+                "y": 1,
+                "width": 14,
+                "height": 6,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#ffffff",
+                    "opacity": 1,
+                    "ref": "88ef66de-c84d-8075-8008-b5cd515b360e"
+                  }
+                ],
+                "text": "07",
+                "fontFamily": "Cousine",
+                "fontSize": 5,
+                "fontWeight": "400",
+                "lineHeight": 1,
+                "letterSpacing": 0,
+                "align": "left"
+              }
+            ]
+          },
+          {
+            "id": "cac28749-e268-802e-8008-bf97e20d87f2",
+            "name": "OpenSP / Synth / Direct recording / P6N record pad cell",
+            "type": "board",
+            "x": 93,
+            "y": 23,
+            "width": 28,
+            "height": 8,
+            "rotation": 0,
+            "componentId": "cac28749-e268-802e-8008-bf97d577f5a0",
+            "componentName": "P6N record pad cell",
+            "fills": [
+              {
+                "color": "#000000",
+                "opacity": 1,
+                "ref": "88ef66de-c84d-8075-8008-b5cd50e1aa42"
+              }
+            ],
+            "children": [
+              {
+                "id": "cac28749-e268-802e-8008-bf97e20d87f3",
+                "name": "Pad cell outline",
+                "type": "rectangle",
+                "x": 0,
+                "y": 0,
+                "width": 28,
+                "height": 8,
+                "rotation": 0,
+                "strokes": [
+                  {
+                    "color": "#ffffff",
+                    "width": 0.5,
+                    "opacity": 1,
+                    "ref": "88ef66de-c84d-8075-8008-b5cd515b360e"
+                  }
+                ]
+              },
+              {
+                "id": "cac28749-e268-802e-8008-bf97e20d87f4",
+                "name": "Pad number",
+                "type": "text",
+                "x": 3,
+                "y": 1,
+                "width": 14,
+                "height": 6,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#ffffff",
+                    "opacity": 1,
+                    "ref": "88ef66de-c84d-8075-8008-b5cd515b360e"
+                  }
+                ],
+                "text": "08",
+                "fontFamily": "Cousine",
+                "fontSize": 5,
+                "fontWeight": "400",
+                "lineHeight": 1,
+                "letterSpacing": 0,
+                "align": "left"
+              }
+            ]
+          },
+          {
+            "id": "cac28749-e268-802e-8008-bf97e2321a1d",
+            "name": "OpenSP / Synth / Direct recording / P6N record pad cell",
+            "type": "board",
+            "x": 3,
+            "y": 33,
+            "width": 28,
+            "height": 8,
+            "rotation": 0,
+            "componentId": "cac28749-e268-802e-8008-bf97d577f5a0",
+            "componentName": "P6N record pad cell",
+            "fills": [
+              {
+                "color": "#000000",
+                "opacity": 1,
+                "ref": "88ef66de-c84d-8075-8008-b5cd50e1aa42"
+              }
+            ],
+            "children": [
+              {
+                "id": "cac28749-e268-802e-8008-bf97e2321a1e",
+                "name": "Pad cell outline",
+                "type": "rectangle",
+                "x": 0,
+                "y": 0,
+                "width": 28,
+                "height": 8,
+                "rotation": 0,
+                "strokes": [
+                  {
+                    "color": "#ffffff",
+                    "width": 0.5,
+                    "opacity": 1,
+                    "ref": "88ef66de-c84d-8075-8008-b5cd515b360e"
+                  }
+                ]
+              },
+              {
+                "id": "cac28749-e268-802e-8008-bf97e2321a1f",
+                "name": "Pad number",
+                "type": "text",
+                "x": 3,
+                "y": 1,
+                "width": 14,
+                "height": 6,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#ffffff",
+                    "opacity": 1,
+                    "ref": "88ef66de-c84d-8075-8008-b5cd515b360e"
+                  }
+                ],
+                "text": "09",
+                "fontFamily": "Cousine",
+                "fontSize": 5,
+                "fontWeight": "400",
+                "lineHeight": 1,
+                "letterSpacing": 0,
+                "align": "left"
+              }
+            ]
+          },
+          {
+            "id": "cac28749-e268-802e-8008-bf97e2537824",
+            "name": "OpenSP / Synth / Direct recording / P6N record pad cell",
+            "type": "board",
+            "x": 33,
+            "y": 33,
+            "width": 28,
+            "height": 8,
+            "rotation": 0,
+            "componentId": "cac28749-e268-802e-8008-bf97d577f5a0",
+            "componentName": "P6N record pad cell",
+            "fills": [
+              {
+                "color": "#000000",
+                "opacity": 1,
+                "ref": "88ef66de-c84d-8075-8008-b5cd50e1aa42"
+              }
+            ],
+            "children": [
+              {
+                "id": "cac28749-e268-802e-8008-bf97e2537825",
+                "name": "Pad cell outline",
+                "type": "rectangle",
+                "x": 0,
+                "y": 0,
+                "width": 28,
+                "height": 8,
+                "rotation": 0,
+                "strokes": [
+                  {
+                    "color": "#ffffff",
+                    "width": 0.5,
+                    "opacity": 1,
+                    "ref": "88ef66de-c84d-8075-8008-b5cd515b360e"
+                  }
+                ]
+              },
+              {
+                "id": "cac28749-e268-802e-8008-bf97e2537826",
+                "name": "Pad number",
+                "type": "text",
+                "x": 3,
+                "y": 1,
+                "width": 14,
+                "height": 6,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#ffffff",
+                    "opacity": 1,
+                    "ref": "88ef66de-c84d-8075-8008-b5cd515b360e"
+                  }
+                ],
+                "text": "10",
+                "fontFamily": "Cousine",
+                "fontSize": 5,
+                "fontWeight": "400",
+                "lineHeight": 1,
+                "letterSpacing": 0,
+                "align": "left"
+              }
+            ]
+          },
+          {
+            "id": "cac28749-e268-802e-8008-bf97e27507e4",
+            "name": "OpenSP / Synth / Direct recording / P6N record pad cell",
+            "type": "board",
+            "x": 63,
+            "y": 33,
+            "width": 28,
+            "height": 8,
+            "rotation": 0,
+            "componentId": "cac28749-e268-802e-8008-bf97d577f5a0",
+            "componentName": "P6N record pad cell",
+            "fills": [
+              {
+                "color": "#000000",
+                "opacity": 1,
+                "ref": "88ef66de-c84d-8075-8008-b5cd50e1aa42"
+              }
+            ],
+            "children": [
+              {
+                "id": "cac28749-e268-802e-8008-bf97e27507e5",
+                "name": "Pad cell outline",
+                "type": "rectangle",
+                "x": 0,
+                "y": 0,
+                "width": 28,
+                "height": 8,
+                "rotation": 0,
+                "strokes": [
+                  {
+                    "color": "#ffffff",
+                    "width": 0.5,
+                    "opacity": 1,
+                    "ref": "88ef66de-c84d-8075-8008-b5cd515b360e"
+                  }
+                ]
+              },
+              {
+                "id": "cac28749-e268-802e-8008-bf97e27507e6",
+                "name": "Pad number",
+                "type": "text",
+                "x": 3,
+                "y": 1,
+                "width": 14,
+                "height": 6,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#ffffff",
+                    "opacity": 1,
+                    "ref": "88ef66de-c84d-8075-8008-b5cd515b360e"
+                  }
+                ],
+                "text": "11",
+                "fontFamily": "Cousine",
+                "fontSize": 5,
+                "fontWeight": "400",
+                "lineHeight": 1,
+                "letterSpacing": 0,
+                "align": "left"
+              },
+              {
+                "id": "cac28749-e268-802e-8008-bf97e27507e7",
+                "name": "Occupied marker",
+                "type": "text",
+                "x": 20,
+                "y": 1,
+                "width": 6,
+                "height": 6,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#ffffff",
+                    "opacity": 1,
+                    "ref": "88ef66de-c84d-8075-8008-b5cd515b360e"
+                  }
+                ],
+                "text": "X",
+                "fontFamily": "Cousine",
+                "fontSize": 5,
+                "fontWeight": "400",
+                "lineHeight": 1,
+                "letterSpacing": 0,
+                "align": "left"
+              }
+            ]
+          },
+          {
+            "id": "cac28749-e268-802e-8008-bf97e29fc53c",
+            "name": "OpenSP / Synth / Direct recording / P6N record pad cell",
+            "type": "board",
+            "x": 93,
+            "y": 33,
+            "width": 28,
+            "height": 8,
+            "rotation": 0,
+            "componentId": "cac28749-e268-802e-8008-bf97d577f5a0",
+            "componentName": "P6N record pad cell",
+            "fills": [
+              {
+                "color": "#000000",
+                "opacity": 1,
+                "ref": "88ef66de-c84d-8075-8008-b5cd50e1aa42"
+              }
+            ],
+            "children": [
+              {
+                "id": "cac28749-e268-802e-8008-bf97e29fc53d",
+                "name": "Pad cell outline",
+                "type": "rectangle",
+                "x": 0,
+                "y": 0,
+                "width": 28,
+                "height": 8,
+                "rotation": 0,
+                "strokes": [
+                  {
+                    "color": "#ffffff",
+                    "width": 0.5,
+                    "opacity": 1,
+                    "ref": "88ef66de-c84d-8075-8008-b5cd515b360e"
+                  }
+                ]
+              },
+              {
+                "id": "cac28749-e268-802e-8008-bf97e29fc53e",
+                "name": "Pad number",
+                "type": "text",
+                "x": 3,
+                "y": 1,
+                "width": 14,
+                "height": 6,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#ffffff",
+                    "opacity": 1,
+                    "ref": "88ef66de-c84d-8075-8008-b5cd515b360e"
+                  }
+                ],
+                "text": "12",
+                "fontFamily": "Cousine",
+                "fontSize": 5,
+                "fontWeight": "400",
+                "lineHeight": 1,
+                "letterSpacing": 0,
+                "align": "left"
+              }
+            ]
+          },
+          {
+            "id": "cac28749-e268-802e-8008-bf97e2c12d81",
+            "name": "OpenSP / Synth / Direct recording / P6N record pad cell",
+            "type": "board",
+            "x": 3,
+            "y": 43,
+            "width": 28,
+            "height": 8,
+            "rotation": 0,
+            "componentId": "cac28749-e268-802e-8008-bf97d577f5a0",
+            "componentName": "P6N record pad cell",
+            "fills": [
+              {
+                "color": "#000000",
+                "opacity": 1,
+                "ref": "88ef66de-c84d-8075-8008-b5cd50e1aa42"
+              }
+            ],
+            "children": [
+              {
+                "id": "cac28749-e268-802e-8008-bf97e2c12d82",
+                "name": "Pad cell outline",
+                "type": "rectangle",
+                "x": 0,
+                "y": 0,
+                "width": 28,
+                "height": 8,
+                "rotation": 0,
+                "strokes": [
+                  {
+                    "color": "#ffffff",
+                    "width": 0.5,
+                    "opacity": 1,
+                    "ref": "88ef66de-c84d-8075-8008-b5cd515b360e"
+                  }
+                ]
+              },
+              {
+                "id": "cac28749-e268-802e-8008-bf97e2c12d83",
+                "name": "Pad number",
+                "type": "text",
+                "x": 3,
+                "y": 1,
+                "width": 14,
+                "height": 6,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#ffffff",
+                    "opacity": 1,
+                    "ref": "88ef66de-c84d-8075-8008-b5cd515b360e"
+                  }
+                ],
+                "text": "13",
+                "fontFamily": "Cousine",
+                "fontSize": 5,
+                "fontWeight": "400",
+                "lineHeight": 1,
+                "letterSpacing": 0,
+                "align": "left"
+              }
+            ]
+          },
+          {
+            "id": "cac28749-e268-802e-8008-bf97e2e36a48",
+            "name": "OpenSP / Synth / Direct recording / P6N record pad cell",
+            "type": "board",
+            "x": 33,
+            "y": 43,
+            "width": 28,
+            "height": 8,
+            "rotation": 0,
+            "componentId": "cac28749-e268-802e-8008-bf97d577f5a0",
+            "componentName": "P6N record pad cell",
+            "fills": [
+              {
+                "color": "#000000",
+                "opacity": 1,
+                "ref": "88ef66de-c84d-8075-8008-b5cd50e1aa42"
+              }
+            ],
+            "children": [
+              {
+                "id": "cac28749-e268-802e-8008-bf97e2e36a49",
+                "name": "Pad cell outline",
+                "type": "rectangle",
+                "x": 0,
+                "y": 0,
+                "width": 28,
+                "height": 8,
+                "rotation": 0,
+                "strokes": [
+                  {
+                    "color": "#ffffff",
+                    "width": 0.5,
+                    "opacity": 1,
+                    "ref": "88ef66de-c84d-8075-8008-b5cd515b360e"
+                  }
+                ]
+              },
+              {
+                "id": "cac28749-e268-802e-8008-bf97e2e36a4a",
+                "name": "Pad number",
+                "type": "text",
+                "x": 3,
+                "y": 1,
+                "width": 14,
+                "height": 6,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#ffffff",
+                    "opacity": 1,
+                    "ref": "88ef66de-c84d-8075-8008-b5cd515b360e"
+                  }
+                ],
+                "text": "14",
+                "fontFamily": "Cousine",
+                "fontSize": 5,
+                "fontWeight": "400",
+                "lineHeight": 1,
+                "letterSpacing": 0,
+                "align": "left"
+              }
+            ]
+          },
+          {
+            "id": "cac28749-e268-802e-8008-bf97e303a96e",
+            "name": "OpenSP / Synth / Direct recording / P6N record pad cell",
+            "type": "board",
+            "x": 63,
+            "y": 43,
+            "width": 28,
+            "height": 8,
+            "rotation": 0,
+            "componentId": "cac28749-e268-802e-8008-bf97d577f5a0",
+            "componentName": "P6N record pad cell",
+            "fills": [
+              {
+                "color": "#000000",
+                "opacity": 1,
+                "ref": "88ef66de-c84d-8075-8008-b5cd50e1aa42"
+              }
+            ],
+            "children": [
+              {
+                "id": "cac28749-e268-802e-8008-bf97e303a96f",
+                "name": "Pad cell outline",
+                "type": "rectangle",
+                "x": 0,
+                "y": 0,
+                "width": 28,
+                "height": 8,
+                "rotation": 0,
+                "strokes": [
+                  {
+                    "color": "#ffffff",
+                    "width": 0.5,
+                    "opacity": 1,
+                    "ref": "88ef66de-c84d-8075-8008-b5cd515b360e"
+                  }
+                ]
+              },
+              {
+                "id": "cac28749-e268-802e-8008-bf97e303a970",
+                "name": "Pad number",
+                "type": "text",
+                "x": 3,
+                "y": 1,
+                "width": 14,
+                "height": 6,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#ffffff",
+                    "opacity": 1,
+                    "ref": "88ef66de-c84d-8075-8008-b5cd515b360e"
+                  }
+                ],
+                "text": "15",
+                "fontFamily": "Cousine",
+                "fontSize": 5,
+                "fontWeight": "400",
+                "lineHeight": 1,
+                "letterSpacing": 0,
+                "align": "left"
+              }
+            ]
+          },
+          {
+            "id": "cac28749-e268-802e-8008-bf97e324f22e",
+            "name": "OpenSP / Synth / Direct recording / P6N record pad cell",
+            "type": "board",
+            "x": 93,
+            "y": 43,
+            "width": 28,
+            "height": 8,
+            "rotation": 0,
+            "componentId": "cac28749-e268-802e-8008-bf97d577f5a0",
+            "componentName": "P6N record pad cell",
+            "fills": [
+              {
+                "color": "#000000",
+                "opacity": 1,
+                "ref": "88ef66de-c84d-8075-8008-b5cd50e1aa42"
+              }
+            ],
+            "children": [
+              {
+                "id": "cac28749-e268-802e-8008-bf97e324f22f",
+                "name": "Pad cell outline",
+                "type": "rectangle",
+                "x": 0,
+                "y": 0,
+                "width": 28,
+                "height": 8,
+                "rotation": 0,
+                "strokes": [
+                  {
+                    "color": "#ffffff",
+                    "width": 0.5,
+                    "opacity": 1,
+                    "ref": "88ef66de-c84d-8075-8008-b5cd515b360e"
+                  }
+                ]
+              },
+              {
+                "id": "cac28749-e268-802e-8008-bf97e324f230",
+                "name": "Pad number",
+                "type": "text",
+                "x": 3,
+                "y": 1,
+                "width": 14,
+                "height": 6,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#ffffff",
+                    "opacity": 1,
+                    "ref": "88ef66de-c84d-8075-8008-b5cd515b360e"
+                  }
+                ],
+                "text": "16",
+                "fontFamily": "Cousine",
+                "fontSize": 5,
+                "fontWeight": "400",
+                "lineHeight": 1,
+                "letterSpacing": 0,
+                "align": "left"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "cac28749-e268-802e-8008-bf97d577f5a0",
+      "name": "P6N record pad cell",
+      "path": "OpenSP / Synth / Direct recording",
+      "mainId": "cac28749-e268-802e-8008-bf97d4a6f090",
+      "shape": {
+        "id": "cac28749-e268-802e-8008-bf97d4a6f090",
+        "name": "OpenSP / Synth / Direct recording / P6N record pad cell",
+        "type": "board",
+        "x": 0,
+        "y": 0,
+        "width": 28,
+        "height": 8,
+        "rotation": 0,
+        "componentId": "cac28749-e268-802e-8008-bf97d577f5a0",
+        "componentName": "P6N record pad cell",
+        "fills": [
+          {
+            "color": "#000000",
+            "opacity": 1,
+            "ref": "88ef66de-c84d-8075-8008-b5cd50e1aa42"
+          }
+        ],
+        "children": [
+          {
+            "id": "cac28749-e268-802e-8008-bf97d4ca9052",
+            "name": "Pad cell outline",
+            "type": "rectangle",
+            "x": 0,
+            "y": 0,
+            "width": 28,
+            "height": 8,
+            "rotation": 0,
+            "strokes": [
+              {
+                "color": "#ffffff",
+                "width": 0.5,
+                "opacity": 1,
+                "ref": "88ef66de-c84d-8075-8008-b5cd515b360e"
+              }
+            ]
+          },
+          {
+            "id": "cac28749-e268-802e-8008-bf97d4f96761",
+            "name": "Pad number",
+            "type": "text",
+            "x": 3,
+            "y": 1,
+            "width": 14,
+            "height": 6,
+            "rotation": 0,
+            "fills": [
+              {
+                "color": "#ffffff",
+                "opacity": 1,
+                "ref": "88ef66de-c84d-8075-8008-b5cd515b360e"
+              }
+            ],
+            "text": "01",
+            "fontFamily": "Cousine",
+            "fontSize": 5,
+            "fontWeight": "400",
+            "lineHeight": 1,
+            "letterSpacing": 0,
+            "align": "left"
+          }
+        ]
+      }
+    },
+    {
+      "id": "cac28749-e268-802e-8008-bf9814647a86",
+      "name": "P6N direct record saving",
+      "path": "OpenSP / Synth / Direct recording",
+      "mainId": "cac28749-e268-802e-8008-bf981361bf2a",
+      "shape": {
+        "id": "cac28749-e268-802e-8008-bf981361bf2a",
+        "name": "OpenSP / Synth / Direct recording / P6N direct record saving",
+        "type": "board",
+        "x": 0,
+        "y": 0,
+        "width": 128,
+        "height": 64,
+        "rotation": 0,
+        "componentId": "cac28749-e268-802e-8008-bf9814647a86",
+        "componentName": "P6N direct record saving",
+        "fills": [
+          {
+            "color": "#000000",
+            "opacity": 1,
+            "ref": "88ef66de-c84d-8075-8008-b5cd50e1aa42"
+          }
+        ],
+        "children": [
+          {
+            "id": "cac28749-e268-802e-8008-bf981385b904",
+            "name": "OpenSP / Synth / OLED header",
+            "type": "board",
+            "x": 0,
+            "y": 0,
+            "width": 128,
+            "height": 10,
+            "rotation": 0,
+            "componentId": "bfe8c086-048d-80e0-8008-b6d35f386630",
+            "componentName": "OLED header",
+            "fills": [
+              {
+                "color": "#000000",
+                "opacity": 1,
+                "ref": "88ef66de-c84d-8075-8008-b5cd50e1aa42"
+              }
+            ],
+            "children": [
+              {
+                "id": "cac28749-e268-802e-8008-bf981385b905",
+                "name": "Heading",
+                "type": "text",
+                "x": 3,
+                "y": 1,
+                "width": 122,
+                "height": 8,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#ffffff",
+                    "opacity": 1,
+                    "ref": "88ef66de-c84d-8075-8008-b5cd515b360e"
+                  }
+                ],
+                "text": "SAVING A01",
+                "fontFamily": "Cousine",
+                "fontSize": 6,
+                "fontWeight": "400",
+                "lineHeight": 1,
+                "letterSpacing": 0,
+                "align": "left"
+              },
+              {
+                "id": "cac28749-e268-802e-8008-bf981385b906",
+                "name": "Header rule",
+                "type": "rectangle",
+                "x": 0,
+                "y": 9,
+                "width": 128,
+                "height": 1,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#ffffff",
+                    "opacity": 1,
+                    "ref": "88ef66de-c84d-8075-8008-b5cd515b360e"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "cac28749-e268-802e-8008-bf9813b345e6",
+            "name": "OpenSP / Synth / OLED footer",
+            "type": "board",
+            "x": 0,
+            "y": 55,
+            "width": 128,
+            "height": 9,
+            "rotation": 0,
+            "componentId": "bfe8c086-048d-80e0-8008-b6d35f4ae7d8",
+            "componentName": "OLED footer",
+            "fills": [
+              {
+                "color": "#000000",
+                "opacity": 1,
+                "ref": "88ef66de-c84d-8075-8008-b5cd50e1aa42"
+              }
+            ],
+            "children": [
+              {
+                "id": "cac28749-e268-802e-8008-bf9813b345e7",
+                "name": "Footer rule",
+                "type": "rectangle",
+                "x": 0,
+                "y": 0,
+                "width": 128,
+                "height": 1,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#ffffff",
+                    "opacity": 1,
+                    "ref": "88ef66de-c84d-8075-8008-b5cd515b360e"
+                  }
+                ]
+              },
+              {
+                "id": "cac28749-e268-802e-8008-bf9813b3a19f",
+                "name": "Hint",
+                "type": "text",
+                "x": 3,
+                "y": 1,
+                "width": 122,
+                "height": 7,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#ffffff",
+                    "opacity": 1,
+                    "ref": "88ef66de-c84d-8075-8008-b5cd515b360e"
+                  }
+                ],
+                "text": "PLEASE WAIT",
+                "fontFamily": "Cousine",
+                "fontSize": 5,
+                "fontWeight": "400",
+                "lineHeight": 1,
+                "letterSpacing": 0,
+                "align": "left"
+              }
+            ]
+          },
+          {
+            "id": "cac28749-e268-802e-8008-bf9813e280e6",
+            "name": "Destination prompt",
+            "type": "text",
+            "x": 3,
+            "y": 14,
+            "width": 122,
+            "height": 10,
+            "rotation": 0,
+            "fills": [
+              {
+                "color": "#ffffff",
+                "opacity": 1,
+                "ref": "88ef66de-c84d-8075-8008-b5cd515b360e"
+              }
+            ],
+            "text": "KEEP POWER ON",
+            "fontFamily": "Cousine",
+            "fontSize": 7,
+            "fontWeight": "400",
+            "lineHeight": 1,
+            "letterSpacing": 0,
+            "align": "left"
+          },
+          {
+            "id": "cac28749-e268-802e-8008-bf981421658e",
+            "name": "Recording status",
+            "type": "text",
+            "x": 3,
+            "y": 27,
+            "width": 122,
+            "height": 8,
+            "rotation": 0,
+            "fills": [
+              {
+                "color": "#ffffff",
+                "opacity": 1,
+                "ref": "88ef66de-c84d-8075-8008-b5cd515b360e"
+              }
+            ],
+            "text": "WRITING SAMPLE",
+            "fontFamily": "Cousine",
+            "fontSize": 6,
+            "fontWeight": "400",
+            "lineHeight": 1,
+            "letterSpacing": 0,
+            "align": "left"
+          }
+        ]
+      }
+    },
+    {
+      "id": "cac28749-e268-802e-8008-bf980770caae",
+      "name": "P6N direct record recording",
+      "path": "OpenSP / Synth / Direct recording",
+      "mainId": "cac28749-e268-802e-8008-bf98065d8199",
+      "shape": {
+        "id": "cac28749-e268-802e-8008-bf98065d8199",
+        "name": "OpenSP / Synth / Direct recording / P6N direct record recording",
+        "type": "board",
+        "x": 0,
+        "y": 0,
+        "width": 128,
+        "height": 64,
+        "rotation": 0,
+        "componentId": "cac28749-e268-802e-8008-bf980770caae",
+        "componentName": "P6N direct record recording",
+        "fills": [
+          {
+            "color": "#000000",
+            "opacity": 1,
+            "ref": "88ef66de-c84d-8075-8008-b5cd50e1aa42"
+          }
+        ],
+        "children": [
+          {
+            "id": "cac28749-e268-802e-8008-bf98067e921c",
+            "name": "OpenSP / Synth / OLED header",
+            "type": "board",
+            "x": 0,
+            "y": 0,
+            "width": 128,
+            "height": 10,
+            "rotation": 0,
+            "componentId": "bfe8c086-048d-80e0-8008-b6d35f386630",
+            "componentName": "OLED header",
+            "fills": [
+              {
+                "color": "#000000",
+                "opacity": 1,
+                "ref": "88ef66de-c84d-8075-8008-b5cd50e1aa42"
+              }
+            ],
+            "children": [
+              {
+                "id": "cac28749-e268-802e-8008-bf98067e921d",
+                "name": "Heading",
+                "type": "text",
+                "x": 3,
+                "y": 1,
+                "width": 122,
+                "height": 8,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#ffffff",
+                    "opacity": 1,
+                    "ref": "88ef66de-c84d-8075-8008-b5cd515b360e"
+                  }
+                ],
+                "text": "RECORD A01",
+                "fontFamily": "Cousine",
+                "fontSize": 6,
+                "fontWeight": "400",
+                "lineHeight": 1,
+                "letterSpacing": 0,
+                "align": "left"
+              },
+              {
+                "id": "cac28749-e268-802e-8008-bf98067ecaa5",
+                "name": "Header rule",
+                "type": "rectangle",
+                "x": 0,
+                "y": 9,
+                "width": 128,
+                "height": 1,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#ffffff",
+                    "opacity": 1,
+                    "ref": "88ef66de-c84d-8075-8008-b5cd515b360e"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "cac28749-e268-802e-8008-bf9806a8b30a",
+            "name": "OpenSP / Synth / OLED footer",
+            "type": "board",
+            "x": 0,
+            "y": 55,
+            "width": 128,
+            "height": 9,
+            "rotation": 0,
+            "componentId": "bfe8c086-048d-80e0-8008-b6d35f4ae7d8",
+            "componentName": "OLED footer",
+            "fills": [
+              {
+                "color": "#000000",
+                "opacity": 1,
+                "ref": "88ef66de-c84d-8075-8008-b5cd50e1aa42"
+              }
+            ],
+            "children": [
+              {
+                "id": "cac28749-e268-802e-8008-bf9806a8b30b",
+                "name": "Footer rule",
+                "type": "rectangle",
+                "x": 0,
+                "y": 0,
+                "width": 128,
+                "height": 1,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#ffffff",
+                    "opacity": 1,
+                    "ref": "88ef66de-c84d-8075-8008-b5cd515b360e"
+                  }
+                ]
+              },
+              {
+                "id": "cac28749-e268-802e-8008-bf9806a8b30c",
+                "name": "Hint",
+                "type": "text",
+                "x": 3,
+                "y": 1,
+                "width": 122,
+                "height": 7,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#ffffff",
+                    "opacity": 1,
+                    "ref": "88ef66de-c84d-8075-8008-b5cd515b360e"
+                  }
+                ],
+                "text": "REC:STOP + SAVE",
+                "fontFamily": "Cousine",
+                "fontSize": 5,
+                "fontWeight": "400",
+                "lineHeight": 1,
+                "letterSpacing": 0,
+                "align": "left"
+              }
+            ]
+          },
+          {
+            "id": "cac28749-e268-802e-8008-bf9806d57855",
+            "name": "Destination prompt",
+            "type": "text",
+            "x": 3,
+            "y": 14,
+            "width": 122,
+            "height": 10,
+            "rotation": 0,
+            "fills": [
+              {
+                "color": "#ffffff",
+                "opacity": 1,
+                "ref": "88ef66de-c84d-8075-8008-b5cd515b360e"
+              }
+            ],
+            "text": "00:00 / 02:00",
+            "fontFamily": "Cousine",
+            "fontSize": 7,
+            "fontWeight": "400",
+            "lineHeight": 1,
+            "letterSpacing": 0,
+            "align": "left"
+          },
+          {
+            "id": "cac28749-e268-802e-8008-bf980714935f",
+            "name": "Recording status",
+            "type": "text",
+            "x": 3,
+            "y": 27,
+            "width": 122,
+            "height": 8,
+            "rotation": 0,
+            "fills": [
+              {
+                "color": "#ffffff",
+                "opacity": 1,
+                "ref": "88ef66de-c84d-8075-8008-b5cd515b360e"
+              }
+            ],
+            "text": "AUTO STOP AT 02:00",
+            "fontFamily": "Cousine",
+            "fontSize": 6,
+            "fontWeight": "400",
+            "lineHeight": 1,
+            "letterSpacing": 0,
+            "align": "left"
+          },
+          {
+            "id": "cac28749-e268-802e-8008-bf98075209bb",
+            "name": "OpenSP / Synth / P6 / P6 PCM scope",
+            "type": "board",
+            "x": 3,
+            "y": 37,
+            "width": 122,
+            "height": 15,
+            "rotation": 0,
+            "componentId": "f2db919b-4201-80d6-8008-ba11c04bd03e",
+            "componentName": "P6 PCM scope",
+            "fills": [
+              {
+                "color": "#000000",
+                "opacity": 1,
+                "ref": "88ef66de-c84d-8075-8008-b5cd50e1aa42"
+              }
+            ],
+            "children": [
+              {
+                "id": "cac28749-e268-802e-8008-bf98075209bc",
+                "name": "Final PCM",
+                "type": "path",
+                "x": 0,
+                "y": 1.700656,
+                "width": 95,
+                "height": 9.598,
+                "rotation": 0,
+                "strokes": [
+                  {
+                    "color": "#ffffff",
+                    "width": 1,
+                    "opacity": 1,
+                    "ref": "88ef66de-c84d-8075-8008-b5cd515b360e"
+                  }
+                ],
+                "d": "M3,26849.5L4,26848.8671875L5,26848.244140625L6,26847.64453125L7,26847.076171875L8,26846.55078125L9,26846.078125L10,26845.6640625L11,26845.31640625L12,26845.04296875L13,26844.845703125L14,26844.732421875L15,26844.701171875L16,26844.751953125L17,26844.88671875L18,26845.103515625L19,26845.396484375L20,26845.759765625L21,26846.19140625L22,26846.677734375L23,26847.21484375L24,26847.791015625L25,26848.3984375L26,26849.025390625L27,26849.658203125L28,26850.2890625L29,26850.908203125L30,26851.5L31,26852.05859375L32,26852.572265625L33,26853.03125L34,26853.427734375L35,26853.7578125L36,26854.013671875L37,26854.189453125L38,26854.283203125L39,26854.29296875L40,26854.220703125L41,26854.064453125L42,26853.830078125L43,26853.517578125L44,26853.13671875L45,26852.69140625L46,26852.19140625L47,26851.64453125L48,26851.05859375L49,26850.4453125L50,26849.81640625L51,26849.18359375L52,26848.552734375L53,26847.94140625L54,26847.35546875L55,26846.80859375L56,26846.30859375L57,26845.86328125L58,26845.482421875L59,26845.169921875L60,26844.935546875L61,26844.779296875L62,26844.705078125L63,26844.71484375L64,26844.810546875L65,26844.986328125L66,26845.240234375L67,26845.5703125L68,26845.96875L69,26846.427734375L70,26846.94140625L71,26847.498046875L72,26848.091796875L73,26848.708984375L74,26849.33984375L75,26849.974609375L76,26850.6015625L77,26851.20703125L78,26851.78515625L79,26852.3203125L80,26852.80859375L81,26853.23828125L82,26853.603515625L83,26853.896484375L84,26854.111328125L85,26854.24609375L86,26854.298828125L87,26854.267578125L88,26854.15234375L89,26853.95703125L90,26853.68359375L91,26853.3359375L92,26852.921875L93,26852.447265625L94,26851.921875L95,26851.35546875L96,26850.75390625L97,26850.1328125L98,26849.5",
+                "pathOrigin": [
+                  3,
+                  26844.700656
+                ]
+              },
+              {
+                "id": "cac28749-e268-802e-8008-bf98075209bd",
+                "name": "PCM status",
+                "type": "text",
+                "x": 101,
+                "y": 1,
+                "width": 21,
+                "height": 6,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#ffffff",
+                    "opacity": 1,
+                    "ref": "88ef66de-c84d-8075-8008-b5cd515b360e"
+                  }
+                ],
+                "text": "PLAY",
+                "fontFamily": "Cousine",
+                "fontSize": 5,
+                "fontWeight": "400",
+                "lineHeight": 1,
+                "letterSpacing": 0,
+                "align": "left"
+              },
+              {
+                "id": "cac28749-e268-802e-8008-bf98075209be",
+                "name": "PCM scale",
+                "type": "text",
+                "x": 101,
+                "y": 9,
+                "width": 21,
+                "height": 6,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#ffffff",
+                    "opacity": 1,
+                    "ref": "88ef66de-c84d-8075-8008-b5cd515b360e"
+                  }
+                ],
+                "text": "Z3",
+                "fontFamily": "Cousine",
+                "fontSize": 5,
+                "fontWeight": "400",
+                "lineHeight": 1,
+                "letterSpacing": 0,
+                "align": "left"
+              }
+            ]
+          },
+          {
+            "id": "cac28749-e268-802e-8008-bf9a191df0db",
+            "name": "Recording progress track",
+            "type": "rectangle",
+            "x": 3,
+            "y": 35,
+            "width": 122,
+            "height": 1,
+            "rotation": 0,
+            "strokes": [
+              {
+                "color": "#ffffff",
+                "width": 0.5,
+                "opacity": 1,
+                "ref": "88ef66de-c84d-8075-8008-b5cd515b360e"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

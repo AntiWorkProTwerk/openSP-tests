@@ -1,0 +1,162 @@
+{
+  "schema": 2,
+  "title": "openSynth for the SP-404MKII",
+  "description": "openSynth adds a sixteen-sound synth to the SP-404MKII pads, with a live scope, envelope and oscillator pictures, BUS FX, patterns and recording straight to a pad.",
+  "introduction": "openSynth adds a synth to the SP-404MKII. Pick one of sixteen sounds, play it on the pads and shape it on four pages while the screen draws the waveform. It plays through BUS FX and over your patterns, and you can record a take straight to an empty pad.",
+  "status": "For SP-404MKII firmware v5.52. You build openSynth in your browser from Roland's official update and install it with the SP's SD card updater.",
+  "screensLabel": "Screen animations",
+  "screensNote": "Every screen on this page is drawn by the openSynth display code at the SP's 128 by 64 pixels.",
+  "updated": "9 October 2026",
+  "baseline": "For firmware v5.52",
+  "baselineNote": "Updated 9 October 2026",
+  "featureLink": {
+    "href": "/features/",
+    "label": "Choose features and shortcuts"
+  },
+  "patcherLink": {
+    "href": "#patch",
+    "label": "How to patch"
+  },
+  "guideLink": {
+    "href": "/guides/synth-design/",
+    "label": "Read how the synth works"
+  },
+  "contentsLabel": "On this page",
+  "sections": [
+    {
+      "id": "features",
+      "heading": "Features and how to use them",
+      "paragraphs": [
+        "The bottom line of the synth screen is the short version: VALUE picks sounds and pages, SHIFT opens the menu."
+      ],
+      "rows": [
+        {
+          "label": "Sixteen sounds on the pads",
+          "text": "Open SYNTH and play notes or chords on the pads. In POLY, up to four notes sound at once. Turn VALUE to change the sound, or hold VALUE while you turn it to change the octave.",
+          "screen": "sounds"
+        },
+        {
+          "label": "TONE, OSC, AMP and MOD pages",
+          "text": "Press VALUE to go to the next page: TONE, OSC, AMP, then MOD. CTRL 1, 2 and 3 edit the three settings named on screen: CUT, RES and ENV on TONE; MIX, DET and PW on OSC; ATK, DEC and REL on AMP; RATE, DEP and GLD on MOD.",
+          "screen": "pages"
+        },
+        {
+          "label": "Scope and pictures",
+          "text": "The top of the screen draws what the synth is playing, release tails included. Each page adds its own picture. AMP shows the ADSR envelope with a dot on the newest note. OSC shows the two oscillator waves, which drift against each other as you raise DET. TONE shows the filter curve and MOD shows the LFO.",
+          "screen": "amp",
+          "screenCaption": "Slow Pad on AMP: the scope draws the note and the dot follows it from attack through release."
+        },
+        {
+          "label": "MIX and PW",
+          "text": "MIX is a single line with a slider between oscillator A and oscillator B. PW sets the width of a pulse wave. Nine of the sounds have no pulse oscillator, so on those PW is greyed out, reads -- and ignores the knob.",
+          "screen": "mix-pw"
+        },
+        {
+          "label": "MONO or POLY",
+          "text": "Press SHIFT + VALUE to open the menu, choose VOICE and turn VALUE to pick MONO or POLY. GLIDE slides between notes in MONO.",
+          "screen": "voice"
+        },
+        {
+          "label": "Synth level",
+          "text": "The VOLUME knob stays the SP's master volume. To change only the synth, hold SHIFT and turn VALUE.",
+          "screen": "level"
+        },
+        {
+          "label": "BUS FX",
+          "text": "Turn on a BUS FX the usual way and the synth plays through it.",
+          "screen": "scope",
+          "screenCaption": "Slow Pad releasing on the play page. The scope draws the synth's own output, before BUS FX."
+        },
+        {
+          "label": "Fixed velocity",
+          "text": "SHIFT + pad 1 turns fixed velocity on and off, as it does on the stock SP.",
+          "screen": "velocity"
+        },
+        {
+          "label": "Patterns",
+          "text": "Press PATTERN SELECT and choose a pattern pad to start it, then play the synth over it. Choose the same pattern again to stop it. PATTERN SELECT or EXIT closes the chooser and the pads go back to playing synth notes.",
+          "screen": "patterns"
+        },
+        {
+          "label": "Record to a pad",
+          "text": "Press REC and choose an empty pad. Press REC to start, play, then press REC again to stop. The take is saved to that pad.",
+          "screen": "record"
+        }
+      ]
+    },
+    {
+      "id": "patch",
+      "heading": "How to patch",
+      "paragraphs": [
+        "The patcher on this page builds openSynth from Roland's official v5.52 update, inside your browser. Your file stays on your computer and is never uploaded. The patch it fetches holds only openSynth's own code, and every Roland byte in the result comes from your copy. OpenSP never hosts or sends Roland firmware."
+      ],
+      "steps": [
+        {
+          "text": "Download SP-404MKII System Program v5.52 from Roland. Accept Roland's license agreement and save sp404mk2_sys_v552.zip. You don't need to unzip it.",
+          "link": {
+            "href": "https://www.roland.com/global/support/by_product/sp-404mk2/updates_drivers/174cc2fc-ddb2-4128-87a0-848b882cdcea/",
+            "label": "SP-404MKII System Program v5.52 on roland.com"
+          }
+        },
+        {
+          "text": "Drag the ZIP onto this page, or choose it with the button. The patcher checks that it is the unchanged v5.52 update, builds openSynth and checks the finished file. Then save SP404MKII_APP1.bin.",
+          "patcher": true
+        },
+        "Format an SD card in the SP. Copy SP404MKII_APP1.bin to the root of the card, with no other update files beside it.",
+        "With the SP off, insert the card, hold SHIFT and switch on. The updater shows APP1 UPDATER FOUND. Confirm the update as in Roland's instructions and leave the power on until it shows UPDATE COMPLETE PLEASE POWER OFF.",
+        "Switch off, take out the card and switch on normally. Open SYNTH and press SHIFT + VALUE: the menu title reads openSynth."
+      ],
+      "note": "Firmware goes onto the SP through its SD card updater. The SP's USB audio and MIDI connection does not install firmware."
+    },
+    {
+      "id": "safety",
+      "heading": "Why it won't brick your SP",
+      "paragraphs": [
+        "The SP-404MKII keeps its firmware in separate parts. A small resident bootloader starts the unit and holds Roland's SD card updater, the one you reach by holding SHIFT at power-on. Next to it sit a second firmware part, APP0, and the processor's one-time fuses. openSynth replaces only the application image, APP1, and never writes the bootloader, APP0 or the fuses.",
+        "So the updater is always there to put an application back. If an update is interrupted or you want to go back, hold SHIFT at power-on and install Roland's official firmware from an SD card. This has already been done on an SP that was left with a half-written application after an interrupted update."
+      ],
+      "rows": [
+        {
+          "label": "Never written",
+          "text": "The resident bootloader with Roland's SHIFT + power SD updater, APP0 and the fuses."
+        },
+        {
+          "label": "Replaced",
+          "text": "The application image only. Roland's normal SD update puts the official firmware back."
+        },
+        {
+          "label": "Checked before you install",
+          "text": "The patcher accepts only the exact official v5.52 file and checks the image it builds against fixed hashes."
+        }
+      ],
+      "note": "Before you install, keep an SD card ready with Roland's official v5.52 update files in its root, so you can go back at any time. The protection covers the firmware openSynth writes; it cannot fix a hardware fault or damage from another cause."
+    }
+  ],
+  "footer": "openSynth for SP-404MKII firmware v5.52. OpenSP does not host or distribute Roland firmware.",
+  "patcher": {
+    "dropTitle": "Drop the v5.52 update file here",
+    "dropHint": "sp404mk2_sys_v552.zip from Roland, or the SP404MKII_APP1.bin inside it",
+    "chooseLabel": "Choose file",
+    "stages": {
+      "reading": "Reading",
+      "verifying": "Verifying",
+      "patching": "Patching",
+      "checking": "Checking"
+    },
+    "messages": {
+      "reading": "Reading your file on this computer.",
+      "verifying": "Checking that this is Roland's unchanged v5.52 update.",
+      "patching": "Building openSynth from your file.",
+      "checking": "Checking the finished file against openSynth's checksum.",
+      "done": "Done. The file matches openSynth's checksum. Save it and copy it to your SD card."
+    },
+    "progressLabel": "Patch progress",
+    "saveLabel": "Download SP404MKII_APP1.bin",
+    "shaLabel": "SHA256",
+    "resetLabel": "Patch another file",
+    "noscript": "The patcher runs in your browser and needs JavaScript. Turn JavaScript on for this page to build openSynth."
+  },
+  "hero": {
+    "screen": "detune"
+  }
+}

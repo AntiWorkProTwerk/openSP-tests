@@ -1,0 +1,40 @@
+.opensynth-card{display:grid;grid-template-columns:minmax(0,240px) minmax(0,1fr) 24px;gap:24px;align-items:center;margin-top:16px;padding:16px;border:1px solid var(--line);text-decoration:none}
+.opensynth-card img{display:block;width:100%;height:auto;background:var(--color-oled-black)}
+.opensynth-card-label{display:block;font:var(--type-label-size)/var(--type-label-leading) var(--font-label);letter-spacing:var(--type-label-tracking);color:var(--muted)}
+.opensynth-card-title{display:block;font-size:28px;line-height:1.25;margin-top:8px}
+.opensynth-card-text{display:block;font-size:var(--type-caption-size);line-height:var(--type-caption-leading);margin-top:8px;max-width:520px}
+.opensynth-card:hover .opensynth-card-title{text-decoration:underline;text-underline-offset:5px}
+.opensynth-figure{margin:32px 0;max-width:576px}
+.opensynth-figure img{display:block;width:100%;height:auto;background:var(--color-oled-black)}
+.opensynth-figure figcaption{font-size:16px;line-height:1.5;color:var(--muted);margin-top:12px}
+@media(max-width:720px){.opensynth-card{grid-template-columns:minmax(0,1fr) 24px;gap:16px}.opensynth-card img{grid-column:1/-1}}
+.opensynth-build{display:grid;gap:4px;max-width:640px;margin:32px 0;padding:16px 20px;background:var(--soft)}
+.opensynth-build .opensynth-card-title{margin-top:4px}
+.opensynth-links{display:flex;flex-wrap:wrap;gap:8px 32px}
+.opensynth-links a{display:inline-flex;align-items:center;min-height:44px}
+.opensynth-patcher{max-width:640px;margin:40px 0 24px}
+.opensynth-drop{position:relative;display:flex;align-items:center;justify-content:center;min-height:160px;padding:24px;border:1px dashed var(--ink);text-align:center;cursor:pointer;font:var(--type-navigation-size)/1.5 var(--font-label);letter-spacing:var(--type-navigation-tracking)}
+.opensynth-drop input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:pointer}
+.opensynth-drop:focus-within{outline:2px solid var(--ink);outline-offset:5px}
+.opensynth-drop[data-over],.opensynth-drop:hover{background:var(--soft)}
+.opensynth-status{font-size:18px;line-height:1.5;margin:16px 0 0}
+[data-state=error] .opensynth-status:before{content:'Not built: ';font-weight:700}
+.opensynth-save{display:inline-flex;align-items:center;min-height:44px;margin-top:16px;padding:10px 20px;background:var(--ink);color:var(--paper);text-decoration:none;font:var(--type-navigation-size)/1.5 var(--font-label)}
+.opensynth-save[hidden]{display:none}
+.opensynth-badge{display:inline-block;margin-left:16px;padding:2px 8px;border:1px solid var(--line);vertical-align:middle;font:var(--type-label-size)/var(--type-label-leading) var(--font-label);letter-spacing:var(--type-label-tracking);color:var(--muted)}
+.opensynth-screens{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 32px;max-width:720px;margin:32px 0}
+.opensynth-screens figure{margin:0;min-width:0}
+.opensynth-screens img{display:block;width:100%;max-width:384px;height:auto;image-rendering:pixelated;background:var(--color-oled-black)}
+.opensynth-screens figcaption{font-size:16px;line-height:1.5;margin-top:10px}
+.opensynth-figure img{image-rendering:pixelated}
+.opensynth-table{max-width:840px;overflow-x:auto;margin:32px 0}
+.opensynth-table table{border-collapse:collapse;width:100%;min-width:520px;font-size:17px;line-height:1.5}
+.opensynth-table th,.opensynth-table td{text-align:left;vertical-align:top;padding:10px 12px 10px 0;border-bottom:1px solid var(--line)}
+.opensynth-table thead th{font:var(--type-label-size)/var(--type-label-leading) var(--font-label);letter-spacing:var(--type-label-tracking);color:var(--muted)}
+.opensynth-table tbody th{font-family:var(--font-label);font-weight:400}
+.opensynth-sounds{columns:2;column-gap:32px;max-width:640px;margin:24px 0;padding-left:0;list-style:none;font:16px/1.9 var(--font-label)}
+.opensynth-controls{max-width:760px;margin:32px 0 8px;border-top:1px solid var(--line)}
+.opensynth-controls>div{display:grid;grid-template-columns:minmax(0,220px) minmax(0,1fr);gap:8px 24px;padding:14px 0;border-bottom:1px solid var(--line)}
+.opensynth-controls dt{font:15px/1.6 var(--font-label)}
+.opensynth-controls dd{margin:0;font-size:18px;line-height:1.55}
+@media(max-width:600px){.opensynth-screens{grid-template-columns:minmax(0,1fr)}.opensynth-controls>div{grid-template-columns:minmax(0,1fr);gap:4px}.opensynth-controls dd{font-size:17px}.opensynth-sounds{columns:1}.opensynth-badge{margin-left:8px}}

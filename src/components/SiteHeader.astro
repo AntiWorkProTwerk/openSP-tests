@@ -4,7 +4,7 @@ const {home=false}=Astro.props;
 ---
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="site-header">
-  <a class="brand" href="/" aria-label="OpenSP home">opensp</a>
+  <a class="brand" href="/" aria-label="openSP home">openSP</a>
   <nav aria-label="Main navigation"><a href={home?'#releases':'/#releases'}>Releases</a><a href={home?'#guides':'/#guides'}>Guides</a></nav>
   <label class="theme-control" hidden><span class="visually-hidden">Color theme</span><select data-theme-picker aria-label="Color theme"><option value="system">System</option><option value="light">Light</option><option value="dark">Dark</option></select></label>
 </header>

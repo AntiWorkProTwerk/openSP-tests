@@ -1,0 +1,80 @@
+{
+  "schema": "opensp-sd-page-pre-edit-v1",
+  "files": [
+    {
+      "file": "src/content/emulator.json",
+      "bytes": 4223,
+      "sha256": "b3ffe9b0f8d9f3191a579adae099a25314ef4e2424f57213963013ddd6306673"
+    },
+    {
+      "file": "src/pages/emulator.astro",
+      "bytes": 6872,
+      "sha256": "b8cdf83a602173b7d25496171b430b78a1a8990ce468c5242aeb706a97c447af"
+    },
+    {
+      "file": "src/styles/emulator.css",
+      "bytes": 8675,
+      "sha256": "bea153585321cc461c9908a2b336cb410ed26f9848b336d0d0a6f07e38886b0d"
+    },
+    {
+      "file": "src/scripts/emulator.ts",
+      "bytes": 21571,
+      "sha256": "606abdf91faa522ddc306ab3ecc550bbb1b270eb3c68a7488939b3a9eee87165"
+    },
+    {
+      "file": "tests/emulator-page-bridge.test.mjs",
+      "bytes": 12521,
+      "sha256": "7a8d80b6e9610f155e85c40c54f2ad8f792b750ca72cab825ac1d7da00baeafe"
+    },
+    {
+      "file": "tests/emulator-design.test.mjs",
+      "bytes": 7921,
+      "sha256": "e2a1899c1735c365220dcee7c68d3ca1ca63aeaf8d125d7b6a4001537e9b2c9e"
+    },
+    {
+      "file": "docs/emulator-design.md",
+      "bytes": 7527,
+      "sha256": "8af3f6e46a673da0dbc00c6fdfe3609738b4ed5e210ff69fd2e638f7f6e3fe34"
+    },
+    {
+      "file": "docs/emulator-sd-fixtures.md",
+      "bytes": 5203,
+      "sha256": "86b8ca436828009388927982114548585bacd73a4398252fee0310ee3d9a6d6c"
+    },
+    {
+      "file": "docs/design-language.md",
+      "bytes": 18072,
+      "sha256": "308c9a7045df3df8ca62d498f397302fd21c88cddb3cbc2a2f5a1fff06a0838f"
+    },
+    {
+      "file": "design/penpot/emulator-components.json",
+      "bytes": 734193,
+      "sha256": "77127da0b8dd63857b5206831c313db8aac7130d3d64ab5ec1f67c36cb6ba07a"
+    },
+    {
+      "file": "design/penpot/emulator-layouts.json",
+      "bytes": 347383,
+      "sha256": "1fecf7e634937a1ebe1c0aaa436ee5549a73406d2dd2c5cd1079f89ade79888c"
+    },
+    {
+      "file": "design/penpot/emulator-states.json",
+      "bytes": 7671,
+      "sha256": "769f47551a99d2d78525e47b85fd164f358f673fe1a31d838ffe9540d60915a6"
+    },
+    {
+      "file": "design/penpot/emulator-manifest.json",
+      "bytes": 3120,
+      "sha256": "c4ecc40f2f97ec7e2d86949518330f2062c3bbc0c84b2c6466246deea47db648"
+    },
+    {
+      "file": "design/penpot/emulator-library.js",
+      "bytes": 15012,
+      "sha256": "ed58e9f446abdc45a35036607dd21916dbdcbdb21cb61f1c26ad50e5cc33790b"
+    },
+    {
+      "file": "tools/design-emulator.mjs",
+      "bytes": 6590,
+      "sha256": "d88c2a940f716f40adfe62fee21469f2de1b0fb102a15c0c8b958825da26fc92"
+    }
+  ]
+}

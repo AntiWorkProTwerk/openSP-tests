@@ -1,0 +1,39 @@
+---
+import Base from '../../layouts/Base.astro';
+import SiteHeader from '../../components/SiteHeader.astro';
+import SiteFooter from '../../components/SiteFooter.astro';
+import copy from '../../content/feature-local-build.json';
+import '../../styles/features.css';
+import '../../styles/feature-local-build.css';
+---
+<Base title={`${copy.title} · OpenSP`} description={copy.description} noindex>
+  <SiteHeader/>
+  <main id="main" class="feature-page local-feature-page" data-local-feature-build>
+    <div class="feature-introduction"><h1>{copy.title}</h1><p>{copy.introduction}</p></div>
+    <p data-local-no-script>{copy.noScript}</p>
+    <p data-local-error role="alert" hidden></p>
+    <section class="feature-receipt" data-component="Feature local selection" aria-labelledby="local-selection-title">
+      <h2 id="local-selection-title">{copy.selectionHeading}</h2><p>{copy.selectionNote}</p>
+      <div class="feature-file-actions"><label class="feature-import-button">{copy.importSelection}<input type="file" accept=".json,application/json" data-local-selection disabled/></label><a href="/features/">{copy.pickerLink}</a></div>
+      <p data-local-selection-status role="status">No configuration loaded.</p><ul class="feature-selection-list" data-local-selection-list></ul>
+      <details><summary>Canonical configuration</summary><pre data-local-selection-export></pre></details>
+    </section>
+    <section class="feature-receipt" data-component="Feature local helper" aria-labelledby="local-helper-title">
+      <h2 id="local-helper-title">{copy.helperHeading}</h2><p>{copy.helperNote}</p>
+      <details><summary>Start the source-only helper</summary><p>From your OpenSP checkout, use the included source archive and the matching external installations described in <code>tools/feature-picker-release-v1/STANDALONE-BUILD.md</code>. Choose an existing output folder outside the website repository.</p><pre><code data-local-helper-command>node --import ./tools/register-test-typescript.mjs tools/feature-picker-release-v1/browser-successor-v1/local-server.mjs --source-archive tools/feature-picker-release-v1/standalone-source-bundle.zip --python MATCHING_PYTHON.exe --toolchain-root ARM_ROOT --official OWNER_V552.zip --output-root PRIVATE_OUTPUT_ROOT --site-origin LOCAL_PREVIEW_ORIGIN</code></pre></details>
+      <label class="feature-target"><span>{copy.connectionLabel}</span><input type="password" data-local-connection autocomplete="off" spellcheck="false" placeholder="Paste the helper connection" disabled/></label>
+      <div class="feature-file-actions"><button type="button" data-local-connect disabled>{copy.connect}</button><button type="button" data-local-build disabled>{copy.build}</button><button type="button" data-local-latest disabled>Inspect matching helper build</button></div>
+      <p data-local-helper-status role="status" aria-live="polite">Local helper disconnected.</p><p class="feature-section-note">{copy.buildNote}</p>
+    </section>
+    <section class="feature-receipt" data-component="Feature local receipt" aria-labelledby="local-receipt-title">
+      <h2 id="local-receipt-title">{copy.receiptHeading}</h2><p>{copy.receiptNote}</p>
+      <div class="feature-file-actions"><label class="feature-import-button">{copy.importReceipt}<input type="file" accept=".json,application/json" data-local-receipt disabled/></label><label class="feature-import-button">{copy.importCandidate}<input type="file" accept=".bin,application/octet-stream" data-local-candidate disabled/></label><button type="button" data-local-inspect disabled>{copy.inspect}</button></div>
+      <p data-local-file-status role="status">No receipt or candidate selected.</p><p data-local-receipt-status role="status" aria-live="polite">No standalone build inspected.</p><dl data-local-proof hidden></dl>
+    </section>
+    <section class="feature-receipt" data-component="Feature local handoff" aria-labelledby="local-handoff-title">
+      <h2 id="local-handoff-title">USB handoff</h2><p>{copy.heldNote}</p><div class="feature-file-actions"><button type="button" data-local-handoff disabled>{copy.handoff}</button><button type="button" disabled aria-describedby="local-upload-held">USB-C upload held</button><button type="button" data-local-restoration disabled>Save separate P6S restoration</button></div>
+      <p id="local-upload-held" data-local-handoff-status role="status">Inspect the complete candidate before preparing its held handoff.</p><p>{copy.restorationNote}</p><p><a href="/releases/synth/">Read the separate openSynth release and P6S delivery instructions</a></p>
+    </section>
+  </main><SiteFooter page={copy.footer}/>
+</Base>
+<script>import '../../scripts/feature-local-build';</script>

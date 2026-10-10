@@ -1,0 +1,42 @@
+✔ native emulator mains have unique identities and retain their editable structure (0.6977ms)
+✔ each responsive session keeps the shared Instrument and an empty linked OLED (2.8315ms)
+✔ pad inputs use sixteen linked action instances with distinct labels (1.0162ms)
+✔ optional SD controls retain shared mains and theme assets in every session layout (1.0977ms)
+✔ four linked layouts cover both themes and sizes without invented firmware output (0.6292ms)
+✔ visible native copy agrees with the browser source and reading text fits its frames (0.6673ms)
+✔ interaction examples are linked and explicitly illustrative (0.4433ms)
+✔ shared Footer utility stays linked across all eighty existing layout instances (1.6517ms)
+(node:5160) ExperimentalWarning: stripTypeScriptTypes is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ the page waits for load and USB same-ID status while unsolicited replies only publish (66.6138ms)
+✔ the page generic reset clears an old mailbox and needs no guest boot steps (7.3577ms)
+✔ file replacement cancels a pending bridge import before worker creation (4.3946ms)
+✔ old load rejection and completion cannot change a replacement file or release its busy state (7.6421ms)
+✔ close cancels pending file reads and worker operations (4.289ms)
+✔ suspend cancels pending file reads and worker operations (7.7788ms)
+✔ file read results and errors remain fresh across replacement (5.8667ms)
+✔ bridge observations preserve bounded command and USB ledgers without firmware bytes (101.6236ms)
+✔ a stalled bridge chunk times out before Worker creation and a late import cannot revive it (5.0089ms)
+✔ the run-publication watchdog closes only its owned bridge and leaves cached diagnostics (10.5992ms)
+✔ only the most recent export intent downloads and replacement discards an old trace (5.1635ms)
+✔ two admitted local cards are copied independently and sent only when Start is requested (5.772ms)
+✔ invalid card geometry is refused before reading and preserves the paused worker (5.8102ms)
+✔ admitted card changes stage until Apply cards succeeds and keep old NOR ownership (6.723ms)
+✔ failed replacement load leaves the existing paused session available and supports retry (7.756ms)
+✔ read errors and mismatched buffer lengths preserve previous cards and active session (5.3ms)
+✔ new selection and remove cancel stale card reads without retaining their result (3.7616ms)
+✔ pending reads prevent Start and page suspension cancels their admission (3.4721ms)
+✔ running sessions reject card changes and removal while reset preserves admitted cards (6.7419ms)
+✔ removing an applied card remains staged and replaces the worker only on Apply cards (5.946ms)
+✔ a replacement import timeout and its late completion preserve the existing session (5.3789ms)
+✔ a faulted replacement snapshot cannot discard the prior virtual session (5.8101ms)
+✔ card names and raw buffers are absent from the page trace envelope (5.0589ms)
+✔ terminal initial load failures preserve existing recovery and cached-trace controls (3.749ms)
+ℹ tests 32
+ℹ suites 0
+ℹ pass 32
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 467.2422

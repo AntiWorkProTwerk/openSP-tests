@@ -1,0 +1,188 @@
+{
+  "schema": "opensp-compact-final12-patcher-delta-review-v1",
+  "date": "2026-10-06",
+  "product": "openSynth",
+  "recipe": "opensynth-n1-final12",
+  "source_scope": "sealed-kit12/final-package06",
+  "status": "PASS_DELTA_SOURCE_REFERENCE_AND_BYTE_REPLAY_RELEASE_HELD",
+  "tests": {
+    "passed": 13,
+    "failed": 0,
+    "skipped": 0,
+    "firmware_compiler_invoked": false,
+    "browser_operated": false,
+    "device_operated": false,
+    "historical_44_case_suite_repeated": false,
+    "actual_owner_artifact_pins_checked": 27,
+    "changed_source_roles": [
+      "foundation/p6/sp_synth_preview_native_v552_entry.c"
+    ],
+    "changed_objects": [
+      5
+    ],
+    "retained_object_hashes_equal": 108,
+    "historical_kit11_refused": true,
+    "historical_final05_refused": true
+  },
+  "source_files": {
+    "tools/synth-release-patcher-v1/compact-final12-v1/build.mjs": {
+      "bytes": 9010,
+      "sha256": "e816fb4abf32d9becf7659a37b42ab0bddace8a83c9c02bd740c1f76e506b7ac"
+    },
+    "tools/synth-release-patcher-v1/compact-final12-v1/common.mjs": {
+      "bytes": 3401,
+      "sha256": "900ecb04d683d77bad14bb148c44949fb7c4a68db0c3345b094436d815612ee8"
+    },
+    "tools/synth-release-patcher-v1/compact-final12-v1/DEPENDENCIES.md": {
+      "bytes": 2971,
+      "sha256": "5d05c93b6e2c20cf72aec0461b578173ded2d55299701e1bda2d6ff87ed90d35"
+    },
+    "tools/synth-release-patcher-v1/compact-final12-v1/handoff.mjs": {
+      "bytes": 4451,
+      "sha256": "df88348ff93b962d1da8d3ce25573db7d4c4891e8f89f9481231ad89a0145fe6"
+    },
+    "tools/synth-release-patcher-v1/compact-final12-v1/inspect.mjs": {
+      "bytes": 15446,
+      "sha256": "d3e3a3d81228ee6a60bb8f806e95ac976373fcabb89e4dc7afe3bb740a0664e4"
+    },
+    "tools/synth-release-patcher-v1/compact-final12-v1/LICENSE": {
+      "bytes": 1073,
+      "sha256": "44bc8794b54c0619e36391be64c21b2a5c6d8d8f157a532266d3ff3f53af0aa2"
+    },
+    "tools/synth-release-patcher-v1/compact-final12-v1/NOTICE": {
+      "bytes": 1621,
+      "sha256": "702102d3d588cf3e1b21e190ba2dbdc115df5ae6967e7a753cf2fd0d4aadb9ac"
+    },
+    "tools/synth-release-patcher-v1/compact-final12-v1/owner-handoff.mjs": {
+      "bytes": 2402,
+      "sha256": "a108072944290e84a3e4f3ed54654a6fad8760b8a33e39d830a1e2694b24ac24"
+    },
+    "tools/synth-release-patcher-v1/compact-final12-v1/package-source.mjs": {
+      "bytes": 6438,
+      "sha256": "2147689a8eb43f2d89240d0b99ffc20f81f0481803a2294bb7dc0da0b2e8313f"
+    },
+    "tools/synth-release-patcher-v1/compact-final12-v1/pins.mjs": {
+      "bytes": 3792,
+      "sha256": "d3c0404a684ee188b5b56024349f95fc6e1985de2a62d71a2b7c819d65af5716"
+    },
+    "tools/synth-release-patcher-v1/compact-final12-v1/README.md": {
+      "bytes": 4409,
+      "sha256": "96e3f86d9418c33ff2d6fa2401aa9648f246176fba09150f688fc5278aff058f"
+    },
+    "tools/synth-release-patcher-v1/compact-final12-v1/run.mjs": {
+      "bytes": 904,
+      "sha256": "3784fe14d974a1680331c0a10b1e1661a326c21e24dc97b2faa94e0f4ee1c32a"
+    },
+    "tools/synth-release-patcher-v1/compact-final12-v1/source-final12.zip": {
+      "bytes": 774200,
+      "sha256": "bfb8d7183919ccbac434ff9e00fe20e3bb0222fe5cea8fb76301a57743ccbbd6"
+    },
+    "tools/synth-release-patcher-v1/compact-final12-v1/source.mjs": {
+      "bytes": 5893,
+      "sha256": "0fcd9866dcc5242894d1f6a6ca7e2f6f9dd2856d9fbc0b0ed0e11b0eeba47ae2"
+    },
+    "tools/synth-release-patcher-v1/compact-final12-v1/test-delta.mjs": {
+      "bytes": 8242,
+      "sha256": "619f616a050aaa64c4fa3990e9339ea7bdb6dc486018b00644b3a44078a1298a"
+    },
+    "tools/synth-release-patcher-v1/official.mjs": {
+      "bytes": 1103,
+      "sha256": "2188b30067205e89d753b0642d4102cf9f785a8064332aae53238c10aa4c0ebc"
+    }
+  },
+  "source_archive": {
+    "bytes": 774200,
+    "sha256": "bfb8d7183919ccbac434ff9e00fe20e3bb0222fe5cea8fb76301a57743ccbbd6"
+  },
+  "owner_handoff": {
+    "path": "diagnostics/synth_p6/priority1_release_candidate_v1/FINAL06_HANDOFF.json",
+    "bytes": 8315,
+    "sha256": "adfae91a12ed777841ff81c03bdaa8e93e011c8c312193c32eba207ad28c0db7"
+  },
+  "subject": {
+    "candidate_sha256": "26cb4f1d99696eb0cda014a74f34719836eb2aa02fe2995966038907b8ee95b8",
+    "module_elf_sha256": "58fcd493672590808f6b0d6aee600b441fa55de77b740be823b41b26e37c086b",
+    "module_sha256": "f133b7050d1d73cb5bfd480cd2c5e20a5ecc2e646a4300396319038c97972a18",
+    "source_contract_sha256": "eeb9fec53cb9c149240fb2cf2fe46761ad2d9c1cdcc45a699e2c5034e203ab21"
+  },
+  "source_report_sha256": "7328f3c8f614cfcea9c2acb927c9a87b4fedbdee6b4298d4ed4de27faf1a829f",
+  "module_inputs_checked": 310,
+  "objects_checked": 109,
+  "native_patches_replayed": 202,
+  "current_transaction_reuse_rows": 108,
+  "successful_compile_command_rows": 1,
+  "fresh_link_receipt_verified": true,
+  "canonical_entry_completed": false,
+  "source_review_package": {
+    "path": "build/synth-release-patcher-v1/opensynth-final12-source-review-01.zip",
+    "bytes": 1791219,
+    "sha256": "7d9b38fd6e2e1f0912b612b0803ce81b9cbe4407e8d0d7728be1369373a84e2c"
+  },
+  "package_verification": {
+    "independent_zip_reader": true,
+    "manifested_files": 21,
+    "outer_members": 22,
+    "recursive_archives": 5,
+    "recursive_source_members": 909,
+    "all_manifested_hashes_checked": true,
+    "binary_members": 0,
+    "checked_private_pattern_matches": 0,
+    "extracted_cli_executed": true,
+    "all_three_receipts_byte_identical": true,
+    "source_promotion_performed": false,
+    "publication_performed": false
+  },
+  "receipts": {
+    "COMPACT_INSPECTION.json": {
+      "retained": {
+        "path": "build/synth-release-patcher-v1/compact-final12-inspection-01/COMPACT_INSPECTION.json",
+        "bytes": 3716,
+        "sha256": "2ea280a2d0d98e39a8a11030035f9d6c24a4dfa9c733706beb2723389244493d"
+      },
+      "extracted": {
+        "path": "build/synth-release-patcher-v1/final12-package-review-01/isolated-inspection/COMPACT_INSPECTION.json",
+        "bytes": 3716,
+        "sha256": "2ea280a2d0d98e39a8a11030035f9d6c24a4dfa9c733706beb2723389244493d"
+      },
+      "byte_identical": true
+    },
+    "COMPACT_HANDOFF.json": {
+      "retained": {
+        "path": "build/synth-release-patcher-v1/compact-final12-inspection-01/COMPACT_HANDOFF.json",
+        "bytes": 3713,
+        "sha256": "04505315abe6aff544558ee0bc7a85b84fdb274ba20f6121d34eb5bd15d4051f"
+      },
+      "extracted": {
+        "path": "build/synth-release-patcher-v1/final12-package-review-01/isolated-inspection/COMPACT_HANDOFF.json",
+        "bytes": 3713,
+        "sha256": "04505315abe6aff544558ee0bc7a85b84fdb274ba20f6121d34eb5bd15d4051f"
+      },
+      "byte_identical": true
+    },
+    "COMPACT_INPUT_BINDING.json": {
+      "retained": {
+        "path": "build/synth-release-patcher-v1/compact-final12-inspection-01/COMPACT_INPUT_BINDING.json",
+        "bytes": 920,
+        "sha256": "652a13978e3db3a34560e95ea83effa2652970d10e3c8654de183e1f0df0277c"
+      },
+      "extracted": {
+        "path": "build/synth-release-patcher-v1/final12-package-review-01/isolated-inspection/COMPACT_INPUT_BINDING.json",
+        "bytes": 920,
+        "sha256": "652a13978e3db3a34560e95ea83effa2652970d10e3c8654de183e1f0df0277c"
+      },
+      "byte_identical": true
+    }
+  },
+  "final11_source_snapshots_preserved": 15,
+  "final11_review_sha256": "a6f43474bf19c857993b309b3fd69a4cdf62b4b7debdf2698ec627b47f9bb062",
+  "software_eligible_for_owner_test": false,
+  "hardware_qualified": false,
+  "public_release_eligible": false,
+  "release_ready": false,
+  "delivery_enabled": false,
+  "upload_enabled": false,
+  "browser_enabled": false,
+  "writer_authority_granted": false,
+  "delivery": "DO_NOT_DELIVER",
+  "qualification_scope": "Static source, reference artifact pins, one-unit delta and image replay only. Exact subject SAVE, pattern, audio, lifetime, runtime, native click and root B2 profile evidence remain separate."
+}

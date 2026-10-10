@@ -1,0 +1,21 @@
+---
+import SPPart from '../SPPart.astro';
+import type {Shape} from '../../lib/penpot';
+import native from '../../../design/penpot/synth-direct-recording-components.json';
+import design from '../../content/releases/synth-direct-recording-design.json';
+import figure from '../../content/releases/synth-recording-figure.json';
+const panels = design.states.map((state,index) => {
+  const component=native.components.find(component=>component.name===state.main);
+  if(!component)throw Error(`Missing linked openSynth state ${state.id}`);
+  return {id:state.id,component:component.id,shape:component.shape as unknown as Shape,label:figure.captions[index]};
+});
+---
+<figure class="direct-recording-flow" aria-labelledby="direct-recording-caption">
+  <div class="direct-recording-panels">
+    {panels.map(panel=><div class="direct-recording-panel" data-recording-state={panel.id} data-penpot-component={panel.component}>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 64" width="128" height="64" aria-hidden="true"><SPPart node={panel.shape}/></svg>
+      <p>{panel.label}</p>
+    </div>)}
+  </div>
+  <figcaption id="direct-recording-caption">{figure.evidence}</figcaption>
+</figure>

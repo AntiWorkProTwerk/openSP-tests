@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>openSynth single-take bench</title>
+<style>body{max-width:850px;margin:32px auto;padding:0 20px;font:16px/1.5 system-ui;background:#111;color:#eee}button{padding:10px 16px;margin:8px 8px 8px 0}label{display:block;margin:8px 0}textarea{display:block;width:95%;min-height:70px}pre{white-space:pre-wrap;overflow-wrap:anywhere;border:1px solid #666;padding:16px}fieldset{margin:20px 0;border:1px solid #666}button:disabled{opacity:.5}progress{display:block;width:100%;height:16px}progress[hidden]{display:none}</style>
+<h1>openSynth single-take bench</h1>
+<p>This private local tool covers one short stopped-pattern take, save, pad playback and EXIT. Repeat, persistence and 120-second recording remain pending. It requires an exact root-installed V2 software seal. N1 is withdrawn and D12 is held. This interface grants no candidate upload authority. The exact P6S restoration is authenticated alongside an admitted candidate.</p>
+<fieldset><legend>Current B2 connection</legend>
+<label><input id="device-authorized" type="checkbox"> Root has authorized this device operation.</label>
+<label><input id="del-title" type="checkbox"> The current cold DEL screen reads USB BRIDGE B2.</label>
+<button id="connect" disabled>Connect and check B2 profile</button><button id="write" disabled>Write the sealed first-test image</button><button id="cancel" disabled>Cancel RAM transfer</button>
+<label for="transfer-progress" id="transfer-label" aria-live="polite">No transfer started.</label>
+<progress id="transfer-progress" hidden max="1" value="0" aria-describedby="cancel-help"></progress>
+<p id="cancel-help">Cancel is available only before RAM verification. It can leave staged RAM. Never remove power during programming or readback.</p>
+</fieldset>
+<p>Storage readback leaves the reboot check pending. Fully remove power, then boot normally before completing the next checks.</p>
+<fieldset><legend>Normal boot owner report</legend>
+<label><input id="normal-power" type="checkbox"> Power was fully removed before this normal boot.</label>
+<label><input id="normal-title" type="checkbox"> Utility shows <span id="expected-normal-title">the exact admitted candidate title</span>.</label>
+<label><input id="normal-sample" type="checkbox"> A known sample plays.</label>
+<label><input id="normal-synth" type="checkbox"> Synth plays and its controls work.</label>
+<label><input id="normal-exit" type="checkbox"> EXIT returns to the sampler after the saved-pad test.</label>
+<label><input id="normal-record" type="checkbox"> Recording starts while the pattern is stopped.</label>
+<label><input id="normal-save" type="checkbox"> Pad chooser, recording, stop/save and destination-pad playback work.</label>
+<label for="normal-reply">Owner's exact result</label><textarea id="normal-reply"></textarea><button id="normal" disabled>Record normal boot result</button>
+</fieldset>
+<fieldset><legend>Separate cold DEL check</legend>
+<label><input id="cold-power" type="checkbox"> Power was fully removed again before this DEL boot.</label>
+<label><input id="cold-title" type="checkbox"> The new DEL screen reads USB BRIDGE B2.</label>
+<label for="cold-reply">Owner's exact result</label><textarea id="cold-reply"></textarea><button id="cold" disabled>Connect for a fresh idle status check</button>
+</fieldset>
+<button id="download" disabled>Download attempt receipt</button><pre id="status" role="status" aria-live="polite">Checking the exact local transaction...</pre>
+<script type="module" src="/bench.js"></script></html>

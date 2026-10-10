@@ -1,0 +1,7 @@
+{
+  "scope": "Exact whole-image tool before DCDC observation and SD dependency pinning",
+  "sha256": "95aaec44e22776517bd9d304bf97d5aa83063bcea82b834f668fa65479a9bbe6",
+  "guestExecuted": false,
+  "referenceBase": "OpenSP repository",
+  "priorReport": "../sp404mk2/analysis/emulator/vendor_candidate_it_hook_stop_20261003/stock-whole-image.json"
+}

@@ -1,0 +1,38 @@
+{
+  "schema": "opensp-dcdc-board-qualification-v1",
+  "scope": "DCDC register routing, nominal tick ordering, reset and fixed failure fixtures",
+  "sourceReferenceBase": "OpenSP repository",
+  "sources": {
+    "src/lib/emulator/board.ts": "1987b0e3dc419a881b3a9d819d877857f32737506ea8868cc1ffa352492628f3",
+    "src/lib/emulator/dcdc.ts": "5e025bd74a48d2550c24f634589fb53bc0456cc78e7e5a0b11438b46611adbae",
+    "tests/emulator-dcdc-board.test.mjs": "cc1b1182c41c833372d1e64e62296446bdfb85e844f9d8ef87035f5d63af4afb",
+    "docs/emulator-dcdc.md": "ba71372b6c390aec3abecde9fdbd364e3e9fe43038fdcc57bb28c511df261ab1",
+    "docs/emulator-board-contract.md": "36ec6465f476713bb294066c998e750e66b12a4abcec43038cfa130db8fedd75"
+  },
+  "tests": {
+    "boardIntegrationGroups": 2,
+    "totalModelGroups": 336,
+    "failedGroups": 0,
+    "log": "tools/emulator-evidence/dcdc-board-models-20261003.log",
+    "logSha256": "c12acaab6ac05e38841a5bccb2230268597b70b080c34c4b1c71e45bfbfb1ffb"
+  },
+  "typeAndBuild": {
+    "astroFiles": 73,
+    "errors": 0,
+    "warnings": 0,
+    "buildPassed": true,
+    "buildInfoSha256": "96406450dd0ce414a5f7d4a05c7d9d2595a862483a61540dcd3f353ecaf9e11c"
+  },
+  "runtime": {
+    "wasmSha256": "16599c54af6da32ecce2ce52538890610a83c96e1152796ddffa2533d6440b35",
+    "componentTestsExecuteFirmware": false
+  },
+  "preservedSources": "tools/emulator-evidence/board-before-dcdc-20261003/manifest.json",
+  "wholeStockReport": "../sp404mk2/analysis/emulator/dcdc_stock_20261003/whole-image.json",
+  "limits": [
+    "Synthetic settling and fixed clock/power availability",
+    "Component and routing results do not establish electrical voltage or physical timing",
+    "Whole-stock report uses its own isolated runtime pins and bounded startup oracle",
+    "No full stock boot, filesystem, sampler or physical device result"
+  ]
+}

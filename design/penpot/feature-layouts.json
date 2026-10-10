@@ -1,0 +1,3865 @@
+{
+  "source": {
+    "fileId": "24d9d841-759d-81bc-8008-b518bc70d8b3",
+    "pageId": "7d39c61f-08fe-80d5-8008-bcada934b82f",
+    "kind": "native-layout-api-export"
+  },
+  "boards": [
+    {
+      "id": "7d39c61f-08fe-80d5-8008-bcaea0dcddfd",
+      "name": "Feature picker / Desktop / Light",
+      "width": 1440,
+      "height": 2524,
+      "metadata": {
+        "schema": 1,
+        "mode": "operate",
+        "configurationPreview": true,
+        "firmwareBuild": false,
+        "deviceUpload": false,
+        "mobile": false,
+        "dark": false,
+        "sharedComponents": true,
+        "controls": "symbolic physical SP controls"
+      },
+      "linkedComponents": [
+        {
+          "id": "7d39c61f-08fe-80d5-8008-bcaea0e16a00",
+          "name": "Wordmark",
+          "componentId": "d862c4e5-8ca1-80d0-8008-b58b0c8a94df",
+          "component": "Wordmark",
+          "copy": true
+        },
+        {
+          "id": "7d39c61f-08fe-80d5-8008-bcaea0fa2ffd",
+          "name": "Feature introduction (Desktop)",
+          "componentId": "7d39c61f-08fe-80d5-8008-bcadd35a8d42",
+          "component": "Feature introduction (Desktop)",
+          "copy": true
+        },
+        {
+          "id": "7d39c61f-08fe-80d5-8008-bcaea1204e1b",
+          "name": "Feature row (Desktop)",
+          "componentId": "7d39c61f-08fe-80d5-8008-bcadd83c407f",
+          "component": "Feature row (Desktop)",
+          "copy": true
+        },
+        {
+          "id": "7d39c61f-08fe-80d5-8008-bcaea1204e1d",
+          "name": "Feature choice",
+          "componentId": "7d39c61f-08fe-80d5-8008-bcadb9f97fd6",
+          "component": "Feature choice",
+          "copy": true
+        },
+        {
+          "id": "7d39c61f-08fe-80d5-8008-bcaea1691b4a",
+          "name": "Feature row (Desktop)",
+          "componentId": "7d39c61f-08fe-80d5-8008-bcadd83c407f",
+          "component": "Feature row (Desktop)",
+          "copy": true
+        },
+        {
+          "id": "7d39c61f-08fe-80d5-8008-bcaea1694247",
+          "name": "Feature choice",
+          "componentId": "7d39c61f-08fe-80d5-8008-bcadb9f97fd6",
+          "component": "Feature choice",
+          "copy": true
+        },
+        {
+          "id": "7d39c61f-08fe-80d5-8008-bcaea262d09c",
+          "name": "Feature row (Desktop)",
+          "componentId": "7d39c61f-08fe-80d5-8008-bcadd83c407f",
+          "component": "Feature row (Desktop)",
+          "copy": true
+        },
+        {
+          "id": "7d39c61f-08fe-80d5-8008-bcaea262d09e",
+          "name": "Feature choice",
+          "componentId": "7d39c61f-08fe-80d5-8008-bcadb9f97fd6",
+          "component": "Feature choice",
+          "copy": true
+        },
+        {
+          "id": "7d39c61f-08fe-80d5-8008-bcaea35f0b24",
+          "name": "Feature row (Desktop)",
+          "componentId": "7d39c61f-08fe-80d5-8008-bcadd83c407f",
+          "component": "Feature row (Desktop)",
+          "copy": true
+        },
+        {
+          "id": "7d39c61f-08fe-80d5-8008-bcaea35f0b26",
+          "name": "Feature choice",
+          "componentId": "7d39c61f-08fe-80d5-8008-bcadb9f97fd6",
+          "component": "Feature choice",
+          "copy": true
+        },
+        {
+          "id": "7d39c61f-08fe-80d5-8008-bcaea4572135",
+          "name": "Feature summary (Desktop)",
+          "componentId": "7d39c61f-08fe-80d5-8008-bcade20952b6",
+          "component": "Feature summary (Desktop)",
+          "copy": true
+        },
+        {
+          "id": "7d39c61f-08fe-80d5-8008-bcaea457213b",
+          "name": "Emulator action",
+          "componentId": "6bf32eef-e7db-8057-8008-bb287d8e3cdc",
+          "component": "Emulator action",
+          "copy": true
+        },
+        {
+          "id": "7d39c61f-08fe-80d5-8008-bcaea457213e",
+          "name": "Emulator action",
+          "componentId": "6bf32eef-e7db-8057-8008-bb287d8e3cdc",
+          "component": "Emulator action",
+          "copy": true
+        },
+        {
+          "id": "7d39c61f-08fe-80d5-8008-bcaea4572141",
+          "name": "Emulator action",
+          "componentId": "6bf32eef-e7db-8057-8008-bb287d8e3cdc",
+          "component": "Emulator action",
+          "copy": true
+        },
+        {
+          "id": "7d39c61f-08fe-80d5-8008-bcaea486633a",
+          "name": "Feature shortcut (Desktop)",
+          "componentId": "7d39c61f-08fe-80d5-8008-bcaddd1eff7d",
+          "component": "Feature shortcut (Desktop)",
+          "copy": true
+        },
+        {
+          "id": "7d39c61f-08fe-80d5-8008-bcaea491afad",
+          "name": "Feature update notes (Desktop)",
+          "componentId": "7d39c61f-08fe-80d5-8008-bcade5e8fb91",
+          "component": "Feature update notes (Desktop)",
+          "copy": true
+        },
+        {
+          "id": "aef24b78-6c19-80a5-8008-bdfa3571564d",
+          "name": "Feature receipt (Desktop)",
+          "componentId": "aef24b78-6c19-80a5-8008-bdf9f1d2cb51",
+          "component": "Feature receipt (Desktop)",
+          "copy": true
+        },
+        {
+          "id": "aef24b78-6c19-80a5-8008-bdfa3571f6fe",
+          "name": "Emulator action",
+          "componentId": "6bf32eef-e7db-8057-8008-bb287d8e3cdc",
+          "component": "Emulator action",
+          "copy": true
+        },
+        {
+          "id": "aef24b78-6c19-80a5-8008-bdfa3571f701",
+          "name": "Emulator action",
+          "componentId": "6bf32eef-e7db-8057-8008-bb287d8e3cdc",
+          "component": "Emulator action",
+          "copy": true
+        }
+      ],
+      "text": [
+        {
+          "name": "Brand",
+          "text": "opensp",
+          "x": 64,
+          "y": 24,
+          "width": 120,
+          "height": 40,
+          "size": 27,
+          "ink": {
+            "x": 64,
+            "y": 25,
+            "width": 96.015625,
+            "height": 30
+          }
+        },
+        {
+          "name": "Page navigation",
+          "text": "FEATURES",
+          "x": 580,
+          "y": 32,
+          "width": 240,
+          "height": 24,
+          "size": 14,
+          "ink": {
+            "x": 580,
+            "y": 34,
+            "width": 67.21875,
+            "height": 16
+          }
+        },
+        {
+          "name": "copy / title",
+          "text": "Choose your features",
+          "x": 64,
+          "y": 112,
+          "width": 1312,
+          "height": 60,
+          "size": 48,
+          "ink": {
+            "x": 64,
+            "y": 121,
+            "width": 458.9375,
+            "height": 53
+          }
+        },
+        {
+          "name": "copy / introduction",
+          "text": "Pick the features you want, then choose the buttons that open each one.",
+          "x": 64,
+          "y": 196,
+          "width": 850,
+          "height": 60,
+          "size": 20,
+          "ink": {
+            "x": 64,
+            "y": 200,
+            "width": 641.5625,
+            "height": 22
+          }
+        },
+        {
+          "name": "copy / planningNote",
+          "text": "This is a configuration preview. You can save your choices now; a compatible firmware build and website upload are still in development.",
+          "x": 64,
+          "y": 268,
+          "width": 1000,
+          "height": 54,
+          "size": 16,
+          "ink": {
+            "x": 64,
+            "y": 271,
+            "width": 964.984375,
+            "height": 17
+          }
+        },
+        {
+          "name": "copy / targetLabel",
+          "text": "Firmware base",
+          "x": 64,
+          "y": 354,
+          "width": 1312,
+          "height": 32,
+          "size": 16,
+          "ink": {
+            "x": 64,
+            "y": 357,
+            "width": 105.8125,
+            "height": 17
+          }
+        },
+        {
+          "name": "Selected profile",
+          "text": "Roland v5.52",
+          "x": 76,
+          "y": 400,
+          "width": 416,
+          "height": 24,
+          "size": 16,
+          "ink": {
+            "x": 76,
+            "y": 403,
+            "width": 94.296875,
+            "height": 17
+          }
+        },
+        {
+          "name": "copy / featureHeading",
+          "text": "Features",
+          "x": 64,
+          "y": 466,
+          "width": 1312,
+          "height": 40,
+          "size": 28,
+          "ink": {
+            "x": 64,
+            "y": 471,
+            "width": 110.5,
+            "height": 31
+          }
+        },
+        {
+          "name": "Feature name",
+          "text": "Synth",
+          "x": 104,
+          "y": 550,
+          "width": 520,
+          "height": 34,
+          "size": 22,
+          "ink": {
+            "x": 104,
+            "y": 554,
+            "width": 56.265625,
+            "height": 25
+          }
+        },
+        {
+          "name": "Feature readiness",
+          "text": "Hardware trial",
+          "x": 104,
+          "y": 590,
+          "width": 440,
+          "height": 24,
+          "size": 13,
+          "ink": {
+            "x": 104,
+            "y": 592,
+            "width": 109.21875,
+            "height": 15
+          }
+        },
+        {
+          "name": "Feature description",
+          "text": "Play synth sounds from the pads and edit their parameters.",
+          "x": 104,
+          "y": 630,
+          "width": 824,
+          "height": 48,
+          "size": 16,
+          "ink": {
+            "x": 104,
+            "y": 633,
+            "width": 418.890625,
+            "height": 17
+          }
+        },
+        {
+          "name": "Feature disclosure",
+          "text": "Evidence and requirements",
+          "x": 104,
+          "y": 674,
+          "width": 824,
+          "height": 24,
+          "size": 14,
+          "ink": {
+            "x": 104,
+            "y": 676,
+            "width": 170.4375,
+            "height": 16
+          }
+        },
+        {
+          "name": "Feature name",
+          "text": "USB screen, controls & audio recorder",
+          "x": 104,
+          "y": 722,
+          "width": 520,
+          "height": 34,
+          "size": 22,
+          "ink": {
+            "x": 104,
+            "y": 726,
+            "width": 375.40625,
+            "height": 25
+          }
+        },
+        {
+          "name": "Feature readiness",
+          "text": "Offline component",
+          "x": 104,
+          "y": 762,
+          "width": 440,
+          "height": 24,
+          "size": 13,
+          "ink": {
+            "x": 104,
+            "y": 764,
+            "width": 132.625,
+            "height": 15
+          }
+        },
+        {
+          "name": "Feature description",
+          "text": "Record an SP session on your computer, including screens, control changes and USB audio.",
+          "x": 104,
+          "y": 802,
+          "width": 824,
+          "height": 48,
+          "size": 16,
+          "ink": {
+            "x": 104,
+            "y": 805,
+            "width": 656.984375,
+            "height": 17
+          }
+        },
+        {
+          "name": "Feature disclosure",
+          "text": "Evidence and requirements",
+          "x": 104,
+          "y": 846,
+          "width": 824,
+          "height": 24,
+          "size": 14,
+          "ink": {
+            "x": 104,
+            "y": 848,
+            "width": 170.4375,
+            "height": 16
+          }
+        },
+        {
+          "name": "Feature name",
+          "text": "Stem splitting",
+          "x": 104,
+          "y": 894,
+          "width": 520,
+          "height": 34,
+          "size": 22,
+          "ink": {
+            "x": 104,
+            "y": 898,
+            "width": 132.0625,
+            "height": 25
+          }
+        },
+        {
+          "name": "Feature readiness",
+          "text": "Later release · unavailable",
+          "x": 104,
+          "y": 934,
+          "width": 440,
+          "height": 24,
+          "size": 13,
+          "ink": {
+            "x": 104,
+            "y": 936,
+            "width": 210.640625,
+            "height": 15
+          }
+        },
+        {
+          "name": "Feature description",
+          "text": "Separate a sample into stems.",
+          "x": 104,
+          "y": 974,
+          "width": 824,
+          "height": 48,
+          "size": 16,
+          "ink": {
+            "x": 104,
+            "y": 977,
+            "width": 216.109375,
+            "height": 17
+          }
+        },
+        {
+          "name": "Feature disclosure",
+          "text": "Evidence and requirements",
+          "x": 104,
+          "y": 1018,
+          "width": 824,
+          "height": 24,
+          "size": 14,
+          "ink": {
+            "x": 104,
+            "y": 1020,
+            "width": 170.4375,
+            "height": 16
+          }
+        },
+        {
+          "name": "Feature name",
+          "text": "Autotune",
+          "x": 104,
+          "y": 1066,
+          "width": 520,
+          "height": 34,
+          "size": 22,
+          "ink": {
+            "x": 104,
+            "y": 1070,
+            "width": 88.078125,
+            "height": 25
+          }
+        },
+        {
+          "name": "Feature readiness",
+          "text": "Later release · unavailable",
+          "x": 104,
+          "y": 1106,
+          "width": 440,
+          "height": 24,
+          "size": 13,
+          "ink": {
+            "x": 104,
+            "y": 1108,
+            "width": 210.640625,
+            "height": 15
+          }
+        },
+        {
+          "name": "Feature description",
+          "text": "Correct or shift the pitch of a monophonic input.",
+          "x": 104,
+          "y": 1146,
+          "width": 824,
+          "height": 48,
+          "size": 16,
+          "ink": {
+            "x": 104,
+            "y": 1149,
+            "width": 336.1875,
+            "height": 17
+          }
+        },
+        {
+          "name": "Feature disclosure",
+          "text": "Evidence and requirements",
+          "x": 104,
+          "y": 1190,
+          "width": 824,
+          "height": 24,
+          "size": 14,
+          "ink": {
+            "x": 104,
+            "y": 1192,
+            "width": 170.4375,
+            "height": 16
+          }
+        },
+        {
+          "name": "copy / summaryHeading",
+          "text": "Your configuration",
+          "x": 976,
+          "y": 550,
+          "width": 352,
+          "height": 40,
+          "size": 24,
+          "ink": {
+            "x": 976,
+            "y": 554,
+            "width": 192.59375,
+            "height": 27
+          }
+        },
+        {
+          "name": "Selection count",
+          "text": "1 feature selected",
+          "x": 976,
+          "y": 610,
+          "width": 352,
+          "height": 32,
+          "size": 16,
+          "ink": {
+            "x": 976,
+            "y": 613,
+            "width": 127.203125,
+            "height": 17
+          }
+        },
+        {
+          "name": "Build state",
+          "text": "Build unavailable",
+          "x": 976,
+          "y": 654,
+          "width": 352,
+          "height": 32,
+          "size": 16,
+          "ink": {
+            "x": 976,
+            "y": 657,
+            "width": 120.984375,
+            "height": 17
+          }
+        },
+        {
+          "name": "Build blocker",
+          "text": "A selectable Synth build and configurable shortcut dispatcher have not been qualified.",
+          "x": 976,
+          "y": 694,
+          "width": 352,
+          "height": 96,
+          "size": 16,
+          "ink": {
+            "x": 976,
+            "y": 697,
+            "width": 309.546875,
+            "height": 41
+          }
+        },
+        {
+          "name": "Button label",
+          "text": "Export configuration",
+          "x": 988,
+          "y": 816,
+          "width": 328,
+          "height": 24,
+          "size": 16,
+          "ink": {
+            "x": 1080.84375,
+            "y": 819,
+            "width": 142.3125,
+            "height": 17
+          }
+        },
+        {
+          "name": "Button label",
+          "text": "Build firmware",
+          "x": 988,
+          "y": 872,
+          "width": 144,
+          "height": 24,
+          "size": 16,
+          "ink": {
+            "x": 1009.3125,
+            "y": 875,
+            "width": 101.359375,
+            "height": 17
+          }
+        },
+        {
+          "name": "Button label",
+          "text": "USB-C upload",
+          "x": 1172,
+          "y": 872,
+          "width": 144,
+          "height": 24,
+          "size": 16,
+          "ink": {
+            "x": 1192.859375,
+            "y": 875,
+            "width": 102.28125,
+            "height": 17
+          }
+        },
+        {
+          "name": "copy / shortcutHeading",
+          "text": "Button shortcuts",
+          "x": 64,
+          "y": 1258,
+          "width": 864,
+          "height": 40,
+          "size": 28,
+          "ink": {
+            "x": 64,
+            "y": 1263,
+            "width": 202.34375,
+            "height": 31
+          }
+        },
+        {
+          "name": "copy / shortcutNote",
+          "text": "Choose two or three physical SP controls. Hold the first controls, then press the last. Each shortcut opens its feature once; all controls must be released before it can open again.",
+          "x": 64,
+          "y": 1314,
+          "width": 864,
+          "height": 72,
+          "size": 16,
+          "ink": {
+            "x": 64,
+            "y": 1317,
+            "width": 825.015625,
+            "height": 41
+          }
+        },
+        {
+          "name": "Shortcut feature",
+          "text": "Synth",
+          "x": 64,
+          "y": 1426,
+          "width": 864,
+          "height": 32,
+          "size": 20,
+          "ink": {
+            "x": 64,
+            "y": 1430,
+            "width": 51.15625,
+            "height": 22
+          }
+        },
+        {
+          "name": "Shortcut control 0",
+          "text": "SHIFT",
+          "x": 76,
+          "y": 1578,
+          "width": 246,
+          "height": 24,
+          "size": 14,
+          "ink": {
+            "x": 76,
+            "y": 1580,
+            "width": 40.453125,
+            "height": 16
+          }
+        },
+        {
+          "name": "Shortcut control 1",
+          "text": "RECORD SETTING",
+          "x": 362,
+          "y": 1578,
+          "width": 246,
+          "height": 24,
+          "size": 14,
+          "ink": {
+            "x": 362,
+            "y": 1580,
+            "width": 125.234375,
+            "height": 16
+          }
+        },
+        {
+          "name": "Shortcut control 2",
+          "text": "No third control",
+          "x": 648,
+          "y": 1578,
+          "width": 268,
+          "height": 24,
+          "size": 14,
+          "ink": {
+            "x": 648,
+            "y": 1580,
+            "width": 94.9375,
+            "height": 16
+          }
+        },
+        {
+          "name": "Shortcut scope",
+          "text": "Sampler idle · requested shortcut",
+          "x": 64,
+          "y": 1624,
+          "width": 864,
+          "height": 32,
+          "size": 13,
+          "ink": {
+            "x": 64,
+            "y": 1626,
+            "width": 257.453125,
+            "height": 15
+          }
+        },
+        {
+          "name": "Shortcut method label",
+          "text": "Open with",
+          "x": 64,
+          "y": 1460,
+          "width": 864,
+          "height": 24,
+          "size": 14,
+          "ink": {
+            "x": 64,
+            "y": 1462,
+            "width": 63.046875,
+            "height": 16
+          }
+        },
+        {
+          "name": "Shortcut method",
+          "text": "Button shortcut",
+          "x": 76,
+          "y": 1496,
+          "width": 246,
+          "height": 24,
+          "size": 14,
+          "ink": {
+            "x": 76,
+            "y": 1498,
+            "width": 94.171875,
+            "height": 16
+          }
+        },
+        {
+          "name": "Shortcut label 0",
+          "text": "Hold first",
+          "x": 64,
+          "y": 1542,
+          "width": 270,
+          "height": 24,
+          "size": 14,
+          "ink": {
+            "x": 64,
+            "y": 1544,
+            "width": 55.234375,
+            "height": 16
+          }
+        },
+        {
+          "name": "Shortcut label 1",
+          "text": "Then press, or hold",
+          "x": 350,
+          "y": 1542,
+          "width": 270,
+          "height": 24,
+          "size": 14,
+          "ink": {
+            "x": 350,
+            "y": 1544,
+            "width": 120.625,
+            "height": 16
+          }
+        },
+        {
+          "name": "Shortcut label 2",
+          "text": "Third (optional)",
+          "x": 636,
+          "y": 1542,
+          "width": 292,
+          "height": 24,
+          "size": 14,
+          "ink": {
+            "x": 636,
+            "y": 1544,
+            "width": 94.15625,
+            "height": 16
+          }
+        },
+        {
+          "name": "copy / transferHeading",
+          "text": "Updating features",
+          "x": 64,
+          "y": 2066,
+          "width": 1312,
+          "height": 40,
+          "size": 24,
+          "ink": {
+            "x": 64,
+            "y": 2070,
+            "width": 189.46875,
+            "height": 27
+          }
+        },
+        {
+          "name": "copy / transferNote",
+          "text": "You will be able to change this selection one feature at a time. The verified USB writer installs a complete APP1 firmware image, so a changed selection currently needs a newly composed image and a full update.",
+          "x": 64,
+          "y": 2126,
+          "width": 840,
+          "height": 96,
+          "size": 16,
+          "ink": {
+            "x": 64,
+            "y": 2129,
+            "width": 791.546875,
+            "height": 41
+          }
+        },
+        {
+          "name": "copy / transferLimit",
+          "text": "Independent feature uploads and runtime hot swapping have not been verified. USB installation requires the matching writer, chip/profile checks, full flash readback, a separate status check and a real reboot.",
+          "x": 64,
+          "y": 2234,
+          "width": 1000,
+          "height": 80,
+          "size": 16,
+          "ink": {
+            "x": 64,
+            "y": 2237,
+            "width": 966.8125,
+            "height": 41
+          }
+        },
+        {
+          "name": "Bridge qualification",
+          "text": "USB BRIDGE B2 must already be installed and freshly identified. First installation from untouched stock over normal USB is unverified.",
+          "x": 64,
+          "y": 2326,
+          "width": 1000,
+          "height": 70,
+          "size": 16,
+          "ink": {
+            "x": 64,
+            "y": 2329,
+            "width": 953.328125,
+            "height": 17
+          }
+        },
+        {
+          "name": "copy / footer",
+          "text": "Feature configuration preview. No device connection.",
+          "x": 64,
+          "y": 2444,
+          "width": 1312,
+          "height": 40,
+          "size": 13,
+          "ink": {
+            "x": 64,
+            "y": 2446,
+            "width": 405.671875,
+            "height": 15
+          }
+        },
+        {
+          "name": "copy / receiptHeading",
+          "text": "Check a build receipt",
+          "x": 64,
+          "y": 1722,
+          "width": 1312,
+          "height": 42,
+          "size": 28,
+          "ink": {
+            "x": 64,
+            "y": 1727,
+            "width": 261.484375,
+            "height": 31
+          }
+        },
+        {
+          "name": "copy / receiptNote",
+          "text": "Choose a local JSON receipt to compare it with your current choices. Only metadata is checked; firmware files and device results remain unverified.",
+          "x": 64,
+          "y": 1780,
+          "width": 1000,
+          "height": 48,
+          "size": 16,
+          "ink": {
+            "x": 64,
+            "y": 1783,
+            "width": 971.078125,
+            "height": 41
+          }
+        },
+        {
+          "name": "Button label",
+          "text": "Choose receipt",
+          "x": 76,
+          "y": 1854,
+          "width": 136,
+          "height": 24,
+          "size": 16,
+          "ink": {
+            "x": 90.1875,
+            "y": 1857,
+            "width": 107.625,
+            "height": 17
+          }
+        },
+        {
+          "name": "Button label",
+          "text": "Clear receipt",
+          "x": 248,
+          "y": 1854,
+          "width": 136,
+          "height": 24,
+          "size": 16,
+          "ink": {
+            "x": 270.640625,
+            "y": 1857,
+            "width": 90.703125,
+            "height": 17
+          }
+        },
+        {
+          "name": "copy / receiptLimit",
+          "text": "JSON, up to 128 KiB. This check does not connect to your SP.",
+          "x": 64,
+          "y": 1904,
+          "width": 1000,
+          "height": 24,
+          "size": 14,
+          "ink": {
+            "x": 64,
+            "y": 1906,
+            "width": 385.484375,
+            "height": 16
+          }
+        },
+        {
+          "name": "Receipt status",
+          "text": "No receipt selected.",
+          "x": 64,
+          "y": 1940,
+          "width": 1312,
+          "height": 36,
+          "size": 16,
+          "ink": {
+            "x": 64,
+            "y": 1943,
+            "width": 141.40625,
+            "height": 17
+          }
+        }
+      ]
+    },
+    {
+      "id": "7d39c61f-08fe-80d5-8008-bcaea61632a4",
+      "name": "Feature picker / Desktop / Dark",
+      "width": 1440,
+      "height": 2524,
+      "metadata": {
+        "schema": 1,
+        "mode": "operate",
+        "configurationPreview": true,
+        "firmwareBuild": false,
+        "deviceUpload": false,
+        "mobile": false,
+        "dark": true,
+        "sharedComponents": true,
+        "controls": "symbolic physical SP controls"
+      },
+      "linkedComponents": [
+        {
+          "id": "7d39c61f-08fe-80d5-8008-bcaea61c3985",
+          "name": "Wordmark",
+          "componentId": "d862c4e5-8ca1-80d0-8008-b58b0c8a94df",
+          "component": "Wordmark",
+          "copy": true
+        },
+        {
+          "id": "7d39c61f-08fe-80d5-8008-bcaea636aab9",
+          "name": "Feature introduction (Desktop)",
+          "componentId": "7d39c61f-08fe-80d5-8008-bcadd35a8d42",
+          "component": "Feature introduction (Desktop)",
+          "copy": true
+        },
+        {
+          "id": "7d39c61f-08fe-80d5-8008-bcaea670af9f",
+          "name": "Feature row (Desktop)",
+          "componentId": "7d39c61f-08fe-80d5-8008-bcadd83c407f",
+          "component": "Feature row (Desktop)",
+          "copy": true
+        },
+        {
+          "id": "7d39c61f-08fe-80d5-8008-bcaea670afa1",
+          "name": "Feature choice",
+          "componentId": "7d39c61f-08fe-80d5-8008-bcadb9f97fd6",
+          "component": "Feature choice",
+          "copy": true
+        },
+        {
+          "id": "7d39c61f-08fe-80d5-8008-bcaea744278f",
+          "name": "Feature row (Desktop)",
+          "componentId": "7d39c61f-08fe-80d5-8008-bcadd83c407f",
+          "component": "Feature row (Desktop)",
+          "copy": true
+        },
+        {
+          "id": "7d39c61f-08fe-80d5-8008-bcaea7442791",
+          "name": "Feature choice",
+          "componentId": "7d39c61f-08fe-80d5-8008-bcadb9f97fd6",
+          "component": "Feature choice",
+          "copy": true
+        },
+        {
+          "id": "7d39c61f-08fe-80d5-8008-bcaea83e4b48",
+          "name": "Feature row (Desktop)",
+          "componentId": "7d39c61f-08fe-80d5-8008-bcadd83c407f",
+          "component": "Feature row (Desktop)",
+          "copy": true
+        },
+        {
+          "id": "7d39c61f-08fe-80d5-8008-bcaea83e4b4a",
+          "name": "Feature choice",
+          "componentId": "7d39c61f-08fe-80d5-8008-bcadb9f97fd6",
+          "component": "Feature choice",
+          "copy": true
+        },
+        {
+          "id": "7d39c61f-08fe-80d5-8008-bcaea938e19d",
+          "name": "Feature row (Desktop)",
+          "componentId": "7d39c61f-08fe-80d5-8008-bcadd83c407f",
+          "component": "Feature row (Desktop)",
+          "copy": true
+        },
+        {
+          "id": "7d39c61f-08fe-80d5-8008-bcaea938e19f",
+          "name": "Feature choice",
+          "componentId": "7d39c61f-08fe-80d5-8008-bcadb9f97fd6",
+          "component": "Feature choice",
+          "copy": true
+        },
+        {
+          "id": "7d39c61f-08fe-80d5-8008-bcaeaa3368cb",
+          "name": "Feature summary (Desktop)",
+          "componentId": "7d39c61f-08fe-80d5-8008-bcade20952b6",
+          "component": "Feature summary (Desktop)",
+          "copy": true
+        },
+        {
+          "id": "7d39c61f-08fe-80d5-8008-bcaeaa3368d1",
+          "name": "Emulator action",
+          "componentId": "6bf32eef-e7db-8057-8008-bb287d8e3cdc",
+          "component": "Emulator action",
+          "copy": true
+        },
+        {
+          "id": "7d39c61f-08fe-80d5-8008-bcaeaa3368d4",
+          "name": "Emulator action",
+          "componentId": "6bf32eef-e7db-8057-8008-bb287d8e3cdc",
+          "component": "Emulator action",
+          "copy": true
+        },
+        {
+          "id": "7d39c61f-08fe-80d5-8008-bcaeaa3368d7",
+          "name": "Emulator action",
+          "componentId": "6bf32eef-e7db-8057-8008-bb287d8e3cdc",
+          "component": "Emulator action",
+          "copy": true
+        },
+        {
+          "id": "7d39c61f-08fe-80d5-8008-bcaeaa5c8688",
+          "name": "Feature shortcut (Desktop)",
+          "componentId": "7d39c61f-08fe-80d5-8008-bcaddd1eff7d",
+          "component": "Feature shortcut (Desktop)",
+          "copy": true
+        },
+        {
+          "id": "7d39c61f-08fe-80d5-8008-bcaeaa63deb7",
+          "name": "Feature update notes (Desktop)",
+          "componentId": "7d39c61f-08fe-80d5-8008-bcade5e8fb91",
+          "component": "Feature update notes (Desktop)",
+          "copy": true
+        },
+        {
+          "id": "aef24b78-6c19-80a5-8008-bdfa35835404",
+          "name": "Feature receipt (Desktop)",
+          "componentId": "aef24b78-6c19-80a5-8008-bdf9f1d2cb51",
+          "component": "Feature receipt (Desktop)",
+          "copy": true
+        },
+        {
+          "id": "aef24b78-6c19-80a5-8008-bdfa35835408",
+          "name": "Emulator action",
+          "componentId": "6bf32eef-e7db-8057-8008-bb287d8e3cdc",
+          "component": "Emulator action",
+          "copy": true
+        },
+        {
+          "id": "aef24b78-6c19-80a5-8008-bdfa3583540b",
+          "name": "Emulator action",
+          "componentId": "6bf32eef-e7db-8057-8008-bb287d8e3cdc",
+          "component": "Emulator action",
+          "copy": true
+        }
+      ],
+      "text": [
+        {
+          "name": "Brand",
+          "text": "opensp",
+          "x": 64,
+          "y": 24,
+          "width": 120,
+          "height": 40,
+          "size": 27,
+          "ink": {
+            "x": 64,
+            "y": 25,
+            "width": 96.015625,
+            "height": 30
+          }
+        },
+        {
+          "name": "Page navigation",
+          "text": "FEATURES",
+          "x": 580,
+          "y": 32,
+          "width": 240,
+          "height": 24,
+          "size": 14,
+          "ink": {
+            "x": 580,
+            "y": 34,
+            "width": 67.21875,
+            "height": 16
+          }
+        },
+        {
+          "name": "copy / title",
+          "text": "Choose your features",
+          "x": 64,
+          "y": 112,
+          "width": 1312,
+          "height": 60,
+          "size": 48,
+          "ink": {
+            "x": 64,
+            "y": 121,
+            "width": 458.9375,
+            "height": 53
+          }
+        },
+        {
+          "name": "copy / introduction",
+          "text": "Pick the features you want, then choose the buttons that open each one.",
+          "x": 64,
+          "y": 196,
+          "width": 850,
+          "height": 60,
+          "size": 20,
+          "ink": {
+            "x": 64,
+            "y": 200,
+            "width": 641.5625,
+            "height": 22
+          }
+        },
+        {
+          "name": "copy / planningNote",
+          "text": "This is a configuration preview. You can save your choices now; a compatible firmware build and website upload are still in development.",
+          "x": 64,
+          "y": 268,
+          "width": 1000,
+          "height": 54,
+          "size": 16,
+          "ink": {
+            "x": 64,
+            "y": 271,
+            "width": 964.984375,
+            "height": 17
+          }
+        },
+        {
+          "name": "copy / targetLabel",
+          "text": "Firmware base",
+          "x": 64,
+          "y": 354,
+          "width": 1312,
+          "height": 32,
+          "size": 16,
+          "ink": {
+            "x": 64,
+            "y": 357,
+            "width": 105.8125,
+            "height": 17
+          }
+        },
+        {
+          "name": "Selected profile",
+          "text": "Roland v5.52",
+          "x": 76,
+          "y": 400,
+          "width": 416,
+          "height": 24,
+          "size": 16,
+          "ink": {
+            "x": 76,
+            "y": 403,
+            "width": 94.296875,
+            "height": 17
+          }
+        },
+        {
+          "name": "copy / featureHeading",
+          "text": "Features",
+          "x": 64,
+          "y": 466,
+          "width": 1312,
+          "height": 40,
+          "size": 28,
+          "ink": {
+            "x": 64,
+            "y": 471,
+            "width": 110.5,
+            "height": 31
+          }
+        },
+        {
+          "name": "Feature name",
+          "text": "Synth",
+          "x": 104,
+          "y": 550,
+          "width": 520,
+          "height": 34,
+          "size": 22,
+          "ink": {
+            "x": 104,
+            "y": 554,
+            "width": 56.265625,
+            "height": 25
+          }
+        },
+        {
+          "name": "Feature readiness",
+          "text": "Hardware trial",
+          "x": 104,
+          "y": 590,
+          "width": 440,
+          "height": 24,
+          "size": 13,
+          "ink": {
+            "x": 104,
+            "y": 592,
+            "width": 109.21875,
+            "height": 15
+          }
+        },
+        {
+          "name": "Feature description",
+          "text": "Play synth sounds from the pads and edit their parameters.",
+          "x": 104,
+          "y": 630,
+          "width": 824,
+          "height": 48,
+          "size": 16,
+          "ink": {
+            "x": 104,
+            "y": 633,
+            "width": 418.890625,
+            "height": 17
+          }
+        },
+        {
+          "name": "Feature disclosure",
+          "text": "Evidence and requirements",
+          "x": 104,
+          "y": 674,
+          "width": 824,
+          "height": 24,
+          "size": 14,
+          "ink": {
+            "x": 104,
+            "y": 676,
+            "width": 170.4375,
+            "height": 16
+          }
+        },
+        {
+          "name": "Feature name",
+          "text": "USB screen, controls & audio recorder",
+          "x": 104,
+          "y": 722,
+          "width": 520,
+          "height": 34,
+          "size": 22,
+          "ink": {
+            "x": 104,
+            "y": 726,
+            "width": 375.40625,
+            "height": 25
+          }
+        },
+        {
+          "name": "Feature readiness",
+          "text": "Offline component",
+          "x": 104,
+          "y": 762,
+          "width": 440,
+          "height": 24,
+          "size": 13,
+          "ink": {
+            "x": 104,
+            "y": 764,
+            "width": 132.625,
+            "height": 15
+          }
+        },
+        {
+          "name": "Feature description",
+          "text": "Record an SP session on your computer, including screens, control changes and USB audio.",
+          "x": 104,
+          "y": 802,
+          "width": 824,
+          "height": 48,
+          "size": 16,
+          "ink": {
+            "x": 104,
+            "y": 805,
+            "width": 656.984375,
+            "height": 17
+          }
+        },
+        {
+          "name": "Feature disclosure",
+          "text": "Evidence and requirements",
+          "x": 104,
+          "y": 846,
+          "width": 824,
+          "height": 24,
+          "size": 14,
+          "ink": {
+            "x": 104,
+            "y": 848,
+            "width": 170.4375,
+            "height": 16
+          }
+        },
+        {
+          "name": "Feature name",
+          "text": "Stem splitting",
+          "x": 104,
+          "y": 894,
+          "width": 520,
+          "height": 34,
+          "size": 22,
+          "ink": {
+            "x": 104,
+            "y": 898,
+            "width": 132.0625,
+            "height": 25
+          }
+        },
+        {
+          "name": "Feature readiness",
+          "text": "Later release · unavailable",
+          "x": 104,
+          "y": 934,
+          "width": 440,
+          "height": 24,
+          "size": 13,
+          "ink": {
+            "x": 104,
+            "y": 936,
+            "width": 210.640625,
+            "height": 15
+          }
+        },
+        {
+          "name": "Feature description",
+          "text": "Separate a sample into stems.",
+          "x": 104,
+          "y": 974,
+          "width": 824,
+          "height": 48,
+          "size": 16,
+          "ink": {
+            "x": 104,
+            "y": 977,
+            "width": 216.109375,
+            "height": 17
+          }
+        },
+        {
+          "name": "Feature disclosure",
+          "text": "Evidence and requirements",
+          "x": 104,
+          "y": 1018,
+          "width": 824,
+          "height": 24,
+          "size": 14,
+          "ink": {
+            "x": 104,
+            "y": 1020,
+            "width": 170.4375,
+            "height": 16
+          }
+        },
+        {
+          "name": "Feature name",
+          "text": "Autotune",
+          "x": 104,
+          "y": 1066,
+          "width": 520,
+          "height": 34,
+          "size": 22,
+          "ink": {
+            "x": 104,
+            "y": 1070,
+            "width": 88.078125,
+            "height": 25
+          }
+        },
+        {
+          "name": "Feature readiness",
+          "text": "Later release · unavailable",
+          "x": 104,
+          "y": 1106,
+          "width": 440,
+          "height": 24,
+          "size": 13,
+          "ink": {
+            "x": 104,
+            "y": 1108,
+            "width": 210.640625,
+            "height": 15
+          }
+        },
+        {
+          "name": "Feature description",
+          "text": "Correct or shift the pitch of a monophonic input.",
+          "x": 104,
+          "y": 1146,
+          "width": 824,
+          "height": 48,
+          "size": 16,
+          "ink": {
+            "x": 104,
+            "y": 1149,
+            "width": 336.1875,
+            "height": 17
+          }
+        },
+        {
+          "name": "Feature disclosure",
+          "text": "Evidence and requirements",
+          "x": 104,
+          "y": 1190,
+          "width": 824,
+          "height": 24,
+          "size": 14,
+          "ink": {
+            "x": 104,
+            "y": 1192,
+            "width": 170.4375,
+            "height": 16
+          }
+        },
+        {
+          "name": "copy / summaryHeading",
+          "text": "Your configuration",
+          "x": 976,
+          "y": 550,
+          "width": 352,
+          "height": 40,
+          "size": 24,
+          "ink": {
+            "x": 976,
+            "y": 554,
+            "width": 192.59375,
+            "height": 27
+          }
+        },
+        {
+          "name": "Selection count",
+          "text": "1 feature selected",
+          "x": 976,
+          "y": 610,
+          "width": 352,
+          "height": 32,
+          "size": 16,
+          "ink": {
+            "x": 976,
+            "y": 613,
+            "width": 127.203125,
+            "height": 17
+          }
+        },
+        {
+          "name": "Build state",
+          "text": "Build unavailable",
+          "x": 976,
+          "y": 654,
+          "width": 352,
+          "height": 32,
+          "size": 16,
+          "ink": {
+            "x": 976,
+            "y": 657,
+            "width": 120.984375,
+            "height": 17
+          }
+        },
+        {
+          "name": "Build blocker",
+          "text": "A selectable Synth build and configurable shortcut dispatcher have not been qualified.",
+          "x": 976,
+          "y": 694,
+          "width": 352,
+          "height": 96,
+          "size": 16,
+          "ink": {
+            "x": 976,
+            "y": 697,
+            "width": 309.546875,
+            "height": 41
+          }
+        },
+        {
+          "name": "Button label",
+          "text": "Export configuration",
+          "x": 988,
+          "y": 816,
+          "width": 328,
+          "height": 24,
+          "size": 16,
+          "ink": {
+            "x": 1080.84375,
+            "y": 819,
+            "width": 142.3125,
+            "height": 17
+          }
+        },
+        {
+          "name": "Button label",
+          "text": "Build firmware",
+          "x": 988,
+          "y": 872,
+          "width": 144,
+          "height": 24,
+          "size": 16,
+          "ink": {
+            "x": 1009.3125,
+            "y": 875,
+            "width": 101.359375,
+            "height": 17
+          }
+        },
+        {
+          "name": "Button label",
+          "text": "USB-C upload",
+          "x": 1172,
+          "y": 872,
+          "width": 144,
+          "height": 24,
+          "size": 16,
+          "ink": {
+            "x": 1192.859375,
+            "y": 875,
+            "width": 102.28125,
+            "height": 17
+          }
+        },
+        {
+          "name": "copy / shortcutHeading",
+          "text": "Button shortcuts",
+          "x": 64,
+          "y": 1258,
+          "width": 864,
+          "height": 40,
+          "size": 28,
+          "ink": {
+            "x": 64,
+            "y": 1263,
+            "width": 202.34375,
+            "height": 31
+          }
+        },
+        {
+          "name": "copy / shortcutNote",
+          "text": "Choose two or three physical SP controls. Hold the first controls, then press the last. Each shortcut opens its feature once; all controls must be released before it can open again.",
+          "x": 64,
+          "y": 1314,
+          "width": 864,
+          "height": 72,
+          "size": 16,
+          "ink": {
+            "x": 64,
+            "y": 1317,
+            "width": 825.015625,
+            "height": 41
+          }
+        },
+        {
+          "name": "Shortcut feature",
+          "text": "Synth",
+          "x": 64,
+          "y": 1426,
+          "width": 864,
+          "height": 32,
+          "size": 20,
+          "ink": {
+            "x": 64,
+            "y": 1430,
+            "width": 51.15625,
+            "height": 22
+          }
+        },
+        {
+          "name": "Shortcut control 0",
+          "text": "SHIFT",
+          "x": 76,
+          "y": 1578,
+          "width": 246,
+          "height": 24,
+          "size": 14,
+          "ink": {
+            "x": 76,
+            "y": 1580,
+            "width": 40.453125,
+            "height": 16
+          }
+        },
+        {
+          "name": "Shortcut control 1",
+          "text": "RECORD SETTING",
+          "x": 362,
+          "y": 1578,
+          "width": 246,
+          "height": 24,
+          "size": 14,
+          "ink": {
+            "x": 362,
+            "y": 1580,
+            "width": 125.234375,
+            "height": 16
+          }
+        },
+        {
+          "name": "Shortcut control 2",
+          "text": "No third control",
+          "x": 648,
+          "y": 1578,
+          "width": 268,
+          "height": 24,
+          "size": 14,
+          "ink": {
+            "x": 648,
+            "y": 1580,
+            "width": 94.9375,
+            "height": 16
+          }
+        },
+        {
+          "name": "Shortcut scope",
+          "text": "Sampler idle · requested shortcut",
+          "x": 64,
+          "y": 1624,
+          "width": 864,
+          "height": 32,
+          "size": 13,
+          "ink": {
+            "x": 64,
+            "y": 1626,
+            "width": 257.453125,
+            "height": 15
+          }
+        },
+        {
+          "name": "Shortcut method label",
+          "text": "Open with",
+          "x": 64,
+          "y": 1460,
+          "width": 864,
+          "height": 24,
+          "size": 14,
+          "ink": {
+            "x": 64,
+            "y": 1462,
+            "width": 63.046875,
+            "height": 16
+          }
+        },
+        {
+          "name": "Shortcut method",
+          "text": "Button shortcut",
+          "x": 76,
+          "y": 1496,
+          "width": 246,
+          "height": 24,
+          "size": 14,
+          "ink": {
+            "x": 76,
+            "y": 1498,
+            "width": 94.171875,
+            "height": 16
+          }
+        },
+        {
+          "name": "Shortcut label 0",
+          "text": "Hold first",
+          "x": 64,
+          "y": 1542,
+          "width": 270,
+          "height": 24,
+          "size": 14,
+          "ink": {
+            "x": 64,
+            "y": 1544,
+            "width": 55.234375,
+            "height": 16
+          }
+        },
+        {
+          "name": "Shortcut label 1",
+          "text": "Then press, or hold",
+          "x": 350,
+          "y": 1542,
+          "width": 270,
+          "height": 24,
+          "size": 14,
+          "ink": {
+            "x": 350,
+            "y": 1544,
+            "width": 120.625,
+            "height": 16
+          }
+        },
+        {
+          "name": "Shortcut label 2",
+          "text": "Third (optional)",
+          "x": 636,
+          "y": 1542,
+          "width": 292,
+          "height": 24,
+          "size": 14,
+          "ink": {
+            "x": 636,
+            "y": 1544,
+            "width": 94.15625,
+            "height": 16
+          }
+        },
+        {
+          "name": "copy / transferHeading",
+          "text": "Updating features",
+          "x": 64,
+          "y": 2066,
+          "width": 1312,
+          "height": 40,
+          "size": 24,
+          "ink": {
+            "x": 64,
+            "y": 2070,
+            "width": 189.46875,
+            "height": 27
+          }
+        },
+        {
+          "name": "copy / transferNote",
+          "text": "You will be able to change this selection one feature at a time. The verified USB writer installs a complete APP1 firmware image, so a changed selection currently needs a newly composed image and a full update.",
+          "x": 64,
+          "y": 2126,
+          "width": 840,
+          "height": 96,
+          "size": 16,
+          "ink": {
+            "x": 64,
+            "y": 2129,
+            "width": 791.546875,
+            "height": 41
+          }
+        },
+        {
+          "name": "copy / transferLimit",
+          "text": "Independent feature uploads and runtime hot swapping have not been verified. USB installation requires the matching writer, chip/profile checks, full flash readback, a separate status check and a real reboot.",
+          "x": 64,
+          "y": 2234,
+          "width": 1000,
+          "height": 80,
+          "size": 16,
+          "ink": {
+            "x": 64,
+            "y": 2237,
+            "width": 966.8125,
+            "height": 41
+          }
+        },
+        {
+          "name": "Bridge qualification",
+          "text": "USB BRIDGE B2 must already be installed and freshly identified. First installation from untouched stock over normal USB is unverified.",
+          "x": 64,
+          "y": 2326,
+          "width": 1000,
+          "height": 70,
+          "size": 16,
+          "ink": {
+            "x": 64,
+            "y": 2329,
+            "width": 953.328125,
+            "height": 17
+          }
+        },
+        {
+          "name": "copy / footer",
+          "text": "Feature configuration preview. No device connection.",
+          "x": 64,
+          "y": 2444,
+          "width": 1312,
+          "height": 40,
+          "size": 13,
+          "ink": {
+            "x": 64,
+            "y": 2446,
+            "width": 405.671875,
+            "height": 15
+          }
+        },
+        {
+          "name": "copy / receiptHeading",
+          "text": "Check a build receipt",
+          "x": 64,
+          "y": 1722,
+          "width": 1312,
+          "height": 42,
+          "size": 28,
+          "ink": {
+            "x": 64,
+            "y": 1727,
+            "width": 261.484375,
+            "height": 31
+          }
+        },
+        {
+          "name": "copy / receiptNote",
+          "text": "Choose a local JSON receipt to compare it with your current choices. Only metadata is checked; firmware files and device results remain unverified.",
+          "x": 64,
+          "y": 1780,
+          "width": 1000,
+          "height": 48,
+          "size": 16,
+          "ink": {
+            "x": 64,
+            "y": 1783,
+            "width": 971.078125,
+            "height": 41
+          }
+        },
+        {
+          "name": "Button label",
+          "text": "Choose receipt",
+          "x": 76,
+          "y": 1854,
+          "width": 136,
+          "height": 24,
+          "size": 16,
+          "ink": {
+            "x": 90.1875,
+            "y": 1857,
+            "width": 107.625,
+            "height": 17
+          }
+        },
+        {
+          "name": "Button label",
+          "text": "Clear receipt",
+          "x": 248,
+          "y": 1854,
+          "width": 136,
+          "height": 24,
+          "size": 16,
+          "ink": {
+            "x": 270.640625,
+            "y": 1857,
+            "width": 90.703125,
+            "height": 17
+          }
+        },
+        {
+          "name": "copy / receiptLimit",
+          "text": "JSON, up to 128 KiB. This check does not connect to your SP.",
+          "x": 64,
+          "y": 1904,
+          "width": 1000,
+          "height": 24,
+          "size": 14,
+          "ink": {
+            "x": 64,
+            "y": 1906,
+            "width": 385.484375,
+            "height": 16
+          }
+        },
+        {
+          "name": "Receipt status",
+          "text": "No receipt selected.",
+          "x": 64,
+          "y": 1940,
+          "width": 1312,
+          "height": 36,
+          "size": 16,
+          "ink": {
+            "x": 64,
+            "y": 1943,
+            "width": 141.40625,
+            "height": 17
+          }
+        }
+      ]
+    },
+    {
+      "id": "7d39c61f-08fe-80d5-8008-bcaeacbf8a59",
+      "name": "Feature picker / Mobile / Light",
+      "width": 390,
+      "height": 4044,
+      "metadata": {
+        "schema": 1,
+        "mode": "operate",
+        "configurationPreview": true,
+        "firmwareBuild": false,
+        "deviceUpload": false,
+        "mobile": true,
+        "dark": false,
+        "sharedComponents": true,
+        "controls": "symbolic physical SP controls"
+      },
+      "linkedComponents": [
+        {
+          "id": "7d39c61f-08fe-80d5-8008-bcaeacc468ab",
+          "name": "Wordmark",
+          "componentId": "d862c4e5-8ca1-80d0-8008-b58b0c8a94df",
+          "component": "Wordmark",
+          "copy": true
+        },
+        {
+          "id": "7d39c61f-08fe-80d5-8008-bcaeace0c88a",
+          "name": "Feature introduction (Mobile)",
+          "componentId": "7d39c61f-08fe-80d5-8008-bcadd64a8420",
+          "component": "Feature introduction (Mobile)",
+          "copy": true
+        },
+        {
+          "id": "7d39c61f-08fe-80d5-8008-bcaead0b0d6e",
+          "name": "Feature row (Mobile)",
+          "componentId": "7d39c61f-08fe-80d5-8008-bcadda2f5652",
+          "component": "Feature row (Mobile)",
+          "copy": true
+        },
+        {
+          "id": "7d39c61f-08fe-80d5-8008-bcaead0b0d70",
+          "name": "Feature choice",
+          "componentId": "7d39c61f-08fe-80d5-8008-bcadb9f97fd6",
+          "component": "Feature choice",
+          "copy": true
+        },
+        {
+          "id": "7d39c61f-08fe-80d5-8008-bcaead39959b",
+          "name": "Feature row (Mobile)",
+          "componentId": "7d39c61f-08fe-80d5-8008-bcadda2f5652",
+          "component": "Feature row (Mobile)",
+          "copy": true
+        },
+        {
+          "id": "7d39c61f-08fe-80d5-8008-bcaead39959d",
+          "name": "Feature choice",
+          "componentId": "7d39c61f-08fe-80d5-8008-bcadb9f97fd6",
+          "component": "Feature choice",
+          "copy": true
+        },
+        {
+          "id": "7d39c61f-08fe-80d5-8008-bcaead52ccbb",
+          "name": "Feature row (Mobile)",
+          "componentId": "7d39c61f-08fe-80d5-8008-bcadda2f5652",
+          "component": "Feature row (Mobile)",
+          "copy": true
+        },
+        {
+          "id": "7d39c61f-08fe-80d5-8008-bcaead52ccbd",
+          "name": "Feature choice",
+          "componentId": "7d39c61f-08fe-80d5-8008-bcadb9f97fd6",
+          "component": "Feature choice",
+          "copy": true
+        },
+        {
+          "id": "7d39c61f-08fe-80d5-8008-bcaead6ff04c",
+          "name": "Feature row (Mobile)",
+          "componentId": "7d39c61f-08fe-80d5-8008-bcadda2f5652",
+          "component": "Feature row (Mobile)",
+          "copy": true
+        },
+        {
+          "id": "7d39c61f-08fe-80d5-8008-bcaead6ff04e",
+          "name": "Feature choice",
+          "componentId": "7d39c61f-08fe-80d5-8008-bcadb9f97fd6",
+          "component": "Feature choice",
+          "copy": true
+        },
+        {
+          "id": "7d39c61f-08fe-80d5-8008-bcaead9b9112",
+          "name": "Feature shortcut (Mobile)",
+          "componentId": "7d39c61f-08fe-80d5-8008-bcade00d4340",
+          "component": "Feature shortcut (Mobile)",
+          "copy": true
+        },
+        {
+          "id": "7d39c61f-08fe-80d5-8008-bcaeada2836e",
+          "name": "Feature summary (Mobile)",
+          "componentId": "7d39c61f-08fe-80d5-8008-bcade3f4de31",
+          "component": "Feature summary (Mobile)",
+          "copy": true
+        },
+        {
+          "id": "7d39c61f-08fe-80d5-8008-bcaeada28374",
+          "name": "Emulator action",
+          "componentId": "6bf32eef-e7db-8057-8008-bb287d8e3cdc",
+          "component": "Emulator action",
+          "copy": true
+        },
+        {
+          "id": "7d39c61f-08fe-80d5-8008-bcaeada28377",
+          "name": "Emulator action",
+          "componentId": "6bf32eef-e7db-8057-8008-bb287d8e3cdc",
+          "component": "Emulator action",
+          "copy": true
+        },
+        {
+          "id": "7d39c61f-08fe-80d5-8008-bcaeada2837a",
+          "name": "Emulator action",
+          "componentId": "6bf32eef-e7db-8057-8008-bb287d8e3cdc",
+          "component": "Emulator action",
+          "copy": true
+        },
+        {
+          "id": "7d39c61f-08fe-80d5-8008-bcaeadabb2db",
+          "name": "Feature update notes (Mobile)",
+          "componentId": "7d39c61f-08fe-80d5-8008-bcade7dbcb41",
+          "component": "Feature update notes (Mobile)",
+          "copy": true
+        },
+        {
+          "id": "aef24b78-6c19-80a5-8008-bdfa35a63f00",
+          "name": "Feature receipt (Mobile)",
+          "componentId": "aef24b78-6c19-80a5-8008-bdfa02233856",
+          "component": "Feature receipt (Mobile)",
+          "copy": true
+        },
+        {
+          "id": "aef24b78-6c19-80a5-8008-bdfa35a63f04",
+          "name": "Emulator action",
+          "componentId": "6bf32eef-e7db-8057-8008-bb287d8e3cdc",
+          "component": "Emulator action",
+          "copy": true
+        },
+        {
+          "id": "aef24b78-6c19-80a5-8008-bdfa35a63f07",
+          "name": "Emulator action",
+          "componentId": "6bf32eef-e7db-8057-8008-bb287d8e3cdc",
+          "component": "Emulator action",
+          "copy": true
+        }
+      ],
+      "text": [
+        {
+          "name": "Brand",
+          "text": "opensp",
+          "x": 24,
+          "y": 24,
+          "width": 120,
+          "height": 40,
+          "size": 27,
+          "ink": {
+            "x": 24,
+            "y": 25,
+            "width": 96.015625,
+            "height": 30
+          }
+        },
+        {
+          "name": "Page navigation",
+          "text": "FEATURES",
+          "x": 160,
+          "y": 32,
+          "width": 150,
+          "height": 24,
+          "size": 14,
+          "ink": {
+            "x": 160,
+            "y": 34,
+            "width": 67.21875,
+            "height": 16
+          }
+        },
+        {
+          "name": "copy / title",
+          "text": "Choose your features",
+          "x": 24,
+          "y": 112,
+          "width": 342,
+          "height": 112,
+          "size": 40,
+          "ink": {
+            "x": 24,
+            "y": 120,
+            "width": 237.921875,
+            "height": 104
+          }
+        },
+        {
+          "name": "copy / introduction",
+          "text": "Pick the features you want, then choose the buttons that open each one.",
+          "x": 24,
+          "y": 232,
+          "width": 342,
+          "height": 84,
+          "size": 18,
+          "ink": {
+            "x": 24,
+            "y": 235,
+            "width": 324.203125,
+            "height": 47
+          }
+        },
+        {
+          "name": "copy / planningNote",
+          "text": "This is a configuration preview. You can save your choices now; a compatible firmware build and website upload are still in development.",
+          "x": 24,
+          "y": 332,
+          "width": 342,
+          "height": 120,
+          "size": 16,
+          "ink": {
+            "x": 24,
+            "y": 335,
+            "width": 331.703125,
+            "height": 65
+          }
+        },
+        {
+          "name": "copy / targetLabel",
+          "text": "Firmware base",
+          "x": 24,
+          "y": 488,
+          "width": 342,
+          "height": 32,
+          "size": 16,
+          "ink": {
+            "x": 24,
+            "y": 491,
+            "width": 105.8125,
+            "height": 17
+          }
+        },
+        {
+          "name": "Selected profile",
+          "text": "Roland v5.52",
+          "x": 36,
+          "y": 534,
+          "width": 318,
+          "height": 24,
+          "size": 16,
+          "ink": {
+            "x": 36,
+            "y": 537,
+            "width": 94.296875,
+            "height": 17
+          }
+        },
+        {
+          "name": "copy / featureHeading",
+          "text": "Features",
+          "x": 24,
+          "y": 600,
+          "width": 342,
+          "height": 40,
+          "size": 28,
+          "ink": {
+            "x": 24,
+            "y": 605,
+            "width": 110.5,
+            "height": 31
+          }
+        },
+        {
+          "name": "Feature name",
+          "text": "Synth",
+          "x": 64,
+          "y": 684,
+          "width": 302,
+          "height": 60,
+          "size": 22,
+          "ink": {
+            "x": 64,
+            "y": 688,
+            "width": 56.265625,
+            "height": 25
+          }
+        },
+        {
+          "name": "Feature readiness",
+          "text": "Hardware trial",
+          "x": 64,
+          "y": 750,
+          "width": 302,
+          "height": 24,
+          "size": 13,
+          "ink": {
+            "x": 64,
+            "y": 752,
+            "width": 109.21875,
+            "height": 15
+          }
+        },
+        {
+          "name": "Feature description",
+          "text": "Play synth sounds from the pads and edit their parameters.",
+          "x": 64,
+          "y": 788,
+          "width": 302,
+          "height": 96,
+          "size": 16,
+          "ink": {
+            "x": 64,
+            "y": 791,
+            "width": 297.953125,
+            "height": 41
+          }
+        },
+        {
+          "name": "Feature disclosure",
+          "text": "Evidence and requirements",
+          "x": 64,
+          "y": 888,
+          "width": 302,
+          "height": 24,
+          "size": 14,
+          "ink": {
+            "x": 64,
+            "y": 890,
+            "width": 170.4375,
+            "height": 16
+          }
+        },
+        {
+          "name": "Feature name",
+          "text": "USB screen, controls & audio recorder",
+          "x": 64,
+          "y": 948,
+          "width": 302,
+          "height": 60,
+          "size": 22,
+          "ink": {
+            "x": 64,
+            "y": 952,
+            "width": 293.484375,
+            "height": 58
+          }
+        },
+        {
+          "name": "Feature readiness",
+          "text": "Offline component",
+          "x": 64,
+          "y": 1014,
+          "width": 302,
+          "height": 24,
+          "size": 13,
+          "ink": {
+            "x": 64,
+            "y": 1016,
+            "width": 132.625,
+            "height": 15
+          }
+        },
+        {
+          "name": "Feature description",
+          "text": "Record an SP session on your computer, including screens, control changes and USB audio.",
+          "x": 64,
+          "y": 1052,
+          "width": 302,
+          "height": 96,
+          "size": 16,
+          "ink": {
+            "x": 64,
+            "y": 1055,
+            "width": 294.984375,
+            "height": 65
+          }
+        },
+        {
+          "name": "Feature disclosure",
+          "text": "Evidence and requirements",
+          "x": 64,
+          "y": 1152,
+          "width": 302,
+          "height": 24,
+          "size": 14,
+          "ink": {
+            "x": 64,
+            "y": 1154,
+            "width": 170.4375,
+            "height": 16
+          }
+        },
+        {
+          "name": "Feature name",
+          "text": "Stem splitting",
+          "x": 64,
+          "y": 1212,
+          "width": 302,
+          "height": 60,
+          "size": 22,
+          "ink": {
+            "x": 64,
+            "y": 1216,
+            "width": 132.0625,
+            "height": 25
+          }
+        },
+        {
+          "name": "Feature readiness",
+          "text": "Later release · unavailable",
+          "x": 64,
+          "y": 1278,
+          "width": 302,
+          "height": 24,
+          "size": 13,
+          "ink": {
+            "x": 64,
+            "y": 1280,
+            "width": 210.640625,
+            "height": 15
+          }
+        },
+        {
+          "name": "Feature description",
+          "text": "Separate a sample into stems.",
+          "x": 64,
+          "y": 1316,
+          "width": 302,
+          "height": 96,
+          "size": 16,
+          "ink": {
+            "x": 64,
+            "y": 1319,
+            "width": 216.109375,
+            "height": 17
+          }
+        },
+        {
+          "name": "Feature disclosure",
+          "text": "Evidence and requirements",
+          "x": 64,
+          "y": 1416,
+          "width": 302,
+          "height": 24,
+          "size": 14,
+          "ink": {
+            "x": 64,
+            "y": 1418,
+            "width": 170.4375,
+            "height": 16
+          }
+        },
+        {
+          "name": "Feature name",
+          "text": "Autotune",
+          "x": 64,
+          "y": 1476,
+          "width": 302,
+          "height": 60,
+          "size": 22,
+          "ink": {
+            "x": 64,
+            "y": 1480,
+            "width": 88.078125,
+            "height": 25
+          }
+        },
+        {
+          "name": "Feature readiness",
+          "text": "Later release · unavailable",
+          "x": 64,
+          "y": 1542,
+          "width": 302,
+          "height": 24,
+          "size": 13,
+          "ink": {
+            "x": 64,
+            "y": 1544,
+            "width": 210.640625,
+            "height": 15
+          }
+        },
+        {
+          "name": "Feature description",
+          "text": "Correct or shift the pitch of a monophonic input.",
+          "x": 64,
+          "y": 1580,
+          "width": 302,
+          "height": 96,
+          "size": 16,
+          "ink": {
+            "x": 64,
+            "y": 1583,
+            "width": 297.046875,
+            "height": 41
+          }
+        },
+        {
+          "name": "Feature disclosure",
+          "text": "Evidence and requirements",
+          "x": 64,
+          "y": 1680,
+          "width": 302,
+          "height": 24,
+          "size": 14,
+          "ink": {
+            "x": 64,
+            "y": 1682,
+            "width": 170.4375,
+            "height": 16
+          }
+        },
+        {
+          "name": "copy / shortcutHeading",
+          "text": "Button shortcuts",
+          "x": 24,
+          "y": 1760,
+          "width": 342,
+          "height": 40,
+          "size": 28,
+          "ink": {
+            "x": 24,
+            "y": 1765,
+            "width": 202.34375,
+            "height": 31
+          }
+        },
+        {
+          "name": "copy / shortcutNote",
+          "text": "Choose two or three physical SP controls. Hold the first controls, then press the last. Each shortcut opens its feature once; all controls must be released before it can open again.",
+          "x": 24,
+          "y": 1816,
+          "width": 342,
+          "height": 152,
+          "size": 16,
+          "ink": {
+            "x": 24,
+            "y": 1819,
+            "width": 338.546875,
+            "height": 89
+          }
+        },
+        {
+          "name": "Shortcut feature",
+          "text": "Synth",
+          "x": 24,
+          "y": 2008,
+          "width": 342,
+          "height": 32,
+          "size": 20,
+          "ink": {
+            "x": 24,
+            "y": 2012,
+            "width": 51.15625,
+            "height": 22
+          }
+        },
+        {
+          "name": "Shortcut control 0",
+          "text": "SHIFT",
+          "x": 36,
+          "y": 2164,
+          "width": 318,
+          "height": 24,
+          "size": 14,
+          "ink": {
+            "x": 36,
+            "y": 2166,
+            "width": 40.453125,
+            "height": 16
+          }
+        },
+        {
+          "name": "Shortcut control 1",
+          "text": "RECORD SETTING",
+          "x": 36,
+          "y": 2250,
+          "width": 140,
+          "height": 24,
+          "size": 14,
+          "ink": {
+            "x": 36,
+            "y": 2252,
+            "width": 125.234375,
+            "height": 16
+          }
+        },
+        {
+          "name": "Shortcut control 2",
+          "text": "No third control",
+          "x": 214,
+          "y": 2250,
+          "width": 140,
+          "height": 24,
+          "size": 14,
+          "ink": {
+            "x": 214,
+            "y": 2252,
+            "width": 94.9375,
+            "height": 16
+          }
+        },
+        {
+          "name": "Shortcut scope",
+          "text": "Sampler idle · requested shortcut",
+          "x": 24,
+          "y": 2296,
+          "width": 342,
+          "height": 32,
+          "size": 13,
+          "ink": {
+            "x": 24,
+            "y": 2298,
+            "width": 257.453125,
+            "height": 15
+          }
+        },
+        {
+          "name": "Shortcut method label",
+          "text": "Open with",
+          "x": 24,
+          "y": 2042,
+          "width": 342,
+          "height": 24,
+          "size": 14,
+          "ink": {
+            "x": 24,
+            "y": 2044,
+            "width": 63.046875,
+            "height": 16
+          }
+        },
+        {
+          "name": "Shortcut method",
+          "text": "Button shortcut",
+          "x": 36,
+          "y": 2078,
+          "width": 318,
+          "height": 24,
+          "size": 14,
+          "ink": {
+            "x": 36,
+            "y": 2080,
+            "width": 94.171875,
+            "height": 16
+          }
+        },
+        {
+          "name": "Shortcut label 0",
+          "text": "Hold first",
+          "x": 24,
+          "y": 2128,
+          "width": 342,
+          "height": 24,
+          "size": 14,
+          "ink": {
+            "x": 24,
+            "y": 2130,
+            "width": 55.234375,
+            "height": 16
+          }
+        },
+        {
+          "name": "Shortcut label 1",
+          "text": "Then press, or hold",
+          "x": 24,
+          "y": 2214,
+          "width": 164,
+          "height": 24,
+          "size": 14,
+          "ink": {
+            "x": 24,
+            "y": 2216,
+            "width": 120.625,
+            "height": 16
+          }
+        },
+        {
+          "name": "Shortcut label 2",
+          "text": "Third (optional)",
+          "x": 202,
+          "y": 2214,
+          "width": 164,
+          "height": 24,
+          "size": 14,
+          "ink": {
+            "x": 202,
+            "y": 2216,
+            "width": 94.15625,
+            "height": 16
+          }
+        },
+        {
+          "name": "copy / summaryHeading",
+          "text": "Your configuration",
+          "x": 24,
+          "y": 2396,
+          "width": 342,
+          "height": 40,
+          "size": 24,
+          "ink": {
+            "x": 24,
+            "y": 2400,
+            "width": 192.59375,
+            "height": 27
+          }
+        },
+        {
+          "name": "Selection count",
+          "text": "1 feature selected",
+          "x": 24,
+          "y": 2456,
+          "width": 342,
+          "height": 32,
+          "size": 16,
+          "ink": {
+            "x": 24,
+            "y": 2459,
+            "width": 127.203125,
+            "height": 17
+          }
+        },
+        {
+          "name": "Build state",
+          "text": "Build unavailable",
+          "x": 24,
+          "y": 2500,
+          "width": 342,
+          "height": 32,
+          "size": 16,
+          "ink": {
+            "x": 24,
+            "y": 2503,
+            "width": 120.984375,
+            "height": 17
+          }
+        },
+        {
+          "name": "Build blocker",
+          "text": "A selectable Synth build and configurable shortcut dispatcher have not been qualified.",
+          "x": 24,
+          "y": 2540,
+          "width": 342,
+          "height": 96,
+          "size": 16,
+          "ink": {
+            "x": 24,
+            "y": 2543,
+            "width": 309.546875,
+            "height": 41
+          }
+        },
+        {
+          "name": "Button label",
+          "text": "Export configuration",
+          "x": 36,
+          "y": 2662,
+          "width": 318,
+          "height": 24,
+          "size": 16,
+          "ink": {
+            "x": 123.84375,
+            "y": 2665,
+            "width": 142.3125,
+            "height": 17
+          }
+        },
+        {
+          "name": "Button label",
+          "text": "Build firmware",
+          "x": 36,
+          "y": 2718,
+          "width": 139,
+          "height": 24,
+          "size": 16,
+          "ink": {
+            "x": 54.8125,
+            "y": 2721,
+            "width": 101.359375,
+            "height": 17
+          }
+        },
+        {
+          "name": "Button label",
+          "text": "USB-C upload",
+          "x": 215,
+          "y": 2718,
+          "width": 139,
+          "height": 24,
+          "size": 16,
+          "ink": {
+            "x": 233.359375,
+            "y": 2721,
+            "width": 102.28125,
+            "height": 17
+          }
+        },
+        {
+          "name": "copy / transferHeading",
+          "text": "Updating features",
+          "x": 24,
+          "y": 3248,
+          "width": 342,
+          "height": 40,
+          "size": 24,
+          "ink": {
+            "x": 24,
+            "y": 3252,
+            "width": 189.46875,
+            "height": 27
+          }
+        },
+        {
+          "name": "copy / transferNote",
+          "text": "You will be able to change this selection one feature at a time. The verified USB writer installs a complete APP1 firmware image, so a changed selection currently needs a newly composed image and a full update.",
+          "x": 24,
+          "y": 3308,
+          "width": 342,
+          "height": 192,
+          "size": 16,
+          "ink": {
+            "x": 24,
+            "y": 3311,
+            "width": 333.484375,
+            "height": 113
+          }
+        },
+        {
+          "name": "copy / transferLimit",
+          "text": "Independent feature uploads and runtime hot swapping have not been verified. USB installation requires the matching writer, chip/profile checks, full flash readback, a separate status check and a real reboot.",
+          "x": 24,
+          "y": 3512,
+          "width": 342,
+          "height": 152,
+          "size": 16,
+          "ink": {
+            "x": 24,
+            "y": 3515,
+            "width": 323.796875,
+            "height": 113
+          }
+        },
+        {
+          "name": "Bridge qualification",
+          "text": "USB BRIDGE B2 must already be installed and freshly identified. First installation from untouched stock over normal USB is unverified.",
+          "x": 24,
+          "y": 3680,
+          "width": 342,
+          "height": 144,
+          "size": 16,
+          "ink": {
+            "x": 24,
+            "y": 3683,
+            "width": 339.71875,
+            "height": 65
+          }
+        },
+        {
+          "name": "copy / footer",
+          "text": "Feature configuration preview. No device connection.",
+          "x": 24,
+          "y": 3964,
+          "width": 342,
+          "height": 40,
+          "size": 13,
+          "ink": {
+            "x": 24,
+            "y": 3966,
+            "width": 319.859375,
+            "height": 34.5
+          }
+        },
+        {
+          "name": "copy / receiptHeading",
+          "text": "Check a build receipt",
+          "x": 24,
+          "y": 2820,
+          "width": 342,
+          "height": 42,
+          "size": 28,
+          "ink": {
+            "x": 24,
+            "y": 2825,
+            "width": 261.484375,
+            "height": 31
+          }
+        },
+        {
+          "name": "copy / receiptNote",
+          "text": "Choose a local JSON receipt to compare it with your current choices. Only metadata is checked; firmware files and device results remain unverified.",
+          "x": 24,
+          "y": 2878,
+          "width": 342,
+          "height": 120,
+          "size": 16,
+          "ink": {
+            "x": 24,
+            "y": 2881,
+            "width": 339.703125,
+            "height": 89
+          }
+        },
+        {
+          "name": "Button label",
+          "text": "Choose receipt",
+          "x": 36,
+          "y": 3024,
+          "width": 136,
+          "height": 24,
+          "size": 16,
+          "ink": {
+            "x": 50.1875,
+            "y": 3027,
+            "width": 107.625,
+            "height": 17
+          }
+        },
+        {
+          "name": "Button label",
+          "text": "Clear receipt",
+          "x": 208,
+          "y": 3024,
+          "width": 136,
+          "height": 24,
+          "size": 16,
+          "ink": {
+            "x": 230.640625,
+            "y": 3027,
+            "width": 90.703125,
+            "height": 17
+          }
+        },
+        {
+          "name": "copy / receiptLimit",
+          "text": "JSON, up to 128 KiB. This check does not connect to your SP.",
+          "x": 24,
+          "y": 3074,
+          "width": 342,
+          "height": 48,
+          "size": 14,
+          "ink": {
+            "x": 24,
+            "y": 3076,
+            "width": 333.59375,
+            "height": 37
+          }
+        },
+        {
+          "name": "Receipt status",
+          "text": "No receipt selected.",
+          "x": 24,
+          "y": 3136,
+          "width": 342,
+          "height": 36,
+          "size": 16,
+          "ink": {
+            "x": 24,
+            "y": 3139,
+            "width": 141.40625,
+            "height": 17
+          }
+        }
+      ]
+    },
+    {
+      "id": "7d39c61f-08fe-80d5-8008-bcaeaf07ba91",
+      "name": "Feature picker / Mobile / Dark",
+      "width": 390,
+      "height": 4044,
+      "metadata": {
+        "schema": 1,
+        "mode": "operate",
+        "configurationPreview": true,
+        "firmwareBuild": false,
+        "deviceUpload": false,
+        "mobile": true,
+        "dark": true,
+        "sharedComponents": true,
+        "controls": "symbolic physical SP controls"
+      },
+      "linkedComponents": [
+        {
+          "id": "7d39c61f-08fe-80d5-8008-bcaeaf0cdfb5",
+          "name": "Wordmark",
+          "componentId": "d862c4e5-8ca1-80d0-8008-b58b0c8a94df",
+          "component": "Wordmark",
+          "copy": true
+        },
+        {
+          "id": "7d39c61f-08fe-80d5-8008-bcaeaf20a1ea",
+          "name": "Feature introduction (Mobile)",
+          "componentId": "7d39c61f-08fe-80d5-8008-bcadd64a8420",
+          "component": "Feature introduction (Mobile)",
+          "copy": true
+        },
+        {
+          "id": "7d39c61f-08fe-80d5-8008-bcaeaf4bab4b",
+          "name": "Feature row (Mobile)",
+          "componentId": "7d39c61f-08fe-80d5-8008-bcadda2f5652",
+          "component": "Feature row (Mobile)",
+          "copy": true
+        },
+        {
+          "id": "7d39c61f-08fe-80d5-8008-bcaeaf4bff26",
+          "name": "Feature choice",
+          "componentId": "7d39c61f-08fe-80d5-8008-bcadb9f97fd6",
+          "component": "Feature choice",
+          "copy": true
+        },
+        {
+          "id": "7d39c61f-08fe-80d5-8008-bcaeaf7365f5",
+          "name": "Feature row (Mobile)",
+          "componentId": "7d39c61f-08fe-80d5-8008-bcadda2f5652",
+          "component": "Feature row (Mobile)",
+          "copy": true
+        },
+        {
+          "id": "7d39c61f-08fe-80d5-8008-bcaeaf7365f7",
+          "name": "Feature choice",
+          "componentId": "7d39c61f-08fe-80d5-8008-bcadb9f97fd6",
+          "component": "Feature choice",
+          "copy": true
+        },
+        {
+          "id": "7d39c61f-08fe-80d5-8008-bcaeaf981b23",
+          "name": "Feature row (Mobile)",
+          "componentId": "7d39c61f-08fe-80d5-8008-bcadda2f5652",
+          "component": "Feature row (Mobile)",
+          "copy": true
+        },
+        {
+          "id": "7d39c61f-08fe-80d5-8008-bcaeaf981b25",
+          "name": "Feature choice",
+          "componentId": "7d39c61f-08fe-80d5-8008-bcadb9f97fd6",
+          "component": "Feature choice",
+          "copy": true
+        },
+        {
+          "id": "7d39c61f-08fe-80d5-8008-bcaeafb36126",
+          "name": "Feature row (Mobile)",
+          "componentId": "7d39c61f-08fe-80d5-8008-bcadda2f5652",
+          "component": "Feature row (Mobile)",
+          "copy": true
+        },
+        {
+          "id": "7d39c61f-08fe-80d5-8008-bcaeafb36128",
+          "name": "Feature choice",
+          "componentId": "7d39c61f-08fe-80d5-8008-bcadb9f97fd6",
+          "component": "Feature choice",
+          "copy": true
+        },
+        {
+          "id": "7d39c61f-08fe-80d5-8008-bcaeafe15824",
+          "name": "Feature shortcut (Mobile)",
+          "componentId": "7d39c61f-08fe-80d5-8008-bcade00d4340",
+          "component": "Feature shortcut (Mobile)",
+          "copy": true
+        },
+        {
+          "id": "7d39c61f-08fe-80d5-8008-bcaeafe7e4d0",
+          "name": "Feature summary (Mobile)",
+          "componentId": "7d39c61f-08fe-80d5-8008-bcade3f4de31",
+          "component": "Feature summary (Mobile)",
+          "copy": true
+        },
+        {
+          "id": "7d39c61f-08fe-80d5-8008-bcaeafe7e4d6",
+          "name": "Emulator action",
+          "componentId": "6bf32eef-e7db-8057-8008-bb287d8e3cdc",
+          "component": "Emulator action",
+          "copy": true
+        },
+        {
+          "id": "7d39c61f-08fe-80d5-8008-bcaeafe7e4d9",
+          "name": "Emulator action",
+          "componentId": "6bf32eef-e7db-8057-8008-bb287d8e3cdc",
+          "component": "Emulator action",
+          "copy": true
+        },
+        {
+          "id": "7d39c61f-08fe-80d5-8008-bcaeafe7e4dc",
+          "name": "Emulator action",
+          "componentId": "6bf32eef-e7db-8057-8008-bb287d8e3cdc",
+          "component": "Emulator action",
+          "copy": true
+        },
+        {
+          "id": "7d39c61f-08fe-80d5-8008-bcaeaff0febf",
+          "name": "Feature update notes (Mobile)",
+          "componentId": "7d39c61f-08fe-80d5-8008-bcade7dbcb41",
+          "component": "Feature update notes (Mobile)",
+          "copy": true
+        },
+        {
+          "id": "aef24b78-6c19-80a5-8008-bdfa35b8fe07",
+          "name": "Feature receipt (Mobile)",
+          "componentId": "aef24b78-6c19-80a5-8008-bdfa02233856",
+          "component": "Feature receipt (Mobile)",
+          "copy": true
+        },
+        {
+          "id": "aef24b78-6c19-80a5-8008-bdfa35b8fe0b",
+          "name": "Emulator action",
+          "componentId": "6bf32eef-e7db-8057-8008-bb287d8e3cdc",
+          "component": "Emulator action",
+          "copy": true
+        },
+        {
+          "id": "aef24b78-6c19-80a5-8008-bdfa35b8fe0e",
+          "name": "Emulator action",
+          "componentId": "6bf32eef-e7db-8057-8008-bb287d8e3cdc",
+          "component": "Emulator action",
+          "copy": true
+        }
+      ],
+      "text": [
+        {
+          "name": "Brand",
+          "text": "opensp",
+          "x": 24,
+          "y": 24,
+          "width": 120,
+          "height": 40,
+          "size": 27,
+          "ink": {
+            "x": 24,
+            "y": 25,
+            "width": 96.015625,
+            "height": 30
+          }
+        },
+        {
+          "name": "Page navigation",
+          "text": "FEATURES",
+          "x": 160,
+          "y": 32,
+          "width": 150,
+          "height": 24,
+          "size": 14,
+          "ink": {
+            "x": 160,
+            "y": 34,
+            "width": 67.21875,
+            "height": 16
+          }
+        },
+        {
+          "name": "copy / title",
+          "text": "Choose your features",
+          "x": 24,
+          "y": 112,
+          "width": 342,
+          "height": 112,
+          "size": 40,
+          "ink": {
+            "x": 24,
+            "y": 120,
+            "width": 237.921875,
+            "height": 104
+          }
+        },
+        {
+          "name": "copy / introduction",
+          "text": "Pick the features you want, then choose the buttons that open each one.",
+          "x": 24,
+          "y": 232,
+          "width": 342,
+          "height": 84,
+          "size": 18,
+          "ink": {
+            "x": 24,
+            "y": 235,
+            "width": 324.203125,
+            "height": 47
+          }
+        },
+        {
+          "name": "copy / planningNote",
+          "text": "This is a configuration preview. You can save your choices now; a compatible firmware build and website upload are still in development.",
+          "x": 24,
+          "y": 332,
+          "width": 342,
+          "height": 120,
+          "size": 16,
+          "ink": {
+            "x": 24,
+            "y": 335,
+            "width": 331.703125,
+            "height": 65
+          }
+        },
+        {
+          "name": "copy / targetLabel",
+          "text": "Firmware base",
+          "x": 24,
+          "y": 488,
+          "width": 342,
+          "height": 32,
+          "size": 16,
+          "ink": {
+            "x": 24,
+            "y": 491,
+            "width": 105.8125,
+            "height": 17
+          }
+        },
+        {
+          "name": "Selected profile",
+          "text": "Roland v5.52",
+          "x": 36,
+          "y": 534,
+          "width": 318,
+          "height": 24,
+          "size": 16,
+          "ink": {
+            "x": 36,
+            "y": 537,
+            "width": 94.296875,
+            "height": 17
+          }
+        },
+        {
+          "name": "copy / featureHeading",
+          "text": "Features",
+          "x": 24,
+          "y": 600,
+          "width": 342,
+          "height": 40,
+          "size": 28,
+          "ink": {
+            "x": 24,
+            "y": 605,
+            "width": 110.5,
+            "height": 31
+          }
+        },
+        {
+          "name": "Feature name",
+          "text": "Synth",
+          "x": 64,
+          "y": 684,
+          "width": 302,
+          "height": 60,
+          "size": 22,
+          "ink": {
+            "x": 64,
+            "y": 688,
+            "width": 56.265625,
+            "height": 25
+          }
+        },
+        {
+          "name": "Feature readiness",
+          "text": "Hardware trial",
+          "x": 64,
+          "y": 750,
+          "width": 302,
+          "height": 24,
+          "size": 13,
+          "ink": {
+            "x": 64,
+            "y": 752,
+            "width": 109.21875,
+            "height": 15
+          }
+        },
+        {
+          "name": "Feature description",
+          "text": "Play synth sounds from the pads and edit their parameters.",
+          "x": 64,
+          "y": 788,
+          "width": 302,
+          "height": 96,
+          "size": 16,
+          "ink": {
+            "x": 64,
+            "y": 791,
+            "width": 297.953125,
+            "height": 41
+          }
+        },
+        {
+          "name": "Feature disclosure",
+          "text": "Evidence and requirements",
+          "x": 64,
+          "y": 888,
+          "width": 302,
+          "height": 24,
+          "size": 14,
+          "ink": {
+            "x": 64,
+            "y": 890,
+            "width": 170.4375,
+            "height": 16
+          }
+        },
+        {
+          "name": "Feature name",
+          "text": "USB screen, controls & audio recorder",
+          "x": 64,
+          "y": 948,
+          "width": 302,
+          "height": 60,
+          "size": 22,
+          "ink": {
+            "x": 64,
+            "y": 952,
+            "width": 293.484375,
+            "height": 58
+          }
+        },
+        {
+          "name": "Feature readiness",
+          "text": "Offline component",
+          "x": 64,
+          "y": 1014,
+          "width": 302,
+          "height": 24,
+          "size": 13,
+          "ink": {
+            "x": 64,
+            "y": 1016,
+            "width": 132.625,
+            "height": 15
+          }
+        },
+        {
+          "name": "Feature description",
+          "text": "Record an SP session on your computer, including screens, control changes and USB audio.",
+          "x": 64,
+          "y": 1052,
+          "width": 302,
+          "height": 96,
+          "size": 16,
+          "ink": {
+            "x": 64,
+            "y": 1055,
+            "width": 294.984375,
+            "height": 65
+          }
+        },
+        {
+          "name": "Feature disclosure",
+          "text": "Evidence and requirements",
+          "x": 64,
+          "y": 1152,
+          "width": 302,
+          "height": 24,
+          "size": 14,
+          "ink": {
+            "x": 64,
+            "y": 1154,
+            "width": 170.4375,
+            "height": 16
+          }
+        },
+        {
+          "name": "Feature name",
+          "text": "Stem splitting",
+          "x": 64,
+          "y": 1212,
+          "width": 302,
+          "height": 60,
+          "size": 22,
+          "ink": {
+            "x": 64,
+            "y": 1216,
+            "width": 132.0625,
+            "height": 25
+          }
+        },
+        {
+          "name": "Feature readiness",
+          "text": "Later release · unavailable",
+          "x": 64,
+          "y": 1278,
+          "width": 302,
+          "height": 24,
+          "size": 13,
+          "ink": {
+            "x": 64,
+            "y": 1280,
+            "width": 210.640625,
+            "height": 15
+          }
+        },
+        {
+          "name": "Feature description",
+          "text": "Separate a sample into stems.",
+          "x": 64,
+          "y": 1316,
+          "width": 302,
+          "height": 96,
+          "size": 16,
+          "ink": {
+            "x": 64,
+            "y": 1319,
+            "width": 216.109375,
+            "height": 17
+          }
+        },
+        {
+          "name": "Feature disclosure",
+          "text": "Evidence and requirements",
+          "x": 64,
+          "y": 1416,
+          "width": 302,
+          "height": 24,
+          "size": 14,
+          "ink": {
+            "x": 64,
+            "y": 1418,
+            "width": 170.4375,
+            "height": 16
+          }
+        },
+        {
+          "name": "Feature name",
+          "text": "Autotune",
+          "x": 64,
+          "y": 1476,
+          "width": 302,
+          "height": 60,
+          "size": 22,
+          "ink": {
+            "x": 64,
+            "y": 1480,
+            "width": 88.078125,
+            "height": 25
+          }
+        },
+        {
+          "name": "Feature readiness",
+          "text": "Later release · unavailable",
+          "x": 64,
+          "y": 1542,
+          "width": 302,
+          "height": 24,
+          "size": 13,
+          "ink": {
+            "x": 64,
+            "y": 1544,
+            "width": 210.640625,
+            "height": 15
+          }
+        },
+        {
+          "name": "Feature description",
+          "text": "Correct or shift the pitch of a monophonic input.",
+          "x": 64,
+          "y": 1580,
+          "width": 302,
+          "height": 96,
+          "size": 16,
+          "ink": {
+            "x": 64,
+            "y": 1583,
+            "width": 297.046875,
+            "height": 41
+          }
+        },
+        {
+          "name": "Feature disclosure",
+          "text": "Evidence and requirements",
+          "x": 64,
+          "y": 1680,
+          "width": 302,
+          "height": 24,
+          "size": 14,
+          "ink": {
+            "x": 64,
+            "y": 1682,
+            "width": 170.4375,
+            "height": 16
+          }
+        },
+        {
+          "name": "copy / shortcutHeading",
+          "text": "Button shortcuts",
+          "x": 24,
+          "y": 1760,
+          "width": 342,
+          "height": 40,
+          "size": 28,
+          "ink": {
+            "x": 24,
+            "y": 1765,
+            "width": 202.34375,
+            "height": 31
+          }
+        },
+        {
+          "name": "copy / shortcutNote",
+          "text": "Choose two or three physical SP controls. Hold the first controls, then press the last. Each shortcut opens its feature once; all controls must be released before it can open again.",
+          "x": 24,
+          "y": 1816,
+          "width": 342,
+          "height": 152,
+          "size": 16,
+          "ink": {
+            "x": 24,
+            "y": 1819,
+            "width": 338.546875,
+            "height": 89
+          }
+        },
+        {
+          "name": "Shortcut feature",
+          "text": "Synth",
+          "x": 24,
+          "y": 2008,
+          "width": 342,
+          "height": 32,
+          "size": 20,
+          "ink": {
+            "x": 24,
+            "y": 2012,
+            "width": 51.15625,
+            "height": 22
+          }
+        },
+        {
+          "name": "Shortcut control 0",
+          "text": "SHIFT",
+          "x": 36,
+          "y": 2164,
+          "width": 318,
+          "height": 24,
+          "size": 14,
+          "ink": {
+            "x": 36,
+            "y": 2166,
+            "width": 40.453125,
+            "height": 16
+          }
+        },
+        {
+          "name": "Shortcut control 1",
+          "text": "RECORD SETTING",
+          "x": 36,
+          "y": 2250,
+          "width": 140,
+          "height": 24,
+          "size": 14,
+          "ink": {
+            "x": 36,
+            "y": 2252,
+            "width": 125.234375,
+            "height": 16
+          }
+        },
+        {
+          "name": "Shortcut control 2",
+          "text": "No third control",
+          "x": 214,
+          "y": 2250,
+          "width": 140,
+          "height": 24,
+          "size": 14,
+          "ink": {
+            "x": 214,
+            "y": 2252,
+            "width": 94.9375,
+            "height": 16
+          }
+        },
+        {
+          "name": "Shortcut scope",
+          "text": "Sampler idle · requested shortcut",
+          "x": 24,
+          "y": 2296,
+          "width": 342,
+          "height": 32,
+          "size": 13,
+          "ink": {
+            "x": 24,
+            "y": 2298,
+            "width": 257.453125,
+            "height": 15
+          }
+        },
+        {
+          "name": "Shortcut method label",
+          "text": "Open with",
+          "x": 24,
+          "y": 2042,
+          "width": 342,
+          "height": 24,
+          "size": 14,
+          "ink": {
+            "x": 24,
+            "y": 2044,
+            "width": 63.046875,
+            "height": 16
+          }
+        },
+        {
+          "name": "Shortcut method",
+          "text": "Button shortcut",
+          "x": 36,
+          "y": 2078,
+          "width": 318,
+          "height": 24,
+          "size": 14,
+          "ink": {
+            "x": 36,
+            "y": 2080,
+            "width": 94.171875,
+            "height": 16
+          }
+        },
+        {
+          "name": "Shortcut label 0",
+          "text": "Hold first",
+          "x": 24,
+          "y": 2128,
+          "width": 342,
+          "height": 24,
+          "size": 14,
+          "ink": {
+            "x": 24,
+            "y": 2130,
+            "width": 55.234375,
+            "height": 16
+          }
+        },
+        {
+          "name": "Shortcut label 1",
+          "text": "Then press, or hold",
+          "x": 24,
+          "y": 2214,
+          "width": 164,
+          "height": 24,
+          "size": 14,
+          "ink": {
+            "x": 24,
+            "y": 2216,
+            "width": 120.625,
+            "height": 16
+          }
+        },
+        {
+          "name": "Shortcut label 2",
+          "text": "Third (optional)",
+          "x": 202,
+          "y": 2214,
+          "width": 164,
+          "height": 24,
+          "size": 14,
+          "ink": {
+            "x": 202,
+            "y": 2216,
+            "width": 94.15625,
+            "height": 16
+          }
+        },
+        {
+          "name": "copy / summaryHeading",
+          "text": "Your configuration",
+          "x": 24,
+          "y": 2396,
+          "width": 342,
+          "height": 40,
+          "size": 24,
+          "ink": {
+            "x": 24,
+            "y": 2400,
+            "width": 192.59375,
+            "height": 27
+          }
+        },
+        {
+          "name": "Selection count",
+          "text": "1 feature selected",
+          "x": 24,
+          "y": 2456,
+          "width": 342,
+          "height": 32,
+          "size": 16,
+          "ink": {
+            "x": 24,
+            "y": 2459,
+            "width": 127.203125,
+            "height": 17
+          }
+        },
+        {
+          "name": "Build state",
+          "text": "Build unavailable",
+          "x": 24,
+          "y": 2500,
+          "width": 342,
+          "height": 32,
+          "size": 16,
+          "ink": {
+            "x": 24,
+            "y": 2503,
+            "width": 120.984375,
+            "height": 17
+          }
+        },
+        {
+          "name": "Build blocker",
+          "text": "A selectable Synth build and configurable shortcut dispatcher have not been qualified.",
+          "x": 24,
+          "y": 2540,
+          "width": 342,
+          "height": 96,
+          "size": 16,
+          "ink": {
+            "x": 24,
+            "y": 2543,
+            "width": 309.546875,
+            "height": 41
+          }
+        },
+        {
+          "name": "Button label",
+          "text": "Export configuration",
+          "x": 36,
+          "y": 2662,
+          "width": 318,
+          "height": 24,
+          "size": 16,
+          "ink": {
+            "x": 123.84375,
+            "y": 2665,
+            "width": 142.3125,
+            "height": 17
+          }
+        },
+        {
+          "name": "Button label",
+          "text": "Build firmware",
+          "x": 36,
+          "y": 2718,
+          "width": 139,
+          "height": 24,
+          "size": 16,
+          "ink": {
+            "x": 54.8125,
+            "y": 2721,
+            "width": 101.359375,
+            "height": 17
+          }
+        },
+        {
+          "name": "Button label",
+          "text": "USB-C upload",
+          "x": 215,
+          "y": 2718,
+          "width": 139,
+          "height": 24,
+          "size": 16,
+          "ink": {
+            "x": 233.359375,
+            "y": 2721,
+            "width": 102.28125,
+            "height": 17
+          }
+        },
+        {
+          "name": "copy / transferHeading",
+          "text": "Updating features",
+          "x": 24,
+          "y": 3248,
+          "width": 342,
+          "height": 40,
+          "size": 24,
+          "ink": {
+            "x": 24,
+            "y": 3252,
+            "width": 189.46875,
+            "height": 27
+          }
+        },
+        {
+          "name": "copy / transferNote",
+          "text": "You will be able to change this selection one feature at a time. The verified USB writer installs a complete APP1 firmware image, so a changed selection currently needs a newly composed image and a full update.",
+          "x": 24,
+          "y": 3308,
+          "width": 342,
+          "height": 192,
+          "size": 16,
+          "ink": {
+            "x": 24,
+            "y": 3311,
+            "width": 333.484375,
+            "height": 113
+          }
+        },
+        {
+          "name": "copy / transferLimit",
+          "text": "Independent feature uploads and runtime hot swapping have not been verified. USB installation requires the matching writer, chip/profile checks, full flash readback, a separate status check and a real reboot.",
+          "x": 24,
+          "y": 3512,
+          "width": 342,
+          "height": 152,
+          "size": 16,
+          "ink": {
+            "x": 24,
+            "y": 3515,
+            "width": 323.796875,
+            "height": 113
+          }
+        },
+        {
+          "name": "Bridge qualification",
+          "text": "USB BRIDGE B2 must already be installed and freshly identified. First installation from untouched stock over normal USB is unverified.",
+          "x": 24,
+          "y": 3680,
+          "width": 342,
+          "height": 144,
+          "size": 16,
+          "ink": {
+            "x": 24,
+            "y": 3683,
+            "width": 339.71875,
+            "height": 65
+          }
+        },
+        {
+          "name": "copy / footer",
+          "text": "Feature configuration preview. No device connection.",
+          "x": 24,
+          "y": 3964,
+          "width": 342,
+          "height": 40,
+          "size": 13,
+          "ink": {
+            "x": 24,
+            "y": 3966,
+            "width": 319.859375,
+            "height": 34.5
+          }
+        },
+        {
+          "name": "copy / receiptHeading",
+          "text": "Check a build receipt",
+          "x": 24,
+          "y": 2820,
+          "width": 342,
+          "height": 42,
+          "size": 28,
+          "ink": {
+            "x": 24,
+            "y": 2825,
+            "width": 261.484375,
+            "height": 31
+          }
+        },
+        {
+          "name": "copy / receiptNote",
+          "text": "Choose a local JSON receipt to compare it with your current choices. Only metadata is checked; firmware files and device results remain unverified.",
+          "x": 24,
+          "y": 2878,
+          "width": 342,
+          "height": 120,
+          "size": 16,
+          "ink": {
+            "x": 24,
+            "y": 2881,
+            "width": 339.703125,
+            "height": 89
+          }
+        },
+        {
+          "name": "Button label",
+          "text": "Choose receipt",
+          "x": 36,
+          "y": 3024,
+          "width": 136,
+          "height": 24,
+          "size": 16,
+          "ink": {
+            "x": 50.1875,
+            "y": 3027,
+            "width": 107.625,
+            "height": 17
+          }
+        },
+        {
+          "name": "Button label",
+          "text": "Clear receipt",
+          "x": 208,
+          "y": 3024,
+          "width": 136,
+          "height": 24,
+          "size": 16,
+          "ink": {
+            "x": 230.640625,
+            "y": 3027,
+            "width": 90.703125,
+            "height": 17
+          }
+        },
+        {
+          "name": "copy / receiptLimit",
+          "text": "JSON, up to 128 KiB. This check does not connect to your SP.",
+          "x": 24,
+          "y": 3074,
+          "width": 342,
+          "height": 48,
+          "size": 14,
+          "ink": {
+            "x": 24,
+            "y": 3076,
+            "width": 333.59375,
+            "height": 37
+          }
+        },
+        {
+          "name": "Receipt status",
+          "text": "No receipt selected.",
+          "x": 24,
+          "y": 3136,
+          "width": 342,
+          "height": 36,
+          "size": 16,
+          "ink": {
+            "x": 24,
+            "y": 3139,
+            "width": 141.40625,
+            "height": 17
+          }
+        }
+      ]
+    }
+  ]
+}

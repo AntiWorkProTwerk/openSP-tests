@@ -1,0 +1,17 @@
+{
+  "scope": "Pre-promotion architecture qualification reports, preserved unchanged",
+  "files": [
+    {
+      "name": "exception-fpu-qualification.json",
+      "sha256": "b4f3949f34c53449696f5dd93115977fc7ca99d017eef731e83cb31720b076e7"
+    },
+    {
+      "name": "exception-return-qualification.json",
+      "sha256": "4b455896a4a6028e072bfb7ef598c6ffa0d7e97ff676f9bb8721012269bc3a1f"
+    },
+    {
+      "name": "cpu-verification.json",
+      "sha256": "979caf129b1d6d7d510ff481e4ac7b83ef46304604dcb004605b3ffa8231ea29"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "schema": "opensp-native-design-failed-pass-v1",
+  "source": {
+    "fileId": "24d9d841-759d-81bc-8008-b518bc70d8b3",
+    "pageId": "86caedfe-ea67-80b3-8008-b6f6a00019f6",
+    "page": "Guide series"
+  },
+  "operation": "Fit the new linked Footer utility across existing native layouts",
+  "observation": "The owned Canary tab displayed Aw, Snap! / Error code: Out of Memory. Its MCP task then timed out after 120 seconds.",
+  "cause": "Not established",
+  "recovery": "Reopened the same owned tab directly on the smaller Emulator page. MCP reconnected automatically. Read-only checks found all 14 emulator mains and four layouts; their native snapshots were exported.",
+  "subsequentRead": "All 64 Guide series Footer copies contained the new linked Utility link from the shared main. Their mobile placement still required a responsive override.",
+  "inactivePageAttempt": "A single existing-shape edit was rejected by the official API before its first property changed: Cannot modify a page that is not currently active. A separate read confirmed unchanged height and utility position."
+}

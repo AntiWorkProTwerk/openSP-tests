@@ -1,0 +1,31 @@
+{
+  "scope": "Offline Node/WASM fixture observations; no physical SP result",
+  "initialFixture": {
+    "bytesHex": "00ee100a00ee901a30ee201a11ee102a",
+    "address": "80000000",
+    "entry": "80000001",
+    "instructionLimit": 4,
+    "registers": { "r0": "3fc00000", "r1": "40200000", "control": "00000000", "xpsr": "01000000" },
+    "followingMemory": "zero-filled SDRAM; no terminating branch was included",
+    "observed": {
+      "instructions": 0,
+      "pc": "80000000",
+      "control": 0,
+      "r2": 0,
+      "stepReason": "fault",
+      "diagnostic": "TODO unicorn.js/unicorn/qemu/tcg/tci.c:1272: tcg_qemu_tb_exec_arm(); RuntimeError: Aborted()",
+      "closeDiagnostic": "RuntimeError: memory access out of bounds"
+    },
+    "interpretation": "This incomplete fixture permitted translation past the intended instruction bytes. The exact unsupported translated operation was not identified. It is not evidence of a firmware defect, and the pre-instruction abort shows an instruction-count bound alone does not bound translation behavior."
+  },
+  "correctedFixture": {
+    "bytesHex": "00ee100a00ee901a30ee201a11ee102a00bffee7",
+    "address": "80000000",
+    "entry": "80000001",
+    "instructionLimit": 4,
+    "registers": { "r0": "3fc00000", "r1": "40200000", "control": "00000000", "xpsr": "01000000" },
+    "observed": { "instructions": 4, "stepReason": "budget", "pc": "80000010", "control": "00000004", "r2": "40800000" },
+    "conclusion": "The complete VFP fixture sets CONTROL.FPCA. Integer-only exception delivery detects it and refuses to stage an unsupported extended frame.",
+    "regression": "tests/emulator-exceptions.test.mjs: real M7 VFP execution sets FPCA and integer exception delivery refuses the extended frame"
+  }
+}

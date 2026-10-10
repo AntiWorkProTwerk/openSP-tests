@@ -1,0 +1,36 @@
+(node:21760) ExperimentalWarning: stripTypeScriptTypes is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ the page waits for load and USB same-ID status while unsolicited replies only publish (63.1506ms)
+✔ the page generic reset clears an old mailbox and needs no guest boot steps (7.4091ms)
+✔ file replacement cancels a pending bridge import before worker creation (4.3833ms)
+✔ old load rejection and completion cannot change a replacement file or release its busy state (7.8919ms)
+✔ close cancels pending file reads and worker operations (4.3119ms)
+✔ suspend cancels pending file reads and worker operations (7.2509ms)
+✔ file read results and errors remain fresh across replacement (5.342ms)
+✔ bridge observations preserve bounded command and USB ledgers without firmware bytes (94.6048ms)
+✔ a stalled bridge chunk times out before Worker creation and a late import cannot revive it (5.7699ms)
+✔ the run-publication watchdog closes only its owned bridge and leaves cached diagnostics (10.4579ms)
+✔ only the most recent export intent downloads and replacement discards an old trace (6.4456ms)
+✔ two admitted local cards are copied independently and sent only when Start is requested (5.5005ms)
+✔ invalid card geometry is refused before reading and preserves the paused worker (5.1934ms)
+✔ admitted card changes stage until Apply cards succeeds and keep old NOR ownership (6.805ms)
+✔ failed replacement load leaves the existing paused session available and supports retry (6.9785ms)
+✔ read errors and mismatched buffer lengths preserve previous cards and active session (6.525ms)
+✔ new selection and remove cancel stale card reads without retaining their result (3.9532ms)
+✔ pending reads prevent Start and page suspension cancels their admission (3.3308ms)
+✔ running sessions reject card changes and removal while reset preserves admitted cards (6.7572ms)
+✔ removing an applied card remains staged and replaces the worker only on Apply cards (7.7709ms)
+✔ a replacement import timeout and its late completion preserve the existing session (5.0675ms)
+✔ a faulted replacement snapshot cannot discard the prior virtual session (5.8288ms)
+✔ card names and raw buffers are absent from the page trace envelope (5.164ms)
+✔ terminal initial load failures preserve existing recovery and cached-trace controls (3.733ms)
+✔ initial load publishes safe diagnostics while waiting for the matching trailing status (4.2553ms)
+✔ an old trace reply cannot release candidate-load busy state or expose its diagnostics (8.1632ms)
+ℹ tests 26
+ℹ suites 0
+ℹ pass 26
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1425.1909

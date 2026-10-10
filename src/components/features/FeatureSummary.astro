@@ -1,0 +1,19 @@
+---
+import defaultCopy from '../../content/features.json';
+interface Props {copy?:typeof defaultCopy;sourcePreview?:boolean;}
+const {copy=defaultCopy,sourcePreview=false}=Astro.props;
+---
+<aside class="feature-summary" data-component="Feature summary" aria-labelledby="configuration-title">
+  <h2 id="configuration-title">{copy.summaryHeading}</h2>
+  <p data-selection-count>{copy.emptySummary}</p>
+  <ul class="feature-selection-list" data-selection-list></ul>
+  <p class="feature-build-state" data-build-state>{sourcePreview?"Select a source build":"Build unavailable"}</p>
+  <p class="feature-memory-note">{copy.memoryNote}</p>
+  <div class="feature-validation" data-validation aria-live="polite" aria-atomic="true"></div>
+  <div class="feature-primary-actions">
+    <button type="button" data-export disabled>{copy.export}</button>
+    <button type="button" data-build disabled aria-describedby="feature-build-limit">{copy.build}</button>
+    <button type="button" data-upload disabled aria-describedby="feature-build-limit">{copy.upload}</button>
+  </div>
+  <p id="feature-build-limit" class="feature-build-limit">{sourcePreview?"Source modules can be built locally. Firmware installation remains disabled.":"No composed firmware or matched upload recipe is available for this selection."}</p>
+</aside>

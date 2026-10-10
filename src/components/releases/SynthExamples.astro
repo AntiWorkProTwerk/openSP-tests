@@ -1,0 +1,61 @@
+---
+import SPInstrument from '../SPInstrument.astro';
+import {part,findShape} from '../../lib/penpot';
+import {createExample,renderExample,bitmapPath,sounds,pages,labels} from '../../lib/synth-examples';
+const model=createExample(),poster=bitmapPath(renderExample(model));
+const instrument=part('Instrument'),screen=findShape(instrument,'OLED content slot')!,aperture=findShape(instrument,'OLED circular aperture')!;
+const style=`position:absolute;left:${screen.x/instrument.width*100}%;top:${screen.y/instrument.height*100}%;width:${screen.shape.width/instrument.width*100}%;clip-path:ellipse(${aperture.shape.width/2/screen.shape.width*100}% ${aperture.shape.height/2/screen.shape.height*100}% at ${(aperture.x+aperture.shape.width/2-screen.x)/screen.shape.width*100}% ${(aperture.y+aperture.shape.height/2-screen.y)/screen.shape.height*100}%)`;
+---
+<synth-examples class="synth-examples" aria-label="Interactive openSynth examples" data-penpot-instrument="687117da-a825-80bd-8008-b5694305e7b0" data-penpot-header="bfe8c086-048d-80e0-8008-b6d35f386630" data-penpot-footer="bfe8c086-048d-80e0-8008-b6d35f4ae7d8">
+  <figure class="synth-example-figure">
+    <div class="synth-example-instrument">
+      <SPInstrument>
+        <div slot="screen" class="synth-example-oled" style={style}>
+          <svg viewBox="0 0 128 64" width="128" height="64" aria-hidden="true"><rect width="128" height="64" fill="black"/><path d={poster} fill="white"/></svg>
+          <canvas data-synth-screen width="128" height="64" aria-hidden="true" hidden></canvas>
+        </div>
+      </SPInstrument>
+    </div>
+    <div class="synth-example-display">
+      <svg viewBox="0 0 128 64" width="128" height="64" aria-hidden="true"><rect width="128" height="64" fill="black"/><path d={poster} fill="white"/></svg>
+      <canvas data-synth-screen width="128" height="64" aria-hidden="true" hidden></canvas>
+      <p data-screen-summary>Soft Sine. TONE: CUT 96, RES 0, ENV 0. POLY4, octave 0.</p>
+    </div>
+    <figcaption>Interactive control model with the shared Penpot instrument and original Synth lettering. The waveform is illustrative; the firmware displays completed PCM snapshots. This example produces no audio and never connects to an SP.</figcaption>
+  </figure>
+  <div class="synth-example-controls" hidden>
+    <div class="synth-example-selectors">
+      <label>Sound<select data-sound>{sounds.map((sound,index)=><option value={index}>{String(index+1).padStart(2,'0')} {sound.name}</option>)}</select></label>
+      <label>Parameter page<select data-page>{pages.map((page,index)=><option value={index}>{page}</option>)}</select></label>
+    </div>
+    <div class="synth-example-knobs">
+      {labels[0].map((label,index)=><label data-knob-label><span data-parameter-name>{`CTRL ${index+1}: ${label}`}</span><input type="range" min="0" max="127" value="64" step="1" data-knob={index}/><span data-parameter-value>{index===0?'Parameter 96 / physical 50':'Parameter 0 / physical 50'}</span></label>)}
+    </div>
+    <p class="synth-example-note">CTRL positions begin at 50%. Sound defaults stay in place until that knob moves. Changing page or sound preserves this behavior. Displayed parameter values are normalized from 0 to 100.</p>
+    <div class="synth-example-actions">
+      <button type="button" data-action="value">Tap VALUE</button>
+      <button type="button" data-action="previous">Turn VALUE left</button>
+      <button type="button" data-action="next">Turn VALUE right</button>
+      <button type="button" data-action="menu">SHIFT + VALUE</button>
+      <button type="button" data-action="exit">EXIT</button>
+    </div>
+    <label class="synth-example-checkbox"><input type="checkbox" data-held-value/>Hold VALUE while turning to change octave</label>
+    <div class="synth-example-pads" role="group" aria-label="Synth pads">
+      {Array.from({length:16},(_,index)=><button type="button" data-pad={index} aria-label={`Pad ${index+1}`} aria-pressed="false">{index+1}</button>)}
+    </div>
+    <p class="synth-example-note">Hold a pad with pointer, Space or Enter to show a note. In the REC and pattern choosers, its press selects a destination instead.</p>
+    <div class="synth-example-actions">
+      <button type="button" data-action="record">REC</button>
+      <button type="button" data-action="patterns">PATTERN SELECT</button>
+      <button type="button" data-action="click" aria-pressed="false">SHIFT + PATTERN: REC CLK</button>
+      <button type="button" data-action="boundary">Advance pattern boundary</button>
+    </div>
+    <label>Bank<select data-bank>{Array.from({length:10},(_,index)=><option value={index}>{String.fromCharCode(65+index)}</option>)}</select></label>
+    <label class="synth-example-volume">Synth VOLUME<input type="range" min="0" max="127" value="96" step="1" data-volume/><output data-volume-value>76%</output></label>
+    <p class="synth-example-note">VOLUME targets Synth while it is active. The browser shows the gain setting without generating sound.</p>
+    <div class="synth-example-actions"><button type="button" data-action="animate" aria-pressed="false">Animate preview</button><button type="button" data-action="second">Add one recorded second</button><button type="button" data-action="reset">Reset example</button></div>
+    <p class="synth-example-feedback" data-feedback role="status">Soft Sine defaults. Move a CTRL knob to take control of its parameter.</p>
+  </div>
+  <noscript><p class="synth-example-note">Enable JavaScript to try the controls. The static screen shows Soft Sine at its default TONE settings; all control instructions remain below.</p></noscript>
+</synth-examples>
+<script>import '../../scripts/synth-examples';</script>

@@ -1,0 +1,167 @@
+{
+  "schema": "opensp-feature-registry",
+  "version": 2,
+  "revision": "2026-10-07.full15-source-picker.2",
+  "board": "sp-404mkii",
+  "profiles": [
+    {
+      "id": "roland-5.52-full15-synth-shortcut-source-preview",
+      "label": "Roland v5.52 / Full15 source features",
+      "supported": true,
+      "writer": null,
+      "app1MaxBytes": null,
+      "sourceBuildSupported": true,
+      "firmwareInstallationEligible": false
+    }
+  ],
+  "features": [
+    {
+      "id": "synth",
+      "version": "full15-synth-shortcut-source-preview-2",
+      "shortcutScope": "sampler-idle",
+      "name": "openSynth Full15 shortcuts",
+      "description": "Play synth sounds from the pads and edit their parameters.",
+      "readiness": "Source preview",
+      "evidence": "The 129-unit dispatcher successor links with 25 fresh and 104 inherited objects. Selected config is linked separately. Native launch and hardware remain unqualified.",
+      "profiles": [
+        "roland-5.52-full15-synth-shortcut-source-preview"
+      ],
+      "deliveryReady": false,
+      "blocker": "Firmware build admission and hardware release acceptance are incomplete.",
+      "requires": [
+        "panel-dispatch-v1",
+        "audio-owner-v1",
+        "b2-abi2"
+      ],
+      "exclusiveResources": [
+        "generator-entry-current-adapter"
+      ],
+      "defaultControls": [
+        "SHIFT",
+        "RECORD_SETTING"
+      ],
+      "footprint": {
+        "xipBytes": null,
+        "mutableBytes": null,
+        "scope": "Linked source module only; selected firmware memory and delivery are unqualified."
+      },
+      "source": {
+        "repository": "sp404mk2",
+        "path": "diagnostics/opensynth_native_record_start_finish_01/dispatcher-port-full15-01/SOURCE_SUCCESSOR.json",
+        "sha256": "b5082b02f308c183890dd183e8184ba52c4e8203ec15e467aac1d93a3bd8567f"
+      },
+      "artifact": null,
+      "selectable": true,
+      "defaultLaunch": "native-generator-chooser"
+    },
+    {
+      "id": "usb-recorder",
+      "version": "full15-global-source-preview-1",
+      "shortcutScope": "normal-ui",
+      "name": "USB screen, controls & audio recorder",
+      "description": "Record an SP session on your computer, including screens, control changes and USB audio.",
+      "readiness": "Source preview",
+      "evidence": "The combined Synth shortcut and global screen/control source cohort compiles all129 units and links. Recorder capture starts on the PC. Native routes and hardware remain unqualified.",
+      "profiles": [
+        "roland-5.52-full15-synth-shortcut-source-preview"
+      ],
+      "deliveryReady": false,
+      "blocker": "The combined source module is not admitted for firmware installation or qualified on hardware.",
+      "requires": [
+        "normal-panel-stream-v1",
+        "roland-usb-audio",
+        "pc-recorder-spg1",
+        "b2-abi2"
+      ],
+      "exclusiveResources": [
+        "normal-cdc-stream-owner"
+      ],
+      "defaultControls": [],
+      "footprint": {
+        "xipBytes": null,
+        "mutableBytes": null,
+        "scope": "Linked source module only; selected firmware memory and delivery are unqualified."
+      },
+      "source": {
+        "repository": "sp404mk2",
+        "path": "diagnostics/opensynth_full15_shortcut_global_join_01/selected-global-02/REPORT.json",
+        "sha256": "66487685409289088c648d60d9e9ea6f87fa72b2b7c986724061c8681d8ba1d8"
+      },
+      "artifact": null,
+      "selectable": true,
+      "defaultLaunch": "pc-recorder"
+    },
+    {
+      "id": "stem-splitting",
+      "version": "development-1",
+      "name": "Stem splitting",
+      "description": "Separate a sample into stems.",
+      "readiness": "In development",
+      "evidence": "No qualified device package or memory budget is registered for this feature yet.",
+      "profiles": [],
+      "deliveryReady": false,
+      "blocker": "The stem-splitting provider, firmware adapter and resource budget have not been registered.",
+      "requires": [
+        "stem-provider-v1",
+        "sample-storage-owner-v1",
+        "panel-dispatch-v1"
+      ],
+      "exclusiveResources": [],
+      "defaultControls": [
+        "SHIFT",
+        "COPY"
+      ],
+      "footprint": {
+        "xipBytes": null,
+        "mutableBytes": null,
+        "scope": "No qualified linked resource report."
+      },
+      "source": null,
+      "artifact": null,
+      "selectable": false
+    },
+    {
+      "id": "autotune",
+      "version": "t2p-1",
+      "name": "Autotune",
+      "description": "Correct or shift the pitch of a monophonic input.",
+      "readiness": "Offline listening candidate",
+      "evidence": "T2P is packaged with 22 CPU groups and two stock PCM checks. It has no physical listening result and does not include the full Input FX, key/scale interface or formant processor.",
+      "profiles": [],
+      "deliveryReady": false,
+      "blocker": "The listening candidate and a shared Synth/Autotune entry must be qualified before selectable installation.",
+      "requires": [
+        "panel-dispatch-v1",
+        "audio-owner-v1",
+        "b2-abi2"
+      ],
+      "exclusiveResources": [
+        "generator-entry-current-adapter"
+      ],
+      "defaultControls": [
+        "SHIFT",
+        "PITCH_SPEED"
+      ],
+      "footprint": {
+        "xipBytes": 53984,
+        "mutableBytes": 29944,
+        "scope": "T2P prototype including inherited P6S owners; not an additive composition budget."
+      },
+      "source": {
+        "repository": "sp404mk2-autotune",
+        "path": "diagnostics/autotune_t2p/README.md",
+        "sha256": "23268c1b9f476723804df837c58933122f910ed342eb269522dcc24035202060"
+      },
+      "artifact": {
+        "sha256": "e9213576786f7b35d3f1286fdf1710a1fe86fc2c84311d894c79379c5cff4859",
+        "bytes": 2740960,
+        "identity": "AUTOTUNE T2P"
+      },
+      "selectable": false
+    }
+  ],
+  "releaseFeatures": [
+    "synth",
+    "usb-recorder"
+  ]
+}

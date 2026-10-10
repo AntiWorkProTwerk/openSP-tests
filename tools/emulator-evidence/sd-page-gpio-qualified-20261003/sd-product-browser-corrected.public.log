@@ -1,0 +1,10 @@
+[WebServer] (node:26900) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 1 test using 1 worker
+
+(node:35588) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 [chromium] › tests\emulator-sd-page-runtime.spec.ts:79:1 › product SD selectors deliver two local cards to a real R13 worker and retain them across reset (3.0s)
+
+  1 passed (5.9s)

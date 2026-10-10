@@ -1,0 +1,86 @@
+{
+  "schema": "opensp-pll-board-qualification-v1",
+  "createdUtc": "2026-10-03T06:37:54.8696513Z",
+  "scope": "ARM and USB2 PLL register routing, fixed reference/lock fixtures and independent board tick/reset behavior",
+  "sourceReferenceBase": "OpenSP repository",
+  "sources": {
+    "src/lib/emulator/board.ts": {
+      "bytes": 37227,
+      "sha256": "068a1178757df94a8a5274b869962ca51b25a1d9dfd9b79cf75013206c358827"
+    },
+    "src/lib/emulator/pll-arm.ts": {
+      "bytes": 8904,
+      "sha256": "88eecf9007c2f9ab55332ecbae9b9dfa34137e4c0c7f9813970e930a8f8acfe0"
+    },
+    "src/lib/emulator/pll-usb2.ts": {
+      "bytes": 6530,
+      "sha256": "9b54796d35a8b531acb58a1ed76ce637b01f181e1f343fc30f369e1191997bfd"
+    },
+    "tests/emulator-pll-arm-board.test.mjs": {
+      "bytes": 2461,
+      "sha256": "b506a2e4494379bad4f697f4e6326bb4e8961149d67335ba36cf11e6a1f25035"
+    },
+    "tests/emulator-pll-usb2-board.test.mjs": {
+      "bytes": 1560,
+      "sha256": "d4b1410392e0b3a4e4c71dc10a6d89aa94bdc1ab6366379795f132194a22aeee"
+    },
+    "tests/emulator-pll-arm.test.mjs": {
+      "bytes": 16876,
+      "sha256": "9fc765f3a30ee724d214c5b8ed91528e420d0009e1a866bc1fccc1e8cb7b44ab"
+    },
+    "tests/emulator-pll-usb2.test.mjs": {
+      "bytes": 6884,
+      "sha256": "be75cbffcfd5ee6f34f80cfee33b5ef2f52ca91f8bffa46b25d8ae19df4b91ca"
+    },
+    "docs/emulator-pll-arm.md": {
+      "bytes": 5167,
+      "sha256": "ccf769804b93ac88bdf3e22f986218cf06d9665df5bcbb1aecfaea7ee79dd770"
+    },
+    "docs/emulator-pll-usb2.md": {
+      "bytes": 3363,
+      "sha256": "d23f23611afa9f93d65eb6c6c778f5feaaa22cf81cc39eff376e47254c4c226a"
+    },
+    "tools/test-emulator-stock.mjs": {
+      "bytes": 19714,
+      "sha256": "d584e7e1c7f27801a93b6a7e483c6ba506be91153de0b17faf9bae6afc5baa37"
+    },
+    "tools/emulator-evidence/pll-board-model-tests-20261003.tap": {
+      "bytes": 9683,
+      "sha256": "e7c01430654e0db5746a2d3946173ca80845c18a6a4141ccc7ed555ac2487096"
+    }
+  },
+  "tests": {
+    "componentGroups": 40,
+    "boardGroups": 4,
+    "passed": 44,
+    "failed": 0,
+    "transcript": "tools/emulator-evidence/pll-board-model-tests-20261003.tap",
+    "strictBoardTypesPassed": true,
+    "typeCommand": "node node_modules/typescript/bin/tsc --ignoreConfig --noEmit --strict --allowImportingTsExtensions --target ES2022 --module ESNext --moduleResolution bundler src/lib/emulator/board.ts"
+  },
+  "wholeImageReports": [
+    "../sp404mk2/analysis/emulator/arm_pll_stock_20261003/whole-image.json",
+    "../sp404mk2/analysis/emulator/usb2_pll_stock_20261003/whole-image.json"
+  ],
+  "stockObservation": {
+    "scatterRegions": 12,
+    "postScatterStarts": 1000000,
+    "armDivider": 100,
+    "armReference": 0,
+    "armLocked": true,
+    "usb2GuestInitialization": false,
+    "nextPollHex": "400D80A0",
+    "nextController": "VIDEO PLL",
+    "fullStockBoot": false
+  },
+  "preservedSources": [
+    "tools/emulator-evidence/board-before-arm-pll-20261003/manifest.json",
+    "tools/emulator-evidence/board-before-usb2-pll-20261003/manifest.json"
+  ],
+  "limits": [
+    "Synthetic delay/reference fixtures, without physical clock outputs or settling",
+    "USB2 source/model peer passed; its stock initialization remains unexercised",
+    "Incorrect adjacent-USB assertion and wrong internal controller labels preserved",
+    "No device transport or full stock/sampler evidence"
+  ]
+}

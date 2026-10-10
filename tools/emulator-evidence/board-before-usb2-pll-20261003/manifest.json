@@ -1,0 +1,32 @@
+{
+  "referenceBase": "OpenSP repository",
+  "reason": "Preserve ARM PLL board before USB2 PLL routing",
+  "sources": [
+    {
+      "path": "src/lib/emulator/board.ts",
+      "archived": "board.ts",
+      "bytes": 36558,
+      "sha256": "f43127fb91f149930db8128773d5b3b130cbc1946bef5ef083d789ad34a1eb11"
+    },
+    {
+      "path": "tools/test-emulator-stock.mjs",
+      "archived": "test-emulator-stock.mjs",
+      "bytes": 19635,
+      "sha256": "d809f68de2b3f57a82b732382daef868a904ed847cb05b6f0cfc04223b34e3c0"
+    },
+    {
+      "path": "docs/emulator-pll-usb2.md",
+      "archived": "emulator-pll-usb2.md",
+      "bytes": 2664,
+      "sha256": "fd7bc4a5e06dd72dbd251b3dda27c3137ae3b5699a16a97df3ff35c085a37407"
+    },
+    {
+      "path": "tools/emulator-evidence/pll-usb2-qualification.json",
+      "archived": "pll-usb2-qualification.json",
+      "bytes": 2529,
+      "sha256": "4670b2e04fb2117349888dc5ba9610aedd4a1cd2774c1bbf82c2d213ca1c0d78"
+    }
+  ],
+  "stockReport": "../sp404mk2/analysis/emulator/arm_pll_stock_20261003/whole-image.json",
+  "stockReportSha256": "af83c5326f50b6e8d945fa5a05b5beca470d77c2a08bf5a8bb8ce17fa7915fed"
+}

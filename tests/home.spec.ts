@@ -5,7 +5,6 @@ import article from '../src/content/first-change.json' with {type:'json'};
 import {readFileSync,readdirSync} from 'node:fs';
 const journeyDir=new URL('../src/content/journey/',import.meta.url);
 const journey=readdirSync(journeyDir).filter(name=>name.endsWith('.json')).map(name=>JSON.parse(readFileSync(new URL(name,journeyDir),'utf8'))).sort((a,b)=>a.order-b.order);
-const guideTitles=[article.title,...journey.map(chapter=>chapter.title)];
 const guideRoutes=['/guides/first-change/',...journey.map(chapter=>`/guides/${chapter.slug}/`)];
 
 for(const width of [320,390,600,720,768,1100,1440,1920])for(const theme of ['light','dark']){
@@ -21,7 +20,9 @@ for(const width of [320,390,600,720,768,1100,1440,1920])for(const theme of ['lig
     await expect(page.locator('.intro').first()).toHaveText(copy.intro);
     await expect(page.locator('.repository-note')).toHaveText(copy.repository);
     await expect(page.locator('.section-description')).toHaveText([copy.releasesHeading,copy.guidesHeading]);
-    await expect(page.locator('.guide .title')).toHaveText(guideTitles);
+    await expect(page.locator('.guide')).toHaveCount(0);
+    await expect(page.locator('#guides .section-body')).toHaveText('In progress.');
+    await expect(page.locator('.opensynth-card')).toHaveAttribute('href','/opensynth/');
     expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
     const nav=await page.locator('nav').boundingBox();expect(Math.abs(nav!.x+nav!.width/2-width/2)).toBeLessThan(2);
     const box=await page.locator('.instrument').boundingBox();expect(box!.height/box!.width).toBeCloseTo(570/400,2);
@@ -81,7 +82,8 @@ test('failed screen asset keeps its poster',async({page})=>{
 
 test('published surface has no dead guide links or private design references',async({page,request})=>{
   await page.goto('/');await expect(page.getByText('Planned guides. Not published yet.')).toHaveCount(0);
-  expect(await page.locator('.guide[href]').evaluateAll(links=>links.map(link=>link.getAttribute('href')))).toEqual(guideRoutes);
+  for(const route of guideRoutes)expect((await request.get(route)).ok()).toBe(true);
+  expect((await request.get('/opensynth/')).ok()).toBe(true);
   expect((await request.get('/guides/first-change/')).ok()).toBe(true);
   expect(await page.locator('a[href*="design/studies"],a[href*="penpot"]').count()).toBe(0);
   for(const target of ['/favicon.svg','/robots.txt','/sitemap-index.xml','/build-info.json','/404.html'])expect((await request.get(target)).ok()).toBe(true);

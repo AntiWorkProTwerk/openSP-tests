@@ -1,0 +1,519 @@
+
+> opensp@1.0.0 build
+> node tools/build-design-tokens.mjs && astro build && node tools/check-build.mjs
+
+Mapped 12 Penpot colors and 17 typography assets.
+03:25:33 [content] Syncing content
+03:25:33 [content] Synced content
+03:25:33 [types] Generated 412ms
+03:25:33 [build] output: "static"
+03:25:33 [build] mode: "static"
+03:25:33 [build] directory: <workspace>\dist\
+03:25:33 [build] Collecting build info...
+03:25:33 [build] ✓ Completed in 454ms.
+03:25:33 [build] Building static entrypoints...
+03:25:34 [WARN] [vite] [33m[MODULE_LEVEL_DIRECTIVE] [0mThe semantics of the module level directive "use astro:head-inject" in "src/content/guides/audio-stream.mdx?astroPropagatedAssets" may not be preserved when bundling.
+   [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m src/content/guides/audio-stream.mdx?astroPropagatedAssets:2:6 [38;5;246m][0m
+   [38;5;246m│[0m
+ [38;5;246m2 │[0m [38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m"use astro:head-inject";
+ [38;5;240m  │[0m               ────────────┬───────────  
+ [38;5;240m  │[0m                           ╰───────────── module level directive may not be preserved
+ [38;5;240m  │[0m 
+ [38;5;240m  │[0m [38;5;115mHelp[0m: For more information, see https://rolldown.rs/in-depth/directives#other-directives
+[38;5;246m───╯[0m
+
+03:25:34 [WARN] [vite] [33m[MODULE_LEVEL_DIRECTIVE] [0mThe semantics of the module level directive "use astro:head-inject" in "src/content/guides/meet-the-instrument.mdx?astroPropagatedAssets" may not be preserved when bundling.
+   [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m src/content/guides/meet-the-instrument.mdx?astroPropagatedAssets:2:6 [38;5;246m][0m
+   [38;5;246m│[0m
+ [38;5;246m2 │[0m [38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m"use astro:head-inject";
+ [38;5;240m  │[0m               ────────────┬───────────  
+ [38;5;240m  │[0m                           ╰───────────── module level directive may not be preserved
+ [38;5;240m  │[0m 
+ [38;5;240m  │[0m [38;5;115mHelp[0m: For more information, see https://rolldown.rs/in-depth/directives#other-directives
+[38;5;246m───╯[0m
+
+03:25:34 [WARN] [vite] [33m[MODULE_LEVEL_DIRECTIVE] [0mThe semantics of the module level directive "use astro:head-inject" in "src/content/guides/keeping-the-updater.mdx?astroPropagatedAssets" may not be preserved when bundling.
+   [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m src/content/guides/keeping-the-updater.mdx?astroPropagatedAssets:2:6 [38;5;246m][0m
+   [38;5;246m│[0m
+ [38;5;246m2 │[0m [38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m"use astro:head-inject";
+ [38;5;240m  │[0m               ────────────┬───────────  
+ [38;5;240m  │[0m                           ╰───────────── module level directive may not be preserved
+ [38;5;240m  │[0m 
+ [38;5;240m  │[0m [38;5;115mHelp[0m: For more information, see https://rolldown.rs/in-depth/directives#other-directives
+[38;5;246m───╯[0m
+
+03:25:34 [WARN] [vite] [33m[MODULE_LEVEL_DIRECTIVE] [0mThe semantics of the module level directive "use astro:head-inject" in "src/content/guides/first-change.mdx?astroPropagatedAssets" may not be preserved when bundling.
+   [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m src/content/guides/first-change.mdx?astroPropagatedAssets:2:6 [38;5;246m][0m
+   [38;5;246m│[0m
+ [38;5;246m2 │[0m [38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m"use astro:head-inject";
+ [38;5;240m  │[0m               ────────────┬───────────  
+ [38;5;240m  │[0m                           ╰───────────── module level directive may not be preserved
+ [38;5;240m  │[0m 
+ [38;5;240m  │[0m [38;5;115mHelp[0m: For more information, see https://rolldown.rs/in-depth/directives#other-directives
+[38;5;246m───╯[0m
+
+03:25:34 [WARN] [vite] [33m[MODULE_LEVEL_DIRECTIVE] [0mThe semantics of the module level directive "use astro:head-inject" in "src/content/guides/pitch-correction.mdx?astroPropagatedAssets" may not be preserved when bundling.
+   [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m src/content/guides/pitch-correction.mdx?astroPropagatedAssets:2:6 [38;5;246m][0m
+   [38;5;246m│[0m
+ [38;5;246m2 │[0m [38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m"use astro:head-inject";
+ [38;5;240m  │[0m               ────────────┬───────────  
+ [38;5;240m  │[0m                           ╰───────────── module level directive may not be preserved
+ [38;5;240m  │[0m 
+ [38;5;240m  │[0m [38;5;115mHelp[0m: For more information, see https://rolldown.rs/in-depth/directives#other-directives
+[38;5;246m───╯[0m
+
+03:25:34 [WARN] [vite] [33m[MODULE_LEVEL_DIRECTIVE] [0mThe semantics of the module level directive "use astro:head-inject" in "src/content/guides/verified-capture.mdx?astroPropagatedAssets" may not be preserved when bundling.
+   [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m src/content/guides/verified-capture.mdx?astroPropagatedAssets:2:6 [38;5;246m][0m
+   [38;5;246m│[0m
+ [38;5;246m2 │[0m [38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m"use astro:head-inject";
+ [38;5;240m  │[0m               ────────────┬───────────  
+ [38;5;240m  │[0m                           ╰───────────── module level directive may not be preserved
+ [38;5;240m  │[0m 
+ [38;5;240m  │[0m [38;5;115mHelp[0m: For more information, see https://rolldown.rs/in-depth/directives#other-directives
+[38;5;246m───╯[0m
+
+03:25:34 [WARN] [vite] [33m[MODULE_LEVEL_DIRECTIVE] [0mThe semantics of the module level directive "use astro:head-inject" in "src/content/guides/bootloader-boundaries.mdx?astroPropagatedAssets" may not be preserved when bundling.
+   [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m src/content/guides/bootloader-boundaries.mdx?astroPropagatedAssets:2:6 [38;5;246m][0m
+   [38;5;246m│[0m
+ [38;5;246m2 │[0m [38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m"use astro:head-inject";
+ [38;5;240m  │[0m               ────────────┬───────────  
+ [38;5;240m  │[0m                           ╰───────────── module level directive may not be preserved
+ [38;5;240m  │[0m 
+ [38;5;240m  │[0m [38;5;115mHelp[0m: For more information, see https://rolldown.rs/in-depth/directives#other-directives
+[38;5;246m───╯[0m
+
+03:25:34 [WARN] [vite] [33m[MODULE_LEVEL_DIRECTIVE] [0mThe semantics of the module level directive "use astro:head-inject" in "src/content/guides/original-sdk.mdx?astroPropagatedAssets" may not be preserved when bundling.
+   [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m src/content/guides/original-sdk.mdx?astroPropagatedAssets:2:6 [38;5;246m][0m
+   [38;5;246m│[0m
+ [38;5;246m2 │[0m [38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m"use astro:head-inject";
+ [38;5;240m  │[0m               ────────────┬───────────  
+ [38;5;240m  │[0m                           ╰───────────── module level directive may not be preserved
+ [38;5;240m  │[0m 
+ [38;5;240m  │[0m [38;5;115mHelp[0m: For more information, see https://rolldown.rs/in-depth/directives#other-directives
+[38;5;246m───╯[0m
+
+03:25:34 [WARN] [vite] [33m[MODULE_LEVEL_DIRECTIVE] [0mThe semantics of the module level directive "use astro:head-inject" in "src/content/guides/first-animation.mdx?astroPropagatedAssets" may not be preserved when bundling.
+   [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m src/content/guides/first-animation.mdx?astroPropagatedAssets:2:6 [38;5;246m][0m
+   [38;5;246m│[0m
+ [38;5;246m2 │[0m [38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m"use astro:head-inject";
+ [38;5;240m  │[0m               ────────────┬───────────  
+ [38;5;240m  │[0m                           ╰───────────── module level directive may not be preserved
+ [38;5;240m  │[0m 
+ [38;5;240m  │[0m [38;5;115mHelp[0m: For more information, see https://rolldown.rs/in-depth/directives#other-directives
+[38;5;246m───╯[0m
+
+03:25:34 [WARN] [vite] [33m[MODULE_LEVEL_DIRECTIVE] [0mThe semantics of the module level directive "use astro:head-inject" in "src/content/guides/mapping-controls.mdx?astroPropagatedAssets" may not be preserved when bundling.
+   [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m src/content/guides/mapping-controls.mdx?astroPropagatedAssets:2:6 [38;5;246m][0m
+   [38;5;246m│[0m
+ [38;5;246m2 │[0m [38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m"use astro:head-inject";
+ [38;5;240m  │[0m               ────────────┬───────────  
+ [38;5;240m  │[0m                           ╰───────────── module level directive may not be preserved
+ [38;5;240m  │[0m 
+ [38;5;240m  │[0m [38;5;115mHelp[0m: For more information, see https://rolldown.rs/in-depth/directives#other-directives
+[38;5;246m───╯[0m
+
+03:25:34 [WARN] [vite] [33m[MODULE_LEVEL_DIRECTIVE] [0mThe semantics of the module level directive "use astro:head-inject" in "src/content/guides/named-inputs.mdx?astroPropagatedAssets" may not be preserved when bundling.
+   [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m src/content/guides/named-inputs.mdx?astroPropagatedAssets:2:6 [38;5;246m][0m
+   [38;5;246m│[0m
+ [38;5;246m2 │[0m [38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m"use astro:head-inject";
+ [38;5;240m  │[0m               ────────────┬───────────  
+ [38;5;240m  │[0m                           ╰───────────── module level directive may not be preserved
+ [38;5;240m  │[0m 
+ [38;5;240m  │[0m [38;5;115mHelp[0m: For more information, see https://rolldown.rs/in-depth/directives#other-directives
+[38;5;246m───╯[0m
+
+03:25:34 [WARN] [vite] [33m[MODULE_LEVEL_DIRECTIVE] [0mThe semantics of the module level directive "use astro:head-inject" in "src/content/guides/original-boot.mdx?astroPropagatedAssets" may not be preserved when bundling.
+   [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m src/content/guides/original-boot.mdx?astroPropagatedAssets:2:6 [38;5;246m][0m
+   [38;5;246m│[0m
+ [38;5;246m2 │[0m [38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m"use astro:head-inject";
+ [38;5;240m  │[0m               ────────────┬───────────  
+ [38;5;240m  │[0m                           ╰───────────── module level directive may not be preserved
+ [38;5;240m  │[0m 
+ [38;5;240m  │[0m [38;5;115mHelp[0m: For more information, see https://rolldown.rs/in-depth/directives#other-directives
+[38;5;246m───╯[0m
+
+03:25:34 [WARN] [vite] [33m[MODULE_LEVEL_DIRECTIVE] [0mThe semantics of the module level directive "use astro:head-inject" in "src/content/guides/finding-audio.mdx?astroPropagatedAssets" may not be preserved when bundling.
+   [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m src/content/guides/finding-audio.mdx?astroPropagatedAssets:2:6 [38;5;246m][0m
+   [38;5;246m│[0m
+ [38;5;246m2 │[0m [38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m"use astro:head-inject";
+ [38;5;240m  │[0m               ────────────┬───────────  
+ [38;5;240m  │[0m                           ╰───────────── module level directive may not be preserved
+ [38;5;240m  │[0m 
+ [38;5;240m  │[0m [38;5;115mHelp[0m: For more information, see https://rolldown.rs/in-depth/directives#other-directives
+[38;5;246m───╯[0m
+
+03:25:34 [WARN] [vite] [33m[MODULE_LEVEL_DIRECTIVE] [0mThe semantics of the module level directive "use astro:head-inject" in "src/content/guides/pad-information.mdx?astroPropagatedAssets" may not be preserved when bundling.
+   [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m src/content/guides/pad-information.mdx?astroPropagatedAssets:2:6 [38;5;246m][0m
+   [38;5;246m│[0m
+ [38;5;246m2 │[0m [38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m"use astro:head-inject";
+ [38;5;240m  │[0m               ────────────┬───────────  
+ [38;5;240m  │[0m                           ╰───────────── module level directive may not be preserved
+ [38;5;240m  │[0m 
+ [38;5;240m  │[0m [38;5;115mHelp[0m: For more information, see https://rolldown.rs/in-depth/directives#other-directives
+[38;5;246m───╯[0m
+
+03:25:34 [WARN] [vite] [33m[MODULE_LEVEL_DIRECTIVE] [0mThe semantics of the module level directive "use astro:head-inject" in "src/content/guides/partial-update.mdx?astroPropagatedAssets" may not be preserved when bundling.
+   [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m src/content/guides/partial-update.mdx?astroPropagatedAssets:2:6 [38;5;246m][0m
+   [38;5;246m│[0m
+ [38;5;246m2 │[0m [38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m"use astro:head-inject";
+ [38;5;240m  │[0m               ────────────┬───────────  
+ [38;5;240m  │[0m                           ╰───────────── module level directive may not be preserved
+ [38;5;240m  │[0m 
+ [38;5;240m  │[0m [38;5;115mHelp[0m: For more information, see https://rolldown.rs/in-depth/directives#other-directives
+[38;5;246m───╯[0m
+
+03:25:34 [WARN] [vite] [33m[MODULE_LEVEL_DIRECTIVE] [0mThe semantics of the module level directive "use astro:head-inject" in "src/content/guides/usb-updates.mdx?astroPropagatedAssets" may not be preserved when bundling.
+   [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m src/content/guides/usb-updates.mdx?astroPropagatedAssets:2:6 [38;5;246m][0m
+   [38;5;246m│[0m
+ [38;5;246m2 │[0m [38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m"use astro:head-inject";
+ [38;5;240m  │[0m               ────────────┬───────────  
+ [38;5;240m  │[0m                           ╰───────────── module level directive may not be preserved
+ [38;5;240m  │[0m 
+ [38;5;240m  │[0m [38;5;115mHelp[0m: For more information, see https://rolldown.rs/in-depth/directives#other-directives
+[38;5;246m───╯[0m
+
+03:25:34 [WARN] [vite] [33m[MODULE_LEVEL_DIRECTIVE] [0mThe semantics of the module level directive "use astro:head-inject" in "src/content/guides/ram-loader.mdx?astroPropagatedAssets" may not be preserved when bundling.
+   [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m src/content/guides/ram-loader.mdx?astroPropagatedAssets:2:6 [38;5;246m][0m
+   [38;5;246m│[0m
+ [38;5;246m2 │[0m [38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m"use astro:head-inject";
+ [38;5;240m  │[0m               ────────────┬───────────  
+ [38;5;240m  │[0m                           ╰───────────── module level directive may not be preserved
+ [38;5;240m  │[0m 
+ [38;5;240m  │[0m [38;5;115mHelp[0m: For more information, see https://rolldown.rs/in-depth/directives#other-directives
+[38;5;246m───╯[0m
+
+03:25:34 [WARN] [vite] [33m[MODULE_LEVEL_DIRECTIVE] [0mThe semantics of the module level directive "use astro:head-inject" in "src/content/guides/synth-design.mdx?astroPropagatedAssets" may not be preserved when bundling.
+   [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m src/content/guides/synth-design.mdx?astroPropagatedAssets:2:6 [38;5;246m][0m
+   [38;5;246m│[0m
+ [38;5;246m2 │[0m [38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m"use astro:head-inject";
+ [38;5;240m  │[0m               ────────────┬───────────  
+ [38;5;240m  │[0m                           ╰───────────── module level directive may not be preserved
+ [38;5;240m  │[0m 
+ [38;5;240m  │[0m [38;5;115mHelp[0m: For more information, see https://rolldown.rs/in-depth/directives#other-directives
+[38;5;246m───╯[0m
+
+03:25:34 [vite] ✓ built in 390ms
+03:25:34 [vite] ✓ built in 86ms
+03:25:34 [build] Rearranging server assets...
+
+ generating static routes 
+03:25:34   ├─ /404.html (+8ms) 
+03:25:34   ├─ /emulator/index.html (+14ms) 
+03:25:34   ├─ /evidence/pad-information.json (+2ms) 
+03:25:34   ├─ /evidence/first-animation.json (+2ms) 
+03:25:34   ├─ /evidence/verified-capture.json (+2ms) 
+03:25:34   ├─ /evidence/original-boot.json (+1ms) 
+03:25:34   ├─ /evidence/mapping-controls.json (+2ms) 
+03:25:34   ├─ /evidence/named-inputs.json (+2ms) 
+03:25:34   ├─ /evidence/usb-updates.json (+2ms) 
+03:25:34   ├─ /evidence/keeping-the-updater.json (+2ms) 
+03:25:34   ├─ /evidence/partial-update.json (+1ms) 
+03:25:34   ├─ /evidence/ram-loader.json (+2ms) 
+03:25:34   ├─ /evidence/finding-audio.json (+2ms) 
+03:25:34   ├─ /evidence/audio-stream.json (+3ms) 
+03:25:34   ├─ /evidence/original-sdk.json (+2ms) 
+03:25:34   ├─ /evidence/bootloader-boundaries.json (+1ms) 
+03:25:34   ├─ /evidence/pitch-correction.json (+1ms) 
+03:25:34   ├─ /evidence/synth-design.json (+1ms) 
+03:25:34   ├─ /examples/pad-information.py (+1ms) 
+03:25:34   ├─ /examples/first-animation.py (+1ms) 
+03:25:34   ├─ /examples/verified-capture.py (+2ms) 
+03:25:34   ├─ /examples/original-boot.py (+2ms) 
+03:25:34   ├─ /examples/mapping-controls.py (+2ms) 
+03:25:34   ├─ /examples/named-inputs.py (+2ms) 
+03:25:34   ├─ /examples/usb-updates.py (+1ms) 
+03:25:34   ├─ /examples/keeping-the-updater.py (+1ms) 
+03:25:34   ├─ /examples/partial-update.py (+1ms) 
+03:25:34   ├─ /examples/ram-loader.py (+1ms) 
+03:25:34   ├─ /examples/finding-audio.py (+1ms) 
+03:25:34   ├─ /examples/audio-stream.py (+1ms) 
+03:25:34   ├─ /examples/original-sdk.py (+1ms) 
+03:25:34   ├─ /examples/bootloader-boundaries.py (+2ms) 
+03:25:34   ├─ /examples/pitch-correction.py (+2ms) 
+03:25:34   ├─ /examples/synth-design.py (+3ms) 
+03:25:34   ├─ /guides/index.html (+6ms) 
+03:25:34   ├─ /guides/audio-stream/index.html (+24ms) 
+03:25:34   ├─ /guides/bootloader-boundaries/index.html (+7ms) 
+03:25:34   ├─ /guides/finding-audio/index.html (+6ms) 
+03:25:34   ├─ /guides/first-animation/index.html (+8ms) 
+03:25:34   ├─ /guides/first-change/index.html (+15ms) 
+03:25:34   ├─ /guides/keeping-the-updater/index.html (+15ms) 
+03:25:34   ├─ /guides/mapping-controls/index.html (+7ms) 
+03:25:34   ├─ /guides/named-inputs/index.html (+6ms) 
+03:25:34   ├─ /guides/original-boot/index.html (+8ms) 
+03:25:34   ├─ /guides/original-sdk/index.html (+6ms) 
+03:25:34   ├─ /guides/pad-information/index.html (+6ms) 
+03:25:34   ├─ /guides/partial-update/index.html (+6ms) 
+03:25:34   ├─ /guides/pitch-correction/index.html (+6ms) 
+03:25:34   ├─ /guides/ram-loader/index.html (+8ms) 
+03:25:34   ├─ /guides/synth-design/index.html (+9ms) 
+03:25:34   ├─ /guides/usb-updates/index.html (+6ms) 
+03:25:34   ├─ /guides/verified-capture/index.html (+8ms) 
+03:25:34   ├─ /index.html (+5ms) 
+03:25:34 ✓ Completed in 267ms.
+
+03:25:34 [build] ✓ Completed in 815ms.
+03:25:34 [@astrojs/sitemap] `sitemap-index.xml` created at `dist`
+03:25:34 [build] 21 page(s) built in 1.29s
+03:25:34 [build] Complete!
+{
+  "commit": "f64ec97250d5c6ed30d4615f901c8a8ca86a65c2",
+  "astro": "7.3.5",
+  "homepageSha256": "d1a5e0421ae963bfd1bcdf87e82bd867319bf583ac843aa80b5f570ba97e5d58",
+  "penpotSnapshotSha256": "b348105939dd665ab46f3fc559ae81139d94f0135f2fcc7aaf205a4f1621fdf3",
+  "guideDesignSha256": "dd86b8ccb59ea092ec81f677563d5bf695c35b4a2e6a3c471558b9ff6f37a177",
+  "journeyContentSha256": "3d3a281573dc80c0553df6fa395e003606507b6dc31b0160f611199dc0b6e7ba",
+  "journeyDesignSha256": "3442501dac070876e1e2813d5d385c1a8b179ff259c78ebdd6adda6026aa3e2f",
+  "journeyLayoutsSha256": "c9cdded4fc00532b1aab819a693f0f6b7f2d9fb8ad4473b7a88e7bbcab6cd49e",
+  "javascriptGzipBytes": 12880,
+  "homepageGzipBytes": 8167,
+  "pages": [
+    {
+      "path": "404.html",
+      "sha256": "2ff2af2ff8654952866db4ab254ceaba2d3bc5ef60f1e533ba35e45752873fae",
+      "gzipBytes": 1205,
+      "inlineJavascriptGzipBytes": 453,
+      "initialJavascriptGzipBytes": 1571,
+      "activeJavascriptGzipBytes": 1571
+    },
+    {
+      "path": "emulator/index.html",
+      "sha256": "6eeaa8c479369db9fe50671319bd4ccb27ab3f90c905e3d50a373aae8f59df8f",
+      "gzipBytes": 7448,
+      "inlineJavascriptGzipBytes": 453,
+      "initialJavascriptGzipBytes": 9196,
+      "activeJavascriptGzipBytes": 9196
+    },
+    {
+      "path": "guides/audio-stream/index.html",
+      "sha256": "bf72c32e004999b948f8c090aa4d4bded11bc7f1cc8943513292c735d30a74ca",
+      "gzipBytes": 11718,
+      "inlineJavascriptGzipBytes": 1020,
+      "initialJavascriptGzipBytes": 6159,
+      "activeJavascriptGzipBytes": 12365
+    },
+    {
+      "path": "guides/bootloader-boundaries/index.html",
+      "sha256": "400d479172f007829099c4e1829c27ff584f9b265e37df53406a4b9a652da91d",
+      "gzipBytes": 12451,
+      "inlineJavascriptGzipBytes": 1020,
+      "initialJavascriptGzipBytes": 6159,
+      "activeJavascriptGzipBytes": 12365
+    },
+    {
+      "path": "guides/finding-audio/index.html",
+      "sha256": "851d14c7653c89891f566361f768240dd2e4c5d920c7e8770bfe048e275a477d",
+      "gzipBytes": 11859,
+      "inlineJavascriptGzipBytes": 1020,
+      "initialJavascriptGzipBytes": 6159,
+      "activeJavascriptGzipBytes": 12365
+    },
+    {
+      "path": "guides/first-animation/index.html",
+      "sha256": "4c10f6ad994347c15e430334b56c7c3833fdacf02865b56d0256d5a11096da13",
+      "gzipBytes": 12271,
+      "inlineJavascriptGzipBytes": 1020,
+      "initialJavascriptGzipBytes": 6159,
+      "activeJavascriptGzipBytes": 12365
+    },
+    {
+      "path": "guides/first-change/index.html",
+      "sha256": "6567d79cf98f52d9b2eef8c47a83bd86201224fc8f23fa9d7efc80f7bf675ce6",
+      "gzipBytes": 16414,
+      "inlineJavascriptGzipBytes": 1020,
+      "initialJavascriptGzipBytes": 6674,
+      "activeJavascriptGzipBytes": 12880
+    },
+    {
+      "path": "guides/index.html",
+      "sha256": "d0804463d2e8e5295d44d30cd92d132a77ab459a8c198fd689071d7bcd5b81cc",
+      "gzipBytes": 3155,
+      "inlineJavascriptGzipBytes": 453,
+      "initialJavascriptGzipBytes": 1571,
+      "activeJavascriptGzipBytes": 1571
+    },
+    {
+      "path": "guides/keeping-the-updater/index.html",
+      "sha256": "460b3d3ceab4cb5521b20cf831a6d918eef4d61cef706015dd275711b5ac59a7",
+      "gzipBytes": 11248,
+      "inlineJavascriptGzipBytes": 1020,
+      "initialJavascriptGzipBytes": 6159,
+      "activeJavascriptGzipBytes": 12365
+    },
+    {
+      "path": "guides/mapping-controls/index.html",
+      "sha256": "c4d324f7ea286ac2d5ecec0528302d139a84abc63fb94bd2ccbb36bd8d1ce9a6",
+      "gzipBytes": 12069,
+      "inlineJavascriptGzipBytes": 1020,
+      "initialJavascriptGzipBytes": 6159,
+      "activeJavascriptGzipBytes": 12365
+    },
+    {
+      "path": "guides/named-inputs/index.html",
+      "sha256": "ba134ac38395ab6690090f61e20553b4a5fbcd3065b2fad4e24aec739b4867c3",
+      "gzipBytes": 11862,
+      "inlineJavascriptGzipBytes": 1020,
+      "initialJavascriptGzipBytes": 6159,
+      "activeJavascriptGzipBytes": 12365
+    },
+    {
+      "path": "guides/original-boot/index.html",
+      "sha256": "d1e5d806989c47670948b4002645261a460770e4b94add195d051c5b809a9507",
+      "gzipBytes": 11907,
+      "inlineJavascriptGzipBytes": 1020,
+      "initialJavascriptGzipBytes": 6159,
+      "activeJavascriptGzipBytes": 12365
+    },
+    {
+      "path": "guides/original-sdk/index.html",
+      "sha256": "6cb6c829a3c70bd24fff15f3f9705e65860cde5b6bfb5ad040444277706c53d6",
+      "gzipBytes": 11961,
+      "inlineJavascriptGzipBytes": 1020,
+      "initialJavascriptGzipBytes": 6159,
+      "activeJavascriptGzipBytes": 12365
+    },
+    {
+      "path": "guides/pad-information/index.html",
+      "sha256": "2db28a08024487bf93550c26e283182ae0a8f7f318a87fba7641331f50bc754a",
+      "gzipBytes": 11794,
+      "inlineJavascriptGzipBytes": 1020,
+      "initialJavascriptGzipBytes": 6159,
+      "activeJavascriptGzipBytes": 12365
+    },
+    {
+      "path": "guides/partial-update/index.html",
+      "sha256": "f4a43906652fba2f0e03e111459dc39e926a2bb2f0621f59351e8fe0a118946c",
+      "gzipBytes": 11801,
+      "inlineJavascriptGzipBytes": 1020,
+      "initialJavascriptGzipBytes": 6159,
+      "activeJavascriptGzipBytes": 12365
+    },
+    {
+      "path": "guides/pitch-correction/index.html",
+      "sha256": "02684201c4082f4cd40e60cc95775b62f6bd949a07ecc5b34e3741f5372d27aa",
+      "gzipBytes": 12353,
+      "inlineJavascriptGzipBytes": 1020,
+      "initialJavascriptGzipBytes": 6159,
+      "activeJavascriptGzipBytes": 12365
+    },
+    {
+      "path": "guides/ram-loader/index.html",
+      "sha256": "19c730cfb6e2cad2edac048467eba093ed7ea9f804af292f4fbdf777d10654a8",
+      "gzipBytes": 11422,
+      "inlineJavascriptGzipBytes": 1020,
+      "initialJavascriptGzipBytes": 6159,
+      "activeJavascriptGzipBytes": 12365
+    },
+    {
+      "path": "guides/synth-design/index.html",
+      "sha256": "3181938965d2b6b0d93179080893b5be251bf6c01cc28143246bd1bff450a2a3",
+      "gzipBytes": 12075,
+      "inlineJavascriptGzipBytes": 1020,
+      "initialJavascriptGzipBytes": 6159,
+      "activeJavascriptGzipBytes": 12365
+    },
+    {
+      "path": "guides/usb-updates/index.html",
+      "sha256": "ce4b58ae0f8ddc96702bf7677de43dbdce2229bd8847215f2b083a618e3e5abf",
+      "gzipBytes": 11564,
+      "inlineJavascriptGzipBytes": 1020,
+      "initialJavascriptGzipBytes": 6159,
+      "activeJavascriptGzipBytes": 12365
+    },
+    {
+      "path": "guides/verified-capture/index.html",
+      "sha256": "7d8a894ab57019f10895f4b84365454f8bc9aaa59f4a1251ffca202090f531f4",
+      "gzipBytes": 12354,
+      "inlineJavascriptGzipBytes": 1020,
+      "initialJavascriptGzipBytes": 6159,
+      "activeJavascriptGzipBytes": 12365
+    },
+    {
+      "path": "index.html",
+      "sha256": "d1a5e0421ae963bfd1bcdf87e82bd867319bf583ac843aa80b5f570ba97e5d58",
+      "gzipBytes": 8167,
+      "inlineJavascriptGzipBytes": 1945,
+      "initialJavascriptGzipBytes": 3063,
+      "activeJavascriptGzipBytes": 3063
+    }
+  ],
+  "workingTreeDirty": true,
+  "journeyIndexLayoutsSha256": "878090a901855abc61ec4ee59d513b4fec09c414cb0a4ee3eaf5399c48edb1a1",
+  "totalJavascriptGzipBytes": 95432,
+  "emulatorRuntime": {
+    "loadTrigger": "Start",
+    "workerJavascriptGzipBytes": 42680,
+    "clientBridgeJavascriptGzipBytes": 5978,
+    "engineJavascriptGzipBytes": 11253,
+    "javascriptGzipBytes": 59911,
+    "wasmBytes": 706188,
+    "wasmGzipBytes": 238126,
+    "artifacts": [
+      {
+        "path": "emulator/vendor/unicorn-arm.js",
+        "bytes": 43313,
+        "gzipBytes": 11253,
+        "sha256": "d8bc37b898ccbc5b429f17112add6ad33a8a9b35df4146034ba141b992dae007"
+      },
+      {
+        "path": "emulator/vendor/unicorn-arm.wasm",
+        "bytes": 706188,
+        "gzipBytes": 238126,
+        "sha256": "399f9ca4eecc11d111d3182e251fbfb8ccc69e88f19f06650e945482eaf1a7d1"
+      },
+      {
+        "path": "emulator/vendor/LICENSE-GPL-2.0.txt",
+        "bytes": 18092,
+        "gzipBytes": 6808,
+        "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643"
+      },
+      {
+        "path": "emulator/vendor/UNICORN-COPYING.txt",
+        "bytes": 17992,
+        "gzipBytes": 6827,
+        "sha256": "6f04ae8364d0079a192b14635f4b1da294ce18724c034c39a6a41d1b09df6100"
+      },
+      {
+        "path": "emulator/vendor/UNICORN-AUTHORS.txt",
+        "bytes": 81,
+        "gzipBytes": 80,
+        "sha256": "6dff517f42f12f2c64d0864cc06a7d2a1cc10c7435a1167a49c625e60813f51c"
+      },
+      {
+        "path": "emulator/vendor/UNICORN-CREDITS.txt",
+        "bytes": 2197,
+        "gzipBytes": 1231,
+        "sha256": "ea18f463dee60f35024f5116f2c7fd553cb355fcf21843ac71e5406f0aa3279d"
+      }
+    ],
+    "workerScripts": [
+      {
+        "path": "_astro/emulator-worker-CekNVTkf.js",
+        "bytes": 139223,
+        "sha256": "36eebc4b35bbeff41806ada2734ada938dca4ea4f21752d5deb10ad7db4d1b0b"
+      }
+    ],
+    "clientBridgeScripts": [
+      {
+        "path": "_astro/worker-rpc.CcgW7O_m.js",
+        "bytes": 17963,
+        "sha256": "fb192f36c9ab77a56c1c2701bf87f91503e2bbd2195fec0d1ca463a0fc3fe8d7"
+      }
+    ],
+    "limits": {
+      "javascriptGzipBytes": 131072,
+      "wasmBytes": 2097152
+    }
+  },
+  "emulatorDesign": {
+    "components": "bb5b6df751a1347382e7f793386b905c2f39345595083466ae26894fcbdde65c",
+    "layouts": "04145c5921a85b28fe181de9977b6be9890a6d3ffbb19577be52b124a6fbe1a2",
+    "states": "769f47551a99d2d78525e47b85fd164f358f673fe1a31d838ffe9540d60915a6",
+    "footer": "4969530c032b10d156cc132a14ecc0ddbe19a5299fa69085b2ee70ecccc5df8e",
+    "footerPropagation": "38194adc20453433d45580488a158ef7e51d85bedfbf90a9cca2b14b53d14b3e",
+    "footerBounds": "8286db9cfc27e56a4f6e8be8514ed4fac1b4aed599fc37914e11903413030aeb",
+    "copy": "bdb095cacc14906409276cf3455b61a9c5207d96124ba29a5357025a1740eefc"
+  },
+  "scriptBudgetScope": "maximum per-page static imports plus the largest single lazy demonstration group and inline scripts; demand-loaded ARM runtime measured separately in emulatorRuntime",
+  "demoDesignSha256": "5ae3880a3d75673ff0e3c6ef5f7bd9c57d3525e8538a594c65101a305b3c7311"
+}

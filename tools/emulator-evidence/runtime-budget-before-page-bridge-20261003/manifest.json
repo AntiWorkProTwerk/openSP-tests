@@ -1,0 +1,13 @@
+{
+  "reason": "Preserve Worker/engine-only runtime accounting before charging demand-loaded client bridge",
+  "sources": [
+    {
+      "path": "tools/check-build.mjs",
+      "sha256": "4758c6654ac84d63fdb47c6b36f3d1239712a767cec2ce70aa7170f8ae49d0ee"
+    },
+    {
+      "path": "dist/build-info.json",
+      "sha256": "6c34220d1246e375ed40878a0746126929e007178e955b122151f897fa85fe33"
+    }
+  ]
+}

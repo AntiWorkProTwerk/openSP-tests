@@ -1,0 +1,429 @@
+{
+  "scope": "Expected passing instruction starts compared with actual adapter counts; strict differences preserved",
+  "cases": [
+    {
+      "block": "single",
+      "conditionEqual": true,
+      "schedule": "full",
+      "expectedPassingInstructionStarts": 4,
+      "actualCountedStarts": 4,
+      "actualCallbacks": 4,
+      "countsEqual": true
+    },
+    {
+      "block": "single",
+      "conditionEqual": true,
+      "schedule": "unit",
+      "expectedPassingInstructionStarts": 4,
+      "actualCountedStarts": 3,
+      "actualCallbacks": 3,
+      "countsEqual": false
+    },
+    {
+      "block": "single",
+      "conditionEqual": true,
+      "schedule": "mixed",
+      "expectedPassingInstructionStarts": 4,
+      "actualCountedStarts": 3,
+      "actualCallbacks": 3,
+      "countsEqual": false
+    },
+    {
+      "block": "single",
+      "conditionEqual": true,
+      "schedule": "hook-stop-2",
+      "expectedPassingInstructionStarts": 4,
+      "actualCountedStarts": 4,
+      "actualCallbacks": 5,
+      "countsEqual": true
+    },
+    {
+      "block": "single",
+      "conditionEqual": true,
+      "schedule": "hook-stop-4",
+      "expectedPassingInstructionStarts": 4,
+      "actualCountedStarts": 2,
+      "actualCallbacks": 4,
+      "countsEqual": false
+    },
+    {
+      "block": "single",
+      "conditionEqual": true,
+      "schedule": "hook-stop-6",
+      "expectedPassingInstructionStarts": 4,
+      "actualCountedStarts": 4,
+      "actualCallbacks": 5,
+      "countsEqual": true
+    },
+    {
+      "block": "single",
+      "conditionEqual": false,
+      "schedule": "full",
+      "expectedPassingInstructionStarts": 3,
+      "actualCountedStarts": 3,
+      "actualCallbacks": 3,
+      "countsEqual": true
+    },
+    {
+      "block": "single",
+      "conditionEqual": false,
+      "schedule": "unit",
+      "expectedPassingInstructionStarts": 3,
+      "actualCountedStarts": 3,
+      "actualCallbacks": 3,
+      "countsEqual": true
+    },
+    {
+      "block": "single",
+      "conditionEqual": false,
+      "schedule": "mixed",
+      "expectedPassingInstructionStarts": 3,
+      "actualCountedStarts": 3,
+      "actualCallbacks": 3,
+      "countsEqual": true
+    },
+    {
+      "block": "single",
+      "conditionEqual": false,
+      "schedule": "hook-stop-2",
+      "expectedPassingInstructionStarts": 3,
+      "actualCountedStarts": 3,
+      "actualCallbacks": 4,
+      "countsEqual": true
+    },
+    {
+      "block": "single",
+      "conditionEqual": false,
+      "schedule": "hook-stop-6",
+      "expectedPassingInstructionStarts": 3,
+      "actualCountedStarts": 3,
+      "actualCallbacks": 4,
+      "countsEqual": true
+    },
+    {
+      "block": "alternate",
+      "conditionEqual": true,
+      "schedule": "full",
+      "expectedPassingInstructionStarts": 4,
+      "actualCountedStarts": 4,
+      "actualCallbacks": 4,
+      "countsEqual": true
+    },
+    {
+      "block": "alternate",
+      "conditionEqual": true,
+      "schedule": "unit",
+      "expectedPassingInstructionStarts": 4,
+      "actualCountedStarts": 3,
+      "actualCallbacks": 3,
+      "countsEqual": false
+    },
+    {
+      "block": "alternate",
+      "conditionEqual": true,
+      "schedule": "mixed",
+      "expectedPassingInstructionStarts": 4,
+      "actualCountedStarts": 3,
+      "actualCallbacks": 3,
+      "countsEqual": false
+    },
+    {
+      "block": "alternate",
+      "conditionEqual": true,
+      "schedule": "hook-stop-2",
+      "expectedPassingInstructionStarts": 4,
+      "actualCountedStarts": 4,
+      "actualCallbacks": 5,
+      "countsEqual": true
+    },
+    {
+      "block": "alternate",
+      "conditionEqual": true,
+      "schedule": "hook-stop-4",
+      "expectedPassingInstructionStarts": 4,
+      "actualCountedStarts": 2,
+      "actualCallbacks": 4,
+      "countsEqual": false
+    },
+    {
+      "block": "alternate",
+      "conditionEqual": true,
+      "schedule": "hook-stop-8",
+      "expectedPassingInstructionStarts": 4,
+      "actualCountedStarts": 4,
+      "actualCallbacks": 5,
+      "countsEqual": true
+    },
+    {
+      "block": "alternate",
+      "conditionEqual": false,
+      "schedule": "full",
+      "expectedPassingInstructionStarts": 4,
+      "actualCountedStarts": 4,
+      "actualCallbacks": 4,
+      "countsEqual": true
+    },
+    {
+      "block": "alternate",
+      "conditionEqual": false,
+      "schedule": "unit",
+      "expectedPassingInstructionStarts": 4,
+      "actualCountedStarts": 3,
+      "actualCallbacks": 3,
+      "countsEqual": false
+    },
+    {
+      "block": "alternate",
+      "conditionEqual": false,
+      "schedule": "mixed",
+      "expectedPassingInstructionStarts": 4,
+      "actualCountedStarts": 3,
+      "actualCallbacks": 3,
+      "countsEqual": false
+    },
+    {
+      "block": "alternate",
+      "conditionEqual": false,
+      "schedule": "hook-stop-2",
+      "expectedPassingInstructionStarts": 4,
+      "actualCountedStarts": 4,
+      "actualCallbacks": 5,
+      "countsEqual": true
+    },
+    {
+      "block": "alternate",
+      "conditionEqual": false,
+      "schedule": "hook-stop-6",
+      "expectedPassingInstructionStarts": 4,
+      "actualCountedStarts": 2,
+      "actualCallbacks": 4,
+      "countsEqual": false
+    },
+    {
+      "block": "alternate",
+      "conditionEqual": false,
+      "schedule": "hook-stop-8",
+      "expectedPassingInstructionStarts": 4,
+      "actualCountedStarts": 4,
+      "actualCallbacks": 5,
+      "countsEqual": true
+    },
+    {
+      "block": "four",
+      "conditionEqual": true,
+      "schedule": "full",
+      "expectedPassingInstructionStarts": 7,
+      "actualCountedStarts": 7,
+      "actualCallbacks": 7,
+      "countsEqual": true
+    },
+    {
+      "block": "four",
+      "conditionEqual": true,
+      "schedule": "unit",
+      "expectedPassingInstructionStarts": 7,
+      "actualCountedStarts": 3,
+      "actualCallbacks": 3,
+      "countsEqual": false
+    },
+    {
+      "block": "four",
+      "conditionEqual": true,
+      "schedule": "mixed",
+      "expectedPassingInstructionStarts": 7,
+      "actualCountedStarts": 3,
+      "actualCallbacks": 3,
+      "countsEqual": false
+    },
+    {
+      "block": "four",
+      "conditionEqual": true,
+      "schedule": "hook-stop-2",
+      "expectedPassingInstructionStarts": 7,
+      "actualCountedStarts": 7,
+      "actualCallbacks": 8,
+      "countsEqual": true
+    },
+    {
+      "block": "four",
+      "conditionEqual": true,
+      "schedule": "hook-stop-4",
+      "expectedPassingInstructionStarts": 7,
+      "actualCountedStarts": 2,
+      "actualCallbacks": 7,
+      "countsEqual": false
+    },
+    {
+      "block": "four",
+      "conditionEqual": true,
+      "schedule": "hook-stop-6",
+      "expectedPassingInstructionStarts": 7,
+      "actualCountedStarts": 3,
+      "actualCallbacks": 7,
+      "countsEqual": false
+    },
+    {
+      "block": "four",
+      "conditionEqual": true,
+      "schedule": "hook-stop-8",
+      "expectedPassingInstructionStarts": 7,
+      "actualCountedStarts": 4,
+      "actualCallbacks": 7,
+      "countsEqual": false
+    },
+    {
+      "block": "four",
+      "conditionEqual": true,
+      "schedule": "hook-stop-10",
+      "expectedPassingInstructionStarts": 7,
+      "actualCountedStarts": 5,
+      "actualCallbacks": 7,
+      "countsEqual": false
+    },
+    {
+      "block": "four",
+      "conditionEqual": true,
+      "schedule": "hook-stop-12",
+      "expectedPassingInstructionStarts": 7,
+      "actualCountedStarts": 7,
+      "actualCallbacks": 8,
+      "countsEqual": true
+    },
+    {
+      "block": "four",
+      "conditionEqual": false,
+      "schedule": "full",
+      "expectedPassingInstructionStarts": 3,
+      "actualCountedStarts": 3,
+      "actualCallbacks": 3,
+      "countsEqual": true
+    },
+    {
+      "block": "four",
+      "conditionEqual": false,
+      "schedule": "unit",
+      "expectedPassingInstructionStarts": 3,
+      "actualCountedStarts": 3,
+      "actualCallbacks": 3,
+      "countsEqual": true
+    },
+    {
+      "block": "four",
+      "conditionEqual": false,
+      "schedule": "mixed",
+      "expectedPassingInstructionStarts": 3,
+      "actualCountedStarts": 3,
+      "actualCallbacks": 3,
+      "countsEqual": true
+    },
+    {
+      "block": "four",
+      "conditionEqual": false,
+      "schedule": "hook-stop-2",
+      "expectedPassingInstructionStarts": 3,
+      "actualCountedStarts": 3,
+      "actualCallbacks": 4,
+      "countsEqual": true
+    },
+    {
+      "block": "four",
+      "conditionEqual": false,
+      "schedule": "hook-stop-12",
+      "expectedPassingInstructionStarts": 3,
+      "actualCountedStarts": 3,
+      "actualCallbacks": 4,
+      "countsEqual": true
+    },
+    {
+      "block": "final_bx",
+      "conditionEqual": true,
+      "schedule": "full",
+      "expectedPassingInstructionStarts": 4,
+      "actualCountedStarts": 4,
+      "actualCallbacks": 4,
+      "countsEqual": true
+    },
+    {
+      "block": "final_bx",
+      "conditionEqual": true,
+      "schedule": "unit",
+      "expectedPassingInstructionStarts": 4,
+      "actualCountedStarts": 3,
+      "actualCallbacks": 3,
+      "countsEqual": false
+    },
+    {
+      "block": "final_bx",
+      "conditionEqual": true,
+      "schedule": "hook-stop-before-transfer",
+      "expectedPassingInstructionStarts": 4,
+      "actualCountedStarts": 2,
+      "actualCallbacks": 4,
+      "countsEqual": false
+    },
+    {
+      "block": "final_bx",
+      "conditionEqual": false,
+      "schedule": "full",
+      "expectedPassingInstructionStarts": 3,
+      "actualCountedStarts": 3,
+      "actualCallbacks": 3,
+      "countsEqual": true
+    },
+    {
+      "block": "final_bx",
+      "conditionEqual": false,
+      "schedule": "unit",
+      "expectedPassingInstructionStarts": 3,
+      "actualCountedStarts": 3,
+      "actualCallbacks": 3,
+      "countsEqual": true
+    },
+    {
+      "block": "final_pop",
+      "conditionEqual": true,
+      "schedule": "full",
+      "expectedPassingInstructionStarts": 4,
+      "actualCountedStarts": 4,
+      "actualCallbacks": 4,
+      "countsEqual": true
+    },
+    {
+      "block": "final_pop",
+      "conditionEqual": true,
+      "schedule": "unit",
+      "expectedPassingInstructionStarts": 4,
+      "actualCountedStarts": 3,
+      "actualCallbacks": 3,
+      "countsEqual": false
+    },
+    {
+      "block": "final_pop",
+      "conditionEqual": true,
+      "schedule": "hook-stop-before-transfer",
+      "expectedPassingInstructionStarts": 4,
+      "actualCountedStarts": 2,
+      "actualCallbacks": 4,
+      "countsEqual": false
+    },
+    {
+      "block": "final_pop",
+      "conditionEqual": false,
+      "schedule": "full",
+      "expectedPassingInstructionStarts": 3,
+      "actualCountedStarts": 3,
+      "actualCallbacks": 3,
+      "countsEqual": true
+    },
+    {
+      "block": "final_pop",
+      "conditionEqual": false,
+      "schedule": "unit",
+      "expectedPassingInstructionStarts": 3,
+      "actualCountedStarts": 3,
+      "actualCallbacks": 3,
+      "countsEqual": true
+    }
+  ],
+  "countDifferences": 19
+}

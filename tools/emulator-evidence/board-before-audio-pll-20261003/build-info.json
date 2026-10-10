@@ -1,0 +1,261 @@
+{
+  "commit": "f64ec97250d5c6ed30d4615f901c8a8ca86a65c2",
+  "astro": "7.3.5",
+  "homepageSha256": "069c0e07ff33b3e90ff7ca7e20a601bcdf6124848a825913de3f2215525f8d06",
+  "penpotSnapshotSha256": "b348105939dd665ab46f3fc559ae81139d94f0135f2fcc7aaf205a4f1621fdf3",
+  "guideDesignSha256": "dd86b8ccb59ea092ec81f677563d5bf695c35b4a2e6a3c471558b9ff6f37a177",
+  "journeyContentSha256": "3d3a281573dc80c0553df6fa395e003606507b6dc31b0160f611199dc0b6e7ba",
+  "journeyDesignSha256": "3442501dac070876e1e2813d5d385c1a8b179ff259c78ebdd6adda6026aa3e2f",
+  "journeyLayoutsSha256": "c9cdded4fc00532b1aab819a693f0f6b7f2d9fb8ad4473b7a88e7bbcab6cd49e",
+  "javascriptGzipBytes": 12880,
+  "homepageGzipBytes": 8170,
+  "pages": [
+    {
+      "path": "404.html",
+      "sha256": "2ff2af2ff8654952866db4ab254ceaba2d3bc5ef60f1e533ba35e45752873fae",
+      "gzipBytes": 1205,
+      "inlineJavascriptGzipBytes": 453,
+      "initialJavascriptGzipBytes": 1571,
+      "activeJavascriptGzipBytes": 1571
+    },
+    {
+      "path": "emulator/index.html",
+      "sha256": "0ed9efcea31e8ec58dd049dc2de21096635fd406745103540827bc301ba3b2e3",
+      "gzipBytes": 7126,
+      "inlineJavascriptGzipBytes": 453,
+      "initialJavascriptGzipBytes": 7903,
+      "activeJavascriptGzipBytes": 7903
+    },
+    {
+      "path": "guides/audio-stream/index.html",
+      "sha256": "07a6e3ffcb68a1ef66e58fcd3570750642e9b5622362edf4d4e838b30edab9dd",
+      "gzipBytes": 11718,
+      "inlineJavascriptGzipBytes": 1020,
+      "initialJavascriptGzipBytes": 6159,
+      "activeJavascriptGzipBytes": 12365
+    },
+    {
+      "path": "guides/bootloader-boundaries/index.html",
+      "sha256": "9e071854fe583504a71007b102828c3852b4daef5f57faa7bea86f6d6a3597ac",
+      "gzipBytes": 12451,
+      "inlineJavascriptGzipBytes": 1020,
+      "initialJavascriptGzipBytes": 6159,
+      "activeJavascriptGzipBytes": 12365
+    },
+    {
+      "path": "guides/finding-audio/index.html",
+      "sha256": "54d3a74fe45ad787a89176f0192b460ad7e12107b9cfae8381ac6288f2e1c93e",
+      "gzipBytes": 11860,
+      "inlineJavascriptGzipBytes": 1020,
+      "initialJavascriptGzipBytes": 6159,
+      "activeJavascriptGzipBytes": 12365
+    },
+    {
+      "path": "guides/first-animation/index.html",
+      "sha256": "a246be6889393a4e6c5432f7f263a5451372843aaec347c248b67dbfb5de4fd6",
+      "gzipBytes": 12272,
+      "inlineJavascriptGzipBytes": 1020,
+      "initialJavascriptGzipBytes": 6159,
+      "activeJavascriptGzipBytes": 12365
+    },
+    {
+      "path": "guides/first-change/index.html",
+      "sha256": "ac1381e65eb82443856b48a7b7a091c3553b852800592d635d502f72fb5f87d7",
+      "gzipBytes": 16415,
+      "inlineJavascriptGzipBytes": 1020,
+      "initialJavascriptGzipBytes": 6674,
+      "activeJavascriptGzipBytes": 12880
+    },
+    {
+      "path": "guides/index.html",
+      "sha256": "d0804463d2e8e5295d44d30cd92d132a77ab459a8c198fd689071d7bcd5b81cc",
+      "gzipBytes": 3155,
+      "inlineJavascriptGzipBytes": 453,
+      "initialJavascriptGzipBytes": 1571,
+      "activeJavascriptGzipBytes": 1571
+    },
+    {
+      "path": "guides/keeping-the-updater/index.html",
+      "sha256": "ed4893dbeeb21be8f9490aac965fc85c2cf5073410fbdc5cf9452d33a7adb86a",
+      "gzipBytes": 11249,
+      "inlineJavascriptGzipBytes": 1020,
+      "initialJavascriptGzipBytes": 6159,
+      "activeJavascriptGzipBytes": 12365
+    },
+    {
+      "path": "guides/mapping-controls/index.html",
+      "sha256": "611c23c6d0f6455e67391d091e3115f2eb71409d6219b7d552fa01a5ee696780",
+      "gzipBytes": 12069,
+      "inlineJavascriptGzipBytes": 1020,
+      "initialJavascriptGzipBytes": 6159,
+      "activeJavascriptGzipBytes": 12365
+    },
+    {
+      "path": "guides/named-inputs/index.html",
+      "sha256": "10ebd22f85ab1d445295d2b8278c0da456b0db9ad402f3162774ddd28f7c3f23",
+      "gzipBytes": 11862,
+      "inlineJavascriptGzipBytes": 1020,
+      "initialJavascriptGzipBytes": 6159,
+      "activeJavascriptGzipBytes": 12365
+    },
+    {
+      "path": "guides/original-boot/index.html",
+      "sha256": "db5f32b3e56e9b58907ee466f896c75bc1144cdfba754aeb42940568b008bff7",
+      "gzipBytes": 11907,
+      "inlineJavascriptGzipBytes": 1020,
+      "initialJavascriptGzipBytes": 6159,
+      "activeJavascriptGzipBytes": 12365
+    },
+    {
+      "path": "guides/original-sdk/index.html",
+      "sha256": "25a488cdb3436e600b265bee742474498fad1ad297ea7355bf3a1a0952a629ff",
+      "gzipBytes": 11961,
+      "inlineJavascriptGzipBytes": 1020,
+      "initialJavascriptGzipBytes": 6159,
+      "activeJavascriptGzipBytes": 12365
+    },
+    {
+      "path": "guides/pad-information/index.html",
+      "sha256": "ec8d6747f189144e5a86ece98fe427283740d38ca204be6d0cbf88242fba8465",
+      "gzipBytes": 11794,
+      "inlineJavascriptGzipBytes": 1020,
+      "initialJavascriptGzipBytes": 6159,
+      "activeJavascriptGzipBytes": 12365
+    },
+    {
+      "path": "guides/partial-update/index.html",
+      "sha256": "2a82007eaed21b8a9038b99fdfd6de1229bc4239df9aab7d05677f077e850f96",
+      "gzipBytes": 11801,
+      "inlineJavascriptGzipBytes": 1020,
+      "initialJavascriptGzipBytes": 6159,
+      "activeJavascriptGzipBytes": 12365
+    },
+    {
+      "path": "guides/pitch-correction/index.html",
+      "sha256": "3fcf3d6d729d8318fa66c25a13109c3d9073fbfdeecc30edf5d0478e8b59daae",
+      "gzipBytes": 12354,
+      "inlineJavascriptGzipBytes": 1020,
+      "initialJavascriptGzipBytes": 6159,
+      "activeJavascriptGzipBytes": 12365
+    },
+    {
+      "path": "guides/ram-loader/index.html",
+      "sha256": "ab8f1f65ad8c9735c6046493eef02311f775a3b9b313dd59d21a11b3bf8ea0e6",
+      "gzipBytes": 11422,
+      "inlineJavascriptGzipBytes": 1020,
+      "initialJavascriptGzipBytes": 6159,
+      "activeJavascriptGzipBytes": 12365
+    },
+    {
+      "path": "guides/synth-design/index.html",
+      "sha256": "4d398711bd6e5ef7378dddc7f50d67edc8d003be754cfe32312babf20c54e6ca",
+      "gzipBytes": 12077,
+      "inlineJavascriptGzipBytes": 1020,
+      "initialJavascriptGzipBytes": 6159,
+      "activeJavascriptGzipBytes": 12365
+    },
+    {
+      "path": "guides/usb-updates/index.html",
+      "sha256": "ca7b19c96fe78bff113d74f2369870cb4f1b24d34a9f4024129c40f1bf481cee",
+      "gzipBytes": 11566,
+      "inlineJavascriptGzipBytes": 1020,
+      "initialJavascriptGzipBytes": 6159,
+      "activeJavascriptGzipBytes": 12365
+    },
+    {
+      "path": "guides/verified-capture/index.html",
+      "sha256": "f1c619a395815323d3dc68282ed624ee32a2ee00fc0b748a38622f3a1de0c867",
+      "gzipBytes": 12353,
+      "inlineJavascriptGzipBytes": 1020,
+      "initialJavascriptGzipBytes": 6159,
+      "activeJavascriptGzipBytes": 12365
+    },
+    {
+      "path": "index.html",
+      "sha256": "069c0e07ff33b3e90ff7ca7e20a601bcdf6124848a825913de3f2215525f8d06",
+      "gzipBytes": 8170,
+      "inlineJavascriptGzipBytes": 1945,
+      "initialJavascriptGzipBytes": 3063,
+      "activeJavascriptGzipBytes": 3063
+    }
+  ],
+  "workingTreeDirty": true,
+  "journeyIndexLayoutsSha256": "878090a901855abc61ec4ee59d513b4fec09c414cb0a4ee3eaf5399c48edb1a1",
+  "totalJavascriptGzipBytes": 93237,
+  "emulatorRuntime": {
+    "loadTrigger": "Start",
+    "workerJavascriptGzipBytes": 41777,
+    "clientBridgeJavascriptGzipBytes": 5979,
+    "engineJavascriptGzipBytes": 11253,
+    "javascriptGzipBytes": 59009,
+    "wasmBytes": 706188,
+    "wasmGzipBytes": 238126,
+    "artifacts": [
+      {
+        "path": "emulator/vendor/unicorn-arm.js",
+        "bytes": 43313,
+        "gzipBytes": 11253,
+        "sha256": "d8bc37b898ccbc5b429f17112add6ad33a8a9b35df4146034ba141b992dae007"
+      },
+      {
+        "path": "emulator/vendor/unicorn-arm.wasm",
+        "bytes": 706188,
+        "gzipBytes": 238126,
+        "sha256": "399f9ca4eecc11d111d3182e251fbfb8ccc69e88f19f06650e945482eaf1a7d1"
+      },
+      {
+        "path": "emulator/vendor/LICENSE-GPL-2.0.txt",
+        "bytes": 18092,
+        "gzipBytes": 6808,
+        "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643"
+      },
+      {
+        "path": "emulator/vendor/UNICORN-COPYING.txt",
+        "bytes": 17992,
+        "gzipBytes": 6827,
+        "sha256": "6f04ae8364d0079a192b14635f4b1da294ce18724c034c39a6a41d1b09df6100"
+      },
+      {
+        "path": "emulator/vendor/UNICORN-AUTHORS.txt",
+        "bytes": 81,
+        "gzipBytes": 80,
+        "sha256": "6dff517f42f12f2c64d0864cc06a7d2a1cc10c7435a1167a49c625e60813f51c"
+      },
+      {
+        "path": "emulator/vendor/UNICORN-CREDITS.txt",
+        "bytes": 2197,
+        "gzipBytes": 1231,
+        "sha256": "ea18f463dee60f35024f5116f2c7fd553cb355fcf21843ac71e5406f0aa3279d"
+      }
+    ],
+    "workerScripts": [
+      {
+        "path": "_astro/emulator-worker-DlJPJCcW.js",
+        "bytes": 131652,
+        "sha256": "cfdb58b6512983acf8af5812a452c2a0c16e8fbccaab99dd553cfe74365c653d"
+      }
+    ],
+    "clientBridgeScripts": [
+      {
+        "path": "_astro/worker-rpc.xQ_NgLD1.js",
+        "bytes": 17963,
+        "sha256": "2a04aff070fd265112cea10e3181290f24eebe93e7bb52868d91976b87ca985e"
+      }
+    ],
+    "limits": {
+      "javascriptGzipBytes": 131072,
+      "wasmBytes": 2097152
+    }
+  },
+  "emulatorDesign": {
+    "components": "77127da0b8dd63857b5206831c313db8aac7130d3d64ab5ec1f67c36cb6ba07a",
+    "layouts": "1fecf7e634937a1ebe1c0aaa436ee5549a73406d2dd2c5cd1079f89ade79888c",
+    "states": "769f47551a99d2d78525e47b85fd164f358f673fe1a31d838ffe9540d60915a6",
+    "footer": "4969530c032b10d156cc132a14ecc0ddbe19a5299fa69085b2ee70ecccc5df8e",
+    "footerPropagation": "38194adc20453433d45580488a158ef7e51d85bedfbf90a9cca2b14b53d14b3e",
+    "footerBounds": "8286db9cfc27e56a4f6e8be8514ed4fac1b4aed599fc37914e11903413030aeb",
+    "copy": "b3ffe9b0f8d9f3191a579adae099a25314ef4e2424f57213963013ddd6306673"
+  },
+  "scriptBudgetScope": "maximum per-page static imports plus the largest single lazy demonstration group and inline scripts; demand-loaded ARM runtime measured separately in emulatorRuntime",
+  "demoDesignSha256": "5ae3880a3d75673ff0e3c6ef5f7bd9c57d3525e8538a594c65101a305b3c7311"
+}

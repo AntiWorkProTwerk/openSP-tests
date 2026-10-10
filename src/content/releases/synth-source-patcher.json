@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "identity": "openSynthP12",
+  "status": "pending",
+  "archive": null,
+  "firmwareInstallAvailable": false,
+  "title": "Source patcher",
+  "description": "Build openSynth on your computer from this source archive and your unchanged Roland v5.52 ZIP.",
+  "downloadLabel": "Download the openSynth source patcher",
+  "dependencies": "You also need Python with pyelftools and Capstone, and Arm GNU Toolchain 14.3.Rel1 (GCC 14.3.1).",
+  "commandLabel": "Build command, run from the unzipped folder",
+  "command": "python build_combined.py --inputs inputs --official OFFICIAL_V552_ZIP --tool-prefix ARM_PREFIX --output ../fresh-build",
+  "commandNote": "Replace OFFICIAL_V552_ZIP with the path to your Roland ZIP and ARM_PREFIX with your toolchain prefix, which ends in arm-none-eabi-. The output folder must be new and outside the unzipped patcher.",
+  "scope": "The archive holds source code and build metadata only. Your Roland firmware stays on your computer."
+}

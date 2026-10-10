@@ -1,0 +1,69 @@
+{
+  "schema": "opensp-stock-tool-metadata-validation-v1",
+  "timestampUtc": "2026-10-03T04:02:49.606Z",
+  "passed": true,
+  "guestExecuted": false,
+  "cases": 39,
+  "localDocumentationLinks": 3,
+  "sourceSha256": {
+    "tools/test-emulator-stock.mjs": "5ec4fb7b3a2dc14ab8c73e1ec9018caa991da974d0445d4eca93711eecdb4aed",
+    "docs/emulator-stock-qualification.md": "bbe959c7410091f5388adc3158495b98b053487fc768d0862ae56bd6b1172c90"
+  },
+  "history": {
+    "manifest": "tools/emulator-evidence/stock-pre-ordinary-qualification-2026-10-03T035034-963Z/manifest.json",
+    "manifestSha256": "b94d69570144ea52ed10dcce8d5b13af85b87df97b983271abbed3864217fb53",
+    "verifiedFiles": 6
+  },
+  "runtime": {
+    "assetDirectory": "../sp404mk2/analysis/emulator/vendor_candidate_temp_lifetime_upstream_20261003/artifacts",
+    "explicitCandidateDirectory": true,
+    "wrapperCommit": "1220477c7fb0f8fe4b500f4bd211de52f6dfe638",
+    "coreCommit": "8028ec436f2d9376525352dd38ed9ed6b9f6be10",
+    "provenanceSha256": "b3cdb377c331b2a8dc197425284704e91093acb65007c9a5c43e4b3e0717fb93",
+    "files": {
+      "unicorn-arm.js": {
+        "bytes": 43313,
+        "sha256": "d8bc37b898ccbc5b429f17112add6ad33a8a9b35df4146034ba141b992dae007"
+      },
+      "unicorn-arm.wasm": {
+        "bytes": 704978,
+        "sha256": "16599c54af6da32ecce2ce52538890610a83c96e1152796ddffa2533d6440b35"
+      },
+      "LICENSE-GPL-2.0.txt": {
+        "bytes": 18092,
+        "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643"
+      },
+      "UNICORN-COPYING.txt": {
+        "bytes": 17992,
+        "sha256": "6f04ae8364d0079a192b14635f4b1da294ce18724c034c39a6a41d1b09df6100"
+      },
+      "UNICORN-AUTHORS.txt": {
+        "bytes": 81,
+        "sha256": "6dff517f42f12f2c64d0864cc06a7d2a1cc10c7435a1167a49c625e60813f51c"
+      },
+      "UNICORN-CREDITS.txt": {
+        "bytes": 2197,
+        "sha256": "ea18f463dee60f35024f5116f2c7fd553cb355fcf21843ac71e5406f0aa3279d"
+      }
+    },
+    "originalUnrepairedArtifact": false,
+    "declaredCandidateRepair": {
+      "name": "temp-lifetime",
+      "source": {
+        "path": "tools/vendor-patches/unicorn-arm-temp-lifetime.patch",
+        "bytes": 1157,
+        "sha256": "8f179f1cf100a1246bfbe5b5c4993f025b79ad614aa0b01c22df6589fc186fd3"
+      },
+      "affectedSource": {
+        "path": "qemu/tcg/tcg.c",
+        "beforeSha256": "fedab0cdaf17c3f7a27fb49a14e6847c08e8cf6b436ce474a39e3f58ef7ef1b4",
+        "afterSha256": "2e705fd88b03c1a13ff38f7341e442eed1421d9380ed49b6eff7361b265aad31"
+      },
+      "applicationCount": 1,
+      "sourceDirectoryWasAbsent": true,
+      "outputDirectoryWasAbsent": true,
+      "order": "After all upstream transformations and before constants generation or compilation"
+    }
+  },
+  "publishedRuntimeSha256": "f9520f9aa55299b84d005390844082a1468f26137e239eb1167dde8473aecc6c"
+}

@@ -1,0 +1,14 @@
+{
+  "originalArtifact": "disassembly.txt",
+  "originalPin": {
+    "bytes": 1385,
+    "sha256": "8721793935ddc598f93dd841bf00bb15449c186789d996e5e9884583c6e41550"
+  },
+  "rawArtifactRetainedOutsideOpenSPRepository": true,
+  "publicSubstitute": "disassembly-public.txt",
+  "publicSubstitutePin": {
+    "bytes": 1301,
+    "sha256": "dca8ed9eb3fdbaf7ea4cec16804c6bd16d2f8cc3139606cbd36bb446cfaed032"
+  },
+  "qualificationUnchanged": true
+}

@@ -1,0 +1,18 @@
+{
+  "schema": "opensp-sai-byte-lane-source-preservation-v1",
+  "capturedUtc": "2026-10-03T03:42:29.592291+00:00",
+  "source": "src/lib/emulator/board.ts",
+  "preservedSource": "tools/emulator-evidence/sai-pre-byte-lane-fix-board.ts",
+  "preservedSha256": "775f79e1bc53df81d90786d8eb791a5d4a1930f604f1cbd84d8fca86ea38f653",
+  "correctedSha256": "c145f664b2a6ff74745a97a1c1f301b505694e81125daab52f30b43d66886ee3",
+  "preservationMethod": "Recovered after the correction by inverting only its five local SAI byte-mask substitutions. The resulting bytes match the pre-correction SHA256 recorded before runtime qualification.",
+  "qualificationScope": "Earlier engine candidate runs retain their original source pins. This snapshot does not alter their results. R14/R15 SAI MMIO operations use32-bit writes; narrow transactions require the corrected source.",
+  "correction": "Mask SAI write side effects to the actual bus byte lanes before W1C, FR or unsupported-operation checks.",
+  "modelTests": {
+    "boardCases": 30,
+    "combinedBoardUsbFlashUpdaterCases": 84,
+    "passed": true,
+    "strictTypeScript": true
+  },
+  "physicalDeviceAccess": false
+}

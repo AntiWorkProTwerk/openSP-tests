@@ -1,0 +1,279 @@
+{
+  "kind": "Bounded larger-writer host and retained-NOR reset qualification",
+  "recordedUtc": "2026-10-03T06:39:32.817Z",
+  "nodeVersion": "v24.20.0",
+  "typescriptVersion": "6.0.3",
+  "scope": {
+    "hostAndModelOnly": true,
+    "protocolFakes": true,
+    "syntheticResetImages": true,
+    "fullTargetsReadAndHashedOnly": true,
+    "realCpuModuleEvaluated": false,
+    "guestExecution": false,
+    "realWorkerExecution": false,
+    "browserExecution": false,
+    "physicalDeviceAccess": false,
+    "firmwarePayloadRetained": false
+  },
+  "result": {
+    "command": "node --test --test-reporter=tap tests/emulator-image.test.mjs tests/emulator-reset-contract.test.mjs tests/emulator-update.test.mjs tests/emulator-worker-reset.test.mjs tests/emulator-worker-rpc.test.mjs tests/emulator-page-bridge.test.mjs",
+    "tests": 130,
+    "passed": 130,
+    "failed": 0,
+    "skipped": 0,
+    "durationHostMs": 572.2496
+  },
+  "sourceStable": true,
+  "sources": [
+    {
+      "path": "src/lib/emulator/update.ts",
+      "bytes": 33248,
+      "sha256": "2612ccbcd6581ecc349288da02b3c166a4ccf5c7df2691d4e6056516603e2210"
+    },
+    {
+      "path": "src/lib/emulator/image.ts",
+      "bytes": 13587,
+      "sha256": "9ad75aa988f49534c53e9d477dbebc49c7b8533459ebdb7564a534b04b0b5bfb"
+    },
+    {
+      "path": "src/lib/emulator/session.ts",
+      "bytes": 16950,
+      "sha256": "74c430f94fa0c1f632683f72bacd64fc050d35d5fe7cba489ca764afb2e32adb"
+    },
+    {
+      "path": "src/scripts/emulator-worker.ts",
+      "bytes": 3944,
+      "sha256": "dd04dedb365b415e6336366581b1734f823a333be89dd1ef6bda31474b497e6b"
+    },
+    {
+      "path": "src/lib/emulator/worker-rpc.ts",
+      "bytes": 25924,
+      "sha256": "49010673e240f570ab60b3c3712cc89b59624d7a0fa5c2e968e2073ff7b0b7a8"
+    },
+    {
+      "path": "src/scripts/emulator.ts",
+      "bytes": 21571,
+      "sha256": "606abdf91faa522ddc306ab3ecc550bbb1b270eb3c68a7488939b3a9eee87165"
+    },
+    {
+      "path": "src/lib/emulator/board.ts",
+      "bytes": 37227,
+      "sha256": "068a1178757df94a8a5274b869962ca51b25a1d9dfd9b79cf75013206c358827"
+    },
+    {
+      "path": "src/lib/emulator/flash.ts",
+      "bytes": 14191,
+      "sha256": "2a887edf140feae0ed6ae450650ee2feb0c4bb8119c4a8d94d373a3c6d15d5bc"
+    },
+    {
+      "path": "src/lib/emulator/usb.ts",
+      "bytes": 15606,
+      "sha256": "68e5fa1b6b9c1d7de2da9a66ace01fb147077eb849ca9c6ef3c943e143ad85b2"
+    },
+    {
+      "path": "src/lib/emulator/exceptions.ts",
+      "bytes": 35024,
+      "sha256": "6412e7fc3086f2ab34f6f0127983521ccfb48cf7a2563249e5d09cf09a6d2e51"
+    },
+    {
+      "path": "src/lib/emulator/exception-return.ts",
+      "bytes": 10860,
+      "sha256": "66ea775f49ab5db3cb395d1a200d01a2a9733cccf43157e873e4fc5f8e800f03"
+    },
+    {
+      "path": "src/lib/emulator/usdhc.ts",
+      "bytes": 31404,
+      "sha256": "fe74790fd62040aba4a4908943bf2b99c5082958988dae59a4721fec1e430c28"
+    },
+    {
+      "path": "src/lib/emulator/dcdc.ts",
+      "bytes": 9513,
+      "sha256": "5e025bd74a48d2550c24f634589fb53bc0456cc78e7e5a0b11438b46611adbae"
+    },
+    {
+      "path": "src/lib/emulator/oscillator.ts",
+      "bytes": 8990,
+      "sha256": "3b9a557fb37d4f859742b9c89b9b51f22c397d0e4da40ef9f3df9bf8b5d887c9"
+    },
+    {
+      "path": "src/lib/emulator/pll-arm.ts",
+      "bytes": 8904,
+      "sha256": "88eecf9007c2f9ab55332ecbae9b9dfa34137e4c0c7f9813970e930a8f8acfe0"
+    },
+    {
+      "path": "src/lib/emulator/pll-usb2.ts",
+      "bytes": 6530,
+      "sha256": "9b54796d35a8b531acb58a1ed76ce637b01f181e1f343fc30f369e1191997bfd"
+    },
+    {
+      "path": "tests/emulator-image.test.mjs",
+      "bytes": 9966,
+      "sha256": "077649c10fda94a035811775e43f27b53c5edd3629dc46fa55d47f85d0462603"
+    },
+    {
+      "path": "tests/emulator-reset-contract.test.mjs",
+      "bytes": 14892,
+      "sha256": "a6713f12f3bc3760408cbff2db6cfc400b93ffd21621aefe9666b534e5e4aa0c"
+    },
+    {
+      "path": "tests/emulator-update.test.mjs",
+      "bytes": 27607,
+      "sha256": "bf0d35a84a70a3476b7e33f25c861c1c58c995c391e5cd9ef13d716e0ad6cdc4"
+    },
+    {
+      "path": "tests/emulator-worker-reset.test.mjs",
+      "bytes": 4451,
+      "sha256": "53448d4bcc6b010524f48f06f3e46e939b305353006e9a1bec261646044cc5fe"
+    },
+    {
+      "path": "tests/emulator-worker-rpc.test.mjs",
+      "bytes": 29765,
+      "sha256": "7094adb850069c0299e461ba93edb0e0a6ea906db0b40dafeb41d314fe36a17d"
+    },
+    {
+      "path": "tests/emulator-page-bridge.test.mjs",
+      "bytes": 12521,
+      "sha256": "7a8d80b6e9610f155e85c40c54f2ad8f792b750ca72cab825ac1d7da00baeafe"
+    }
+  ],
+  "references": [
+    {
+      "path": "../sp404mk2/sdk/examples/original_r16b/flash.c",
+      "bytes": 10897,
+      "sha256": "19e912277ac87d006d5647a8d663f3ea88f6fa864a5513b59fe6feae27e49aff"
+    },
+    {
+      "path": "../sp404mk2/sdk/examples/original_r16b/usb_upload.c",
+      "bytes": 5826,
+      "sha256": "7a8aab9d423041cedc42fb94c8a5041fd38f002f45b7091ea13b2f5e11f48d69"
+    },
+    {
+      "path": "../sp404mk2/sdk/examples/original_r16b/build/manifest.json",
+      "bytes": 4679,
+      "sha256": "0a34e4641f46dad33b5b14b73dfa565b82e82caa78159b3254089d5f2fc1ae7b"
+    },
+    {
+      "path": "../sp404mk2/sdk/examples/original_r48/build.py",
+      "bytes": 5903,
+      "sha256": "8f594701ab9b23c0a0c14578d5b922065f3223ccdede2bf90727dbd868113957"
+    },
+    {
+      "path": "../sp404mk2/sdk/examples/original_r48/build/manifest.json",
+      "bytes": 5692,
+      "sha256": "1e7fa9ff3f358dacd24b0e7fd475d0dd644fac2a59a7b049c56bf35de61c488d"
+    },
+    {
+      "path": "../sp404mk2/sdk/examples/usb_bridge_b1/bridge_entry.S",
+      "bytes": 1991,
+      "sha256": "c9342ca24e1ac4d05f5da3c80f7f90d4ac8e995e7c8f617e01c7454cb8705d73"
+    },
+    {
+      "path": "../sp404mk2/custom_firmware/build/usb_bridge_b1/manifest.json",
+      "bytes": 3846,
+      "sha256": "020d7ac18c7957d07c98e9cf89648c90d5422a0d4f055d87cb5460359de61bae"
+    }
+  ],
+  "checks": {
+    "coreStrictTypes": {
+      "passed": true,
+      "command": "npx tsc --ignoreConfig --noEmit --strict --target ES2022 --module NodeNext --moduleResolution NodeNext --allowImportingTsExtensions src/lib/emulator/update.ts src/lib/emulator/image.ts src/lib/emulator/session.ts"
+    },
+    "workerStrictTypes": {
+      "passed": true,
+      "command": "npx tsc --ignoreConfig --noEmit --strict --target ES2022 --module ESNext --moduleResolution Bundler --allowImportingTsExtensions --lib ES2022,WebWorker src/scripts/emulator-worker.ts"
+    },
+    "projectTypes": {
+      "passed": true,
+      "command": "npm run check",
+      "files": 82,
+      "errors": 0,
+      "warnings": 0,
+      "hints": 0
+    }
+  },
+  "profiles": [
+    {
+      "name": "R16B",
+      "signature": "SP16",
+      "marker": "52410001",
+      "maximum": 3665920,
+      "runningLength": 17156,
+      "runningSha256": "7bcc3537ea94288451738f14a428f44d87ca4db9887a27ad5bd3f99d05a16e2d"
+    },
+    {
+      "name": "R48",
+      "signature": "SP48",
+      "marker": "52620001",
+      "maximum": 3665920,
+      "runningLength": 17156,
+      "runningSha256": "11d7631ea73232fbfe2bb30ca6a705f416417cb1aec54290a04944a26d7edba4"
+    }
+  ],
+  "fullTargets": [
+    {
+      "recipient": "R16B",
+      "target": "stock-r3",
+      "length": 2652672,
+      "sha256": "2740e108d710217a3203b964a9433c123d2bb62800896dc10ae40d13b8b7dbdc",
+      "crc32": "2A7BB1D3",
+      "firstWord": "6801480D",
+      "dataReports": 47370,
+      "sectors": 648,
+      "paddedBytes": 2654208
+    },
+    {
+      "recipient": "R48",
+      "target": "b1-r3-del-writer",
+      "length": 2671332,
+      "sha256": "475835a7c076feeb6a7d4f3a4eddf50fcb215b64c3f59048d0eae40a6e061dc1",
+      "crc32": "2A98C325",
+      "firstWord": "BFFEF287",
+      "dataReports": 47703,
+      "sectors": 653,
+      "paddedBytes": 2674688
+    }
+  ],
+  "resetContract": {
+    "fields": [
+      "length",
+      "sha256",
+      "expectedCurrentSha256",
+      "selector?"
+    ],
+    "ownedAndValidated": true,
+    "currentAndTargetBytesRehashed": true,
+    "wholeNorAndExecutableImageAndCpuStableBeforeMutation": true,
+    "explicitTargetForwardedByUpdaterRpcAndProductionHandler": true,
+    "b1RuntimeSelector": "Refused before mutation pending guest qualification",
+    "noTargetLegacySemanticsPreserved": true,
+    "structuralAdmissionDoesNotAttestFlashCompletion": true
+  },
+  "blockers": [
+    {
+      "code": "large-control-budget",
+      "detail": "Four-million-hook USB token pump is not qualified for full FINISH/commit CRC work."
+    },
+    {
+      "code": "large-ip-observer",
+      "detail": "Bounded aggregate full padded IP comparison observation remains unqualified."
+    },
+    {
+      "code": "target-fresh-boot",
+      "detail": "Normal R3 fresh complete-boot oracle and complete B1 DEL guest startup remain unqualified."
+    }
+  ],
+  "largeUpdateUsbOperations": 0,
+  "existingSmallProtocolTestsPassed": true,
+  "acceptanceRunnerChanges": [
+    "Forward reset(target) into session.reset(target).",
+    "Pin normal recipient marker and retained running SHA.",
+    "Qualify bounded CRC/control work and aggregate sequential padded IP evidence before removing hard blockers.",
+    "Keep normal stock and B1 SP17 fresh boot evidence distinct; no full stock boot claim."
+  ],
+  "history": {
+    "originalSourceSnapshot": "tools/emulator-evidence/larger-writer-pre-implementation-20261003/manifest.json",
+    "originalWorkerSnapshot": "tools/emulator-evidence/larger-writer-worker-pre-forwarding-20261003/manifest.json",
+    "original60PinSourceReview": "tools/emulator-evidence/larger-writer-source-review-20261003.json",
+    "historicalReportsUnchanged": true
+  }
+}

@@ -1,0 +1,4550 @@
+{
+  "scope": "Original legal register-only Thumb IT/ITE/ITTTT functional qualification; no firmware or physical device execution",
+  "architectureSource": {
+    "name": "Armv7-M Architecture Reference Manual, DDI 0403E.e",
+    "url": "https://documentation-service.arm.com/static/606dc36485368c4c2b1bf62f",
+    "sections": [
+      "A7.3.1-A7.3.3 conditional execution and ITSTATE",
+      "A7.7.38 IT",
+      "B1.4.2 EPSR"
+    ]
+  },
+  "runtime": {
+    "wrapperCommit": "1220477c7fb0f8fe4b500f4bd211de52f6dfe638",
+    "coreCommit": "8028ec436f2d9376525352dd38ed9ed6b9f6be10",
+    "files": {
+      "unicorn-arm.js": {
+        "bytes": 43313,
+        "sha256": "d8bc37b898ccbc5b429f17112add6ad33a8a9b35df4146034ba141b992dae007"
+      },
+      "unicorn-arm.wasm": {
+        "bytes": 704978,
+        "sha256": "16599c54af6da32ecce2ce52538890610a83c96e1152796ddffa2533d6440b35"
+      },
+      "LICENSE-GPL-2.0.txt": {
+        "bytes": 18092,
+        "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643"
+      },
+      "UNICORN-COPYING.txt": {
+        "bytes": 17992,
+        "sha256": "6f04ae8364d0079a192b14635f4b1da294ce18724c034c39a6a41d1b09df6100"
+      },
+      "UNICORN-AUTHORS.txt": {
+        "bytes": 81,
+        "sha256": "6dff517f42f12f2c64d0864cc06a7d2a1cc10c7435a1167a49c625e60813f51c"
+      },
+      "UNICORN-CREDITS.txt": {
+        "bytes": 2197,
+        "sha256": "ea18f463dee60f35024f5116f2c7fd553cb355fcf21843ac71e5406f0aa3279d"
+      }
+    }
+  },
+  "sourceSha256": {
+    "tools/fixtures/emulator-thumb-it.S": "e8daa35eea0fc1c948641b2ccc3034de8fdced580868fece93c797fd909c5390",
+    "tools/test-emulator-thumb-it.mjs": "2b6cb12e2bbb1340d9d367bedee650ad7d81cc12f7af50dd469f89d31665ae4e",
+    "src/lib/emulator/cpu.ts": "fb27f37e31277b4e79d1847562c961de23acd25befc4015ffbfd2a3c7d7809b1",
+    "public/emulator/vendor/provenance.json": "b3cdb377c331b2a8dc197425284704e91093acb65007c9a5c43e4b3e0717fb93"
+  },
+  "assembler": "GNU assembler (Arm GNU Toolchain 14.3.Rel1 (Build arm-14.174)) 2.44.0.20250616",
+  "cases": [
+    {
+      "block": "single",
+      "conditionEqual": true,
+      "schedule": "full",
+      "expected": {
+        "registers": {
+          "r0": 0,
+          "r1": 113,
+          "r2": 82,
+          "r3": 99,
+          "r4": 132,
+          "r5": 165,
+          "r6": 102,
+          "r7": 199
+        },
+        "nzcv": 1610612736,
+        "hooks": [
+          2147483648,
+          2147483650,
+          2147483652,
+          2147483654
+        ],
+        "itStateAtAddress": {
+          "2147483648": 0,
+          "2147483650": 0,
+          "2147483652": 8,
+          "2147483654": 0,
+          "2147483658": 0
+        },
+        "hookTraceWithStop": [
+          2147483648,
+          2147483650,
+          2147483652,
+          2147483654
+        ]
+      },
+      "hooks": [
+        {
+          "address": 2147483648,
+          "size": 2,
+          "xpsr": 1090519040,
+          "itState": 0
+        },
+        {
+          "address": 2147483650,
+          "size": 2,
+          "xpsr": 1627389952,
+          "itState": 0
+        },
+        {
+          "address": 2147483652,
+          "size": 2,
+          "xpsr": 1627389952,
+          "itState": 0
+        },
+        {
+          "address": 2147483654,
+          "size": 4,
+          "xpsr": 1627389952,
+          "itState": 0
+        }
+      ],
+      "slices": [
+        {
+          "instructions": 4,
+          "totalInstructions": 4,
+          "pc": 2147483658,
+          "reason": "stopped",
+          "xpsr": 1627389952,
+          "itState": 0,
+          "expectedItState": 0,
+          "registers": {
+            "r0": 0,
+            "r1": 113,
+            "r2": 82,
+            "r3": 99,
+            "r4": 132,
+            "r5": 165,
+            "r6": 102,
+            "r7": 199
+          }
+        }
+      ],
+      "checks": {
+        "mappedExit": true,
+        "healthyBackend": true,
+        "registers": true,
+        "flagsPreserved": true,
+        "sliceItState": true,
+        "terminalItState": true,
+        "hookTrace": true,
+        "countMatchesTicks": true
+      },
+      "instructions": 4,
+      "boardTicks": 4,
+      "yieldObserved": false
+    },
+    {
+      "block": "single",
+      "conditionEqual": true,
+      "schedule": "unit",
+      "expected": {
+        "registers": {
+          "r0": 0,
+          "r1": 113,
+          "r2": 82,
+          "r3": 99,
+          "r4": 132,
+          "r5": 165,
+          "r6": 102,
+          "r7": 199
+        },
+        "nzcv": 1610612736,
+        "hooks": [
+          2147483648,
+          2147483650,
+          2147483652,
+          2147483654
+        ],
+        "itStateAtAddress": {
+          "2147483648": 0,
+          "2147483650": 0,
+          "2147483652": 8,
+          "2147483654": 0,
+          "2147483658": 0
+        },
+        "hookTraceWithStop": [
+          2147483648,
+          2147483650,
+          2147483652,
+          2147483654
+        ]
+      },
+      "hooks": [
+        {
+          "address": 2147483648,
+          "size": 2,
+          "xpsr": 1090519040,
+          "itState": 0
+        },
+        {
+          "address": 2147483650,
+          "size": 2,
+          "xpsr": 1627389952,
+          "itState": 0
+        },
+        {
+          "address": 2147483654,
+          "size": 4,
+          "xpsr": 1627389952,
+          "itState": 0
+        }
+      ],
+      "slices": [
+        {
+          "instructions": 1,
+          "totalInstructions": 1,
+          "pc": 2147483650,
+          "reason": "budget",
+          "xpsr": 1627389952,
+          "itState": 0,
+          "expectedItState": 0,
+          "registers": {
+            "r0": 0,
+            "r1": 49,
+            "r2": 82,
+            "r3": 99,
+            "r4": 132,
+            "r5": 165,
+            "r6": 182,
+            "r7": 199
+          }
+        },
+        {
+          "instructions": 1,
+          "totalInstructions": 2,
+          "pc": 2147483654,
+          "reason": "budget",
+          "xpsr": 1627389952,
+          "itState": 0,
+          "expectedItState": 0,
+          "registers": {
+            "r0": 0,
+            "r1": 113,
+            "r2": 82,
+            "r3": 99,
+            "r4": 132,
+            "r5": 165,
+            "r6": 182,
+            "r7": 199
+          }
+        },
+        {
+          "instructions": 1,
+          "totalInstructions": 3,
+          "pc": 2147483658,
+          "reason": "budget",
+          "xpsr": 1627389952,
+          "itState": 0,
+          "expectedItState": 0,
+          "registers": {
+            "r0": 0,
+            "r1": 113,
+            "r2": 82,
+            "r3": 99,
+            "r4": 132,
+            "r5": 165,
+            "r6": 102,
+            "r7": 199
+          }
+        }
+      ],
+      "checks": {
+        "mappedExit": true,
+        "healthyBackend": true,
+        "registers": true,
+        "flagsPreserved": true,
+        "sliceItState": true,
+        "terminalItState": true,
+        "hookTrace": false,
+        "countMatchesTicks": true
+      },
+      "instructions": 3,
+      "boardTicks": 3,
+      "yieldObserved": false
+    },
+    {
+      "block": "single",
+      "conditionEqual": true,
+      "schedule": "mixed",
+      "expected": {
+        "registers": {
+          "r0": 0,
+          "r1": 113,
+          "r2": 82,
+          "r3": 99,
+          "r4": 132,
+          "r5": 165,
+          "r6": 102,
+          "r7": 199
+        },
+        "nzcv": 1610612736,
+        "hooks": [
+          2147483648,
+          2147483650,
+          2147483652,
+          2147483654
+        ],
+        "itStateAtAddress": {
+          "2147483648": 0,
+          "2147483650": 0,
+          "2147483652": 8,
+          "2147483654": 0,
+          "2147483658": 0
+        },
+        "hookTraceWithStop": [
+          2147483648,
+          2147483650,
+          2147483652,
+          2147483654
+        ]
+      },
+      "hooks": [
+        {
+          "address": 2147483648,
+          "size": 2,
+          "xpsr": 1090519040,
+          "itState": 0
+        },
+        {
+          "address": 2147483650,
+          "size": 2,
+          "xpsr": 1627389952,
+          "itState": 0
+        },
+        {
+          "address": 2147483654,
+          "size": 4,
+          "xpsr": 1627389952,
+          "itState": 0
+        }
+      ],
+      "slices": [
+        {
+          "instructions": 2,
+          "totalInstructions": 2,
+          "pc": 2147483654,
+          "reason": "budget",
+          "xpsr": 1627389952,
+          "itState": 0,
+          "expectedItState": 0,
+          "registers": {
+            "r0": 0,
+            "r1": 113,
+            "r2": 82,
+            "r3": 99,
+            "r4": 132,
+            "r5": 165,
+            "r6": 182,
+            "r7": 199
+          }
+        },
+        {
+          "instructions": 1,
+          "totalInstructions": 3,
+          "pc": 2147483658,
+          "reason": "budget",
+          "xpsr": 1627389952,
+          "itState": 0,
+          "expectedItState": 0,
+          "registers": {
+            "r0": 0,
+            "r1": 113,
+            "r2": 82,
+            "r3": 99,
+            "r4": 132,
+            "r5": 165,
+            "r6": 102,
+            "r7": 199
+          }
+        }
+      ],
+      "checks": {
+        "mappedExit": true,
+        "healthyBackend": true,
+        "registers": true,
+        "flagsPreserved": true,
+        "sliceItState": true,
+        "terminalItState": true,
+        "hookTrace": false,
+        "countMatchesTicks": true
+      },
+      "instructions": 3,
+      "boardTicks": 3,
+      "yieldObserved": false
+    },
+    {
+      "block": "single",
+      "conditionEqual": true,
+      "schedule": "hook-stop-2",
+      "expected": {
+        "registers": {
+          "r0": 0,
+          "r1": 113,
+          "r2": 82,
+          "r3": 99,
+          "r4": 132,
+          "r5": 165,
+          "r6": 102,
+          "r7": 199
+        },
+        "nzcv": 1610612736,
+        "hooks": [
+          2147483648,
+          2147483650,
+          2147483652,
+          2147483654
+        ],
+        "itStateAtAddress": {
+          "2147483648": 0,
+          "2147483650": 0,
+          "2147483652": 8,
+          "2147483654": 0,
+          "2147483658": 0
+        },
+        "hookTraceWithStop": [
+          2147483648,
+          2147483650,
+          2147483650,
+          2147483652,
+          2147483654
+        ]
+      },
+      "hooks": [
+        {
+          "address": 2147483648,
+          "size": 2,
+          "xpsr": 1090519040,
+          "itState": 0
+        },
+        {
+          "address": 2147483650,
+          "size": 2,
+          "xpsr": 1627389952,
+          "itState": 0
+        },
+        {
+          "address": 2147483650,
+          "size": 2,
+          "xpsr": 1627389952,
+          "itState": 0
+        },
+        {
+          "address": 2147483652,
+          "size": 2,
+          "xpsr": 1627389952,
+          "itState": 0
+        },
+        {
+          "address": 2147483654,
+          "size": 4,
+          "xpsr": 1627389952,
+          "itState": 0
+        }
+      ],
+      "slices": [
+        {
+          "instructions": 1,
+          "totalInstructions": 1,
+          "pc": 2147483650,
+          "reason": "stopped",
+          "xpsr": 1627389952,
+          "itState": 0,
+          "expectedItState": 0,
+          "registers": {
+            "r0": 0,
+            "r1": 49,
+            "r2": 82,
+            "r3": 99,
+            "r4": 132,
+            "r5": 165,
+            "r6": 182,
+            "r7": 199
+          }
+        },
+        {
+          "instructions": 3,
+          "totalInstructions": 4,
+          "pc": 2147483658,
+          "reason": "stopped",
+          "xpsr": 1627389952,
+          "itState": 0,
+          "expectedItState": 0,
+          "registers": {
+            "r0": 0,
+            "r1": 113,
+            "r2": 82,
+            "r3": 99,
+            "r4": 132,
+            "r5": 165,
+            "r6": 102,
+            "r7": 199
+          }
+        }
+      ],
+      "checks": {
+        "mappedExit": true,
+        "healthyBackend": true,
+        "registers": true,
+        "flagsPreserved": true,
+        "sliceItState": true,
+        "terminalItState": true,
+        "hookTrace": true,
+        "countMatchesTicks": true,
+        "hookYieldOccurred": true
+      },
+      "instructions": 4,
+      "boardTicks": 4,
+      "yieldObserved": true
+    },
+    {
+      "block": "single",
+      "conditionEqual": true,
+      "schedule": "hook-stop-4",
+      "expected": {
+        "registers": {
+          "r0": 0,
+          "r1": 113,
+          "r2": 82,
+          "r3": 99,
+          "r4": 132,
+          "r5": 165,
+          "r6": 102,
+          "r7": 199
+        },
+        "nzcv": 1610612736,
+        "hooks": [
+          2147483648,
+          2147483650,
+          2147483652,
+          2147483654
+        ],
+        "itStateAtAddress": {
+          "2147483648": 0,
+          "2147483650": 0,
+          "2147483652": 8,
+          "2147483654": 0,
+          "2147483658": 0
+        },
+        "hookTraceWithStop": [
+          2147483648,
+          2147483650,
+          2147483652,
+          2147483652,
+          2147483654
+        ]
+      },
+      "hooks": [
+        {
+          "address": 2147483648,
+          "size": 2,
+          "xpsr": 1090519040,
+          "itState": 0
+        },
+        {
+          "address": 2147483650,
+          "size": 2,
+          "xpsr": 1627389952,
+          "itState": 0
+        },
+        {
+          "address": 2147483652,
+          "size": 2,
+          "xpsr": 1627389952,
+          "itState": 0
+        },
+        {
+          "address": 2147483654,
+          "size": 4,
+          "xpsr": 1627389952,
+          "itState": 0
+        }
+      ],
+      "slices": [
+        {
+          "instructions": 2,
+          "totalInstructions": 2,
+          "pc": 2147483658,
+          "reason": "stopped",
+          "xpsr": 1627389952,
+          "itState": 0,
+          "expectedItState": 0,
+          "registers": {
+            "r0": 0,
+            "r1": 113,
+            "r2": 82,
+            "r3": 99,
+            "r4": 132,
+            "r5": 165,
+            "r6": 102,
+            "r7": 199
+          }
+        }
+      ],
+      "checks": {
+        "mappedExit": true,
+        "healthyBackend": true,
+        "registers": true,
+        "flagsPreserved": true,
+        "sliceItState": true,
+        "terminalItState": true,
+        "hookTrace": false,
+        "countMatchesTicks": true,
+        "hookYieldOccurred": true
+      },
+      "instructions": 2,
+      "boardTicks": 2,
+      "yieldObserved": true
+    },
+    {
+      "block": "single",
+      "conditionEqual": true,
+      "schedule": "hook-stop-6",
+      "expected": {
+        "registers": {
+          "r0": 0,
+          "r1": 113,
+          "r2": 82,
+          "r3": 99,
+          "r4": 132,
+          "r5": 165,
+          "r6": 102,
+          "r7": 199
+        },
+        "nzcv": 1610612736,
+        "hooks": [
+          2147483648,
+          2147483650,
+          2147483652,
+          2147483654
+        ],
+        "itStateAtAddress": {
+          "2147483648": 0,
+          "2147483650": 0,
+          "2147483652": 8,
+          "2147483654": 0,
+          "2147483658": 0
+        },
+        "hookTraceWithStop": [
+          2147483648,
+          2147483650,
+          2147483652,
+          2147483654,
+          2147483654
+        ]
+      },
+      "hooks": [
+        {
+          "address": 2147483648,
+          "size": 2,
+          "xpsr": 1090519040,
+          "itState": 0
+        },
+        {
+          "address": 2147483650,
+          "size": 2,
+          "xpsr": 1627389952,
+          "itState": 0
+        },
+        {
+          "address": 2147483652,
+          "size": 2,
+          "xpsr": 1627389952,
+          "itState": 0
+        },
+        {
+          "address": 2147483654,
+          "size": 4,
+          "xpsr": 1627389952,
+          "itState": 0
+        },
+        {
+          "address": 2147483654,
+          "size": 4,
+          "xpsr": 1627389952,
+          "itState": 0
+        }
+      ],
+      "slices": [
+        {
+          "instructions": 3,
+          "totalInstructions": 3,
+          "pc": 2147483654,
+          "reason": "stopped",
+          "xpsr": 1627389952,
+          "itState": 0,
+          "expectedItState": 0,
+          "registers": {
+            "r0": 0,
+            "r1": 113,
+            "r2": 82,
+            "r3": 99,
+            "r4": 132,
+            "r5": 165,
+            "r6": 182,
+            "r7": 199
+          }
+        },
+        {
+          "instructions": 1,
+          "totalInstructions": 4,
+          "pc": 2147483658,
+          "reason": "stopped",
+          "xpsr": 1627389952,
+          "itState": 0,
+          "expectedItState": 0,
+          "registers": {
+            "r0": 0,
+            "r1": 113,
+            "r2": 82,
+            "r3": 99,
+            "r4": 132,
+            "r5": 165,
+            "r6": 102,
+            "r7": 199
+          }
+        }
+      ],
+      "checks": {
+        "mappedExit": true,
+        "healthyBackend": true,
+        "registers": true,
+        "flagsPreserved": true,
+        "sliceItState": true,
+        "terminalItState": true,
+        "hookTrace": true,
+        "countMatchesTicks": true,
+        "hookYieldOccurred": true
+      },
+      "instructions": 4,
+      "boardTicks": 4,
+      "yieldObserved": true
+    },
+    {
+      "block": "single",
+      "conditionEqual": false,
+      "schedule": "full",
+      "expected": {
+        "registers": {
+          "r0": 1,
+          "r1": 49,
+          "r2": 82,
+          "r3": 99,
+          "r4": 132,
+          "r5": 165,
+          "r6": 102,
+          "r7": 199
+        },
+        "nzcv": 536870912,
+        "hooks": [
+          2147483648,
+          2147483650,
+          2147483654
+        ],
+        "itStateAtAddress": {
+          "2147483648": 0,
+          "2147483650": 0,
+          "2147483652": 8,
+          "2147483654": 0,
+          "2147483658": 0
+        },
+        "hookTraceWithStop": [
+          2147483648,
+          2147483650,
+          2147483654
+        ]
+      },
+      "hooks": [
+        {
+          "address": 2147483648,
+          "size": 2,
+          "xpsr": 1090519040,
+          "itState": 0
+        },
+        {
+          "address": 2147483650,
+          "size": 2,
+          "xpsr": 553648128,
+          "itState": 0
+        },
+        {
+          "address": 2147483654,
+          "size": 4,
+          "xpsr": 553648128,
+          "itState": 0
+        }
+      ],
+      "slices": [
+        {
+          "instructions": 3,
+          "totalInstructions": 3,
+          "pc": 2147483658,
+          "reason": "stopped",
+          "xpsr": 553648128,
+          "itState": 0,
+          "expectedItState": 0,
+          "registers": {
+            "r0": 1,
+            "r1": 49,
+            "r2": 82,
+            "r3": 99,
+            "r4": 132,
+            "r5": 165,
+            "r6": 102,
+            "r7": 199
+          }
+        }
+      ],
+      "checks": {
+        "mappedExit": true,
+        "healthyBackend": true,
+        "registers": true,
+        "flagsPreserved": true,
+        "sliceItState": true,
+        "terminalItState": true,
+        "hookTrace": true,
+        "countMatchesTicks": true
+      },
+      "instructions": 3,
+      "boardTicks": 3,
+      "yieldObserved": false
+    },
+    {
+      "block": "single",
+      "conditionEqual": false,
+      "schedule": "unit",
+      "expected": {
+        "registers": {
+          "r0": 1,
+          "r1": 49,
+          "r2": 82,
+          "r3": 99,
+          "r4": 132,
+          "r5": 165,
+          "r6": 102,
+          "r7": 199
+        },
+        "nzcv": 536870912,
+        "hooks": [
+          2147483648,
+          2147483650,
+          2147483654
+        ],
+        "itStateAtAddress": {
+          "2147483648": 0,
+          "2147483650": 0,
+          "2147483652": 8,
+          "2147483654": 0,
+          "2147483658": 0
+        },
+        "hookTraceWithStop": [
+          2147483648,
+          2147483650,
+          2147483654
+        ]
+      },
+      "hooks": [
+        {
+          "address": 2147483648,
+          "size": 2,
+          "xpsr": 1090519040,
+          "itState": 0
+        },
+        {
+          "address": 2147483650,
+          "size": 2,
+          "xpsr": 553648128,
+          "itState": 0
+        },
+        {
+          "address": 2147483654,
+          "size": 4,
+          "xpsr": 553648128,
+          "itState": 0
+        }
+      ],
+      "slices": [
+        {
+          "instructions": 1,
+          "totalInstructions": 1,
+          "pc": 2147483650,
+          "reason": "budget",
+          "xpsr": 553648128,
+          "itState": 0,
+          "expectedItState": 0,
+          "registers": {
+            "r0": 1,
+            "r1": 49,
+            "r2": 82,
+            "r3": 99,
+            "r4": 132,
+            "r5": 165,
+            "r6": 182,
+            "r7": 199
+          }
+        },
+        {
+          "instructions": 1,
+          "totalInstructions": 2,
+          "pc": 2147483654,
+          "reason": "budget",
+          "xpsr": 553648128,
+          "itState": 0,
+          "expectedItState": 0,
+          "registers": {
+            "r0": 1,
+            "r1": 49,
+            "r2": 82,
+            "r3": 99,
+            "r4": 132,
+            "r5": 165,
+            "r6": 182,
+            "r7": 199
+          }
+        },
+        {
+          "instructions": 1,
+          "totalInstructions": 3,
+          "pc": 2147483658,
+          "reason": "budget",
+          "xpsr": 553648128,
+          "itState": 0,
+          "expectedItState": 0,
+          "registers": {
+            "r0": 1,
+            "r1": 49,
+            "r2": 82,
+            "r3": 99,
+            "r4": 132,
+            "r5": 165,
+            "r6": 102,
+            "r7": 199
+          }
+        }
+      ],
+      "checks": {
+        "mappedExit": true,
+        "healthyBackend": true,
+        "registers": true,
+        "flagsPreserved": true,
+        "sliceItState": true,
+        "terminalItState": true,
+        "hookTrace": true,
+        "countMatchesTicks": true
+      },
+      "instructions": 3,
+      "boardTicks": 3,
+      "yieldObserved": false
+    },
+    {
+      "block": "single",
+      "conditionEqual": false,
+      "schedule": "mixed",
+      "expected": {
+        "registers": {
+          "r0": 1,
+          "r1": 49,
+          "r2": 82,
+          "r3": 99,
+          "r4": 132,
+          "r5": 165,
+          "r6": 102,
+          "r7": 199
+        },
+        "nzcv": 536870912,
+        "hooks": [
+          2147483648,
+          2147483650,
+          2147483654
+        ],
+        "itStateAtAddress": {
+          "2147483648": 0,
+          "2147483650": 0,
+          "2147483652": 8,
+          "2147483654": 0,
+          "2147483658": 0
+        },
+        "hookTraceWithStop": [
+          2147483648,
+          2147483650,
+          2147483654
+        ]
+      },
+      "hooks": [
+        {
+          "address": 2147483648,
+          "size": 2,
+          "xpsr": 1090519040,
+          "itState": 0
+        },
+        {
+          "address": 2147483650,
+          "size": 2,
+          "xpsr": 553648128,
+          "itState": 0
+        },
+        {
+          "address": 2147483654,
+          "size": 4,
+          "xpsr": 553648128,
+          "itState": 0
+        }
+      ],
+      "slices": [
+        {
+          "instructions": 2,
+          "totalInstructions": 2,
+          "pc": 2147483654,
+          "reason": "budget",
+          "xpsr": 553648128,
+          "itState": 0,
+          "expectedItState": 0,
+          "registers": {
+            "r0": 1,
+            "r1": 49,
+            "r2": 82,
+            "r3": 99,
+            "r4": 132,
+            "r5": 165,
+            "r6": 182,
+            "r7": 199
+          }
+        },
+        {
+          "instructions": 1,
+          "totalInstructions": 3,
+          "pc": 2147483658,
+          "reason": "budget",
+          "xpsr": 553648128,
+          "itState": 0,
+          "expectedItState": 0,
+          "registers": {
+            "r0": 1,
+            "r1": 49,
+            "r2": 82,
+            "r3": 99,
+            "r4": 132,
+            "r5": 165,
+            "r6": 102,
+            "r7": 199
+          }
+        }
+      ],
+      "checks": {
+        "mappedExit": true,
+        "healthyBackend": true,
+        "registers": true,
+        "flagsPreserved": true,
+        "sliceItState": true,
+        "terminalItState": true,
+        "hookTrace": true,
+        "countMatchesTicks": true
+      },
+      "instructions": 3,
+      "boardTicks": 3,
+      "yieldObserved": false
+    },
+    {
+      "block": "single",
+      "conditionEqual": false,
+      "schedule": "hook-stop-2",
+      "expected": {
+        "registers": {
+          "r0": 1,
+          "r1": 49,
+          "r2": 82,
+          "r3": 99,
+          "r4": 132,
+          "r5": 165,
+          "r6": 102,
+          "r7": 199
+        },
+        "nzcv": 536870912,
+        "hooks": [
+          2147483648,
+          2147483650,
+          2147483654
+        ],
+        "itStateAtAddress": {
+          "2147483648": 0,
+          "2147483650": 0,
+          "2147483652": 8,
+          "2147483654": 0,
+          "2147483658": 0
+        },
+        "hookTraceWithStop": [
+          2147483648,
+          2147483650,
+          2147483650,
+          2147483654
+        ]
+      },
+      "hooks": [
+        {
+          "address": 2147483648,
+          "size": 2,
+          "xpsr": 1090519040,
+          "itState": 0
+        },
+        {
+          "address": 2147483650,
+          "size": 2,
+          "xpsr": 553648128,
+          "itState": 0
+        },
+        {
+          "address": 2147483650,
+          "size": 2,
+          "xpsr": 553648128,
+          "itState": 0
+        },
+        {
+          "address": 2147483654,
+          "size": 4,
+          "xpsr": 553648128,
+          "itState": 0
+        }
+      ],
+      "slices": [
+        {
+          "instructions": 1,
+          "totalInstructions": 1,
+          "pc": 2147483650,
+          "reason": "stopped",
+          "xpsr": 553648128,
+          "itState": 0,
+          "expectedItState": 0,
+          "registers": {
+            "r0": 1,
+            "r1": 49,
+            "r2": 82,
+            "r3": 99,
+            "r4": 132,
+            "r5": 165,
+            "r6": 182,
+            "r7": 199
+          }
+        },
+        {
+          "instructions": 2,
+          "totalInstructions": 3,
+          "pc": 2147483658,
+          "reason": "stopped",
+          "xpsr": 553648128,
+          "itState": 0,
+          "expectedItState": 0,
+          "registers": {
+            "r0": 1,
+            "r1": 49,
+            "r2": 82,
+            "r3": 99,
+            "r4": 132,
+            "r5": 165,
+            "r6": 102,
+            "r7": 199
+          }
+        }
+      ],
+      "checks": {
+        "mappedExit": true,
+        "healthyBackend": true,
+        "registers": true,
+        "flagsPreserved": true,
+        "sliceItState": true,
+        "terminalItState": true,
+        "hookTrace": true,
+        "countMatchesTicks": true,
+        "hookYieldOccurred": true
+      },
+      "instructions": 3,
+      "boardTicks": 3,
+      "yieldObserved": true
+    },
+    {
+      "block": "single",
+      "conditionEqual": false,
+      "schedule": "hook-stop-6",
+      "expected": {
+        "registers": {
+          "r0": 1,
+          "r1": 49,
+          "r2": 82,
+          "r3": 99,
+          "r4": 132,
+          "r5": 165,
+          "r6": 102,
+          "r7": 199
+        },
+        "nzcv": 536870912,
+        "hooks": [
+          2147483648,
+          2147483650,
+          2147483654
+        ],
+        "itStateAtAddress": {
+          "2147483648": 0,
+          "2147483650": 0,
+          "2147483652": 8,
+          "2147483654": 0,
+          "2147483658": 0
+        },
+        "hookTraceWithStop": [
+          2147483648,
+          2147483650,
+          2147483654,
+          2147483654
+        ]
+      },
+      "hooks": [
+        {
+          "address": 2147483648,
+          "size": 2,
+          "xpsr": 1090519040,
+          "itState": 0
+        },
+        {
+          "address": 2147483650,
+          "size": 2,
+          "xpsr": 553648128,
+          "itState": 0
+        },
+        {
+          "address": 2147483654,
+          "size": 4,
+          "xpsr": 553648128,
+          "itState": 0
+        },
+        {
+          "address": 2147483654,
+          "size": 4,
+          "xpsr": 553648128,
+          "itState": 0
+        }
+      ],
+      "slices": [
+        {
+          "instructions": 2,
+          "totalInstructions": 2,
+          "pc": 2147483654,
+          "reason": "stopped",
+          "xpsr": 553648128,
+          "itState": 0,
+          "expectedItState": 0,
+          "registers": {
+            "r0": 1,
+            "r1": 49,
+            "r2": 82,
+            "r3": 99,
+            "r4": 132,
+            "r5": 165,
+            "r6": 182,
+            "r7": 199
+          }
+        },
+        {
+          "instructions": 1,
+          "totalInstructions": 3,
+          "pc": 2147483658,
+          "reason": "stopped",
+          "xpsr": 553648128,
+          "itState": 0,
+          "expectedItState": 0,
+          "registers": {
+            "r0": 1,
+            "r1": 49,
+            "r2": 82,
+            "r3": 99,
+            "r4": 132,
+            "r5": 165,
+            "r6": 102,
+            "r7": 199
+          }
+        }
+      ],
+      "checks": {
+        "mappedExit": true,
+        "healthyBackend": true,
+        "registers": true,
+        "flagsPreserved": true,
+        "sliceItState": true,
+        "terminalItState": true,
+        "hookTrace": true,
+        "countMatchesTicks": true,
+        "hookYieldOccurred": true
+      },
+      "instructions": 3,
+      "boardTicks": 3,
+      "yieldObserved": true
+    },
+    {
+      "block": "alternate",
+      "conditionEqual": true,
+      "schedule": "full",
+      "expected": {
+        "registers": {
+          "r0": 0,
+          "r1": 52,
+          "r2": 82,
+          "r3": 99,
+          "r4": 132,
+          "r5": 165,
+          "r6": 102,
+          "r7": 199
+        },
+        "nzcv": 1610612736,
+        "hooks": [
+          2147483680,
+          2147483682,
+          2147483684,
+          2147483688
+        ],
+        "itStateAtAddress": {
+          "2147483680": 0,
+          "2147483682": 0,
+          "2147483684": 12,
+          "2147483686": 24,
+          "2147483688": 0,
+          "2147483692": 0
+        },
+        "hookTraceWithStop": [
+          2147483680,
+          2147483682,
+          2147483684,
+          2147483688
+        ]
+      },
+      "hooks": [
+        {
+          "address": 2147483680,
+          "size": 2,
+          "xpsr": 1090519040,
+          "itState": 0
+        },
+        {
+          "address": 2147483682,
+          "size": 2,
+          "xpsr": 1627389952,
+          "itState": 0
+        },
+        {
+          "address": 2147483684,
+          "size": 2,
+          "xpsr": 1627389952,
+          "itState": 0
+        },
+        {
+          "address": 2147483688,
+          "size": 4,
+          "xpsr": 1627389952,
+          "itState": 0
+        }
+      ],
+      "slices": [
+        {
+          "instructions": 4,
+          "totalInstructions": 4,
+          "pc": 2147483692,
+          "reason": "stopped",
+          "xpsr": 1627389952,
+          "itState": 0,
+          "expectedItState": 0,
+          "registers": {
+            "r0": 0,
+            "r1": 52,
+            "r2": 82,
+            "r3": 99,
+            "r4": 132,
+            "r5": 165,
+            "r6": 102,
+            "r7": 199
+          }
+        }
+      ],
+      "checks": {
+        "mappedExit": true,
+        "healthyBackend": true,
+        "registers": true,
+        "flagsPreserved": true,
+        "sliceItState": true,
+        "terminalItState": true,
+        "hookTrace": true,
+        "countMatchesTicks": true
+      },
+      "instructions": 4,
+      "boardTicks": 4,
+      "yieldObserved": false
+    },
+    {
+      "block": "alternate",
+      "conditionEqual": true,
+      "schedule": "unit",
+      "expected": {
+        "registers": {
+          "r0": 0,
+          "r1": 52,
+          "r2": 82,
+          "r3": 99,
+          "r4": 132,
+          "r5": 165,
+          "r6": 102,
+          "r7": 199
+        },
+        "nzcv": 1610612736,
+        "hooks": [
+          2147483680,
+          2147483682,
+          2147483684,
+          2147483688
+        ],
+        "itStateAtAddress": {
+          "2147483680": 0,
+          "2147483682": 0,
+          "2147483684": 12,
+          "2147483686": 24,
+          "2147483688": 0,
+          "2147483692": 0
+        },
+        "hookTraceWithStop": [
+          2147483680,
+          2147483682,
+          2147483684,
+          2147483688
+        ]
+      },
+      "hooks": [
+        {
+          "address": 2147483680,
+          "size": 2,
+          "xpsr": 1090519040,
+          "itState": 0
+        },
+        {
+          "address": 2147483682,
+          "size": 2,
+          "xpsr": 1627389952,
+          "itState": 0
+        },
+        {
+          "address": 2147483688,
+          "size": 4,
+          "xpsr": 1627389952,
+          "itState": 0
+        }
+      ],
+      "slices": [
+        {
+          "instructions": 1,
+          "totalInstructions": 1,
+          "pc": 2147483682,
+          "reason": "budget",
+          "xpsr": 1627389952,
+          "itState": 0,
+          "expectedItState": 0,
+          "registers": {
+            "r0": 0,
+            "r1": 49,
+            "r2": 82,
+            "r3": 99,
+            "r4": 132,
+            "r5": 165,
+            "r6": 182,
+            "r7": 199
+          }
+        },
+        {
+          "instructions": 1,
+          "totalInstructions": 2,
+          "pc": 2147483688,
+          "reason": "budget",
+          "xpsr": 1627389952,
+          "itState": 0,
+          "expectedItState": 0,
+          "registers": {
+            "r0": 0,
+            "r1": 52,
+            "r2": 82,
+            "r3": 99,
+            "r4": 132,
+            "r5": 165,
+            "r6": 182,
+            "r7": 199
+          }
+        },
+        {
+          "instructions": 1,
+          "totalInstructions": 3,
+          "pc": 2147483692,
+          "reason": "budget",
+          "xpsr": 1627389952,
+          "itState": 0,
+          "expectedItState": 0,
+          "registers": {
+            "r0": 0,
+            "r1": 52,
+            "r2": 82,
+            "r3": 99,
+            "r4": 132,
+            "r5": 165,
+            "r6": 102,
+            "r7": 199
+          }
+        }
+      ],
+      "checks": {
+        "mappedExit": true,
+        "healthyBackend": true,
+        "registers": true,
+        "flagsPreserved": true,
+        "sliceItState": true,
+        "terminalItState": true,
+        "hookTrace": false,
+        "countMatchesTicks": true
+      },
+      "instructions": 3,
+      "boardTicks": 3,
+      "yieldObserved": false
+    },
+    {
+      "block": "alternate",
+      "conditionEqual": true,
+      "schedule": "mixed",
+      "expected": {
+        "registers": {
+          "r0": 0,
+          "r1": 52,
+          "r2": 82,
+          "r3": 99,
+          "r4": 132,
+          "r5": 165,
+          "r6": 102,
+          "r7": 199
+        },
+        "nzcv": 1610612736,
+        "hooks": [
+          2147483680,
+          2147483682,
+          2147483684,
+          2147483688
+        ],
+        "itStateAtAddress": {
+          "2147483680": 0,
+          "2147483682": 0,
+          "2147483684": 12,
+          "2147483686": 24,
+          "2147483688": 0,
+          "2147483692": 0
+        },
+        "hookTraceWithStop": [
+          2147483680,
+          2147483682,
+          2147483684,
+          2147483688
+        ]
+      },
+      "hooks": [
+        {
+          "address": 2147483680,
+          "size": 2,
+          "xpsr": 1090519040,
+          "itState": 0
+        },
+        {
+          "address": 2147483682,
+          "size": 2,
+          "xpsr": 1627389952,
+          "itState": 0
+        },
+        {
+          "address": 2147483688,
+          "size": 4,
+          "xpsr": 1627389952,
+          "itState": 0
+        }
+      ],
+      "slices": [
+        {
+          "instructions": 2,
+          "totalInstructions": 2,
+          "pc": 2147483688,
+          "reason": "budget",
+          "xpsr": 1627389952,
+          "itState": 0,
+          "expectedItState": 0,
+          "registers": {
+            "r0": 0,
+            "r1": 52,
+            "r2": 82,
+            "r3": 99,
+            "r4": 132,
+            "r5": 165,
+            "r6": 182,
+            "r7": 199
+          }
+        },
+        {
+          "instructions": 1,
+          "totalInstructions": 3,
+          "pc": 2147483692,
+          "reason": "budget",
+          "xpsr": 1627389952,
+          "itState": 0,
+          "expectedItState": 0,
+          "registers": {
+            "r0": 0,
+            "r1": 52,
+            "r2": 82,
+            "r3": 99,
+            "r4": 132,
+            "r5": 165,
+            "r6": 102,
+            "r7": 199
+          }
+        }
+      ],
+      "checks": {
+        "mappedExit": true,
+        "healthyBackend": true,
+        "registers": true,
+        "flagsPreserved": true,
+        "sliceItState": true,
+        "terminalItState": true,
+        "hookTrace": false,
+        "countMatchesTicks": true
+      },
+      "instructions": 3,
+      "boardTicks": 3,
+      "yieldObserved": false
+    },
+    {
+      "block": "alternate",
+      "conditionEqual": true,
+      "schedule": "hook-stop-2",
+      "expected": {
+        "registers": {
+          "r0": 0,
+          "r1": 52,
+          "r2": 82,
+          "r3": 99,
+          "r4": 132,
+          "r5": 165,
+          "r6": 102,
+          "r7": 199
+        },
+        "nzcv": 1610612736,
+        "hooks": [
+          2147483680,
+          2147483682,
+          2147483684,
+          2147483688
+        ],
+        "itStateAtAddress": {
+          "2147483680": 0,
+          "2147483682": 0,
+          "2147483684": 12,
+          "2147483686": 24,
+          "2147483688": 0,
+          "2147483692": 0
+        },
+        "hookTraceWithStop": [
+          2147483680,
+          2147483682,
+          2147483682,
+          2147483684,
+          2147483688
+        ]
+      },
+      "hooks": [
+        {
+          "address": 2147483680,
+          "size": 2,
+          "xpsr": 1090519040,
+          "itState": 0
+        },
+        {
+          "address": 2147483682,
+          "size": 2,
+          "xpsr": 1627389952,
+          "itState": 0
+        },
+        {
+          "address": 2147483682,
+          "size": 2,
+          "xpsr": 1627389952,
+          "itState": 0
+        },
+        {
+          "address": 2147483684,
+          "size": 2,
+          "xpsr": 1627389952,
+          "itState": 0
+        },
+        {
+          "address": 2147483688,
+          "size": 4,
+          "xpsr": 1627389952,
+          "itState": 0
+        }
+      ],
+      "slices": [
+        {
+          "instructions": 1,
+          "totalInstructions": 1,
+          "pc": 2147483682,
+          "reason": "stopped",
+          "xpsr": 1627389952,
+          "itState": 0,
+          "expectedItState": 0,
+          "registers": {
+            "r0": 0,
+            "r1": 49,
+            "r2": 82,
+            "r3": 99,
+            "r4": 132,
+            "r5": 165,
+            "r6": 182,
+            "r7": 199
+          }
+        },
+        {
+          "instructions": 3,
+          "totalInstructions": 4,
+          "pc": 2147483692,
+          "reason": "stopped",
+          "xpsr": 1627389952,
+          "itState": 0,
+          "expectedItState": 0,
+          "registers": {
+            "r0": 0,
+            "r1": 52,
+            "r2": 82,
+            "r3": 99,
+            "r4": 132,
+            "r5": 165,
+            "r6": 102,
+            "r7": 199
+          }
+        }
+      ],
+      "checks": {
+        "mappedExit": true,
+        "healthyBackend": true,
+        "registers": true,
+        "flagsPreserved": true,
+        "sliceItState": true,
+        "terminalItState": true,
+        "hookTrace": true,
+        "countMatchesTicks": true,
+        "hookYieldOccurred": true
+      },
+      "instructions": 4,
+      "boardTicks": 4,
+      "yieldObserved": true
+    },
+    {
+      "block": "alternate",
+      "conditionEqual": true,
+      "schedule": "hook-stop-4",
+      "expected": {
+        "registers": {
+          "r0": 0,
+          "r1": 52,
+          "r2": 82,
+          "r3": 99,
+          "r4": 132,
+          "r5": 165,
+          "r6": 102,
+          "r7": 199
+        },
+        "nzcv": 1610612736,
+        "hooks": [
+          2147483680,
+          2147483682,
+          2147483684,
+          2147483688
+        ],
+        "itStateAtAddress": {
+          "2147483680": 0,
+          "2147483682": 0,
+          "2147483684": 12,
+          "2147483686": 24,
+          "2147483688": 0,
+          "2147483692": 0
+        },
+        "hookTraceWithStop": [
+          2147483680,
+          2147483682,
+          2147483684,
+          2147483684,
+          2147483688
+        ]
+      },
+      "hooks": [
+        {
+          "address": 2147483680,
+          "size": 2,
+          "xpsr": 1090519040,
+          "itState": 0
+        },
+        {
+          "address": 2147483682,
+          "size": 2,
+          "xpsr": 1627389952,
+          "itState": 0
+        },
+        {
+          "address": 2147483684,
+          "size": 2,
+          "xpsr": 1627389952,
+          "itState": 0
+        },
+        {
+          "address": 2147483688,
+          "size": 4,
+          "xpsr": 1627389952,
+          "itState": 0
+        }
+      ],
+      "slices": [
+        {
+          "instructions": 2,
+          "totalInstructions": 2,
+          "pc": 2147483692,
+          "reason": "stopped",
+          "xpsr": 1627389952,
+          "itState": 0,
+          "expectedItState": 0,
+          "registers": {
+            "r0": 0,
+            "r1": 52,
+            "r2": 82,
+            "r3": 99,
+            "r4": 132,
+            "r5": 165,
+            "r6": 102,
+            "r7": 199
+          }
+        }
+      ],
+      "checks": {
+        "mappedExit": true,
+        "healthyBackend": true,
+        "registers": true,
+        "flagsPreserved": true,
+        "sliceItState": true,
+        "terminalItState": true,
+        "hookTrace": false,
+        "countMatchesTicks": true,
+        "hookYieldOccurred": true
+      },
+      "instructions": 2,
+      "boardTicks": 2,
+      "yieldObserved": true
+    },
+    {
+      "block": "alternate",
+      "conditionEqual": true,
+      "schedule": "hook-stop-8",
+      "expected": {
+        "registers": {
+          "r0": 0,
+          "r1": 52,
+          "r2": 82,
+          "r3": 99,
+          "r4": 132,
+          "r5": 165,
+          "r6": 102,
+          "r7": 199
+        },
+        "nzcv": 1610612736,
+        "hooks": [
+          2147483680,
+          2147483682,
+          2147483684,
+          2147483688
+        ],
+        "itStateAtAddress": {
+          "2147483680": 0,
+          "2147483682": 0,
+          "2147483684": 12,
+          "2147483686": 24,
+          "2147483688": 0,
+          "2147483692": 0
+        },
+        "hookTraceWithStop": [
+          2147483680,
+          2147483682,
+          2147483684,
+          2147483688,
+          2147483688
+        ]
+      },
+      "hooks": [
+        {
+          "address": 2147483680,
+          "size": 2,
+          "xpsr": 1090519040,
+          "itState": 0
+        },
+        {
+          "address": 2147483682,
+          "size": 2,
+          "xpsr": 1627389952,
+          "itState": 0
+        },
+        {
+          "address": 2147483684,
+          "size": 2,
+          "xpsr": 1627389952,
+          "itState": 0
+        },
+        {
+          "address": 2147483688,
+          "size": 4,
+          "xpsr": 1627389952,
+          "itState": 0
+        },
+        {
+          "address": 2147483688,
+          "size": 4,
+          "xpsr": 1627389952,
+          "itState": 0
+        }
+      ],
+      "slices": [
+        {
+          "instructions": 3,
+          "totalInstructions": 3,
+          "pc": 2147483688,
+          "reason": "stopped",
+          "xpsr": 1627389952,
+          "itState": 0,
+          "expectedItState": 0,
+          "registers": {
+            "r0": 0,
+            "r1": 52,
+            "r2": 82,
+            "r3": 99,
+            "r4": 132,
+            "r5": 165,
+            "r6": 182,
+            "r7": 199
+          }
+        },
+        {
+          "instructions": 1,
+          "totalInstructions": 4,
+          "pc": 2147483692,
+          "reason": "stopped",
+          "xpsr": 1627389952,
+          "itState": 0,
+          "expectedItState": 0,
+          "registers": {
+            "r0": 0,
+            "r1": 52,
+            "r2": 82,
+            "r3": 99,
+            "r4": 132,
+            "r5": 165,
+            "r6": 102,
+            "r7": 199
+          }
+        }
+      ],
+      "checks": {
+        "mappedExit": true,
+        "healthyBackend": true,
+        "registers": true,
+        "flagsPreserved": true,
+        "sliceItState": true,
+        "terminalItState": true,
+        "hookTrace": true,
+        "countMatchesTicks": true,
+        "hookYieldOccurred": true
+      },
+      "instructions": 4,
+      "boardTicks": 4,
+      "yieldObserved": true
+    },
+    {
+      "block": "alternate",
+      "conditionEqual": false,
+      "schedule": "full",
+      "expected": {
+        "registers": {
+          "r0": 1,
+          "r1": 49,
+          "r2": 80,
+          "r3": 99,
+          "r4": 132,
+          "r5": 165,
+          "r6": 102,
+          "r7": 199
+        },
+        "nzcv": 536870912,
+        "hooks": [
+          2147483680,
+          2147483682,
+          2147483686,
+          2147483688
+        ],
+        "itStateAtAddress": {
+          "2147483680": 0,
+          "2147483682": 0,
+          "2147483684": 12,
+          "2147483686": 24,
+          "2147483688": 0,
+          "2147483692": 0
+        },
+        "hookTraceWithStop": [
+          2147483680,
+          2147483682,
+          2147483686,
+          2147483688
+        ]
+      },
+      "hooks": [
+        {
+          "address": 2147483680,
+          "size": 2,
+          "xpsr": 1090519040,
+          "itState": 0
+        },
+        {
+          "address": 2147483682,
+          "size": 2,
+          "xpsr": 553648128,
+          "itState": 0
+        },
+        {
+          "address": 2147483686,
+          "size": 2,
+          "xpsr": 553648128,
+          "itState": 0
+        },
+        {
+          "address": 2147483688,
+          "size": 4,
+          "xpsr": 553648128,
+          "itState": 0
+        }
+      ],
+      "slices": [
+        {
+          "instructions": 4,
+          "totalInstructions": 4,
+          "pc": 2147483692,
+          "reason": "stopped",
+          "xpsr": 553648128,
+          "itState": 0,
+          "expectedItState": 0,
+          "registers": {
+            "r0": 1,
+            "r1": 49,
+            "r2": 80,
+            "r3": 99,
+            "r4": 132,
+            "r5": 165,
+            "r6": 102,
+            "r7": 199
+          }
+        }
+      ],
+      "checks": {
+        "mappedExit": true,
+        "healthyBackend": true,
+        "registers": true,
+        "flagsPreserved": true,
+        "sliceItState": true,
+        "terminalItState": true,
+        "hookTrace": true,
+        "countMatchesTicks": true
+      },
+      "instructions": 4,
+      "boardTicks": 4,
+      "yieldObserved": false
+    },
+    {
+      "block": "alternate",
+      "conditionEqual": false,
+      "schedule": "unit",
+      "expected": {
+        "registers": {
+          "r0": 1,
+          "r1": 49,
+          "r2": 80,
+          "r3": 99,
+          "r4": 132,
+          "r5": 165,
+          "r6": 102,
+          "r7": 199
+        },
+        "nzcv": 536870912,
+        "hooks": [
+          2147483680,
+          2147483682,
+          2147483686,
+          2147483688
+        ],
+        "itStateAtAddress": {
+          "2147483680": 0,
+          "2147483682": 0,
+          "2147483684": 12,
+          "2147483686": 24,
+          "2147483688": 0,
+          "2147483692": 0
+        },
+        "hookTraceWithStop": [
+          2147483680,
+          2147483682,
+          2147483686,
+          2147483688
+        ]
+      },
+      "hooks": [
+        {
+          "address": 2147483680,
+          "size": 2,
+          "xpsr": 1090519040,
+          "itState": 0
+        },
+        {
+          "address": 2147483682,
+          "size": 2,
+          "xpsr": 553648128,
+          "itState": 0
+        },
+        {
+          "address": 2147483688,
+          "size": 4,
+          "xpsr": 553648128,
+          "itState": 0
+        }
+      ],
+      "slices": [
+        {
+          "instructions": 1,
+          "totalInstructions": 1,
+          "pc": 2147483682,
+          "reason": "budget",
+          "xpsr": 553648128,
+          "itState": 0,
+          "expectedItState": 0,
+          "registers": {
+            "r0": 1,
+            "r1": 49,
+            "r2": 82,
+            "r3": 99,
+            "r4": 132,
+            "r5": 165,
+            "r6": 182,
+            "r7": 199
+          }
+        },
+        {
+          "instructions": 1,
+          "totalInstructions": 2,
+          "pc": 2147483688,
+          "reason": "budget",
+          "xpsr": 553648128,
+          "itState": 0,
+          "expectedItState": 0,
+          "registers": {
+            "r0": 1,
+            "r1": 49,
+            "r2": 80,
+            "r3": 99,
+            "r4": 132,
+            "r5": 165,
+            "r6": 182,
+            "r7": 199
+          }
+        },
+        {
+          "instructions": 1,
+          "totalInstructions": 3,
+          "pc": 2147483692,
+          "reason": "budget",
+          "xpsr": 553648128,
+          "itState": 0,
+          "expectedItState": 0,
+          "registers": {
+            "r0": 1,
+            "r1": 49,
+            "r2": 80,
+            "r3": 99,
+            "r4": 132,
+            "r5": 165,
+            "r6": 102,
+            "r7": 199
+          }
+        }
+      ],
+      "checks": {
+        "mappedExit": true,
+        "healthyBackend": true,
+        "registers": true,
+        "flagsPreserved": true,
+        "sliceItState": true,
+        "terminalItState": true,
+        "hookTrace": false,
+        "countMatchesTicks": true
+      },
+      "instructions": 3,
+      "boardTicks": 3,
+      "yieldObserved": false
+    },
+    {
+      "block": "alternate",
+      "conditionEqual": false,
+      "schedule": "mixed",
+      "expected": {
+        "registers": {
+          "r0": 1,
+          "r1": 49,
+          "r2": 80,
+          "r3": 99,
+          "r4": 132,
+          "r5": 165,
+          "r6": 102,
+          "r7": 199
+        },
+        "nzcv": 536870912,
+        "hooks": [
+          2147483680,
+          2147483682,
+          2147483686,
+          2147483688
+        ],
+        "itStateAtAddress": {
+          "2147483680": 0,
+          "2147483682": 0,
+          "2147483684": 12,
+          "2147483686": 24,
+          "2147483688": 0,
+          "2147483692": 0
+        },
+        "hookTraceWithStop": [
+          2147483680,
+          2147483682,
+          2147483686,
+          2147483688
+        ]
+      },
+      "hooks": [
+        {
+          "address": 2147483680,
+          "size": 2,
+          "xpsr": 1090519040,
+          "itState": 0
+        },
+        {
+          "address": 2147483682,
+          "size": 2,
+          "xpsr": 553648128,
+          "itState": 0
+        },
+        {
+          "address": 2147483688,
+          "size": 4,
+          "xpsr": 553648128,
+          "itState": 0
+        }
+      ],
+      "slices": [
+        {
+          "instructions": 2,
+          "totalInstructions": 2,
+          "pc": 2147483688,
+          "reason": "budget",
+          "xpsr": 553648128,
+          "itState": 0,
+          "expectedItState": 0,
+          "registers": {
+            "r0": 1,
+            "r1": 49,
+            "r2": 80,
+            "r3": 99,
+            "r4": 132,
+            "r5": 165,
+            "r6": 182,
+            "r7": 199
+          }
+        },
+        {
+          "instructions": 1,
+          "totalInstructions": 3,
+          "pc": 2147483692,
+          "reason": "budget",
+          "xpsr": 553648128,
+          "itState": 0,
+          "expectedItState": 0,
+          "registers": {
+            "r0": 1,
+            "r1": 49,
+            "r2": 80,
+            "r3": 99,
+            "r4": 132,
+            "r5": 165,
+            "r6": 102,
+            "r7": 199
+          }
+        }
+      ],
+      "checks": {
+        "mappedExit": true,
+        "healthyBackend": true,
+        "registers": true,
+        "flagsPreserved": true,
+        "sliceItState": true,
+        "terminalItState": true,
+        "hookTrace": false,
+        "countMatchesTicks": true
+      },
+      "instructions": 3,
+      "boardTicks": 3,
+      "yieldObserved": false
+    },
+    {
+      "block": "alternate",
+      "conditionEqual": false,
+      "schedule": "hook-stop-2",
+      "expected": {
+        "registers": {
+          "r0": 1,
+          "r1": 49,
+          "r2": 80,
+          "r3": 99,
+          "r4": 132,
+          "r5": 165,
+          "r6": 102,
+          "r7": 199
+        },
+        "nzcv": 536870912,
+        "hooks": [
+          2147483680,
+          2147483682,
+          2147483686,
+          2147483688
+        ],
+        "itStateAtAddress": {
+          "2147483680": 0,
+          "2147483682": 0,
+          "2147483684": 12,
+          "2147483686": 24,
+          "2147483688": 0,
+          "2147483692": 0
+        },
+        "hookTraceWithStop": [
+          2147483680,
+          2147483682,
+          2147483682,
+          2147483686,
+          2147483688
+        ]
+      },
+      "hooks": [
+        {
+          "address": 2147483680,
+          "size": 2,
+          "xpsr": 1090519040,
+          "itState": 0
+        },
+        {
+          "address": 2147483682,
+          "size": 2,
+          "xpsr": 553648128,
+          "itState": 0
+        },
+        {
+          "address": 2147483682,
+          "size": 2,
+          "xpsr": 553648128,
+          "itState": 0
+        },
+        {
+          "address": 2147483686,
+          "size": 2,
+          "xpsr": 553648128,
+          "itState": 0
+        },
+        {
+          "address": 2147483688,
+          "size": 4,
+          "xpsr": 553648128,
+          "itState": 0
+        }
+      ],
+      "slices": [
+        {
+          "instructions": 1,
+          "totalInstructions": 1,
+          "pc": 2147483682,
+          "reason": "stopped",
+          "xpsr": 553648128,
+          "itState": 0,
+          "expectedItState": 0,
+          "registers": {
+            "r0": 1,
+            "r1": 49,
+            "r2": 82,
+            "r3": 99,
+            "r4": 132,
+            "r5": 165,
+            "r6": 182,
+            "r7": 199
+          }
+        },
+        {
+          "instructions": 3,
+          "totalInstructions": 4,
+          "pc": 2147483692,
+          "reason": "stopped",
+          "xpsr": 553648128,
+          "itState": 0,
+          "expectedItState": 0,
+          "registers": {
+            "r0": 1,
+            "r1": 49,
+            "r2": 80,
+            "r3": 99,
+            "r4": 132,
+            "r5": 165,
+            "r6": 102,
+            "r7": 199
+          }
+        }
+      ],
+      "checks": {
+        "mappedExit": true,
+        "healthyBackend": true,
+        "registers": true,
+        "flagsPreserved": true,
+        "sliceItState": true,
+        "terminalItState": true,
+        "hookTrace": true,
+        "countMatchesTicks": true,
+        "hookYieldOccurred": true
+      },
+      "instructions": 4,
+      "boardTicks": 4,
+      "yieldObserved": true
+    },
+    {
+      "block": "alternate",
+      "conditionEqual": false,
+      "schedule": "hook-stop-6",
+      "expected": {
+        "registers": {
+          "r0": 1,
+          "r1": 49,
+          "r2": 80,
+          "r3": 99,
+          "r4": 132,
+          "r5": 165,
+          "r6": 102,
+          "r7": 199
+        },
+        "nzcv": 536870912,
+        "hooks": [
+          2147483680,
+          2147483682,
+          2147483686,
+          2147483688
+        ],
+        "itStateAtAddress": {
+          "2147483680": 0,
+          "2147483682": 0,
+          "2147483684": 12,
+          "2147483686": 24,
+          "2147483688": 0,
+          "2147483692": 0
+        },
+        "hookTraceWithStop": [
+          2147483680,
+          2147483682,
+          2147483686,
+          2147483686,
+          2147483688
+        ]
+      },
+      "hooks": [
+        {
+          "address": 2147483680,
+          "size": 2,
+          "xpsr": 1090519040,
+          "itState": 0
+        },
+        {
+          "address": 2147483682,
+          "size": 2,
+          "xpsr": 553648128,
+          "itState": 0
+        },
+        {
+          "address": 2147483686,
+          "size": 2,
+          "xpsr": 553648128,
+          "itState": 0
+        },
+        {
+          "address": 2147483688,
+          "size": 4,
+          "xpsr": 553648128,
+          "itState": 0
+        }
+      ],
+      "slices": [
+        {
+          "instructions": 2,
+          "totalInstructions": 2,
+          "pc": 2147483692,
+          "reason": "stopped",
+          "xpsr": 553648128,
+          "itState": 0,
+          "expectedItState": 0,
+          "registers": {
+            "r0": 1,
+            "r1": 49,
+            "r2": 80,
+            "r3": 99,
+            "r4": 132,
+            "r5": 165,
+            "r6": 102,
+            "r7": 199
+          }
+        }
+      ],
+      "checks": {
+        "mappedExit": true,
+        "healthyBackend": true,
+        "registers": true,
+        "flagsPreserved": true,
+        "sliceItState": true,
+        "terminalItState": true,
+        "hookTrace": false,
+        "countMatchesTicks": true,
+        "hookYieldOccurred": true
+      },
+      "instructions": 2,
+      "boardTicks": 2,
+      "yieldObserved": true
+    },
+    {
+      "block": "alternate",
+      "conditionEqual": false,
+      "schedule": "hook-stop-8",
+      "expected": {
+        "registers": {
+          "r0": 1,
+          "r1": 49,
+          "r2": 80,
+          "r3": 99,
+          "r4": 132,
+          "r5": 165,
+          "r6": 102,
+          "r7": 199
+        },
+        "nzcv": 536870912,
+        "hooks": [
+          2147483680,
+          2147483682,
+          2147483686,
+          2147483688
+        ],
+        "itStateAtAddress": {
+          "2147483680": 0,
+          "2147483682": 0,
+          "2147483684": 12,
+          "2147483686": 24,
+          "2147483688": 0,
+          "2147483692": 0
+        },
+        "hookTraceWithStop": [
+          2147483680,
+          2147483682,
+          2147483686,
+          2147483688,
+          2147483688
+        ]
+      },
+      "hooks": [
+        {
+          "address": 2147483680,
+          "size": 2,
+          "xpsr": 1090519040,
+          "itState": 0
+        },
+        {
+          "address": 2147483682,
+          "size": 2,
+          "xpsr": 553648128,
+          "itState": 0
+        },
+        {
+          "address": 2147483686,
+          "size": 2,
+          "xpsr": 553648128,
+          "itState": 0
+        },
+        {
+          "address": 2147483688,
+          "size": 4,
+          "xpsr": 553648128,
+          "itState": 0
+        },
+        {
+          "address": 2147483688,
+          "size": 4,
+          "xpsr": 553648128,
+          "itState": 0
+        }
+      ],
+      "slices": [
+        {
+          "instructions": 3,
+          "totalInstructions": 3,
+          "pc": 2147483688,
+          "reason": "stopped",
+          "xpsr": 553648128,
+          "itState": 0,
+          "expectedItState": 0,
+          "registers": {
+            "r0": 1,
+            "r1": 49,
+            "r2": 80,
+            "r3": 99,
+            "r4": 132,
+            "r5": 165,
+            "r6": 182,
+            "r7": 199
+          }
+        },
+        {
+          "instructions": 1,
+          "totalInstructions": 4,
+          "pc": 2147483692,
+          "reason": "stopped",
+          "xpsr": 553648128,
+          "itState": 0,
+          "expectedItState": 0,
+          "registers": {
+            "r0": 1,
+            "r1": 49,
+            "r2": 80,
+            "r3": 99,
+            "r4": 132,
+            "r5": 165,
+            "r6": 102,
+            "r7": 199
+          }
+        }
+      ],
+      "checks": {
+        "mappedExit": true,
+        "healthyBackend": true,
+        "registers": true,
+        "flagsPreserved": true,
+        "sliceItState": true,
+        "terminalItState": true,
+        "hookTrace": true,
+        "countMatchesTicks": true,
+        "hookYieldOccurred": true
+      },
+      "instructions": 4,
+      "boardTicks": 4,
+      "yieldObserved": true
+    },
+    {
+      "block": "four",
+      "conditionEqual": true,
+      "schedule": "full",
+      "expected": {
+        "registers": {
+          "r0": 0,
+          "r1": 50,
+          "r2": 80,
+          "r3": 67,
+          "r4": 33,
+          "r5": 165,
+          "r6": 102,
+          "r7": 199
+        },
+        "nzcv": 1610612736,
+        "hooks": [
+          2147483712,
+          2147483714,
+          2147483716,
+          2147483718,
+          2147483720,
+          2147483722,
+          2147483724
+        ],
+        "itStateAtAddress": {
+          "2147483712": 0,
+          "2147483714": 0,
+          "2147483716": 1,
+          "2147483718": 2,
+          "2147483720": 4,
+          "2147483722": 8,
+          "2147483724": 0,
+          "2147483728": 0
+        },
+        "hookTraceWithStop": [
+          2147483712,
+          2147483714,
+          2147483716,
+          2147483718,
+          2147483720,
+          2147483722,
+          2147483724
+        ]
+      },
+      "hooks": [
+        {
+          "address": 2147483712,
+          "size": 2,
+          "xpsr": 1090519040,
+          "itState": 0
+        },
+        {
+          "address": 2147483714,
+          "size": 2,
+          "xpsr": 1627389952,
+          "itState": 0
+        },
+        {
+          "address": 2147483716,
+          "size": 2,
+          "xpsr": 1627389952,
+          "itState": 0
+        },
+        {
+          "address": 2147483718,
+          "size": 2,
+          "xpsr": 1627389952,
+          "itState": 0
+        },
+        {
+          "address": 2147483720,
+          "size": 2,
+          "xpsr": 1627389952,
+          "itState": 0
+        },
+        {
+          "address": 2147483722,
+          "size": 2,
+          "xpsr": 1627389952,
+          "itState": 0
+        },
+        {
+          "address": 2147483724,
+          "size": 4,
+          "xpsr": 1627389952,
+          "itState": 0
+        }
+      ],
+      "slices": [
+        {
+          "instructions": 7,
+          "totalInstructions": 7,
+          "pc": 2147483728,
+          "reason": "stopped",
+          "xpsr": 1627389952,
+          "itState": 0,
+          "expectedItState": 0,
+          "registers": {
+            "r0": 0,
+            "r1": 50,
+            "r2": 80,
+            "r3": 67,
+            "r4": 33,
+            "r5": 165,
+            "r6": 102,
+            "r7": 199
+          }
+        }
+      ],
+      "checks": {
+        "mappedExit": true,
+        "healthyBackend": true,
+        "registers": true,
+        "flagsPreserved": true,
+        "sliceItState": true,
+        "terminalItState": true,
+        "hookTrace": true,
+        "countMatchesTicks": true
+      },
+      "instructions": 7,
+      "boardTicks": 7,
+      "yieldObserved": false
+    },
+    {
+      "block": "four",
+      "conditionEqual": true,
+      "schedule": "unit",
+      "expected": {
+        "registers": {
+          "r0": 0,
+          "r1": 50,
+          "r2": 80,
+          "r3": 67,
+          "r4": 33,
+          "r5": 165,
+          "r6": 102,
+          "r7": 199
+        },
+        "nzcv": 1610612736,
+        "hooks": [
+          2147483712,
+          2147483714,
+          2147483716,
+          2147483718,
+          2147483720,
+          2147483722,
+          2147483724
+        ],
+        "itStateAtAddress": {
+          "2147483712": 0,
+          "2147483714": 0,
+          "2147483716": 1,
+          "2147483718": 2,
+          "2147483720": 4,
+          "2147483722": 8,
+          "2147483724": 0,
+          "2147483728": 0
+        },
+        "hookTraceWithStop": [
+          2147483712,
+          2147483714,
+          2147483716,
+          2147483718,
+          2147483720,
+          2147483722,
+          2147483724
+        ]
+      },
+      "hooks": [
+        {
+          "address": 2147483712,
+          "size": 2,
+          "xpsr": 1090519040,
+          "itState": 0
+        },
+        {
+          "address": 2147483714,
+          "size": 2,
+          "xpsr": 1627389952,
+          "itState": 0
+        },
+        {
+          "address": 2147483724,
+          "size": 4,
+          "xpsr": 1627389952,
+          "itState": 0
+        }
+      ],
+      "slices": [
+        {
+          "instructions": 1,
+          "totalInstructions": 1,
+          "pc": 2147483714,
+          "reason": "budget",
+          "xpsr": 1627389952,
+          "itState": 0,
+          "expectedItState": 0,
+          "registers": {
+            "r0": 0,
+            "r1": 49,
+            "r2": 82,
+            "r3": 99,
+            "r4": 132,
+            "r5": 165,
+            "r6": 182,
+            "r7": 199
+          }
+        },
+        {
+          "instructions": 1,
+          "totalInstructions": 2,
+          "pc": 2147483724,
+          "reason": "budget",
+          "xpsr": 1627389952,
+          "itState": 0,
+          "expectedItState": 0,
+          "registers": {
+            "r0": 0,
+            "r1": 50,
+            "r2": 80,
+            "r3": 67,
+            "r4": 33,
+            "r5": 165,
+            "r6": 182,
+            "r7": 199
+          }
+        },
+        {
+          "instructions": 1,
+          "totalInstructions": 3,
+          "pc": 2147483728,
+          "reason": "budget",
+          "xpsr": 1627389952,
+          "itState": 0,
+          "expectedItState": 0,
+          "registers": {
+            "r0": 0,
+            "r1": 50,
+            "r2": 80,
+            "r3": 67,
+            "r4": 33,
+            "r5": 165,
+            "r6": 102,
+            "r7": 199
+          }
+        }
+      ],
+      "checks": {
+        "mappedExit": true,
+        "healthyBackend": true,
+        "registers": true,
+        "flagsPreserved": true,
+        "sliceItState": true,
+        "terminalItState": true,
+        "hookTrace": false,
+        "countMatchesTicks": true
+      },
+      "instructions": 3,
+      "boardTicks": 3,
+      "yieldObserved": false
+    },
+    {
+      "block": "four",
+      "conditionEqual": true,
+      "schedule": "mixed",
+      "expected": {
+        "registers": {
+          "r0": 0,
+          "r1": 50,
+          "r2": 80,
+          "r3": 67,
+          "r4": 33,
+          "r5": 165,
+          "r6": 102,
+          "r7": 199
+        },
+        "nzcv": 1610612736,
+        "hooks": [
+          2147483712,
+          2147483714,
+          2147483716,
+          2147483718,
+          2147483720,
+          2147483722,
+          2147483724
+        ],
+        "itStateAtAddress": {
+          "2147483712": 0,
+          "2147483714": 0,
+          "2147483716": 1,
+          "2147483718": 2,
+          "2147483720": 4,
+          "2147483722": 8,
+          "2147483724": 0,
+          "2147483728": 0
+        },
+        "hookTraceWithStop": [
+          2147483712,
+          2147483714,
+          2147483716,
+          2147483718,
+          2147483720,
+          2147483722,
+          2147483724
+        ]
+      },
+      "hooks": [
+        {
+          "address": 2147483712,
+          "size": 2,
+          "xpsr": 1090519040,
+          "itState": 0
+        },
+        {
+          "address": 2147483714,
+          "size": 2,
+          "xpsr": 1627389952,
+          "itState": 0
+        },
+        {
+          "address": 2147483724,
+          "size": 4,
+          "xpsr": 1627389952,
+          "itState": 0
+        }
+      ],
+      "slices": [
+        {
+          "instructions": 2,
+          "totalInstructions": 2,
+          "pc": 2147483724,
+          "reason": "budget",
+          "xpsr": 1627389952,
+          "itState": 0,
+          "expectedItState": 0,
+          "registers": {
+            "r0": 0,
+            "r1": 50,
+            "r2": 80,
+            "r3": 67,
+            "r4": 33,
+            "r5": 165,
+            "r6": 182,
+            "r7": 199
+          }
+        },
+        {
+          "instructions": 1,
+          "totalInstructions": 3,
+          "pc": 2147483728,
+          "reason": "budget",
+          "xpsr": 1627389952,
+          "itState": 0,
+          "expectedItState": 0,
+          "registers": {
+            "r0": 0,
+            "r1": 50,
+            "r2": 80,
+            "r3": 67,
+            "r4": 33,
+            "r5": 165,
+            "r6": 102,
+            "r7": 199
+          }
+        }
+      ],
+      "checks": {
+        "mappedExit": true,
+        "healthyBackend": true,
+        "registers": true,
+        "flagsPreserved": true,
+        "sliceItState": true,
+        "terminalItState": true,
+        "hookTrace": false,
+        "countMatchesTicks": true
+      },
+      "instructions": 3,
+      "boardTicks": 3,
+      "yieldObserved": false
+    },
+    {
+      "block": "four",
+      "conditionEqual": true,
+      "schedule": "hook-stop-2",
+      "expected": {
+        "registers": {
+          "r0": 0,
+          "r1": 50,
+          "r2": 80,
+          "r3": 67,
+          "r4": 33,
+          "r5": 165,
+          "r6": 102,
+          "r7": 199
+        },
+        "nzcv": 1610612736,
+        "hooks": [
+          2147483712,
+          2147483714,
+          2147483716,
+          2147483718,
+          2147483720,
+          2147483722,
+          2147483724
+        ],
+        "itStateAtAddress": {
+          "2147483712": 0,
+          "2147483714": 0,
+          "2147483716": 1,
+          "2147483718": 2,
+          "2147483720": 4,
+          "2147483722": 8,
+          "2147483724": 0,
+          "2147483728": 0
+        },
+        "hookTraceWithStop": [
+          2147483712,
+          2147483714,
+          2147483714,
+          2147483716,
+          2147483718,
+          2147483720,
+          2147483722,
+          2147483724
+        ]
+      },
+      "hooks": [
+        {
+          "address": 2147483712,
+          "size": 2,
+          "xpsr": 1090519040,
+          "itState": 0
+        },
+        {
+          "address": 2147483714,
+          "size": 2,
+          "xpsr": 1627389952,
+          "itState": 0
+        },
+        {
+          "address": 2147483714,
+          "size": 2,
+          "xpsr": 1627389952,
+          "itState": 0
+        },
+        {
+          "address": 2147483716,
+          "size": 2,
+          "xpsr": 1627389952,
+          "itState": 0
+        },
+        {
+          "address": 2147483718,
+          "size": 2,
+          "xpsr": 1627389952,
+          "itState": 0
+        },
+        {
+          "address": 2147483720,
+          "size": 2,
+          "xpsr": 1627389952,
+          "itState": 0
+        },
+        {
+          "address": 2147483722,
+          "size": 2,
+          "xpsr": 1627389952,
+          "itState": 0
+        },
+        {
+          "address": 2147483724,
+          "size": 4,
+          "xpsr": 1627389952,
+          "itState": 0
+        }
+      ],
+      "slices": [
+        {
+          "instructions": 1,
+          "totalInstructions": 1,
+          "pc": 2147483714,
+          "reason": "stopped",
+          "xpsr": 1627389952,
+          "itState": 0,
+          "expectedItState": 0,
+          "registers": {
+            "r0": 0,
+            "r1": 49,
+            "r2": 82,
+            "r3": 99,
+            "r4": 132,
+            "r5": 165,
+            "r6": 182,
+            "r7": 199
+          }
+        },
+        {
+          "instructions": 6,
+          "totalInstructions": 7,
+          "pc": 2147483728,
+          "reason": "stopped",
+          "xpsr": 1627389952,
+          "itState": 0,
+          "expectedItState": 0,
+          "registers": {
+            "r0": 0,
+            "r1": 50,
+            "r2": 80,
+            "r3": 67,
+            "r4": 33,
+            "r5": 165,
+            "r6": 102,
+            "r7": 199
+          }
+        }
+      ],
+      "checks": {
+        "mappedExit": true,
+        "healthyBackend": true,
+        "registers": true,
+        "flagsPreserved": true,
+        "sliceItState": true,
+        "terminalItState": true,
+        "hookTrace": true,
+        "countMatchesTicks": true,
+        "hookYieldOccurred": true
+      },
+      "instructions": 7,
+      "boardTicks": 7,
+      "yieldObserved": true
+    },
+    {
+      "block": "four",
+      "conditionEqual": true,
+      "schedule": "hook-stop-4",
+      "expected": {
+        "registers": {
+          "r0": 0,
+          "r1": 50,
+          "r2": 80,
+          "r3": 67,
+          "r4": 33,
+          "r5": 165,
+          "r6": 102,
+          "r7": 199
+        },
+        "nzcv": 1610612736,
+        "hooks": [
+          2147483712,
+          2147483714,
+          2147483716,
+          2147483718,
+          2147483720,
+          2147483722,
+          2147483724
+        ],
+        "itStateAtAddress": {
+          "2147483712": 0,
+          "2147483714": 0,
+          "2147483716": 1,
+          "2147483718": 2,
+          "2147483720": 4,
+          "2147483722": 8,
+          "2147483724": 0,
+          "2147483728": 0
+        },
+        "hookTraceWithStop": [
+          2147483712,
+          2147483714,
+          2147483716,
+          2147483716,
+          2147483718,
+          2147483720,
+          2147483722,
+          2147483724
+        ]
+      },
+      "hooks": [
+        {
+          "address": 2147483712,
+          "size": 2,
+          "xpsr": 1090519040,
+          "itState": 0
+        },
+        {
+          "address": 2147483714,
+          "size": 2,
+          "xpsr": 1627389952,
+          "itState": 0
+        },
+        {
+          "address": 2147483716,
+          "size": 2,
+          "xpsr": 1627389952,
+          "itState": 0
+        },
+        {
+          "address": 2147483718,
+          "size": 2,
+          "xpsr": 1627389952,
+          "itState": 0
+        },
+        {
+          "address": 2147483720,
+          "size": 2,
+          "xpsr": 1627389952,
+          "itState": 0
+        },
+        {
+          "address": 2147483722,
+          "size": 2,
+          "xpsr": 1627389952,
+          "itState": 0
+        },
+        {
+          "address": 2147483724,
+          "size": 4,
+          "xpsr": 1627389952,
+          "itState": 0
+        }
+      ],
+      "slices": [
+        {
+          "instructions": 2,
+          "totalInstructions": 2,
+          "pc": 2147483728,
+          "reason": "stopped",
+          "xpsr": 1627389952,
+          "itState": 0,
+          "expectedItState": 0,
+          "registers": {
+            "r0": 0,
+            "r1": 50,
+            "r2": 80,
+            "r3": 67,
+            "r4": 33,
+            "r5": 165,
+            "r6": 102,
+            "r7": 199
+          }
+        }
+      ],
+      "checks": {
+        "mappedExit": true,
+        "healthyBackend": true,
+        "registers": true,
+        "flagsPreserved": true,
+        "sliceItState": true,
+        "terminalItState": true,
+        "hookTrace": false,
+        "countMatchesTicks": true,
+        "hookYieldOccurred": true
+      },
+      "instructions": 2,
+      "boardTicks": 2,
+      "yieldObserved": true
+    },
+    {
+      "block": "four",
+      "conditionEqual": true,
+      "schedule": "hook-stop-6",
+      "expected": {
+        "registers": {
+          "r0": 0,
+          "r1": 50,
+          "r2": 80,
+          "r3": 67,
+          "r4": 33,
+          "r5": 165,
+          "r6": 102,
+          "r7": 199
+        },
+        "nzcv": 1610612736,
+        "hooks": [
+          2147483712,
+          2147483714,
+          2147483716,
+          2147483718,
+          2147483720,
+          2147483722,
+          2147483724
+        ],
+        "itStateAtAddress": {
+          "2147483712": 0,
+          "2147483714": 0,
+          "2147483716": 1,
+          "2147483718": 2,
+          "2147483720": 4,
+          "2147483722": 8,
+          "2147483724": 0,
+          "2147483728": 0
+        },
+        "hookTraceWithStop": [
+          2147483712,
+          2147483714,
+          2147483716,
+          2147483718,
+          2147483718,
+          2147483720,
+          2147483722,
+          2147483724
+        ]
+      },
+      "hooks": [
+        {
+          "address": 2147483712,
+          "size": 2,
+          "xpsr": 1090519040,
+          "itState": 0
+        },
+        {
+          "address": 2147483714,
+          "size": 2,
+          "xpsr": 1627389952,
+          "itState": 0
+        },
+        {
+          "address": 2147483716,
+          "size": 2,
+          "xpsr": 1627389952,
+          "itState": 0
+        },
+        {
+          "address": 2147483718,
+          "size": 2,
+          "xpsr": 1627389952,
+          "itState": 0
+        },
+        {
+          "address": 2147483720,
+          "size": 2,
+          "xpsr": 1627389952,
+          "itState": 0
+        },
+        {
+          "address": 2147483722,
+          "size": 2,
+          "xpsr": 1627389952,
+          "itState": 0
+        },
+        {
+          "address": 2147483724,
+          "size": 4,
+          "xpsr": 1627389952,
+          "itState": 0
+        }
+      ],
+      "slices": [
+        {
+          "instructions": 3,
+          "totalInstructions": 3,
+          "pc": 2147483728,
+          "reason": "stopped",
+          "xpsr": 1627389952,
+          "itState": 0,
+          "expectedItState": 0,
+          "registers": {
+            "r0": 0,
+            "r1": 50,
+            "r2": 80,
+            "r3": 67,
+            "r4": 33,
+            "r5": 165,
+            "r6": 102,
+            "r7": 199
+          }
+        }
+      ],
+      "checks": {
+        "mappedExit": true,
+        "healthyBackend": true,
+        "registers": true,
+        "flagsPreserved": true,
+        "sliceItState": true,
+        "terminalItState": true,
+        "hookTrace": false,
+        "countMatchesTicks": true,
+        "hookYieldOccurred": true
+      },
+      "instructions": 3,
+      "boardTicks": 3,
+      "yieldObserved": true
+    },
+    {
+      "block": "four",
+      "conditionEqual": true,
+      "schedule": "hook-stop-8",
+      "expected": {
+        "registers": {
+          "r0": 0,
+          "r1": 50,
+          "r2": 80,
+          "r3": 67,
+          "r4": 33,
+          "r5": 165,
+          "r6": 102,
+          "r7": 199
+        },
+        "nzcv": 1610612736,
+        "hooks": [
+          2147483712,
+          2147483714,
+          2147483716,
+          2147483718,
+          2147483720,
+          2147483722,
+          2147483724
+        ],
+        "itStateAtAddress": {
+          "2147483712": 0,
+          "2147483714": 0,
+          "2147483716": 1,
+          "2147483718": 2,
+          "2147483720": 4,
+          "2147483722": 8,
+          "2147483724": 0,
+          "2147483728": 0
+        },
+        "hookTraceWithStop": [
+          2147483712,
+          2147483714,
+          2147483716,
+          2147483718,
+          2147483720,
+          2147483720,
+          2147483722,
+          2147483724
+        ]
+      },
+      "hooks": [
+        {
+          "address": 2147483712,
+          "size": 2,
+          "xpsr": 1090519040,
+          "itState": 0
+        },
+        {
+          "address": 2147483714,
+          "size": 2,
+          "xpsr": 1627389952,
+          "itState": 0
+        },
+        {
+          "address": 2147483716,
+          "size": 2,
+          "xpsr": 1627389952,
+          "itState": 0
+        },
+        {
+          "address": 2147483718,
+          "size": 2,
+          "xpsr": 1627389952,
+          "itState": 0
+        },
+        {
+          "address": 2147483720,
+          "size": 2,
+          "xpsr": 1627389952,
+          "itState": 0
+        },
+        {
+          "address": 2147483722,
+          "size": 2,
+          "xpsr": 1627389952,
+          "itState": 0
+        },
+        {
+          "address": 2147483724,
+          "size": 4,
+          "xpsr": 1627389952,
+          "itState": 0
+        }
+      ],
+      "slices": [
+        {
+          "instructions": 4,
+          "totalInstructions": 4,
+          "pc": 2147483728,
+          "reason": "stopped",
+          "xpsr": 1627389952,
+          "itState": 0,
+          "expectedItState": 0,
+          "registers": {
+            "r0": 0,
+            "r1": 50,
+            "r2": 80,
+            "r3": 67,
+            "r4": 33,
+            "r5": 165,
+            "r6": 102,
+            "r7": 199
+          }
+        }
+      ],
+      "checks": {
+        "mappedExit": true,
+        "healthyBackend": true,
+        "registers": true,
+        "flagsPreserved": true,
+        "sliceItState": true,
+        "terminalItState": true,
+        "hookTrace": false,
+        "countMatchesTicks": true,
+        "hookYieldOccurred": true
+      },
+      "instructions": 4,
+      "boardTicks": 4,
+      "yieldObserved": true
+    },
+    {
+      "block": "four",
+      "conditionEqual": true,
+      "schedule": "hook-stop-10",
+      "expected": {
+        "registers": {
+          "r0": 0,
+          "r1": 50,
+          "r2": 80,
+          "r3": 67,
+          "r4": 33,
+          "r5": 165,
+          "r6": 102,
+          "r7": 199
+        },
+        "nzcv": 1610612736,
+        "hooks": [
+          2147483712,
+          2147483714,
+          2147483716,
+          2147483718,
+          2147483720,
+          2147483722,
+          2147483724
+        ],
+        "itStateAtAddress": {
+          "2147483712": 0,
+          "2147483714": 0,
+          "2147483716": 1,
+          "2147483718": 2,
+          "2147483720": 4,
+          "2147483722": 8,
+          "2147483724": 0,
+          "2147483728": 0
+        },
+        "hookTraceWithStop": [
+          2147483712,
+          2147483714,
+          2147483716,
+          2147483718,
+          2147483720,
+          2147483722,
+          2147483722,
+          2147483724
+        ]
+      },
+      "hooks": [
+        {
+          "address": 2147483712,
+          "size": 2,
+          "xpsr": 1090519040,
+          "itState": 0
+        },
+        {
+          "address": 2147483714,
+          "size": 2,
+          "xpsr": 1627389952,
+          "itState": 0
+        },
+        {
+          "address": 2147483716,
+          "size": 2,
+          "xpsr": 1627389952,
+          "itState": 0
+        },
+        {
+          "address": 2147483718,
+          "size": 2,
+          "xpsr": 1627389952,
+          "itState": 0
+        },
+        {
+          "address": 2147483720,
+          "size": 2,
+          "xpsr": 1627389952,
+          "itState": 0
+        },
+        {
+          "address": 2147483722,
+          "size": 2,
+          "xpsr": 1627389952,
+          "itState": 0
+        },
+        {
+          "address": 2147483724,
+          "size": 4,
+          "xpsr": 1627389952,
+          "itState": 0
+        }
+      ],
+      "slices": [
+        {
+          "instructions": 5,
+          "totalInstructions": 5,
+          "pc": 2147483728,
+          "reason": "stopped",
+          "xpsr": 1627389952,
+          "itState": 0,
+          "expectedItState": 0,
+          "registers": {
+            "r0": 0,
+            "r1": 50,
+            "r2": 80,
+            "r3": 67,
+            "r4": 33,
+            "r5": 165,
+            "r6": 102,
+            "r7": 199
+          }
+        }
+      ],
+      "checks": {
+        "mappedExit": true,
+        "healthyBackend": true,
+        "registers": true,
+        "flagsPreserved": true,
+        "sliceItState": true,
+        "terminalItState": true,
+        "hookTrace": false,
+        "countMatchesTicks": true,
+        "hookYieldOccurred": true
+      },
+      "instructions": 5,
+      "boardTicks": 5,
+      "yieldObserved": true
+    },
+    {
+      "block": "four",
+      "conditionEqual": true,
+      "schedule": "hook-stop-12",
+      "expected": {
+        "registers": {
+          "r0": 0,
+          "r1": 50,
+          "r2": 80,
+          "r3": 67,
+          "r4": 33,
+          "r5": 165,
+          "r6": 102,
+          "r7": 199
+        },
+        "nzcv": 1610612736,
+        "hooks": [
+          2147483712,
+          2147483714,
+          2147483716,
+          2147483718,
+          2147483720,
+          2147483722,
+          2147483724
+        ],
+        "itStateAtAddress": {
+          "2147483712": 0,
+          "2147483714": 0,
+          "2147483716": 1,
+          "2147483718": 2,
+          "2147483720": 4,
+          "2147483722": 8,
+          "2147483724": 0,
+          "2147483728": 0
+        },
+        "hookTraceWithStop": [
+          2147483712,
+          2147483714,
+          2147483716,
+          2147483718,
+          2147483720,
+          2147483722,
+          2147483724,
+          2147483724
+        ]
+      },
+      "hooks": [
+        {
+          "address": 2147483712,
+          "size": 2,
+          "xpsr": 1090519040,
+          "itState": 0
+        },
+        {
+          "address": 2147483714,
+          "size": 2,
+          "xpsr": 1627389952,
+          "itState": 0
+        },
+        {
+          "address": 2147483716,
+          "size": 2,
+          "xpsr": 1627389952,
+          "itState": 0
+        },
+        {
+          "address": 2147483718,
+          "size": 2,
+          "xpsr": 1627389952,
+          "itState": 0
+        },
+        {
+          "address": 2147483720,
+          "size": 2,
+          "xpsr": 1627389952,
+          "itState": 0
+        },
+        {
+          "address": 2147483722,
+          "size": 2,
+          "xpsr": 1627389952,
+          "itState": 0
+        },
+        {
+          "address": 2147483724,
+          "size": 4,
+          "xpsr": 1627389952,
+          "itState": 0
+        },
+        {
+          "address": 2147483724,
+          "size": 4,
+          "xpsr": 1627389952,
+          "itState": 0
+        }
+      ],
+      "slices": [
+        {
+          "instructions": 6,
+          "totalInstructions": 6,
+          "pc": 2147483724,
+          "reason": "stopped",
+          "xpsr": 1627389952,
+          "itState": 0,
+          "expectedItState": 0,
+          "registers": {
+            "r0": 0,
+            "r1": 50,
+            "r2": 80,
+            "r3": 67,
+            "r4": 33,
+            "r5": 165,
+            "r6": 182,
+            "r7": 199
+          }
+        },
+        {
+          "instructions": 1,
+          "totalInstructions": 7,
+          "pc": 2147483728,
+          "reason": "stopped",
+          "xpsr": 1627389952,
+          "itState": 0,
+          "expectedItState": 0,
+          "registers": {
+            "r0": 0,
+            "r1": 50,
+            "r2": 80,
+            "r3": 67,
+            "r4": 33,
+            "r5": 165,
+            "r6": 102,
+            "r7": 199
+          }
+        }
+      ],
+      "checks": {
+        "mappedExit": true,
+        "healthyBackend": true,
+        "registers": true,
+        "flagsPreserved": true,
+        "sliceItState": true,
+        "terminalItState": true,
+        "hookTrace": true,
+        "countMatchesTicks": true,
+        "hookYieldOccurred": true
+      },
+      "instructions": 7,
+      "boardTicks": 7,
+      "yieldObserved": true
+    },
+    {
+      "block": "four",
+      "conditionEqual": false,
+      "schedule": "full",
+      "expected": {
+        "registers": {
+          "r0": 1,
+          "r1": 49,
+          "r2": 82,
+          "r3": 99,
+          "r4": 132,
+          "r5": 165,
+          "r6": 102,
+          "r7": 199
+        },
+        "nzcv": 536870912,
+        "hooks": [
+          2147483712,
+          2147483714,
+          2147483724
+        ],
+        "itStateAtAddress": {
+          "2147483712": 0,
+          "2147483714": 0,
+          "2147483716": 1,
+          "2147483718": 2,
+          "2147483720": 4,
+          "2147483722": 8,
+          "2147483724": 0,
+          "2147483728": 0
+        },
+        "hookTraceWithStop": [
+          2147483712,
+          2147483714,
+          2147483724
+        ]
+      },
+      "hooks": [
+        {
+          "address": 2147483712,
+          "size": 2,
+          "xpsr": 1090519040,
+          "itState": 0
+        },
+        {
+          "address": 2147483714,
+          "size": 2,
+          "xpsr": 553648128,
+          "itState": 0
+        },
+        {
+          "address": 2147483724,
+          "size": 4,
+          "xpsr": 553648128,
+          "itState": 0
+        }
+      ],
+      "slices": [
+        {
+          "instructions": 3,
+          "totalInstructions": 3,
+          "pc": 2147483728,
+          "reason": "stopped",
+          "xpsr": 553648128,
+          "itState": 0,
+          "expectedItState": 0,
+          "registers": {
+            "r0": 1,
+            "r1": 49,
+            "r2": 82,
+            "r3": 99,
+            "r4": 132,
+            "r5": 165,
+            "r6": 102,
+            "r7": 199
+          }
+        }
+      ],
+      "checks": {
+        "mappedExit": true,
+        "healthyBackend": true,
+        "registers": true,
+        "flagsPreserved": true,
+        "sliceItState": true,
+        "terminalItState": true,
+        "hookTrace": true,
+        "countMatchesTicks": true
+      },
+      "instructions": 3,
+      "boardTicks": 3,
+      "yieldObserved": false
+    },
+    {
+      "block": "four",
+      "conditionEqual": false,
+      "schedule": "unit",
+      "expected": {
+        "registers": {
+          "r0": 1,
+          "r1": 49,
+          "r2": 82,
+          "r3": 99,
+          "r4": 132,
+          "r5": 165,
+          "r6": 102,
+          "r7": 199
+        },
+        "nzcv": 536870912,
+        "hooks": [
+          2147483712,
+          2147483714,
+          2147483724
+        ],
+        "itStateAtAddress": {
+          "2147483712": 0,
+          "2147483714": 0,
+          "2147483716": 1,
+          "2147483718": 2,
+          "2147483720": 4,
+          "2147483722": 8,
+          "2147483724": 0,
+          "2147483728": 0
+        },
+        "hookTraceWithStop": [
+          2147483712,
+          2147483714,
+          2147483724
+        ]
+      },
+      "hooks": [
+        {
+          "address": 2147483712,
+          "size": 2,
+          "xpsr": 1090519040,
+          "itState": 0
+        },
+        {
+          "address": 2147483714,
+          "size": 2,
+          "xpsr": 553648128,
+          "itState": 0
+        },
+        {
+          "address": 2147483724,
+          "size": 4,
+          "xpsr": 553648128,
+          "itState": 0
+        }
+      ],
+      "slices": [
+        {
+          "instructions": 1,
+          "totalInstructions": 1,
+          "pc": 2147483714,
+          "reason": "budget",
+          "xpsr": 553648128,
+          "itState": 0,
+          "expectedItState": 0,
+          "registers": {
+            "r0": 1,
+            "r1": 49,
+            "r2": 82,
+            "r3": 99,
+            "r4": 132,
+            "r5": 165,
+            "r6": 182,
+            "r7": 199
+          }
+        },
+        {
+          "instructions": 1,
+          "totalInstructions": 2,
+          "pc": 2147483724,
+          "reason": "budget",
+          "xpsr": 553648128,
+          "itState": 0,
+          "expectedItState": 0,
+          "registers": {
+            "r0": 1,
+            "r1": 49,
+            "r2": 82,
+            "r3": 99,
+            "r4": 132,
+            "r5": 165,
+            "r6": 182,
+            "r7": 199
+          }
+        },
+        {
+          "instructions": 1,
+          "totalInstructions": 3,
+          "pc": 2147483728,
+          "reason": "budget",
+          "xpsr": 553648128,
+          "itState": 0,
+          "expectedItState": 0,
+          "registers": {
+            "r0": 1,
+            "r1": 49,
+            "r2": 82,
+            "r3": 99,
+            "r4": 132,
+            "r5": 165,
+            "r6": 102,
+            "r7": 199
+          }
+        }
+      ],
+      "checks": {
+        "mappedExit": true,
+        "healthyBackend": true,
+        "registers": true,
+        "flagsPreserved": true,
+        "sliceItState": true,
+        "terminalItState": true,
+        "hookTrace": true,
+        "countMatchesTicks": true
+      },
+      "instructions": 3,
+      "boardTicks": 3,
+      "yieldObserved": false
+    },
+    {
+      "block": "four",
+      "conditionEqual": false,
+      "schedule": "mixed",
+      "expected": {
+        "registers": {
+          "r0": 1,
+          "r1": 49,
+          "r2": 82,
+          "r3": 99,
+          "r4": 132,
+          "r5": 165,
+          "r6": 102,
+          "r7": 199
+        },
+        "nzcv": 536870912,
+        "hooks": [
+          2147483712,
+          2147483714,
+          2147483724
+        ],
+        "itStateAtAddress": {
+          "2147483712": 0,
+          "2147483714": 0,
+          "2147483716": 1,
+          "2147483718": 2,
+          "2147483720": 4,
+          "2147483722": 8,
+          "2147483724": 0,
+          "2147483728": 0
+        },
+        "hookTraceWithStop": [
+          2147483712,
+          2147483714,
+          2147483724
+        ]
+      },
+      "hooks": [
+        {
+          "address": 2147483712,
+          "size": 2,
+          "xpsr": 1090519040,
+          "itState": 0
+        },
+        {
+          "address": 2147483714,
+          "size": 2,
+          "xpsr": 553648128,
+          "itState": 0
+        },
+        {
+          "address": 2147483724,
+          "size": 4,
+          "xpsr": 553648128,
+          "itState": 0
+        }
+      ],
+      "slices": [
+        {
+          "instructions": 2,
+          "totalInstructions": 2,
+          "pc": 2147483724,
+          "reason": "budget",
+          "xpsr": 553648128,
+          "itState": 0,
+          "expectedItState": 0,
+          "registers": {
+            "r0": 1,
+            "r1": 49,
+            "r2": 82,
+            "r3": 99,
+            "r4": 132,
+            "r5": 165,
+            "r6": 182,
+            "r7": 199
+          }
+        },
+        {
+          "instructions": 1,
+          "totalInstructions": 3,
+          "pc": 2147483728,
+          "reason": "budget",
+          "xpsr": 553648128,
+          "itState": 0,
+          "expectedItState": 0,
+          "registers": {
+            "r0": 1,
+            "r1": 49,
+            "r2": 82,
+            "r3": 99,
+            "r4": 132,
+            "r5": 165,
+            "r6": 102,
+            "r7": 199
+          }
+        }
+      ],
+      "checks": {
+        "mappedExit": true,
+        "healthyBackend": true,
+        "registers": true,
+        "flagsPreserved": true,
+        "sliceItState": true,
+        "terminalItState": true,
+        "hookTrace": true,
+        "countMatchesTicks": true
+      },
+      "instructions": 3,
+      "boardTicks": 3,
+      "yieldObserved": false
+    },
+    {
+      "block": "four",
+      "conditionEqual": false,
+      "schedule": "hook-stop-2",
+      "expected": {
+        "registers": {
+          "r0": 1,
+          "r1": 49,
+          "r2": 82,
+          "r3": 99,
+          "r4": 132,
+          "r5": 165,
+          "r6": 102,
+          "r7": 199
+        },
+        "nzcv": 536870912,
+        "hooks": [
+          2147483712,
+          2147483714,
+          2147483724
+        ],
+        "itStateAtAddress": {
+          "2147483712": 0,
+          "2147483714": 0,
+          "2147483716": 1,
+          "2147483718": 2,
+          "2147483720": 4,
+          "2147483722": 8,
+          "2147483724": 0,
+          "2147483728": 0
+        },
+        "hookTraceWithStop": [
+          2147483712,
+          2147483714,
+          2147483714,
+          2147483724
+        ]
+      },
+      "hooks": [
+        {
+          "address": 2147483712,
+          "size": 2,
+          "xpsr": 1090519040,
+          "itState": 0
+        },
+        {
+          "address": 2147483714,
+          "size": 2,
+          "xpsr": 553648128,
+          "itState": 0
+        },
+        {
+          "address": 2147483714,
+          "size": 2,
+          "xpsr": 553648128,
+          "itState": 0
+        },
+        {
+          "address": 2147483724,
+          "size": 4,
+          "xpsr": 553648128,
+          "itState": 0
+        }
+      ],
+      "slices": [
+        {
+          "instructions": 1,
+          "totalInstructions": 1,
+          "pc": 2147483714,
+          "reason": "stopped",
+          "xpsr": 553648128,
+          "itState": 0,
+          "expectedItState": 0,
+          "registers": {
+            "r0": 1,
+            "r1": 49,
+            "r2": 82,
+            "r3": 99,
+            "r4": 132,
+            "r5": 165,
+            "r6": 182,
+            "r7": 199
+          }
+        },
+        {
+          "instructions": 2,
+          "totalInstructions": 3,
+          "pc": 2147483728,
+          "reason": "stopped",
+          "xpsr": 553648128,
+          "itState": 0,
+          "expectedItState": 0,
+          "registers": {
+            "r0": 1,
+            "r1": 49,
+            "r2": 82,
+            "r3": 99,
+            "r4": 132,
+            "r5": 165,
+            "r6": 102,
+            "r7": 199
+          }
+        }
+      ],
+      "checks": {
+        "mappedExit": true,
+        "healthyBackend": true,
+        "registers": true,
+        "flagsPreserved": true,
+        "sliceItState": true,
+        "terminalItState": true,
+        "hookTrace": true,
+        "countMatchesTicks": true,
+        "hookYieldOccurred": true
+      },
+      "instructions": 3,
+      "boardTicks": 3,
+      "yieldObserved": true
+    },
+    {
+      "block": "four",
+      "conditionEqual": false,
+      "schedule": "hook-stop-12",
+      "expected": {
+        "registers": {
+          "r0": 1,
+          "r1": 49,
+          "r2": 82,
+          "r3": 99,
+          "r4": 132,
+          "r5": 165,
+          "r6": 102,
+          "r7": 199
+        },
+        "nzcv": 536870912,
+        "hooks": [
+          2147483712,
+          2147483714,
+          2147483724
+        ],
+        "itStateAtAddress": {
+          "2147483712": 0,
+          "2147483714": 0,
+          "2147483716": 1,
+          "2147483718": 2,
+          "2147483720": 4,
+          "2147483722": 8,
+          "2147483724": 0,
+          "2147483728": 0
+        },
+        "hookTraceWithStop": [
+          2147483712,
+          2147483714,
+          2147483724,
+          2147483724
+        ]
+      },
+      "hooks": [
+        {
+          "address": 2147483712,
+          "size": 2,
+          "xpsr": 1090519040,
+          "itState": 0
+        },
+        {
+          "address": 2147483714,
+          "size": 2,
+          "xpsr": 553648128,
+          "itState": 0
+        },
+        {
+          "address": 2147483724,
+          "size": 4,
+          "xpsr": 553648128,
+          "itState": 0
+        },
+        {
+          "address": 2147483724,
+          "size": 4,
+          "xpsr": 553648128,
+          "itState": 0
+        }
+      ],
+      "slices": [
+        {
+          "instructions": 2,
+          "totalInstructions": 2,
+          "pc": 2147483724,
+          "reason": "stopped",
+          "xpsr": 553648128,
+          "itState": 0,
+          "expectedItState": 0,
+          "registers": {
+            "r0": 1,
+            "r1": 49,
+            "r2": 82,
+            "r3": 99,
+            "r4": 132,
+            "r5": 165,
+            "r6": 182,
+            "r7": 199
+          }
+        },
+        {
+          "instructions": 1,
+          "totalInstructions": 3,
+          "pc": 2147483728,
+          "reason": "stopped",
+          "xpsr": 553648128,
+          "itState": 0,
+          "expectedItState": 0,
+          "registers": {
+            "r0": 1,
+            "r1": 49,
+            "r2": 82,
+            "r3": 99,
+            "r4": 132,
+            "r5": 165,
+            "r6": 102,
+            "r7": 199
+          }
+        }
+      ],
+      "checks": {
+        "mappedExit": true,
+        "healthyBackend": true,
+        "registers": true,
+        "flagsPreserved": true,
+        "sliceItState": true,
+        "terminalItState": true,
+        "hookTrace": true,
+        "countMatchesTicks": true,
+        "hookYieldOccurred": true
+      },
+      "instructions": 3,
+      "boardTicks": 3,
+      "yieldObserved": true
+    }
+  ],
+  "limitations": [
+    "Small register-only fixtures do not establish firmware startup, interrupts, peripheral timing or full instruction coverage",
+    "Code-hook observations are recorded separately from expected architectural retirement",
+    "No incoming IT state is changed manually; CPU/session sources remain unchanged"
+  ],
+  "artifactPins": {
+    "fixture.S": {
+      "bytes": 668,
+      "sha256": "e8daa35eea0fc1c948641b2ccc3034de8fdced580868fece93c797fd909c5390"
+    },
+    "fixture.o": {
+      "bytes": 808,
+      "sha256": "69bc5d4a327464264a67b2dc27ec4d51a60183d16efc04588b2773deb34ac532"
+    },
+    "fixture.elf": {
+      "bytes": 5108,
+      "sha256": "5ca9aa20ce6c3e743089c6597834b36e0896773e4d9ab3f04572a5065c73e274"
+    },
+    "fixture.bin": {
+      "bytes": 84,
+      "sha256": "88432d3a69f7cdbd4a3deff82ca5405aef2ecd6066b5b543eba92ff7e0901db0"
+    },
+    "symbols.txt": {
+      "bytes": 328,
+      "sha256": "a652f610d19875718c2e8706949d9a722c5832bfbf2498ed2ddcd7f95aa487db"
+    },
+    "disassembly.txt": {
+      "bytes": 1385,
+      "sha256": "8721793935ddc598f93dd841bf00bb15449c186789d996e5e9884583c6e41550"
+    }
+  },
+  "failures": [
+    {
+      "block": "single",
+      "conditionEqual": true,
+      "schedule": "unit",
+      "check": "hookTrace"
+    },
+    {
+      "block": "single",
+      "conditionEqual": true,
+      "schedule": "mixed",
+      "check": "hookTrace"
+    },
+    {
+      "block": "single",
+      "conditionEqual": true,
+      "schedule": "hook-stop-4",
+      "check": "hookTrace"
+    },
+    {
+      "block": "alternate",
+      "conditionEqual": true,
+      "schedule": "unit",
+      "check": "hookTrace"
+    },
+    {
+      "block": "alternate",
+      "conditionEqual": true,
+      "schedule": "mixed",
+      "check": "hookTrace"
+    },
+    {
+      "block": "alternate",
+      "conditionEqual": true,
+      "schedule": "hook-stop-4",
+      "check": "hookTrace"
+    },
+    {
+      "block": "alternate",
+      "conditionEqual": false,
+      "schedule": "unit",
+      "check": "hookTrace"
+    },
+    {
+      "block": "alternate",
+      "conditionEqual": false,
+      "schedule": "mixed",
+      "check": "hookTrace"
+    },
+    {
+      "block": "alternate",
+      "conditionEqual": false,
+      "schedule": "hook-stop-6",
+      "check": "hookTrace"
+    },
+    {
+      "block": "four",
+      "conditionEqual": true,
+      "schedule": "unit",
+      "check": "hookTrace"
+    },
+    {
+      "block": "four",
+      "conditionEqual": true,
+      "schedule": "mixed",
+      "check": "hookTrace"
+    },
+    {
+      "block": "four",
+      "conditionEqual": true,
+      "schedule": "hook-stop-4",
+      "check": "hookTrace"
+    },
+    {
+      "block": "four",
+      "conditionEqual": true,
+      "schedule": "hook-stop-6",
+      "check": "hookTrace"
+    },
+    {
+      "block": "four",
+      "conditionEqual": true,
+      "schedule": "hook-stop-8",
+      "check": "hookTrace"
+    },
+    {
+      "block": "four",
+      "conditionEqual": true,
+      "schedule": "hook-stop-10",
+      "check": "hookTrace"
+    }
+  ],
+  "passed": false
+}

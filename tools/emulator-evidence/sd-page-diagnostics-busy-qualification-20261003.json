@@ -1,0 +1,103 @@
+{
+  "schema": "opensp-sd-page-diagnostics-busy-qualification-v1",
+  "scope": "Repair initial safe diagnostics publication and pending replacement busy state; prepare product-control browser SD cases",
+  "passed": true,
+  "preservation": "tools/emulator-evidence/sd-page-pre-initial-diagnostics-20261003/manifest.json",
+  "historicalReceipt": "tools/emulator-evidence/sd-page-qualification-20261003.json",
+  "corrections": [
+    {
+      "problem": "Initial candidates withheld safe diagnostics until trailing same-ID status",
+      "evidence": "Parent browser suite reported 31 passed / 1 failed at the existing firmware-hash assertion",
+      "result": "Initial candidates publish sanitized snapshots under generation, load revision, pending bridge and connected-DOM guards; loading/busy and run gating remain until matched status"
+    },
+    {
+      "problem": "An old trace/input completion could release busy while the card candidate prepared",
+      "evidence": "Independent reviewer reproduced the race on exact original 348d3591 controller using fake protocol ports",
+      "result": "Command finalization keeps busy while preparing or while blocking controls remain; replacement candidates stay private and cannot spawn a second load"
+    }
+  ],
+  "checks": {
+    "controller": {
+      "passed": 26,
+      "failed": 0,
+      "guestInstructions": 0,
+      "engineLoaded": false,
+      "workerStarted": false
+    },
+    "native": {
+      "passed": 8,
+      "failed": 0,
+      "unchanged": true
+    },
+    "independentReview": {
+      "disposition": "pass",
+      "frozenSourceHashesVerified": true,
+      "preservationVerified": true,
+      "rerunControllerAndNative": 34,
+      "additionalChecks": "Held both old trace and input replies across candidate loading; busy and disabled controls remain, with one load only"
+    },
+    "typescript": {
+      "exitCode": 0,
+      "command": "npx tsc --ignoreConfig --noEmit --strict --target ES2022 --module ESNext --moduleResolution Bundler --types node --resolveJsonModule --allowSyntheticDefaultImports --allowImportingTsExtensions --skipLibCheck tests/emulator.spec.ts src/scripts/emulator.ts"
+    }
+  },
+  "browserFixture": {
+    "preparedCases": 4,
+    "executed": false,
+    "uses": "Browser File inputs and public product controls; existing mocked ARM worker with native structuredClone transfer semantics",
+    "covers": [
+      "Stage optional cards without replacing current worker",
+      "Apply posts independent copies and waits for matching status",
+      "Downloaded request traces contain scalar metadata only",
+      "Invalid capacity is refused before reading",
+      "Read error preserves previously loaded session",
+      "Rejected candidate load preserves old session and permits retry",
+      "Remove card remains staged until explicit apply"
+    ],
+    "originalSpecSha256": "a41181fb9e416cd890a3154ea0677d197c2f5face68e5e9a114748ffae2b8363"
+  },
+  "notPerformed": [
+    "Build",
+    "Browser test execution",
+    "CPU or guest execution",
+    "Physical device operations",
+    "Commit or deployment"
+  ],
+  "files": [
+    {
+      "path": "src/scripts/emulator.ts",
+      "bytes": 27909,
+      "sha256": "50a51213bc6ce401f114b33969e20e86bed3ec580e4906191258e13e805032cd"
+    },
+    {
+      "path": "tests/emulator-page-bridge.test.mjs",
+      "bytes": 25325,
+      "sha256": "32ba7ee32950bc0befe387bbbfa3be412b2d99a36f1885bea714300ad9c2de54"
+    },
+    {
+      "path": "tests/emulator.spec.ts",
+      "bytes": 53583,
+      "sha256": "e63ef09b68c516771df3552590c98ad568e5f9eed0e7aec8c017563c0f6ec4eb"
+    },
+    {
+      "path": "docs/emulator-sd-fixtures.md",
+      "bytes": 8322,
+      "sha256": "1073e3e8a736b1132b60cf1e933c2f0794dd4ee65d4e9f6845d86ddd5c3f70d7"
+    },
+    {
+      "path": "docs/emulator-design.md",
+      "bytes": 9458,
+      "sha256": "a7777534934084de1a79d3911a669977978790d554985d943dceb9922066a861"
+    },
+    {
+      "path": "tools/emulator-evidence/sd-page-diagnostics-busy-tests-20261003.tap",
+      "bytes": 2756,
+      "sha256": "657e0ac98bdc9e94527f554396a4c0ea81faf71c418f42eedeab4c2678e14e3e"
+    },
+    {
+      "path": "tools/emulator-evidence/sd-page-browser-fixture-typescript-20261003.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "schema": "opensp-larger-writer-small-pre-doc-sync-v1",
+  "createdUtc": "2026-10-03T07:36:22.4753235Z",
+  "files": [
+    {
+      "original": "docs/emulator-larger-writer-profiles.md",
+      "snapshot": "emulator-larger-writer-profiles.md",
+      "bytes": 10577,
+      "sha256": "e5fc7e358f0c7ea3066da53a9380b2a622e17312f7cb1819c6647304cd805e67"
+    },
+    {
+      "original": "docs/emulator-update-contract.md",
+      "snapshot": "emulator-update-contract.md",
+      "bytes": 14391,
+      "sha256": "ad39bf9972867515e0a389934438508c00b90c9f328fef5212ba64a33fd80518"
+    }
+  ]
+}

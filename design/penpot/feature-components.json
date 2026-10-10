@@ -1,0 +1,4627 @@
+{
+  "source": {
+    "fileId": "24d9d841-759d-81bc-8008-b518bc70d8b3",
+    "pageId": "7d39c61f-08fe-80d5-8008-bcada932404d",
+    "kind": "native-component-api-export"
+  },
+  "components": [
+    {
+      "id": "aef24b78-6c19-80a5-8008-bdfa02233856",
+      "name": "Feature receipt (Mobile)",
+      "path": "OpenSP / Features",
+      "mainId": "aef24b78-6c19-80a5-8008-bdf9f1da53a7",
+      "shape": {
+        "id": "aef24b78-6c19-80a5-8008-bdf9f1da53a7",
+        "name": "OpenSP / Features / Feature receipt (Mobile)",
+        "type": "board",
+        "x": 0,
+        "y": 0,
+        "width": 342,
+        "height": 388,
+        "rotation": 0,
+        "componentId": "aef24b78-6c19-80a5-8008-bdfa02233856",
+        "componentName": "Feature receipt (Mobile)",
+        "children": [
+          {
+            "id": "aef24b78-6c19-80a5-8008-bdf9f1e26268",
+            "name": "Receipt divider",
+            "type": "rectangle",
+            "x": 0,
+            "y": 0,
+            "width": 342,
+            "height": 1,
+            "rotation": 0,
+            "fills": [
+              {
+                "color": "#888888",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895c1a9c52"
+              }
+            ]
+          },
+          {
+            "id": "aef24b78-6c19-80a5-8008-bdf9f1eca2c9",
+            "name": "copy / receiptHeading",
+            "type": "text",
+            "x": 0,
+            "y": 24,
+            "width": 342,
+            "height": 42,
+            "rotation": 0,
+            "fills": [
+              {
+                "color": "#111111",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+              }
+            ],
+            "text": "Check a build receipt",
+            "fontFamily": "Arimo",
+            "fontSize": 28,
+            "fontWeight": "400",
+            "lineHeight": 1.5,
+            "letterSpacing": 0,
+            "align": "left"
+          },
+          {
+            "id": "aef24b78-6c19-80a5-8008-bdf9f1fcda77",
+            "name": "copy / receiptNote",
+            "type": "text",
+            "x": 0,
+            "y": 82,
+            "width": 342,
+            "height": 120,
+            "rotation": 0,
+            "fills": [
+              {
+                "color": "#111111",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+              }
+            ],
+            "text": "Choose a local JSON receipt to compare it with your current choices. Only metadata is checked; firmware files and device results remain unverified.",
+            "fontFamily": "Arimo",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "lineHeight": 1.5,
+            "letterSpacing": 0,
+            "align": "left"
+          },
+          {
+            "id": "aef24b78-6c19-80a5-8008-bdf9f20bb02a",
+            "name": "Emulator action",
+            "type": "board",
+            "x": 0,
+            "y": 218,
+            "width": 160,
+            "height": 44,
+            "rotation": 0,
+            "componentId": "6bf32eef-e7db-8057-8008-bb287d8e3cdc",
+            "componentName": "Emulator action",
+            "children": [
+              {
+                "id": "aef24b78-6c19-80a5-8008-bdf9f20bb02b",
+                "name": "Button border",
+                "type": "rectangle",
+                "x": 0,
+                "y": 0,
+                "width": 160,
+                "height": 44,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#ffffff",
+                    "opacity": 1,
+                    "ref": "d862c4e5-8ca1-80d0-8008-b5895a888366"
+                  }
+                ],
+                "strokes": [
+                  {
+                    "color": "#888888",
+                    "width": 1,
+                    "opacity": 1,
+                    "ref": "d862c4e5-8ca1-80d0-8008-b5895c1a9c52"
+                  }
+                ]
+              },
+              {
+                "id": "aef24b78-6c19-80a5-8008-bdf9f20bb02c",
+                "name": "Button label",
+                "type": "text",
+                "x": 12,
+                "y": 10,
+                "width": 136,
+                "height": 24,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#111111",
+                    "opacity": 1,
+                    "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                  }
+                ],
+                "text": "Choose receipt",
+                "fontFamily": "Arimo",
+                "fontSize": 16,
+                "fontWeight": "400",
+                "lineHeight": 1.5,
+                "letterSpacing": 0,
+                "align": "center"
+              }
+            ]
+          },
+          {
+            "id": "aef24b78-6c19-80a5-8008-bdf9f21c55b1",
+            "name": "Emulator action",
+            "type": "board",
+            "x": 172,
+            "y": 218,
+            "width": 160,
+            "height": 44,
+            "rotation": 0,
+            "componentId": "6bf32eef-e7db-8057-8008-bb287d8e3cdc",
+            "componentName": "Emulator action",
+            "children": [
+              {
+                "id": "aef24b78-6c19-80a5-8008-bdf9f21c55b2",
+                "name": "Button border",
+                "type": "rectangle",
+                "x": 0,
+                "y": 0,
+                "width": 160,
+                "height": 44,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#ffffff",
+                    "opacity": 1,
+                    "ref": "d862c4e5-8ca1-80d0-8008-b5895a888366"
+                  }
+                ],
+                "strokes": [
+                  {
+                    "color": "#888888",
+                    "width": 1,
+                    "opacity": 1,
+                    "ref": "d862c4e5-8ca1-80d0-8008-b5895c1a9c52"
+                  }
+                ]
+              },
+              {
+                "id": "aef24b78-6c19-80a5-8008-bdf9f21c55b3",
+                "name": "Button label",
+                "type": "text",
+                "x": 12,
+                "y": 10,
+                "width": 136,
+                "height": 24,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#111111",
+                    "opacity": 1,
+                    "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                  }
+                ],
+                "text": "Clear receipt",
+                "fontFamily": "Arimo",
+                "fontSize": 16,
+                "fontWeight": "400",
+                "lineHeight": 1.5,
+                "letterSpacing": 0,
+                "align": "center"
+              }
+            ]
+          },
+          {
+            "id": "aef24b78-6c19-80a5-8008-bdf9f22dac21",
+            "name": "copy / receiptLimit",
+            "type": "text",
+            "x": 0,
+            "y": 278,
+            "width": 342,
+            "height": 48,
+            "rotation": 0,
+            "fills": [
+              {
+                "color": "#555555",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895bec83b8"
+              }
+            ],
+            "text": "JSON, up to 128 KiB. This check does not connect to your SP.",
+            "fontFamily": "Arimo",
+            "fontSize": 14,
+            "fontWeight": "400",
+            "lineHeight": 1.5,
+            "letterSpacing": 0,
+            "align": "left"
+          },
+          {
+            "id": "aef24b78-6c19-80a5-8008-bdf9f23b633f",
+            "name": "Receipt status",
+            "type": "text",
+            "x": 0,
+            "y": 340,
+            "width": 342,
+            "height": 36,
+            "rotation": 0,
+            "fills": [
+              {
+                "color": "#111111",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+              }
+            ],
+            "text": "No receipt selected.",
+            "fontFamily": "Arimo",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "lineHeight": 1.5,
+            "letterSpacing": 0,
+            "align": "left"
+          }
+        ]
+      }
+    },
+    {
+      "id": "7d39c61f-08fe-80d5-8008-bcade20952b6",
+      "name": "Feature summary (Desktop)",
+      "path": "OpenSP / Features",
+      "mainId": "7d39c61f-08fe-80d5-8008-bcade1a0c188",
+      "shape": {
+        "id": "7d39c61f-08fe-80d5-8008-bcade1a0c188",
+        "name": "OpenSP / Features / Feature summary (Desktop)",
+        "type": "board",
+        "x": 0,
+        "y": 0,
+        "width": 352,
+        "height": 400,
+        "rotation": 0,
+        "componentId": "7d39c61f-08fe-80d5-8008-bcade20952b6",
+        "componentName": "Feature summary (Desktop)",
+        "children": [
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcade1a4fe22",
+            "name": "Summary divider",
+            "type": "rectangle",
+            "x": 0,
+            "y": 0,
+            "width": 352,
+            "height": 1,
+            "rotation": 0,
+            "fills": [
+              {
+                "color": "#888888",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895c1a9c52"
+              }
+            ]
+          },
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcade1aa3372",
+            "name": "copy / summaryHeading",
+            "type": "text",
+            "x": 0,
+            "y": 20,
+            "width": 352,
+            "height": 40,
+            "rotation": 0,
+            "fills": [
+              {
+                "color": "#111111",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+              }
+            ],
+            "text": "Your configuration",
+            "fontFamily": "Arimo",
+            "fontSize": 24,
+            "fontWeight": "400",
+            "lineHeight": 1.5,
+            "letterSpacing": 0,
+            "align": "left"
+          },
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcade1b58319",
+            "name": "Selection count",
+            "type": "text",
+            "x": 0,
+            "y": 80,
+            "width": 352,
+            "height": 32,
+            "rotation": 0,
+            "fills": [
+              {
+                "color": "#111111",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+              }
+            ],
+            "text": "1 feature selected",
+            "fontFamily": "Arimo",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "lineHeight": 1.5,
+            "letterSpacing": 0,
+            "align": "left"
+          },
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcade1bc7e1a",
+            "name": "Build state",
+            "type": "text",
+            "x": 0,
+            "y": 124,
+            "width": 352,
+            "height": 32,
+            "rotation": 0,
+            "fills": [
+              {
+                "color": "#111111",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+              }
+            ],
+            "text": "Build unavailable",
+            "fontFamily": "Arimo",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "lineHeight": 1.5,
+            "letterSpacing": 0,
+            "align": "left"
+          },
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcade1c3a180",
+            "name": "Build blocker",
+            "type": "text",
+            "x": 0,
+            "y": 164,
+            "width": 352,
+            "height": 96,
+            "rotation": 0,
+            "fills": [
+              {
+                "color": "#555555",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895bec83b8"
+              }
+            ],
+            "text": "A selectable Synth build and configurable shortcut dispatcher have not been qualified.",
+            "fontFamily": "Arimo",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "lineHeight": 1.5,
+            "letterSpacing": 0,
+            "align": "left"
+          },
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcade1cec546",
+            "name": "Emulator action",
+            "type": "board",
+            "x": 0,
+            "y": 276,
+            "width": 352,
+            "height": 44,
+            "rotation": 0,
+            "componentId": "6bf32eef-e7db-8057-8008-bb287d8e3cdc",
+            "componentName": "Emulator action",
+            "children": [
+              {
+                "id": "7d39c61f-08fe-80d5-8008-bcade1cec547",
+                "name": "Button border",
+                "type": "rectangle",
+                "x": 0,
+                "y": 0,
+                "width": 352,
+                "height": 44,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#ffffff",
+                    "opacity": 1,
+                    "ref": "d862c4e5-8ca1-80d0-8008-b5895a888366"
+                  }
+                ],
+                "strokes": [
+                  {
+                    "color": "#888888",
+                    "width": 1,
+                    "opacity": 1,
+                    "ref": "d862c4e5-8ca1-80d0-8008-b5895c1a9c52"
+                  }
+                ]
+              },
+              {
+                "id": "7d39c61f-08fe-80d5-8008-bcade1cec548",
+                "name": "Button label",
+                "type": "text",
+                "x": 12,
+                "y": 10,
+                "width": 328,
+                "height": 24,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#111111",
+                    "opacity": 1,
+                    "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                  }
+                ],
+                "text": "Export configuration",
+                "fontFamily": "Arimo",
+                "fontSize": 16,
+                "fontWeight": "400",
+                "lineHeight": 1.5,
+                "letterSpacing": 0,
+                "align": "center"
+              }
+            ]
+          },
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcade1d7c419",
+            "name": "Emulator action",
+            "type": "board",
+            "x": 0,
+            "y": 332,
+            "width": 168,
+            "height": 44,
+            "rotation": 0,
+            "componentId": "6bf32eef-e7db-8057-8008-bb287d8e3cdc",
+            "componentName": "Emulator action",
+            "children": [
+              {
+                "id": "7d39c61f-08fe-80d5-8008-bcade1d7c41a",
+                "name": "Button border",
+                "type": "rectangle",
+                "x": 0,
+                "y": 0,
+                "width": 168,
+                "height": 44,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#ffffff",
+                    "opacity": 1,
+                    "ref": "d862c4e5-8ca1-80d0-8008-b5895a888366"
+                  }
+                ],
+                "strokes": [
+                  {
+                    "color": "#888888",
+                    "width": 1,
+                    "opacity": 1,
+                    "ref": "d862c4e5-8ca1-80d0-8008-b5895c1a9c52"
+                  }
+                ]
+              },
+              {
+                "id": "7d39c61f-08fe-80d5-8008-bcade1d7c41b",
+                "name": "Button label",
+                "type": "text",
+                "x": 12,
+                "y": 10,
+                "width": 144,
+                "height": 24,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#111111",
+                    "opacity": 1,
+                    "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                  }
+                ],
+                "text": "Build firmware",
+                "fontFamily": "Arimo",
+                "fontSize": 16,
+                "fontWeight": "400",
+                "lineHeight": 1.5,
+                "letterSpacing": 0,
+                "align": "center"
+              }
+            ]
+          },
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcade1e12083",
+            "name": "Emulator action",
+            "type": "board",
+            "x": 184,
+            "y": 332,
+            "width": 168,
+            "height": 44,
+            "rotation": 0,
+            "componentId": "6bf32eef-e7db-8057-8008-bb287d8e3cdc",
+            "componentName": "Emulator action",
+            "children": [
+              {
+                "id": "7d39c61f-08fe-80d5-8008-bcade1e12084",
+                "name": "Button border",
+                "type": "rectangle",
+                "x": 0,
+                "y": 0,
+                "width": 168,
+                "height": 44,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#ffffff",
+                    "opacity": 1,
+                    "ref": "d862c4e5-8ca1-80d0-8008-b5895a888366"
+                  }
+                ],
+                "strokes": [
+                  {
+                    "color": "#888888",
+                    "width": 1,
+                    "opacity": 1,
+                    "ref": "d862c4e5-8ca1-80d0-8008-b5895c1a9c52"
+                  }
+                ]
+              },
+              {
+                "id": "7d39c61f-08fe-80d5-8008-bcade1e12085",
+                "name": "Button label",
+                "type": "text",
+                "x": 12,
+                "y": 10,
+                "width": 144,
+                "height": 24,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#111111",
+                    "opacity": 1,
+                    "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                  }
+                ],
+                "text": "USB-C upload",
+                "fontFamily": "Arimo",
+                "fontSize": 16,
+                "fontWeight": "400",
+                "lineHeight": 1.5,
+                "letterSpacing": 0,
+                "align": "center"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "7d39c61f-08fe-80d5-8008-bcadd64a8420",
+      "name": "Feature introduction (Mobile)",
+      "path": "OpenSP / Features",
+      "mainId": "7d39c61f-08fe-80d5-8008-bcadd52c34e0",
+      "shape": {
+        "id": "7d39c61f-08fe-80d5-8008-bcadd52c34e0",
+        "name": "OpenSP / Features / Feature introduction (Mobile)",
+        "type": "board",
+        "x": 0,
+        "y": 0,
+        "width": 342,
+        "height": 344,
+        "rotation": 0,
+        "componentId": "7d39c61f-08fe-80d5-8008-bcadd64a8420",
+        "componentName": "Feature introduction (Mobile)",
+        "children": [
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcadd52fc383",
+            "name": "copy / title",
+            "type": "text",
+            "x": 0,
+            "y": 0,
+            "width": 342,
+            "height": 112,
+            "rotation": 0,
+            "fills": [
+              {
+                "color": "#111111",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+              }
+            ],
+            "text": "Choose your features",
+            "fontFamily": "Arimo",
+            "fontSize": 40,
+            "fontWeight": "400",
+            "lineHeight": 1.5,
+            "letterSpacing": 0,
+            "align": "left"
+          },
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcadd5384f85",
+            "name": "copy / introduction",
+            "type": "text",
+            "x": 0,
+            "y": 120,
+            "width": 342,
+            "height": 84,
+            "rotation": 0,
+            "fills": [
+              {
+                "color": "#111111",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+              }
+            ],
+            "text": "Pick the features you want, then choose the buttons that open each one.",
+            "fontFamily": "Arimo",
+            "fontSize": 18,
+            "fontWeight": "400",
+            "lineHeight": 1.5,
+            "letterSpacing": 0,
+            "align": "left"
+          },
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcadd543d012",
+            "name": "copy / planningNote",
+            "type": "text",
+            "x": 0,
+            "y": 220,
+            "width": 342,
+            "height": 120,
+            "rotation": 0,
+            "fills": [
+              {
+                "color": "#555555",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895bec83b8"
+              }
+            ],
+            "text": "This is a configuration preview. You can save your choices now; a compatible firmware build and website upload are still in development.",
+            "fontFamily": "Arimo",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "lineHeight": 1.5,
+            "letterSpacing": 0,
+            "align": "left"
+          }
+        ]
+      }
+    },
+    {
+      "id": "7d39c61f-08fe-80d5-8008-bcade00d4340",
+      "name": "Feature shortcut (Mobile)",
+      "path": "OpenSP / Features",
+      "mainId": "7d39c61f-08fe-80d5-8008-bcaddf0c24e3",
+      "shape": {
+        "id": "7d39c61f-08fe-80d5-8008-bcaddf0c24e3",
+        "name": "OpenSP / Features / Feature shortcut (Mobile)",
+        "type": "board",
+        "x": 0,
+        "y": 0,
+        "width": 342,
+        "height": 344,
+        "rotation": 0,
+        "componentId": "7d39c61f-08fe-80d5-8008-bcade00d4340",
+        "componentName": "Feature shortcut (Mobile)",
+        "children": [
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcaddf1108a3",
+            "name": "Shortcut divider",
+            "type": "rectangle",
+            "x": 0,
+            "y": 0,
+            "width": 342,
+            "height": 1,
+            "rotation": 0,
+            "fills": [
+              {
+                "color": "#888888",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895c1a9c52"
+              }
+            ]
+          },
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcaddf16eb5b",
+            "name": "Shortcut feature",
+            "type": "text",
+            "x": 0,
+            "y": 16,
+            "width": 342,
+            "height": 32,
+            "rotation": 0,
+            "fills": [
+              {
+                "color": "#111111",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+              }
+            ],
+            "text": "Synth",
+            "fontFamily": "Arimo",
+            "fontSize": 20,
+            "fontWeight": "400",
+            "lineHeight": 1.5,
+            "letterSpacing": 0,
+            "align": "left"
+          },
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcaddf203beb",
+            "name": "Shortcut field 0",
+            "type": "rectangle",
+            "x": 0,
+            "y": 162,
+            "width": 342,
+            "height": 44,
+            "rotation": 0,
+            "fills": [
+              {
+                "color": "#ffffff",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895a888366"
+              }
+            ],
+            "strokes": [
+              {
+                "color": "#888888",
+                "width": 1,
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895c1a9c52"
+              }
+            ]
+          },
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcaddf25e162",
+            "name": "Shortcut control 0",
+            "type": "text",
+            "x": 12,
+            "y": 172,
+            "width": 318,
+            "height": 24,
+            "rotation": 0,
+            "fills": [
+              {
+                "color": "#111111",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+              }
+            ],
+            "text": "SHIFT",
+            "fontFamily": "Arimo",
+            "fontSize": 14,
+            "fontWeight": "400",
+            "lineHeight": 1.5,
+            "letterSpacing": 0,
+            "align": "left"
+          },
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcaddf2fbfe9",
+            "name": "Shortcut field 1",
+            "type": "rectangle",
+            "x": 0,
+            "y": 248,
+            "width": 164,
+            "height": 44,
+            "rotation": 0,
+            "fills": [
+              {
+                "color": "#ffffff",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895a888366"
+              }
+            ],
+            "strokes": [
+              {
+                "color": "#888888",
+                "width": 1,
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895c1a9c52"
+              }
+            ]
+          },
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcaddf35873a",
+            "name": "Shortcut control 1",
+            "type": "text",
+            "x": 12,
+            "y": 258,
+            "width": 140,
+            "height": 24,
+            "rotation": 0,
+            "fills": [
+              {
+                "color": "#111111",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+              }
+            ],
+            "text": "RECORD SETTING",
+            "fontFamily": "Arimo",
+            "fontSize": 14,
+            "fontWeight": "400",
+            "lineHeight": 1.5,
+            "letterSpacing": 0,
+            "align": "left"
+          },
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcaddf3f0557",
+            "name": "Shortcut field 2",
+            "type": "rectangle",
+            "x": 178,
+            "y": 248,
+            "width": 164,
+            "height": 44,
+            "rotation": 0,
+            "fills": [
+              {
+                "color": "#ffffff",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895a888366"
+              }
+            ],
+            "strokes": [
+              {
+                "color": "#888888",
+                "width": 1,
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895c1a9c52"
+              }
+            ]
+          },
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcaddf45998e",
+            "name": "Shortcut control 2",
+            "type": "text",
+            "x": 190,
+            "y": 258,
+            "width": 140,
+            "height": 24,
+            "rotation": 0,
+            "fills": [
+              {
+                "color": "#111111",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+              }
+            ],
+            "text": "No third control",
+            "fontFamily": "Arimo",
+            "fontSize": 14,
+            "fontWeight": "400",
+            "lineHeight": 1.5,
+            "letterSpacing": 0,
+            "align": "left"
+          },
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcaddf4d975e",
+            "name": "Shortcut scope",
+            "type": "text",
+            "x": 0,
+            "y": 304,
+            "width": 342,
+            "height": 32,
+            "rotation": 0,
+            "fills": [
+              {
+                "color": "#555555",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895bec83b8"
+              }
+            ],
+            "text": "Sampler idle · requested shortcut",
+            "fontFamily": "Cousine",
+            "fontSize": 13,
+            "fontWeight": "400",
+            "lineHeight": 1.5,
+            "letterSpacing": 0,
+            "align": "left"
+          },
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcb5a5703896",
+            "name": "Shortcut method label",
+            "type": "text",
+            "x": 0,
+            "y": 50,
+            "width": 342,
+            "height": 24,
+            "rotation": 0,
+            "fills": [
+              {
+                "color": "#555555",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895bec83b8"
+              }
+            ],
+            "text": "Open with",
+            "fontFamily": "Arimo",
+            "fontSize": 14,
+            "fontWeight": "400",
+            "lineHeight": 1.5,
+            "letterSpacing": 0,
+            "align": "left"
+          },
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcb5a57b04a1",
+            "name": "Shortcut method field",
+            "type": "rectangle",
+            "x": 0,
+            "y": 76,
+            "width": 342,
+            "height": 44,
+            "rotation": 0,
+            "fills": [
+              {
+                "color": "#ffffff",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895a888366"
+              }
+            ],
+            "strokes": [
+              {
+                "color": "#888888",
+                "width": 1,
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895c1a9c52"
+              }
+            ]
+          },
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcb5a5815a9d",
+            "name": "Shortcut method",
+            "type": "text",
+            "x": 12,
+            "y": 86,
+            "width": 318,
+            "height": 24,
+            "rotation": 0,
+            "fills": [
+              {
+                "color": "#111111",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+              }
+            ],
+            "text": "Button shortcut",
+            "fontFamily": "Arimo",
+            "fontSize": 14,
+            "fontWeight": "400",
+            "lineHeight": 1.5,
+            "letterSpacing": 0,
+            "align": "left"
+          },
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcb5a58d5ae4",
+            "name": "Shortcut label 0",
+            "type": "text",
+            "x": 0,
+            "y": 136,
+            "width": 342,
+            "height": 24,
+            "rotation": 0,
+            "fills": [
+              {
+                "color": "#555555",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895bec83b8"
+              }
+            ],
+            "text": "Hold first",
+            "fontFamily": "Arimo",
+            "fontSize": 14,
+            "fontWeight": "400",
+            "lineHeight": 1.5,
+            "letterSpacing": 0,
+            "align": "left"
+          },
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcb5a59ccffa",
+            "name": "Shortcut label 1",
+            "type": "text",
+            "x": 0,
+            "y": 222,
+            "width": 164,
+            "height": 24,
+            "rotation": 0,
+            "fills": [
+              {
+                "color": "#555555",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895bec83b8"
+              }
+            ],
+            "text": "Then press, or hold",
+            "fontFamily": "Arimo",
+            "fontSize": 14,
+            "fontWeight": "400",
+            "lineHeight": 1.5,
+            "letterSpacing": 0,
+            "align": "left"
+          },
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcb5a5b1d26d",
+            "name": "Shortcut label 2",
+            "type": "text",
+            "x": 178,
+            "y": 222,
+            "width": 164,
+            "height": 24,
+            "rotation": 0,
+            "fills": [
+              {
+                "color": "#555555",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895bec83b8"
+              }
+            ],
+            "text": "Third (optional)",
+            "fontFamily": "Arimo",
+            "fontSize": 14,
+            "fontWeight": "400",
+            "lineHeight": 1.5,
+            "letterSpacing": 0,
+            "align": "left"
+          }
+        ]
+      }
+    },
+    {
+      "id": "7d39c61f-08fe-80d5-8008-bcb0912e1bcd",
+      "name": "Global PC recorder",
+      "path": "OpenSP / Features",
+      "mainId": "7d39c61f-08fe-80d5-8008-bcb08f001e13",
+      "shape": {
+        "id": "7d39c61f-08fe-80d5-8008-bcb08f001e13",
+        "name": "OpenSP / Features / Global PC recorder",
+        "type": "board",
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 800,
+        "rotation": 0,
+        "componentId": "7d39c61f-08fe-80d5-8008-bcb0912e1bcd",
+        "componentName": "Global PC recorder",
+        "fills": [
+          {
+            "color": "#ffffff",
+            "opacity": 1,
+            "ref": "d862c4e5-8ca1-80d0-8008-b5895a888366"
+          }
+        ],
+        "children": [
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcb08f066217",
+            "name": "Recorder title",
+            "type": "text",
+            "x": 32,
+            "y": 24,
+            "width": 740,
+            "height": 42,
+            "rotation": 0,
+            "fills": [
+              {
+                "color": "#111111",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+              }
+            ],
+            "text": "SP USB recorder",
+            "fontFamily": "Arimo",
+            "fontSize": 28,
+            "fontWeight": "400",
+            "lineHeight": 1.5,
+            "letterSpacing": 0,
+            "align": "left"
+          },
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcb08f1322c4",
+            "name": "Recorder state",
+            "type": "text",
+            "x": 840,
+            "y": 30,
+            "width": 408,
+            "height": 24,
+            "rotation": 0,
+            "fills": [
+              {
+                "color": "#555555",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895bec83b8"
+              }
+            ],
+            "text": "DISCONNECTED",
+            "fontFamily": "Cousine",
+            "fontSize": 13,
+            "fontWeight": "400",
+            "lineHeight": 1.5,
+            "letterSpacing": 0,
+            "align": "left"
+          },
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcb08f1d45e4",
+            "name": "Screen label",
+            "type": "text",
+            "x": 32,
+            "y": 76,
+            "width": 768,
+            "height": 28,
+            "rotation": 0,
+            "fills": [
+              {
+                "color": "#555555",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895bec83b8"
+              }
+            ],
+            "text": "SP screen",
+            "fontFamily": "Arimo",
+            "fontSize": 18,
+            "fontWeight": "400",
+            "lineHeight": 1.5,
+            "letterSpacing": 0,
+            "align": "left"
+          },
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcb08f27e33d",
+            "name": "Emulator blank OLED",
+            "type": "board",
+            "x": 32,
+            "y": 112,
+            "width": 768,
+            "height": 384,
+            "rotation": 0,
+            "componentId": "6bf32eef-e7db-8057-8008-bb289b2fc66e",
+            "componentName": "Emulator blank OLED",
+            "children": [
+              {
+                "id": "7d39c61f-08fe-80d5-8008-bcb08f27e33e",
+                "name": "OLED screen background",
+                "type": "rectangle",
+                "x": 0,
+                "y": 0,
+                "width": 768,
+                "height": 384,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#000000",
+                    "opacity": 1,
+                    "ref": "88ef66de-c84d-8075-8008-b5cd50e1aa42"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcb08f310dfa",
+            "name": "Screen waiting",
+            "type": "text",
+            "x": 192,
+            "y": 282,
+            "width": 448,
+            "height": 40,
+            "rotation": 0,
+            "fills": [
+              {
+                "color": "#b6b9b5",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895cd03ecd"
+              }
+            ],
+            "text": "Waiting for SP screen",
+            "fontFamily": "Arimo",
+            "fontSize": 22,
+            "fontWeight": "400",
+            "lineHeight": 1.5,
+            "letterSpacing": 0,
+            "align": "center"
+          },
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcb08f3a5d68",
+            "name": "Control heading",
+            "type": "text",
+            "x": 840,
+            "y": 76,
+            "width": 408,
+            "height": 28,
+            "rotation": 0,
+            "fills": [
+              {
+                "color": "#555555",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895bec83b8"
+              }
+            ],
+            "text": "Observed controls",
+            "fontFamily": "Arimo",
+            "fontSize": 18,
+            "fontWeight": "400",
+            "lineHeight": 1.5,
+            "letterSpacing": 0,
+            "align": "left"
+          },
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcb08f48dfd1",
+            "name": "P6 PC Pad",
+            "type": "board",
+            "x": 840,
+            "y": 116,
+            "width": 72,
+            "height": 44,
+            "rotation": 0,
+            "componentId": "f2db919b-4201-80d6-8008-ba11c18f09f7",
+            "componentName": "P6 PC Pad",
+            "fills": [
+              {
+                "color": "#242628",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895d2b9f0e"
+              }
+            ],
+            "children": [
+              {
+                "id": "7d39c61f-08fe-80d5-8008-bcb08f48dfd2",
+                "name": "Number",
+                "type": "text",
+                "x": 21,
+                "y": 14,
+                "width": 40,
+                "height": 20,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#b6b9b5",
+                    "opacity": 1,
+                    "ref": "d862c4e5-8ca1-80d0-8008-b5895cd03ecd"
+                  }
+                ],
+                "text": "01 ?",
+                "fontFamily": "Cousine",
+                "fontSize": 16,
+                "fontWeight": "400",
+                "lineHeight": 1,
+                "letterSpacing": 0,
+                "align": "left"
+              }
+            ]
+          },
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcb08f51ad00",
+            "name": "P6 PC Pad",
+            "type": "board",
+            "x": 920,
+            "y": 116,
+            "width": 72,
+            "height": 44,
+            "rotation": 0,
+            "componentId": "f2db919b-4201-80d6-8008-ba11c18f09f7",
+            "componentName": "P6 PC Pad",
+            "fills": [
+              {
+                "color": "#242628",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895d2b9f0e"
+              }
+            ],
+            "children": [
+              {
+                "id": "7d39c61f-08fe-80d5-8008-bcb08f51ad01",
+                "name": "Number",
+                "type": "text",
+                "x": 21,
+                "y": 14,
+                "width": 40,
+                "height": 20,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#b6b9b5",
+                    "opacity": 1,
+                    "ref": "d862c4e5-8ca1-80d0-8008-b5895cd03ecd"
+                  }
+                ],
+                "text": "02 ?",
+                "fontFamily": "Cousine",
+                "fontSize": 16,
+                "fontWeight": "400",
+                "lineHeight": 1,
+                "letterSpacing": 0,
+                "align": "left"
+              }
+            ]
+          },
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcb08f582690",
+            "name": "P6 PC Pad",
+            "type": "board",
+            "x": 1000,
+            "y": 116,
+            "width": 72,
+            "height": 44,
+            "rotation": 0,
+            "componentId": "f2db919b-4201-80d6-8008-ba11c18f09f7",
+            "componentName": "P6 PC Pad",
+            "fills": [
+              {
+                "color": "#242628",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895d2b9f0e"
+              }
+            ],
+            "children": [
+              {
+                "id": "7d39c61f-08fe-80d5-8008-bcb08f582691",
+                "name": "Number",
+                "type": "text",
+                "x": 21,
+                "y": 14,
+                "width": 40,
+                "height": 20,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#b6b9b5",
+                    "opacity": 1,
+                    "ref": "d862c4e5-8ca1-80d0-8008-b5895cd03ecd"
+                  }
+                ],
+                "text": "03 ?",
+                "fontFamily": "Cousine",
+                "fontSize": 16,
+                "fontWeight": "400",
+                "lineHeight": 1,
+                "letterSpacing": 0,
+                "align": "left"
+              }
+            ]
+          },
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcb08f5fb746",
+            "name": "P6 PC Pad",
+            "type": "board",
+            "x": 1080,
+            "y": 116,
+            "width": 72,
+            "height": 44,
+            "rotation": 0,
+            "componentId": "f2db919b-4201-80d6-8008-ba11c18f09f7",
+            "componentName": "P6 PC Pad",
+            "fills": [
+              {
+                "color": "#242628",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895d2b9f0e"
+              }
+            ],
+            "children": [
+              {
+                "id": "7d39c61f-08fe-80d5-8008-bcb08f5fb747",
+                "name": "Number",
+                "type": "text",
+                "x": 21,
+                "y": 14,
+                "width": 40,
+                "height": 20,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#b6b9b5",
+                    "opacity": 1,
+                    "ref": "d862c4e5-8ca1-80d0-8008-b5895cd03ecd"
+                  }
+                ],
+                "text": "04 ?",
+                "fontFamily": "Cousine",
+                "fontSize": 16,
+                "fontWeight": "400",
+                "lineHeight": 1,
+                "letterSpacing": 0,
+                "align": "left"
+              }
+            ]
+          },
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcb08f65c166",
+            "name": "P6 PC Pad",
+            "type": "board",
+            "x": 840,
+            "y": 168,
+            "width": 72,
+            "height": 44,
+            "rotation": 0,
+            "componentId": "f2db919b-4201-80d6-8008-ba11c18f09f7",
+            "componentName": "P6 PC Pad",
+            "fills": [
+              {
+                "color": "#242628",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895d2b9f0e"
+              }
+            ],
+            "children": [
+              {
+                "id": "7d39c61f-08fe-80d5-8008-bcb08f65c167",
+                "name": "Number",
+                "type": "text",
+                "x": 21,
+                "y": 14,
+                "width": 40,
+                "height": 20,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#b6b9b5",
+                    "opacity": 1,
+                    "ref": "d862c4e5-8ca1-80d0-8008-b5895cd03ecd"
+                  }
+                ],
+                "text": "05 ?",
+                "fontFamily": "Cousine",
+                "fontSize": 16,
+                "fontWeight": "400",
+                "lineHeight": 1,
+                "letterSpacing": 0,
+                "align": "left"
+              }
+            ]
+          },
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcb08f6f505f",
+            "name": "P6 PC Pad",
+            "type": "board",
+            "x": 920,
+            "y": 168,
+            "width": 72,
+            "height": 44,
+            "rotation": 0,
+            "componentId": "f2db919b-4201-80d6-8008-ba11c18f09f7",
+            "componentName": "P6 PC Pad",
+            "fills": [
+              {
+                "color": "#242628",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895d2b9f0e"
+              }
+            ],
+            "children": [
+              {
+                "id": "7d39c61f-08fe-80d5-8008-bcb08f6f5060",
+                "name": "Number",
+                "type": "text",
+                "x": 21,
+                "y": 14,
+                "width": 40,
+                "height": 20,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#b6b9b5",
+                    "opacity": 1,
+                    "ref": "d862c4e5-8ca1-80d0-8008-b5895cd03ecd"
+                  }
+                ],
+                "text": "06 ?",
+                "fontFamily": "Cousine",
+                "fontSize": 16,
+                "fontWeight": "400",
+                "lineHeight": 1,
+                "letterSpacing": 0,
+                "align": "left"
+              }
+            ]
+          },
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcb08f770aad",
+            "name": "P6 PC Pad",
+            "type": "board",
+            "x": 1000,
+            "y": 168,
+            "width": 72,
+            "height": 44,
+            "rotation": 0,
+            "componentId": "f2db919b-4201-80d6-8008-ba11c18f09f7",
+            "componentName": "P6 PC Pad",
+            "fills": [
+              {
+                "color": "#242628",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895d2b9f0e"
+              }
+            ],
+            "children": [
+              {
+                "id": "7d39c61f-08fe-80d5-8008-bcb08f770aae",
+                "name": "Number",
+                "type": "text",
+                "x": 21,
+                "y": 14,
+                "width": 40,
+                "height": 20,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#b6b9b5",
+                    "opacity": 1,
+                    "ref": "d862c4e5-8ca1-80d0-8008-b5895cd03ecd"
+                  }
+                ],
+                "text": "07 ?",
+                "fontFamily": "Cousine",
+                "fontSize": 16,
+                "fontWeight": "400",
+                "lineHeight": 1,
+                "letterSpacing": 0,
+                "align": "left"
+              }
+            ]
+          },
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcb08f7e2318",
+            "name": "P6 PC Pad",
+            "type": "board",
+            "x": 1080,
+            "y": 168,
+            "width": 72,
+            "height": 44,
+            "rotation": 0,
+            "componentId": "f2db919b-4201-80d6-8008-ba11c18f09f7",
+            "componentName": "P6 PC Pad",
+            "fills": [
+              {
+                "color": "#242628",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895d2b9f0e"
+              }
+            ],
+            "children": [
+              {
+                "id": "7d39c61f-08fe-80d5-8008-bcb08f7e2319",
+                "name": "Number",
+                "type": "text",
+                "x": 21,
+                "y": 14,
+                "width": 40,
+                "height": 20,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#b6b9b5",
+                    "opacity": 1,
+                    "ref": "d862c4e5-8ca1-80d0-8008-b5895cd03ecd"
+                  }
+                ],
+                "text": "08 ?",
+                "fontFamily": "Cousine",
+                "fontSize": 16,
+                "fontWeight": "400",
+                "lineHeight": 1,
+                "letterSpacing": 0,
+                "align": "left"
+              }
+            ]
+          },
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcb08f85a5b8",
+            "name": "P6 PC Pad",
+            "type": "board",
+            "x": 840,
+            "y": 220,
+            "width": 72,
+            "height": 44,
+            "rotation": 0,
+            "componentId": "f2db919b-4201-80d6-8008-ba11c18f09f7",
+            "componentName": "P6 PC Pad",
+            "fills": [
+              {
+                "color": "#242628",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895d2b9f0e"
+              }
+            ],
+            "children": [
+              {
+                "id": "7d39c61f-08fe-80d5-8008-bcb08f85a5b9",
+                "name": "Number",
+                "type": "text",
+                "x": 21,
+                "y": 14,
+                "width": 40,
+                "height": 20,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#b6b9b5",
+                    "opacity": 1,
+                    "ref": "d862c4e5-8ca1-80d0-8008-b5895cd03ecd"
+                  }
+                ],
+                "text": "09 ?",
+                "fontFamily": "Cousine",
+                "fontSize": 16,
+                "fontWeight": "400",
+                "lineHeight": 1,
+                "letterSpacing": 0,
+                "align": "left"
+              }
+            ]
+          },
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcb08f8ca132",
+            "name": "P6 PC Pad",
+            "type": "board",
+            "x": 920,
+            "y": 220,
+            "width": 72,
+            "height": 44,
+            "rotation": 0,
+            "componentId": "f2db919b-4201-80d6-8008-ba11c18f09f7",
+            "componentName": "P6 PC Pad",
+            "fills": [
+              {
+                "color": "#242628",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895d2b9f0e"
+              }
+            ],
+            "children": [
+              {
+                "id": "7d39c61f-08fe-80d5-8008-bcb08f8ca133",
+                "name": "Number",
+                "type": "text",
+                "x": 21,
+                "y": 14,
+                "width": 40,
+                "height": 20,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#b6b9b5",
+                    "opacity": 1,
+                    "ref": "d862c4e5-8ca1-80d0-8008-b5895cd03ecd"
+                  }
+                ],
+                "text": "10 ?",
+                "fontFamily": "Cousine",
+                "fontSize": 16,
+                "fontWeight": "400",
+                "lineHeight": 1,
+                "letterSpacing": 0,
+                "align": "left"
+              }
+            ]
+          },
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcb08f93b5d8",
+            "name": "P6 PC Pad",
+            "type": "board",
+            "x": 1000,
+            "y": 220,
+            "width": 72,
+            "height": 44,
+            "rotation": 0,
+            "componentId": "f2db919b-4201-80d6-8008-ba11c18f09f7",
+            "componentName": "P6 PC Pad",
+            "fills": [
+              {
+                "color": "#242628",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895d2b9f0e"
+              }
+            ],
+            "children": [
+              {
+                "id": "7d39c61f-08fe-80d5-8008-bcb08f93b5d9",
+                "name": "Number",
+                "type": "text",
+                "x": 21,
+                "y": 14,
+                "width": 40,
+                "height": 20,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#b6b9b5",
+                    "opacity": 1,
+                    "ref": "d862c4e5-8ca1-80d0-8008-b5895cd03ecd"
+                  }
+                ],
+                "text": "11 ?",
+                "fontFamily": "Cousine",
+                "fontSize": 16,
+                "fontWeight": "400",
+                "lineHeight": 1,
+                "letterSpacing": 0,
+                "align": "left"
+              }
+            ]
+          },
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcb08f9bdd22",
+            "name": "P6 PC Pad",
+            "type": "board",
+            "x": 1080,
+            "y": 220,
+            "width": 72,
+            "height": 44,
+            "rotation": 0,
+            "componentId": "f2db919b-4201-80d6-8008-ba11c18f09f7",
+            "componentName": "P6 PC Pad",
+            "fills": [
+              {
+                "color": "#242628",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895d2b9f0e"
+              }
+            ],
+            "children": [
+              {
+                "id": "7d39c61f-08fe-80d5-8008-bcb08f9bdd23",
+                "name": "Number",
+                "type": "text",
+                "x": 21,
+                "y": 14,
+                "width": 40,
+                "height": 20,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#b6b9b5",
+                    "opacity": 1,
+                    "ref": "d862c4e5-8ca1-80d0-8008-b5895cd03ecd"
+                  }
+                ],
+                "text": "12 ?",
+                "fontFamily": "Cousine",
+                "fontSize": 16,
+                "fontWeight": "400",
+                "lineHeight": 1,
+                "letterSpacing": 0,
+                "align": "left"
+              }
+            ]
+          },
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcb08fa16622",
+            "name": "P6 PC Pad",
+            "type": "board",
+            "x": 840,
+            "y": 272,
+            "width": 72,
+            "height": 44,
+            "rotation": 0,
+            "componentId": "f2db919b-4201-80d6-8008-ba11c18f09f7",
+            "componentName": "P6 PC Pad",
+            "fills": [
+              {
+                "color": "#242628",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895d2b9f0e"
+              }
+            ],
+            "children": [
+              {
+                "id": "7d39c61f-08fe-80d5-8008-bcb08fa16623",
+                "name": "Number",
+                "type": "text",
+                "x": 21,
+                "y": 14,
+                "width": 40,
+                "height": 20,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#b6b9b5",
+                    "opacity": 1,
+                    "ref": "d862c4e5-8ca1-80d0-8008-b5895cd03ecd"
+                  }
+                ],
+                "text": "13 ?",
+                "fontFamily": "Cousine",
+                "fontSize": 16,
+                "fontWeight": "400",
+                "lineHeight": 1,
+                "letterSpacing": 0,
+                "align": "left"
+              }
+            ]
+          },
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcb08fa7a7ff",
+            "name": "P6 PC Pad",
+            "type": "board",
+            "x": 920,
+            "y": 272,
+            "width": 72,
+            "height": 44,
+            "rotation": 0,
+            "componentId": "f2db919b-4201-80d6-8008-ba11c18f09f7",
+            "componentName": "P6 PC Pad",
+            "fills": [
+              {
+                "color": "#242628",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895d2b9f0e"
+              }
+            ],
+            "children": [
+              {
+                "id": "7d39c61f-08fe-80d5-8008-bcb08fa7d3f9",
+                "name": "Number",
+                "type": "text",
+                "x": 21,
+                "y": 14,
+                "width": 40,
+                "height": 20,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#b6b9b5",
+                    "opacity": 1,
+                    "ref": "d862c4e5-8ca1-80d0-8008-b5895cd03ecd"
+                  }
+                ],
+                "text": "14 ?",
+                "fontFamily": "Cousine",
+                "fontSize": 16,
+                "fontWeight": "400",
+                "lineHeight": 1,
+                "letterSpacing": 0,
+                "align": "left"
+              }
+            ]
+          },
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcb08fae193c",
+            "name": "P6 PC Pad",
+            "type": "board",
+            "x": 1000,
+            "y": 272,
+            "width": 72,
+            "height": 44,
+            "rotation": 0,
+            "componentId": "f2db919b-4201-80d6-8008-ba11c18f09f7",
+            "componentName": "P6 PC Pad",
+            "fills": [
+              {
+                "color": "#242628",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895d2b9f0e"
+              }
+            ],
+            "children": [
+              {
+                "id": "7d39c61f-08fe-80d5-8008-bcb08fae193d",
+                "name": "Number",
+                "type": "text",
+                "x": 21,
+                "y": 14,
+                "width": 40,
+                "height": 20,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#b6b9b5",
+                    "opacity": 1,
+                    "ref": "d862c4e5-8ca1-80d0-8008-b5895cd03ecd"
+                  }
+                ],
+                "text": "15 ?",
+                "fontFamily": "Cousine",
+                "fontSize": 16,
+                "fontWeight": "400",
+                "lineHeight": 1,
+                "letterSpacing": 0,
+                "align": "left"
+              }
+            ]
+          },
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcb08fb65b22",
+            "name": "P6 PC Pad",
+            "type": "board",
+            "x": 1080,
+            "y": 272,
+            "width": 72,
+            "height": 44,
+            "rotation": 0,
+            "componentId": "f2db919b-4201-80d6-8008-ba11c18f09f7",
+            "componentName": "P6 PC Pad",
+            "fills": [
+              {
+                "color": "#242628",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895d2b9f0e"
+              }
+            ],
+            "children": [
+              {
+                "id": "7d39c61f-08fe-80d5-8008-bcb08fb65b23",
+                "name": "Number",
+                "type": "text",
+                "x": 21,
+                "y": 14,
+                "width": 40,
+                "height": 20,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#b6b9b5",
+                    "opacity": 1,
+                    "ref": "d862c4e5-8ca1-80d0-8008-b5895cd03ecd"
+                  }
+                ],
+                "text": "16 ?",
+                "fontFamily": "Cousine",
+                "fontSize": 16,
+                "fontWeight": "400",
+                "lineHeight": 1,
+                "letterSpacing": 0,
+                "align": "left"
+              }
+            ]
+          },
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcb08fbbc211",
+            "name": "P6 PC CTRL",
+            "type": "board",
+            "x": 840,
+            "y": 340,
+            "width": 112,
+            "height": 80,
+            "rotation": 0,
+            "componentId": "f2db919b-4201-80d6-8008-ba11c21d2bf1",
+            "componentName": "P6 PC CTRL",
+            "fills": [
+              {
+                "color": "#151617",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895c75a407"
+              }
+            ],
+            "children": [
+              {
+                "id": "7d39c61f-08fe-80d5-8008-bcb08fbbc212",
+                "name": "Control",
+                "type": "text",
+                "x": 0,
+                "y": 0,
+                "width": 112,
+                "height": 23,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#b6b9b5",
+                    "opacity": 1,
+                    "ref": "d862c4e5-8ca1-80d0-8008-b5895cd03ecd"
+                  }
+                ],
+                "text": "VOLUME",
+                "fontFamily": "Arimo",
+                "fontSize": 15,
+                "fontWeight": "400",
+                "lineHeight": 1,
+                "letterSpacing": 0,
+                "align": "left"
+              },
+              {
+                "id": "7d39c61f-08fe-80d5-8008-bcb08fbbc213",
+                "name": "Value",
+                "type": "text",
+                "x": 0,
+                "y": 30,
+                "width": 112,
+                "height": 32,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#eef0ec",
+                    "opacity": 1,
+                    "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                  }
+                ],
+                "text": "Unknown",
+                "fontFamily": "Cousine",
+                "fontSize": 20,
+                "fontWeight": "400",
+                "lineHeight": 1,
+                "letterSpacing": 0,
+                "align": "left"
+              },
+              {
+                "id": "7d39c61f-08fe-80d5-8008-bcb08fbbc214",
+                "name": "Track",
+                "type": "rectangle",
+                "x": 0,
+                "y": 68,
+                "width": 112,
+                "height": 3,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#636763",
+                    "opacity": 1,
+                    "ref": "d862c4e5-8ca1-80d0-8008-b5895cfe1f4a"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcb08fc6fd5f",
+            "name": "P6 PC CTRL",
+            "type": "board",
+            "x": 1016,
+            "y": 340,
+            "width": 112,
+            "height": 80,
+            "rotation": 0,
+            "componentId": "f2db919b-4201-80d6-8008-ba11c21d2bf1",
+            "componentName": "P6 PC CTRL",
+            "fills": [
+              {
+                "color": "#151617",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895c75a407"
+              }
+            ],
+            "children": [
+              {
+                "id": "7d39c61f-08fe-80d5-8008-bcb08fc6fd60",
+                "name": "Control",
+                "type": "text",
+                "x": 0,
+                "y": 0,
+                "width": 112,
+                "height": 23,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#b6b9b5",
+                    "opacity": 1,
+                    "ref": "d862c4e5-8ca1-80d0-8008-b5895cd03ecd"
+                  }
+                ],
+                "text": "CTRL 1",
+                "fontFamily": "Arimo",
+                "fontSize": 15,
+                "fontWeight": "400",
+                "lineHeight": 1,
+                "letterSpacing": 0,
+                "align": "left"
+              },
+              {
+                "id": "7d39c61f-08fe-80d5-8008-bcb08fc71537",
+                "name": "Value",
+                "type": "text",
+                "x": 0,
+                "y": 30,
+                "width": 112,
+                "height": 32,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#eef0ec",
+                    "opacity": 1,
+                    "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                  }
+                ],
+                "text": "Unknown",
+                "fontFamily": "Cousine",
+                "fontSize": 20,
+                "fontWeight": "400",
+                "lineHeight": 1,
+                "letterSpacing": 0,
+                "align": "left"
+              },
+              {
+                "id": "7d39c61f-08fe-80d5-8008-bcb08fc71538",
+                "name": "Track",
+                "type": "rectangle",
+                "x": 0,
+                "y": 68,
+                "width": 112,
+                "height": 3,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#636763",
+                    "opacity": 1,
+                    "ref": "d862c4e5-8ca1-80d0-8008-b5895cfe1f4a"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcb08fd1fc1e",
+            "name": "P6 PC CTRL",
+            "type": "board",
+            "x": 840,
+            "y": 428,
+            "width": 112,
+            "height": 80,
+            "rotation": 0,
+            "componentId": "f2db919b-4201-80d6-8008-ba11c21d2bf1",
+            "componentName": "P6 PC CTRL",
+            "fills": [
+              {
+                "color": "#151617",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895c75a407"
+              }
+            ],
+            "children": [
+              {
+                "id": "7d39c61f-08fe-80d5-8008-bcb08fd1fc1f",
+                "name": "Control",
+                "type": "text",
+                "x": 0,
+                "y": 0,
+                "width": 112,
+                "height": 23,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#b6b9b5",
+                    "opacity": 1,
+                    "ref": "d862c4e5-8ca1-80d0-8008-b5895cd03ecd"
+                  }
+                ],
+                "text": "CTRL 2",
+                "fontFamily": "Arimo",
+                "fontSize": 15,
+                "fontWeight": "400",
+                "lineHeight": 1,
+                "letterSpacing": 0,
+                "align": "left"
+              },
+              {
+                "id": "7d39c61f-08fe-80d5-8008-bcb08fd1fc20",
+                "name": "Value",
+                "type": "text",
+                "x": 0,
+                "y": 30,
+                "width": 112,
+                "height": 32,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#eef0ec",
+                    "opacity": 1,
+                    "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                  }
+                ],
+                "text": "Unknown",
+                "fontFamily": "Cousine",
+                "fontSize": 20,
+                "fontWeight": "400",
+                "lineHeight": 1,
+                "letterSpacing": 0,
+                "align": "left"
+              },
+              {
+                "id": "7d39c61f-08fe-80d5-8008-bcb08fd1fc21",
+                "name": "Track",
+                "type": "rectangle",
+                "x": 0,
+                "y": 68,
+                "width": 112,
+                "height": 3,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#636763",
+                    "opacity": 1,
+                    "ref": "d862c4e5-8ca1-80d0-8008-b5895cfe1f4a"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcb08fde7a5b",
+            "name": "P6 PC CTRL",
+            "type": "board",
+            "x": 1016,
+            "y": 428,
+            "width": 112,
+            "height": 80,
+            "rotation": 0,
+            "componentId": "f2db919b-4201-80d6-8008-ba11c21d2bf1",
+            "componentName": "P6 PC CTRL",
+            "fills": [
+              {
+                "color": "#151617",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895c75a407"
+              }
+            ],
+            "children": [
+              {
+                "id": "7d39c61f-08fe-80d5-8008-bcb08fde7a5c",
+                "name": "Control",
+                "type": "text",
+                "x": 0,
+                "y": 0,
+                "width": 112,
+                "height": 23,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#b6b9b5",
+                    "opacity": 1,
+                    "ref": "d862c4e5-8ca1-80d0-8008-b5895cd03ecd"
+                  }
+                ],
+                "text": "CTRL 3",
+                "fontFamily": "Arimo",
+                "fontSize": 15,
+                "fontWeight": "400",
+                "lineHeight": 1,
+                "letterSpacing": 0,
+                "align": "left"
+              },
+              {
+                "id": "7d39c61f-08fe-80d5-8008-bcb08fde7a5d",
+                "name": "Value",
+                "type": "text",
+                "x": 0,
+                "y": 30,
+                "width": 112,
+                "height": 32,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#eef0ec",
+                    "opacity": 1,
+                    "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                  }
+                ],
+                "text": "Unknown",
+                "fontFamily": "Cousine",
+                "fontSize": 20,
+                "fontWeight": "400",
+                "lineHeight": 1,
+                "letterSpacing": 0,
+                "align": "left"
+              },
+              {
+                "id": "7d39c61f-08fe-80d5-8008-bcb08fde7a5e",
+                "name": "Track",
+                "type": "rectangle",
+                "x": 0,
+                "y": 68,
+                "width": 112,
+                "height": 3,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#636763",
+                    "opacity": 1,
+                    "ref": "d862c4e5-8ca1-80d0-8008-b5895cfe1f4a"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcb08fea2229",
+            "name": "P6 PC Capture toolbar",
+            "type": "board",
+            "x": 32,
+            "y": 530,
+            "width": 768,
+            "height": 48,
+            "rotation": 0,
+            "componentId": "f2db919b-4201-80d6-8008-ba11c2ad6653",
+            "componentName": "P6 PC Capture toolbar",
+            "fills": [
+              {
+                "color": "#151617",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895c75a407"
+              }
+            ],
+            "children": [
+              {
+                "id": "7d39c61f-08fe-80d5-8008-bcb08fea222a",
+                "name": "Record action",
+                "type": "rectangle",
+                "x": 0,
+                "y": 0,
+                "width": 214,
+                "height": 48,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#eef0ec",
+                    "opacity": 1,
+                    "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                  }
+                ]
+              },
+              {
+                "id": "7d39c61f-08fe-80d5-8008-bcb08fea222b",
+                "name": "Record label",
+                "type": "text",
+                "x": 17,
+                "y": 13,
+                "width": 188,
+                "height": 24,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#151617",
+                    "opacity": 1,
+                    "ref": "d862c4e5-8ca1-80d0-8008-b5895c75a407"
+                  }
+                ],
+                "text": "Record",
+                "fontFamily": "Arimo",
+                "fontSize": 18,
+                "fontWeight": "400",
+                "lineHeight": 1,
+                "letterSpacing": 0,
+                "align": "left"
+              },
+              {
+                "id": "7d39c61f-08fe-80d5-8008-bcb08fea222c",
+                "name": "Stop action",
+                "type": "rectangle",
+                "x": 230,
+                "y": 0,
+                "width": 108,
+                "height": 48,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#242628",
+                    "opacity": 1,
+                    "ref": "d862c4e5-8ca1-80d0-8008-b5895d2b9f0e"
+                  }
+                ]
+              },
+              {
+                "id": "7d39c61f-08fe-80d5-8008-bcb08fea222d",
+                "name": "Stop label",
+                "type": "text",
+                "x": 259,
+                "y": 13,
+                "width": 68,
+                "height": 24,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#eef0ec",
+                    "opacity": 1,
+                    "ref": "d862c4e5-8ca1-80d0-8008-b5895ca2bec6"
+                  }
+                ],
+                "text": "Stop",
+                "fontFamily": "Arimo",
+                "fontSize": 18,
+                "fontWeight": "400",
+                "lineHeight": 1,
+                "letterSpacing": 0,
+                "align": "left"
+              }
+            ]
+          },
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcb08ff47fff",
+            "name": "Event heading",
+            "type": "text",
+            "x": 840,
+            "y": 528,
+            "width": 408,
+            "height": 24,
+            "rotation": 0,
+            "fills": [
+              {
+                "color": "#555555",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895bec83b8"
+              }
+            ],
+            "text": "Recent button / pressure events",
+            "fontFamily": "Arimo",
+            "fontSize": 14,
+            "fontWeight": "400",
+            "lineHeight": 1.5,
+            "letterSpacing": 0,
+            "align": "left"
+          },
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcb0900e4fd7",
+            "name": "Event unknown",
+            "type": "text",
+            "x": 840,
+            "y": 560,
+            "width": 408,
+            "height": 48,
+            "rotation": 0,
+            "fills": [
+              {
+                "color": "#555555",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895bec83b8"
+              }
+            ],
+            "text": "No event received · pressure unknown",
+            "fontFamily": "Arimo",
+            "fontSize": 14,
+            "fontWeight": "400",
+            "lineHeight": 1.5,
+            "letterSpacing": 0,
+            "align": "left"
+          },
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcb090265174",
+            "name": "Audio label",
+            "type": "text",
+            "x": 840,
+            "y": 612,
+            "width": 408,
+            "height": 24,
+            "rotation": 0,
+            "fills": [
+              {
+                "color": "#555555",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895bec83b8"
+              }
+            ],
+            "text": "USB audio input",
+            "fontFamily": "Arimo",
+            "fontSize": 14,
+            "fontWeight": "400",
+            "lineHeight": 1.5,
+            "letterSpacing": 0,
+            "align": "left"
+          },
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcb0903f84be",
+            "name": "Audio field",
+            "type": "rectangle",
+            "x": 840,
+            "y": 640,
+            "width": 408,
+            "height": 36,
+            "rotation": 0,
+            "fills": [
+              {
+                "color": "#ffffff",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895a888366"
+              }
+            ],
+            "strokes": [
+              {
+                "color": "#888888",
+                "width": 1,
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895c1a9c52"
+              }
+            ]
+          },
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcb090524ffc",
+            "name": "Audio value",
+            "type": "text",
+            "x": 852,
+            "y": 646,
+            "width": 384,
+            "height": 24,
+            "rotation": 0,
+            "fills": [
+              {
+                "color": "#555555",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895bec83b8"
+              }
+            ],
+            "text": "Select a verified SP USB audio input",
+            "fontFamily": "Arimo",
+            "fontSize": 14,
+            "fontWeight": "400",
+            "lineHeight": 1.5,
+            "letterSpacing": 0,
+            "align": "left"
+          },
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcb090629358",
+            "name": "Port label",
+            "type": "text",
+            "x": 840,
+            "y": 688,
+            "width": 408,
+            "height": 24,
+            "rotation": 0,
+            "fills": [
+              {
+                "color": "#555555",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895bec83b8"
+              }
+            ],
+            "text": "SP application port",
+            "fontFamily": "Arimo",
+            "fontSize": 14,
+            "fontWeight": "400",
+            "lineHeight": 1.5,
+            "letterSpacing": 0,
+            "align": "left"
+          },
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcb090722ab7",
+            "name": "Port field",
+            "type": "rectangle",
+            "x": 840,
+            "y": 716,
+            "width": 408,
+            "height": 36,
+            "rotation": 0,
+            "fills": [
+              {
+                "color": "#ffffff",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895a888366"
+              }
+            ],
+            "strokes": [
+              {
+                "color": "#888888",
+                "width": 1,
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895c1a9c52"
+              }
+            ]
+          },
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcb0907acf31",
+            "name": "Port value",
+            "type": "text",
+            "x": 852,
+            "y": 722,
+            "width": 384,
+            "height": 24,
+            "rotation": 0,
+            "fills": [
+              {
+                "color": "#555555",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895bec83b8"
+              }
+            ],
+            "text": "No application port selected",
+            "fontFamily": "Arimo",
+            "fontSize": 14,
+            "fontWeight": "400",
+            "lineHeight": 1.5,
+            "letterSpacing": 0,
+            "align": "left"
+          },
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcb0908a2495",
+            "name": "Profile capability",
+            "type": "text",
+            "x": 32,
+            "y": 606,
+            "width": 768,
+            "height": 32,
+            "rotation": 0,
+            "fills": [
+              {
+                "color": "#555555",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895bec83b8"
+              }
+            ],
+            "text": "Profile unknown · screen/control capture unavailable",
+            "fontFamily": "Arimo",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "lineHeight": 1.5,
+            "letterSpacing": 0,
+            "align": "left"
+          },
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcb09097f845",
+            "name": "Timing limitation",
+            "type": "text",
+            "x": 32,
+            "y": 644,
+            "width": 768,
+            "height": 40,
+            "rotation": 0,
+            "fills": [
+              {
+                "color": "#555555",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895bec83b8"
+              }
+            ],
+            "text": "Audio is recorded separately. Audio/video alignment is unmeasured.",
+            "fontFamily": "Arimo",
+            "fontSize": 14,
+            "fontWeight": "400",
+            "lineHeight": 1.5,
+            "letterSpacing": 0,
+            "align": "left"
+          },
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcb090a609cc",
+            "name": "Emulator action",
+            "type": "board",
+            "x": 32,
+            "y": 704,
+            "width": 112,
+            "height": 44,
+            "rotation": 0,
+            "componentId": "6bf32eef-e7db-8057-8008-bb287d8e3cdc",
+            "componentName": "Emulator action",
+            "children": [
+              {
+                "id": "7d39c61f-08fe-80d5-8008-bcb090a609cd",
+                "name": "Button border",
+                "type": "rectangle",
+                "x": 0,
+                "y": 0,
+                "width": 112,
+                "height": 44,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#ffffff",
+                    "opacity": 1,
+                    "ref": "d862c4e5-8ca1-80d0-8008-b5895a888366"
+                  }
+                ],
+                "strokes": [
+                  {
+                    "color": "#888888",
+                    "width": 1,
+                    "opacity": 1,
+                    "ref": "d862c4e5-8ca1-80d0-8008-b5895c1a9c52"
+                  }
+                ]
+              },
+              {
+                "id": "7d39c61f-08fe-80d5-8008-bcb090a609ce",
+                "name": "Button label",
+                "type": "text",
+                "x": 12,
+                "y": 10,
+                "width": 88,
+                "height": 24,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#111111",
+                    "opacity": 1,
+                    "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                  }
+                ],
+                "text": "Replay",
+                "fontFamily": "Arimo",
+                "fontSize": 16,
+                "fontWeight": "400",
+                "lineHeight": 1.5,
+                "letterSpacing": 0,
+                "align": "center"
+              }
+            ]
+          },
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcb090b3533e",
+            "name": "Emulator action",
+            "type": "board",
+            "x": 160,
+            "y": 704,
+            "width": 160,
+            "height": 44,
+            "rotation": 0,
+            "componentId": "6bf32eef-e7db-8057-8008-bb287d8e3cdc",
+            "componentName": "Emulator action",
+            "children": [
+              {
+                "id": "7d39c61f-08fe-80d5-8008-bcb090b3533f",
+                "name": "Button border",
+                "type": "rectangle",
+                "x": 0,
+                "y": 0,
+                "width": 160,
+                "height": 44,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#ffffff",
+                    "opacity": 1,
+                    "ref": "d862c4e5-8ca1-80d0-8008-b5895a888366"
+                  }
+                ],
+                "strokes": [
+                  {
+                    "color": "#888888",
+                    "width": 1,
+                    "opacity": 1,
+                    "ref": "d862c4e5-8ca1-80d0-8008-b5895c1a9c52"
+                  }
+                ]
+              },
+              {
+                "id": "7d39c61f-08fe-80d5-8008-bcb090b35340",
+                "name": "Button label",
+                "type": "text",
+                "x": 12,
+                "y": 10,
+                "width": 136,
+                "height": 24,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#111111",
+                    "opacity": 1,
+                    "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                  }
+                ],
+                "text": "Lossless WAV",
+                "fontFamily": "Arimo",
+                "fontSize": 16,
+                "fontWeight": "400",
+                "lineHeight": 1.5,
+                "letterSpacing": 0,
+                "align": "center"
+              }
+            ]
+          },
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcb090c2414b",
+            "name": "Emulator action",
+            "type": "board",
+            "x": 336,
+            "y": 704,
+            "width": 112,
+            "height": 44,
+            "rotation": 0,
+            "componentId": "6bf32eef-e7db-8057-8008-bb287d8e3cdc",
+            "componentName": "Emulator action",
+            "children": [
+              {
+                "id": "7d39c61f-08fe-80d5-8008-bcb090c2414c",
+                "name": "Button border",
+                "type": "rectangle",
+                "x": 0,
+                "y": 0,
+                "width": 112,
+                "height": 44,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#ffffff",
+                    "opacity": 1,
+                    "ref": "d862c4e5-8ca1-80d0-8008-b5895a888366"
+                  }
+                ],
+                "strokes": [
+                  {
+                    "color": "#888888",
+                    "width": 1,
+                    "opacity": 1,
+                    "ref": "d862c4e5-8ca1-80d0-8008-b5895c1a9c52"
+                  }
+                ]
+              },
+              {
+                "id": "7d39c61f-08fe-80d5-8008-bcb090c2414d",
+                "name": "Button label",
+                "type": "text",
+                "x": 12,
+                "y": 10,
+                "width": 88,
+                "height": 24,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#111111",
+                    "opacity": 1,
+                    "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                  }
+                ],
+                "text": "Video",
+                "fontFamily": "Arimo",
+                "fontSize": 16,
+                "fontWeight": "400",
+                "lineHeight": 1.5,
+                "letterSpacing": 0,
+                "align": "center"
+              }
+            ]
+          },
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcb090cf6eea",
+            "name": "Emulator action",
+            "type": "board",
+            "x": 464,
+            "y": 704,
+            "width": 152,
+            "height": 44,
+            "rotation": 0,
+            "componentId": "6bf32eef-e7db-8057-8008-bb287d8e3cdc",
+            "componentName": "Emulator action",
+            "children": [
+              {
+                "id": "7d39c61f-08fe-80d5-8008-bcb090cf6eeb",
+                "name": "Button border",
+                "type": "rectangle",
+                "x": 0,
+                "y": 0,
+                "width": 152,
+                "height": 44,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#ffffff",
+                    "opacity": 1,
+                    "ref": "d862c4e5-8ca1-80d0-8008-b5895a888366"
+                  }
+                ],
+                "strokes": [
+                  {
+                    "color": "#888888",
+                    "width": 1,
+                    "opacity": 1,
+                    "ref": "d862c4e5-8ca1-80d0-8008-b5895c1a9c52"
+                  }
+                ]
+              },
+              {
+                "id": "7d39c61f-08fe-80d5-8008-bcb090cf6eec",
+                "name": "Button label",
+                "type": "text",
+                "x": 12,
+                "y": 10,
+                "width": 128,
+                "height": 24,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#111111",
+                    "opacity": 1,
+                    "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                  }
+                ],
+                "text": "Control log",
+                "fontFamily": "Arimo",
+                "fontSize": 16,
+                "fontWeight": "400",
+                "lineHeight": 1.5,
+                "letterSpacing": 0,
+                "align": "center"
+              }
+            ]
+          },
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcb090dea113",
+            "name": "Evidence scope",
+            "type": "text",
+            "x": 32,
+            "y": 766,
+            "width": 768,
+            "height": 24,
+            "rotation": 0,
+            "fills": [
+              {
+                "color": "#555555",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895bec83b8"
+              }
+            ],
+            "text": "Design example. No physical global recording result.",
+            "fontFamily": "Cousine",
+            "fontSize": 13,
+            "fontWeight": "400",
+            "lineHeight": 1.5,
+            "letterSpacing": 0,
+            "align": "left"
+          }
+        ]
+      }
+    },
+    {
+      "id": "7d39c61f-08fe-80d5-8008-bcadb9f97fd6",
+      "name": "Feature choice",
+      "path": "OpenSP / Features",
+      "mainId": "7d39c61f-08fe-80d5-8008-bcadb91bc338",
+      "shape": {
+        "id": "7d39c61f-08fe-80d5-8008-bcadb91bc338",
+        "name": "OpenSP / Features / Feature choice",
+        "type": "board",
+        "x": 0,
+        "y": 0,
+        "width": 24,
+        "height": 24,
+        "rotation": 0,
+        "componentId": "7d39c61f-08fe-80d5-8008-bcadb9f97fd6",
+        "componentName": "Feature choice",
+        "children": [
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcadb9344018",
+            "name": "Choice outline",
+            "type": "rectangle",
+            "x": 1,
+            "y": 1,
+            "width": 22,
+            "height": 22,
+            "rotation": 0,
+            "fills": [
+              {
+                "color": "#ffffff",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895a888366"
+              }
+            ],
+            "strokes": [
+              {
+                "color": "#888888",
+                "width": 1,
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895c1a9c52"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "7d39c61f-08fe-80d5-8008-bcadda2f5652",
+      "name": "Feature row (Mobile)",
+      "path": "OpenSP / Features",
+      "mainId": "7d39c61f-08fe-80d5-8008-bcadd9ca9903",
+      "shape": {
+        "id": "7d39c61f-08fe-80d5-8008-bcadd9ca9903",
+        "name": "OpenSP / Features / Feature row (Mobile)",
+        "type": "board",
+        "x": 0,
+        "y": 0,
+        "width": 342,
+        "height": 264,
+        "rotation": 0,
+        "componentId": "7d39c61f-08fe-80d5-8008-bcadda2f5652",
+        "componentName": "Feature row (Mobile)",
+        "children": [
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcadd9ce29ea",
+            "name": "Row divider",
+            "type": "rectangle",
+            "x": 0,
+            "y": 0,
+            "width": 342,
+            "height": 1,
+            "rotation": 0,
+            "fills": [
+              {
+                "color": "#888888",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895c1a9c52"
+              }
+            ]
+          },
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcadd9d32470",
+            "name": "Feature choice",
+            "type": "board",
+            "x": 0,
+            "y": 24,
+            "width": 24,
+            "height": 24,
+            "rotation": 0,
+            "componentId": "7d39c61f-08fe-80d5-8008-bcadb9f97fd6",
+            "componentName": "Feature choice",
+            "children": [
+              {
+                "id": "7d39c61f-08fe-80d5-8008-bcadd9d32471",
+                "name": "Choice outline",
+                "type": "rectangle",
+                "x": 1,
+                "y": 1,
+                "width": 22,
+                "height": 22,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#ffffff",
+                    "opacity": 1,
+                    "ref": "d862c4e5-8ca1-80d0-8008-b5895a888366"
+                  }
+                ],
+                "strokes": [
+                  {
+                    "color": "#888888",
+                    "width": 1,
+                    "opacity": 1,
+                    "ref": "d862c4e5-8ca1-80d0-8008-b5895c1a9c52"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcadd9d72386",
+            "name": "Feature name",
+            "type": "text",
+            "x": 40,
+            "y": 20,
+            "width": 302,
+            "height": 60,
+            "rotation": 0,
+            "fills": [
+              {
+                "color": "#111111",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+              }
+            ],
+            "text": "Synth",
+            "fontFamily": "Arimo",
+            "fontSize": 22,
+            "fontWeight": "400",
+            "lineHeight": 1.5,
+            "letterSpacing": 0,
+            "align": "left"
+          },
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcadd9e3f36a",
+            "name": "Feature readiness",
+            "type": "text",
+            "x": 40,
+            "y": 86,
+            "width": 302,
+            "height": 24,
+            "rotation": 0,
+            "fills": [
+              {
+                "color": "#555555",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895bec83b8"
+              }
+            ],
+            "text": "Hardware trial",
+            "fontFamily": "Cousine",
+            "fontSize": 13,
+            "fontWeight": "400",
+            "lineHeight": 1.5,
+            "letterSpacing": 0,
+            "align": "left"
+          },
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcadd9eaec35",
+            "name": "Feature description",
+            "type": "text",
+            "x": 40,
+            "y": 124,
+            "width": 302,
+            "height": 96,
+            "rotation": 0,
+            "fills": [
+              {
+                "color": "#111111",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+              }
+            ],
+            "text": "Play synth sounds from the pads and edit their parameters.",
+            "fontFamily": "Arimo",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "lineHeight": 1.5,
+            "letterSpacing": 0,
+            "align": "left"
+          },
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcadd9f1ff3e",
+            "name": "Feature disclosure",
+            "type": "text",
+            "x": 40,
+            "y": 224,
+            "width": 302,
+            "height": 24,
+            "rotation": 0,
+            "fills": [
+              {
+                "color": "#555555",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895bec83b8"
+              }
+            ],
+            "text": "Evidence and requirements",
+            "fontFamily": "Arimo",
+            "fontSize": 14,
+            "fontWeight": "400",
+            "lineHeight": 1.5,
+            "letterSpacing": 0,
+            "align": "left"
+          }
+        ]
+      }
+    },
+    {
+      "id": "7d39c61f-08fe-80d5-8008-bcaddd1eff7d",
+      "name": "Feature shortcut (Desktop)",
+      "path": "OpenSP / Features",
+      "mainId": "7d39c61f-08fe-80d5-8008-bcaddbfbfdd3",
+      "shape": {
+        "id": "7d39c61f-08fe-80d5-8008-bcaddbfbfdd3",
+        "name": "OpenSP / Features / Feature shortcut (Desktop)",
+        "type": "board",
+        "x": 0,
+        "y": 0,
+        "width": 864,
+        "height": 248,
+        "rotation": 0,
+        "componentId": "7d39c61f-08fe-80d5-8008-bcaddd1eff7d",
+        "componentName": "Feature shortcut (Desktop)",
+        "children": [
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcaddc019462",
+            "name": "Shortcut divider",
+            "type": "rectangle",
+            "x": 0,
+            "y": 0,
+            "width": 864,
+            "height": 1,
+            "rotation": 0,
+            "fills": [
+              {
+                "color": "#888888",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895c1a9c52"
+              }
+            ]
+          },
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcaddc0805e1",
+            "name": "Shortcut feature",
+            "type": "text",
+            "x": 0,
+            "y": 16,
+            "width": 864,
+            "height": 32,
+            "rotation": 0,
+            "fills": [
+              {
+                "color": "#111111",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+              }
+            ],
+            "text": "Synth",
+            "fontFamily": "Arimo",
+            "fontSize": 20,
+            "fontWeight": "400",
+            "lineHeight": 1.5,
+            "letterSpacing": 0,
+            "align": "left"
+          },
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcaddc1259db",
+            "name": "Shortcut field 0",
+            "type": "rectangle",
+            "x": 0,
+            "y": 158,
+            "width": 270,
+            "height": 44,
+            "rotation": 0,
+            "fills": [
+              {
+                "color": "#ffffff",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895a888366"
+              }
+            ],
+            "strokes": [
+              {
+                "color": "#888888",
+                "width": 1,
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895c1a9c52"
+              }
+            ]
+          },
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcaddc192ddc",
+            "name": "Shortcut control 0",
+            "type": "text",
+            "x": 12,
+            "y": 168,
+            "width": 246,
+            "height": 24,
+            "rotation": 0,
+            "fills": [
+              {
+                "color": "#111111",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+              }
+            ],
+            "text": "SHIFT",
+            "fontFamily": "Arimo",
+            "fontSize": 14,
+            "fontWeight": "400",
+            "lineHeight": 1.5,
+            "letterSpacing": 0,
+            "align": "left"
+          },
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcaddc219a36",
+            "name": "Shortcut field 1",
+            "type": "rectangle",
+            "x": 286,
+            "y": 158,
+            "width": 270,
+            "height": 44,
+            "rotation": 0,
+            "fills": [
+              {
+                "color": "#ffffff",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895a888366"
+              }
+            ],
+            "strokes": [
+              {
+                "color": "#888888",
+                "width": 1,
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895c1a9c52"
+              }
+            ]
+          },
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcaddc27b9c4",
+            "name": "Shortcut control 1",
+            "type": "text",
+            "x": 298,
+            "y": 168,
+            "width": 246,
+            "height": 24,
+            "rotation": 0,
+            "fills": [
+              {
+                "color": "#111111",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+              }
+            ],
+            "text": "RECORD SETTING",
+            "fontFamily": "Arimo",
+            "fontSize": 14,
+            "fontWeight": "400",
+            "lineHeight": 1.5,
+            "letterSpacing": 0,
+            "align": "left"
+          },
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcaddc30c4cb",
+            "name": "Shortcut field 2",
+            "type": "rectangle",
+            "x": 572,
+            "y": 158,
+            "width": 292,
+            "height": 44,
+            "rotation": 0,
+            "fills": [
+              {
+                "color": "#ffffff",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895a888366"
+              }
+            ],
+            "strokes": [
+              {
+                "color": "#888888",
+                "width": 1,
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895c1a9c52"
+              }
+            ]
+          },
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcaddc373d07",
+            "name": "Shortcut control 2",
+            "type": "text",
+            "x": 584,
+            "y": 168,
+            "width": 268,
+            "height": 24,
+            "rotation": 0,
+            "fills": [
+              {
+                "color": "#111111",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+              }
+            ],
+            "text": "No third control",
+            "fontFamily": "Arimo",
+            "fontSize": 14,
+            "fontWeight": "400",
+            "lineHeight": 1.5,
+            "letterSpacing": 0,
+            "align": "left"
+          },
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcaddc3ee96e",
+            "name": "Shortcut scope",
+            "type": "text",
+            "x": 0,
+            "y": 214,
+            "width": 864,
+            "height": 32,
+            "rotation": 0,
+            "fills": [
+              {
+                "color": "#555555",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895bec83b8"
+              }
+            ],
+            "text": "Sampler idle · requested shortcut",
+            "fontFamily": "Cousine",
+            "fontSize": 13,
+            "fontWeight": "400",
+            "lineHeight": 1.5,
+            "letterSpacing": 0,
+            "align": "left"
+          },
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcb5a51f42f5",
+            "name": "Shortcut method label",
+            "type": "text",
+            "x": 0,
+            "y": 50,
+            "width": 864,
+            "height": 24,
+            "rotation": 0,
+            "fills": [
+              {
+                "color": "#555555",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895bec83b8"
+              }
+            ],
+            "text": "Open with",
+            "fontFamily": "Arimo",
+            "fontSize": 14,
+            "fontWeight": "400",
+            "lineHeight": 1.5,
+            "letterSpacing": 0,
+            "align": "left"
+          },
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcb5a5289860",
+            "name": "Shortcut method field",
+            "type": "rectangle",
+            "x": 0,
+            "y": 76,
+            "width": 270,
+            "height": 44,
+            "rotation": 0,
+            "fills": [
+              {
+                "color": "#ffffff",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895a888366"
+              }
+            ],
+            "strokes": [
+              {
+                "color": "#888888",
+                "width": 1,
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895c1a9c52"
+              }
+            ]
+          },
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcb5a5300886",
+            "name": "Shortcut method",
+            "type": "text",
+            "x": 12,
+            "y": 86,
+            "width": 246,
+            "height": 24,
+            "rotation": 0,
+            "fills": [
+              {
+                "color": "#111111",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+              }
+            ],
+            "text": "Button shortcut",
+            "fontFamily": "Arimo",
+            "fontSize": 14,
+            "fontWeight": "400",
+            "lineHeight": 1.5,
+            "letterSpacing": 0,
+            "align": "left"
+          },
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcb5a53b508e",
+            "name": "Shortcut label 0",
+            "type": "text",
+            "x": 0,
+            "y": 132,
+            "width": 270,
+            "height": 24,
+            "rotation": 0,
+            "fills": [
+              {
+                "color": "#555555",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895bec83b8"
+              }
+            ],
+            "text": "Hold first",
+            "fontFamily": "Arimo",
+            "fontSize": 14,
+            "fontWeight": "400",
+            "lineHeight": 1.5,
+            "letterSpacing": 0,
+            "align": "left"
+          },
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcb5a549cc8c",
+            "name": "Shortcut label 1",
+            "type": "text",
+            "x": 286,
+            "y": 132,
+            "width": 270,
+            "height": 24,
+            "rotation": 0,
+            "fills": [
+              {
+                "color": "#555555",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895bec83b8"
+              }
+            ],
+            "text": "Then press, or hold",
+            "fontFamily": "Arimo",
+            "fontSize": 14,
+            "fontWeight": "400",
+            "lineHeight": 1.5,
+            "letterSpacing": 0,
+            "align": "left"
+          },
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcb5a55a1ef4",
+            "name": "Shortcut label 2",
+            "type": "text",
+            "x": 572,
+            "y": 132,
+            "width": 292,
+            "height": 24,
+            "rotation": 0,
+            "fills": [
+              {
+                "color": "#555555",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895bec83b8"
+              }
+            ],
+            "text": "Third (optional)",
+            "fontFamily": "Arimo",
+            "fontSize": 14,
+            "fontWeight": "400",
+            "lineHeight": 1.5,
+            "letterSpacing": 0,
+            "align": "left"
+          }
+        ]
+      }
+    },
+    {
+      "id": "7d39c61f-08fe-80d5-8008-bcade7dbcb41",
+      "name": "Feature update notes (Mobile)",
+      "path": "OpenSP / Features",
+      "mainId": "7d39c61f-08fe-80d5-8008-bcade7986a3c",
+      "shape": {
+        "id": "7d39c61f-08fe-80d5-8008-bcade7986a3c",
+        "name": "OpenSP / Features / Feature update notes (Mobile)",
+        "type": "board",
+        "x": 0,
+        "y": 0,
+        "width": 342,
+        "height": 692,
+        "rotation": 0,
+        "componentId": "7d39c61f-08fe-80d5-8008-bcade7dbcb41",
+        "componentName": "Feature update notes (Mobile)",
+        "children": [
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcade79c70b1",
+            "name": "Notes divider",
+            "type": "rectangle",
+            "x": 0,
+            "y": 0,
+            "width": 342,
+            "height": 1,
+            "rotation": 0,
+            "fills": [
+              {
+                "color": "#888888",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895c1a9c52"
+              }
+            ]
+          },
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcade7a1a95d",
+            "name": "copy / transferHeading",
+            "type": "text",
+            "x": 0,
+            "y": 24,
+            "width": 342,
+            "height": 40,
+            "rotation": 0,
+            "fills": [
+              {
+                "color": "#111111",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+              }
+            ],
+            "text": "Updating features",
+            "fontFamily": "Arimo",
+            "fontSize": 24,
+            "fontWeight": "400",
+            "lineHeight": 1.5,
+            "letterSpacing": 0,
+            "align": "left"
+          },
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcade7aa4f08",
+            "name": "copy / transferNote",
+            "type": "text",
+            "x": 0,
+            "y": 84,
+            "width": 342,
+            "height": 192,
+            "rotation": 0,
+            "fills": [
+              {
+                "color": "#111111",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+              }
+            ],
+            "text": "You will be able to change this selection one feature at a time. The verified USB writer installs a complete APP1 firmware image, so a changed selection currently needs a newly composed image and a full update.",
+            "fontFamily": "Arimo",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "lineHeight": 1.5,
+            "letterSpacing": 0,
+            "align": "left"
+          },
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcade7b1d786",
+            "name": "copy / transferLimit",
+            "type": "text",
+            "x": 0,
+            "y": 288,
+            "width": 342,
+            "height": 152,
+            "rotation": 0,
+            "fills": [
+              {
+                "color": "#555555",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895bec83b8"
+              }
+            ],
+            "text": "Independent feature uploads and runtime hot swapping have not been verified. USB installation requires the matching writer, chip/profile checks, full flash readback, a separate status check and a real reboot.",
+            "fontFamily": "Arimo",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "lineHeight": 1.5,
+            "letterSpacing": 0,
+            "align": "left"
+          },
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcade7bade3d",
+            "name": "Bridge qualification",
+            "type": "text",
+            "x": 0,
+            "y": 456,
+            "width": 342,
+            "height": 144,
+            "rotation": 0,
+            "fills": [
+              {
+                "color": "#555555",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895bec83b8"
+              }
+            ],
+            "text": "USB BRIDGE B2 must already be installed and freshly identified. First installation from untouched stock over normal USB is unverified.",
+            "fontFamily": "Arimo",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "lineHeight": 1.5,
+            "letterSpacing": 0,
+            "align": "left"
+          }
+        ]
+      }
+    },
+    {
+      "id": "7d39c61f-08fe-80d5-8008-bcade5e8fb91",
+      "name": "Feature update notes (Desktop)",
+      "path": "OpenSP / Features",
+      "mainId": "7d39c61f-08fe-80d5-8008-bcade58a0d0a",
+      "shape": {
+        "id": "7d39c61f-08fe-80d5-8008-bcade58a0d0a",
+        "name": "OpenSP / Features / Feature update notes (Desktop)",
+        "type": "board",
+        "x": 0,
+        "y": 0,
+        "width": 1312,
+        "height": 354,
+        "rotation": 0,
+        "componentId": "7d39c61f-08fe-80d5-8008-bcade5e8fb91",
+        "componentName": "Feature update notes (Desktop)",
+        "children": [
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcade58e4ec6",
+            "name": "Notes divider",
+            "type": "rectangle",
+            "x": 0,
+            "y": 0,
+            "width": 1312,
+            "height": 1,
+            "rotation": 0,
+            "fills": [
+              {
+                "color": "#888888",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895c1a9c52"
+              }
+            ]
+          },
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcade5933b42",
+            "name": "copy / transferHeading",
+            "type": "text",
+            "x": 0,
+            "y": 24,
+            "width": 1312,
+            "height": 40,
+            "rotation": 0,
+            "fills": [
+              {
+                "color": "#111111",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+              }
+            ],
+            "text": "Updating features",
+            "fontFamily": "Arimo",
+            "fontSize": 24,
+            "fontWeight": "400",
+            "lineHeight": 1.5,
+            "letterSpacing": 0,
+            "align": "left"
+          },
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcade59ae4a9",
+            "name": "copy / transferNote",
+            "type": "text",
+            "x": 0,
+            "y": 84,
+            "width": 840,
+            "height": 96,
+            "rotation": 0,
+            "fills": [
+              {
+                "color": "#111111",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+              }
+            ],
+            "text": "You will be able to change this selection one feature at a time. The verified USB writer installs a complete APP1 firmware image, so a changed selection currently needs a newly composed image and a full update.",
+            "fontFamily": "Arimo",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "lineHeight": 1.5,
+            "letterSpacing": 0,
+            "align": "left"
+          },
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcade5a2f929",
+            "name": "copy / transferLimit",
+            "type": "text",
+            "x": 0,
+            "y": 192,
+            "width": 1000,
+            "height": 80,
+            "rotation": 0,
+            "fills": [
+              {
+                "color": "#555555",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895bec83b8"
+              }
+            ],
+            "text": "Independent feature uploads and runtime hot swapping have not been verified. USB installation requires the matching writer, chip/profile checks, full flash readback, a separate status check and a real reboot.",
+            "fontFamily": "Arimo",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "lineHeight": 1.5,
+            "letterSpacing": 0,
+            "align": "left"
+          },
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcade5ae0a7f",
+            "name": "Bridge qualification",
+            "type": "text",
+            "x": 0,
+            "y": 284,
+            "width": 1000,
+            "height": 70,
+            "rotation": 0,
+            "fills": [
+              {
+                "color": "#555555",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895bec83b8"
+              }
+            ],
+            "text": "USB BRIDGE B2 must already be installed and freshly identified. First installation from untouched stock over normal USB is unverified.",
+            "fontFamily": "Arimo",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "lineHeight": 1.5,
+            "letterSpacing": 0,
+            "align": "left"
+          }
+        ]
+      }
+    },
+    {
+      "id": "7d39c61f-08fe-80d5-8008-bcadd35a8d42",
+      "name": "Feature introduction (Desktop)",
+      "path": "OpenSP / Features",
+      "mainId": "7d39c61f-08fe-80d5-8008-bcadd2981815",
+      "shape": {
+        "id": "7d39c61f-08fe-80d5-8008-bcadd2981815",
+        "name": "OpenSP / Features / Feature introduction (Desktop)",
+        "type": "board",
+        "x": 0,
+        "y": 0,
+        "width": 1312,
+        "height": 210,
+        "rotation": 0,
+        "componentId": "7d39c61f-08fe-80d5-8008-bcadd35a8d42",
+        "componentName": "Feature introduction (Desktop)",
+        "children": [
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcadd29e120d",
+            "name": "copy / title",
+            "type": "text",
+            "x": 0,
+            "y": 0,
+            "width": 1312,
+            "height": 60,
+            "rotation": 0,
+            "fills": [
+              {
+                "color": "#111111",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+              }
+            ],
+            "text": "Choose your features",
+            "fontFamily": "Arimo",
+            "fontSize": 48,
+            "fontWeight": "400",
+            "lineHeight": 1.5,
+            "letterSpacing": 0,
+            "align": "left"
+          },
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcadd2ad7f57",
+            "name": "copy / introduction",
+            "type": "text",
+            "x": 0,
+            "y": 84,
+            "width": 850,
+            "height": 60,
+            "rotation": 0,
+            "fills": [
+              {
+                "color": "#111111",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+              }
+            ],
+            "text": "Pick the features you want, then choose the buttons that open each one.",
+            "fontFamily": "Arimo",
+            "fontSize": 20,
+            "fontWeight": "400",
+            "lineHeight": 1.5,
+            "letterSpacing": 0,
+            "align": "left"
+          },
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcadd2b798a3",
+            "name": "copy / planningNote",
+            "type": "text",
+            "x": 0,
+            "y": 156,
+            "width": 1000,
+            "height": 54,
+            "rotation": 0,
+            "fills": [
+              {
+                "color": "#555555",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895bec83b8"
+              }
+            ],
+            "text": "This is a configuration preview. You can save your choices now; a compatible firmware build and website upload are still in development.",
+            "fontFamily": "Arimo",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "lineHeight": 1.5,
+            "letterSpacing": 0,
+            "align": "left"
+          }
+        ]
+      }
+    },
+    {
+      "id": "7d39c61f-08fe-80d5-8008-bcade3f4de31",
+      "name": "Feature summary (Mobile)",
+      "path": "OpenSP / Features",
+      "mainId": "7d39c61f-08fe-80d5-8008-bcade39b4c8d",
+      "shape": {
+        "id": "7d39c61f-08fe-80d5-8008-bcade39b4c8d",
+        "name": "OpenSP / Features / Feature summary (Mobile)",
+        "type": "board",
+        "x": 0,
+        "y": 0,
+        "width": 342,
+        "height": 380,
+        "rotation": 0,
+        "componentId": "7d39c61f-08fe-80d5-8008-bcade3f4de31",
+        "componentName": "Feature summary (Mobile)",
+        "children": [
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcade39feba6",
+            "name": "Summary divider",
+            "type": "rectangle",
+            "x": 0,
+            "y": 0,
+            "width": 342,
+            "height": 1,
+            "rotation": 0,
+            "fills": [
+              {
+                "color": "#888888",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895c1a9c52"
+              }
+            ]
+          },
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcade3a41c8e",
+            "name": "copy / summaryHeading",
+            "type": "text",
+            "x": 0,
+            "y": 20,
+            "width": 342,
+            "height": 40,
+            "rotation": 0,
+            "fills": [
+              {
+                "color": "#111111",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+              }
+            ],
+            "text": "Your configuration",
+            "fontFamily": "Arimo",
+            "fontSize": 24,
+            "fontWeight": "400",
+            "lineHeight": 1.5,
+            "letterSpacing": 0,
+            "align": "left"
+          },
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcade3ac1d36",
+            "name": "Selection count",
+            "type": "text",
+            "x": 0,
+            "y": 80,
+            "width": 342,
+            "height": 32,
+            "rotation": 0,
+            "fills": [
+              {
+                "color": "#111111",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+              }
+            ],
+            "text": "1 feature selected",
+            "fontFamily": "Arimo",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "lineHeight": 1.5,
+            "letterSpacing": 0,
+            "align": "left"
+          },
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcade3b3158e",
+            "name": "Build state",
+            "type": "text",
+            "x": 0,
+            "y": 124,
+            "width": 342,
+            "height": 32,
+            "rotation": 0,
+            "fills": [
+              {
+                "color": "#111111",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+              }
+            ],
+            "text": "Build unavailable",
+            "fontFamily": "Arimo",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "lineHeight": 1.5,
+            "letterSpacing": 0,
+            "align": "left"
+          },
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcade3b9d981",
+            "name": "Build blocker",
+            "type": "text",
+            "x": 0,
+            "y": 164,
+            "width": 342,
+            "height": 96,
+            "rotation": 0,
+            "fills": [
+              {
+                "color": "#555555",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895bec83b8"
+              }
+            ],
+            "text": "A selectable Synth build and configurable shortcut dispatcher have not been qualified.",
+            "fontFamily": "Arimo",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "lineHeight": 1.5,
+            "letterSpacing": 0,
+            "align": "left"
+          },
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcade3c3c76a",
+            "name": "Emulator action",
+            "type": "board",
+            "x": 0,
+            "y": 276,
+            "width": 342,
+            "height": 44,
+            "rotation": 0,
+            "componentId": "6bf32eef-e7db-8057-8008-bb287d8e3cdc",
+            "componentName": "Emulator action",
+            "children": [
+              {
+                "id": "7d39c61f-08fe-80d5-8008-bcade3c3c76b",
+                "name": "Button border",
+                "type": "rectangle",
+                "x": 0,
+                "y": 0,
+                "width": 342,
+                "height": 44,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#ffffff",
+                    "opacity": 1,
+                    "ref": "d862c4e5-8ca1-80d0-8008-b5895a888366"
+                  }
+                ],
+                "strokes": [
+                  {
+                    "color": "#888888",
+                    "width": 1,
+                    "opacity": 1,
+                    "ref": "d862c4e5-8ca1-80d0-8008-b5895c1a9c52"
+                  }
+                ]
+              },
+              {
+                "id": "7d39c61f-08fe-80d5-8008-bcade3c3c76c",
+                "name": "Button label",
+                "type": "text",
+                "x": 12,
+                "y": 10,
+                "width": 318,
+                "height": 24,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#111111",
+                    "opacity": 1,
+                    "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                  }
+                ],
+                "text": "Export configuration",
+                "fontFamily": "Arimo",
+                "fontSize": 16,
+                "fontWeight": "400",
+                "lineHeight": 1.5,
+                "letterSpacing": 0,
+                "align": "center"
+              }
+            ]
+          },
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcade3cd2af4",
+            "name": "Emulator action",
+            "type": "board",
+            "x": 0,
+            "y": 332,
+            "width": 163,
+            "height": 44,
+            "rotation": 0,
+            "componentId": "6bf32eef-e7db-8057-8008-bb287d8e3cdc",
+            "componentName": "Emulator action",
+            "children": [
+              {
+                "id": "7d39c61f-08fe-80d5-8008-bcade3cd2af5",
+                "name": "Button border",
+                "type": "rectangle",
+                "x": 0,
+                "y": 0,
+                "width": 163,
+                "height": 44,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#ffffff",
+                    "opacity": 1,
+                    "ref": "d862c4e5-8ca1-80d0-8008-b5895a888366"
+                  }
+                ],
+                "strokes": [
+                  {
+                    "color": "#888888",
+                    "width": 1,
+                    "opacity": 1,
+                    "ref": "d862c4e5-8ca1-80d0-8008-b5895c1a9c52"
+                  }
+                ]
+              },
+              {
+                "id": "7d39c61f-08fe-80d5-8008-bcade3cd2af6",
+                "name": "Button label",
+                "type": "text",
+                "x": 12,
+                "y": 10,
+                "width": 139,
+                "height": 24,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#111111",
+                    "opacity": 1,
+                    "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                  }
+                ],
+                "text": "Build firmware",
+                "fontFamily": "Arimo",
+                "fontSize": 16,
+                "fontWeight": "400",
+                "lineHeight": 1.5,
+                "letterSpacing": 0,
+                "align": "center"
+              }
+            ]
+          },
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcade3d9d585",
+            "name": "Emulator action",
+            "type": "board",
+            "x": 179,
+            "y": 332,
+            "width": 163,
+            "height": 44,
+            "rotation": 0,
+            "componentId": "6bf32eef-e7db-8057-8008-bb287d8e3cdc",
+            "componentName": "Emulator action",
+            "children": [
+              {
+                "id": "7d39c61f-08fe-80d5-8008-bcade3d9d586",
+                "name": "Button border",
+                "type": "rectangle",
+                "x": 0,
+                "y": 0,
+                "width": 163,
+                "height": 44,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#ffffff",
+                    "opacity": 1,
+                    "ref": "d862c4e5-8ca1-80d0-8008-b5895a888366"
+                  }
+                ],
+                "strokes": [
+                  {
+                    "color": "#888888",
+                    "width": 1,
+                    "opacity": 1,
+                    "ref": "d862c4e5-8ca1-80d0-8008-b5895c1a9c52"
+                  }
+                ]
+              },
+              {
+                "id": "7d39c61f-08fe-80d5-8008-bcade3d9d587",
+                "name": "Button label",
+                "type": "text",
+                "x": 12,
+                "y": 10,
+                "width": 139,
+                "height": 24,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#111111",
+                    "opacity": 1,
+                    "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                  }
+                ],
+                "text": "USB-C upload",
+                "fontFamily": "Arimo",
+                "fontSize": 16,
+                "fontWeight": "400",
+                "lineHeight": 1.5,
+                "letterSpacing": 0,
+                "align": "center"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "7d39c61f-08fe-80d5-8008-bcadd83c407f",
+      "name": "Feature row (Desktop)",
+      "path": "OpenSP / Features",
+      "mainId": "7d39c61f-08fe-80d5-8008-bcadd7e205d5",
+      "shape": {
+        "id": "7d39c61f-08fe-80d5-8008-bcadd7e205d5",
+        "name": "OpenSP / Features / Feature row (Desktop)",
+        "type": "board",
+        "x": 0,
+        "y": 0,
+        "width": 864,
+        "height": 172,
+        "rotation": 0,
+        "componentId": "7d39c61f-08fe-80d5-8008-bcadd83c407f",
+        "componentName": "Feature row (Desktop)",
+        "children": [
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcadd7e6e734",
+            "name": "Row divider",
+            "type": "rectangle",
+            "x": 0,
+            "y": 0,
+            "width": 864,
+            "height": 1,
+            "rotation": 0,
+            "fills": [
+              {
+                "color": "#888888",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895c1a9c52"
+              }
+            ]
+          },
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcadd7ea7cfe",
+            "name": "Feature choice",
+            "type": "board",
+            "x": 0,
+            "y": 24,
+            "width": 24,
+            "height": 24,
+            "rotation": 0,
+            "componentId": "7d39c61f-08fe-80d5-8008-bcadb9f97fd6",
+            "componentName": "Feature choice",
+            "children": [
+              {
+                "id": "7d39c61f-08fe-80d5-8008-bcadd7ea7cff",
+                "name": "Choice outline",
+                "type": "rectangle",
+                "x": 1,
+                "y": 1,
+                "width": 22,
+                "height": 22,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#ffffff",
+                    "opacity": 1,
+                    "ref": "d862c4e5-8ca1-80d0-8008-b5895a888366"
+                  }
+                ],
+                "strokes": [
+                  {
+                    "color": "#888888",
+                    "width": 1,
+                    "opacity": 1,
+                    "ref": "d862c4e5-8ca1-80d0-8008-b5895c1a9c52"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcadd7ee2f6e",
+            "name": "Feature name",
+            "type": "text",
+            "x": 40,
+            "y": 20,
+            "width": 520,
+            "height": 34,
+            "rotation": 0,
+            "fills": [
+              {
+                "color": "#111111",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+              }
+            ],
+            "text": "Synth",
+            "fontFamily": "Arimo",
+            "fontSize": 22,
+            "fontWeight": "400",
+            "lineHeight": 1.5,
+            "letterSpacing": 0,
+            "align": "left"
+          },
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcadd7faecf4",
+            "name": "Feature readiness",
+            "type": "text",
+            "x": 40,
+            "y": 60,
+            "width": 440,
+            "height": 24,
+            "rotation": 0,
+            "fills": [
+              {
+                "color": "#555555",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895bec83b8"
+              }
+            ],
+            "text": "Hardware trial",
+            "fontFamily": "Cousine",
+            "fontSize": 13,
+            "fontWeight": "400",
+            "lineHeight": 1.5,
+            "letterSpacing": 0,
+            "align": "left"
+          },
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcadd8030087",
+            "name": "Feature description",
+            "type": "text",
+            "x": 40,
+            "y": 100,
+            "width": 824,
+            "height": 48,
+            "rotation": 0,
+            "fills": [
+              {
+                "color": "#111111",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+              }
+            ],
+            "text": "Play synth sounds from the pads and edit their parameters.",
+            "fontFamily": "Arimo",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "lineHeight": 1.5,
+            "letterSpacing": 0,
+            "align": "left"
+          },
+          {
+            "id": "7d39c61f-08fe-80d5-8008-bcadd80a229f",
+            "name": "Feature disclosure",
+            "type": "text",
+            "x": 40,
+            "y": 144,
+            "width": 824,
+            "height": 24,
+            "rotation": 0,
+            "fills": [
+              {
+                "color": "#555555",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895bec83b8"
+              }
+            ],
+            "text": "Evidence and requirements",
+            "fontFamily": "Arimo",
+            "fontSize": 14,
+            "fontWeight": "400",
+            "lineHeight": 1.5,
+            "letterSpacing": 0,
+            "align": "left"
+          }
+        ]
+      }
+    },
+    {
+      "id": "aef24b78-6c19-80a5-8008-bdf9f1d2cb51",
+      "name": "Feature receipt (Desktop)",
+      "path": "OpenSP / Features",
+      "mainId": "aef24b78-6c19-80a5-8008-bdf9f1305772",
+      "shape": {
+        "id": "aef24b78-6c19-80a5-8008-bdf9f1305772",
+        "name": "OpenSP / Features / Feature receipt (Desktop)",
+        "type": "board",
+        "x": 0,
+        "y": 0,
+        "width": 1312,
+        "height": 304,
+        "rotation": 0,
+        "componentId": "aef24b78-6c19-80a5-8008-bdf9f1d2cb51",
+        "componentName": "Feature receipt (Desktop)",
+        "children": [
+          {
+            "id": "aef24b78-6c19-80a5-8008-bdf9f14ba375",
+            "name": "Receipt divider",
+            "type": "rectangle",
+            "x": 0,
+            "y": 0,
+            "width": 1312,
+            "height": 1,
+            "rotation": 0,
+            "fills": [
+              {
+                "color": "#888888",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895c1a9c52"
+              }
+            ]
+          },
+          {
+            "id": "aef24b78-6c19-80a5-8008-bdf9f1574ac0",
+            "name": "copy / receiptHeading",
+            "type": "text",
+            "x": 0,
+            "y": 24,
+            "width": 1312,
+            "height": 42,
+            "rotation": 0,
+            "fills": [
+              {
+                "color": "#111111",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+              }
+            ],
+            "text": "Check a build receipt",
+            "fontFamily": "Arimo",
+            "fontSize": 28,
+            "fontWeight": "400",
+            "lineHeight": 1.5,
+            "letterSpacing": 0,
+            "align": "left"
+          },
+          {
+            "id": "aef24b78-6c19-80a5-8008-bdf9f168dd28",
+            "name": "copy / receiptNote",
+            "type": "text",
+            "x": 0,
+            "y": 82,
+            "width": 1000,
+            "height": 48,
+            "rotation": 0,
+            "fills": [
+              {
+                "color": "#111111",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+              }
+            ],
+            "text": "Choose a local JSON receipt to compare it with your current choices. Only metadata is checked; firmware files and device results remain unverified.",
+            "fontFamily": "Arimo",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "lineHeight": 1.5,
+            "letterSpacing": 0,
+            "align": "left"
+          },
+          {
+            "id": "aef24b78-6c19-80a5-8008-bdf9f176041d",
+            "name": "Emulator action",
+            "type": "board",
+            "x": 0,
+            "y": 146,
+            "width": 160,
+            "height": 44,
+            "rotation": 0,
+            "componentId": "6bf32eef-e7db-8057-8008-bb287d8e3cdc",
+            "componentName": "Emulator action",
+            "children": [
+              {
+                "id": "aef24b78-6c19-80a5-8008-bdf9f17674d8",
+                "name": "Button border",
+                "type": "rectangle",
+                "x": 0,
+                "y": 0,
+                "width": 160,
+                "height": 44,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#ffffff",
+                    "opacity": 1,
+                    "ref": "d862c4e5-8ca1-80d0-8008-b5895a888366"
+                  }
+                ],
+                "strokes": [
+                  {
+                    "color": "#888888",
+                    "width": 1,
+                    "opacity": 1,
+                    "ref": "d862c4e5-8ca1-80d0-8008-b5895c1a9c52"
+                  }
+                ]
+              },
+              {
+                "id": "aef24b78-6c19-80a5-8008-bdf9f17674d9",
+                "name": "Button label",
+                "type": "text",
+                "x": 12,
+                "y": 10,
+                "width": 136,
+                "height": 24,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#111111",
+                    "opacity": 1,
+                    "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                  }
+                ],
+                "text": "Choose receipt",
+                "fontFamily": "Arimo",
+                "fontSize": 16,
+                "fontWeight": "400",
+                "lineHeight": 1.5,
+                "letterSpacing": 0,
+                "align": "center"
+              }
+            ]
+          },
+          {
+            "id": "aef24b78-6c19-80a5-8008-bdf9f18784ca",
+            "name": "Emulator action",
+            "type": "board",
+            "x": 172,
+            "y": 146,
+            "width": 160,
+            "height": 44,
+            "rotation": 0,
+            "componentId": "6bf32eef-e7db-8057-8008-bb287d8e3cdc",
+            "componentName": "Emulator action",
+            "children": [
+              {
+                "id": "aef24b78-6c19-80a5-8008-bdf9f18784cb",
+                "name": "Button border",
+                "type": "rectangle",
+                "x": 0,
+                "y": 0,
+                "width": 160,
+                "height": 44,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#ffffff",
+                    "opacity": 1,
+                    "ref": "d862c4e5-8ca1-80d0-8008-b5895a888366"
+                  }
+                ],
+                "strokes": [
+                  {
+                    "color": "#888888",
+                    "width": 1,
+                    "opacity": 1,
+                    "ref": "d862c4e5-8ca1-80d0-8008-b5895c1a9c52"
+                  }
+                ]
+              },
+              {
+                "id": "aef24b78-6c19-80a5-8008-bdf9f18784cc",
+                "name": "Button label",
+                "type": "text",
+                "x": 12,
+                "y": 10,
+                "width": 136,
+                "height": 24,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#111111",
+                    "opacity": 1,
+                    "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                  }
+                ],
+                "text": "Clear receipt",
+                "fontFamily": "Arimo",
+                "fontSize": 16,
+                "fontWeight": "400",
+                "lineHeight": 1.5,
+                "letterSpacing": 0,
+                "align": "center"
+              }
+            ]
+          },
+          {
+            "id": "aef24b78-6c19-80a5-8008-bdf9f19aea8e",
+            "name": "copy / receiptLimit",
+            "type": "text",
+            "x": 0,
+            "y": 206,
+            "width": 1000,
+            "height": 24,
+            "rotation": 0,
+            "fills": [
+              {
+                "color": "#555555",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895bec83b8"
+              }
+            ],
+            "text": "JSON, up to 128 KiB. This check does not connect to your SP.",
+            "fontFamily": "Arimo",
+            "fontSize": 14,
+            "fontWeight": "400",
+            "lineHeight": 1.5,
+            "letterSpacing": 0,
+            "align": "left"
+          },
+          {
+            "id": "aef24b78-6c19-80a5-8008-bdf9f1aa8996",
+            "name": "Receipt status",
+            "type": "text",
+            "x": 0,
+            "y": 242,
+            "width": 1312,
+            "height": 36,
+            "rotation": 0,
+            "fills": [
+              {
+                "color": "#111111",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+              }
+            ],
+            "text": "No receipt selected.",
+            "fontFamily": "Arimo",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "lineHeight": 1.5,
+            "letterSpacing": 0,
+            "align": "left"
+          }
+        ]
+      }
+    }
+  ]
+}

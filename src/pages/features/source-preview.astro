@@ -1,0 +1,60 @@
+---
+import Base from '../../layouts/Base.astro';
+import SiteHeader from '../../components/SiteHeader.astro';
+import SiteFooter from '../../components/SiteFooter.astro';
+import FeatureRow from '../../components/features/FeatureRow.astro';
+import FeatureShortcut from '../../components/features/FeatureShortcut.astro';
+import FeatureSummary from '../../components/features/FeatureSummary.astro';
+import {registry} from '../../lib/features/source-preview/selection';
+import copy from '../../content/feature-source-preview/features.json';
+import '../../styles/features.css';
+---
+<Base title={`${copy.title} · OpenSP`} description={copy.description} noindex>
+  <SiteHeader/>
+  <main id="main" class="feature-page" data-feature-picker>
+    <div class="feature-introduction" data-component="Feature introduction">
+      <h1>{copy.title}</h1>
+      <p>{copy.introduction}</p>
+      <p class="feature-planning-note">{copy.planningNote}</p>
+      <p class="feature-section-note"><a href="/features/source-preview-full15/">Build the separate Full15 Synth shortcut source preview</a>.</p>
+    </div>
+    <p data-no-script>{copy.noScript}</p>
+    <div class="feature-config-toolbar">
+      <label class="feature-target"><span>{copy.targetLabel}</span><select data-profile aria-describedby="feature-profile-note" disabled>{registry.profiles.map(profile=><option value={profile.id}>{profile.label}</option>)}</select></label>
+      <div class="feature-file-actions"><label class="feature-import-button">{copy.import}<input type="file" data-import accept=".json,application/json" disabled/></label><button type="button" data-reset disabled>{copy.reset}</button></div>
+    </div>
+    <p id="feature-profile-note" class="feature-profile-note">{copy.targetNote}</p>
+    <p class="feature-save-status" data-save-status role="status">Choices stay in this browser. Export a file to move them to another computer.</p>
+    <p class="feature-import-error" data-import-error role="alert" hidden></p>
+    <div class="feature-workspace">
+      <div class="feature-editor">
+        <section aria-labelledby="features-title">
+          <h2 id="features-title">{copy.featureHeading}</h2>
+          <p class="feature-section-note">{copy.featureNote}</p>
+          <p class="feature-section-note">{copy.releaseScope}</p>
+          <div class="feature-list">{registry.features.map(feature=><FeatureRow feature={feature}/>)}</div>
+        </section>
+        <section class="feature-shortcuts" aria-labelledby="shortcuts-title">
+          <h2 id="shortcuts-title">{copy.shortcutHeading}</h2>
+          <p>{copy.shortcutNote}</p>
+          <p class="feature-section-note">{copy.shortcutLimit}</p>
+          <p data-empty-shortcuts>{copy.emptyShortcuts}</p>
+          {registry.features.map(feature=><FeatureShortcut feature={feature} copy={copy} chooserLabel={feature.id==='usb-recorder'?'PC recorder':'Native generator chooser'}/>)}
+        </section>
+      </div>
+      <FeatureSummary copy={copy} sourcePreview/>
+    </div>
+    <p class="feature-section-note"><a href="/features/source-preview/local-build/">Build the selected source module locally</a>. <a href="/features/">Historical P6S preview</a>. Firmware installation remains disabled.</p>
+    <section class="feature-update-notes" aria-labelledby="update-title" data-component="Feature update notes">
+      <h2 id="update-title">{copy.transferHeading}</h2>
+      <p>{copy.transferNote}</p><p>{copy.transferLimit}</p>
+      <p>Source compilation needs no SP connection. Future USB installation needs an already installed, freshly identified USB BRIDGE B2 writer. First installation from untouched stock over normal USB is unverified.</p>
+    </section>
+    <section class="feature-recording-notes" aria-labelledby="recording-title">
+      <h2 id="recording-title">{copy.recordingHeading}</h2><p>{copy.recordingNote}</p>
+      <p>Untouched stock provides USB audio and MIDI. A verified display/control adapter is required before it can provide this screen recorder.</p>
+    </section>
+  </main>
+  <SiteFooter page={copy.footer}/>
+</Base>
+<script>import '../../scripts/feature-source-preview';</script>

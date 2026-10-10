@@ -1,0 +1,36 @@
+---
+import OpenSynthPatcher from './OpenSynthPatcher.astro';
+import OpenSynthScreen from './OpenSynthScreen.astro';
+type Step = string | {text: string; link?: {href: string; label: string}; patcher?: boolean};
+interface Section {
+  id: string;
+  heading: string;
+  paragraphs: string[];
+  rows?: {label: string; text: string; screen?: string; screenCaption?: string}[];
+  steps?: Step[];
+  note?: string;
+}
+interface Props {section: Section;}
+const {section} = Astro.props;
+---
+<section class="release-section" id={section.id} aria-labelledby={`${section.id}-heading`} data-component={`Synth release ${section.id}`}>
+  <h2 id={`${section.id}-heading`}>{section.heading}</h2>
+  {section.paragraphs.map(paragraph => <p>{paragraph}</p>)}
+  {section.rows?.some(row => row.screen) && <button type="button" class="opensynth-screens-toggle" data-screens-toggle aria-pressed="false" hidden>Play animations</button>}
+  {section.rows && section.rows.some(row => row.screen) ? (
+    <ul class="release-features">{section.rows.map(row => (
+      <li class="release-feature">
+        <div class="release-feature-text"><h3>{row.label}</h3><p>{row.text}</p></div>
+        {row.screen && <OpenSynthScreen id={row.screen} caption={row.screenCaption}/>}
+      </li>
+    ))}</ul>
+  ) : section.rows && <dl class="release-facts">{section.rows.map(row => <div><dt>{row.label}</dt><dd>{row.text}</dd></div>)}</dl>}
+  {section.steps && <ol class="release-steps">{section.steps.map(step => typeof step === 'string' ? <li>{step}</li> : (
+    <li class={step.patcher ? 'release-step-patcher' : undefined}>
+      {step.text}
+      {step.link && <a class="release-step-link" href={step.link.href} rel="noopener">{step.link.label}</a>}
+      {step.patcher && <OpenSynthPatcher/>}
+    </li>
+  ))}</ol>}
+  {section.note && <p class="release-note">{section.note}</p>}
+</section>

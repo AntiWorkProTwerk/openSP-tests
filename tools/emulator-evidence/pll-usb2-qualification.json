@@ -1,0 +1,79 @@
+{
+  "schema": "opensp-usb2-pll-model-qualification-v2",
+  "createdUtc": "2026-10-03T06:17:54.4803288Z",
+  "scope": {
+    "isolatedRegisterModel": true,
+    "guestFirmwareExecuted": false,
+    "boardIntegrationExercised": false,
+    "deviceTransportOpened": false,
+    "physicalClockOutputVerified": false
+  },
+  "sourceReferenceBase": "OpenSP repository",
+  "sources": {
+    "src/lib/emulator/pll-usb2.ts": {
+      "bytes": 6530,
+      "sha256": "9b54796d35a8b531acb58a1ed76ce637b01f181e1f343fc30f369e1191997bfd"
+    },
+    "tests/emulator-pll-usb2.test.mjs": {
+      "bytes": 6884,
+      "sha256": "be75cbffcfd5ee6f34f80cfee33b5ef2f52ca91f8bffa46b25d8ae19df4b91ca"
+    },
+    "docs/emulator-pll-usb2.md": {
+      "bytes": 3363,
+      "sha256": "d23f23611afa9f93d65eb6c6c778f5feaaa22cf81cc39eff376e47254c4c226a"
+    },
+    "tools/emulator-evidence/pll-usb2-model-tests.tap": {
+      "bytes": 2801,
+      "sha256": "cdea88ad41cf1d0bd38717b49de5a55db9730463d9fff7a9f71288efbcf935e6"
+    }
+  },
+  "primaryReferenceBase": "sp404mk2 repository",
+  "primarySources": {
+    "analysis/emulator/pll_static_20261003/source-contract.json": {
+      "bytes": 19827,
+      "sha256": "ae9e5f19da29303b79894e34c96ec2b9fde34cdd121f7b2bfe67aaf8fc552d9c"
+    },
+    "analysis/emulator/pll_static_20261003/fsl_clock.c": {
+      "bytes": 49394,
+      "sha256": "669e2698ea0be01db0ac656f4ceef6106670d1f116b2da9f3b2ac961945a5eb3"
+    },
+    "analysis/flash_research/IMXRT1060RM_rev3.pdf": {
+      "bytes": 29973751,
+      "sha256": "a2e342e492eded2a1d626cf955de953ca28d8db8675b10937a5176fd6f2c9200"
+    },
+    "references/MIMXRT1062.h": {
+      "bytes": 2797765,
+      "sha256": "1ee70ed9eb7f3a75ed89943dd799314e8330538f54c6990ea7d9cae96fd263aa"
+    }
+  },
+  "tests": {
+    "passedGroups": 12,
+    "failedGroups": 0,
+    "strictTypeCheckPassed": true,
+    "transcript": "tools/emulator-evidence/pll-usb2-model-tests.tap"
+  },
+  "policy": {
+    "group": "400D8020..400D802F",
+    "reset": "00012000",
+    "writable": "0001F042",
+    "aliasesReadZero": true,
+    "analogPowerBitValue": 1,
+    "outputGatesBlockLock": false,
+    "lockTicks": 1,
+    "reference24MAvailable": true,
+    "referenceClk1Available": false,
+    "reservedReferenceCodesStall": true,
+    "readsAdvanceTime": false,
+    "changedPowerDividerReferenceRestartLock": true
+  },
+  "independentPeerReview": "Passed read-only against pinned contract, header and fsl_clock.c689..705; model/tests and corrected docs match; no additional guest execution",
+  "stockReviewReport": "../sp404mk2/analysis/emulator/arm_pll_stock_20261003/whole-image.json",
+  "motivationCorrection": {
+    "initialLabel": "SYS thenUSB2",
+    "actualPollHex": "400D80A0",
+    "actualController": "VIDEO PLL",
+    "reason": "Misread decimal address1074626720; exact hex conversion corrects it",
+    "usb2StockInitializationExercised": false,
+    "preservedInitialReceipt": "tools/emulator-evidence/board-before-usb2-pll-20261003/pll-usb2-qualification.json"
+  }
+}

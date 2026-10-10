@@ -1,0 +1,9 @@
+The Full15 source picker accepts Synth with its chosen shortcut and an optional global PC recorder on the same page. Its catalog revision, feature versions, storage key and helper recipe are explicitly updated; older choices remain in their existing storage and are not reinterpreted. The Full14 core/global and historical P6S pages remain unchanged.
+
+The native chooser preserves default routing. Selecting a Synth chord explicitly assigns that combination to Synth; the final listed control is its trigger, and all controls must be released to rearm. Two or three mapped buttons or pads are supported. DEL, EXIT and SHIFT + PAD 13 remain reserved. The recorder starts from the PC and has no hardware shortcut. A recorder-only build is not registered.
+
+The source helper authenticates the combined builder and delegates config generation and source compilation to it. Both selected variants compile all 129 units afresh. The Synth-only linked reference has 25 fresh and 104 inherited objects; the combined reference has 129 fresh and no inherited objects. The global option joins OLED and control observation, uses feature mask three and leaves the recorder shortcut entry disabled. Turning it off restores the pinned Synth-only preimages and mask one. Config marker zero preserves the chooser; marker one enables the selected Synth chord.
+
+Source receipts bind the option, config, source profile, compile counts and complete ELF bytes. The PC recorder can combine the OLED/control stream with existing stereo USB audio, but this combined source module has no whole-SP hardware recording result. Native launch, firmware admission and physical behavior remain unqualified. No firmware image or device command is emitted.
+
+The implementation reuses the existing feature rows, shortcut controls, summary, tokens and layouts. No new page, Penpot layout or generated geometry is introduced. Copy propagation and browser checks remain part of the site's review.

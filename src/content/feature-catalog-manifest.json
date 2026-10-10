@@ -1,0 +1,8 @@
+{
+  "schema": "opensp-feature-catalog-manifest",
+  "version": 1,
+  "registryRevision": "2026-10-04.2",
+  "registrySha256": "ef1e3e306d755c08b3ca693e1fc5e829bf61367b49ef666e6440ad51925dbb17",
+  "physicalControlsSha256": "c40ffaeb094c290eb22a88d8155ff8d484337b7a78e7f7094a8330a87cad6957",
+  "catalogDigest": "3a8d5663482fc19a5c56079a7cc56880ee7dae6226f312dc4a0498b8a3ed648a"
+}

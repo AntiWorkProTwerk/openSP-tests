@@ -1,8 +1,8 @@
 (() => {
   const media=matchMedia('(prefers-color-scheme: dark)');
-  let preference='system';
-  try { preference=localStorage.getItem('opensp-theme')||'system'; } catch {}
-  if(!['light','dark','system'].includes(preference))preference='system';
+  let preference='light';
+  try { preference=localStorage.getItem('opensp-theme')||'light'; } catch {}
+  if(!['light','dark','system'].includes(preference))preference='light';
   function apply(){
     document.documentElement.dataset.theme=preference==='system'?(media.matches?'dark':'light'):preference;
     document.querySelectorAll('[data-theme-picker]').forEach(el=>el.value=preference);
@@ -15,6 +15,6 @@
     }));
   });
   media.addEventListener('change',apply);
-  addEventListener('storage',event=>{if(event.key==='opensp-theme'){preference=['light','dark'].includes(event.newValue)?event.newValue:'system';apply();}});
+  addEventListener('storage',event=>{if(event.key==='opensp-theme'){preference=['light','dark','system'].includes(event.newValue)?event.newValue:'light';apply();}});
   apply();
 })();

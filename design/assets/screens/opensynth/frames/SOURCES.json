@@ -1,0 +1,14 @@
+{
+  "module": "diagnostics/opensynth_p12_combined_build_11/final-build-001/module/source",
+  "sources": {
+    "p6/sp_p6_view.c": "54328e256c6042087e4e9b9a82f9d817e924d2cf9214b87fd654541a3b3cfd70",
+    "p6/sp_synth_preview_voice.c": "3aff0695d0a82a5e6345db693b8df4d86340adc944da3897707dcab3e2956bcc",
+    "p6/sp_p6_volume.c": "2fdd5a92b778ac34485f180b87f239829b56620dc105592d6876f589f8307992",
+    "p6/sp_p4_controls.c": "57fb4d7d701e8a6930011941f0d1ba72d1a54ef1870ab61ac98c471df0c9c6d2",
+    "p6/sp_synth_preview_visual.c": "1a9c1fd56f10ef999b9effe2481e53876fa5bf1c22faf331f974b745c7ad6d65",
+    "p5/dsp/src/sp_synth_dsp.c": "91ef1762b15c201e367c73902eb85dff3c4e20fb7beacf30fd17388d49d29217",
+    "p7/sp_p6_rec_modal_view.c": "ae9739c229db5c71ea81fc12e9fa5e33823d32e965feb493176195a50aed9942",
+    "p7/sp_p6_pattern_transport_view.c": "27e992fc39edc44eb9ef50608c169c7af224b2e0ce9e1308e9e7bcc0a72c6534"
+  },
+  "harness_sha256": "3fe70192bf9e61e3023c0f7f44d5538709728c607ac37e2a1fbad7cd9576a84e"
+}

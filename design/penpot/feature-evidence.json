@@ -1,0 +1,38 @@
+{
+  "schema": "opensp-feature-evidence",
+  "version": 1,
+  "registryRevision": "2026-10-04.1",
+  "scope": "Read-only source snapshot. No composed firmware, device access or upload.",
+  "sources": [
+    {
+      "repository": "sp404mk2-synth",
+      "path": "diagnostics/global_usb_stream_v552/PROFILE_V552.json",
+      "sha256": "d5a35286e0817f43bac1c193df0d078bb7e7e08d7bb7e0359db82be1a3eb1aac"
+    },
+    {
+      "repository": "sp404mk2-synth",
+      "path": "diagnostics/synth_p6/HARDWARE_RESULT.md",
+      "sha256": "0feb1001a22727a55bd6c68b5267669a9bf937471e0f58650d559bf8fc7c3dd6"
+    },
+    {
+      "repository": "sp404mk2-synth",
+      "path": "build/p6r-reentry-p2-package-1/manifest.json",
+      "sha256": "a8d0b8528118eb2f4cb92f02cff5a01bc5fd80d8eb3278ebfe66d90a37b6e541"
+    },
+    {
+      "repository": "sp404mk2-synth",
+      "path": "diagnostics/global_usb_stream_v552/HANDOFF.json",
+      "sha256": "54fbd0bdb76cc6d1c635c5c20344a0b82225788cfb40440a07d40cacd7ef7df5"
+    },
+    {
+      "repository": "sp404mk2-autotune",
+      "path": "diagnostics/autotune_t2p/README.md",
+      "sha256": "23268c1b9f476723804df837c58933122f910ed342eb269522dcc24035202060"
+    },
+    {
+      "repository": "sp404mk2-synth",
+      "path": "diagnostics/synth_p6/full_feature_join/metadata/HANDOFF.json",
+      "sha256": "e008401b216461bab24dfcae9082b69380c80e8aa1d70e71fc637ea15f53f6d8"
+    }
+  ]
+}

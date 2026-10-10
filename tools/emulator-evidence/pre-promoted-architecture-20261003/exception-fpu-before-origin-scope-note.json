@@ -1,0 +1,134 @@
+{
+  "scope": "Offline architectural model and executed Cortex-M7 WASM fixtures; no physical SP evidence or stock RTOS completion",
+  "files": {
+    "src/lib/emulator/exceptions.ts": {
+      "bytes": 35024,
+      "sha256": "6412e7fc3086f2ab34f6f0127983521ccfb48cf7a2563249e5d09cf09a6d2e51"
+    },
+    "src/lib/emulator/cpu.ts": {
+      "bytes": 16624,
+      "sha256": "fb27f37e31277b4e79d1847562c961de23acd25befc4015ffbfd2a3c7d7809b1"
+    },
+    "src/lib/emulator/session.ts": {
+      "bytes": 15220,
+      "sha256": "da7671bc2ff356d99a643314f498749d15247323aec051f6395a6bf0fbf47563"
+    },
+    "tests/emulator-exceptions.test.mjs": {
+      "bytes": 29996,
+      "sha256": "3b3d05259c58a57113847b58154e4dea0936687c37b086f784ddc27073855c1c"
+    },
+    "tests/emulator-exceptions-fpu.test.mjs": {
+      "bytes": 21814,
+      "sha256": "fc7b056a9271931d46ad28e7b85ebd1616f48872cb81ecbecb262d44f64e0c60"
+    },
+    "tools/fixtures/emulator-exceptions-fpu.S": {
+      "bytes": 469,
+      "sha256": "62004001d175c0be3e477e76985f93b2a2cf741db7205cccd7edd0d5bf875781"
+    },
+    "tools/emulator-evidence/exception-fpu-fixture.o": {
+      "bytes": 712,
+      "sha256": "ad80b129c42b5e938961889506334132df4d3281060fbc6ccacca71aa8f90658"
+    },
+    "docs/emulator-exceptions.md": {
+      "bytes": 6122,
+      "sha256": "9ec2985a2841847647d1f9c8746d6fa6daacdea7f4212f39b577c678dad06400"
+    },
+    "tools/test-emulator-exceptions.mjs": {
+      "bytes": 6699,
+      "sha256": "2e125cc3fa40731efd9fe17316baf3dfc50fb20e17bcb3a6141f619d272f16ba"
+    }
+  },
+  "primarySources": [
+    {
+      "document": "Armv7-M Architecture Reference Manual DDI0403E.e, ID021621",
+      "url": "https://documentation-service.arm.com/static/606dc36485368c4c2b1bf62f",
+      "bytes": 5957561,
+      "sha256": "76500176d20f897eaf05eeadb5a6202cef641e332073b107905c8898e0ee0747",
+      "printedPages": [
+        "B1-532..B1-535: PushStack, ExceptionTaken, UpdateFPCCR",
+        "B1-540..B1-543: EXC_RETURN and PopStack",
+        "B1-565..B1-566: ExecuteFPCheck and PreserveFPState",
+        "B3-615..B3-618: FP register access and control registers"
+      ],
+      "retention": "PDF retained in the private documentation cache; copyrighted manual is not redistributed here"
+    },
+    {
+      "document": "Cortex-M7 Generic User Guide DUI0646B",
+      "url": "https://documentation-service.arm.com/static/61efd6602dd99944d051417b",
+      "bytes": 2016314,
+      "sha256": "4b474102e4dc490fdb759dde329715b1f348ebe433e97830f585bb92481f463a",
+      "printedPages": [
+        "2-25: basic and extended frame diagram",
+        "4.2..4.4: NVIC, SCB and SysTick",
+        "4.7: FPU"
+      ],
+      "retention": "PDF retained in the private documentation cache; Figure2-2 visually checked"
+    },
+    {
+      "document": "Pinned Unicorn M-profile VFP translator",
+      "url": "https://github.com/unicorn-engine/unicorn/blob/8028ec436f2d9376525352dd38ed9ed6b9f6be10/qemu/target/arm/translate-vfp.inc.c#L110-L168",
+      "relevance": "FPCA-dependent first-use FPSCR initialization is emitted while translating, before instruction hooks"
+    }
+  ],
+  "validation": {
+    "commands": [
+      "node --test tests/emulator-exceptions.test.mjs tests/emulator-exceptions-fpu.test.mjs",
+      "node node_modules/typescript/bin/tsc --ignoreConfig --noEmit --target ES2022 --module ESNext --moduleResolution Bundler --strict src/lib/emulator/exceptions.ts"
+    ],
+    "passedGroups": 54,
+    "failedGroups": 0,
+    "registerMemoryGroups": 44,
+    "realM7Groups": 10,
+    "strictTypecheck": "passed"
+  },
+  "executedCases": [
+    "Hardware core-frame edit and software-owned R4",
+    "Original VFP activation and preserved integer-only refusal",
+    "POP-to-EXC_RETURN fetch fallback",
+    "Eager FP handler restores low registers while S16 remains software-owned",
+    "Lazy FP handler publishes interrupted S0 before VMOV with exact two-instruction budget",
+    "IT-skipped VFP produces no hook, FP activation or lazy save",
+    "ASPEN automatic/manual activation and FPDSCR across adjacent FP instructions",
+    "VLDR/VSTR/VPUSH/VPOP/VMRS/VMSR execute",
+    "Round-positive 1+2^-24 yields 3F800001",
+    "Modeled CPACR denial stops before VFP execution; no NOCP handler was fabricated"
+  ],
+  "failedApproaches": [
+    {
+      "evidence": "tools/emulator-evidence/exception-fpu-boundary.json",
+      "observation": "An unterminated VFP fixture aborted translation before any retired instruction; closing the lost backend trapped again",
+      "status": "Historical failure retained; corrected terminated fixture passes"
+    },
+    {
+      "observation": "Writing FPSCR Rmode00400000 and FPCA1 inside the first VMOV hook produced FPSCR0",
+      "expected": "00400000",
+      "observed": "00000000",
+      "cause": "The translated first-use reset was already compiled from backend FPDSCR",
+      "correction": "synchronizeInstructionState leaves the engine, invalidates the stale translation, and retries with the prepared context",
+      "regression": "Actual arithmetic result3F800001 establishes applied rounding, beyond a final status write"
+    }
+  ],
+  "runtime": {
+    "wrapperCommit": "1220477c7fb0f8fe4b500f4bd211de52f6dfe638",
+    "coreCommit": "8028ec436f2d9376525352dd38ed9ed6b9f6be10",
+    "files": {
+      "unicorn-arm.js": {
+        "bytes": 43313,
+        "sha256": "d8bc37b898ccbc5b429f17112add6ad33a8a9b35df4146034ba141b992dae007"
+      },
+      "unicorn-arm.wasm": {
+        "bytes": 704978,
+        "sha256": "16599c54af6da32ecce2ce52538890610a83c96e1152796ddffa2533d6440b35"
+      }
+    }
+  },
+  "historicalIntegerOnly": "tools/emulator-evidence/exceptions-integer-only/manifest.json",
+  "limits": [
+    "Counts are model instruction starts/source ticks, not measured M7 cycles",
+    "NOCP escalation and derived stacking faults are explicit model errors",
+    "Late arrival, non-base Thread return, sleep and exclusive monitors remain unmodeled",
+    "Architecturally UNKNOWN caller-saved FP registers retain deterministic values",
+    "Generic EXC_RETURN fetch recovery needs an originating BX or qualifying load-PC instruction",
+    "Frame fixtures do not establish stock RTOS boot, sampler/audio, complete USB classes or physical SP behavior"
+  ]
+}

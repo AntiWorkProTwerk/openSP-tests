@@ -1,0 +1,26 @@
+{
+  "scope": "Read-only review of the pinned engine's Thumb conditional code-hook and stop contract",
+  "baseCommit": "8028ec436f2d9376525352dd38ed9ed6b9f6be10",
+  "appliedSourceTransformations": "See public/emulator/vendor/provenance.json and qualification.json provenance SHA256",
+  "files": {
+    "uc.c": {
+      "sha256": "af8d8281594036b2d3e7d65940999b444761e4410d3b5801c998667f59331364",
+      "lines": [1043, 1058, 2097, 2166],
+      "url": "https://github.com/unicorn-engine/unicorn/blob/8028ec436f2d9376525352dd38ed9ed6b9f6be10/uc.c"
+    },
+    "qemu/target/arm/translate.c": {
+      "sha256": "22102563894df046a957f7b80e2ecd385f7e4829584fa1b22e01a52d59fde53a",
+      "lines": [11343, 11379, 11576, 11628],
+      "url": "https://github.com/unicorn-engine/unicorn/blob/8028ec436f2d9376525352dd38ed9ed6b9f6be10/qemu/target/arm/translate.c"
+    }
+  },
+  "conclusions": [
+    "Conditional skip is generated before the conditional slot's code hook",
+    "IT-slot hooks have UC_HOOK_FLAG_NO_STOP; trace helper cancels stop requests for them",
+    "Native count hook runs before user hooks and may prevent the user callback after count exhaustion, while an IT slot still retires",
+    "Translation metadata holds per-instruction IT state; CPUARMState is not required to reflect it during a translated block",
+    "Strict CPU instruction-start counts and session stop-before-final-IT-transfer interception remain unqualified"
+  ],
+  "unsupportedInference": "These benign scheduling results do not establish the cause of any firmware execution frontier",
+  "cpuOrSessionModified": false
+}

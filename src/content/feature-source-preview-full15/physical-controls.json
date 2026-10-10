@@ -1,0 +1,397 @@
+{
+  "schema": "opensp-physical-controls",
+  "version": 1,
+  "board": "sp-404mkii",
+  "source": {
+    "repository": "sp404mk2",
+    "path": "diagnostics/opensynth_native_record_start_finish_01/dispatcher-port-full15-01/module/source/dispatcher/shortcuts.h",
+    "sha256": "075a496a63a294ee79d5d67aae5be08b73f0692b2a7fa2238eecbef97a870760"
+  },
+  "controls": [
+    {
+      "id": "PAD_1",
+      "label": "PAD 1",
+      "kind": "pad",
+      "shortcut": true,
+      "nativeId": 1
+    },
+    {
+      "id": "PAD_2",
+      "label": "PAD 2",
+      "kind": "pad",
+      "shortcut": true,
+      "nativeId": 2
+    },
+    {
+      "id": "PAD_3",
+      "label": "PAD 3",
+      "kind": "pad",
+      "shortcut": true,
+      "nativeId": 3
+    },
+    {
+      "id": "PAD_4",
+      "label": "PAD 4",
+      "kind": "pad",
+      "shortcut": true,
+      "nativeId": 4
+    },
+    {
+      "id": "PAD_5",
+      "label": "PAD 5",
+      "kind": "pad",
+      "shortcut": true,
+      "nativeId": 5
+    },
+    {
+      "id": "PAD_6",
+      "label": "PAD 6",
+      "kind": "pad",
+      "shortcut": true,
+      "nativeId": 6
+    },
+    {
+      "id": "PAD_7",
+      "label": "PAD 7",
+      "kind": "pad",
+      "shortcut": true,
+      "nativeId": 7
+    },
+    {
+      "id": "PAD_8",
+      "label": "PAD 8",
+      "kind": "pad",
+      "shortcut": true,
+      "nativeId": 8
+    },
+    {
+      "id": "PAD_9",
+      "label": "PAD 9",
+      "kind": "pad",
+      "shortcut": true,
+      "nativeId": 9
+    },
+    {
+      "id": "PAD_10",
+      "label": "PAD 10",
+      "kind": "pad",
+      "shortcut": true,
+      "nativeId": 10
+    },
+    {
+      "id": "PAD_11",
+      "label": "PAD 11",
+      "kind": "pad",
+      "shortcut": true,
+      "nativeId": 11
+    },
+    {
+      "id": "PAD_12",
+      "label": "PAD 12",
+      "kind": "pad",
+      "shortcut": true,
+      "nativeId": 12
+    },
+    {
+      "id": "PAD_13",
+      "label": "PAD 13",
+      "kind": "pad",
+      "shortcut": true,
+      "nativeId": 13
+    },
+    {
+      "id": "PAD_14",
+      "label": "PAD 14",
+      "kind": "pad",
+      "shortcut": true,
+      "nativeId": 14
+    },
+    {
+      "id": "PAD_15",
+      "label": "PAD 15",
+      "kind": "pad",
+      "shortcut": true,
+      "nativeId": 15
+    },
+    {
+      "id": "PAD_16",
+      "label": "PAD 16",
+      "kind": "pad",
+      "shortcut": true,
+      "nativeId": 16
+    },
+    {
+      "id": "BUS_FX",
+      "label": "BUS FX",
+      "kind": "button",
+      "shortcut": true,
+      "nativeId": 17
+    },
+    {
+      "id": "HOLD",
+      "label": "HOLD",
+      "kind": "button",
+      "shortcut": true,
+      "nativeId": 18
+    },
+    {
+      "id": "EXT_SOURCE",
+      "label": "EXT SOURCE",
+      "kind": "button",
+      "shortcut": true,
+      "nativeId": 19
+    },
+    {
+      "id": "SUB_PAD",
+      "label": "SUB PAD",
+      "kind": "pad",
+      "shortcut": true,
+      "nativeId": 20
+    },
+    {
+      "id": "PATTERN_SELECT",
+      "label": "PATTERN SELECT",
+      "kind": "button",
+      "shortcut": true,
+      "nativeId": 21
+    },
+    {
+      "id": "PATTERN_EDIT",
+      "label": "PATTERN EDIT",
+      "kind": "button",
+      "shortcut": true,
+      "nativeId": 22
+    },
+    {
+      "id": "RECORD_SETTING",
+      "label": "RECORD SETTING",
+      "kind": "button",
+      "shortcut": true,
+      "nativeId": 23
+    },
+    {
+      "id": "START_END",
+      "label": "START/END",
+      "kind": "button",
+      "shortcut": true,
+      "nativeId": 24
+    },
+    {
+      "id": "PITCH_SPEED",
+      "label": "PITCH/SPEED",
+      "kind": "button",
+      "shortcut": true,
+      "nativeId": 25
+    },
+    {
+      "id": "MARK",
+      "label": "MARK",
+      "kind": "button",
+      "shortcut": true,
+      "nativeId": 26
+    },
+    {
+      "id": "DEL",
+      "label": "DEL",
+      "kind": "button",
+      "shortcut": true,
+      "nativeId": 27
+    },
+    {
+      "id": "REC",
+      "label": "REC",
+      "kind": "button",
+      "shortcut": true,
+      "nativeId": 28
+    },
+    {
+      "id": "RESAMPLE",
+      "label": "RESAMPLE",
+      "kind": "button",
+      "shortcut": true,
+      "nativeId": 29
+    },
+    {
+      "id": "BPM_SYNC",
+      "label": "BPM SYNC",
+      "kind": "button",
+      "shortcut": true,
+      "nativeId": 30
+    },
+    {
+      "id": "GATE",
+      "label": "GATE",
+      "kind": "button",
+      "shortcut": true,
+      "nativeId": 31
+    },
+    {
+      "id": "LOOP",
+      "label": "LOOP",
+      "kind": "button",
+      "shortcut": true,
+      "nativeId": 32
+    },
+    {
+      "id": "REVERSE",
+      "label": "REVERSE",
+      "kind": "button",
+      "shortcut": true,
+      "nativeId": 33
+    },
+    {
+      "id": "ROLL",
+      "label": "ROLL",
+      "kind": "button",
+      "shortcut": true,
+      "nativeId": 34
+    },
+    {
+      "id": "EXIT",
+      "label": "EXIT",
+      "kind": "button",
+      "shortcut": true,
+      "nativeId": 35
+    },
+    {
+      "id": "COPY",
+      "label": "COPY",
+      "kind": "button",
+      "shortcut": true,
+      "nativeId": 36
+    },
+    {
+      "id": "REMAIN",
+      "label": "REMAIN",
+      "kind": "button",
+      "shortcut": true,
+      "nativeId": 37
+    },
+    {
+      "id": "BANK_A_F",
+      "label": "BANK A/F",
+      "kind": "button",
+      "shortcut": true,
+      "nativeId": 38
+    },
+    {
+      "id": "BANK_B_G",
+      "label": "BANK B/G",
+      "kind": "button",
+      "shortcut": true,
+      "nativeId": 39
+    },
+    {
+      "id": "BANK_C_H",
+      "label": "BANK C/H",
+      "kind": "button",
+      "shortcut": true,
+      "nativeId": 40
+    },
+    {
+      "id": "BANK_D_I",
+      "label": "BANK D/I",
+      "kind": "button",
+      "shortcut": true,
+      "nativeId": 41
+    },
+    {
+      "id": "BANK_E_J",
+      "label": "BANK E/J",
+      "kind": "button",
+      "shortcut": true,
+      "nativeId": 42
+    },
+    {
+      "id": "SHIFT",
+      "label": "SHIFT",
+      "kind": "button",
+      "shortcut": true,
+      "nativeId": 43
+    },
+    {
+      "id": "FILTER_DRIVE",
+      "label": "FILTER+DRIVE",
+      "kind": "button",
+      "shortcut": true,
+      "nativeId": 44
+    },
+    {
+      "id": "RESONATOR",
+      "label": "RESONATOR",
+      "kind": "button",
+      "shortcut": true,
+      "nativeId": 45
+    },
+    {
+      "id": "DELAY",
+      "label": "DELAY",
+      "kind": "button",
+      "shortcut": true,
+      "nativeId": 46
+    },
+    {
+      "id": "ISOLATOR",
+      "label": "ISOLATOR",
+      "kind": "button",
+      "shortcut": true,
+      "nativeId": 47
+    },
+    {
+      "id": "DJFX_LOOPER",
+      "label": "DJFX LOOPER",
+      "kind": "button",
+      "shortcut": true,
+      "nativeId": 48
+    },
+    {
+      "id": "MFX",
+      "label": "MFX",
+      "kind": "button",
+      "shortcut": true,
+      "nativeId": 49
+    },
+    {
+      "id": "VALUE_PRESS",
+      "label": "VALUE PRESS",
+      "kind": "button",
+      "shortcut": true,
+      "nativeId": 50
+    },
+    {
+      "id": "VOLUME",
+      "label": "VOLUME",
+      "kind": "absolute",
+      "shortcut": false,
+      "nativeId": null
+    },
+    {
+      "id": "CTRL1",
+      "label": "CTRL1",
+      "kind": "absolute",
+      "shortcut": false,
+      "nativeId": null
+    },
+    {
+      "id": "CTRL2",
+      "label": "CTRL2",
+      "kind": "absolute",
+      "shortcut": false,
+      "nativeId": null
+    },
+    {
+      "id": "CTRL3",
+      "label": "CTRL3",
+      "kind": "absolute",
+      "shortcut": false,
+      "nativeId": null
+    },
+    {
+      "id": "VALUE_TURN",
+      "label": "VALUE TURN",
+      "kind": "relative",
+      "shortcut": false,
+      "nativeId": null
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+`/features/source-preview/` exposes a separate Full14 source catalog. It reuses the existing FeatureRow, FeatureShortcut and FeatureSummary components, CSS and theme tokens. The source-preview settings use their own browser storage key. `/features/` retains the historical P6S catalog and links to the new preview.
+
+The selected versions are `full14-source-preview-1` and `full14-global-source-preview-1`. The core profile binds Full14 report `cdd54117…477fa` and reference module `fea923ee…dfb09`. Adding the recorder selects the separate global report `d482999e…4139f` and reference module `829bcaf6…f6617`. Historical P6S configurations are never relabelled as Full14.
+
+The Build source locally action carries the exact source selection to `/features/source-preview/local-build/`. Its dedicated loopback helper invokes the reviewed source builder with the owner's official v5.52 input and ARM tools. The source receipt binds the canonical selection, actual linked module bytes and reference source cohort. The browser verifies the complete ELF before offering a download. A source receipt does not grant firmware installation.
+
+Native SHIFT + RECORD SETTING is preserved. The optional recorder uses the PC recorder for capture. Custom hardware shortcuts and recorder-only Full14 selections return explicit errors until their source implementations are registered. Autotune and stems remain deferred. The optional global cohort still requires N4 admission and physical screen/control/audio verification. Untouched stock provides USB audio and MIDI; it does not provide native screen/control frames.
+
+The shared Penpot source remains the existing feature-picker mains and variants described in `feature-picker.md`. This change adds source-selection behavior and content without altering their geometry. Penpot propagation and browser mobile/theme verification remain required before publication; an API test does not establish those visual results.

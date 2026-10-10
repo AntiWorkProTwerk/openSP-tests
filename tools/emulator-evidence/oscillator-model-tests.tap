@@ -1,0 +1,154 @@
+TAP version 13
+# Subtest: source pins identify the reviewed NXP driver, manual, and header
+ok 1 - source pins identify the reviewed NXP driver, manual, and header
+  ---
+  duration_ms: 1.4225
+  type: 'test'
+  ...
+# Subtest: reset uses source values with power-down clear and both oscillator statuses low
+ok 2 - reset uses source values with power-down clear and both oscillator statuses low
+  ---
+  duration_ms: 1.3491
+  type: 'test'
+  ...
+# Subtest: reads and control writes leave synthetic time unchanged
+ok 3 - reads and control writes leave synthetic time unchanged
+  ---
+  duration_ms: 0.4448
+  type: 'test'
+  ...
+# Subtest: NXP initialization sequence reaches each status only after its explicit tick phase
+ok 4 - NXP initialization sequence reaches each status only after its explicit tick phase
+  ---
+  duration_ms: 0.2849
+  type: 'test'
+  ...
+# Subtest: early detection uses only ticks after power-up, independent of tick batching
+ok 5 - early detection uses only ticks after power-up, independent of tick batching
+  ---
+  duration_ms: 0.3461
+  type: 'test'
+  ...
+# Subtest: power-down cancels a pending power-up and holds both status bits low
+ok 6 - power-down cancels a pending power-up and holds both status bits low
+  ---
+  duration_ms: 0.1877
+  type: 'test'
+  ...
+# Subtest: toggle power-down clears a completed result and starts a fresh power-up
+ok 7 - toggle power-down clears a completed result and starts a fresh power-up
+  ---
+  duration_ms: 0.2121
+  type: 'test'
+  ...
+# Subtest: detector disable retains completed XTALOK and re-enable starts a new detection
+ok 8 - detector disable retains completed XTALOK and re-enable starts a new detection
+  ---
+  duration_ms: 0.1605
+  type: 'test'
+  ...
+# Subtest: detector disable cancels partial progress without completing it
+ok 9 - detector disable cancels partial progress without completing it
+  ---
+  duration_ms: 0.1974
+  type: 'test'
+  ...
+# Subtest: power-up failure leaves both statuses low even with detection enabled
+ok 10 - power-up failure leaves both statuses low even with detection enabled
+  ---
+  duration_ms: 0.286
+  type: 'test'
+  ...
+# Subtest: frequency failure permits power-up readiness but never XTALOK or a fictitious bit17 error
+ok 11 - frequency failure permits power-up readiness but never XTALOK or a fictitious bit17 error
+  ---
+  duration_ms: 0.1862
+  type: 'test'
+  ...
+# Subtest: every SET/CLR/TOG alias reads zero at every aligned byte lane
+ok 12 - every SET/CLR/TOG alias reads zero at every aligned byte lane
+  ---
+  duration_ms: 0.172
+  type: 'test'
+  ...
+# Subtest: primary byte and halfword writes preserve other documented control lanes
+ok 13 - primary byte and halfword writes preserve other documented control lanes
+  ---
+  duration_ms: 0.1037
+  type: 'test'
+  ...
+# Subtest: SET/CLR/TOG operate only on selected ones in the written byte lanes
+ok 14 - SET/CLR/TOG operate only on selected ones in the written byte lanes
+  ---
+  duration_ms: 0.1135
+  type: 'test'
+  ...
+# Subtest: unwritten high value bits cannot power down or enable detection during a narrow write
+ok 15 - unwritten high value bits cannot power down or enable detection during a narrow write
+  ---
+  duration_ms: 0.1041
+  type: 'test'
+  ...
+# Subtest: oscillator status and fixed source/bandgap fixtures cannot be written through any alias
+ok 16 - oscillator status and fixed source/bandgap fixtures cannot be written through any alias
+  ---
+  duration_ms: 0.1183
+  type: 'test'
+  ...
+# Subtest: status lanes remain protected on byte and halfword writes
+ok 17 - status lanes remain protected on byte and halfword writes
+  ---
+  duration_ms: 0.0682
+  type: 'test'
+  ...
+# Subtest: unsigned VID_PLL_PREDIV survives word and subword reads without changing readiness
+ok 18 - unsigned VID_PLL_PREDIV survives word and subword reads without changing readiness
+  ---
+  duration_ms: 0.1379
+  type: 'test'
+  ...
+# Subtest: unrelated documented controls retain values while reserved fields stay zero
+ok 19 - unrelated documented controls retain values while reserved fields stay zero
+  ---
+  duration_ms: 0.0933
+  type: 'test'
+  ...
+# Subtest: register delay fields retain their source encoding without changing configured synthetic delays
+ok 20 - register delay fields retain their source encoding without changing configured synthetic delays
+  ---
+  duration_ms: 0.0765
+  type: 'test'
+  ...
+# Subtest: unknown, out-of-range, unaligned, and invalid-width accesses remain unhandled
+ok 21 - unknown, out-of-range, unaligned, and invalid-width accesses remain unhandled
+  ---
+  duration_ms: 0.1724
+  type: 'test'
+  ...
+# Subtest: reset restores registers and timing while keeping configured delay/failure fixtures
+ok 22 - reset restores registers and timing while keeping configured delay/failure fixtures
+  ---
+  duration_ms: 0.1241
+  type: 'test'
+  ...
+# Subtest: status returns independent configuration data
+ok 23 - status returns independent configuration data
+  ---
+  duration_ms: 0.063
+  type: 'test'
+  ...
+# Subtest: zero-duration phases need an explicit tick and invalid tick configuration is rejected
+ok 24 - zero-duration phases need an explicit tick and invalid tick configuration is rejected
+  ---
+  duration_ms: 0.4871
+  type: 'test'
+  ...
+1..24
+# tests 24
+# suites 0
+# pass 24
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 109.3492

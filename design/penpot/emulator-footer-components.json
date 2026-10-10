@@ -1,0 +1,176 @@
+{
+  "source": {
+    "fileId": "24d9d841-759d-81bc-8008-b518bc70d8b3",
+    "pageId": "d862c4e5-8ca1-80d0-8008-b5895a86fb82",
+    "kind": "native-component-api-export"
+  },
+  "components": [
+    {
+      "id": "d862c4e5-8ca1-80d0-8008-b58b0d52ef3d",
+      "name": "Footer",
+      "path": "OpenSP",
+      "mainId": "d862c4e5-8ca1-80d0-8008-b58b0d3ce596",
+      "shape": {
+        "id": "d862c4e5-8ca1-80d0-8008-b58b0d3ce596",
+        "name": "OpenSP / Footer",
+        "type": "board",
+        "x": 0,
+        "y": 0,
+        "width": 1312,
+        "height": 72,
+        "rotation": 0,
+        "componentId": "d862c4e5-8ca1-80d0-8008-b58b0d52ef3d",
+        "componentName": "Footer",
+        "children": [
+          {
+            "id": "d862c4e5-8ca1-80d0-8008-b58b0d3fb387",
+            "name": "Rule",
+            "type": "rectangle",
+            "x": 0,
+            "y": 0,
+            "width": 1312,
+            "height": 1,
+            "rotation": 0,
+            "fills": [
+              {
+                "color": "#888888",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895c1a9c52"
+              }
+            ]
+          },
+          {
+            "id": "d862c4e5-8ca1-80d0-8008-b58b0d4374fd",
+            "name": "Project note",
+            "type": "text",
+            "x": 0,
+            "y": 24,
+            "width": 500,
+            "height": 24,
+            "rotation": 0,
+            "fills": [
+              {
+                "color": "#111111",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+              }
+            ],
+            "text": "OPENSP / INDEPENDENT, COMMUNITY-MINDED SOFTWARE",
+            "fontFamily": "Cousine",
+            "fontSize": 13,
+            "fontWeight": "400",
+            "lineHeight": 1.54,
+            "letterSpacing": 0.26,
+            "align": "left"
+          },
+          {
+            "id": "d862c4e5-8ca1-80d0-8008-b58b0d4a1805",
+            "name": "Preview note",
+            "type": "text",
+            "x": 520,
+            "y": 24,
+            "width": 608,
+            "height": 24,
+            "rotation": 0,
+            "fills": [
+              {
+                "color": "#111111",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+              }
+            ],
+            "text": "HOMEPAGE",
+            "fontFamily": "Cousine",
+            "fontSize": 13,
+            "fontWeight": "400",
+            "lineHeight": 1.54,
+            "letterSpacing": 0.26,
+            "align": "right"
+          },
+          {
+            "id": "6bf32eef-e7db-8057-8008-bb2c247e0006",
+            "name": "Utility link",
+            "type": "board",
+            "x": 1152,
+            "y": 24,
+            "width": 160,
+            "height": 24,
+            "rotation": 0,
+            "componentId": "6bf32eef-e7db-8057-8008-bb2c247b9a4d",
+            "componentName": "Utility link",
+            "children": [
+              {
+                "id": "6bf32eef-e7db-8057-8008-bb2c247e0007",
+                "name": "Utility label",
+                "type": "text",
+                "x": 0,
+                "y": 0,
+                "width": 160,
+                "height": 24,
+                "rotation": 0,
+                "fills": [
+                  {
+                    "color": "#111111",
+                    "opacity": 1,
+                    "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+                  }
+                ],
+                "text": "Firmware emulator",
+                "fontFamily": "Cousine",
+                "fontSize": 13,
+                "fontWeight": "400",
+                "lineHeight": 1.5,
+                "letterSpacing": 0,
+                "align": "left"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "6bf32eef-e7db-8057-8008-bb2c247b9a4d",
+      "name": "Utility link",
+      "path": "OpenSP",
+      "mainId": "6bf32eef-e7db-8057-8008-bb2c24664904",
+      "shape": {
+        "id": "6bf32eef-e7db-8057-8008-bb2c24664904",
+        "name": "OpenSP / Utility link",
+        "type": "board",
+        "x": 0,
+        "y": 0,
+        "width": 160,
+        "height": 24,
+        "rotation": 0,
+        "componentId": "6bf32eef-e7db-8057-8008-bb2c247b9a4d",
+        "componentName": "Utility link",
+        "children": [
+          {
+            "id": "6bf32eef-e7db-8057-8008-bb2c246dafc0",
+            "name": "Utility label",
+            "type": "text",
+            "x": 0,
+            "y": 0,
+            "width": 160,
+            "height": 24,
+            "rotation": 0,
+            "fills": [
+              {
+                "color": "#111111",
+                "opacity": 1,
+                "ref": "d862c4e5-8ca1-80d0-8008-b5895bbe7556"
+              }
+            ],
+            "text": "Firmware emulator",
+            "fontFamily": "Cousine",
+            "fontSize": 13,
+            "fontWeight": "400",
+            "lineHeight": 1.5,
+            "letterSpacing": 0,
+            "align": "left"
+          }
+        ]
+      }
+    }
+  ]
+}

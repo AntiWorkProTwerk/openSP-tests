@@ -1,0 +1,752 @@
+{
+  "schemaVersion": 1,
+  "kind": "larger-writer-static-source-review",
+  "reviewedAtUtc": "2026-10-03T04:52:55.140Z",
+  "pathBase": "OpenSP repository root; ../sp404mk2 is the sibling firmware repository",
+  "scope": {
+    "result": "Source contracts reviewed; larger virtual host profiles remain unimplemented",
+    "actions": [
+      "Read source and references",
+      "Verify source and artifact hashes",
+      "Inspect artifact length, CRC32 and first word",
+      "Write focused proposal and this receipt"
+    ],
+    "buildsExecuted": 0,
+    "guestInstructionsExecuted": 0,
+    "physicalUsbAccess": false,
+    "faultFixturesConstructed": false,
+    "productionCodeChanged": false,
+    "runtimeQualification": false,
+    "historicalHardwareReportsAreSeparateEvidence": true
+  },
+  "implementedHost": {
+    "path": "src/lib/emulator/update.ts",
+    "profiles": [
+      "R13",
+      "R14",
+      "R15"
+    ],
+    "maximumImageBytes": 65536,
+    "largerProfilesImplemented": false
+  },
+  "reviewedRecipients": [
+    {
+      "name": "R16B",
+      "vid": "0xCAFE",
+      "pid": "0x404F",
+      "statusSignature": "SP16",
+      "protocolVersion": 2,
+      "capability": 1,
+      "maximumImageBytes": 3665920,
+      "normalMarker": "0x52410001",
+      "proofMarker": "0x52410002",
+      "proofAvailability": "Retained proof binary pinned in binaryPins",
+      "normalBinaryPath": "../sp404mk2/sdk/examples/original_r16b/build/original_r16b.bin",
+      "proofBinaryPath": "../sp404mk2/sdk/examples/original_r16b/build_proof/original_r16b.bin",
+      "acceptedPersistentImages": {
+        "smallAbi1": {
+          "minimumBytes": 2048,
+          "maximumBytes": 65536,
+          "lengthAlignment": 4,
+          "magic": {
+            "offset": "0x200",
+            "ascii": "SPUAFW10"
+          },
+          "abi": {
+            "offset": "0x208",
+            "value": 1
+          },
+          "declaredLength": {
+            "offset": "0x20C",
+            "rule": "Exact supplied candidate length"
+          },
+          "runtimeBase": {
+            "offset": "0x210",
+            "value": "0x80000000"
+          },
+          "runtimeLength": {
+            "offset": "0x214",
+            "minimum": 1024,
+            "maximum": "candidateLength - 1024"
+          },
+          "runtimeOffset": {
+            "offset": "0x218",
+            "value": "0x400"
+          },
+          "stack": {
+            "metadataOffset": "0x21C",
+            "firstRuntimeWordOffset": "0x400",
+            "value": "0x20243000"
+          },
+          "genericLargerAbi1Accepted": false,
+          "abi2Accepted": false
+        },
+        "exactFullImage": {
+          "targetPath": "../sp404mk2/custom_firmware/build/original_r16b/RESTORE/SP404MKII_APP1_R3.bin",
+          "length": 2652672,
+          "sha256": "2740e108d710217a3203b964a9433c123d2bb62800896dc10ae40d13b8b7dbdc",
+          "crc32": "0x2A7BB1D3",
+          "firstWord": "0x6801480D",
+          "paddedLength": 2654208,
+          "deviceChecks": [
+            "Full-image length",
+            "Upload expected CRC",
+            "First word",
+            "Fresh staged-RAM CRC at FINISH and flash start"
+          ],
+          "hostChecks": [
+            "Exact full-image length",
+            "Complete candidate SHA256 pinned by retained host"
+          ],
+          "deviceSha256Check": false,
+          "hostTransportCrc32Computed": true,
+          "pinnedCrcAndFirstWordCheckedByGuest": true
+        }
+      }
+    },
+    {
+      "name": "R48",
+      "vid": "0xCAFE",
+      "pid": "0x404F",
+      "statusSignature": "SP48",
+      "protocolVersion": 2,
+      "capability": 1,
+      "maximumImageBytes": 3665920,
+      "normalMarker": "0x52620001",
+      "sourceDefinedProofMarker": "0x52620002",
+      "proofAvailability": "Source conditional USB_PROOF only; no R48 proof artifact admitted by this review",
+      "pinnedHostAcceptsProofMarker": false,
+      "normalBinaryPath": "../sp404mk2/sdk/examples/original_r48/build/original_r48.bin",
+      "acceptedPersistentImages": {
+        "smallAbi1": {
+          "minimumBytes": 2048,
+          "maximumBytes": 65536,
+          "lengthAlignment": 4,
+          "magic": {
+            "offset": "0x200",
+            "ascii": "SPUAFW10"
+          },
+          "abi": {
+            "offset": "0x208",
+            "value": 1
+          },
+          "declaredLength": {
+            "offset": "0x20C",
+            "rule": "Exact supplied candidate length"
+          },
+          "runtimeBase": {
+            "offset": "0x210",
+            "value": "0x80000000"
+          },
+          "runtimeLength": {
+            "offset": "0x214",
+            "minimum": 1024,
+            "maximum": "candidateLength - 1024"
+          },
+          "runtimeOffset": {
+            "offset": "0x218",
+            "value": "0x400"
+          },
+          "stack": {
+            "metadataOffset": "0x21C",
+            "firstRuntimeWordOffset": "0x400",
+            "value": "0x20243000"
+          },
+          "genericLargerAbi1Accepted": false,
+          "abi2Accepted": false
+        },
+        "exactFullImage": {
+          "targetPath": "../sp404mk2/custom_firmware/build/usb_bridge_b1/r3/SP404MKII_APP1.bin",
+          "length": 2671332,
+          "sha256": "475835a7c076feeb6a7d4f3a4eddf50fcb215b64c3f59048d0eae40a6e061dc1",
+          "crc32": "0x2A98C325",
+          "firstWord": "0xBFFEF287",
+          "paddedLength": 2674688,
+          "deviceChecks": [
+            "Full-image length",
+            "Upload expected CRC",
+            "First word",
+            "Fresh staged-RAM CRC at FINISH and flash start"
+          ],
+          "hostChecks": [
+            "Exact full-image length",
+            "Complete candidate SHA256 pinned by retained host"
+          ],
+          "deviceSha256Check": false,
+          "hostTransportCrc32Computed": true,
+          "pinnedCrcAndFirstWordCheckedByGuest": true,
+          "buildChecks": [
+            "Exact full-image length",
+            "Complete candidate SHA256",
+            "Pinned CRC32",
+            "Pinned first word"
+          ]
+        }
+      }
+    }
+  ],
+  "bounds": {
+    "staging": {
+      "start": "0x83000000",
+      "endExclusive": "0x8337F000",
+      "maximumBytes": 3665920
+    },
+    "norCapacityBytes": 4194304,
+    "app1Offsets": {
+      "start": "0x80000",
+      "endExclusive": "0x3FF000"
+    },
+    "app1MappedAddresses": {
+      "start": "0x60080000",
+      "endExclusive": "0x603FF000"
+    },
+    "protectedOffsets": [
+      {
+        "start": "0x0",
+        "endExclusive": "0x80000"
+      },
+      {
+        "start": "0x3FF000",
+        "endExclusive": "0x400000"
+      }
+    ],
+    "ramBeginMinimumBytes": 4,
+    "ramBeginMaximumBytes": 3665920,
+    "persistentAdmissionDistinctFromRamBegin": true,
+    "usbPayloadBytes": 64,
+    "commandHeaderBytes": 8,
+    "maximumDataBytesPerCommand": 56,
+    "programPageBytes": 256,
+    "eraseAndReadbackSectorBytes": 4096,
+    "padByte": "0xFF",
+    "firstSectorWrittenLast": true
+  },
+  "preflightAndCompletion": {
+    "measuredJedec": "0xC22016",
+    "measuredStatus": "0x40",
+    "capacityBytes": 4194304,
+    "legacyBfptWords": 9,
+    "fcbSignatureAndGeometryCheckedByGuest": true,
+    "chipAndProfileCheckedBeforeEachSector": true,
+    "progressAdvancedOnlyAfterFullSectorIpComparison": true,
+    "firmwareFinalState": 6,
+    "error": 0,
+    "flashError": 0,
+    "separateNormalStatusRequired": true,
+    "hostCannotInferCompletionFromRamCrcOrProgrammedCountAlone": true
+  },
+  "usbBusReset": {
+    "preservedStates": [
+      4,
+      5,
+      6,
+      7
+    ],
+    "preservedFlashJobAndResult": true,
+    "earlierUploadStatesReset": true,
+    "endpointConfigurationAndOneShotReportsCleared": true,
+    "establishesFreshCpuBoot": false
+  },
+  "targetBootContracts": {
+    "b1DelSelectedWriter": {
+      "scope": "DEL-selected B1 writer startup; normal sampler readiness is separate",
+      "injectDelAfterBoardResetBeforeFirstInstruction": true,
+      "realSelectorSource": "../sp404mk2/sdk/examples/usb_bridge_b1/bridge_entry.S",
+      "selectorGpioPsr": "0x401BC008",
+      "selectorBit": 26,
+      "selectorActiveLow": true,
+      "selectorSamples": 3,
+      "writerEntry": "0x60308000",
+      "releasedStockThumbEntry": "0x60080005",
+      "mailboxAddress": "0x2023F000",
+      "mailboxMagic": "0x53503443",
+      "firmwareState": 2,
+      "marker": "0x52420001",
+      "vid": "0xCAFE",
+      "pid": "0x4050",
+      "statusSignature": "SP17",
+      "protocolVersion": 2,
+      "capability": 1,
+      "maximumImageBytes": 3665920,
+      "freshTransactionAndPreflightFieldsRequired": true,
+      "recipientWriterAdmissionAuditedByThisReview": false
+    },
+    "normalR3": {
+      "vid": "0x0582",
+      "pid": "0x02E7",
+      "originalMarkerCommandAvailable": false,
+      "separateStockStartupOracleRequired": true,
+      "completeVirtualStockBootQualifiedByThisReview": false,
+      "existingPristineStockQualificationHash": "4a3d67711e14dcc97d50249a4eee7dd6df0251a2f37757cbbe2556c233730d80",
+      "pristineStockHashMatchesEitherFullUpdateTarget": false
+    }
+  },
+  "staticFindings": [
+    {
+      "id": "non-abi-reset-extent",
+      "sourcePath": "src/lib/emulator/session.ts",
+      "sourceLines": [
+        141,
+        145,
+        146
+      ],
+      "finding": "APP1 reset uses ABI metadata length or the old image length. R48 to B1/R3 would select 17156 bytes without a verified full target extent.",
+      "oldLengthBytes": 17156,
+      "targetLengthBytes": 2671332,
+      "executedFailureFixture": false,
+      "proposedChange": "Reload and hash the exact verified committed target extent, then execute its own prefix/startup."
+    },
+    {
+      "id": "large-crc-token-budget",
+      "sourcePath": "src/lib/emulator/session.ts",
+      "sourceLines": [
+        184,
+        185
+      ],
+      "finding": "The current per-token pump limit is 4000000 instructions. FINISH and flash start synchronously CRC the full staged image; no larger-image transport budget is qualified.",
+      "currentMaximumGuestInstructionsPerToken": 4000000,
+      "executedLargeImageQualification": false,
+      "proposedChange": "Qualify explicit bounded phase budgets and retain failure checkpoints."
+    },
+    {
+      "id": "recipient-and-target-coupling",
+      "sourcePath": "src/lib/emulator/update.ts",
+      "sourceLines": [
+        178,
+        306,
+        307,
+        314
+      ],
+      "finding": "Current admission requires an R13/R14/R15 target marker and small ABI1 metadata; fresh boot requires an original mailbox state2 and matching hash.",
+      "proposedChange": "Separate recipient writer identity, accepted candidate policy and target boot contract."
+    },
+    {
+      "id": "large-transfer-evidence",
+      "sourcePath": "src/lib/emulator/update.ts",
+      "finding": "With 56-byte chunks, the exact full targets require 47370 or 47703 DATA commands and 648 or 653 sectors.",
+      "proposedChange": "Retain exact counts and checkpoints with bounded progress/trace summaries.",
+      "dataChunkBytes": 56
+    }
+  ],
+  "proposedQualification": [
+    "Strict source-pinned recipient and candidate policy checks",
+    "Small original image updates through each new recipient profile, including a return update",
+    "Exact full target guest RAM CRC, programming, complete padded IP readback and separate completion status",
+    "Retained-NOR reset using the complete verified target extent",
+    "Fresh B1 DEL-selected writer boot through the real selector",
+    "Separate normal R3 sampler startup qualification"
+  ],
+  "sharedSourceManifestCheck": {
+    "manifestPath": "../sp404mk2/sdk/examples/original_r48/build/manifest.json",
+    "checkedInputs": 24,
+    "matchingInputs": 24,
+    "retainedDefaultCompatibilityArtifactMatchesHistoricalR16b": true,
+    "currentParameterizedSourceManifestAndHistoricalPackageManifestAreDistinct": true,
+    "rebuildPerformed": false
+  },
+  "sourcePins": [
+    {
+      "path": "../sp404mk2/sdk/examples/original_r16b/startup.S",
+      "bytes": 2168,
+      "sha256": "302aa781a881b7e26a065b89a2c056071a835a4f2e8cfc5c322d2f9a03dbbc6b",
+      "expectedSha256": "302aa781a881b7e26a065b89a2c056071a835a4f2e8cfc5c322d2f9a03dbbc6b",
+      "matchesManifest": true
+    },
+    {
+      "path": "../sp404mk2/sdk/examples/original_r16b/monitor.c",
+      "bytes": 4597,
+      "sha256": "2658fff68dfe3a9b5faf9977299e3dade2aa2bb822017f1c1dde10e511b7bf56",
+      "expectedSha256": "2658fff68dfe3a9b5faf9977299e3dade2aa2bb822017f1c1dde10e511b7bf56",
+      "matchesManifest": true
+    },
+    {
+      "path": "../sp404mk2/sdk/examples/original_r16b/board.c",
+      "bytes": 8553,
+      "sha256": "e7a07beb7a6dbc074461eea85cf51a5f586e2cdea2a4eba8a623d4928928c8c4",
+      "expectedSha256": "e7a07beb7a6dbc074461eea85cf51a5f586e2cdea2a4eba8a623d4928928c8c4",
+      "matchesManifest": true
+    },
+    {
+      "path": "../sp404mk2/sdk/examples/original_r16b/screen.c",
+      "bytes": 4839,
+      "sha256": "17f6f14e357badd1aaf9c89aa41ddaa8a9aff42fa5ebe5d58135809027b0c900",
+      "expectedSha256": "17f6f14e357badd1aaf9c89aa41ddaa8a9aff42fa5ebe5d58135809027b0c900",
+      "matchesManifest": true
+    },
+    {
+      "path": "../sp404mk2/sdk/examples/original_r16b/local_input.c",
+      "bytes": 4743,
+      "sha256": "21214f6cd3b1145572c0f944547687e4c5ee81ccc5ce7ca389a71a59738fb1f6",
+      "expectedSha256": "21214f6cd3b1145572c0f944547687e4c5ee81ccc5ce7ca389a71a59738fb1f6",
+      "matchesManifest": true
+    },
+    {
+      "path": "../sp404mk2/sdk/examples/original_r16b/usb_device.c",
+      "bytes": 7538,
+      "sha256": "295869eb8226f8de6cdd0f9db7660a1d666753cf0f2636ba99433b275fb6ccfc",
+      "expectedSha256": "295869eb8226f8de6cdd0f9db7660a1d666753cf0f2636ba99433b275fb6ccfc",
+      "matchesManifest": true
+    },
+    {
+      "path": "../sp404mk2/sdk/examples/original_r16b/usb_upload.c",
+      "bytes": 5826,
+      "sha256": "7a8aab9d423041cedc42fb94c8a5041fd38f002f45b7091ea13b2f5e11f48d69",
+      "expectedSha256": "7a8aab9d423041cedc42fb94c8a5041fd38f002f45b7091ea13b2f5e11f48d69",
+      "matchesManifest": true
+    },
+    {
+      "path": "../sp404mk2/sdk/examples/original_r16b/flash.c",
+      "bytes": 10897,
+      "sha256": "19e912277ac87d006d5647a8d663f3ea88f6fa864a5513b59fe6feae27e49aff",
+      "expectedSha256": "19e912277ac87d006d5647a8d663f3ea88f6fa864a5513b59fe6feae27e49aff",
+      "matchesManifest": true
+    },
+    {
+      "path": "../sp404mk2/sdk/examples/original_r16b/control_capture.c",
+      "bytes": 3155,
+      "sha256": "02f31a9f3522bb8b2cf8e8b10964334ff0b420fabf4e36c6fcfd3183f455c555",
+      "expectedSha256": "02f31a9f3522bb8b2cf8e8b10964334ff0b420fabf4e36c6fcfd3183f455c555",
+      "matchesManifest": true
+    },
+    {
+      "path": "../sp404mk2/sdk/examples/original_r16b/controls.c",
+      "bytes": 1810,
+      "sha256": "c2403ae07bac951f2d84cae6c0865d62431489b83d6974ff0c6a23e7b52fbe6b",
+      "expectedSha256": "c2403ae07bac951f2d84cae6c0865d62431489b83d6974ff0c6a23e7b52fbe6b",
+      "matchesManifest": true
+    },
+    {
+      "path": "../sp404mk2/sdk/examples/original_r16b/control_map.c",
+      "bytes": 3496,
+      "sha256": "9b5dd72d0210d68893d445208fa3167c1bc47fdb0b3b143a2f355c43ad7a1553",
+      "expectedSha256": "9b5dd72d0210d68893d445208fa3167c1bc47fdb0b3b143a2f355c43ad7a1553",
+      "matchesManifest": true
+    },
+    {
+      "path": "../sp404mk2/sdk/examples/original_r16b/named_input.c",
+      "bytes": 1313,
+      "sha256": "d958f9c26524dfb721d368556f3fc24938d515f3f9bba6810c65c2ff8ac5d407",
+      "expectedSha256": "d958f9c26524dfb721d368556f3fc24938d515f3f9bba6810c65c2ff8ac5d407",
+      "matchesManifest": true
+    },
+    {
+      "path": "../sp404mk2/sdk/examples/original_r16b/audio_probe.c",
+      "bytes": 4655,
+      "sha256": "87d2a5e47ae07045b3b67fb59019da030ca1a1b6652b67e12e8ddc209b079390",
+      "expectedSha256": "87d2a5e47ae07045b3b67fb59019da030ca1a1b6652b67e12e8ddc209b079390",
+      "matchesManifest": true
+    },
+    {
+      "path": "../sp404mk2/sdk/examples/original_r16b/app1.ld",
+      "bytes": 1742,
+      "sha256": "812b6ef37b378f6f62861ed8f972ddf993e21ed08a6656878634f63225701790",
+      "expectedSha256": "812b6ef37b378f6f62861ed8f972ddf993e21ed08a6656878634f63225701790",
+      "matchesManifest": true
+    },
+    {
+      "path": "../sp404mk2/sdk/examples/original_r16b/board.h",
+      "bytes": 625,
+      "sha256": "d8cf29f9e5f0c0d8eb78038462b74890d84c56421d71f22f6f93be6f090dcde9",
+      "expectedSha256": "d8cf29f9e5f0c0d8eb78038462b74890d84c56421d71f22f6f93be6f090dcde9",
+      "matchesManifest": true
+    },
+    {
+      "path": "../sp404mk2/sdk/examples/original_r16b/local_input.h",
+      "bytes": 335,
+      "sha256": "b96531bdf4d9423800f23262239de4eaad0fbdf3cc7eb38f6c4845ad0b237f2c",
+      "expectedSha256": "b96531bdf4d9423800f23262239de4eaad0fbdf3cc7eb38f6c4845ad0b237f2c",
+      "matchesManifest": true
+    },
+    {
+      "path": "../sp404mk2/sdk/examples/original_r16b/usb_upload.h",
+      "bytes": 431,
+      "sha256": "ef6e8cb55fefb5f2f32c194793539e4ac9c9dda353b5e0e880cd0a12c69ac23a",
+      "expectedSha256": "ef6e8cb55fefb5f2f32c194793539e4ac9c9dda353b5e0e880cd0a12c69ac23a",
+      "matchesManifest": true
+    },
+    {
+      "path": "../sp404mk2/sdk/examples/original_r16b/flash.h",
+      "bytes": 669,
+      "sha256": "aa096d5d1c20e7d4b1136dadc51ba6b2a18096826bac111b370d9a5b0e507334",
+      "expectedSha256": "aa096d5d1c20e7d4b1136dadc51ba6b2a18096826bac111b370d9a5b0e507334",
+      "matchesManifest": true
+    },
+    {
+      "path": "../sp404mk2/sdk/examples/original_r16b/control_capture.h",
+      "bytes": 423,
+      "sha256": "9b9da35671ec042f6452022c7036bb98b7b86398c7142eaab2d48e247de9ece2",
+      "expectedSha256": "9b9da35671ec042f6452022c7036bb98b7b86398c7142eaab2d48e247de9ece2",
+      "matchesManifest": true
+    },
+    {
+      "path": "../sp404mk2/sdk/examples/original_r16b/controls.h",
+      "bytes": 1026,
+      "sha256": "8f0eaa069fc355a44da222bdb6c71225872e5180f1070352b785759974071b1f",
+      "expectedSha256": "8f0eaa069fc355a44da222bdb6c71225872e5180f1070352b785759974071b1f",
+      "matchesManifest": true
+    },
+    {
+      "path": "../sp404mk2/sdk/examples/original_r16b/named_input.h",
+      "bytes": 376,
+      "sha256": "a628178fd98f752af1f8aecbbab6ac82be1ef6d2f243a20071d11f572414db74",
+      "expectedSha256": "a628178fd98f752af1f8aecbbab6ac82be1ef6d2f243a20071d11f572414db74",
+      "matchesManifest": true
+    },
+    {
+      "path": "../sp404mk2/sdk/examples/original_r16b/audio_probe.h",
+      "bytes": 584,
+      "sha256": "af8a5a040cbaef4ffbec964f5ecc54d2a9dbcc2d5e29b259159c68a225af6154",
+      "expectedSha256": "af8a5a040cbaef4ffbec964f5ecc54d2a9dbcc2d5e29b259159c68a225af6154",
+      "matchesManifest": true
+    },
+    {
+      "path": "../sp404mk2/sdk/examples/original_r16b/generate_map.py",
+      "bytes": 1802,
+      "sha256": "f9a219f060c334f9808f480f7d5742dc1d93163a4b96bac3ca3adfc4ff2dd5cf",
+      "expectedSha256": "f9a219f060c334f9808f480f7d5742dc1d93163a4b96bac3ca3adfc4ff2dd5cf",
+      "matchesManifest": true
+    },
+    {
+      "path": "../sp404mk2/sdk/examples/original_r16b/control_profile.json",
+      "bytes": 37968,
+      "sha256": "42193d24ae9ddb94bea08f915533fa74cc9099db3e3f440091cb098eac329b4a",
+      "expectedSha256": "42193d24ae9ddb94bea08f915533fa74cc9099db3e3f440091cb098eac329b4a",
+      "matchesManifest": true
+    },
+    {
+      "path": "../sp404mk2/sdk/examples/original_r16b/build.py",
+      "bytes": 3833,
+      "sha256": "e04304444e77765dee33dea827a5425978d71224588e485d4043522fe044ab84"
+    },
+    {
+      "path": "../sp404mk2/sdk/examples/original_r48/build.py",
+      "bytes": 5903,
+      "sha256": "8f594701ab9b23c0a0c14578d5b922065f3223ccdede2bf90727dbd868113957"
+    },
+    {
+      "path": "../sp404mk2/tools/usb_flash_r16b.py",
+      "bytes": 5152,
+      "sha256": "18d7d18e7816afd84ffd75e99adb4be502d302aa357ddbab279f79078c8ef7b0"
+    },
+    {
+      "path": "../sp404mk2/tools/usb_flash_r48.py",
+      "bytes": 6369,
+      "sha256": "f3630021b7aea4e894fa78d11fed393222395388acc75e4a9967915c23280130"
+    },
+    {
+      "path": "../sp404mk2/tools/usb_flash_r15.py",
+      "bytes": 5127,
+      "sha256": "59ba0e03a2d2953c19266bd121e241c8f7003336b7b052b542887d8d9c1d2845"
+    },
+    {
+      "path": "../sp404mk2/tools/usb_upload.py",
+      "bytes": 3212,
+      "sha256": "f2f212f99c33b411189dafa7863f075044165b4186980fd4d124cc7d7362fa71"
+    },
+    {
+      "path": "../sp404mk2/sdk/examples/usb_bridge_b1/bridge_entry.S",
+      "bytes": 1991,
+      "sha256": "c9342ca24e1ac4d05f5da3c80f7f90d4ac8e995e7c8f617e01c7454cb8705d73"
+    },
+    {
+      "path": "../sp404mk2/sdk/examples/usb_bridge_b1/monitor.c",
+      "bytes": 4394,
+      "sha256": "308be18747d6a45fcd80d44cfc8ec1c7de3b994abff618520703cad6e69acd83"
+    },
+    {
+      "path": "../sp404mk2/sdk/examples/usb_bridge_b1/usb_upload.c",
+      "bytes": 5428,
+      "sha256": "3abcd093a91e12537d0f27c72d75260d1320e465d3b77acd7e7d1819c4765622"
+    },
+    {
+      "path": "../sp404mk2/sdk/examples/usb_bridge_b1/usb_device.c",
+      "bytes": 7457,
+      "sha256": "143d1b6ef90f36d7f9fc8f356866bb095b02db9b3cb520f2ae6e26bd7e09af7e"
+    },
+    {
+      "path": "../sp404mk2/sdk/examples/usb_bridge_b1/app1.ld",
+      "bytes": 1883,
+      "sha256": "4121ad7155138d9b9d39292987a4122f8ace50f3e2c91a5f0c41473b562858af"
+    },
+    {
+      "path": "src/lib/emulator/update.ts",
+      "bytes": 25825,
+      "sha256": "4edb47e17d68bed3afcf28f6c6b80236ea081781a31944100e3ab4570b41d531"
+    },
+    {
+      "path": "src/lib/emulator/session.ts",
+      "bytes": 15220,
+      "sha256": "da7671bc2ff356d99a643314f498749d15247323aec051f6395a6bf0fbf47563"
+    },
+    {
+      "path": "src/lib/emulator/worker-rpc.ts",
+      "bytes": 20185,
+      "sha256": "c40720bc343cde4362d2678ec7cd6dc5574997a465bdc5dd9c24ae917fe3f59d"
+    }
+  ],
+  "binaryPins": [
+    {
+      "path": "../sp404mk2/sdk/examples/original_r16b/build/original_r16b.bin",
+      "bytes": 17156,
+      "sha256": "7bcc3537ea94288451738f14a428f44d87ca4db9887a27ad5bd3f99d05a16e2d",
+      "expectedSha256": "7bcc3537ea94288451738f14a428f44d87ca4db9887a27ad5bd3f99d05a16e2d",
+      "matchesExpectedHash": true,
+      "role": "Retained normal R16B writer",
+      "crc32": "0x9877AF99",
+      "firstWord": "0x466D4604",
+      "paddedLength": 20480,
+      "paddedSectorCount": 5,
+      "dataPacketsAt56ByteChunks": 307
+    },
+    {
+      "path": "../sp404mk2/sdk/examples/original_r16b/build_proof/original_r16b.bin",
+      "bytes": 17156,
+      "sha256": "cd25166fdb6d2adae41fd1028f101ca495278345e6bf932f4e500efa873fb19b",
+      "expectedSha256": "cd25166fdb6d2adae41fd1028f101ca495278345e6bf932f4e500efa873fb19b",
+      "matchesExpectedHash": true,
+      "role": "Retained proof R16B writer",
+      "crc32": "0xBF5E5B44",
+      "firstWord": "0x466D4604",
+      "paddedLength": 20480,
+      "paddedSectorCount": 5,
+      "dataPacketsAt56ByteChunks": 307
+    },
+    {
+      "path": "../sp404mk2/sdk/examples/original_r48/build/original_r48.bin",
+      "bytes": 17156,
+      "sha256": "11d7631ea73232fbfe2bb30ca6a705f416417cb1aec54290a04944a26d7edba4",
+      "expectedSha256": "11d7631ea73232fbfe2bb30ca6a705f416417cb1aec54290a04944a26d7edba4",
+      "matchesExpectedHash": true,
+      "role": "Retained normal R48 writer",
+      "crc32": "0x4B72185E",
+      "firstWord": "0x466D4604",
+      "paddedLength": 20480,
+      "paddedSectorCount": 5,
+      "dataPacketsAt56ByteChunks": 307
+    },
+    {
+      "path": "../sp404mk2/sdk/examples/original_r48/build/r16b_default_compat.bin",
+      "bytes": 17156,
+      "sha256": "7bcc3537ea94288451738f14a428f44d87ca4db9887a27ad5bd3f99d05a16e2d",
+      "expectedSha256": "7bcc3537ea94288451738f14a428f44d87ca4db9887a27ad5bd3f99d05a16e2d",
+      "matchesExpectedHash": true,
+      "role": "Retained default-compatibility artifact; no rebuild performed in this review",
+      "crc32": "0x9877AF99",
+      "firstWord": "0x466D4604",
+      "paddedLength": 20480,
+      "paddedSectorCount": 5,
+      "dataPacketsAt56ByteChunks": 307
+    },
+    {
+      "path": "../sp404mk2/custom_firmware/build/original_r16b/RESTORE/SP404MKII_APP1_R3.bin",
+      "bytes": 2652672,
+      "sha256": "2740e108d710217a3203b964a9433c123d2bb62800896dc10ae40d13b8b7dbdc",
+      "expectedSha256": "2740e108d710217a3203b964a9433c123d2bb62800896dc10ae40d13b8b7dbdc",
+      "matchesExpectedHash": true,
+      "role": "Exact full-image target accepted by default R16B",
+      "crc32": "0x2A7BB1D3",
+      "firstWord": "0x6801480D",
+      "paddedLength": 2654208,
+      "paddedSectorCount": 648,
+      "dataPacketsAt56ByteChunks": 47370
+    },
+    {
+      "path": "../sp404mk2/custom_firmware/build/usb_bridge_b1/r3/SP404MKII_APP1.bin",
+      "bytes": 2671332,
+      "sha256": "475835a7c076feeb6a7d4f3a4eddf50fcb215b64c3f59048d0eae40a6e061dc1",
+      "expectedSha256": "475835a7c076feeb6a7d4f3a4eddf50fcb215b64c3f59048d0eae40a6e061dc1",
+      "matchesExpectedHash": true,
+      "role": "Exact full-image target accepted by R48",
+      "crc32": "0x2A98C325",
+      "firstWord": "0xBFFEF287",
+      "paddedLength": 2674688,
+      "paddedSectorCount": 653,
+      "dataPacketsAt56ByteChunks": 47703
+    }
+  ],
+  "referencePins": [
+    {
+      "path": "../sp404mk2/sdk/examples/original_r16b/USB.md",
+      "bytes": 892,
+      "sha256": "75cd772fa60aea7e58d3e4efd92befffe14e1fbc080a877e6aac8111edea3408"
+    },
+    {
+      "path": "../sp404mk2/sdk/examples/original_r16b/FLASH.md",
+      "bytes": 938,
+      "sha256": "2252a384444de38b06bae88998837fad99c6dff4bfb5efedd2f1da0d9a6cb2b1"
+    },
+    {
+      "path": "../sp404mk2/sdk/examples/original_r16b/build/manifest.json",
+      "bytes": 4679,
+      "sha256": "0a34e4641f46dad33b5b14b73dfa565b82e82caa78159b3254089d5f2fc1ae7b"
+    },
+    {
+      "path": "../sp404mk2/sdk/examples/original_r16b/build_proof/manifest.json",
+      "bytes": 4706,
+      "sha256": "d34504764aefe127bb58957622135d9d8a4eacbb08af20476dc264a5c1f704f2"
+    },
+    {
+      "path": "../sp404mk2/custom_firmware/build/original_r16b/manifest.json",
+      "bytes": 6715,
+      "sha256": "c9ae35dd3c5cdce8dad27cc62c2b0efc1c93489f684e90a93275938aa7615186"
+    },
+    {
+      "path": "../sp404mk2/custom_firmware/original_r16b/HARDWARE_RESULT.md",
+      "bytes": 3040,
+      "sha256": "0c36bdded1162e5e3c4d00e130c209040c0e74aa5f7163d37662aceef8a54a77"
+    },
+    {
+      "path": "../sp404mk2/sdk/examples/original_r48/README.md",
+      "bytes": 1431,
+      "sha256": "6b1a1d41e03d0daf8d63ee4c42955ad7f922a5b8534b5c175b7e9fb49b7f55dc"
+    },
+    {
+      "path": "../sp404mk2/sdk/examples/original_r48/build/manifest.json",
+      "bytes": 5692,
+      "sha256": "1e7fa9ff3f358dacd24b0e7fd475d0dd644fac2a59a7b049c56bf35de61c488d"
+    },
+    {
+      "path": "../sp404mk2/sdk/examples/original_r48/HARDWARE_RESULT.md",
+      "bytes": 1504,
+      "sha256": "7b559befb85f4664b3f31d9d253117523c31cb45cc000ef96982ff717bc7a469"
+    },
+    {
+      "path": "../sp404mk2/sdk/examples/usb_bridge_b1/build/manifest.json",
+      "bytes": 4947,
+      "sha256": "fb0ed457328d7097c71aa17d2832ac78ebbf23828b4f35bdffbb7485e8be806c"
+    },
+    {
+      "path": "../sp404mk2/custom_firmware/build/usb_bridge_b1/manifest.json",
+      "bytes": 3846,
+      "sha256": "020d7ac18c7957d07c98e9cf89648c90d5422a0d4f055d87cb5460359de61bae"
+    },
+    {
+      "path": "../sp404mk2/custom_firmware/usb_bridge_b1/README.md",
+      "bytes": 5363,
+      "sha256": "2ce2506a5129c7fd2ce7e4a0dacf7e8416dd20257e39aeb287f34e82fe3337d8"
+    },
+    {
+      "path": "../sp404mk2/analysis/hardware/usb_r11_20260922T190757Z/preflight.json",
+      "bytes": 7776,
+      "sha256": "fa098817b8c8fd76d4ac19e46784f020c6fc8d1ad4fc205a0cdacb742c64c9cb"
+    },
+    {
+      "path": "docs/emulator-update-contract.md",
+      "bytes": 11189,
+      "sha256": "f1bc57cb968b911b0c312ed49122a6105ffed376f348b53c9679efc6d1ce3a7b"
+    },
+    {
+      "path": "docs/emulator-stock-qualification.md",
+      "bytes": 5664,
+      "sha256": "9b919e3f098ffae72a664ea96f1fbaef22c2cf3a7f8cde8f306fbf1cf5cb5029"
+    },
+    {
+      "path": "docs/emulator-larger-writer-profiles.md",
+      "bytes": 8385,
+      "sha256": "4c0d4660b20cb8457b0ebe8e9b0f631f823afeea9825290fb51de984778b54b8"
+    }
+  ],
+  "sourceAndArtifactStability": {
+    "checkedBeforeAndAfterReceiptAssembly": true
+  }
+}

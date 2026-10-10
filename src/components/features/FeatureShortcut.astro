@@ -1,0 +1,21 @@
+---
+import {physicalControls} from '../../lib/features/selection';
+import type {FeatureShortcutPresentation} from '../../lib/features/presentation';
+import defaultCopy from '../../content/features.json';
+interface Props {feature:FeatureShortcutPresentation;copy?:typeof defaultCopy;chooserLabel?:string;}
+const {feature,copy=defaultCopy,chooserLabel='Shared feature chooser'}=Astro.props;
+const controls=physicalControls.filter(c=>c.shortcut&&!['DEL','EXIT'].includes(c.id));
+const scopeNote=feature.shortcutScope==='sampler-idle'?copy.samplerShortcutScope:feature.shortcutScope==='normal-ui'?copy.normalUiShortcutScope:copy.unregisteredShortcutScope;
+---
+<fieldset class="feature-shortcut" data-shortcut={feature.id} data-component="Feature shortcut" hidden>
+  <legend>{feature.name}</legend>
+  <label class="feature-entry-kind"><span>Open with</span><select data-entry={feature.id} disabled><option value="chord">Button shortcut</option><option value="chooser">{chooserLabel}</option></select></label>
+  <div class="feature-chord-fields" data-chord-fields={feature.id}>
+    {[0,1,2].map(position=><label><span>{position===0?'Hold first':position===1?'Then press, or hold':'Third control (optional)'}</span><select data-chord-feature={feature.id} data-position={position} disabled>
+      {position===2&&<option value="">No third control</option>}
+      {controls.map(control=><option value={control.id} selected={feature.defaultControls[position]===control.id}>{control.label}</option>)}
+    </select></label>)}
+  </div>
+  <p class="feature-shortcut-preview" data-shortcut-preview={feature.id}></p>
+  <p class="feature-shortcut-scope" data-shortcut-scope={feature.shortcutScope??'unregistered'}>{scopeNote}</p>
+</fieldset>

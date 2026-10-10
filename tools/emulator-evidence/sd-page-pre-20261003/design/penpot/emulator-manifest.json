@@ -1,0 +1,82 @@
+{
+  "schema": "opensp-emulator-native-manifest-v1",
+  "revision": "2026-10-02",
+  "source": {
+    "fileId": "24d9d841-759d-81bc-8008-b518bc70d8b3",
+    "componentPageId": "6bf32eef-e7db-8057-8008-bb287464969a",
+    "layoutPageId": "6bf32eef-e7db-8057-8008-bb287467b2ff"
+  },
+  "status": "Native design saved and reviewed; local website undeployed",
+  "coverage": {
+    "emulatorMains": 14,
+    "pageLayouts": 4,
+    "linkedHeadsPerLayout": 96,
+    "readingTextsPerLayout": 77,
+    "illustrativeStates": 4,
+    "footerInstances": 80,
+    "mobileFooters": 40,
+    "darkFooters": 40
+  },
+  "validation": {
+    "command": "node --test tests/emulator-design.test.mjs",
+    "passed": 7,
+    "failed": 0,
+    "kind": "Native snapshot structure, shared copy, component identity and measured text bounds"
+  },
+  "review": {
+    "disposition": "ship",
+    "scope": "Native emulator layouts and shared Footer; engine completeness and deployment excluded",
+    "method": "Parent reviewed all four actual native canvas PNGs in one batch; fresh reviewer spawn rejected at agent thread limit",
+    "materialFixes": [],
+    "captureLimitation": "Desktop light canvas has a violet editor hover outline; clean native SVG exists. Hosted export timeouts and assembled pixel-strip method are documented.",
+    "reviewArtifacts": ".impeccable/review/emulator-native/",
+    "incumbentSystem": "DESIGN.md and .impeccable/design.json preserved; extension reuses the existing semantic colors, Arimo/Cousine, thin rules and square controls"
+  },
+  "snapshots": [
+    {
+      "path": "design/penpot/emulator-components.json",
+      "bytes": 734193,
+      "sha256": "77127da0b8dd63857b5206831c313db8aac7130d3d64ab5ec1f67c36cb6ba07a"
+    },
+    {
+      "path": "design/penpot/emulator-layouts.json",
+      "bytes": 347383,
+      "sha256": "1fecf7e634937a1ebe1c0aaa436ee5549a73406d2dd2c5cd1079f89ade79888c"
+    },
+    {
+      "path": "design/penpot/emulator-states.json",
+      "bytes": 7671,
+      "sha256": "769f47551a99d2d78525e47b85fd164f358f673fe1a31d838ffe9540d60915a6"
+    },
+    {
+      "path": "design/penpot/emulator-footer-components.json",
+      "bytes": 5075,
+      "sha256": "4969530c032b10d156cc132a14ecc0ddbe19a5299fa69085b2ee70ecccc5df8e"
+    },
+    {
+      "path": "design/penpot/emulator-footer-propagation.json",
+      "bytes": 27793,
+      "sha256": "38194adc20453433d45580488a158ef7e51d85bedfbf90a9cca2b14b53d14b3e"
+    },
+    {
+      "path": "design/penpot/emulator-footer-bounds.json",
+      "bytes": 182529,
+      "sha256": "8286db9cfc27e56a4f6e8be8514ed4fac1b4aed599fc37914e11903413030aeb"
+    },
+    {
+      "path": "design/penpot/emulator-footer-failed-pass.json",
+      "bytes": 1093,
+      "sha256": "bc83f57588f1627c9fc3ab5ad4580164524b85f8abc3a75b4ee83b2ca6df7b7f"
+    },
+    {
+      "path": "design/penpot/emulator-image-export-status.json",
+      "bytes": 1352,
+      "sha256": "ef3b7ac0304bce9527023417fc7168052f73875e32deb97acc2160c9d1f6b030"
+    },
+    {
+      "path": "src/content/emulator.json",
+      "bytes": 4223,
+      "sha256": "b3ffe9b0f8d9f3191a579adae099a25314ef4e2424f57213963013ddd6306673"
+    }
+  ]
+}

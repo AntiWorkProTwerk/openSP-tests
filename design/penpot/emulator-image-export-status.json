@@ -1,0 +1,18 @@
+{
+  "source": {
+    "fileId": "24d9d841-759d-81bc-8008-b518bc70d8b3",
+    "pageId": "6bf32eef-e7db-8057-8008-bb287467b2ff"
+  },
+  "revision": "2026-10-02",
+  "nativeApiSnapshots": "Four layout exports, fourteen mains, state sheet and eighty footer instances completed",
+  "hostedImageExports": [
+    {"board": "Firmware emulator / Desktop / Light", "format": "png", "result": "Client timeout; no image file"},
+    {"board": "Firmware emulator / Desktop / Light", "format": "svg", "result": "Completed; native SVG contains public Penpot font URLs for Arimo and Cousine"},
+    {"board": "Firmware emulator / Desktop / Dark", "format": "svg", "result": "Hosted task timed out after 120 seconds; no file"},
+    {"board": "Firmware emulator / Mobile / Light", "format": "svg", "result": "Hosted task timed out after 120 seconds; no file"}
+  ],
+  "cause": "Not established",
+  "fallback": "Four full-page review PNGs assembled from unedited vertical strips of the owned Penpot canvas; desktop zoom0.65, mobile zoom1. Capture manifest and pixels remain in the ignored review directory.",
+  "captureLimitation": "The light desktop canvas retains a violet editor hover outline. API readback found empty native session strokes/fills and an empty selection. Its successful SVG is the clean native export for that board.",
+  "shapeMutationsDuringCapture": false
+}

@@ -1,0 +1,34 @@
+{
+  "scope": "Exact focused docs before flash whole-firmware acceptance and mailbox wording sync",
+  "schema": 1,
+  "files": {
+    "docs/emulator.md": {
+      "bytes": 22393,
+      "sha256": "79f72a972385d518b11994303ed49fd3931ac4110273b4259ec6fd3375d7af3a"
+    },
+    "docs/emulator-board-contract.md": {
+      "bytes": 14890,
+      "sha256": "1aaf766d3f12f80eb0a3ccaa5a46fc6e67a5f66ca1e3762f64bd5c7bff49ba49"
+    },
+    "docs/emulator-pll-audio.md": {
+      "bytes": 5124,
+      "sha256": "2bea5d0d0635730f5803f87511d422f6fca3fbfd022d15228f7d6d21b3cfae8c"
+    },
+    "docs/emulator-stock-qualification.md": {
+      "bytes": 8682,
+      "sha256": "5ea6b3fee02492870b87e6452126c99eba3bf5848dfe190ca1f48c628f5e8c97"
+    },
+    "docs/emulator-firmware-tests.md": {
+      "bytes": 10405,
+      "sha256": "a8fa934022fec81e0311d0f2e26d25316009ecba4e79b2150126e05df02a97eb"
+    },
+    "docs/emulator-larger-writer-profiles.md": {
+      "bytes": 13344,
+      "sha256": "8742b06236c79eba850f24bb6a981f2a89a231eb649f5464e039465bdc245def"
+    },
+    "docs/emulator-update-contract.md": {
+      "bytes": 16002,
+      "sha256": "2e5a5d4cc15500dfaf13180e99c030a63244a9f77dfda1c27f6fdac35fb601a1"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "scope": "Exact prior whole-image tool, recovered after the oscillator observer edit by reversing only that local edit; independently hash checked",
+  "sha256": "5ec4fb7b3a2dc14ab8c73e1ec9018caa991da974d0445d4eca93711eecdb4aed",
+  "referenceBase": "OpenSP repository",
+  "originalReport": "../sp404mk2/analysis/emulator/vendor_candidate_temp_lifetime_upstream_20261003/stock-whole-image.json",
+  "guestExecuted": false
+}

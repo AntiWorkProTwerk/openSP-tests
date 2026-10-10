@@ -1,0 +1,11 @@
+{
+  "scope": "Exact board after optional USDHC qualification, before DCDC integration",
+  "sha256": "2ca1a22e2876adb85fe71e24dcee81f04a326a4c5862a1d839d4c7761063da38",
+  "guestExecuted": false,
+  "qualification": "tools/emulator-evidence/usdhc-board-qualification-20261003.json",
+  "dcdcComponentDoc": {
+    "source": "docs/emulator-dcdc.md",
+    "retained": "emulator-dcdc.md",
+    "sha256": "1fb5a74164bce3bf27e26abb366fc666821a1cd07a755c7515eea0f5c98146e8"
+  }
+}

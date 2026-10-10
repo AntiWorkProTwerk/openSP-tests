@@ -1,0 +1,530 @@
+{
+  "schema": 1,
+  "width": 128,
+  "height": 64,
+  "provenance": "Host renders of the openSynth display code (OpenSP source) by tools/opensynth-render; not device captures, and frame timing is set for the page. No Roland firmware, stock screens or logos.",
+  "display_sources": {
+    "module": "diagnostics/opensynth_p12_combined_build_11/final-build-001/module/source",
+    "sources": {
+      "p6/sp_p6_view.c": "54328e256c6042087e4e9b9a82f9d817e924d2cf9214b87fd654541a3b3cfd70",
+      "p6/sp_synth_preview_voice.c": "3aff0695d0a82a5e6345db693b8df4d86340adc944da3897707dcab3e2956bcc",
+      "p6/sp_p6_volume.c": "2fdd5a92b778ac34485f180b87f239829b56620dc105592d6876f589f8307992",
+      "p6/sp_p4_controls.c": "57fb4d7d701e8a6930011941f0d1ba72d1a54ef1870ab61ac98c471df0c9c6d2",
+      "p6/sp_synth_preview_visual.c": "1a9c1fd56f10ef999b9effe2481e53876fa5bf1c22faf331f974b745c7ad6d65",
+      "p5/dsp/src/sp_synth_dsp.c": "91ef1762b15c201e367c73902eb85dff3c4e20fb7beacf30fd17388d49d29217",
+      "p7/sp_p6_rec_modal_view.c": "ae9739c229db5c71ea81fc12e9fa5e33823d32e965feb493176195a50aed9942",
+      "p7/sp_p6_pattern_transport_view.c": "27e992fc39edc44eb9ef50608c169c7af224b2e0ce9e1308e9e7bcc0a72c6534"
+    },
+    "harness_sha256": "3fe70192bf9e61e3023c0f7f44d5538709728c607ac37e2a1fbad7cd9576a84e"
+  },
+  "animations": [
+    {
+      "id": "scope",
+      "title": "Scope",
+      "caption": "Slow Pad: the scope keeps drawing the release tail until the note fades out.",
+      "src": "/opensynth/screens/scope.png",
+      "frames": 6,
+      "durations": [
+        900,
+        450,
+        450,
+        450,
+        450,
+        900
+      ],
+      "sprite_sha256": "eeec592f2557df91d9fab13ed85c7033504b0e1808f39049efb5c6e13596c140",
+      "sources": [
+        {
+          "path": "design/assets/screens/opensynth/frames/scope-1.png",
+          "sha256": "e2c4095051dc4575ab62b82e3761a8884ed07bde417cf9851331e97aa1e8b6ba"
+        },
+        {
+          "path": "design/assets/screens/opensynth/frames/scope-2.png",
+          "sha256": "5b3f2a6a7dd8f28e38d2fe51a0c63f79464ede82b4c5a22ec8b0affababdf0d8"
+        },
+        {
+          "path": "design/assets/screens/opensynth/frames/scope-3.png",
+          "sha256": "769ed2cb26edd45b8e3e1ebdb0f805168edcd44801c718139de15e05f7facde5"
+        },
+        {
+          "path": "design/assets/screens/opensynth/frames/scope-4.png",
+          "sha256": "a0e9c1ca8c19642285176279e39cbb160f34425e8425862bd67126327ac936ea"
+        },
+        {
+          "path": "design/assets/screens/opensynth/frames/scope-5.png",
+          "sha256": "8f4d6cd238917e20eb39a08bc49f410c0e6658a062dccb5316daf6cc524540ef"
+        },
+        {
+          "path": "design/assets/screens/opensynth/frames/scope-6.png",
+          "sha256": "73ac5b9b8400b38d6b6fbd7d63fc3bbf758c7301d4046202d0aacaaf829a366c"
+        }
+      ]
+    },
+    {
+      "id": "amp",
+      "title": "AMP envelope",
+      "caption": "The ADSR picture follows the newest note from attack to release.",
+      "src": "/opensynth/screens/amp.png",
+      "frames": 4,
+      "durations": [
+        700,
+        700,
+        900,
+        900
+      ],
+      "sprite_sha256": "2434c93dacd779e8f2981640769aec2840563f2c4c803f2341dc8d805b21d7af",
+      "sources": [
+        {
+          "path": "design/assets/screens/opensynth/frames/amp-1.png",
+          "sha256": "746f275d6fff85515f8641e1bd121d44bc41e8bde7cb2a00542b9ed79f836b94"
+        },
+        {
+          "path": "design/assets/screens/opensynth/frames/amp-2.png",
+          "sha256": "ee4bbc254a4049784629f61abaebfede28680818946312cf31ad9bd98f5b8ac1"
+        },
+        {
+          "path": "design/assets/screens/opensynth/frames/amp-3.png",
+          "sha256": "4eb43bcc3884a1bf9b092e66ba302508a337cccf9fda3b1c58135a5307e26305"
+        },
+        {
+          "path": "design/assets/screens/opensynth/frames/amp-4.png",
+          "sha256": "3f16f802bfc68ffed6f2b76a568db4041b1e5aac04867c502f6583510a9a7663"
+        }
+      ]
+    },
+    {
+      "id": "detune",
+      "title": "Detune",
+      "caption": "Soft Sine: with DETUNE up, the two oscillator waves drift past each other.",
+      "src": "/opensynth/screens/detune.png",
+      "frames": 6,
+      "durations": [
+        140,
+        140,
+        140,
+        140,
+        140,
+        140
+      ],
+      "sprite_sha256": "c4904c1bb0d4e84d68b39a46dd2cae37b937148551910b78fdabb7f2eb84de32",
+      "sources": [
+        {
+          "path": "design/assets/screens/opensynth/frames/detune-1.png",
+          "sha256": "e460c6cbb2cef02c6fd1870dc47927301ffc49aebb8b4ae87141d0af25a7e563"
+        },
+        {
+          "path": "design/assets/screens/opensynth/frames/detune-2.png",
+          "sha256": "4dd9193371a8cb7b77f052b651e66b9350530a62d9c697734df16ec0e545e0f8"
+        },
+        {
+          "path": "design/assets/screens/opensynth/frames/detune-3.png",
+          "sha256": "0763b70dc73d75f0e49516bf30d59cb942067cf8485112240e62d82e56ad0f99"
+        },
+        {
+          "path": "design/assets/screens/opensynth/frames/detune-4.png",
+          "sha256": "884781ef9244a698512d7b4b419c798b0efaea9a0e22205b24d21ffa5cebed49"
+        },
+        {
+          "path": "design/assets/screens/opensynth/frames/detune-5.png",
+          "sha256": "32d148d4697858accc6b3597a209c5f2919c073b347820280eac201427ce41e8"
+        },
+        {
+          "path": "design/assets/screens/opensynth/frames/detune-6.png",
+          "sha256": "c2ff342e3876fe3fb394fd9be30e86c4c549f65c158c113d0deb430cfa10f0b8"
+        }
+      ]
+    },
+    {
+      "id": "mix",
+      "title": "MIX",
+      "caption": "Soft Organ: the slider moves from oscillator A to B at 0, 50 and 100.",
+      "src": "/opensynth/screens/mix.png",
+      "frames": 3,
+      "durations": [
+        900,
+        900,
+        900
+      ],
+      "sprite_sha256": "8bcefba8b05156d14c2112f60fc6f52a74a5cd39e55e2a474018c42cd94d7263",
+      "sources": [
+        {
+          "path": "design/assets/screens/opensynth/frames/mix-1.png",
+          "sha256": "82d0489f5569c19e584e4725ef3a97867acb468b5173f3ebda6d65e224f97d2c"
+        },
+        {
+          "path": "design/assets/screens/opensynth/frames/mix-2.png",
+          "sha256": "cf76a6d7aa9d4ff1d474af7de9644028fb099a8c0c462065bed1d45e5ca5db1d"
+        },
+        {
+          "path": "design/assets/screens/opensynth/frames/mix-3.png",
+          "sha256": "3e8597646d3b706f006c8197d18a0230ea60bb0843a98b2f803684e952b50788"
+        }
+      ]
+    },
+    {
+      "id": "pw",
+      "title": "Pulse width",
+      "caption": "Acid Pulse: PW sets the pulse from 10 to 90 percent.",
+      "src": "/opensynth/screens/pw.png",
+      "frames": 3,
+      "durations": [
+        800,
+        800,
+        800
+      ],
+      "sprite_sha256": "2f3c4a937737665d696d8f0f3549f70d3411d2a622c553e168d895959ccc299e",
+      "sources": [
+        {
+          "path": "design/assets/screens/opensynth/frames/pw-1.png",
+          "sha256": "75dd8dc06cad0fe3bd4da52df49056da894ad648e8fe09f019af2493345b293d"
+        },
+        {
+          "path": "design/assets/screens/opensynth/frames/pw-2.png",
+          "sha256": "0a5aa31e6b012c8b4c18618af4763fe246b0b82dba2b741ce1fa7e9b3b837201"
+        },
+        {
+          "path": "design/assets/screens/opensynth/frames/pw-3.png",
+          "sha256": "cfb507403965a8c6042c9ef28134679064d57d7a10f7b0d2827dc2a4d316898e"
+        }
+      ]
+    },
+    {
+      "id": "pw-lock",
+      "title": "PW locked",
+      "caption": "Soft Sine, Warm Triangle and Wide Saw have no pulse oscillator, so PW is greyed out and shows --.",
+      "src": "/opensynth/screens/pw-lock.png",
+      "frames": 3,
+      "durations": [
+        1200,
+        1200,
+        1200
+      ],
+      "sprite_sha256": "e4dbd2adfb1ae0a512c3026222296fa048387ae5b5ef6652d47551df5bd08c29",
+      "sources": [
+        {
+          "path": "design/assets/screens/opensynth/frames/pwlock-1.png",
+          "sha256": "1c30471a35ba9d46d6476e5456c808bda9d3b5f934228cdb24d0e1a001344da0"
+        },
+        {
+          "path": "design/assets/screens/opensynth/frames/pwlock-2.png",
+          "sha256": "8d2d8de095a66c35caa67afb052c75854b488ec8e64afafed289480d3a77fc47"
+        },
+        {
+          "path": "design/assets/screens/opensynth/frames/pwlock-3.png",
+          "sha256": "cad44636c2563fe02e671b6191ebc7c7a397c70211cf356bae1e2a3266b6f12a"
+        }
+      ]
+    },
+    {
+      "id": "sounds",
+      "title": "Sixteen sounds",
+      "caption": "Soft Sine, Wide Saw as a chord, Acid Pulse, Slow Pad, Soft Organ and Sub Bass, each played on the pads.",
+      "src": "/opensynth/screens/sounds.png",
+      "frames": 6,
+      "durations": [
+        1100,
+        1100,
+        1100,
+        1100,
+        1100,
+        1100
+      ],
+      "sprite_sha256": "8749c2ec70a8e757c2a36380a23122bfb9dd3590327b605b86cf1d430a4e1a2e",
+      "sources": [
+        {
+          "path": "design/assets/screens/opensynth/frames/sounds-1.png",
+          "sha256": "bac273699ee0b071a364140655acaeedcd92b6d7659d67c096fd6df2a26d49b1"
+        },
+        {
+          "path": "design/assets/screens/opensynth/frames/sounds-2.png",
+          "sha256": "d8d04f480eecf2f56ecbb779b31405fc508482a2990604987d9ba31c5ff81e69"
+        },
+        {
+          "path": "design/assets/screens/opensynth/frames/sounds-3.png",
+          "sha256": "439387cb2b1d98b7ac5141507fd6faaf70b3f3a8d5cae2b30cd9804cd6ae9e85"
+        },
+        {
+          "path": "design/assets/screens/opensynth/frames/sounds-4.png",
+          "sha256": "39d0f8d2af20e7f6d966b2c72e2b3f79a5d05fbed8a2a2740b810f06283a9c81"
+        },
+        {
+          "path": "design/assets/screens/opensynth/frames/sounds-5.png",
+          "sha256": "fc19fd27b3c84dde1320c5a2932041ce224807ba9ac7953b6406f3efadbd49e4"
+        },
+        {
+          "path": "design/assets/screens/opensynth/frames/sounds-6.png",
+          "sha256": "68d2657de344d3432e2a6c7923b81256bcba345b78229c4f010553c17701cc73"
+        }
+      ]
+    },
+    {
+      "id": "pages",
+      "title": "Pages",
+      "caption": "Wide Saw with a chord held: TONE, OSC, AMP and MOD, each with its own picture and knob values.",
+      "src": "/opensynth/screens/pages.png",
+      "frames": 4,
+      "durations": [
+        1300,
+        1300,
+        1300,
+        1300
+      ],
+      "sprite_sha256": "410fca331e36d12074fb7f6d132f1ca973c7d1e246a0ecf915d9b86ce7fc21be",
+      "sources": [
+        {
+          "path": "design/assets/screens/opensynth/frames/pages-1.png",
+          "sha256": "02484dea102372fd11f3e853b5f955030c91a631970d6d58162e543c0ccfd16a"
+        },
+        {
+          "path": "design/assets/screens/opensynth/frames/pages-2.png",
+          "sha256": "65cee8790c17ca4bbfad9513799710adc738b6e5371bbd853ae59460a68cfb24"
+        },
+        {
+          "path": "design/assets/screens/opensynth/frames/pages-3.png",
+          "sha256": "8e833a84eb6d73789a57fe19a13ed7608df68b4b395f5cce6fce74ea883569bc"
+        },
+        {
+          "path": "design/assets/screens/opensynth/frames/pages-4.png",
+          "sha256": "d4dcf4e6a21ef8cab68d00f6a0a9470da69a2762759650658f7afe7c37874633"
+        }
+      ]
+    },
+    {
+      "id": "mix-pw",
+      "title": "MIX and PW",
+      "caption": "MIX at 0, 50 and 100 on Soft Organ, PW at 10, 50 and 90 percent on Acid Pulse, then PW greyed out on Soft Sine, Warm Triangle and Wide Saw.",
+      "src": "/opensynth/screens/mix-pw.png",
+      "frames": 9,
+      "durations": [
+        900,
+        900,
+        900,
+        800,
+        800,
+        800,
+        1100,
+        1100,
+        1100
+      ],
+      "sprite_sha256": "da937f7490960b82b9f17ed62b7b3fe898fa2a1b756b54ba1a6c3c024cefeca7",
+      "sources": [
+        {
+          "path": "design/assets/screens/opensynth/frames/mix-1.png",
+          "sha256": "82d0489f5569c19e584e4725ef3a97867acb468b5173f3ebda6d65e224f97d2c"
+        },
+        {
+          "path": "design/assets/screens/opensynth/frames/mix-2.png",
+          "sha256": "cf76a6d7aa9d4ff1d474af7de9644028fb099a8c0c462065bed1d45e5ca5db1d"
+        },
+        {
+          "path": "design/assets/screens/opensynth/frames/mix-3.png",
+          "sha256": "3e8597646d3b706f006c8197d18a0230ea60bb0843a98b2f803684e952b50788"
+        },
+        {
+          "path": "design/assets/screens/opensynth/frames/pw-1.png",
+          "sha256": "75dd8dc06cad0fe3bd4da52df49056da894ad648e8fe09f019af2493345b293d"
+        },
+        {
+          "path": "design/assets/screens/opensynth/frames/pw-2.png",
+          "sha256": "0a5aa31e6b012c8b4c18618af4763fe246b0b82dba2b741ce1fa7e9b3b837201"
+        },
+        {
+          "path": "design/assets/screens/opensynth/frames/pw-3.png",
+          "sha256": "cfb507403965a8c6042c9ef28134679064d57d7a10f7b0d2827dc2a4d316898e"
+        },
+        {
+          "path": "design/assets/screens/opensynth/frames/pwlock-1.png",
+          "sha256": "1c30471a35ba9d46d6476e5456c808bda9d3b5f934228cdb24d0e1a001344da0"
+        },
+        {
+          "path": "design/assets/screens/opensynth/frames/pwlock-2.png",
+          "sha256": "8d2d8de095a66c35caa67afb052c75854b488ec8e64afafed289480d3a77fc47"
+        },
+        {
+          "path": "design/assets/screens/opensynth/frames/pwlock-3.png",
+          "sha256": "cad44636c2563fe02e671b6191ebc7c7a397c70211cf356bae1e2a3266b6f12a"
+        }
+      ]
+    },
+    {
+      "id": "voice",
+      "title": "MONO or POLY",
+      "caption": "The same three-pad chord on Wide Saw: POLY4 plays three voices, MONO plays one.",
+      "src": "/opensynth/screens/voice.png",
+      "frames": 2,
+      "durations": [
+        1600,
+        1600
+      ],
+      "sprite_sha256": "4ea5a72aabda9868ed30bf3e3cade615ea9b8bcc333a3e75de7ae0fe44eba3b6",
+      "sources": [
+        {
+          "path": "design/assets/screens/opensynth/frames/voice-1.png",
+          "sha256": "f9b928a5c81590546f4ce49065afdcd5cc30565a1f9ae7baef6eeaeb28e4b970"
+        },
+        {
+          "path": "design/assets/screens/opensynth/frames/voice-2.png",
+          "sha256": "3edad025727a7aa0703b8fd443f04debdd6afbe28f3ba89c8be088b2631462b7"
+        }
+      ]
+    },
+    {
+      "id": "level",
+      "title": "Synth level",
+      "caption": "SHIFT + VALUE: the bottom line shows VOL and a bar while you turn, with a tick at the default level.",
+      "src": "/opensynth/screens/level.png",
+      "frames": 7,
+      "durations": [
+        1200,
+        450,
+        450,
+        800,
+        450,
+        450,
+        1200
+      ],
+      "sprite_sha256": "e83ff0a551902bcdc906bac9142f28b0a95fb1115f2908e20a5733e3f68f404e",
+      "sources": [
+        {
+          "path": "design/assets/screens/opensynth/frames/level-1.png",
+          "sha256": "968720fa77415ab88c70bd4bf6bc35fc00d8218778550fb43f8224048eaf91f5"
+        },
+        {
+          "path": "design/assets/screens/opensynth/frames/level-2.png",
+          "sha256": "5fecb20e87c966f42d03ca524fb55f8f9f0ac53d98cef710e9ef6bd1f69f01ed"
+        },
+        {
+          "path": "design/assets/screens/opensynth/frames/level-3.png",
+          "sha256": "c72a326e65e7ecb61dade600907310b68af5a1dc37a263850f1798bc607d1827"
+        },
+        {
+          "path": "design/assets/screens/opensynth/frames/level-4.png",
+          "sha256": "d6f4b8144b9927ce4557168018a2dc87859bc7e1d3cd73505f5e98c475ca99bc"
+        },
+        {
+          "path": "design/assets/screens/opensynth/frames/level-5.png",
+          "sha256": "c72a326e65e7ecb61dade600907310b68af5a1dc37a263850f1798bc607d1827"
+        },
+        {
+          "path": "design/assets/screens/opensynth/frames/level-6.png",
+          "sha256": "5fecb20e87c966f42d03ca524fb55f8f9f0ac53d98cef710e9ef6bd1f69f01ed"
+        },
+        {
+          "path": "design/assets/screens/opensynth/frames/level-7.png",
+          "sha256": "6af0b0de2443cb9724d069f8c8faa83fce3cb463c37e5d4c1c76aed20a6f8cb2"
+        }
+      ]
+    },
+    {
+      "id": "velocity",
+      "title": "Fixed velocity",
+      "caption": "Pluck played on four pads in turn. Synth notes have no velocity, so this screen looks the same with fixed velocity on or off.",
+      "src": "/opensynth/screens/velocity.png",
+      "frames": 5,
+      "durations": [
+        600,
+        600,
+        600,
+        900,
+        1200
+      ],
+      "sprite_sha256": "37ae8edbd56ae8abeedd5775e517ef5e494b514437b5b9a3bdaf2810b7e123aa",
+      "sources": [
+        {
+          "path": "design/assets/screens/opensynth/frames/velocity-1.png",
+          "sha256": "5ec9e3acc4148550b269972859f01988b233a748e49e9d5a22129884143086fc"
+        },
+        {
+          "path": "design/assets/screens/opensynth/frames/velocity-2.png",
+          "sha256": "df3b3f1731e374c0324658765ffe0d300eb0660eb84599c3afa2ddd11392a2b3"
+        },
+        {
+          "path": "design/assets/screens/opensynth/frames/velocity-3.png",
+          "sha256": "f26cb37f33e9645d3f61bbee3f9e23a1e3c3a1f02bed6630649489607b7a7be8"
+        },
+        {
+          "path": "design/assets/screens/opensynth/frames/velocity-4.png",
+          "sha256": "8571f4317e8dcccfb792e14faa680cb461b1b799176987636dd8ef89484e0b8c"
+        },
+        {
+          "path": "design/assets/screens/opensynth/frames/velocity-5.png",
+          "sha256": "0f85d4fd23a26208a026615a912a36a7342c7634b6042c0f302aa05ddd48cf10"
+        }
+      ]
+    },
+    {
+      "id": "patterns",
+      "title": "Patterns",
+      "caption": "The pattern chooser: A03 starts, A06 waits as the next pattern, then the pads play Wide Saw over it.",
+      "src": "/opensynth/screens/patterns.png",
+      "frames": 4,
+      "durations": [
+        1300,
+        1300,
+        1500,
+        1600
+      ],
+      "sprite_sha256": "d63347c34e59667ab95d00572a012188c7287ca5c93f4f76fe5dff5b4510e074",
+      "sources": [
+        {
+          "path": "design/assets/screens/opensynth/frames/patterns-1.png",
+          "sha256": "8c06db9027d408baf108a8762348f0d0a408a9664215fd140c225fc0851e28b0"
+        },
+        {
+          "path": "design/assets/screens/opensynth/frames/patterns-2.png",
+          "sha256": "5aa17333b659e8b333a35af25ffd047136d15489102bff1d33bc771997d093db"
+        },
+        {
+          "path": "design/assets/screens/opensynth/frames/patterns-3.png",
+          "sha256": "a7db6c0f4fb4bce244916d3e29045bf7973693064c9224875e136b6382bb0ff1"
+        },
+        {
+          "path": "design/assets/screens/opensynth/frames/patterns-4.png",
+          "sha256": "d8d04f480eecf2f56ecbb779b31405fc508482a2990604987d9ba31c5ff81e69"
+        }
+      ]
+    },
+    {
+      "id": "record",
+      "title": "Record to a pad",
+      "caption": "REC asks for an empty pad, pad 3 is armed, the frame count rises while you play, then SAVED.",
+      "src": "/opensynth/screens/record.png",
+      "frames": 6,
+      "durations": [
+        1400,
+        1400,
+        600,
+        600,
+        1000,
+        1600
+      ],
+      "sprite_sha256": "d5e97273043cbbddd5495b2190e44d13c0bd40b089403fbd1c57a2489a05b111",
+      "sources": [
+        {
+          "path": "design/assets/screens/opensynth/frames/record-1.png",
+          "sha256": "c2cdb465e5b630e2e5a0a6988d79f2b8b2ae0c2c1dede600d1800bbfc17e19ed"
+        },
+        {
+          "path": "design/assets/screens/opensynth/frames/record-2.png",
+          "sha256": "d39de28871dd299cfe80de6cdd7bac6ef02a29b9c8e82fc37568307254823517"
+        },
+        {
+          "path": "design/assets/screens/opensynth/frames/record-3.png",
+          "sha256": "102f7c93e95496c23ee482773aab43498968edd88a68c23b9fcbb096ac7fd2a9"
+        },
+        {
+          "path": "design/assets/screens/opensynth/frames/record-4.png",
+          "sha256": "baa2ae0939406dac8062739e6c779ebc85977cf9aacf42fd1dc4a3d7a225c1db"
+        },
+        {
+          "path": "design/assets/screens/opensynth/frames/record-5.png",
+          "sha256": "8edaacddbde7f13af99c28db109b1f55880baa9a3f66414bbebcfa69d08b92b6"
+        },
+        {
+          "path": "design/assets/screens/opensynth/frames/record-6.png",
+          "sha256": "656cdfa54b2c8432c79739dc71e446dcab7730a9b837ba283d377a5df0610fa6"
+        }
+      ]
+    }
+  ]
+}

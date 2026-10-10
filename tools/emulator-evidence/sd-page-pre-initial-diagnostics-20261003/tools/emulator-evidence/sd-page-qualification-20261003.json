@@ -1,0 +1,204 @@
+{
+  "schema": "opensp-sd-page-qualification-v1",
+  "scope": "Local optional read-only SD image selection, staged candidate-worker replacement and linked native definitions",
+  "passed": true,
+  "checks": {
+    "controller": {
+      "passed": 24,
+      "failed": 0,
+      "kind": "Actual page controller and RPC bridge against fake DOM and protocol ports; zero Worker, CPU or engine execution"
+    },
+    "native": {
+      "passed": 8,
+      "failed": 0,
+      "mains": 16,
+      "layouts": 4,
+      "linkedHeadsPerLayout": 99,
+      "readingTextsPerLayout": 88,
+      "savedTextViolations": 0
+    },
+    "typescript": {
+      "exitCode": 0,
+      "command": "npx tsc --ignoreConfig --noEmit --strict --target ES2022 --module ESNext --moduleResolution Bundler --resolveJsonModule --allowSyntheticDefaultImports --allowImportingTsExtensions --skipLibCheck src/scripts/emulator.ts"
+    },
+    "astro": {
+      "files": 93,
+      "errors": 0,
+      "warnings": 0,
+      "hints": 0
+    },
+    "detector": {
+      "findings": [],
+      "scope": "Changed Astro markup and CSS plus the page controller before final lifecycle-only correction; no subsequent visual-style change"
+    }
+  },
+  "admission": {
+    "slots": 2,
+    "minimumBytes": 262144,
+    "maximumBytes": 134217728,
+    "capacityUnitBytes": 262144,
+    "readOnly": true,
+    "filesystemInspected": false,
+    "decompression": false,
+    "ownedCopies": true
+  },
+  "replacement": {
+    "staged": true,
+    "explicitAction": "Start or Apply cards",
+    "oldWorkerRetainedUntil": "Successful candidate load and matching status, with no faulted snapshot",
+    "failedReadKeepsCurrent": true,
+    "failedLoadKeepsCurrent": true,
+    "initialTerminalRecoveryRetained": true,
+    "hotInsertionModeled": false
+  },
+  "privacy": {
+    "cardBytesPersisted": false,
+    "cardNamesInTrace": false,
+    "fixtureContentPersisted": false
+  },
+  "preservation": {
+    "manifest": "tools/emulator-evidence/sd-page-pre-20261003/manifest.json",
+    "freshNativeReadback": "tools/emulator-evidence/sd-page-pre-20261003/live/manifest.json"
+  },
+  "failuresAndCorrections": [
+    {
+      "kind": "Test assertion",
+      "observation": "One expanded privacy assertion matched the harmless word image in synthetic profile metadata; 19 of 20 initial controller checks passed",
+      "correction": "Checks now forbid raw image/bytes fields and card names while retaining documented synthetic profile metadata"
+    },
+    {
+      "kind": "Strict checker invocation",
+      "observation": "TypeScript 6 requires --ignoreConfig for explicit input files and --allowImportingTsExtensions for retained module imports",
+      "correction": "Final strict invocation passes"
+    },
+    {
+      "kind": "Static lifecycle review",
+      "observation": "The first provisional-load implementation omitted the existing terminal initial-load recovery path",
+      "correction": "Initial closed-load failures retain cached diagnostics, Reset and trace controls; replacement failures retain the old worker"
+    },
+    {
+      "kind": "Native image export",
+      "observation": "A small PNG export timed out after 60 seconds",
+      "correction": "Four unedited SD-section crops from the owned Canary canvas were reviewed together"
+    }
+  ],
+  "pending": [
+    "Production page/browser delivery",
+    "Complete-page and runtime budget rebuild",
+    "Actual guest SD reads and filesystem support",
+    "Whole-firmware storage acceptance"
+  ],
+  "notPerformed": [
+    "Build",
+    "Guest or CPU execution",
+    "Physical USB or SP operations",
+    "Commit, push or deployment"
+  ],
+  "files": [
+    {
+      "path": "src/content/emulator.json",
+      "bytes": 5187,
+      "sha256": "bdb095cacc14906409276cf3455b61a9c5207d96124ba29a5357025a1740eefc"
+    },
+    {
+      "path": "src/pages/emulator.astro",
+      "bytes": 7760,
+      "sha256": "4bbeffa1069669931c3a9423af74cd661a2eb72b12e3f339fa1ff50bdfdfc040"
+    },
+    {
+      "path": "src/styles/emulator.css",
+      "bytes": 9892,
+      "sha256": "4289bdd4eb86f6e0a60b7f4c584ea1d155231d3e0b73ffa44bfa775a6f01d8b4"
+    },
+    {
+      "path": "src/scripts/emulator.ts",
+      "bytes": 27630,
+      "sha256": "348d3591a3622a2dda75725252514765a932dafaff5f6d9b04ac4e047b21c38d"
+    },
+    {
+      "path": "tests/emulator-page-bridge.test.mjs",
+      "bytes": 23008,
+      "sha256": "cb4d8174e97dd2241ef9ba5165b2bf23c83ba5f408daeabd8834dcf858f1d059"
+    },
+    {
+      "path": "tests/emulator-design.test.mjs",
+      "bytes": 9917,
+      "sha256": "e3f06b8957a8aa1b22ca48448b27b05097abc9689f4d54af8f9b99fbde5d2d78"
+    },
+    {
+      "path": "docs/emulator-design.md",
+      "bytes": 8946,
+      "sha256": "9603bb1d7b0810126fc1a26cefc4c1918eaf73ca1690bdd7ed0e27ea362ad240"
+    },
+    {
+      "path": "docs/emulator-sd-fixtures.md",
+      "bytes": 7178,
+      "sha256": "dc915004f813911189fab0dd7d928b6a4a90506b19f1192944b8c139410d792c"
+    },
+    {
+      "path": "docs/design-language.md",
+      "bytes": 18091,
+      "sha256": "930d2b5d33c646b58e6ef3163552398e39bae54f040927a9e6d67c5f532c138d"
+    },
+    {
+      "path": "design/penpot/emulator-components.json",
+      "bytes": 791981,
+      "sha256": "bb5b6df751a1347382e7f793386b905c2f39345595083466ae26894fcbdde65c"
+    },
+    {
+      "path": "design/penpot/emulator-layouts.json",
+      "bytes": 368969,
+      "sha256": "04145c5921a85b28fe181de9977b6be9890a6d3ffbb19577be52b124a6fbe1a2"
+    },
+    {
+      "path": "design/penpot/emulator-states.json",
+      "bytes": 7671,
+      "sha256": "769f47551a99d2d78525e47b85fd164f358f673fe1a31d838ffe9540d60915a6"
+    },
+    {
+      "path": "design/penpot/emulator-manifest.json",
+      "bytes": 4067,
+      "sha256": "b0f55f622ae6f65a9d57009eae97aee9d9208ae043a22c17ea697438b769eb26"
+    },
+    {
+      "path": "design/penpot/emulator-library.js",
+      "bytes": 15110,
+      "sha256": "8a742c2ec5b2c10aa565d018009224116be8ec1a817980cb0a9690e95e7ab191"
+    },
+    {
+      "path": "design/penpot/emulator-sd-ui.js",
+      "bytes": 4026,
+      "sha256": "7ceb4885491ebcecbcd8d8525035c1c510bcaac1d6b7b87cd70165c606a3c996"
+    },
+    {
+      "path": "design/penpot/emulator-sd-propagation.json",
+      "bytes": 27825,
+      "sha256": "8bb78feec1ed48468dbe0db323d630a28d1204138b608ab028c9363412c43f00"
+    },
+    {
+      "path": "design/penpot/emulator-sd-image-export-status.json",
+      "bytes": 2195,
+      "sha256": "80a9e9f1081060f9fdd693be8d600aca78675edf815372aaba2eca972a90c10d"
+    },
+    {
+      "path": "tools/design-emulator.mjs",
+      "bytes": 6659,
+      "sha256": "8b2f7de18de97c99a2e595f5b214ddbbda4ac221d32dd8f27b63556f41db38ca"
+    },
+    {
+      "path": "tools/emulator-evidence/sd-page-tests-20261003.tap",
+      "bytes": 3280,
+      "sha256": "e48ceed9fca538f0311a21d0bbee0c808fc5326e1ea6f2d27b9aff43b13b009e"
+    },
+    {
+      "path": "tools/emulator-evidence/sd-page-typescript-20261003.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "tools/emulator-evidence/sd-page-astro-check-20261003.log",
+      "bytes": 278,
+      "sha256": "c644ba30d75d2217c9a745464e85c67853f765f3da5345aebce64a823d79668f"
+    }
+  ]
+}

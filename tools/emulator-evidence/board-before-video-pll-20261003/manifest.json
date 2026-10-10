@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "scope": "Exact board, acceptance runners, contract and built checkpoint before VIDEO PLL integration",
+  "files": {
+    "src/lib/emulator/board.ts": {
+      "file": "board.ts",
+      "bytes": 37227,
+      "sha256": "068a1178757df94a8a5274b869962ca51b25a1d9dfd9b79cf75013206c358827"
+    },
+    "tools/test-emulator-stock.mjs": {
+      "file": "test-emulator-stock.mjs",
+      "bytes": 19714,
+      "sha256": "d584e7e1c7f27801a93b6a7e483c6ba506be91153de0b17faf9bae6afc5baa37"
+    },
+    "tools/test-emulator-firmware.mjs": {
+      "file": "test-emulator-firmware.mjs",
+      "bytes": 39888,
+      "sha256": "6556789ee5c0b662c61718239a491383c0de77dd9f8546124a7868a4602cb83f"
+    },
+    "tools/test-emulator-update.mjs": {
+      "file": "test-emulator-update.mjs",
+      "bytes": 19175,
+      "sha256": "5cf1d005c4b44056fab9530eb18c10fa5d48152f50d049e04948e538726964ef"
+    },
+    "tests/emulator-worker-roundtrip.spec.ts": {
+      "file": "emulator-worker-roundtrip.spec.ts",
+      "bytes": 20322,
+      "sha256": "d02aedf655153bf942df4d08bdbbbe461b12642fe30ee680b267f028ab2a6960"
+    },
+    "docs/emulator-board-contract.md": {
+      "file": "emulator-board-contract.md",
+      "bytes": 13662,
+      "sha256": "36ec6465f476713bb294066c998e750e66b12a4abcec43038cfa130db8fedd75"
+    },
+    "dist/build-info.json": {
+      "file": "build-info.json",
+      "bytes": 9968,
+      "sha256": "7530e0e999d4d807840fc219bc8861574855fbf7af17ee4cd3e0b6d1380f947d"
+    }
+  }
+}

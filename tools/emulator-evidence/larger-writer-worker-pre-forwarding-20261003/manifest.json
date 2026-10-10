@@ -1,0 +1,10 @@
+{
+  "kind": "Immutable production Worker before retained-target forwarding",
+  "recordedUtc": "2026-10-03T06:25:23.8863256Z",
+  "file": {
+    "path": "src/scripts/emulator-worker.ts",
+    "bytes": 3695,
+    "sha256": "bc11be22456c633534da7304adcc9bfa3e2725c0da650147e6e9b58cd7cd0a01"
+  },
+  "scope": "No Worker or guest execution"
+}

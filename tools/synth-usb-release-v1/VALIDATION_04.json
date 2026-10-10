@@ -1,0 +1,377 @@
+{
+  "schema": "opensp-synth-usb-release-software-validation-v1",
+  "version": 1,
+  "status": "PASS_RESTORATION_AND_HELD_CONCRETE_LOCALBENCH_SOFTWARE_CHECKS",
+  "checkedAt": "2026-10-06T14:45:39.093Z",
+  "focusedTests": {
+    "tests": 62,
+    "pass": 62,
+    "fail": 0,
+    "skipped": 0,
+    "command": "node.exe --import ./tools/register-test-typescript.mjs --test tools/synth-usb-release-v1/test-release.mjs tools/synth-usb-release-v1/test-bench.mjs",
+    "outputSha256": "76e97aed73c9c48d725e6bffeb036747b5bdffec3dd4d4b4d88b4f9297471b89",
+    "hostProtocolModelOnly": true
+  },
+  "strictTypecheck": {
+    "passed": true,
+    "command": "node node_modules/typescript/bin/tsc --ignoreConfig --noEmit --strict --target ES2022 --module ESNext --moduleResolution bundler --allowImportingTsExtensions --lib ES2022,DOM tools/synth-usb-release-v1/release.ts tools/synth-usb-release-v1/b2-driver.ts tools/synth-usb-release-v1/flow.ts tools/synth-usb-release-v1/evidence-bundle.ts tools/synth-usb-release-v1/local-bench-v1.ts tools/synth-usb-release-v1/bench-flow-v1.ts tools/synth-usb-release-v1/bench-browser-v1.ts"
+  },
+  "browserBundle": {
+    "passed": true,
+    "bytes": 28125,
+    "gzipBytes": 10335,
+    "sha256": "915859f52e69c8610694dedd6ef4000196a3678e9c018a94fb5f362c8d5a20cf",
+    "writtenToWebsite": false,
+    "entries": [
+      {
+        "name": "flow.js",
+        "bytes": 28125,
+        "gzipBytes": 10335,
+        "sha256": "915859f52e69c8610694dedd6ef4000196a3678e9c018a94fb5f362c8d5a20cf"
+      },
+      {
+        "name": "evidence-bundle.js",
+        "bytes": 15365,
+        "gzipBytes": 6102,
+        "sha256": "25162c3d192580e4dc3dd84a5a6215e0dfae5793ecd9e8f94540d9d0b0edd56e"
+      },
+      {
+        "name": "local-bench-v1.js",
+        "bytes": 26360,
+        "gzipBytes": 9743,
+        "sha256": "b54e78dcbec3f7970cdf781b865bfef0165880106a42df792fd1fa263bd36406"
+      },
+      {
+        "name": "bench-browser-v1.js",
+        "bytes": 49109,
+        "gzipBytes": 17043,
+        "sha256": "5a8152422853574341d543d93bb7c23553922b334a310238264b47898171bc08"
+      }
+    ]
+  },
+  "inspection": {
+    "schema": "opensp-synth-usb-offline-inspection-v1",
+    "version": 1,
+    "status": "PASS_EXACT_P6S_RESTORATION_AUTHORITY_CANDIDATES_HELD",
+    "restoration": {
+      "role": "restoration",
+      "format": "spuafw10-abi2",
+      "sha256": "7f9917ffb0871cca25b1ce5d281ac5c2bf790ae6b8278b04a5ffef8e3c06fd60",
+      "bytes": 2741144,
+      "crc32": 3127470002,
+      "padded_bytes": 2744320,
+      "sectors": 670,
+      "abi": 2,
+      "expected_normal_identity": "SYNTH P6S!",
+      "expected_cold_del_marker": 1380057601
+    },
+    "authenticatedEvidence": [
+      {
+        "id": "usb-storage",
+        "bytes": 4755,
+        "sha256": "e04ed995fda8054825e0c2e5ea8dc5a555f1ec6025e3682dfc1bab144d01d161"
+      },
+      {
+        "id": "owner-normal",
+        "bytes": 723,
+        "sha256": "5c39e716f77a429feed1c0da05a73d8beb8e9776efdd3cd396dd1a50b73697e5"
+      },
+      {
+        "id": "owner-sample",
+        "bytes": 444,
+        "sha256": "447173d940d0573ee190d84f35a6a6f569d5d53a9e4e96c174e24b96c989fb45"
+      },
+      {
+        "id": "post-del",
+        "bytes": 3474,
+        "sha256": "3da6deae5fb88dbf40de6daeb63bf92da7f789983fff7337f051f857f84babf2"
+      },
+      {
+        "id": "normal-link",
+        "bytes": 1153,
+        "sha256": "2f1d9067478d7f1de5f7ec9b609aae0e3884d7985c81a054ebded4fbf0038239"
+      },
+      {
+        "id": "source-whole",
+        "bytes": 14061,
+        "sha256": "00e63d789ac9bcc34ab43a9062ac7456aee032691df5b8e73d458c5d482f6ee7"
+      },
+      {
+        "id": "source-restore",
+        "bytes": 1359,
+        "sha256": "97f996e157987154b0887491f180fd5581d6fb3405ff398f28827f71fdc8faf0"
+      },
+      {
+        "id": "historical-package",
+        "bytes": 71250,
+        "sha256": "a8d0b8528118eb2f4cb92f02cff5a01bc5fd80d8eb3278ebfe66d90a37b6e541"
+      },
+      {
+        "id": "historical-review",
+        "bytes": 75425,
+        "sha256": "f2fd444d8d7be17ddfd9adf8a815e51a6b6faa87b6637ed22bdbc4805dd2c174"
+      },
+      {
+        "id": "browser-profile",
+        "bytes": 1068,
+        "sha256": "a354c9e95ff692ce15ffccc8da571b7ce6eac3b352cc6e3dd452435826c95487"
+      },
+      {
+        "id": "browser-review",
+        "bytes": 2059,
+        "sha256": "8cb0be9834104e4f935c57e6a1128074e906716e9a324294adfd0242dd36cc9c"
+      },
+      {
+        "id": "physical-review",
+        "bytes": 2096,
+        "sha256": "3849470e893c5e49767b25312cbe4f4b08442988ce01c0d184603120eb4d0e79"
+      },
+      {
+        "id": "physical-preflight",
+        "bytes": 9330,
+        "sha256": "f8b1fa67d4b495a7323fca52d31ddff150d0f0bf712ee5b65d989d9de3e7970d"
+      },
+      {
+        "id": "physical-storage",
+        "bytes": 117545,
+        "sha256": "090872342cc913029ca9f5ba5005ee2606dc4399df99710a9029b2557f4e97ac"
+      },
+      {
+        "id": "root-browser-observation",
+        "bytes": 1174,
+        "sha256": "d9d44a7ab5c040075288ba39655e8389e41618f1232fd87708bc0d35c1035782"
+      },
+      {
+        "id": "owner-reboot",
+        "bytes": 1243,
+        "sha256": "bf93674a3ef3b3d92a45e9e7e1b8091a3d0d51ad92052a05351d89f49fbfa0dc"
+      },
+      {
+        "id": "fresh-del-result",
+        "bytes": 1656,
+        "sha256": "55ab2667e4f1793bc6350e6a9b27f42ba1854f688b802aac993709138a35cf61"
+      },
+      {
+        "id": "fresh-del-journal",
+        "bytes": 3399,
+        "sha256": "d397c61025cb5025bbc995b922cea782ad7308ad68dfb4a62614249b20f91f20"
+      },
+      {
+        "id": "fresh-del-source",
+        "bytes": 2578,
+        "sha256": "cb8acc49a7dc6d87ee3acaf4d10d77f8696bc0f5caa3b27e58f937c9b28ca380"
+      },
+      {
+        "id": "physical-preparation",
+        "bytes": 5053,
+        "sha256": "f59dfb10dd1155e429c7d23922ee7a15de6d5155a34c632f9ab4ebb97834fa72"
+      },
+      {
+        "id": "additive-offline-review",
+        "bytes": 11135,
+        "sha256": "c954d5bcad0d12331af74451cd759cad80ed62eb6cbb3b0060741760ffcf6242"
+      }
+    ],
+    "heldPatcherInspection": {
+      "schema": "opensp-held-patcher-browser-inspection-v1",
+      "handoffSha256": "9559fb8ed1b7ad4999ccd758d8680a7075db3d38a663144b2a12bb4e11011f04",
+      "candidate": {
+        "path": "selected-build/candidate.disabled.bin",
+        "identity": "Historical Source16 selected build",
+        "bytes": 3016664,
+        "sha256": "51cd22432612c1e9ffcea6fb4f714831b779a8a2765117aed4f253dce8968878",
+        "crc32": 1201289671,
+        "padded_crc32": 619175159,
+        "padded_bytes": 3018752,
+        "sectors": 737,
+        "abi": 2,
+        "expected_cold_del_marker": 1380057601
+      },
+      "restoration": {
+        "path": "restore-build/restore-p6s.disabled.bin",
+        "identity": "SYNTH P6S!",
+        "bytes": 2741144,
+        "sha256": "7f9917ffb0871cca25b1ce5d281ac5c2bf790ae6b8278b04a5ffef8e3c06fd60",
+        "crc32": 3127470002,
+        "padded_crc32": 2097249704,
+        "padded_bytes": 2744320,
+        "sectors": 670,
+        "abi": 2,
+        "expected_cold_del_marker": 1380057601
+      },
+      "canonicalSelectionSha256": "269fef7c412195253f7242651dce14b6b6278d8150efa3f28f67ec972628d896",
+      "candidateUploadEnabled": false,
+      "publicReleaseReady": false,
+      "delivery": "DO_NOT_DELIVER",
+      "writerAuthorityGranted": false,
+      "sourceReceiptAuthenticatedByThisInspection": false,
+      "blockers": [
+        "The compact P6S plus native pad-recording candidate needs its own sealed source, compiler and recipe authority.",
+        "Normal record, SAVE, native saved-pad playback, persistence and repeated takes remain unqualified.",
+        "Selected-candidate audio, memory, runtime and compatible USB delivery qualification remain required.",
+        "Exact P6S restoration bytes require the separate authenticated B2 delivery adapter before any upload."
+      ]
+    },
+    "exactP6SCompatibleB2TestEligible": true,
+    "newCandidateUsbUploadEnabled": false,
+    "freshDeviceIdentityAndProfileRequired": true,
+    "eachNewWriteRebootChecksPending": true,
+    "stockFirstInstallSupported": false,
+    "publicReleaseReady": false,
+    "deviceOperations": false,
+    "firmwareRebuilt": false
+  },
+  "checkedFiles": [
+    {
+      "path": "BENCH_README.md",
+      "bytes": 6359,
+      "sha256": "2329ea2cd6557c55bf910de3b7a169de947ee6014c8de074241d0cc22480717c"
+    },
+    {
+      "path": "DRIVER_PROVENANCE.json",
+      "bytes": 642,
+      "sha256": "373bb5b1472193a8ba261f0cf6056cdb5943e4727f52df939164efd0e05ea16f"
+    },
+    {
+      "path": "README.md",
+      "bytes": 12176,
+      "sha256": "50061290bb9b6f8cabce97f6729232bb15dfd3f56fa16f827d2254eb1cff7d49"
+    },
+    {
+      "path": "authority.ts",
+      "bytes": 5299,
+      "sha256": "b8d75d7747b80b6bdd1a00da5a4f1e060884476fb5e5199d52e78327a7654bfe"
+    },
+    {
+      "path": "b2-driver.ts",
+      "bytes": 25600,
+      "sha256": "d6d2eb38c58715d85564c0dfd2cf042cf19936d0ab6573653811963b06e67e9d"
+    },
+    {
+      "path": "bench-browser-v1.ts",
+      "bytes": 4362,
+      "sha256": "325071d20ca7a741e88e2c0abbbd4e02ba70829aa65bac4694a3540ce6d53114"
+    },
+    {
+      "path": "bench-flow-v1.ts",
+      "bytes": 8235,
+      "sha256": "882536c4415fbfbf98c83009fedd171814dc87eae04c904ca1afd4b25377faca"
+    },
+    {
+      "path": "data.ts",
+      "bytes": 9413,
+      "sha256": "52fa963de4702bfa742f85bdf21800aceefcb9ba465c6ebaf2146e80a8b3d265"
+    },
+    {
+      "path": "evidence-bundle.ts",
+      "bytes": 3551,
+      "sha256": "26471c1c224808c1f99600b55979f380c32219bb9405c0d8925c65006374d5cd"
+    },
+    {
+      "path": "flow.ts",
+      "bytes": 7663,
+      "sha256": "98b0f1790f799529949cfcfc3c78212ff91c5c9b105653548aa45f1e783bee94"
+    },
+    {
+      "path": "inspect.mjs",
+      "bytes": 2786,
+      "sha256": "76b8a1888280dd8c630c1681657a871af713c6d88b1d63590cdfc45299c3bd3e"
+    },
+    {
+      "path": "local-bench-v1.ts",
+      "bytes": 18878,
+      "sha256": "9f23f7cc9431624133106a7c1da2d5f276862305434e04f552558414c0ee8cf2"
+    },
+    {
+      "path": "mock-b2.mjs",
+      "bytes": 2888,
+      "sha256": "7d9fff4ed6b8f7fae4ee8f558b5686d1db5ac1fac89956a216f17351b4c8181d"
+    },
+    {
+      "path": "model.ts",
+      "bytes": 7561,
+      "sha256": "9dd7bc99af7a2e721f33391d52e8178e0f9148da16a4c3b704fe3e337a81f435"
+    },
+    {
+      "path": "port-driver.mjs",
+      "bytes": 2972,
+      "sha256": "b7f5dd53e08ec0a706df0224570f83609ba968469a8127213fc5cb87a49b512d"
+    },
+    {
+      "path": "prepare-bench.mjs",
+      "bytes": 12409,
+      "sha256": "c1fe8977138f959e13cf1f5b70dc6036ef792b9e1c3b57099bdf46a95bcb0270"
+    },
+    {
+      "path": "prepare-evidence.mjs",
+      "bytes": 2756,
+      "sha256": "9ad48de0868229d0310c5ddc8cfbc0c0d577d60711418dd1a8b6ae460cfecefb"
+    },
+    {
+      "path": "release.ts",
+      "bytes": 10145,
+      "sha256": "6e3aa104dfb26da28800c4c64df8cb8679397cff9f79f0b0727fb4151f156161"
+    },
+    {
+      "path": "resolve-image.ts",
+      "bytes": 599,
+      "sha256": "374a8f72591e5612e724485e106edf12f8bb420862ebc92531353ca92d2354d3"
+    },
+    {
+      "path": "root-seals-v1.ts",
+      "bytes": 463,
+      "sha256": "70680219b1a19f61f7cd572c59e6faa6a065922d7aa2998f79919b7e93ce5c7b"
+    },
+    {
+      "path": "seal-bench.mjs",
+      "bytes": 4599,
+      "sha256": "8aca21085473927beb1d04329a09cbeec4f53243c36a6422eca7d1dabcf770f1"
+    },
+    {
+      "path": "seal-p6s-authority.mjs",
+      "bytes": 1974,
+      "sha256": "84445c94548d1991e090ff2f5a8a27f370e4ce307de3278982dc6043cd1f2aa3"
+    },
+    {
+      "path": "serve-bench.mjs",
+      "bytes": 2997,
+      "sha256": "ce71385176640755d3884f460e96ea8e96e17f1eb943d4a419d4407f96148710"
+    },
+    {
+      "path": "test-bench.mjs",
+      "bytes": 9493,
+      "sha256": "8da52ed878bbab0d335c6ab3821140fe1905c880e5fafa3e5914f9def360e372"
+    },
+    {
+      "path": "test-release.mjs",
+      "bytes": 17517,
+      "sha256": "192946a75ae767238f8d314a2ca04e6bfa43455f2fe5d910914c8099af441a26"
+    },
+    {
+      "path": "validate.mjs",
+      "bytes": 4860,
+      "sha256": "17d9a942004a61a9e4be7de5f685b530005ca06a250c6856ce49a458a08eddaf"
+    }
+  ],
+  "priorPhysicalEvidence": {
+    "imageSha256": "7f9917ffb0871cca25b1ce5d281ac5c2bf790ae6b8278b04a5ffef8e3c06fd60",
+    "storageReceiptSha256": "090872342cc913029ca9f5ba5005ee2606dc4399df99710a9029b2557f4e97ac",
+    "rootReviewSha256": "3849470e893c5e49767b25312cbe4f4b08442988ce01c0d184603120eb4d0e79"
+  },
+  "limitations": {
+    "additiveIntegrationPhysicallyTested": false,
+    "actualPriorExactP6STransportTrialPassed": true,
+    "newCandidateQualified": false,
+    "publicReleaseReady": false,
+    "stockFirstInstallSupported": false
+  },
+  "correctedTestAssertions": [
+    "The first negative handoff assertion expected 'differs'; the correct refusal ended in 'differ'.",
+    "The first flow timeout assertion expected 'timed out'; the preserved driver reports 'exceeded its 20 ms bound'."
+  ],
+  "deviceOperations": false,
+  "browserControlled": false,
+  "firmwareRebuilt": false,
+  "sharedWebsiteEdited": false,
+  "published": false
+}

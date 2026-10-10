@@ -1,0 +1,37 @@
+--- a/qemu/target/arm/translate.c
++++ b/qemu/target/arm/translate.c
+@@ -11595,16 +11595,26 @@
+     insn_size = is_16bit ? 2 : 4;
+     if (HOOK_EXISTS_BOUNDED(uc, UC_HOOK_CODE, dc->base.pc_next - insn_size)) {
+         
+-        // Sync PC in advance
++        /* Publish this instruction's PC and current IT state before its hook. */
+         gen_set_pc_im(dc, dc->base.pc_next - insn_size);
+-
+-        if (uc->no_exit_request) {
+-            gen_uc_tracecode(tcg_ctx, insn_size, UC_HOOK_CODE_IDX | UC_HOOK_FLAG_NO_STOP, uc, dc->base.pc_next - insn_size);
+-        } else {
+-            gen_uc_tracecode(tcg_ctx, insn_size, UC_HOOK_CODE_IDX, uc, dc->base.pc_next - insn_size);
+-        }
+-        // the callback might want to stop emulation immediately
++        gen_set_condexec(dc);
++        gen_uc_tracecode(tcg_ctx, insn_size, UC_HOOK_CODE_IDX, uc, dc->base.pc_next - insn_size);
++
++        /* The ordinary helper restores this instruction's PC/IT metadata on
++         * a requested stop. Preserve the instruction body's existing policy. */
++        uc->no_exit_request = false;
+         check_exit_request(tcg_ctx);
++        uc->no_exit_request = (dc->condexec_mask != 0);
++
++        if (dc->condexec_mask) {
++            /* Reached only when the hook continues in this same TB. Actual
++             * IT state remains in translation metadata; restore its transient
++             * CPUARMState invariant, as at arm_tr_tb_start(). A stop exits
++             * through the helper above before reaching this store. */
++            TCGv_i32 tmp = tcg_temp_new_i32(tcg_ctx);
++            tcg_gen_movi_i32(tcg_ctx, tmp, 0);
++            store_cpu_field(tcg_ctx, tmp, condexec_bits);
++        }
+     }
+ 
+     tcg_ctx->pc_start = dc->base.pc_next - insn_size;

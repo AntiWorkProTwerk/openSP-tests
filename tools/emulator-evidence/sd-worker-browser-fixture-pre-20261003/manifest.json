@@ -1,0 +1,11 @@
+{
+  "schema": "opensp-sd-worker-browser-fixture-preservation-v1",
+  "createdUtc": "2026-10-03T07:32:12.8315533Z",
+  "source": "tests/emulator-worker-roundtrip.spec.ts",
+  "preserved": "emulator-worker-roundtrip.spec.ts",
+  "sha256": "f9e93aac9e4260ba276b30c7a386226101e24e6c32b79c54e72c1a418b8b9005",
+  "method": "Exact byte copy made before test fixture edits.",
+  "browserExecuted": false,
+  "guestExecuted": false,
+  "sdBytesRetained": false
+}

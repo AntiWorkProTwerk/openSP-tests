@@ -1,0 +1,9 @@
+{
+  "scope": "Original legal Thumb conditional fixture build only; no engine execution",
+  "passed": false,
+  "stage": "arm-none-eabi-ld",
+  "error": "Unknown destination type (ARM/Thumb) for exported exit labels; dangerous relocation: unsupported relocation",
+  "correction": "Use an assembler-local self branch after each mapped exit instead of branching to the untyped exported label",
+  "retained": ["fixture.S", "fixture.o", "qualification-tool.mjs"],
+  "engineExecuted": false
+}

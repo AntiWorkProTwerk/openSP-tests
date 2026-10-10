@@ -1,0 +1,13 @@
+
+> opensp@1.0.0 check
+> astro check
+
+02:20:35 [content] Syncing content
+02:20:35 [content] Synced content
+02:20:35 [types] Generated 728ms
+02:20:35 [check] Getting diagnostics for Astro files in <workspace>...
+Result (90 files): 
+- 0 errors
+- 0 warnings
+- 0 hints
+

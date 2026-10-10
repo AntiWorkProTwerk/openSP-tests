@@ -1,0 +1,1 @@
+Initial adjacent USB PLL assertion expected configured3000 in a reset fixture. Actual read was80000000. Correct test must first write configuration3000 before expecting80003000; no model change is required.

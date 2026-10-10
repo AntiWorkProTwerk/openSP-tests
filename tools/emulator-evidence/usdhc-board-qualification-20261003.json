@@ -1,0 +1,188 @@
+{
+  "schemaVersion": 1,
+  "kind": "optional-usdhc-board-register-integration",
+  "timestampUtc": "2026-10-03T05:33:37.342Z",
+  "pathBase": "OpenSP repository root; ../sp404mk2 is the sibling firmware repository",
+  "passed": true,
+  "scope": {
+    "executed": "JavaScript controller and board register tests only",
+    "guestFirmwareExecuted": false,
+    "guestCpuExecuted": false,
+    "browserExecuted": false,
+    "physicalUsbAccess": false,
+    "hostFileSystemOrPhysicalCardApiAdded": false,
+    "stockStorageVerified": false,
+    "filesystemVerified": false,
+    "physicalCardPowerBehaviorVerified": false,
+    "componentSourceChanged": false
+  },
+  "optionContract": {
+    "type": "BoardOptions.sd1/sd2: Omit<USDHCOptions, 'instance' | 'onIrq'>",
+    "requiredImage": "Owned copied read-only Uint8Array; exact 256KiB..128MiB in 256KiB units",
+    "forwardedOptions": [
+      "inserted",
+      "commandTicks",
+      "maximumTransferBytes"
+    ],
+    "callerCannotOverrideInstanceOrIrqRouting": true,
+    "defaultConstructsNoControllers": true,
+    "routes": [
+      {
+        "option": "sd1",
+        "instance": 1,
+        "base": "0x402C0000",
+        "endExclusive": "0x402C4000",
+        "irq": 110
+      },
+      {
+        "option": "sd2",
+        "instance": 2,
+        "base": "0x402C4000",
+        "endExclusive": "0x402C8000",
+        "irq": 111
+      }
+    ],
+    "absentFixtureMmio": "Retains existing undefined reads and bounded board unknown-MMIO records",
+    "time": "Explicit nominal board tick turns, independent of GPT enable/stall/read fixture; no SD-clock or CPU-cycle calibration",
+    "reset": "Existing controller reset preserves card protocol, presence, owned image, counters and diagnostics; abandons controller work and deasserts IRQ",
+    "cardProtocolReset": "Explicit CMD0; board reset is not physical card power removal",
+    "status": "BoardStatus.sd1/sd2 are independent diagnostic snapshots without image bytes",
+    "workerSessionAndPageProvideSdFixtures": false
+  },
+  "checks": {
+    "node": {
+      "command": "node --test --test-reporter=tap tests/emulator-usdhc.test.mjs tests/emulator-usdhc-board.test.mjs tests/emulator-board.test.mjs tests/emulator-oscillator.test.mjs",
+      "runtime": "v24.20.0",
+      "exitCode": 0,
+      "tests": 94,
+      "passed": 94,
+      "failed": 0,
+      "skipped": 0,
+      "testGroups": {
+        "existingBoard": 32,
+        "oscillatorComponent": 24,
+        "usdhcComponent": 25,
+        "usdhcBoardIntegration": 13
+      },
+      "reportedDurationMs": 996.1258
+    },
+    "strictTypeScript": {
+      "command": "npx tsc --ignoreConfig --noEmit --strict --target ES2022 --module NodeNext --moduleResolution NodeNext --allowImportingTsExtensions src/lib/emulator/board.ts src/lib/emulator/usdhc.ts",
+      "exitCode": 0,
+      "typescriptVersion": "6.0.3"
+    },
+    "coverage": [
+      "Absent fixtures and exact window boundaries",
+      "Fixed instance and IRQ routing despite runtime override fields",
+      "Byte/halfword lanes without double shifting",
+      "Unsupported status/force writes versus ignored read-only capability writes",
+      "512-byte and finite 1024-byte PIO with 40-word watermark and short block tails",
+      "IRQ byte-lane W1C and separate NVIC pending acknowledgment",
+      "SD command/refill/busy progress independently of GPT",
+      "No write-classification read or narrow port consumption",
+      "Controller reset retaining card state/image/counters/diagnostics",
+      "Removal abandoning PIO without fabricated completion and presence W1C reassertion",
+      "Two-board/two-controller owned-copy isolation",
+      "Finite transfer limits and snapshot ownership"
+    ],
+    "reviewCorrection": {
+      "finding": "Readable AUTOCMD12_ERR_STATUS and FORCE_EVENT offsets were initially included in the generic register write whitelist",
+      "change": "Use a write-specific whitelist that excludes both unsupported writes while retaining component diagnostics",
+      "regressionTest": "unsupported status/force writes retain unknown evidence while qualified read-only writes are ignored",
+      "initialFocusedPass": {
+        "tests": 93,
+        "followedByReviewCorrection": true
+      },
+      "finalFocusedPass": {
+        "tests": 94,
+        "failed": 0
+      }
+    }
+  },
+  "preservedSource": {
+    "manifest": "tools/emulator-evidence/usdhc-board-pre-integration-20261003/manifest.json",
+    "boardSha256Before": "fddafa0d1563b6865948990665c1127c973678abe24c1b3514c980338970b412",
+    "boardSha256After": "2ca1a22e2876adb85fe71e24dcee81f04a326a4c5862a1d839d4c7761063da38",
+    "unchangedComponentSha256": "fe74790fd62040aba4a4908943bf2b99c5082958988dae59a4721fec1e430c28",
+    "priorWholeFirmwareReportsUnmodified": true
+  },
+  "sourcePins": [
+    {
+      "path": "src/lib/emulator/board.ts",
+      "bytes": 34969,
+      "sha256": "2ca1a22e2876adb85fe71e24dcee81f04a326a4c5862a1d839d4c7761063da38"
+    },
+    {
+      "path": "src/lib/emulator/usdhc.ts",
+      "bytes": 31404,
+      "sha256": "fe74790fd62040aba4a4908943bf2b99c5082958988dae59a4721fec1e430c28"
+    },
+    {
+      "path": "src/lib/emulator/oscillator.ts",
+      "bytes": 8990,
+      "sha256": "3b9a557fb37d4f859742b9c89b9b51f22c397d0e4da40ef9f3df9bf8b5d887c9"
+    },
+    {
+      "path": "src/lib/emulator/usb.ts",
+      "bytes": 15606,
+      "sha256": "68e5fa1b6b9c1d7de2da9a66ace01fb147077eb849ca9c6ef3c943e143ad85b2"
+    },
+    {
+      "path": "src/lib/emulator/flash.ts",
+      "bytes": 14191,
+      "sha256": "2a887edf140feae0ed6ae450650ee2feb0c4bb8119c4a8d94d373a3c6d15d5bc"
+    },
+    {
+      "path": "tests/emulator-usdhc-board.test.mjs",
+      "bytes": 16727,
+      "sha256": "94825e843c732025febb03cb53c47ea2c5e79a4e1b85aff77066c102a9cbe48c"
+    },
+    {
+      "path": "tests/emulator-usdhc.test.mjs",
+      "bytes": 23067,
+      "sha256": "23552782fb9dd8269b532bbfc059d52d5e26efffaa249ab1927ab2c519eda7d5"
+    },
+    {
+      "path": "tests/emulator-board.test.mjs",
+      "bytes": 23953,
+      "sha256": "45840c7b5897c1f8f09970f3d870fe174c40e396603d0ee7436f6f83137dbb5b"
+    },
+    {
+      "path": "tests/emulator-oscillator.test.mjs",
+      "bytes": 14793,
+      "sha256": "c07ea9d756a2e844aa16bcde888cc612a7bce4525b23125f558d4117711feaa9"
+    }
+  ],
+  "referencePins": [
+    {
+      "path": "docs/emulator-usdhc-contract.md",
+      "bytes": 12581,
+      "sha256": "89482c9cf3bc9521964ac1da2e83086c1e405de4732fe9d96da252fd87827b2c"
+    },
+    {
+      "path": "tools/emulator-evidence/usdhc-board-pre-integration-20261003/manifest.json",
+      "bytes": 801,
+      "sha256": "ebe9143e22a5a70a95e832419ce96eb8ebe85b6a8b927683daf10c9a04075396"
+    },
+    {
+      "path": "tools/emulator-evidence/usdhc-board-pre-integration-20261003/board.ts",
+      "bytes": 32356,
+      "sha256": "fddafa0d1563b6865948990665c1127c973678abe24c1b3514c980338970b412"
+    },
+    {
+      "path": "tools/emulator-evidence/usdhc-board-pre-integration-20261003/emulator-usdhc-contract.md",
+      "bytes": 9593,
+      "sha256": "33a1b6a3742487e505e36aa6d63de002ef6c1f24b73e7886f4071a01cdbe0e59"
+    },
+    {
+      "path": "../sp404mk2/references/MIMXRT1062.h",
+      "bytes": 2797765,
+      "sha256": "1ee70ed9eb7f3a75ed89943dd799314e8330538f54c6990ea7d9cae96fd263aa"
+    },
+    {
+      "path": "../sp404mk2/analysis/flash_research/IMXRT1060RM_rev3.pdf",
+      "bytes": 29973751,
+      "sha256": "a2e342e492eded2a1d626cf955de953ca28d8db8675b10937a5176fd6f2c9200"
+    }
+  ]
+}

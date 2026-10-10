@@ -1,0 +1,38 @@
+{
+  "referenceBase": "OpenSP repository",
+  "reason": "Preserve integrated DCDC/optional SD board and stock observer before ARM PLL routing",
+  "sources": [
+    {
+      "path": "src/lib/emulator/board.ts",
+      "archived": "board.ts",
+      "sha256": "1987b0e3dc419a881b3a9d819d877857f32737506ea8868cc1ffa352492628f3",
+      "bytes": 35765
+    },
+    {
+      "path": "tools/test-emulator-stock.mjs",
+      "archived": "test-emulator-stock.mjs",
+      "sha256": "7bf6d1dc4f9d8822c7c2c448087032b071eba765db66f45bbbe14a700d7973dc",
+      "bytes": 19559
+    },
+    {
+      "path": "docs/emulator-pll-arm.md",
+      "archived": "emulator-pll-arm.md",
+      "sha256": "d8cbd780877648a2903d73853364527341b4ab42f2feaffa9d933c9cbc0458ad",
+      "bytes": 4319
+    },
+    {
+      "path": "docs/emulator-board-contract.md",
+      "archived": "emulator-board-contract.md",
+      "sha256": "36ec6465f476713bb294066c998e750e66b12a4abcec43038cfa130db8fedd75",
+      "bytes": 13662
+    },
+    {
+      "path": "dist/build-info.json",
+      "archived": "build-info.json",
+      "sha256": "96406450dd0ce414a5f7d4a05c7d9d2595a862483a61540dcd3f353ecaf9e11c",
+      "bytes": 9713
+    }
+  ],
+  "stockReport": "../sp404mk2/analysis/emulator/dcdc_stock_20261003/whole-image.json",
+  "stockReportSha256": "4259614236e98678131fc96c95216ebf1561d7c60a988025a7a97e0dcb424d5d"
+}

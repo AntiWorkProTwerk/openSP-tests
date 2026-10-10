@@ -1,0 +1,66 @@
+{
+  "schema": "opensp-native-sd-image-export-v1",
+  "fileId": "24d9d841-759d-81bc-8008-b518bc70d8b3",
+  "page": "Emulator",
+  "pngExport": "Timed out at 60 seconds; used native canvas crops",
+  "method": "Four unedited owned-canvas SD-section crops reviewed together; no concrete defect found",
+  "browserAcceptance": "Pending parent",
+  "captures": [
+    {
+      "board": "Firmware emulator / Desktop / Light",
+      "id": "968cb989-21d8-805d-8008-bb76b19e746d",
+      "x": 64,
+      "y": 1277,
+      "width": 1312,
+      "height": 338,
+      "file": "desktop-light.png",
+      "zoom": 0.65,
+      "pixelWidth": 853,
+      "pixelHeight": 220,
+      "method": "Unedited SD-section crop from the owned Penpot canvas",
+      "sha256": "7f40b16eb287a9468a190b50502112f1000001089a6cf84fd9381b1b056676cc"
+    },
+    {
+      "board": "Firmware emulator / Desktop / Dark",
+      "id": "968cb989-21d8-805d-8008-bb76b15a8c4e",
+      "x": 2064,
+      "y": 1277,
+      "width": 1312,
+      "height": 338,
+      "file": "desktop-dark.png",
+      "zoom": 0.65,
+      "pixelWidth": 853,
+      "pixelHeight": 220,
+      "method": "Unedited SD-section crop from the owned Penpot canvas",
+      "sha256": "a7b776b41daeb8487889df87487ec735caf13dffc8d3a070475035923186a5c8"
+    },
+    {
+      "board": "Firmware emulator / Mobile / Light",
+      "id": "968cb989-21d8-805d-8008-bb76bce634b4",
+      "x": 1524,
+      "y": 2239.3500000000004,
+      "width": 342,
+      "height": 604,
+      "file": "mobile-light.png",
+      "zoom": 1,
+      "pixelWidth": 342,
+      "pixelHeight": 604,
+      "method": "Unedited SD-section crop from the owned Penpot canvas",
+      "sha256": "df6247be1bdaef8a38aa56758209d30a71ae7b2e1f2c830c07012323436cdb20"
+    },
+    {
+      "board": "Firmware emulator / Mobile / Dark",
+      "id": "968cb989-21d8-805d-8008-bb76bc9b8208",
+      "x": 3524,
+      "y": 2239.3500000000004,
+      "width": 342,
+      "height": 604,
+      "file": "mobile-dark.png",
+      "zoom": 1,
+      "pixelWidth": 342,
+      "pixelHeight": 604,
+      "method": "Unedited SD-section crop from the owned Penpot canvas",
+      "sha256": "6355e01ee785996d71a7f922b513f287f32d61890ea16e743e3e7b5c99e26132"
+    }
+  ]
+}

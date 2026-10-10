@@ -1,0 +1,56 @@
+{
+  "schema": "opensp-feature-picker-review",
+  "version": 1,
+  "scope": "Local static configuration preview and saved linked native layouts",
+  "review": "In-thread finish review; no independent design reviewer.",
+  "native": [
+    {
+      "id": "7d39c61f-08fe-80d5-8008-bcaea0dcddfd",
+      "name": "Feature picker / Desktop / Light",
+      "width": 1440,
+      "height": 2180,
+      "linkedHeads": 16,
+      "overflow": []
+    },
+    {
+      "id": "7d39c61f-08fe-80d5-8008-bcaea61632a4",
+      "name": "Feature picker / Desktop / Dark",
+      "width": 1440,
+      "height": 2180,
+      "linkedHeads": 16,
+      "overflow": []
+    },
+    {
+      "id": "7d39c61f-08fe-80d5-8008-bcaeacbf8a59",
+      "name": "Feature picker / Mobile / Light",
+      "width": 390,
+      "height": 3616,
+      "linkedHeads": 16,
+      "overflow": []
+    },
+    {
+      "id": "7d39c61f-08fe-80d5-8008-bcaeaf07ba91",
+      "name": "Feature picker / Mobile / Dark",
+      "width": 390,
+      "height": 3616,
+      "linkedHeads": 16,
+      "overflow": []
+    }
+  ],
+  "uiDetector": {
+    "primary": 0,
+    "advisories": 3
+  },
+  "tests": {
+    "selection": 44,
+    "browser": 12,
+    "astroCheck": "PASS",
+    "build": "PASS",
+    "fullSuite": "Stopped in existing unrelated emulator import phase;915 pass/18 failed imports"
+  },
+  "pageScriptGzipBytes": 8567,
+  "buildReady": false,
+  "uploadReady": false,
+  "published": false,
+  "deviceOperations": false
+}

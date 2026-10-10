@@ -1,0 +1,20 @@
+{
+  "schema": "opensp-sd-page-pre-edit-live-readback-v1",
+  "files": [
+    {
+      "path": "tools/emulator-evidence/sd-page-pre-20261003/live/emulator-components.json",
+      "bytes": 734193,
+      "sha256": "77127da0b8dd63857b5206831c313db8aac7130d3d64ab5ec1f67c36cb6ba07a"
+    },
+    {
+      "path": "tools/emulator-evidence/sd-page-pre-20261003/live/emulator-layouts.json",
+      "bytes": 347383,
+      "sha256": "1fecf7e634937a1ebe1c0aaa436ee5549a73406d2dd2c5cd1079f89ade79888c"
+    },
+    {
+      "path": "tools/emulator-evidence/sd-page-pre-20261003/live/emulator-states.json",
+      "bytes": 7671,
+      "sha256": "769f47551a99d2d78525e47b85fd164f358f673fe1a31d838ffe9540d60915a6"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "scope": "Original VIDEO model routed through the board, finite MMIO and board ownership tests only",
+  "componentReceipt": "pll-video-qualification.json",
+  "beforeIntegration": "board-before-video-pll-20261003/manifest.json",
+  "independentReadOnlyReview": "No material finding; exact source, mask, signed fraction and output-divider policies matched retained primary sources",
+  "verification": {
+    "groups": 35,
+    "failed": 0,
+    "componentGroups": 33,
+    "boardGroups": 2,
+    "strictBoardTypecheck": "passed"
+  },
+  "guestFirmwareExecuted": false,
+  "physicalDeviceAccess": false,
+  "files": {
+    "src/lib/emulator/board.ts": {
+      "bytes": 37935,
+      "sha256": "e35cb1f5d82b50d2bdb01e5047d5143401a0ee4a80eb3460b384270a3922beea"
+    },
+    "src/lib/emulator/pll-video.ts": {
+      "bytes": 10747,
+      "sha256": "a685474127671538d65eb05e490265fcfe807df3516aec75ddd7bcb060c2bd08"
+    },
+    "tests/emulator-pll-video.test.mjs": {
+      "bytes": 24465,
+      "sha256": "a2fa177b770ff0ca5602c4a99fedd504f66e0d5bc37fd820b05ebb567be1233c"
+    },
+    "tests/emulator-pll-video-board.test.mjs": {
+      "bytes": 2096,
+      "sha256": "a99bfb85e20164a71816816f7654ca2c5ae614d2fc2c89ed3781155f60024907"
+    },
+    "docs/emulator-board-contract.md": {
+      "bytes": 14631,
+      "sha256": "abd16d090e7d399d6ee185848e511cb3c3e40abb0576225f56d2f408c88f40de"
+    },
+    "docs/emulator-pll-video.md": {
+      "bytes": 4733,
+      "sha256": "e094fb85068ec735b590ffbce7b860a38c02929a42fb98343eeeef835ed3f58f"
+    },
+    "tools/test-emulator-stock.mjs": {
+      "bytes": 19796,
+      "sha256": "14c0edaf4cc1b8490b9d4b35f5ae0a41943880b241c9c1c801c3fea7855b55fe"
+    },
+    "tools/emulator-evidence/pll-video-board-tests-20261003.tap": {
+      "bytes": 7953,
+      "sha256": "ef674e3e16a940c3e2931111765a5a22dce2cb8be4bb1839c05c3519cb8b2e40"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "file": "tests/emulator-worker-roundtrip.spec.ts",
+  "scope": "Root adds AUDIO source pin to frozen SD browser fixture; no behavior change",
+  "schema": 1,
+  "preparedFixtureArchive": "board-before-audio-pll-20261003/manifest.json",
+  "browserAcceptance": "pending",
+  "sha256": "5007e316d853eedce5bf5f68c3138b0a2e4f7ad140af3680b2b4a875c86bf6fa",
+  "bytes": 27895,
+  "preparedFixtureSha256": "937ca5aec803bc111bc7b02e1378f2817430c23a79cbc229e9ca4496d4d9b53d",
+  "preparedFixtureReceipt": "sd-worker-browser-fixture-preparation-20261003.json"
+}

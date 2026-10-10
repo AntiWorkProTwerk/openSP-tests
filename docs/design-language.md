@@ -43,6 +43,21 @@ pauses offscreen/hidden, and stays stopped after a manual pause. Reduced motion
 defaults to the complete poster. The downloadable Python exercise reproduces
 only the offline comparison structure; it is not a hardware installation guide.
 
+## Firmware emulator
+
+The **Emulator** page extends the field-manual design with independent firmware
+sessions, a shared Instrument with an initially blank OLED, execution diagnostics,
+input controls, optional SD images and virtual USB reports. **Emulator components** contains sixteen
+native mains. Desktop/mobile light/dark layouts use linked instances and existing
+theme assets. A separate state sheet labels its ready, loading, paused and error
+examples as design examples. The shared Footer now contains the emulator utility
+link; the chosen primary navigation remains Releases and Guides.
+
+[The emulator source map](emulator-design.md) connects these mains to the shared
+JSON, Astro template and browser behavior. It records native exports, responsive
+footer propagation, preserved failed passes and the distinction between layout
+checks and firmware execution evidence.
+
 ## Design history and source
 
 Tool: **Penpot**, connected through the signed-in Canary UI on 2026-09-28.

@@ -1,0 +1,47 @@
+{
+  "kind": "Immutable pre-implementation source and source-review snapshot",
+  "recordedUtc": "2026-10-03T06:06:42.6980185Z",
+  "files": [
+    {
+      "path": "src/lib/emulator/update.ts",
+      "bytes": 25825,
+      "sha256": "4edb47e17d68bed3afcf28f6c6b80236ea081781a31944100e3ab4570b41d531"
+    },
+    {
+      "path": "src/lib/emulator/image.ts",
+      "bytes": 9443,
+      "sha256": "8ce61e1c0490c7588906a7d32c7e395db4eab5df40b5b0872908e38eca33e019"
+    },
+    {
+      "path": "src/lib/emulator/session.ts",
+      "bytes": 15220,
+      "sha256": "da7671bc2ff356d99a643314f498749d15247323aec051f6395a6bf0fbf47563"
+    },
+    {
+      "path": "tests/emulator-update.test.mjs",
+      "bytes": 20572,
+      "sha256": "7dc2d3d4e73db3ac3277b3b29e02b58b2bad08ce99d2cb515d0243879c889d62"
+    },
+    {
+      "path": "tests/emulator-image.test.mjs",
+      "bytes": 9966,
+      "sha256": "077649c10fda94a035811775e43f27b53c5edd3629dc46fa55d47f85d0462603"
+    },
+    {
+      "path": "docs/emulator-larger-writer-profiles.md",
+      "bytes": 8385,
+      "sha256": "4c0d4660b20cb8457b0ebe8e9b0f631f823afeea9825290fb51de984778b54b8"
+    },
+    {
+      "path": "docs/emulator-update-contract.md",
+      "bytes": 11189,
+      "sha256": "f1bc57cb968b911b0c312ed49122a6105ffed376f348b53c9679efc6d1ce3a7b"
+    },
+    {
+      "path": "tools/emulator-evidence/larger-writer-source-review-20261003.json",
+      "bytes": 28208,
+      "sha256": "a0df5c586e208b110526f5448015fe107c938d69db4f5ad718782edb89163f4e"
+    }
+  ],
+  "scope": "No engine, firmware or physical-device execution"
+}

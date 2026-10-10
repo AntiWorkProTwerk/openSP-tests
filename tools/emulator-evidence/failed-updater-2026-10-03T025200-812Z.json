@@ -1,0 +1,630 @@
+{
+  "schema": "opensp-virtual-updater-roundtrip-v1",
+  "timestampUtc": "2026-10-03T02:51:14.274Z",
+  "passed": false,
+  "scope": "The reusable VirtualFirmwareUpdater drives actual R13-to-R14 and R14-to-R13 USB reports, guest CRC, NOR IP readback, separate completion status and retained-NOR resets in one ARM WASM session.",
+  "physicalDeviceAccess": false,
+  "firmwareBytesPublished": false,
+  "modeledClock": {
+    "gptHz": 24000000,
+    "counterReadIncrement": 24000,
+    "cpuCyclesMeasured": false
+  },
+  "modeledHost": {
+    "statusCompletion": "Guest services ENDPTCOMPLETE before the next SETUP",
+    "guestIdleInstructionsAfterEachControl": 25000,
+    "physicalElapsedTimeMeasured": false
+  },
+  "limitations": [
+    "Both images begin at the captured resident APP1 handoff; ROM, resident cold boot and physical recovery are unverified.",
+    "This roundtrip covers exact preserved R13/R14 ABI1 builds and the measured Macronix profile fixture.",
+    "The writer updates occupied target sectors and preserves bytes beyond them, including an older larger image tail.",
+    "Host idle turns, GPT reads, ADC completion, busy durations and companion replies contain model fixtures.",
+    "No physical USB, cache coherence, flash endurance, interrupted programming or audio route behavior is established."
+  ],
+  "sourceSha256": {
+    "src/lib/emulator/image.ts": "8ce61e1c0490c7588906a7d32c7e395db4eab5df40b5b0872908e38eca33e019",
+    "src/lib/emulator/cpu.ts": "fb27f37e31277b4e79d1847562c961de23acd25befc4015ffbfd2a3c7d7809b1",
+    "src/lib/emulator/board.ts": "5de6520da56f4c09c0784d9c34b396af7baa382e569695db620485ce71b81bf9",
+    "src/lib/emulator/usb.ts": "68e5fa1b6b9c1d7de2da9a66ace01fb147077eb849ca9c6ef3c943e143ad85b2",
+    "src/lib/emulator/flash.ts": "2a887edf140feae0ed6ae450650ee2feb0c4bb8119c4a8d94d373a3c6d15d5bc",
+    "src/lib/emulator/exceptions.ts": "6412e7fc3086f2ab34f6f0127983521ccfb48cf7a2563249e5d09cf09a6d2e51",
+    "src/lib/emulator/session.ts": "4a98cb2833aec3768bb381e5bda78a9eb4d66e269d763f315c3109ef0820a699",
+    "src/lib/emulator/update.ts": "4edb47e17d68bed3afcf28f6c6b80236ea081781a31944100e3ab4570b41d531",
+    "tools/test-emulator-firmware.mjs": "b9fd33a2bcd1db38c37f30e5e55a39262b82b86ed3f22636828744d3643b21ec",
+    "tools/test-emulator-update.mjs": "e585c3b0c63e460a0098e0c3420adaf36f03d807dd0405cb9c762cb1846d6af8"
+  },
+  "runtime": {
+    "wrapperCommit": "1220477c7fb0f8fe4b500f4bd211de52f6dfe638",
+    "coreCommit": "8028ec436f2d9376525352dd38ed9ed6b9f6be10",
+    "jsSha256": "d8bc37b898ccbc5b429f17112add6ad33a8a9b35df4146034ba141b992dae007",
+    "wasmSha256": "f9520f9aa55299b84d005390844082a1468f26137e239eb1167dde8473aecc6c"
+  },
+  "measuredProfile": {
+    "file": "analysis/hardware/usb_r11_20260922T190757Z/preflight.json",
+    "sha256": "fa098817b8c8fd76d4ac19e46784f020c6fc8d1ad4fc205a0cdacb742c64c9cb"
+  },
+  "firmware": {
+    "initial": {
+      "name": "ORIGINAL R13",
+      "bytes": 15396,
+      "sha256": "4891fd9451cd107f6f50f4fb85d75f538cf5b2eb3c7fb2680f36719b32f67e8a",
+      "marker": "0x523d0001",
+      "buildManifestSha256": "540b094a2588532d629376426870321ddc86c4f4ad75beb2bf4172ec5b488dbd",
+      "sourceSha256": {
+        "startup.S": "77a0da0310fd45e3e98951b0b4159f2ded3d4950ec710403031cffdd6120b0db",
+        "monitor.c": "11e7fa32e75c6492aad14667bb9873871478351343a22eeecc8b2153d96bf2bd",
+        "app1.ld": "cb050a7432145d737a86f8b1fb3afacc74745e4c4a409fcb37ecac37dc91fb94",
+        "board.c": "65481a65ddd24c9a7aa63ec75dfb4d8a0897f04587682ff107ec04292f0a1928",
+        "board.h": "1dc05396ad753251d792be4eb0059321c39a2e7dc43a8fac5946a2cf1e0d5bdb",
+        "screen.c": "7b193deaadcd30d62519a93c58c3aa5d5c02e99e1a979efc07e2f75f0afa7049",
+        "local_input.c": "c3eb4efa75b6adb6feff62c187a641ef11e78ffec17b736b36226039a0f34139",
+        "local_input.h": "837b0c884e9f5b0a99754ee631ec0cc98b6fd409ea25c299d9012bb201fcc2a8",
+        "usb_device.c": "4e856c4c6cc76f2064206112879e6b08f7a7e2e96a62bf668a15b6e3cd798bcd",
+        "usb_upload.c": "7e01690b8c3be5811ab056c164f96e9ea41a6254df115003b8d786cdb1790ff8",
+        "usb_upload.h": "c7ca78d4a3f5d70188a3fcc1066a3ac685423b540cff365e3053b743f8dd5035",
+        "build.py": "deddd6bcbfad2ba5cdc93e561432223fabccb280e314f480f032d8816a05c1cc",
+        "flash.c": "b58fd29e230c2447400315b9f76d42806018e9da7908c7cb26e0b39a3e50667a",
+        "flash.h": "bdb16538f71f22b1d6fa795e4fae0cca71691e09fa87c5c9d631345e419c8cf7",
+        "control_capture.c": "02f31a9f3522bb8b2cf8e8b10964334ff0b420fabf4e36c6fcfd3183f455c555",
+        "control_capture.h": "9b9da35671ec042f6452022c7036bb98b7b86398c7142eaab2d48e247de9ece2",
+        "controls.c": "e5bf77180e1ae56a66aaa56637d28483555c3eed1326ed69c111977217808e58",
+        "controls.h": "688918694507b9e8be7c8fdb85d3cb6896241ce2ca1677674b8dbffcb26f37c1",
+        "control_map.c": "18aececb50e73863b835bf41a7333bc3fbe607914329c1f12b38b23812750d39",
+        "named_input.c": "aca5df688eebee10745b0f488b3cd26a837e9fb9c8c80f9ef84cb0bc6a908479",
+        "named_input.h": "a628178fd98f752af1f8aecbbab6ac82be1ef6d2f243a20071d11f572414db74",
+        "generate_map.py": "98a76902c0b8c65d084a1c126a237a5577abedf5ec796b8a36b99a7adea936d2",
+        "control_profile.json": "42193d24ae9ddb94bea08f915533fa74cc9099db3e3f440091cb098eac329b4a"
+      }
+    },
+    "intermediate": {
+      "name": "ORIGINAL R14",
+      "bytes": 16420,
+      "sha256": "b8e582ce74fb28b209dc9b14eccc9c175745bcb20648efe0ca9a0053c9e92695",
+      "marker": "0x523e0001",
+      "buildManifestSha256": "6a7ad3f2c2a5fef812a654408c1756c0baf3bc68329401dbb3272ba6c0f59d84",
+      "sourceSha256": {
+        "startup.S": "e410477df0d897c877b13fcd5494a745ad8b539b94bbd6aea3c2f4b69935fef1",
+        "monitor.c": "9a8033a959c0aa8d1451295b1f0904d4f238a99b16050b2797935f2d760bee64",
+        "app1.ld": "94362048d8d71e0c50c8a68a74bffaf2ab79e2d0592835239798fc6c293dd09f",
+        "board.c": "481ba2da5904970a115280e43bfbaff739b1ae22bc4d5f860da8c3a5735af111",
+        "board.h": "1dc05396ad753251d792be4eb0059321c39a2e7dc43a8fac5946a2cf1e0d5bdb",
+        "screen.c": "7f62ea96ed3e61e69d7a2c6073fb820f275b9e954895642d8b79d68927536711",
+        "local_input.c": "c3eb4efa75b6adb6feff62c187a641ef11e78ffec17b736b36226039a0f34139",
+        "local_input.h": "837b0c884e9f5b0a99754ee631ec0cc98b6fd409ea25c299d9012bb201fcc2a8",
+        "usb_device.c": "25391ec189e6cc175fbb26cb3565a067ec352733b5775155a3058a9d6765f973",
+        "usb_upload.c": "d63337f98c44c8fbfceb703003cb7327f490ea97bc9c0a7b410d2dedb42cafb3",
+        "usb_upload.h": "c7ca78d4a3f5d70188a3fcc1066a3ac685423b540cff365e3053b743f8dd5035",
+        "build.py": "9b29c1631b1d6b09b20a870c52699fb945acb59507fec9acf78c22e194bf8c2b",
+        "flash.c": "21677781732212c2611583ed3dd3f63c43172899bd741e4597e707d4cbb17f1e",
+        "flash.h": "bdb16538f71f22b1d6fa795e4fae0cca71691e09fa87c5c9d631345e419c8cf7",
+        "control_capture.c": "02f31a9f3522bb8b2cf8e8b10964334ff0b420fabf4e36c6fcfd3183f455c555",
+        "control_capture.h": "9b9da35671ec042f6452022c7036bb98b7b86398c7142eaab2d48e247de9ece2",
+        "audio_probe.c": "b0ec7f4075308ce283d8721a4f4b527d38a53ac459122c557b7f8496c02655c5",
+        "audio_probe.h": "4085a9f8990c06d53cdaa2691e97925bcb83848402a894a0acb99c0cac605260",
+        "controls.c": "c2403ae07bac951f2d84cae6c0865d62431489b83d6974ff0c6a23e7b52fbe6b",
+        "controls.h": "8f0eaa069fc355a44da222bdb6c71225872e5180f1070352b785759974071b1f",
+        "control_map.c": "b401652fbedac1a4c86f8e784bf83425cea0c56103abb394e1dde53728cd19a5",
+        "named_input.c": "d958f9c26524dfb721d368556f3fc24938d515f3f9bba6810c65c2ff8ac5d407",
+        "named_input.h": "a628178fd98f752af1f8aecbbab6ac82be1ef6d2f243a20071d11f572414db74",
+        "generate_map.py": "f9a219f060c334f9808f480f7d5742dc1d93163a4b96bac3ca3adfc4ff2dd5cf",
+        "control_profile.json": "42193d24ae9ddb94bea08f915533fa74cc9099db3e3f440091cb098eac329b4a"
+      }
+    },
+    "final": {
+      "name": "ORIGINAL R13",
+      "bytes": 15396,
+      "sha256": "4891fd9451cd107f6f50f4fb85d75f538cf5b2eb3c7fb2680f36719b32f67e8a",
+      "marker": "0x523d0001",
+      "buildManifestSha256": "540b094a2588532d629376426870321ddc86c4f4ad75beb2bf4172ec5b488dbd",
+      "sourceSha256": {
+        "startup.S": "77a0da0310fd45e3e98951b0b4159f2ded3d4950ec710403031cffdd6120b0db",
+        "monitor.c": "11e7fa32e75c6492aad14667bb9873871478351343a22eeecc8b2153d96bf2bd",
+        "app1.ld": "cb050a7432145d737a86f8b1fb3afacc74745e4c4a409fcb37ecac37dc91fb94",
+        "board.c": "65481a65ddd24c9a7aa63ec75dfb4d8a0897f04587682ff107ec04292f0a1928",
+        "board.h": "1dc05396ad753251d792be4eb0059321c39a2e7dc43a8fac5946a2cf1e0d5bdb",
+        "screen.c": "7b193deaadcd30d62519a93c58c3aa5d5c02e99e1a979efc07e2f75f0afa7049",
+        "local_input.c": "c3eb4efa75b6adb6feff62c187a641ef11e78ffec17b736b36226039a0f34139",
+        "local_input.h": "837b0c884e9f5b0a99754ee631ec0cc98b6fd409ea25c299d9012bb201fcc2a8",
+        "usb_device.c": "4e856c4c6cc76f2064206112879e6b08f7a7e2e96a62bf668a15b6e3cd798bcd",
+        "usb_upload.c": "7e01690b8c3be5811ab056c164f96e9ea41a6254df115003b8d786cdb1790ff8",
+        "usb_upload.h": "c7ca78d4a3f5d70188a3fcc1066a3ac685423b540cff365e3053b743f8dd5035",
+        "build.py": "deddd6bcbfad2ba5cdc93e561432223fabccb280e314f480f032d8816a05c1cc",
+        "flash.c": "b58fd29e230c2447400315b9f76d42806018e9da7908c7cb26e0b39a3e50667a",
+        "flash.h": "bdb16538f71f22b1d6fa795e4fae0cca71691e09fa87c5c9d631345e419c8cf7",
+        "control_capture.c": "02f31a9f3522bb8b2cf8e8b10964334ff0b420fabf4e36c6fcfd3183f455c555",
+        "control_capture.h": "9b9da35671ec042f6452022c7036bb98b7b86398c7142eaab2d48e247de9ece2",
+        "controls.c": "e5bf77180e1ae56a66aaa56637d28483555c3eed1326ed69c111977217808e58",
+        "controls.h": "688918694507b9e8be7c8fdb85d3cb6896241ce2ca1677674b8dbffcb26f37c1",
+        "control_map.c": "18aececb50e73863b835bf41a7333bc3fbe607914329c1f12b38b23812750d39",
+        "named_input.c": "aca5df688eebee10745b0f488b3cd26a837e9fb9c8c80f9ef84cb0bc6a908479",
+        "named_input.h": "a628178fd98f752af1f8aecbbab6ac82be1ef6d2f243a20071d11f572414db74",
+        "generate_map.py": "98a76902c0b8c65d084a1c126a237a5577abedf5ec796b8a36b99a7adea936d2",
+        "control_profile.json": "42193d24ae9ddb94bea08f915533fa74cc9099db3e3f440091cb098eac329b4a"
+      }
+    }
+  },
+  "phase": "ORIGINAL R13 to ORIGINAL R14",
+  "initialBoot": {
+    "checkpoint": "resident-app1-handoff",
+    "incoming": {
+      "r0": "0x60080001",
+      "msp": "0x202435b0",
+      "lr": 4,
+      "control": 0
+    },
+    "cpuModel": 10,
+    "cpuid": "0x411fc271",
+    "vtor": "0x80000000",
+    "marker": "0x523d0001",
+    "firmwareState": 2,
+    "heartbeat": 5,
+    "exceptions": {
+      "activeException": 0,
+      "activeExceptions": [],
+      "pendingExceptions": [],
+      "vectorTable": 2147483648,
+      "priorityGrouping": 0,
+      "delivered": 1,
+      "returned": 1,
+      "tailChains": 0,
+      "floatingPoint": {
+        "enabled": true,
+        "cpacr": 0,
+        "fpccr": 3221225472,
+        "fpcar": 0,
+        "fpdscr": 0,
+        "eagerFrames": 0,
+        "lazyFrames": 0,
+        "lazySaves": 0,
+        "lazyReturns": 0,
+        "restoredFrames": 0,
+        "unknownRegisterPolicy": "retain architecturally UNKNOWN caller-saved FP values"
+      },
+      "systick": {
+        "control": 0,
+        "reload": 0,
+        "current": 0,
+        "countFlag": false,
+        "sourceTicks": 0,
+        "timing": "modeled source ticks; no physical cycle calibration"
+      },
+      "unsupported": [
+        "late arrival",
+        "fault escalation",
+        "non-base Thread return",
+        "sleep",
+        "exclusive monitors",
+        "derived faults during FP stacking"
+      ]
+    },
+    "frames": [
+      {
+        "number": 1,
+        "bytes": 1024,
+        "sha256": "5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
+      },
+      {
+        "number": 2,
+        "bytes": 1024,
+        "sha256": "50083cabbaf22d8c50cacaa9155443850d3ec287459ff630a2791046ed416199"
+      },
+      {
+        "number": 3,
+        "bytes": 1024,
+        "sha256": "0c55f041ef4fcac2ef4009e404dd89eaab5b671d70c7d3b4a6a1d72b3a4123f2"
+      },
+      {
+        "number": 4,
+        "bytes": 1024,
+        "sha256": "41e0f21fcbc0a2dce1e525eb03097a6181df9148070f8037aa02fc8f6883aa41"
+      },
+      {
+        "number": 5,
+        "bytes": 1024,
+        "sha256": "fcdb19253e1d53a82baed2c9d2e406f95d697a2706f28076f53e3079359e0635"
+      }
+    ],
+    "instructions": 5800000
+  },
+  "directions": [],
+  "failureSnapshot": {
+    "state": "fault",
+    "pc": 2147484992,
+    "instructions": 819371,
+    "firmwareHash": "b8e582ce74fb28b209dc9b14eccc9c175745bcb20648efe0ca9a0053c9e92695",
+    "format": "app1",
+    "checkpoint": "resident-app1-handoff",
+    "frames": 1,
+    "displayOn": true,
+    "powered": true,
+    "unknownMmio": [],
+    "unknownMmioOverflow": 0,
+    "pendingInterrupts": [],
+    "fault": "RuntimeError: memory access out of bounds",
+    "cpuBackendFailed": true,
+    "mailboxCached": true,
+    "exceptions": {
+      "activeException": 0,
+      "activeExceptions": [],
+      "pendingExceptions": [],
+      "vectorTable": 2147483648,
+      "priorityGrouping": 0,
+      "delivered": 1,
+      "returned": 1,
+      "tailChains": 0,
+      "floatingPoint": {
+        "enabled": true,
+        "cpacr": 0,
+        "fpccr": 3221225472,
+        "fpcar": 0,
+        "fpdscr": 0,
+        "eagerFrames": 0,
+        "lazyFrames": 0,
+        "lazySaves": 0,
+        "lazyReturns": 0,
+        "restoredFrames": 0,
+        "unknownRegisterPolicy": "retain architecturally UNKNOWN caller-saved FP values"
+      },
+      "systick": {
+        "control": 0,
+        "reload": 0,
+        "current": 0,
+        "countFlag": false,
+        "sourceTicks": 0,
+        "timing": "modeled source ticks; no physical cycle calibration"
+      },
+      "unsupported": [
+        "late arrival",
+        "fault escalation",
+        "non-base Thread return",
+        "sleep",
+        "exclusive monitors",
+        "derived faults during FP stacking"
+      ]
+    },
+    "flash": {
+      "commandCount": 687,
+      "fcbSource": "geometry fixture",
+      "sfdpSource": "R11 measured bytes with FF fixture padding"
+    },
+    "limitations": [
+      "Structural admission does not prove firmware bootability or physical device behavior.",
+      "The emulator executes the uploaded startup bytes; it does not substitute reconstructed scatter regions.",
+      "APP1 starts at the captured resident handoff, MSP 0x202435B0 and BASEPRI 16. No reset-vector lookup or cold ROM boot occurs.",
+      "GPT uses nominal 24 MHz; instruction ticks do not establish Cortex-M7 cycle timing.",
+      "GPIO/ADC inputs are injected values; electrical settling, pressure and mechanical calibration are unmodeled.",
+      "ADC calibration and conversion complete immediately; failure injection tests bounded firmware paths.",
+      "Clock, mux, watchdog and cache registers retain configuration without electrical, expiry or cache-coherency simulation.",
+      "UART startup/status/shutdown replies are a bounded companion fixture; complete BMC behavior remains unknown.",
+      "SAI models injected FIFO words only; external clocks, audio DMA and physical route identity are unimplemented.",
+      "OLED RAM/window/on-off and GPIO SPI are modeled; contrast, scrolling and analog display behavior are unimplemented.",
+      "USB device DMA/control tokens are modeled; PHY, cache timing, host mode and isochronous scheduling are unimplemented.",
+      "NOR preflight/IP reads/erase/program are modeled; default FCB fields and unread SFDP bytes are fixtures, and unsupported commands report a model error.",
+      "ADC_ETC, USDHC/storage, eDMA and other stock peripherals are unimplemented and appear in unknown MMIO.",
+      "The default regression clock advances GPT by 24,000 ticks per counter read; this is a fast fixture, not hardware timing.",
+      "Integer and eager/lazy floating-point frames are modeled. Fault escalation and complete interrupt timing remain unsupported.",
+      "External IRQ count 160 and priority bits 4 are model profile choices; they do not establish the physical configuration.",
+      "Instruction counts are emulator work, not measured Cortex-M7 cycles.",
+      "The ARM engine failed. Mailbox values are from its last healthy snapshot; reset or replace this session."
+    ]
+  },
+  "failureFlash": {
+    "commands": [
+      {
+        "opcode": 3,
+        "address": 536576,
+        "length": 256,
+        "sequence": 15
+      },
+      {
+        "opcode": 3,
+        "address": 536832,
+        "length": 256,
+        "sequence": 15
+      },
+      {
+        "opcode": 3,
+        "address": 537088,
+        "length": 256,
+        "sequence": 15
+      },
+      {
+        "opcode": 3,
+        "address": 537344,
+        "length": 256,
+        "sequence": 15
+      },
+      {
+        "opcode": 3,
+        "address": 537600,
+        "length": 256,
+        "sequence": 15
+      },
+      {
+        "opcode": 3,
+        "address": 537856,
+        "length": 256,
+        "sequence": 15
+      },
+      {
+        "opcode": 3,
+        "address": 538112,
+        "length": 256,
+        "sequence": 15
+      },
+      {
+        "opcode": 3,
+        "address": 538368,
+        "length": 256,
+        "sequence": 15
+      },
+      {
+        "opcode": 3,
+        "address": 538624,
+        "length": 256,
+        "sequence": 15
+      },
+      {
+        "opcode": 3,
+        "address": 538880,
+        "length": 256,
+        "sequence": 15
+      },
+      {
+        "opcode": 3,
+        "address": 539136,
+        "length": 256,
+        "sequence": 15
+      },
+      {
+        "opcode": 3,
+        "address": 539392,
+        "length": 256,
+        "sequence": 15
+      },
+      {
+        "opcode": 3,
+        "address": 539648,
+        "length": 256,
+        "sequence": 15
+      },
+      {
+        "opcode": 3,
+        "address": 539904,
+        "length": 256,
+        "sequence": 15
+      },
+      {
+        "opcode": 3,
+        "address": 540160,
+        "length": 256,
+        "sequence": 15
+      },
+      {
+        "opcode": 3,
+        "address": 540416,
+        "length": 256,
+        "sequence": 15
+      },
+      {
+        "opcode": 3,
+        "address": 540672,
+        "length": 256,
+        "sequence": 15
+      },
+      {
+        "opcode": 3,
+        "address": 540928,
+        "length": 256,
+        "sequence": 15
+      },
+      {
+        "opcode": 3,
+        "address": 541184,
+        "length": 256,
+        "sequence": 15
+      },
+      {
+        "opcode": 3,
+        "address": 541440,
+        "length": 256,
+        "sequence": 15
+      },
+      {
+        "opcode": 3,
+        "address": 541696,
+        "length": 256,
+        "sequence": 15
+      },
+      {
+        "opcode": 3,
+        "address": 541952,
+        "length": 256,
+        "sequence": 15
+      },
+      {
+        "opcode": 3,
+        "address": 542208,
+        "length": 256,
+        "sequence": 15
+      },
+      {
+        "opcode": 3,
+        "address": 542464,
+        "length": 256,
+        "sequence": 15
+      },
+      {
+        "opcode": 3,
+        "address": 542720,
+        "length": 256,
+        "sequence": 15
+      },
+      {
+        "opcode": 3,
+        "address": 542976,
+        "length": 256,
+        "sequence": 15
+      },
+      {
+        "opcode": 3,
+        "address": 543232,
+        "length": 256,
+        "sequence": 15
+      },
+      {
+        "opcode": 3,
+        "address": 543488,
+        "length": 256,
+        "sequence": 15
+      },
+      {
+        "opcode": 3,
+        "address": 543744,
+        "length": 256,
+        "sequence": 15
+      },
+      {
+        "opcode": 3,
+        "address": 544000,
+        "length": 256,
+        "sequence": 15
+      },
+      {
+        "opcode": 3,
+        "address": 544256,
+        "length": 256,
+        "sequence": 15
+      },
+      {
+        "opcode": 3,
+        "address": 544512,
+        "length": 256,
+        "sequence": 15
+      }
+    ],
+    "erases": [
+      528384,
+      532480,
+      536576,
+      540672,
+      524288
+    ],
+    "pages": [
+      528384,
+      528640,
+      528896,
+      529152,
+      529408,
+      529664,
+      529920,
+      530176,
+      530432,
+      530688,
+      530944,
+      531200,
+      531456,
+      531712,
+      531968,
+      532224,
+      532480,
+      532736,
+      532992,
+      533248,
+      533504,
+      533760,
+      534016,
+      534272,
+      534528,
+      534784,
+      535040,
+      535296,
+      535552,
+      535808,
+      536064,
+      536320,
+      536576,
+      536832,
+      537088,
+      537344,
+      537600,
+      537856,
+      538112,
+      538368,
+      538624,
+      538880,
+      539136,
+      539392,
+      539648,
+      539904,
+      540160,
+      540416,
+      540672,
+      540928,
+      541184,
+      541440,
+      541696,
+      541952,
+      542208,
+      542464,
+      542720,
+      542976,
+      543232,
+      543488,
+      543744,
+      544000,
+      544256,
+      544512,
+      524288,
+      524544,
+      524800,
+      525056,
+      525312,
+      525568,
+      525824,
+      526080,
+      526336,
+      526592,
+      526848,
+      527104,
+      527360,
+      527616,
+      527872,
+      528128
+    ]
+  },
+  "resets": [],
+  "usbReports": {
+    "normalGets": 28,
+    "commands": {
+      "1": 1,
+      "2": 294,
+      "3": 1,
+      "5": 1,
+      "6": 1,
+      "7": 2
+    },
+    "signatures": {
+      "SP13": 326,
+      "SPDG": 2
+    }
+  },
+  "hostElapsedMs": 46537,
+  "error": {
+    "name": "VirtualUpdateError",
+    "message": "Virtual reset failed: RuntimeError: memory access out of bounds"
+  },
+  "finalSourceSha256": {
+    "src/lib/emulator/image.ts": "8ce61e1c0490c7588906a7d32c7e395db4eab5df40b5b0872908e38eca33e019",
+    "src/lib/emulator/cpu.ts": "fb27f37e31277b4e79d1847562c961de23acd25befc4015ffbfd2a3c7d7809b1",
+    "src/lib/emulator/board.ts": "5de6520da56f4c09c0784d9c34b396af7baa382e569695db620485ce71b81bf9",
+    "src/lib/emulator/usb.ts": "68e5fa1b6b9c1d7de2da9a66ace01fb147077eb849ca9c6ef3c943e143ad85b2",
+    "src/lib/emulator/flash.ts": "2a887edf140feae0ed6ae450650ee2feb0c4bb8119c4a8d94d373a3c6d15d5bc",
+    "src/lib/emulator/exceptions.ts": "6412e7fc3086f2ab34f6f0127983521ccfb48cf7a2563249e5d09cf09a6d2e51",
+    "src/lib/emulator/session.ts": "4a98cb2833aec3768bb381e5bda78a9eb4d66e269d763f315c3109ef0820a699",
+    "src/lib/emulator/update.ts": "4edb47e17d68bed3afcf28f6c6b80236ea081781a31944100e3ab4570b41d531",
+    "tools/test-emulator-firmware.mjs": "b9fd33a2bcd1db38c37f30e5e55a39262b82b86ed3f22636828744d3643b21ec",
+    "tools/test-emulator-update.mjs": "e585c3b0c63e460a0098e0c3420adaf36f03d807dd0405cb9c762cb1846d6af8"
+  }
+}

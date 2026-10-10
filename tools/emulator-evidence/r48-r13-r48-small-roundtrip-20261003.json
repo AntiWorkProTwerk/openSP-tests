@@ -1,0 +1,1961 @@
+{
+  "schema": "opensp-larger-writer-small-roundtrip-v1",
+  "timestampUtc": "2026-10-03T07:33:21.468Z",
+  "recipient": "R48",
+  "mode": "ordinary-small-image-guest-roundtrip",
+  "passed": true,
+  "phase": "complete",
+  "scope": {
+    "cpuEngineExecuted": true,
+    "guestFirmwareExecuted": true,
+    "physicalDeviceAccess": false,
+    "browserExecuted": false,
+    "firmwareBytesPublished": false,
+    "fullStockOrB1Transfer": false,
+    "selectorApplied": false
+  },
+  "modeledClock": {
+    "gptHz": 24000000,
+    "counterReadIncrement": 24000,
+    "cpuCyclesMeasured": false
+  },
+  "modeledHost": {
+    "guestIdleHookStartsAfterEachControl": 25000,
+    "physicalElapsedTimeMeasured": false
+  },
+  "limits": [
+    "Exact preserved normal R16B/R48 and R13 ABI1 images only; larger stock/B1 plans remain blocked.",
+    "Startup begins at the captured resident APP1 handoff; ROM/cold resident boot and physical recovery remain unqualified.",
+    "Per-token control pumping and boot use bounded code-hook observations, without a general hardware retirement or timing claim.",
+    "Passive NOR command observations prove only the occupied small target sectors; no large-transfer execution claim follows.",
+    "This runner applies no selector, fault injection, diagnostic clone, stop-PC override or runtime cache-flush override."
+  ],
+  "sourceSha256": {
+    "src/lib/emulator/board.ts": "e35cb1f5d82b50d2bdb01e5047d5143401a0ee4a80eb3460b384270a3922beea",
+    "src/lib/emulator/cpu.ts": "fb27f37e31277b4e79d1847562c961de23acd25befc4015ffbfd2a3c7d7809b1",
+    "src/lib/emulator/dcdc.ts": "5e025bd74a48d2550c24f634589fb53bc0456cc78e7e5a0b11438b46611adbae",
+    "src/lib/emulator/exception-return.ts": "66ea775f49ab5db3cb395d1a200d01a2a9733cccf43157e873e4fc5f8e800f03",
+    "src/lib/emulator/exceptions.ts": "6412e7fc3086f2ab34f6f0127983521ccfb48cf7a2563249e5d09cf09a6d2e51",
+    "src/lib/emulator/flash.ts": "2a887edf140feae0ed6ae450650ee2feb0c4bb8119c4a8d94d373a3c6d15d5bc",
+    "src/lib/emulator/image.ts": "9ad75aa988f49534c53e9d477dbebc49c7b8533459ebdb7564a534b04b0b5bfb",
+    "src/lib/emulator/oscillator.ts": "3b9a557fb37d4f859742b9c89b9b51f22c397d0e4da40ef9f3df9bf8b5d887c9",
+    "src/lib/emulator/pll-arm.ts": "88eecf9007c2f9ab55332ecbae9b9dfa34137e4c0c7f9813970e930a8f8acfe0",
+    "src/lib/emulator/pll-audio.ts": "ed60c0518ea61450e85ef1ac35a220a14a5f7a97e0179d683ad9897dd0cc578f",
+    "src/lib/emulator/pll-usb2.ts": "9b54796d35a8b531acb58a1ed76ce637b01f181e1f343fc30f369e1191997bfd",
+    "src/lib/emulator/pll-video.ts": "a685474127671538d65eb05e490265fcfe807df3516aec75ddd7bcb060c2bd08",
+    "src/lib/emulator/sd-fixtures.ts": "7ca00c9ec9b39ad8ed7d1b7913b38aef9ec4102de7ed848658888813566da993",
+    "src/lib/emulator/session.ts": "c0e47e2bf2899b3497e2b58b0ab5e8d50ae0760be27f26ac154bd33970080aaf",
+    "src/lib/emulator/update.ts": "2612ccbcd6581ecc349288da02b3c166a4ccf5c7df2691d4e6056516603e2210",
+    "src/lib/emulator/usb.ts": "68e5fa1b6b9c1d7de2da9a66ace01fb147077eb849ca9c6ef3c943e143ad85b2",
+    "src/lib/emulator/usdhc.ts": "fe74790fd62040aba4a4908943bf2b99c5082958988dae59a4721fec1e430c28",
+    "src/lib/emulator/worker-rpc.ts": "bd07bdfcabbe52968d142c0f19278df14a96cac027531db581c83d537585e5bf",
+    "tools/test-emulator-firmware.mjs": "af455a3c5d82db0404d2a25a953d82a23064bcd1e646d5ef281424919b242ec1",
+    "tools/test-emulator-larger-writer-small.mjs": "3d19d875e64c44eb622ded3636e323232ad369fdb5fb795a8bdf48445354b46e"
+  },
+  "firmware": {
+    "initial": {
+      "name": "R48",
+      "bytes": 17156,
+      "crc32": 1265768542,
+      "marker": 1382154241,
+      "signature": "SP48",
+      "maximum": 3665920,
+      "usbIdentity": "CAFE:404F",
+      "sha256": "11d7631ea73232fbfe2bb30ca6a705f416417cb1aec54290a04944a26d7edba4",
+      "manifestSha256": "1e7fa9ff3f358dacd24b0e7fd475d0dd644fac2a59a7b049c56bf35de61c488d",
+      "binary": "../sp404mk2/sdk/examples/original_r48/build/original_r48.bin",
+      "manifest": "../sp404mk2/sdk/examples/original_r48/build/manifest.json",
+      "buildSourceSha256": {
+        "../sp404mk2/sdk/examples/original_r16b/startup.S": "302aa781a881b7e26a065b89a2c056071a835a4f2e8cfc5c322d2f9a03dbbc6b",
+        "../sp404mk2/sdk/examples/original_r16b/monitor.c": "2658fff68dfe3a9b5faf9977299e3dade2aa2bb822017f1c1dde10e511b7bf56",
+        "../sp404mk2/sdk/examples/original_r16b/board.c": "e7a07beb7a6dbc074461eea85cf51a5f586e2cdea2a4eba8a623d4928928c8c4",
+        "../sp404mk2/sdk/examples/original_r16b/screen.c": "17f6f14e357badd1aaf9c89aa41ddaa8a9aff42fa5ebe5d58135809027b0c900",
+        "../sp404mk2/sdk/examples/original_r16b/local_input.c": "21214f6cd3b1145572c0f944547687e4c5ee81ccc5ce7ca389a71a59738fb1f6",
+        "../sp404mk2/sdk/examples/original_r16b/usb_device.c": "295869eb8226f8de6cdd0f9db7660a1d666753cf0f2636ba99433b275fb6ccfc",
+        "../sp404mk2/sdk/examples/original_r16b/usb_upload.c": "7a8aab9d423041cedc42fb94c8a5041fd38f002f45b7091ea13b2f5e11f48d69",
+        "../sp404mk2/sdk/examples/original_r16b/flash.c": "19e912277ac87d006d5647a8d663f3ea88f6fa864a5513b59fe6feae27e49aff",
+        "../sp404mk2/sdk/examples/original_r16b/control_capture.c": "02f31a9f3522bb8b2cf8e8b10964334ff0b420fabf4e36c6fcfd3183f455c555",
+        "../sp404mk2/sdk/examples/original_r16b/controls.c": "c2403ae07bac951f2d84cae6c0865d62431489b83d6974ff0c6a23e7b52fbe6b",
+        "../sp404mk2/sdk/examples/original_r16b/control_map.c": "9b5dd72d0210d68893d445208fa3167c1bc47fdb0b3b143a2f355c43ad7a1553",
+        "../sp404mk2/sdk/examples/original_r16b/named_input.c": "d958f9c26524dfb721d368556f3fc24938d515f3f9bba6810c65c2ff8ac5d407",
+        "../sp404mk2/sdk/examples/original_r16b/audio_probe.c": "87d2a5e47ae07045b3b67fb59019da030ca1a1b6652b67e12e8ddc209b079390",
+        "../sp404mk2/sdk/examples/original_r16b/app1.ld": "812b6ef37b378f6f62861ed8f972ddf993e21ed08a6656878634f63225701790",
+        "../sp404mk2/sdk/examples/original_r16b/board.h": "d8cf29f9e5f0c0d8eb78038462b74890d84c56421d71f22f6f93be6f090dcde9",
+        "../sp404mk2/sdk/examples/original_r16b/local_input.h": "b96531bdf4d9423800f23262239de4eaad0fbdf3cc7eb38f6c4845ad0b237f2c",
+        "../sp404mk2/sdk/examples/original_r16b/usb_upload.h": "ef6e8cb55fefb5f2f32c194793539e4ac9c9dda353b5e0e880cd0a12c69ac23a",
+        "../sp404mk2/sdk/examples/original_r16b/flash.h": "aa096d5d1c20e7d4b1136dadc51ba6b2a18096826bac111b370d9a5b0e507334",
+        "../sp404mk2/sdk/examples/original_r16b/control_capture.h": "9b9da35671ec042f6452022c7036bb98b7b86398c7142eaab2d48e247de9ece2",
+        "../sp404mk2/sdk/examples/original_r16b/controls.h": "8f0eaa069fc355a44da222bdb6c71225872e5180f1070352b785759974071b1f",
+        "../sp404mk2/sdk/examples/original_r16b/named_input.h": "a628178fd98f752af1f8aecbbab6ac82be1ef6d2f243a20071d11f572414db74",
+        "../sp404mk2/sdk/examples/original_r16b/audio_probe.h": "af8a5a040cbaef4ffbec964f5ecc54d2a9dbcc2d5e29b259159c68a225af6154",
+        "../sp404mk2/sdk/examples/original_r16b/generate_map.py": "f9a219f060c334f9808f480f7d5742dc1d93163a4b96bac3ca3adfc4ff2dd5cf",
+        "../sp404mk2/sdk/examples/original_r16b/control_profile.json": "42193d24ae9ddb94bea08f915533fa74cc9099db3e3f440091cb098eac329b4a",
+        "../sp404mk2/sdk/examples/original_r48/build.py": "8f594701ab9b23c0a0c14578d5b922065f3223ccdede2bf90727dbd868113957"
+      },
+      "headerSha256": "6c88f71d51214bb58a87149c744d39ccc04d52e8626eeb0e0f8a855521c250bb",
+      "checkpoint": "resident-app1-handoff"
+    },
+    "intermediate": {
+      "name": "R13",
+      "bytes": 15396,
+      "crc32": 3688201814,
+      "marker": 1379729409,
+      "signature": "SP13",
+      "maximum": 65536,
+      "usbIdentity": "CAFE:404D",
+      "sha256": "4891fd9451cd107f6f50f4fb85d75f538cf5b2eb3c7fb2680f36719b32f67e8a",
+      "manifestSha256": "540b094a2588532d629376426870321ddc86c4f4ad75beb2bf4172ec5b488dbd",
+      "binary": "../sp404mk2/sdk/examples/original_r13/build/original_r13.bin",
+      "manifest": "../sp404mk2/sdk/examples/original_r13/build/manifest.json",
+      "buildSourceSha256": {
+        "../sp404mk2/sdk/examples/original_r13/startup.S": "77a0da0310fd45e3e98951b0b4159f2ded3d4950ec710403031cffdd6120b0db",
+        "../sp404mk2/sdk/examples/original_r13/monitor.c": "11e7fa32e75c6492aad14667bb9873871478351343a22eeecc8b2153d96bf2bd",
+        "../sp404mk2/sdk/examples/original_r13/app1.ld": "cb050a7432145d737a86f8b1fb3afacc74745e4c4a409fcb37ecac37dc91fb94",
+        "../sp404mk2/sdk/examples/original_r13/board.c": "65481a65ddd24c9a7aa63ec75dfb4d8a0897f04587682ff107ec04292f0a1928",
+        "../sp404mk2/sdk/examples/original_r13/board.h": "1dc05396ad753251d792be4eb0059321c39a2e7dc43a8fac5946a2cf1e0d5bdb",
+        "../sp404mk2/sdk/examples/original_r13/screen.c": "7b193deaadcd30d62519a93c58c3aa5d5c02e99e1a979efc07e2f75f0afa7049",
+        "../sp404mk2/sdk/examples/original_r13/local_input.c": "c3eb4efa75b6adb6feff62c187a641ef11e78ffec17b736b36226039a0f34139",
+        "../sp404mk2/sdk/examples/original_r13/local_input.h": "837b0c884e9f5b0a99754ee631ec0cc98b6fd409ea25c299d9012bb201fcc2a8",
+        "../sp404mk2/sdk/examples/original_r13/usb_device.c": "4e856c4c6cc76f2064206112879e6b08f7a7e2e96a62bf668a15b6e3cd798bcd",
+        "../sp404mk2/sdk/examples/original_r13/usb_upload.c": "7e01690b8c3be5811ab056c164f96e9ea41a6254df115003b8d786cdb1790ff8",
+        "../sp404mk2/sdk/examples/original_r13/usb_upload.h": "c7ca78d4a3f5d70188a3fcc1066a3ac685423b540cff365e3053b743f8dd5035",
+        "../sp404mk2/sdk/examples/original_r13/build.py": "deddd6bcbfad2ba5cdc93e561432223fabccb280e314f480f032d8816a05c1cc",
+        "../sp404mk2/sdk/examples/original_r13/flash.c": "b58fd29e230c2447400315b9f76d42806018e9da7908c7cb26e0b39a3e50667a",
+        "../sp404mk2/sdk/examples/original_r13/flash.h": "bdb16538f71f22b1d6fa795e4fae0cca71691e09fa87c5c9d631345e419c8cf7",
+        "../sp404mk2/sdk/examples/original_r13/control_capture.c": "02f31a9f3522bb8b2cf8e8b10964334ff0b420fabf4e36c6fcfd3183f455c555",
+        "../sp404mk2/sdk/examples/original_r13/control_capture.h": "9b9da35671ec042f6452022c7036bb98b7b86398c7142eaab2d48e247de9ece2",
+        "../sp404mk2/sdk/examples/original_r13/controls.c": "e5bf77180e1ae56a66aaa56637d28483555c3eed1326ed69c111977217808e58",
+        "../sp404mk2/sdk/examples/original_r13/controls.h": "688918694507b9e8be7c8fdb85d3cb6896241ce2ca1677674b8dbffcb26f37c1",
+        "../sp404mk2/sdk/examples/original_r13/control_map.c": "18aececb50e73863b835bf41a7333bc3fbe607914329c1f12b38b23812750d39",
+        "../sp404mk2/sdk/examples/original_r13/named_input.c": "aca5df688eebee10745b0f488b3cd26a837e9fb9c8c80f9ef84cb0bc6a908479",
+        "../sp404mk2/sdk/examples/original_r13/named_input.h": "a628178fd98f752af1f8aecbbab6ac82be1ef6d2f243a20071d11f572414db74",
+        "../sp404mk2/sdk/examples/original_r13/generate_map.py": "98a76902c0b8c65d084a1c126a237a5577abedf5ec796b8a36b99a7adea936d2",
+        "../sp404mk2/sdk/examples/original_r13/control_profile.json": "42193d24ae9ddb94bea08f915533fa74cc9099db3e3f440091cb098eac329b4a"
+      },
+      "headerSha256": "daf2dbc9547887944c5c3fba057bc98383040fa8387f2f4db3ca50f0adc2a80f",
+      "checkpoint": "resident-app1-handoff"
+    },
+    "final": {
+      "name": "R48",
+      "bytes": 17156,
+      "crc32": 1265768542,
+      "marker": 1382154241,
+      "signature": "SP48",
+      "maximum": 3665920,
+      "usbIdentity": "CAFE:404F",
+      "sha256": "11d7631ea73232fbfe2bb30ca6a705f416417cb1aec54290a04944a26d7edba4",
+      "manifestSha256": "1e7fa9ff3f358dacd24b0e7fd475d0dd644fac2a59a7b049c56bf35de61c488d",
+      "binary": "../sp404mk2/sdk/examples/original_r48/build/original_r48.bin",
+      "manifest": "../sp404mk2/sdk/examples/original_r48/build/manifest.json",
+      "buildSourceSha256": {
+        "../sp404mk2/sdk/examples/original_r16b/startup.S": "302aa781a881b7e26a065b89a2c056071a835a4f2e8cfc5c322d2f9a03dbbc6b",
+        "../sp404mk2/sdk/examples/original_r16b/monitor.c": "2658fff68dfe3a9b5faf9977299e3dade2aa2bb822017f1c1dde10e511b7bf56",
+        "../sp404mk2/sdk/examples/original_r16b/board.c": "e7a07beb7a6dbc074461eea85cf51a5f586e2cdea2a4eba8a623d4928928c8c4",
+        "../sp404mk2/sdk/examples/original_r16b/screen.c": "17f6f14e357badd1aaf9c89aa41ddaa8a9aff42fa5ebe5d58135809027b0c900",
+        "../sp404mk2/sdk/examples/original_r16b/local_input.c": "21214f6cd3b1145572c0f944547687e4c5ee81ccc5ce7ca389a71a59738fb1f6",
+        "../sp404mk2/sdk/examples/original_r16b/usb_device.c": "295869eb8226f8de6cdd0f9db7660a1d666753cf0f2636ba99433b275fb6ccfc",
+        "../sp404mk2/sdk/examples/original_r16b/usb_upload.c": "7a8aab9d423041cedc42fb94c8a5041fd38f002f45b7091ea13b2f5e11f48d69",
+        "../sp404mk2/sdk/examples/original_r16b/flash.c": "19e912277ac87d006d5647a8d663f3ea88f6fa864a5513b59fe6feae27e49aff",
+        "../sp404mk2/sdk/examples/original_r16b/control_capture.c": "02f31a9f3522bb8b2cf8e8b10964334ff0b420fabf4e36c6fcfd3183f455c555",
+        "../sp404mk2/sdk/examples/original_r16b/controls.c": "c2403ae07bac951f2d84cae6c0865d62431489b83d6974ff0c6a23e7b52fbe6b",
+        "../sp404mk2/sdk/examples/original_r16b/control_map.c": "9b5dd72d0210d68893d445208fa3167c1bc47fdb0b3b143a2f355c43ad7a1553",
+        "../sp404mk2/sdk/examples/original_r16b/named_input.c": "d958f9c26524dfb721d368556f3fc24938d515f3f9bba6810c65c2ff8ac5d407",
+        "../sp404mk2/sdk/examples/original_r16b/audio_probe.c": "87d2a5e47ae07045b3b67fb59019da030ca1a1b6652b67e12e8ddc209b079390",
+        "../sp404mk2/sdk/examples/original_r16b/app1.ld": "812b6ef37b378f6f62861ed8f972ddf993e21ed08a6656878634f63225701790",
+        "../sp404mk2/sdk/examples/original_r16b/board.h": "d8cf29f9e5f0c0d8eb78038462b74890d84c56421d71f22f6f93be6f090dcde9",
+        "../sp404mk2/sdk/examples/original_r16b/local_input.h": "b96531bdf4d9423800f23262239de4eaad0fbdf3cc7eb38f6c4845ad0b237f2c",
+        "../sp404mk2/sdk/examples/original_r16b/usb_upload.h": "ef6e8cb55fefb5f2f32c194793539e4ac9c9dda353b5e0e880cd0a12c69ac23a",
+        "../sp404mk2/sdk/examples/original_r16b/flash.h": "aa096d5d1c20e7d4b1136dadc51ba6b2a18096826bac111b370d9a5b0e507334",
+        "../sp404mk2/sdk/examples/original_r16b/control_capture.h": "9b9da35671ec042f6452022c7036bb98b7b86398c7142eaab2d48e247de9ece2",
+        "../sp404mk2/sdk/examples/original_r16b/controls.h": "8f0eaa069fc355a44da222bdb6c71225872e5180f1070352b785759974071b1f",
+        "../sp404mk2/sdk/examples/original_r16b/named_input.h": "a628178fd98f752af1f8aecbbab6ac82be1ef6d2f243a20071d11f572414db74",
+        "../sp404mk2/sdk/examples/original_r16b/audio_probe.h": "af8a5a040cbaef4ffbec964f5ecc54d2a9dbcc2d5e29b259159c68a225af6154",
+        "../sp404mk2/sdk/examples/original_r16b/generate_map.py": "f9a219f060c334f9808f480f7d5742dc1d93163a4b96bac3ca3adfc4ff2dd5cf",
+        "../sp404mk2/sdk/examples/original_r16b/control_profile.json": "42193d24ae9ddb94bea08f915533fa74cc9099db3e3f440091cb098eac329b4a",
+        "../sp404mk2/sdk/examples/original_r48/build.py": "8f594701ab9b23c0a0c14578d5b922065f3223ccdede2bf90727dbd868113957"
+      },
+      "headerSha256": "6c88f71d51214bb58a87149c744d39ccc04d52e8626eeb0e0f8a855521c250bb",
+      "checkpoint": "resident-app1-handoff"
+    }
+  },
+  "admission": [
+    {
+      "from": "R48",
+      "to": "R13",
+      "image": {
+        "sha256": "4891fd9451cd107f6f50f4fb85d75f538cf5b2eb3c7fb2680f36719b32f67e8a",
+        "crc32": 3688201814,
+        "length": 15396,
+        "paddedLength": 16384,
+        "expectedMarker": 1379729409
+      },
+      "work": {
+        "dataReports": 275,
+        "sectors": 4,
+        "paddedReadbackBytes": 16384
+      },
+      "target": "writer",
+      "blockers": [],
+      "resetTarget": {
+        "length": 15396,
+        "sha256": "4891fd9451cd107f6f50f4fb85d75f538cf5b2eb3c7fb2680f36719b32f67e8a",
+        "expectedCurrentSha256": "11d7631ea73232fbfe2bb30ca6a705f416417cb1aec54290a04944a26d7edba4"
+      }
+    },
+    {
+      "from": "R13",
+      "to": "R48",
+      "image": {
+        "sha256": "11d7631ea73232fbfe2bb30ca6a705f416417cb1aec54290a04944a26d7edba4",
+        "crc32": 1265768542,
+        "length": 17156,
+        "paddedLength": 20480,
+        "expectedMarker": 1382154241
+      },
+      "work": {
+        "dataReports": 307,
+        "sectors": 5,
+        "paddedReadbackBytes": 20480
+      },
+      "target": "writer",
+      "blockers": [],
+      "resetTarget": {
+        "length": 17156,
+        "sha256": "11d7631ea73232fbfe2bb30ca6a705f416417cb1aec54290a04944a26d7edba4",
+        "expectedCurrentSha256": "4891fd9451cd107f6f50f4fb85d75f538cf5b2eb3c7fb2680f36719b32f67e8a"
+      }
+    }
+  ],
+  "measuredProfile": {
+    "file": "../sp404mk2/analysis/hardware/usb_r11_20260922T190757Z/preflight.json",
+    "sha256": "fa098817b8c8fd76d4ac19e46784f020c6fc8d1ad4fc205a0cdacb742c64c9cb"
+  },
+  "runtime": {
+    "wrapperCommit": "1220477c7fb0f8fe4b500f4bd211de52f6dfe638",
+    "coreCommit": "8028ec436f2d9376525352dd38ed9ed6b9f6be10",
+    "jsSha256": "d8bc37b898ccbc5b429f17112add6ad33a8a9b35df4146034ba141b992dae007",
+    "wasmSha256": "399f9ca4eecc11d111d3182e251fbfb8ccc69e88f19f06650e945482eaf1a7d1",
+    "provenanceSha256": "376255b870ffe8e632bba4fe72bc81995a098e4f04d11ae578662f71b22c0d15",
+    "assetDirectory": "public/emulator/vendor",
+    "candidate": false,
+    "candidateComposition": {
+      "name": "temp-lifetime-it-hook-stop-xpsr-hflags-m7-host-registers",
+      "repairs": [
+        {
+          "name": "temp-lifetime",
+          "source": {
+            "path": "tools/vendor-patches/unicorn-arm-temp-lifetime.patch",
+            "bytes": 1157,
+            "sha256": "8f179f1cf100a1246bfbe5b5c4993f025b79ad614aa0b01c22df6589fc186fd3"
+          },
+          "affectedSource": {
+            "path": "qemu/tcg/tcg.c",
+            "beforeSha256": "fedab0cdaf17c3f7a27fb49a14e6847c08e8cf6b436ce474a39e3f58ef7ef1b4",
+            "afterSha256": "2e705fd88b03c1a13ff38f7341e442eed1421d9380ed49b6eff7361b265aad31"
+          },
+          "applicationCount": 1,
+          "sourceDirectoryWasAbsent": true,
+          "outputDirectoryWasAbsent": true,
+          "order": "After all upstream transformations and before constants generation or compilation"
+        },
+        {
+          "name": "conditional-hook-stop",
+          "source": {
+            "path": "tools/vendor-patches/unicorn-arm-conditional-hook-stop.patch",
+            "bytes": 1757,
+            "sha256": "5c666cd6b7cab4d0404f47cf2c3ea49b0b102cba44b23af03b1c288cccd4dc31"
+          },
+          "affectedSource": {
+            "path": "qemu/target/arm/translate.c",
+            "beforeSha256": "22102563894df046a957f7b80e2ecd385f7e4829584fa1b22e01a52d59fde53a",
+            "afterSha256": "cfa7819d862daac859aa282a67e0f24164a48171c52e4a15305e101d872e2674"
+          },
+          "applicationCount": 1,
+          "sourceDirectoryWasAbsent": true,
+          "outputDirectoryWasAbsent": true,
+          "order": "After all upstream transformations and before constants generation or compilation"
+        },
+        {
+          "name": "host-xpsr-hflags",
+          "source": {
+            "path": "tools/vendor-patches/unicorn-arm-xpsr-hflags.patch",
+            "bytes": 420,
+            "sha256": "cff39b686f1dfc106f9aa17ea484babe020be8d7aa45a9fbbb4cf43549410423",
+            "upstreamCommit": "fd081bce930363e187a46a1c43c53ece19b1dc29",
+            "upstreamURL": "https://github.com/unicorn-engine/unicorn/commit/fd081bce930363e187a46a1c43c53ece19b1dc29"
+          },
+          "affectedSource": {
+            "path": "qemu/target/arm/unicorn_arm.c",
+            "beforeSha256": "20f98c8a80ab2ca4b5af2904df03d14e0a2c659c4dc0608b3789166a8812b730",
+            "afterSha256": "60a0341b7f29f49501e4597912130560717d6d0852bb26baf1eb0cf5cf7ada40"
+          },
+          "applicationCount": 1,
+          "sourceDirectoryWasAbsent": true,
+          "outputDirectoryWasAbsent": true,
+          "order": "After all upstream transformations and before constants generation or compilation"
+        },
+        {
+          "name": "m7-host-registers",
+          "source": {
+            "path": "tools/vendor-patches/unicorn-arm-m7-host-registers.patch",
+            "bytes": 10081,
+            "sha256": "ce12796247de53c6e39d937fbdb65af3e949e1b1f20be448c651ae45404e161c"
+          },
+          "affectedSources": [
+            {
+              "path": "qemu/target/arm/unicorn_arm.c",
+              "beforeSha256": "60a0341b7f29f49501e4597912130560717d6d0852bb26baf1eb0cf5cf7ada40",
+              "afterSha256": "465773a48469cab471a4de6d8f4399696c5ce325eadb7dbb3cd4535148d26a75"
+            },
+            {
+              "path": "qemu/target/arm/m_helper.c",
+              "beforeSha256": "019fb1cf4bd7fb64addea8717cac2f2cd393375839df7c71e17b94af54f6d332",
+              "afterSha256": "ac641645a247cbfb1d22b60560e195209cfe6ff9762fa2c103687a74f98e8ccd"
+            }
+          ],
+          "applicationCount": 1,
+          "sourceDirectoryWasAbsent": true,
+          "outputDirectoryWasAbsent": true,
+          "order": "After all upstream transformations and before constants generation or compilation"
+        }
+      ],
+      "sourceDirectoryWasAbsent": true,
+      "outputDirectoryWasAbsent": true
+    },
+    "isPublishedBaseline": true,
+    "hasKnownR14Frontier": false
+  },
+  "directions": [
+    {
+      "from": "R48",
+      "to": "R13",
+      "progress": {
+        "events": 283,
+        "phaseCounts": {
+          "image": 1,
+          "preflight": 1,
+          "upload": 275,
+          "ram-verified": 1,
+          "commit": 1,
+          "flash-verified": 1,
+          "separate-status": 1,
+          "reset": 1,
+          "boot-verified": 1
+        },
+        "last": {
+          "phase": "boot-verified",
+          "completedBytes": 15396,
+          "totalBytes": 15396
+        }
+      },
+      "stagedRamSha256": "4891fd9451cd107f6f50f4fb85d75f538cf5b2eb3c7fb2680f36719b32f67e8a",
+      "executed": {
+        "passiveChecks": 391,
+        "actualIpReadbackBytes": 16384,
+        "paddedLength": 16384,
+        "perSector": [
+          {
+            "address": "0x00081000",
+            "erased": true,
+            "pages": 16,
+            "ipReads": 16,
+            "storedSha256": "4a0c79b8de802cedc2633039321ba0e47d1c38a2e5ddde68cd3f43c36bfdfdec"
+          },
+          {
+            "address": "0x00082000",
+            "erased": true,
+            "pages": 16,
+            "ipReads": 16,
+            "storedSha256": "ea43ece36edc1f883238bdb4a3fea876f26509c90e4e78112d1d19eca79bcb30"
+          },
+          {
+            "address": "0x00083000",
+            "erased": true,
+            "pages": 16,
+            "ipReads": 16,
+            "storedSha256": "7961c846fd2b0cd569b4adad87502e81d0e6948e7ac5b01863244831d0e27eb5"
+          },
+          {
+            "address": "0x00080000",
+            "erased": true,
+            "pages": 16,
+            "ipReads": 16,
+            "storedSha256": "b42889588db149e605eea387400d715150f6a46867e832e92b85283bc8c9b53a"
+          }
+        ],
+        "eraseOrder": [
+          "0x00081000",
+          "0x00082000",
+          "0x00083000",
+          "0x00080000"
+        ],
+        "pageOrderSha256": "1f865ed51b8456a22c0f3103bc2f69c6bef2bd013bf97e68e23b47f27faae022",
+        "ipReadOrderSha256": "dc5f070153d3f166337415e8c00589c03e65cc784355c1655015c2928dcaa405",
+        "commandCount": 570,
+        "commandSha256": "dc8eb2724fd909263f801fa54b2095fe1cf9a45cd470bd2fba29432b074d8b6d",
+        "commandCounts": {
+          "0x0000009f": 5,
+          "0x00000005": 345,
+          "0x00000003": 74,
+          "0x0000005a": 10,
+          "0x00000006": 68,
+          "0x00000020": 4,
+          "0x00000002": 64
+        },
+        "exactCandidateSha256": "4891fd9451cd107f6f50f4fb85d75f538cf5b2eb3c7fb2680f36719b32f67e8a",
+        "preservedResidentSha256": "79da075029b30b01f2cdbcee33dc9df7af6de269b96597d658a2efa2f20dd9d4",
+        "preservedTailSha256": "1b8c1dc24fbf6f83c6ae904d4a17daca7ec8b847d95b40ea07235d40a833889d",
+        "norSha256": "2e4ca0a63c4056f4118bb48f1f92c96171afdd20c512a0cab88301891e72dd94",
+        "residentPreserved": true,
+        "outsideTargetPreserved": true,
+        "paddedTail": "FF"
+      },
+      "beforeResetSnapshot": {
+        "state": "paused",
+        "pc": 2147487842,
+        "instructions": 77850000,
+        "firmwareHash": "11d7631ea73232fbfe2bb30ca6a705f416417cb1aec54290a04944a26d7edba4",
+        "format": "app1",
+        "checkpoint": "resident-app1-handoff",
+        "marker": 1382154241,
+        "heartbeat": 43,
+        "firmwareState": 2,
+        "frames": 43,
+        "displayOn": true,
+        "powered": true,
+        "unknownMmio": [],
+        "unknownMmioOverflow": 0,
+        "pendingInterrupts": [],
+        "cpuBackendFailed": false,
+        "mailboxCached": false,
+        "exceptions": {
+          "activeException": 0,
+          "activeExceptions": [],
+          "pendingExceptions": [],
+          "vectorTable": 2147483648,
+          "priorityGrouping": 0,
+          "delivered": 1,
+          "returned": 1,
+          "tailChains": 0,
+          "floatingPoint": {
+            "enabled": true,
+            "cpacr": 0,
+            "fpccr": 3221225472,
+            "fpcar": 0,
+            "fpdscr": 0,
+            "eagerFrames": 0,
+            "lazyFrames": 0,
+            "lazySaves": 0,
+            "lazyReturns": 0,
+            "restoredFrames": 0,
+            "unknownRegisterPolicy": "retain architecturally UNKNOWN caller-saved FP values"
+          },
+          "systick": {
+            "control": 0,
+            "reload": 0,
+            "current": 0,
+            "countFlag": false,
+            "sourceTicks": 0,
+            "timing": "modeled source ticks; no physical cycle calibration"
+          },
+          "unsupported": [
+            "late arrival",
+            "fault escalation",
+            "non-base Thread return",
+            "sleep",
+            "exclusive monitors",
+            "derived faults during FP stacking"
+          ]
+        },
+        "flash": {
+          "commandCount": 570,
+          "fcbSource": "geometry fixture",
+          "sfdpSource": "R11 measured bytes with FF fixture padding"
+        },
+        "limitations": [
+          "Structural admission does not prove firmware bootability or physical device behavior.",
+          "The emulator executes the uploaded startup bytes; it does not substitute reconstructed scatter regions.",
+          "APP1 starts at the captured resident handoff, MSP 0x202435B0 and BASEPRI 16. No reset-vector lookup or cold ROM boot occurs.",
+          "GPT uses nominal 24 MHz; instruction ticks do not establish Cortex-M7 cycle timing.",
+          "GPIO/ADC inputs are injected values; electrical settling, pressure and mechanical calibration are unmodeled.",
+          "ADC calibration and conversion complete immediately; failure injection tests bounded firmware paths.",
+          "Crystal readiness/detection uses explicit synthetic ticks; other clock/mux, watchdog and cache controls have no electrical, expiry or cache-coherency simulation.",
+          "DCDC settling and clock/power availability are fixed synthetic fixtures; output voltage, supplies, analog protection and oscillator coupling are unmodeled.",
+          "ARM/USB2/VIDEO PLL lock and reference availability are fixed synthetic fixtures; physical settling, clock outputs, other PLLs, PFD and CCM handshakes are unmodeled.",
+          "UART startup/status/shutdown replies are a bounded companion fixture; complete BMC behavior remains unknown.",
+          "SAI RX0 models injected decoded FIFO words/events only; external clocks, frame latency, additional channels, packing, combining, word masking, audio DMA and physical route identity are unimplemented. TX collects writes only.",
+          "OLED RAM/window/on-off and GPIO SPI are modeled; contrast, scrolling and analog display behavior are unimplemented.",
+          "USB device DMA/control tokens are modeled; PHY, cache timing, host mode and isochronous scheduling are unimplemented.",
+          "NOR preflight/IP reads/erase/program are modeled; default FCB fields and unread SFDP bytes are fixtures, and unsupported commands report a model error.",
+          "USDHC is routed only for explicit read-only SD fixtures; no guest filesystem, stock storage or physical card power result is established.",
+          "Absent SD fixtures, unsupported USDHC registers, ADC_ETC, eDMA and other stock peripherals appear in unknown MMIO.",
+          "The default regression clock advances GPT by 24,000 ticks per counter read; this is a fast fixture, not hardware timing.",
+          "Integer and eager/lazy floating-point frames are modeled. Fault escalation and complete interrupt timing remain unsupported.",
+          "External IRQ count 160 and priority bits 4 are model profile choices; they do not establish the physical configuration.",
+          "Instruction counts are emulator work, not measured Cortex-M7 cycles."
+        ]
+      },
+      "updater": {
+        "scope": "virtual APP1 update",
+        "image": {
+          "sha256": "4891fd9451cd107f6f50f4fb85d75f538cf5b2eb3c7fb2680f36719b32f67e8a",
+          "crc32": 3688201814,
+          "length": 15396,
+          "paddedLength": 16384,
+          "expectedMarker": 1379729409
+        },
+        "before": {
+          "signature": "SP48",
+          "version": 2,
+          "state": 0,
+          "error": 0,
+          "length": 0,
+          "received": 0,
+          "crc32": 0,
+          "maximum": 3665920,
+          "capabilities": 1,
+          "jedec": 0,
+          "flash_status": 0,
+          "flash_error": 0,
+          "programmed": 0,
+          "flash_ready": 0,
+          "flash_crc32": 0,
+          "build_marker": 1382154241
+        },
+        "beforeSnapshot": {
+          "state": "paused",
+          "pc": 2147496744,
+          "instructions": 8475000,
+          "firmwareHash": "11d7631ea73232fbfe2bb30ca6a705f416417cb1aec54290a04944a26d7edba4",
+          "format": "app1",
+          "checkpoint": "resident-app1-handoff",
+          "marker": 1382154241,
+          "heartbeat": 5,
+          "firmwareState": 2,
+          "frames": 5,
+          "displayOn": true,
+          "powered": true,
+          "unknownMmio": [],
+          "unknownMmioOverflow": 0,
+          "pendingInterrupts": [],
+          "cpuBackendFailed": false,
+          "mailboxCached": false,
+          "exceptions": {
+            "activeException": 0,
+            "activeExceptions": [],
+            "pendingExceptions": [],
+            "vectorTable": 2147483648,
+            "priorityGrouping": 0,
+            "delivered": 1,
+            "returned": 1,
+            "tailChains": 0,
+            "floatingPoint": {
+              "enabled": true,
+              "cpacr": 0,
+              "fpccr": 3221225472,
+              "fpcar": 0,
+              "fpdscr": 0,
+              "eagerFrames": 0,
+              "lazyFrames": 0,
+              "lazySaves": 0,
+              "lazyReturns": 0,
+              "restoredFrames": 0,
+              "unknownRegisterPolicy": "retain architecturally UNKNOWN caller-saved FP values"
+            },
+            "systick": {
+              "control": 0,
+              "reload": 0,
+              "current": 0,
+              "countFlag": false,
+              "sourceTicks": 0,
+              "timing": "modeled source ticks; no physical cycle calibration"
+            },
+            "unsupported": [
+              "late arrival",
+              "fault escalation",
+              "non-base Thread return",
+              "sleep",
+              "exclusive monitors",
+              "derived faults during FP stacking"
+            ]
+          },
+          "flash": {
+            "commandCount": 0,
+            "fcbSource": "geometry fixture",
+            "sfdpSource": "R11 measured bytes with FF fixture padding"
+          },
+          "limitations": [
+            "Structural admission does not prove firmware bootability or physical device behavior.",
+            "The emulator executes the uploaded startup bytes; it does not substitute reconstructed scatter regions.",
+            "APP1 starts at the captured resident handoff, MSP 0x202435B0 and BASEPRI 16. No reset-vector lookup or cold ROM boot occurs.",
+            "GPT uses nominal 24 MHz; instruction ticks do not establish Cortex-M7 cycle timing.",
+            "GPIO/ADC inputs are injected values; electrical settling, pressure and mechanical calibration are unmodeled.",
+            "ADC calibration and conversion complete immediately; failure injection tests bounded firmware paths.",
+            "Crystal readiness/detection uses explicit synthetic ticks; other clock/mux, watchdog and cache controls have no electrical, expiry or cache-coherency simulation.",
+            "DCDC settling and clock/power availability are fixed synthetic fixtures; output voltage, supplies, analog protection and oscillator coupling are unmodeled.",
+            "ARM/USB2/VIDEO PLL lock and reference availability are fixed synthetic fixtures; physical settling, clock outputs, other PLLs, PFD and CCM handshakes are unmodeled.",
+            "UART startup/status/shutdown replies are a bounded companion fixture; complete BMC behavior remains unknown.",
+            "SAI RX0 models injected decoded FIFO words/events only; external clocks, frame latency, additional channels, packing, combining, word masking, audio DMA and physical route identity are unimplemented. TX collects writes only.",
+            "OLED RAM/window/on-off and GPIO SPI are modeled; contrast, scrolling and analog display behavior are unimplemented.",
+            "USB device DMA/control tokens are modeled; PHY, cache timing, host mode and isochronous scheduling are unimplemented.",
+            "NOR preflight/IP reads/erase/program are modeled; default FCB fields and unread SFDP bytes are fixtures, and unsupported commands report a model error.",
+            "USDHC is routed only for explicit read-only SD fixtures; no guest filesystem, stock storage or physical card power result is established.",
+            "Absent SD fixtures, unsupported USDHC registers, ADC_ETC, eDMA and other stock peripherals appear in unknown MMIO.",
+            "The default regression clock advances GPT by 24,000 ticks per counter read; this is a fast fixture, not hardware timing.",
+            "Integer and eager/lazy floating-point frames are modeled. Fault escalation and complete interrupt timing remain unsupported.",
+            "External IRQ count 160 and priority bits 4 are model profile choices; they do not establish the physical configuration.",
+            "Instruction counts are emulator work, not measured Cortex-M7 cycles."
+          ]
+        },
+        "preflight": {
+          "profile": {
+            "name": "R48",
+            "signature": "SP48",
+            "markers": [
+              1382154241
+            ],
+            "maximum": 3665920,
+            "runningImage": {
+              "length": 17156,
+              "sha256": "11d7631ea73232fbfe2bb30ca6a705f416417cb1aec54290a04944a26d7edba4"
+            },
+            "fullTarget": "b1-r3-del-writer"
+          },
+          "status": {
+            "signature": "SP48",
+            "version": 2,
+            "state": 0,
+            "error": 0,
+            "length": 0,
+            "received": 0,
+            "crc32": 0,
+            "maximum": 3665920,
+            "capabilities": 1,
+            "jedec": 12722198,
+            "flash_status": 64,
+            "flash_error": 0,
+            "programmed": 0,
+            "flash_ready": 1,
+            "flash_crc32": 0,
+            "build_marker": 1382154241
+          },
+          "diagnostics": {
+            "headerHex": "53464450000101ff00000109300000ffc2000104600000ffffffffffffffffff",
+            "bfptHex": "e520f1ffffffff0144eb086b083b04bbeeffffffffff00ffffff00ff0c200f5210d800ff0000000000000000",
+            "phase": 5,
+            "bfpt_dwords": 9,
+            "bfpt_pointer": 48,
+            "legacy_profile": 1,
+            "jedec": 12722198,
+            "flash_status": 64,
+            "flash_error": 0,
+            "flash_ready": 1,
+            "reserved": 0
+          },
+          "geometry": {
+            "capacityBytes": 4194304,
+            "pageBytes": 256,
+            "sectorBytes": 4096,
+            "app1Offset": 524288,
+            "maximumImageBytes": 3665920,
+            "evidence": "Firmware phase5 follows exact FCB signature/capacity/page/sector and SFDP checks; FCB bytes are not exposed by this protocol."
+          }
+        },
+        "ramVerified": {
+          "signature": "SP48",
+          "version": 2,
+          "state": 2,
+          "error": 0,
+          "length": 15396,
+          "received": 15396,
+          "crc32": 3688201814,
+          "maximum": 3665920,
+          "capabilities": 1,
+          "jedec": 12722198,
+          "flash_status": 64,
+          "flash_error": 0,
+          "programmed": 0,
+          "flash_ready": 1,
+          "flash_crc32": 0,
+          "build_marker": 1382154241
+        },
+        "flashVerified": {
+          "signature": "SP48",
+          "version": 2,
+          "state": 6,
+          "error": 0,
+          "length": 15396,
+          "received": 15396,
+          "crc32": 3688201814,
+          "maximum": 3665920,
+          "capabilities": 1,
+          "jedec": 12722198,
+          "flash_status": 64,
+          "flash_error": 0,
+          "programmed": 16384,
+          "flash_ready": 1,
+          "flash_crc32": 3688201814,
+          "build_marker": 1382154241
+        },
+        "separateStatus": {
+          "signature": "SP48",
+          "version": 2,
+          "state": 6,
+          "error": 0,
+          "length": 15396,
+          "received": 15396,
+          "crc32": 3688201814,
+          "maximum": 3665920,
+          "capabilities": 1,
+          "jedec": 12722198,
+          "flash_status": 64,
+          "flash_error": 0,
+          "programmed": 16384,
+          "flash_ready": 1,
+          "flash_crc32": 3688201814,
+          "build_marker": 1382154241
+        },
+        "beforeResetSnapshot": {
+          "state": "paused",
+          "pc": 2147487842,
+          "instructions": 77850000,
+          "firmwareHash": "11d7631ea73232fbfe2bb30ca6a705f416417cb1aec54290a04944a26d7edba4",
+          "format": "app1",
+          "checkpoint": "resident-app1-handoff",
+          "marker": 1382154241,
+          "heartbeat": 43,
+          "firmwareState": 2,
+          "frames": 43,
+          "displayOn": true,
+          "powered": true,
+          "unknownMmio": [],
+          "unknownMmioOverflow": 0,
+          "pendingInterrupts": [],
+          "cpuBackendFailed": false,
+          "mailboxCached": false,
+          "exceptions": {
+            "activeException": 0,
+            "activeExceptions": [],
+            "pendingExceptions": [],
+            "vectorTable": 2147483648,
+            "priorityGrouping": 0,
+            "delivered": 1,
+            "returned": 1,
+            "tailChains": 0,
+            "floatingPoint": {
+              "enabled": true,
+              "cpacr": 0,
+              "fpccr": 3221225472,
+              "fpcar": 0,
+              "fpdscr": 0,
+              "eagerFrames": 0,
+              "lazyFrames": 0,
+              "lazySaves": 0,
+              "lazyReturns": 0,
+              "restoredFrames": 0,
+              "unknownRegisterPolicy": "retain architecturally UNKNOWN caller-saved FP values"
+            },
+            "systick": {
+              "control": 0,
+              "reload": 0,
+              "current": 0,
+              "countFlag": false,
+              "sourceTicks": 0,
+              "timing": "modeled source ticks; no physical cycle calibration"
+            },
+            "unsupported": [
+              "late arrival",
+              "fault escalation",
+              "non-base Thread return",
+              "sleep",
+              "exclusive monitors",
+              "derived faults during FP stacking"
+            ]
+          },
+          "flash": {
+            "commandCount": 570,
+            "fcbSource": "geometry fixture",
+            "sfdpSource": "R11 measured bytes with FF fixture padding"
+          },
+          "limitations": [
+            "Structural admission does not prove firmware bootability or physical device behavior.",
+            "The emulator executes the uploaded startup bytes; it does not substitute reconstructed scatter regions.",
+            "APP1 starts at the captured resident handoff, MSP 0x202435B0 and BASEPRI 16. No reset-vector lookup or cold ROM boot occurs.",
+            "GPT uses nominal 24 MHz; instruction ticks do not establish Cortex-M7 cycle timing.",
+            "GPIO/ADC inputs are injected values; electrical settling, pressure and mechanical calibration are unmodeled.",
+            "ADC calibration and conversion complete immediately; failure injection tests bounded firmware paths.",
+            "Crystal readiness/detection uses explicit synthetic ticks; other clock/mux, watchdog and cache controls have no electrical, expiry or cache-coherency simulation.",
+            "DCDC settling and clock/power availability are fixed synthetic fixtures; output voltage, supplies, analog protection and oscillator coupling are unmodeled.",
+            "ARM/USB2/VIDEO PLL lock and reference availability are fixed synthetic fixtures; physical settling, clock outputs, other PLLs, PFD and CCM handshakes are unmodeled.",
+            "UART startup/status/shutdown replies are a bounded companion fixture; complete BMC behavior remains unknown.",
+            "SAI RX0 models injected decoded FIFO words/events only; external clocks, frame latency, additional channels, packing, combining, word masking, audio DMA and physical route identity are unimplemented. TX collects writes only.",
+            "OLED RAM/window/on-off and GPIO SPI are modeled; contrast, scrolling and analog display behavior are unimplemented.",
+            "USB device DMA/control tokens are modeled; PHY, cache timing, host mode and isochronous scheduling are unimplemented.",
+            "NOR preflight/IP reads/erase/program are modeled; default FCB fields and unread SFDP bytes are fixtures, and unsupported commands report a model error.",
+            "USDHC is routed only for explicit read-only SD fixtures; no guest filesystem, stock storage or physical card power result is established.",
+            "Absent SD fixtures, unsupported USDHC registers, ADC_ETC, eDMA and other stock peripherals appear in unknown MMIO.",
+            "The default regression clock advances GPT by 24,000 ticks per counter read; this is a fast fixture, not hardware timing.",
+            "Integer and eager/lazy floating-point frames are modeled. Fault escalation and complete interrupt timing remain unsupported.",
+            "External IRQ count 160 and priority bits 4 are model profile choices; they do not establish the physical configuration.",
+            "Instruction counts are emulator work, not measured Cortex-M7 cycles."
+          ]
+        },
+        "flashReadback": {
+          "verifiedBytes": 16384,
+          "imageCrc32": 3688201814,
+          "tail": "FF",
+          "evidence": "State6/error0 follows firmware byte comparison of every occupied padded sector through FlexSPI IP reads; flash_crc32 is the image CRC after that comparison, not a separate padded CRC."
+        },
+        "bootStatus": {
+          "signature": "SP13",
+          "version": 2,
+          "state": 0,
+          "error": 0,
+          "length": 0,
+          "received": 0,
+          "crc32": 0,
+          "maximum": 65536,
+          "capabilities": 1,
+          "jedec": 0,
+          "flash_status": 0,
+          "flash_error": 0,
+          "programmed": 0,
+          "flash_ready": 0,
+          "flash_crc32": 0,
+          "build_marker": 1379729409
+        },
+        "snapshot": {
+          "state": "paused",
+          "pc": 2147489144,
+          "instructions": 6250000,
+          "firmwareHash": "4891fd9451cd107f6f50f4fb85d75f538cf5b2eb3c7fb2680f36719b32f67e8a",
+          "format": "app1",
+          "checkpoint": "resident-app1-handoff",
+          "marker": 1379729409,
+          "heartbeat": 5,
+          "firmwareState": 2,
+          "frames": 5,
+          "displayOn": true,
+          "powered": true,
+          "unknownMmio": [],
+          "unknownMmioOverflow": 0,
+          "pendingInterrupts": [],
+          "cpuBackendFailed": false,
+          "mailboxCached": false,
+          "exceptions": {
+            "activeException": 0,
+            "activeExceptions": [],
+            "pendingExceptions": [],
+            "vectorTable": 2147483648,
+            "priorityGrouping": 0,
+            "delivered": 1,
+            "returned": 1,
+            "tailChains": 0,
+            "floatingPoint": {
+              "enabled": true,
+              "cpacr": 0,
+              "fpccr": 3221225472,
+              "fpcar": 0,
+              "fpdscr": 0,
+              "eagerFrames": 0,
+              "lazyFrames": 0,
+              "lazySaves": 0,
+              "lazyReturns": 0,
+              "restoredFrames": 0,
+              "unknownRegisterPolicy": "retain architecturally UNKNOWN caller-saved FP values"
+            },
+            "systick": {
+              "control": 0,
+              "reload": 0,
+              "current": 0,
+              "countFlag": false,
+              "sourceTicks": 0,
+              "timing": "modeled source ticks; no physical cycle calibration"
+            },
+            "unsupported": [
+              "late arrival",
+              "fault escalation",
+              "non-base Thread return",
+              "sleep",
+              "exclusive monitors",
+              "derived faults during FP stacking"
+            ]
+          },
+          "flash": {
+            "commandCount": 570,
+            "fcbSource": "geometry fixture",
+            "sfdpSource": "R11 measured bytes with FF fixture padding"
+          },
+          "limitations": [
+            "Structural admission does not prove firmware bootability or physical device behavior.",
+            "The emulator executes the uploaded startup bytes; it does not substitute reconstructed scatter regions.",
+            "APP1 starts at the captured resident handoff, MSP 0x202435B0 and BASEPRI 16. No reset-vector lookup or cold ROM boot occurs.",
+            "GPT uses nominal 24 MHz; instruction ticks do not establish Cortex-M7 cycle timing.",
+            "GPIO/ADC inputs are injected values; electrical settling, pressure and mechanical calibration are unmodeled.",
+            "ADC calibration and conversion complete immediately; failure injection tests bounded firmware paths.",
+            "Crystal readiness/detection uses explicit synthetic ticks; other clock/mux, watchdog and cache controls have no electrical, expiry or cache-coherency simulation.",
+            "DCDC settling and clock/power availability are fixed synthetic fixtures; output voltage, supplies, analog protection and oscillator coupling are unmodeled.",
+            "ARM/USB2/VIDEO PLL lock and reference availability are fixed synthetic fixtures; physical settling, clock outputs, other PLLs, PFD and CCM handshakes are unmodeled.",
+            "UART startup/status/shutdown replies are a bounded companion fixture; complete BMC behavior remains unknown.",
+            "SAI RX0 models injected decoded FIFO words/events only; external clocks, frame latency, additional channels, packing, combining, word masking, audio DMA and physical route identity are unimplemented. TX collects writes only.",
+            "OLED RAM/window/on-off and GPIO SPI are modeled; contrast, scrolling and analog display behavior are unimplemented.",
+            "USB device DMA/control tokens are modeled; PHY, cache timing, host mode and isochronous scheduling are unimplemented.",
+            "NOR preflight/IP reads/erase/program are modeled; default FCB fields and unread SFDP bytes are fixtures, and unsupported commands report a model error.",
+            "USDHC is routed only for explicit read-only SD fixtures; no guest filesystem, stock storage or physical card power result is established.",
+            "Absent SD fixtures, unsupported USDHC registers, ADC_ETC, eDMA and other stock peripherals appear in unknown MMIO.",
+            "The default regression clock advances GPT by 24,000 ticks per counter read; this is a fast fixture, not hardware timing.",
+            "Integer and eager/lazy floating-point frames are modeled. Fault escalation and complete interrupt timing remain unsupported.",
+            "External IRQ count 160 and priority bits 4 are model profile choices; they do not establish the physical configuration.",
+            "Instruction counts are emulator work, not measured Cortex-M7 cycles."
+          ]
+        },
+        "phases": {
+          "count": 283,
+          "sha256": "924b120d57bba8e02486dcf7d89a86d8579904feb5be582bbe0f9d114e9a2cee"
+        }
+      },
+      "codeHookStarts": 76075000
+    },
+    {
+      "from": "R13",
+      "to": "R48",
+      "progress": {
+        "events": 315,
+        "phaseCounts": {
+          "image": 1,
+          "preflight": 1,
+          "upload": 307,
+          "ram-verified": 1,
+          "commit": 1,
+          "flash-verified": 1,
+          "separate-status": 1,
+          "reset": 1,
+          "boot-verified": 1
+        },
+        "last": {
+          "phase": "boot-verified",
+          "completedBytes": 17156,
+          "totalBytes": 17156
+        }
+      },
+      "stagedRamSha256": "11d7631ea73232fbfe2bb30ca6a705f416417cb1aec54290a04944a26d7edba4",
+      "executed": {
+        "passiveChecks": 341,
+        "actualIpReadbackBytes": 20480,
+        "paddedLength": 20480,
+        "perSector": [
+          {
+            "address": "0x00081000",
+            "erased": true,
+            "pages": 16,
+            "ipReads": 16,
+            "storedSha256": "724d2ef5a4f9f318d6f92b80ffee6d7170ddf827044d3bb491947cae397cdbd6"
+          },
+          {
+            "address": "0x00082000",
+            "erased": true,
+            "pages": 16,
+            "ipReads": 16,
+            "storedSha256": "a184759fa9221e47e0d9298fb1cf8e4ffcd58b7997077ec20f307173a223aa7c"
+          },
+          {
+            "address": "0x00083000",
+            "erased": true,
+            "pages": 16,
+            "ipReads": 16,
+            "storedSha256": "825791444d77aba0f8eeab24eab833babaae9424d0b48f3619bbaf5022004be9"
+          },
+          {
+            "address": "0x00084000",
+            "erased": true,
+            "pages": 16,
+            "ipReads": 16,
+            "storedSha256": "639a2bf61f3e69a3e1ef0d15328bdcf322d045aa6db490e3d6b07343ab3b676d"
+          },
+          {
+            "address": "0x00080000",
+            "erased": true,
+            "pages": 16,
+            "ipReads": 16,
+            "storedSha256": "57714176455690d4780f4db986e4958d113dac68da2a1eecedeedaf7dbbd6a26"
+          }
+        ],
+        "eraseOrder": [
+          "0x00081000",
+          "0x00082000",
+          "0x00083000",
+          "0x00084000",
+          "0x00080000"
+        ],
+        "pageOrderSha256": "6229bbb30e7d25535fcd26292ac2bac8cafcfe2dac4688e94e2e057183e0a0f3",
+        "ipReadOrderSha256": "c2a04ec1e52c32eab3aeaaaefb3138f15f667b41df1d39f8fe9ab290400050f7",
+        "commandCount": 687,
+        "commandSha256": "6c7cd01807d41a888bba73d3962ab1d4e409057191f07f8cf7aa879a463c7a6a",
+        "commandCounts": {
+          "0x0000009f": 2,
+          "0x00000005": 427,
+          "0x00000003": 84,
+          "0x0000005a": 4,
+          "0x00000006": 85,
+          "0x00000020": 5,
+          "0x00000002": 80
+        },
+        "exactCandidateSha256": "11d7631ea73232fbfe2bb30ca6a705f416417cb1aec54290a04944a26d7edba4",
+        "preservedResidentSha256": "79da075029b30b01f2cdbcee33dc9df7af6de269b96597d658a2efa2f20dd9d4",
+        "preservedTailSha256": "36ae6a64db1cdc64e0c0d6f2c0acd5d6c8767167eab097583a7f9034ebf7c76b",
+        "norSha256": "d62ced05b6b44fa4e11532eabcd25439d7fdcaf05f81149b31fcf7c10ab3f84c",
+        "residentPreserved": true,
+        "outsideTargetPreserved": true,
+        "paddedTail": "FF"
+      },
+      "beforeResetSnapshot": {
+        "state": "paused",
+        "pc": 2147488266,
+        "instructions": 74350000,
+        "firmwareHash": "4891fd9451cd107f6f50f4fb85d75f538cf5b2eb3c7fb2680f36719b32f67e8a",
+        "format": "app1",
+        "checkpoint": "resident-app1-handoff",
+        "marker": 1379729409,
+        "heartbeat": 56,
+        "firmwareState": 2,
+        "frames": 56,
+        "displayOn": true,
+        "powered": true,
+        "unknownMmio": [],
+        "unknownMmioOverflow": 0,
+        "pendingInterrupts": [],
+        "cpuBackendFailed": false,
+        "mailboxCached": false,
+        "exceptions": {
+          "activeException": 0,
+          "activeExceptions": [],
+          "pendingExceptions": [],
+          "vectorTable": 2147483648,
+          "priorityGrouping": 0,
+          "delivered": 1,
+          "returned": 1,
+          "tailChains": 0,
+          "floatingPoint": {
+            "enabled": true,
+            "cpacr": 0,
+            "fpccr": 3221225472,
+            "fpcar": 0,
+            "fpdscr": 0,
+            "eagerFrames": 0,
+            "lazyFrames": 0,
+            "lazySaves": 0,
+            "lazyReturns": 0,
+            "restoredFrames": 0,
+            "unknownRegisterPolicy": "retain architecturally UNKNOWN caller-saved FP values"
+          },
+          "systick": {
+            "control": 0,
+            "reload": 0,
+            "current": 0,
+            "countFlag": false,
+            "sourceTicks": 0,
+            "timing": "modeled source ticks; no physical cycle calibration"
+          },
+          "unsupported": [
+            "late arrival",
+            "fault escalation",
+            "non-base Thread return",
+            "sleep",
+            "exclusive monitors",
+            "derived faults during FP stacking"
+          ]
+        },
+        "flash": {
+          "commandCount": 1257,
+          "fcbSource": "geometry fixture",
+          "sfdpSource": "R11 measured bytes with FF fixture padding"
+        },
+        "limitations": [
+          "Structural admission does not prove firmware bootability or physical device behavior.",
+          "The emulator executes the uploaded startup bytes; it does not substitute reconstructed scatter regions.",
+          "APP1 starts at the captured resident handoff, MSP 0x202435B0 and BASEPRI 16. No reset-vector lookup or cold ROM boot occurs.",
+          "GPT uses nominal 24 MHz; instruction ticks do not establish Cortex-M7 cycle timing.",
+          "GPIO/ADC inputs are injected values; electrical settling, pressure and mechanical calibration are unmodeled.",
+          "ADC calibration and conversion complete immediately; failure injection tests bounded firmware paths.",
+          "Crystal readiness/detection uses explicit synthetic ticks; other clock/mux, watchdog and cache controls have no electrical, expiry or cache-coherency simulation.",
+          "DCDC settling and clock/power availability are fixed synthetic fixtures; output voltage, supplies, analog protection and oscillator coupling are unmodeled.",
+          "ARM/USB2/VIDEO PLL lock and reference availability are fixed synthetic fixtures; physical settling, clock outputs, other PLLs, PFD and CCM handshakes are unmodeled.",
+          "UART startup/status/shutdown replies are a bounded companion fixture; complete BMC behavior remains unknown.",
+          "SAI RX0 models injected decoded FIFO words/events only; external clocks, frame latency, additional channels, packing, combining, word masking, audio DMA and physical route identity are unimplemented. TX collects writes only.",
+          "OLED RAM/window/on-off and GPIO SPI are modeled; contrast, scrolling and analog display behavior are unimplemented.",
+          "USB device DMA/control tokens are modeled; PHY, cache timing, host mode and isochronous scheduling are unimplemented.",
+          "NOR preflight/IP reads/erase/program are modeled; default FCB fields and unread SFDP bytes are fixtures, and unsupported commands report a model error.",
+          "USDHC is routed only for explicit read-only SD fixtures; no guest filesystem, stock storage or physical card power result is established.",
+          "Absent SD fixtures, unsupported USDHC registers, ADC_ETC, eDMA and other stock peripherals appear in unknown MMIO.",
+          "The default regression clock advances GPT by 24,000 ticks per counter read; this is a fast fixture, not hardware timing.",
+          "Integer and eager/lazy floating-point frames are modeled. Fault escalation and complete interrupt timing remain unsupported.",
+          "External IRQ count 160 and priority bits 4 are model profile choices; they do not establish the physical configuration.",
+          "Instruction counts are emulator work, not measured Cortex-M7 cycles."
+        ]
+      },
+      "updater": {
+        "scope": "virtual APP1 update",
+        "image": {
+          "sha256": "11d7631ea73232fbfe2bb30ca6a705f416417cb1aec54290a04944a26d7edba4",
+          "crc32": 1265768542,
+          "length": 17156,
+          "paddedLength": 20480,
+          "expectedMarker": 1382154241
+        },
+        "before": {
+          "signature": "SP13",
+          "version": 2,
+          "state": 0,
+          "error": 0,
+          "length": 0,
+          "received": 0,
+          "crc32": 0,
+          "maximum": 65536,
+          "capabilities": 1,
+          "jedec": 0,
+          "flash_status": 0,
+          "flash_error": 0,
+          "programmed": 0,
+          "flash_ready": 0,
+          "flash_crc32": 0,
+          "build_marker": 1379729409
+        },
+        "beforeSnapshot": {
+          "state": "paused",
+          "pc": 2147489734,
+          "instructions": 6350000,
+          "firmwareHash": "4891fd9451cd107f6f50f4fb85d75f538cf5b2eb3c7fb2680f36719b32f67e8a",
+          "format": "app1",
+          "checkpoint": "resident-app1-handoff",
+          "marker": 1379729409,
+          "heartbeat": 5,
+          "firmwareState": 2,
+          "frames": 5,
+          "displayOn": true,
+          "powered": true,
+          "unknownMmio": [],
+          "unknownMmioOverflow": 0,
+          "pendingInterrupts": [],
+          "cpuBackendFailed": false,
+          "mailboxCached": false,
+          "exceptions": {
+            "activeException": 0,
+            "activeExceptions": [],
+            "pendingExceptions": [],
+            "vectorTable": 2147483648,
+            "priorityGrouping": 0,
+            "delivered": 1,
+            "returned": 1,
+            "tailChains": 0,
+            "floatingPoint": {
+              "enabled": true,
+              "cpacr": 0,
+              "fpccr": 3221225472,
+              "fpcar": 0,
+              "fpdscr": 0,
+              "eagerFrames": 0,
+              "lazyFrames": 0,
+              "lazySaves": 0,
+              "lazyReturns": 0,
+              "restoredFrames": 0,
+              "unknownRegisterPolicy": "retain architecturally UNKNOWN caller-saved FP values"
+            },
+            "systick": {
+              "control": 0,
+              "reload": 0,
+              "current": 0,
+              "countFlag": false,
+              "sourceTicks": 0,
+              "timing": "modeled source ticks; no physical cycle calibration"
+            },
+            "unsupported": [
+              "late arrival",
+              "fault escalation",
+              "non-base Thread return",
+              "sleep",
+              "exclusive monitors",
+              "derived faults during FP stacking"
+            ]
+          },
+          "flash": {
+            "commandCount": 570,
+            "fcbSource": "geometry fixture",
+            "sfdpSource": "R11 measured bytes with FF fixture padding"
+          },
+          "limitations": [
+            "Structural admission does not prove firmware bootability or physical device behavior.",
+            "The emulator executes the uploaded startup bytes; it does not substitute reconstructed scatter regions.",
+            "APP1 starts at the captured resident handoff, MSP 0x202435B0 and BASEPRI 16. No reset-vector lookup or cold ROM boot occurs.",
+            "GPT uses nominal 24 MHz; instruction ticks do not establish Cortex-M7 cycle timing.",
+            "GPIO/ADC inputs are injected values; electrical settling, pressure and mechanical calibration are unmodeled.",
+            "ADC calibration and conversion complete immediately; failure injection tests bounded firmware paths.",
+            "Crystal readiness/detection uses explicit synthetic ticks; other clock/mux, watchdog and cache controls have no electrical, expiry or cache-coherency simulation.",
+            "DCDC settling and clock/power availability are fixed synthetic fixtures; output voltage, supplies, analog protection and oscillator coupling are unmodeled.",
+            "ARM/USB2/VIDEO PLL lock and reference availability are fixed synthetic fixtures; physical settling, clock outputs, other PLLs, PFD and CCM handshakes are unmodeled.",
+            "UART startup/status/shutdown replies are a bounded companion fixture; complete BMC behavior remains unknown.",
+            "SAI RX0 models injected decoded FIFO words/events only; external clocks, frame latency, additional channels, packing, combining, word masking, audio DMA and physical route identity are unimplemented. TX collects writes only.",
+            "OLED RAM/window/on-off and GPIO SPI are modeled; contrast, scrolling and analog display behavior are unimplemented.",
+            "USB device DMA/control tokens are modeled; PHY, cache timing, host mode and isochronous scheduling are unimplemented.",
+            "NOR preflight/IP reads/erase/program are modeled; default FCB fields and unread SFDP bytes are fixtures, and unsupported commands report a model error.",
+            "USDHC is routed only for explicit read-only SD fixtures; no guest filesystem, stock storage or physical card power result is established.",
+            "Absent SD fixtures, unsupported USDHC registers, ADC_ETC, eDMA and other stock peripherals appear in unknown MMIO.",
+            "The default regression clock advances GPT by 24,000 ticks per counter read; this is a fast fixture, not hardware timing.",
+            "Integer and eager/lazy floating-point frames are modeled. Fault escalation and complete interrupt timing remain unsupported.",
+            "External IRQ count 160 and priority bits 4 are model profile choices; they do not establish the physical configuration.",
+            "Instruction counts are emulator work, not measured Cortex-M7 cycles."
+          ]
+        },
+        "preflight": {
+          "profile": {
+            "name": "R13",
+            "signature": "SP13",
+            "markers": [
+              1379729409,
+              1379729410
+            ],
+            "maximum": 65536
+          },
+          "status": {
+            "signature": "SP13",
+            "version": 2,
+            "state": 0,
+            "error": 0,
+            "length": 0,
+            "received": 0,
+            "crc32": 0,
+            "maximum": 65536,
+            "capabilities": 1,
+            "jedec": 12722198,
+            "flash_status": 64,
+            "flash_error": 0,
+            "programmed": 0,
+            "flash_ready": 1,
+            "flash_crc32": 0,
+            "build_marker": 1379729409
+          },
+          "diagnostics": {
+            "headerHex": "53464450000101ff00000109300000ffc2000104600000ffffffffffffffffff",
+            "bfptHex": "e520f1ffffffff0144eb086b083b04bbeeffffffffff00ffffff00ff0c200f5210d800ff0000000000000000",
+            "phase": 5,
+            "bfpt_dwords": 9,
+            "bfpt_pointer": 48,
+            "legacy_profile": 1,
+            "jedec": 12722198,
+            "flash_status": 64,
+            "flash_error": 0,
+            "flash_ready": 1,
+            "reserved": 0
+          },
+          "geometry": {
+            "capacityBytes": 4194304,
+            "pageBytes": 256,
+            "sectorBytes": 4096,
+            "app1Offset": 524288,
+            "maximumImageBytes": 65536,
+            "evidence": "Firmware phase5 follows exact FCB signature/capacity/page/sector and SFDP checks; FCB bytes are not exposed by this protocol."
+          }
+        },
+        "ramVerified": {
+          "signature": "SP13",
+          "version": 2,
+          "state": 2,
+          "error": 0,
+          "length": 17156,
+          "received": 17156,
+          "crc32": 1265768542,
+          "maximum": 65536,
+          "capabilities": 1,
+          "jedec": 12722198,
+          "flash_status": 64,
+          "flash_error": 0,
+          "programmed": 0,
+          "flash_ready": 1,
+          "flash_crc32": 0,
+          "build_marker": 1379729409
+        },
+        "flashVerified": {
+          "signature": "SP13",
+          "version": 2,
+          "state": 6,
+          "error": 0,
+          "length": 17156,
+          "received": 17156,
+          "crc32": 1265768542,
+          "maximum": 65536,
+          "capabilities": 1,
+          "jedec": 12722198,
+          "flash_status": 64,
+          "flash_error": 0,
+          "programmed": 20480,
+          "flash_ready": 1,
+          "flash_crc32": 1265768542,
+          "build_marker": 1379729409
+        },
+        "separateStatus": {
+          "signature": "SP13",
+          "version": 2,
+          "state": 6,
+          "error": 0,
+          "length": 17156,
+          "received": 17156,
+          "crc32": 1265768542,
+          "maximum": 65536,
+          "capabilities": 1,
+          "jedec": 12722198,
+          "flash_status": 64,
+          "flash_error": 0,
+          "programmed": 20480,
+          "flash_ready": 1,
+          "flash_crc32": 1265768542,
+          "build_marker": 1379729409
+        },
+        "beforeResetSnapshot": {
+          "state": "paused",
+          "pc": 2147488266,
+          "instructions": 74350000,
+          "firmwareHash": "4891fd9451cd107f6f50f4fb85d75f538cf5b2eb3c7fb2680f36719b32f67e8a",
+          "format": "app1",
+          "checkpoint": "resident-app1-handoff",
+          "marker": 1379729409,
+          "heartbeat": 56,
+          "firmwareState": 2,
+          "frames": 56,
+          "displayOn": true,
+          "powered": true,
+          "unknownMmio": [],
+          "unknownMmioOverflow": 0,
+          "pendingInterrupts": [],
+          "cpuBackendFailed": false,
+          "mailboxCached": false,
+          "exceptions": {
+            "activeException": 0,
+            "activeExceptions": [],
+            "pendingExceptions": [],
+            "vectorTable": 2147483648,
+            "priorityGrouping": 0,
+            "delivered": 1,
+            "returned": 1,
+            "tailChains": 0,
+            "floatingPoint": {
+              "enabled": true,
+              "cpacr": 0,
+              "fpccr": 3221225472,
+              "fpcar": 0,
+              "fpdscr": 0,
+              "eagerFrames": 0,
+              "lazyFrames": 0,
+              "lazySaves": 0,
+              "lazyReturns": 0,
+              "restoredFrames": 0,
+              "unknownRegisterPolicy": "retain architecturally UNKNOWN caller-saved FP values"
+            },
+            "systick": {
+              "control": 0,
+              "reload": 0,
+              "current": 0,
+              "countFlag": false,
+              "sourceTicks": 0,
+              "timing": "modeled source ticks; no physical cycle calibration"
+            },
+            "unsupported": [
+              "late arrival",
+              "fault escalation",
+              "non-base Thread return",
+              "sleep",
+              "exclusive monitors",
+              "derived faults during FP stacking"
+            ]
+          },
+          "flash": {
+            "commandCount": 1257,
+            "fcbSource": "geometry fixture",
+            "sfdpSource": "R11 measured bytes with FF fixture padding"
+          },
+          "limitations": [
+            "Structural admission does not prove firmware bootability or physical device behavior.",
+            "The emulator executes the uploaded startup bytes; it does not substitute reconstructed scatter regions.",
+            "APP1 starts at the captured resident handoff, MSP 0x202435B0 and BASEPRI 16. No reset-vector lookup or cold ROM boot occurs.",
+            "GPT uses nominal 24 MHz; instruction ticks do not establish Cortex-M7 cycle timing.",
+            "GPIO/ADC inputs are injected values; electrical settling, pressure and mechanical calibration are unmodeled.",
+            "ADC calibration and conversion complete immediately; failure injection tests bounded firmware paths.",
+            "Crystal readiness/detection uses explicit synthetic ticks; other clock/mux, watchdog and cache controls have no electrical, expiry or cache-coherency simulation.",
+            "DCDC settling and clock/power availability are fixed synthetic fixtures; output voltage, supplies, analog protection and oscillator coupling are unmodeled.",
+            "ARM/USB2/VIDEO PLL lock and reference availability are fixed synthetic fixtures; physical settling, clock outputs, other PLLs, PFD and CCM handshakes are unmodeled.",
+            "UART startup/status/shutdown replies are a bounded companion fixture; complete BMC behavior remains unknown.",
+            "SAI RX0 models injected decoded FIFO words/events only; external clocks, frame latency, additional channels, packing, combining, word masking, audio DMA and physical route identity are unimplemented. TX collects writes only.",
+            "OLED RAM/window/on-off and GPIO SPI are modeled; contrast, scrolling and analog display behavior are unimplemented.",
+            "USB device DMA/control tokens are modeled; PHY, cache timing, host mode and isochronous scheduling are unimplemented.",
+            "NOR preflight/IP reads/erase/program are modeled; default FCB fields and unread SFDP bytes are fixtures, and unsupported commands report a model error.",
+            "USDHC is routed only for explicit read-only SD fixtures; no guest filesystem, stock storage or physical card power result is established.",
+            "Absent SD fixtures, unsupported USDHC registers, ADC_ETC, eDMA and other stock peripherals appear in unknown MMIO.",
+            "The default regression clock advances GPT by 24,000 ticks per counter read; this is a fast fixture, not hardware timing.",
+            "Integer and eager/lazy floating-point frames are modeled. Fault escalation and complete interrupt timing remain unsupported.",
+            "External IRQ count 160 and priority bits 4 are model profile choices; they do not establish the physical configuration.",
+            "Instruction counts are emulator work, not measured Cortex-M7 cycles."
+          ]
+        },
+        "flashReadback": {
+          "verifiedBytes": 20480,
+          "imageCrc32": 1265768542,
+          "tail": "FF",
+          "evidence": "State6/error0 follows firmware byte comparison of every occupied padded sector through FlexSPI IP reads; flash_crc32 is the image CRC after that comparison, not a separate padded CRC."
+        },
+        "bootStatus": {
+          "signature": "SP48",
+          "version": 2,
+          "state": 0,
+          "error": 0,
+          "length": 0,
+          "received": 0,
+          "crc32": 0,
+          "maximum": 3665920,
+          "capabilities": 1,
+          "jedec": 0,
+          "flash_status": 0,
+          "flash_error": 0,
+          "programmed": 0,
+          "flash_ready": 0,
+          "flash_crc32": 0,
+          "build_marker": 1382154241
+        },
+        "snapshot": {
+          "state": "paused",
+          "pc": 2147496744,
+          "instructions": 8475000,
+          "firmwareHash": "11d7631ea73232fbfe2bb30ca6a705f416417cb1aec54290a04944a26d7edba4",
+          "format": "app1",
+          "checkpoint": "resident-app1-handoff",
+          "marker": 1382154241,
+          "heartbeat": 5,
+          "firmwareState": 2,
+          "frames": 5,
+          "displayOn": true,
+          "powered": true,
+          "unknownMmio": [],
+          "unknownMmioOverflow": 0,
+          "pendingInterrupts": [],
+          "cpuBackendFailed": false,
+          "mailboxCached": false,
+          "exceptions": {
+            "activeException": 0,
+            "activeExceptions": [],
+            "pendingExceptions": [],
+            "vectorTable": 2147483648,
+            "priorityGrouping": 0,
+            "delivered": 1,
+            "returned": 1,
+            "tailChains": 0,
+            "floatingPoint": {
+              "enabled": true,
+              "cpacr": 0,
+              "fpccr": 3221225472,
+              "fpcar": 0,
+              "fpdscr": 0,
+              "eagerFrames": 0,
+              "lazyFrames": 0,
+              "lazySaves": 0,
+              "lazyReturns": 0,
+              "restoredFrames": 0,
+              "unknownRegisterPolicy": "retain architecturally UNKNOWN caller-saved FP values"
+            },
+            "systick": {
+              "control": 0,
+              "reload": 0,
+              "current": 0,
+              "countFlag": false,
+              "sourceTicks": 0,
+              "timing": "modeled source ticks; no physical cycle calibration"
+            },
+            "unsupported": [
+              "late arrival",
+              "fault escalation",
+              "non-base Thread return",
+              "sleep",
+              "exclusive monitors",
+              "derived faults during FP stacking"
+            ]
+          },
+          "flash": {
+            "commandCount": 1257,
+            "fcbSource": "geometry fixture",
+            "sfdpSource": "R11 measured bytes with FF fixture padding"
+          },
+          "limitations": [
+            "Structural admission does not prove firmware bootability or physical device behavior.",
+            "The emulator executes the uploaded startup bytes; it does not substitute reconstructed scatter regions.",
+            "APP1 starts at the captured resident handoff, MSP 0x202435B0 and BASEPRI 16. No reset-vector lookup or cold ROM boot occurs.",
+            "GPT uses nominal 24 MHz; instruction ticks do not establish Cortex-M7 cycle timing.",
+            "GPIO/ADC inputs are injected values; electrical settling, pressure and mechanical calibration are unmodeled.",
+            "ADC calibration and conversion complete immediately; failure injection tests bounded firmware paths.",
+            "Crystal readiness/detection uses explicit synthetic ticks; other clock/mux, watchdog and cache controls have no electrical, expiry or cache-coherency simulation.",
+            "DCDC settling and clock/power availability are fixed synthetic fixtures; output voltage, supplies, analog protection and oscillator coupling are unmodeled.",
+            "ARM/USB2/VIDEO PLL lock and reference availability are fixed synthetic fixtures; physical settling, clock outputs, other PLLs, PFD and CCM handshakes are unmodeled.",
+            "UART startup/status/shutdown replies are a bounded companion fixture; complete BMC behavior remains unknown.",
+            "SAI RX0 models injected decoded FIFO words/events only; external clocks, frame latency, additional channels, packing, combining, word masking, audio DMA and physical route identity are unimplemented. TX collects writes only.",
+            "OLED RAM/window/on-off and GPIO SPI are modeled; contrast, scrolling and analog display behavior are unimplemented.",
+            "USB device DMA/control tokens are modeled; PHY, cache timing, host mode and isochronous scheduling are unimplemented.",
+            "NOR preflight/IP reads/erase/program are modeled; default FCB fields and unread SFDP bytes are fixtures, and unsupported commands report a model error.",
+            "USDHC is routed only for explicit read-only SD fixtures; no guest filesystem, stock storage or physical card power result is established.",
+            "Absent SD fixtures, unsupported USDHC registers, ADC_ETC, eDMA and other stock peripherals appear in unknown MMIO.",
+            "The default regression clock advances GPT by 24,000 ticks per counter read; this is a fast fixture, not hardware timing.",
+            "Integer and eager/lazy floating-point frames are modeled. Fault escalation and complete interrupt timing remain unsupported.",
+            "External IRQ count 160 and priority bits 4 are model profile choices; they do not establish the physical configuration.",
+            "Instruction counts are emulator work, not measured Cortex-M7 cycles."
+          ]
+        },
+        "phases": {
+          "count": 315,
+          "sha256": "b7371d3f26bcb7a688a5d2c295107c001ae7d78d300c4af39d42a45b14749c93"
+        }
+      },
+      "codeHookStarts": 76575000
+    }
+  ],
+  "resets": [
+    {
+      "before": {
+        "target": {
+          "length": 15396,
+          "sha256": "4891fd9451cd107f6f50f4fb85d75f538cf5b2eb3c7fb2680f36719b32f67e8a",
+          "expectedCurrentSha256": "11d7631ea73232fbfe2bb30ca6a705f416417cb1aec54290a04944a26d7edba4"
+        },
+        "runningSha256": "11d7631ea73232fbfe2bb30ca6a705f416417cb1aec54290a04944a26d7edba4",
+        "codeHookStarts": 77850000,
+        "norSha256": "2e4ca0a63c4056f4118bb48f1f92c96171afdd20c512a0cab88301891e72dd94"
+      },
+      "after": {
+        "runningSha256": "4891fd9451cd107f6f50f4fb85d75f538cf5b2eb3c7fb2680f36719b32f67e8a",
+        "extent": 15396,
+        "norSha256": "2e4ca0a63c4056f4118bb48f1f92c96171afdd20c512a0cab88301891e72dd94",
+        "emptyMailboxAtZeroStarts": true,
+        "startup": {
+          "checkpoint": "resident-app1-handoff",
+          "incoming": {
+            "r0": "0x60080001",
+            "msp": "0x202435b0",
+            "lr": 4,
+            "control": 0
+          },
+          "cpuModel": 10,
+          "cpuid": "0x411fc271",
+          "vtor": "0x80000000",
+          "marker": "0x523d0001",
+          "firmwareState": 2,
+          "heartbeat": 5,
+          "exceptions": {
+            "activeException": 0,
+            "activeExceptions": [],
+            "pendingExceptions": [],
+            "vectorTable": 2147483648,
+            "priorityGrouping": 0,
+            "delivered": 1,
+            "returned": 1,
+            "tailChains": 0,
+            "floatingPoint": {
+              "enabled": true,
+              "cpacr": 0,
+              "fpccr": 3221225472,
+              "fpcar": 0,
+              "fpdscr": 0,
+              "eagerFrames": 0,
+              "lazyFrames": 0,
+              "lazySaves": 0,
+              "lazyReturns": 0,
+              "restoredFrames": 0,
+              "unknownRegisterPolicy": "retain architecturally UNKNOWN caller-saved FP values"
+            },
+            "systick": {
+              "control": 0,
+              "reload": 0,
+              "current": 0,
+              "countFlag": false,
+              "sourceTicks": 0,
+              "timing": "modeled source ticks; no physical cycle calibration"
+            },
+            "unsupported": [
+              "late arrival",
+              "fault escalation",
+              "non-base Thread return",
+              "sleep",
+              "exclusive monitors",
+              "derived faults during FP stacking"
+            ]
+          },
+          "frames": [
+            {
+              "number": 1,
+              "bytes": 1024,
+              "sha256": "5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
+            },
+            {
+              "number": 2,
+              "bytes": 1024,
+              "sha256": "50083cabbaf22d8c50cacaa9155443850d3ec287459ff630a2791046ed416199"
+            },
+            {
+              "number": 3,
+              "bytes": 1024,
+              "sha256": "0c55f041ef4fcac2ef4009e404dd89eaab5b671d70c7d3b4a6a1d72b3a4123f2"
+            },
+            {
+              "number": 4,
+              "bytes": 1024,
+              "sha256": "41e0f21fcbc0a2dce1e525eb03097a6181df9148070f8037aa02fc8f6883aa41"
+            },
+            {
+              "number": 5,
+              "bytes": 1024,
+              "sha256": "fcdb19253e1d53a82baed2c9d2e406f95d697a2706f28076f53e3079359e0635"
+            }
+          ],
+          "instructions": 5800000
+        }
+      }
+    },
+    {
+      "before": {
+        "target": {
+          "length": 17156,
+          "sha256": "11d7631ea73232fbfe2bb30ca6a705f416417cb1aec54290a04944a26d7edba4",
+          "expectedCurrentSha256": "4891fd9451cd107f6f50f4fb85d75f538cf5b2eb3c7fb2680f36719b32f67e8a"
+        },
+        "runningSha256": "4891fd9451cd107f6f50f4fb85d75f538cf5b2eb3c7fb2680f36719b32f67e8a",
+        "codeHookStarts": 74350000,
+        "norSha256": "d62ced05b6b44fa4e11532eabcd25439d7fdcaf05f81149b31fcf7c10ab3f84c"
+      },
+      "after": {
+        "runningSha256": "11d7631ea73232fbfe2bb30ca6a705f416417cb1aec54290a04944a26d7edba4",
+        "extent": 17156,
+        "norSha256": "d62ced05b6b44fa4e11532eabcd25439d7fdcaf05f81149b31fcf7c10ab3f84c",
+        "emptyMailboxAtZeroStarts": true,
+        "startup": {
+          "checkpoint": "resident-app1-handoff",
+          "incoming": {
+            "r0": "0x60080001",
+            "msp": "0x202435b0",
+            "lr": 4,
+            "control": 0
+          },
+          "cpuModel": 10,
+          "cpuid": "0x411fc271",
+          "vtor": "0x80000000",
+          "marker": "0x52620001",
+          "firmwareState": 2,
+          "heartbeat": 5,
+          "exceptions": {
+            "activeException": 0,
+            "activeExceptions": [],
+            "pendingExceptions": [],
+            "vectorTable": 2147483648,
+            "priorityGrouping": 0,
+            "delivered": 1,
+            "returned": 1,
+            "tailChains": 0,
+            "floatingPoint": {
+              "enabled": true,
+              "cpacr": 0,
+              "fpccr": 3221225472,
+              "fpcar": 0,
+              "fpdscr": 0,
+              "eagerFrames": 0,
+              "lazyFrames": 0,
+              "lazySaves": 0,
+              "lazyReturns": 0,
+              "restoredFrames": 0,
+              "unknownRegisterPolicy": "retain architecturally UNKNOWN caller-saved FP values"
+            },
+            "systick": {
+              "control": 0,
+              "reload": 0,
+              "current": 0,
+              "countFlag": false,
+              "sourceTicks": 0,
+              "timing": "modeled source ticks; no physical cycle calibration"
+            },
+            "unsupported": [
+              "late arrival",
+              "fault escalation",
+              "non-base Thread return",
+              "sleep",
+              "exclusive monitors",
+              "derived faults during FP stacking"
+            ]
+          },
+          "frames": [
+            {
+              "number": 1,
+              "bytes": 1024,
+              "sha256": "5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
+            },
+            {
+              "number": 2,
+              "bytes": 1024,
+              "sha256": "5fb9c6bbb2a50a21217b4e1e84bf2c12b90e5ea8614f00c7f91f7c441f7d31a0"
+            },
+            {
+              "number": 3,
+              "bytes": 1024,
+              "sha256": "c0d5c49e8cd59c6ba2b1ae46a2dddb7de6aa29940ab0f5f31637f7a6e4731339"
+            },
+            {
+              "number": 4,
+              "bytes": 1024,
+              "sha256": "14f87f58761e59a2f89eb37c7b6a3a6fd88f360288fff6fe3d6f25f1534db666"
+            },
+            {
+              "number": 5,
+              "bytes": 1024,
+              "sha256": "6670dfe7c8b96ad12693d3e27b393ad07f1515e070ccecbe5c91e2e70fd8bb47"
+            }
+          ],
+          "instructions": 8025000
+        }
+      }
+    }
+  ],
+  "usbReports": {
+    "normalGets": 138,
+    "commands": {
+      "1": 2,
+      "2": 582,
+      "3": 2,
+      "5": 2,
+      "6": 2,
+      "7": 4
+    },
+    "signatures": {
+      "SP48": 389,
+      "SPDG": 4,
+      "SP13": 339
+    }
+  },
+  "initialBoot": {
+    "checkpoint": "resident-app1-handoff",
+    "incoming": {
+      "r0": "0x60080001",
+      "msp": "0x202435b0",
+      "lr": 4,
+      "control": 0
+    },
+    "cpuModel": 10,
+    "cpuid": "0x411fc271",
+    "vtor": "0x80000000",
+    "marker": "0x52620001",
+    "firmwareState": 2,
+    "heartbeat": 5,
+    "exceptions": {
+      "activeException": 0,
+      "activeExceptions": [],
+      "pendingExceptions": [],
+      "vectorTable": 2147483648,
+      "priorityGrouping": 0,
+      "delivered": 1,
+      "returned": 1,
+      "tailChains": 0,
+      "floatingPoint": {
+        "enabled": true,
+        "cpacr": 0,
+        "fpccr": 3221225472,
+        "fpcar": 0,
+        "fpdscr": 0,
+        "eagerFrames": 0,
+        "lazyFrames": 0,
+        "lazySaves": 0,
+        "lazyReturns": 0,
+        "restoredFrames": 0,
+        "unknownRegisterPolicy": "retain architecturally UNKNOWN caller-saved FP values"
+      },
+      "systick": {
+        "control": 0,
+        "reload": 0,
+        "current": 0,
+        "countFlag": false,
+        "sourceTicks": 0,
+        "timing": "modeled source ticks; no physical cycle calibration"
+      },
+      "unsupported": [
+        "late arrival",
+        "fault escalation",
+        "non-base Thread return",
+        "sleep",
+        "exclusive monitors",
+        "derived faults during FP stacking"
+      ]
+    },
+    "frames": [
+      {
+        "number": 1,
+        "bytes": 1024,
+        "sha256": "5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
+      },
+      {
+        "number": 2,
+        "bytes": 1024,
+        "sha256": "5fb9c6bbb2a50a21217b4e1e84bf2c12b90e5ea8614f00c7f91f7c441f7d31a0"
+      },
+      {
+        "number": 3,
+        "bytes": 1024,
+        "sha256": "c0d5c49e8cd59c6ba2b1ae46a2dddb7de6aa29940ab0f5f31637f7a6e4731339"
+      },
+      {
+        "number": 4,
+        "bytes": 1024,
+        "sha256": "14f87f58761e59a2f89eb37c7b6a3a6fd88f360288fff6fe3d6f25f1534db666"
+      },
+      {
+        "number": 5,
+        "bytes": 1024,
+        "sha256": "6670dfe7c8b96ad12693d3e27b393ad07f1515e070ccecbe5c91e2e70fd8bb47"
+      }
+    ],
+    "instructions": 8025000
+  },
+  "lastNormalStatus": {
+    "signature": "SP48",
+    "version": 2,
+    "state": 0,
+    "error": 0,
+    "length": 0,
+    "received": 0,
+    "crc32": 0,
+    "maximum": 3665920,
+    "capabilities": 1,
+    "jedec": 0,
+    "flash_status": 0,
+    "flash_error": 0,
+    "programmed": 0,
+    "flash_ready": 0,
+    "flash_crc32": 0,
+    "build_marker": 1382154241
+  },
+  "roundtrip": {
+    "declaredApp1Restored": true,
+    "wholeVirtualNorRestored": true,
+    "sha256": "11d7631ea73232fbfe2bb30ca6a705f416417cb1aec54290a04944a26d7edba4",
+    "marker": "0x52620001",
+    "initialNorSha256": "d62ced05b6b44fa4e11532eabcd25439d7fdcaf05f81149b31fcf7c10ab3f84c",
+    "finalNorSha256": "d62ced05b6b44fa4e11532eabcd25439d7fdcaf05f81149b31fcf7c10ab3f84c"
+  },
+  "totalCodeHookStarts": 160675000,
+  "finalSourceSha256": {
+    "src/lib/emulator/board.ts": "e35cb1f5d82b50d2bdb01e5047d5143401a0ee4a80eb3460b384270a3922beea",
+    "src/lib/emulator/cpu.ts": "fb27f37e31277b4e79d1847562c961de23acd25befc4015ffbfd2a3c7d7809b1",
+    "src/lib/emulator/dcdc.ts": "5e025bd74a48d2550c24f634589fb53bc0456cc78e7e5a0b11438b46611adbae",
+    "src/lib/emulator/exception-return.ts": "66ea775f49ab5db3cb395d1a200d01a2a9733cccf43157e873e4fc5f8e800f03",
+    "src/lib/emulator/exceptions.ts": "6412e7fc3086f2ab34f6f0127983521ccfb48cf7a2563249e5d09cf09a6d2e51",
+    "src/lib/emulator/flash.ts": "2a887edf140feae0ed6ae450650ee2feb0c4bb8119c4a8d94d373a3c6d15d5bc",
+    "src/lib/emulator/image.ts": "9ad75aa988f49534c53e9d477dbebc49c7b8533459ebdb7564a534b04b0b5bfb",
+    "src/lib/emulator/oscillator.ts": "3b9a557fb37d4f859742b9c89b9b51f22c397d0e4da40ef9f3df9bf8b5d887c9",
+    "src/lib/emulator/pll-arm.ts": "88eecf9007c2f9ab55332ecbae9b9dfa34137e4c0c7f9813970e930a8f8acfe0",
+    "src/lib/emulator/pll-audio.ts": "ed60c0518ea61450e85ef1ac35a220a14a5f7a97e0179d683ad9897dd0cc578f",
+    "src/lib/emulator/pll-usb2.ts": "9b54796d35a8b531acb58a1ed76ce637b01f181e1f343fc30f369e1191997bfd",
+    "src/lib/emulator/pll-video.ts": "a685474127671538d65eb05e490265fcfe807df3516aec75ddd7bcb060c2bd08",
+    "src/lib/emulator/sd-fixtures.ts": "7ca00c9ec9b39ad8ed7d1b7913b38aef9ec4102de7ed848658888813566da993",
+    "src/lib/emulator/session.ts": "c0e47e2bf2899b3497e2b58b0ab5e8d50ae0760be27f26ac154bd33970080aaf",
+    "src/lib/emulator/update.ts": "2612ccbcd6581ecc349288da02b3c166a4ccf5c7df2691d4e6056516603e2210",
+    "src/lib/emulator/usb.ts": "68e5fa1b6b9c1d7de2da9a66ace01fb147077eb849ca9c6ef3c943e143ad85b2",
+    "src/lib/emulator/usdhc.ts": "fe74790fd62040aba4a4908943bf2b99c5082958988dae59a4721fec1e430c28",
+    "src/lib/emulator/worker-rpc.ts": "bd07bdfcabbe52968d142c0f19278df14a96cac027531db581c83d537585e5bf",
+    "tools/test-emulator-firmware.mjs": "af455a3c5d82db0404d2a25a953d82a23064bcd1e646d5ef281424919b242ec1",
+    "tools/test-emulator-larger-writer-small.mjs": "3d19d875e64c44eb622ded3636e323232ad369fdb5fb795a8bdf48445354b46e"
+  },
+  "sourcesStable": true,
+  "finalRuntime": {
+    "wrapperCommit": "1220477c7fb0f8fe4b500f4bd211de52f6dfe638",
+    "coreCommit": "8028ec436f2d9376525352dd38ed9ed6b9f6be10",
+    "jsSha256": "d8bc37b898ccbc5b429f17112add6ad33a8a9b35df4146034ba141b992dae007",
+    "wasmSha256": "399f9ca4eecc11d111d3182e251fbfb8ccc69e88f19f06650e945482eaf1a7d1",
+    "provenanceSha256": "376255b870ffe8e632bba4fe72bc81995a098e4f04d11ae578662f71b22c0d15",
+    "assetDirectory": "public/emulator/vendor",
+    "candidate": false,
+    "candidateComposition": {
+      "name": "temp-lifetime-it-hook-stop-xpsr-hflags-m7-host-registers",
+      "repairs": [
+        {
+          "name": "temp-lifetime",
+          "source": {
+            "path": "tools/vendor-patches/unicorn-arm-temp-lifetime.patch",
+            "bytes": 1157,
+            "sha256": "8f179f1cf100a1246bfbe5b5c4993f025b79ad614aa0b01c22df6589fc186fd3"
+          },
+          "affectedSource": {
+            "path": "qemu/tcg/tcg.c",
+            "beforeSha256": "fedab0cdaf17c3f7a27fb49a14e6847c08e8cf6b436ce474a39e3f58ef7ef1b4",
+            "afterSha256": "2e705fd88b03c1a13ff38f7341e442eed1421d9380ed49b6eff7361b265aad31"
+          },
+          "applicationCount": 1,
+          "sourceDirectoryWasAbsent": true,
+          "outputDirectoryWasAbsent": true,
+          "order": "After all upstream transformations and before constants generation or compilation"
+        },
+        {
+          "name": "conditional-hook-stop",
+          "source": {
+            "path": "tools/vendor-patches/unicorn-arm-conditional-hook-stop.patch",
+            "bytes": 1757,
+            "sha256": "5c666cd6b7cab4d0404f47cf2c3ea49b0b102cba44b23af03b1c288cccd4dc31"
+          },
+          "affectedSource": {
+            "path": "qemu/target/arm/translate.c",
+            "beforeSha256": "22102563894df046a957f7b80e2ecd385f7e4829584fa1b22e01a52d59fde53a",
+            "afterSha256": "cfa7819d862daac859aa282a67e0f24164a48171c52e4a15305e101d872e2674"
+          },
+          "applicationCount": 1,
+          "sourceDirectoryWasAbsent": true,
+          "outputDirectoryWasAbsent": true,
+          "order": "After all upstream transformations and before constants generation or compilation"
+        },
+        {
+          "name": "host-xpsr-hflags",
+          "source": {
+            "path": "tools/vendor-patches/unicorn-arm-xpsr-hflags.patch",
+            "bytes": 420,
+            "sha256": "cff39b686f1dfc106f9aa17ea484babe020be8d7aa45a9fbbb4cf43549410423",
+            "upstreamCommit": "fd081bce930363e187a46a1c43c53ece19b1dc29",
+            "upstreamURL": "https://github.com/unicorn-engine/unicorn/commit/fd081bce930363e187a46a1c43c53ece19b1dc29"
+          },
+          "affectedSource": {
+            "path": "qemu/target/arm/unicorn_arm.c",
+            "beforeSha256": "20f98c8a80ab2ca4b5af2904df03d14e0a2c659c4dc0608b3789166a8812b730",
+            "afterSha256": "60a0341b7f29f49501e4597912130560717d6d0852bb26baf1eb0cf5cf7ada40"
+          },
+          "applicationCount": 1,
+          "sourceDirectoryWasAbsent": true,
+          "outputDirectoryWasAbsent": true,
+          "order": "After all upstream transformations and before constants generation or compilation"
+        },
+        {
+          "name": "m7-host-registers",
+          "source": {
+            "path": "tools/vendor-patches/unicorn-arm-m7-host-registers.patch",
+            "bytes": 10081,
+            "sha256": "ce12796247de53c6e39d937fbdb65af3e949e1b1f20be448c651ae45404e161c"
+          },
+          "affectedSources": [
+            {
+              "path": "qemu/target/arm/unicorn_arm.c",
+              "beforeSha256": "60a0341b7f29f49501e4597912130560717d6d0852bb26baf1eb0cf5cf7ada40",
+              "afterSha256": "465773a48469cab471a4de6d8f4399696c5ce325eadb7dbb3cd4535148d26a75"
+            },
+            {
+              "path": "qemu/target/arm/m_helper.c",
+              "beforeSha256": "019fb1cf4bd7fb64addea8717cac2f2cd393375839df7c71e17b94af54f6d332",
+              "afterSha256": "ac641645a247cbfb1d22b60560e195209cfe6ff9762fa2c103687a74f98e8ccd"
+            }
+          ],
+          "applicationCount": 1,
+          "sourceDirectoryWasAbsent": true,
+          "outputDirectoryWasAbsent": true,
+          "order": "After all upstream transformations and before constants generation or compilation"
+        }
+      ],
+      "sourceDirectoryWasAbsent": true,
+      "outputDirectoryWasAbsent": true
+    },
+    "isPublishedBaseline": true,
+    "hasKnownR14Frontier": false
+  },
+  "runtimeStable": true,
+  "hostElapsedMs": 80800
+}

@@ -1,0 +1,67 @@
+{
+  "schema": "opensp-oscillator-model-qualification-v1",
+  "createdUtc": "2026-10-03T04:30:35.978Z",
+  "scope": {
+    "isolatedRegisterModel": true,
+    "guestFirmwareExecuted": false,
+    "boardIntegrationExercised": false,
+    "physicalDeviceTransportOpened": false,
+    "physicalTimingVerified": false
+  },
+  "command": "node --test --test-reporter=tap tests/emulator-oscillator.test.mjs",
+  "nodeVersion": "v24.20.0",
+  "sourcePins": {
+    "manual": "analysis/flash_research/IMXRT1060RM_rev3.pdf",
+    "manualSha256": "a2e342e492eded2a1d626cf955de953ca28d8db8675b10937a5176fd6f2c9200",
+    "manualSections": "1.5.2; 14.8.17; 15.4.4; 15.6.1; 15.6.2",
+    "header": "references/MIMXRT1062.h",
+    "headerSha256": "1ee70ed9eb7f3a75ed89943dd799314e8330538f54c6990ea7d9cae96fd263aa",
+    "driver": "https://raw.githubusercontent.com/nxp-mcuxpresso/legacy-mcux-sdk/6f3fd257cdcf978a4d26e7d6e9eed9240037422b/devices/MIMXRT1062/drivers/fsl_clock.c",
+    "driverSha256": "669e2698ea0be01db0ac656f4ceef6106670d1f116b2da9f3b2ac961945a5eb3",
+    "driverLines": "175..199"
+  },
+  "sources": {
+    "src/lib/emulator/oscillator.ts": {
+      "sha256": "3b9a557fb37d4f859742b9c89b9b51f22c397d0e4da40ef9f3df9bf8b5d887c9",
+      "bytes": 8990
+    },
+    "tests/emulator-oscillator.test.mjs": {
+      "sha256": "c07ea9d756a2e844aa16bcde888cc612a7bce4525b23125f558d4117711feaa9",
+      "bytes": 14793
+    },
+    "docs/emulator-oscillator.md": {
+      "sha256": "6cb2242079bb1bde335c0d7850938e0e595f6da44c779ace7bc15ca67ed81bc7",
+      "bytes": 5152
+    }
+  },
+  "summary": {
+    "tests": 24,
+    "passed": 24,
+    "failed": 0,
+    "skipped": 0,
+    "exitCode": 0
+  },
+  "typeCheck": {
+    "passed": true,
+    "command": "npx tsc --ignoreConfig --noEmit --target ES2022 --module ESNext --moduleResolution bundler src/lib/emulator/oscillator.ts"
+  },
+  "transcript": {
+    "path": "tools/emulator-evidence/oscillator-model-tests.tap",
+    "sha256": "8b8536fac926a7ba6ded0bffdbee6b41585f9599bf246c5ef6aaa59200d55530"
+  },
+  "review": {
+    "sourceReviewCompletedBeforeImplementation": true,
+    "aliasReads": "zero per manual section1.5.2 page25",
+    "timing": "Explicit synthetic ticks; one tick per phase by default",
+    "assumptions": [
+      "XTALOK retained after detector disable",
+      "XTALOK cleared when detector is re-enabled",
+      "Power-down clears both oscillator statuses"
+    ],
+    "fidelityLimits": [
+      "No hardware timing or electrical clock effects",
+      "MISC0 uses XTAL view of shared analog controls, omitting PMU-only bits1/2",
+      "Unmodeled RTC source and access-ambiguous bandgap status remain zero"
+    ]
+  }
+}

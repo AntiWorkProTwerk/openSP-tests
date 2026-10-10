@@ -1,0 +1,16 @@
+{
+  "scope": "Historical integer-only exception dispatcher, preserved before the FPU extension; offline evidence only",
+  "files": {
+    "exceptions.ts": "9c0e526a640e837ab0bb1e91af200424eae23784a5c02a6fab4220cc64c3237d",
+    "emulator-exceptions.test.mjs": "24aee12f848185897ffbc155c320eb58a0a8c5f007d50af3aa466f75f3bad211",
+    "emulator-exceptions.md": "34ad475d09c3a6071558d79fa40c97e989b523fc54cda848b2d553a8ffae40dc"
+  },
+  "priorValidation": {
+    "command": "node --test tests/emulator-exceptions.test.mjs",
+    "passingGroups": 31,
+    "registerMemoryGroups": 28,
+    "realM7Groups": 3,
+    "result": "Passed before archival; snapshots retain their original import paths and are not a standalone rerun package"
+  },
+  "limitation": "Active CONTROL.FPCA, lazy LSPACT and extended EXC_RETURN were refused. That historical status is not relabeled as later FP support."
+}
