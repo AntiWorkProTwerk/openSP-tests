@@ -1,12 +1,13 @@
 # openSynth page and examples
 
 `/releases/synth/` is the openSynth page. The older `/opensynth/` URL redirects
-here. The page carries an in-browser patcher: the visitor drops Roland's official
-v5.52 update and the browser builds `SP404MKII_APP1.bin` locally. OpenSP never
-hosts, embeds or receives Roland firmware. The page keeps `noindex` until release
-day; removing it is a deliberate publication step, not a copy edit.
+here. Its primary installer starts from a stock v5.52 SP over USB and does not
+need a firmware file from the visitor. The local patcher remains available for
+people who want to build and keep `SP404MKII_APP1.bin` from Roland's official
+update. The page keeps `noindex` until release day; removing it is a deliberate
+publication step, not a copy edit.
 
-## Page structure (schema 2, final-release copy, 9 October 2026)
+## Page structure (schema 2, final-release copy, 11 October 2026)
 
 The owner asked for four parts, in order: a brief introduction with screen
 animations, features with how-to steps, how to patch, and why it won't brick the
@@ -25,13 +26,13 @@ click steps OSC/AMP/TONE/MOD, SHIFT + VALUE press opens the menu (SOUND, VOICE
 MONO/POLY, LOGO), SHIFT + VALUE turn is synth level, VOLUME stays master. On-screen
 knob names are MIX/DET/PW, ATK/DEC/REL, CUT/RES/ENV, RATE/DEP/GLIDE.
 
-The patch steps follow the documented APP1-only SD route: SP-formatted card,
-APP1 file at the root as `SP404MKII_APP1.bin` with no other update BINs, SHIFT at
-power-on, `APP1 UPDATER FOUND`, `UPDATE COMPLETE PLEASE POWER OFF`, then a normal
-boot and the Synth menu title. The safety section says what protects the user
-(APP1 only; resident loader with the SHIFT + power SD updater, APP0 and fuses
-never written; an SD card with Roland's official update as the way back) without
-claiming the SP cannot be bricked.
+The patch steps now lead into the browser USB route. Stock v5.52 stages and
+rereads the small R51 writer, receives the aligned Revision V carrier, and then
+R51 checks, writes and reads back the complete P34 APP1. Its guarded reset runs
+only after terminal verification. The downloaded `SP404MKII_APP1.bin` remains
+available, and the safety section keeps Roland's SD updater as the recovery
+route. The installer writes APP1 only. Resident, APP0, fuses and flash status
+registers stay outside its write contract.
 
 ## Browser patcher
 
@@ -70,19 +71,22 @@ occurs in Roland's image; it refuses to write otherwise. The stock APP1 is read
 from the sp404mk2 workspace (`firmware/v552/extracted/sp404mk2_sys_v552/`) and is
 never copied into this repository.
 
-The shipped patch is a development build from the openSynthP20 candidate
-(sp404mk2 `diagnostics/opensynth_p12_combined_build_12/final-build-001`, APP1
-SHA256 `909b92107a5c93b50ff2382dfb0c79cec0835319f93829b2576d5f2ff957e718`),
-which is not hardware verified. Regenerate it from the final hardware-verified
-APP1 before release and commit the new `.ospatch` and `synth-patch.json`
-together.
+The shipped patch builds the offline-qualified `openSynthP34` candidate from
+sp404mk2 `diagnostics/opensynth_p12_combined_build_26/final-build-001`. Its APP1
+is 2,830,672 bytes with SHA256
+`00299601316516283cdda08b66893cee09d0375f9719759c9e13917503b5e864`.
+This exact P34 image was installed physically through the browser route on
+October 11, 2026. A later guided run through the corrected completion path also
+returned to the `OpenSynth 34` display. Commit the `.ospatch` and
+`synth-patch.json` pins together
+whenever the candidate changes.
 
-### Page behaviour
+### Page behavior
 
 `OpenSynthPatcher.astro` renders inside step 2 of the patch steps (steps are
 strings or `{text, link?, patcher?}` objects in `synth.json`; copy lives in
-`synth.json` `patcher`). `src/scripts/opensynth-patcher.ts` (about 1.1 KiB gzip)
-handles the drop zone, file picker and a whole-page drop target, and starts
+`synth.json` `patcher`). `src/scripts/opensynth-patcher.ts` handles the drop zone,
+file picker and whole-page drop target, and starts
 `opensynth-patcher-worker.ts` only when a file arrives. The worker fetches the
 patch, reads the file with progress, and `src/lib/opensynth/patcher.ts` checks
 the patch SHA256 against the pin in the page, accepts Roland's ZIP
@@ -90,8 +94,18 @@ the patch SHA256 against the pin in the page, accepts Roland's ZIP
 checks the APP1 size and SHA256 against the header, applies the operations and
 offers `SP404MKII_APP1.bin` only when the result matches the output SHA256. The
 four stages (reading, verifying, patching, checking) drive one progress bar.
-Errors name the problem and the fix. Without JavaScript a note explains that the
-patcher needs it. Roland's v5.52 page:
+The completed result exposes the legacy USB controls, while the direct stock
+installer is available before any file is selected. Its first action opens the
+stock Web Serial picker, stages and verifies R51, and sends the aligned Revision
+V carrier. When R51 appears, the same control continues through WebHID and waits
+for passive P34 identity. A fresh browser needs separate trusted presses for the
+stock Serial and R51 HID permission pickers. Already authorized devices are
+reused without another picker. No WebUSB permission is requested.
+The stock protocol chunk finishes loading before the first action is enabled so
+the Web Serial picker opens directly inside the user's gesture. Errors name the
+problem and the recovery. Without JavaScript a note explains that the patcher
+needs it.
+Roland's v5.52 page:
 `https://www.roland.com/global/support/by_product/sp-404mk2/updates_drivers/174cc2fc-ddb2-4128-87a0-848b882cdcea/`
 (checked 9 October 2026; Roland asks visitors to accept its license first).
 
@@ -110,31 +124,59 @@ Done Mobile, the review board and `export` are still to run. Browser captures of
 all four states at 1440/390 px in both themes are in
 `design/exports/opensynth-page/patcher/`.
 
+The browser now uses one primary USB action for the direct stock route. The
+existing-R51 path remains as a compatibility route. The repository surface
+contract records that layout. The matching
+native Penpot redraw remains pending because the current Canary session exposes
+no remote-debugging connection; no Penpot object changed in this pass.
+
 `tools/check-build.mjs` allows exactly one `.ospatch`, at the pinned URL, whose
 bytes and SHA256 match `synth-patch.json` and whose header targets the official
 v5.52 APP1. Loose JSON patch formats stay refused.
 
-### Held direct-USB groundwork
+### Browser USB route
 
-`src/lib/opensynth/r50-webhid.ts` is the unexposed browser transport for the
-second half of the stock-first route. It does not discover `navigator.hid`, ask
-for a device or add a page control. A caller must inject the exact
-`CAFE:404F`, `SP404 STOCK FLASH R50`, vendor `FF00/1` endpoint. The read-only
-attestor requires explicit real-power-cycle and fresh-connection confirmations,
-reads two matching fresh `SP50` reports and sends nothing.
+`src/lib/opensynth/stock-bootstrap.ts` supplies the direct stock route. Web
+Serial accepts only Roland `0582:02E7` and creates
+`/SP404REMOTE///ROLAND\SP-404MKII/OS51B87E.BIN`. It writes the pinned 18,500-byte
+R51 image, opens a fresh session, rereads every byte and checks EOF. It then
+seals a one-shot browser claim, sends three 512-byte safe frames and the exact
+51-packet Revision V carrier as full 512-byte writes. The claim cannot be reused.
 
-The guarded installer owns and hash-checks the patch result, rechecks the B2
-envelope, probes C22016/status40, uploads ordered 56-byte chunks, verifies RAM
-CRC, sends COMMIT once, waits for full-sector state6, closes and reopens the
-device, then requires two matching terminal reports. Its receipt remains
-incomplete until normal OpenSynth boot and cold-DEL B2 return are recorded. The
-read-only completion attestor requires a real normal power cycle and the exact
-`openSynthP29` screen identity, then a separate cold DEL-held power cycle. It
-accepts only `CAFE:4050`, `SP404 USB BRIDGE B2`, vendor `FF00/1`, and two matching
-fresh `SP17` reports with marker `52420201`; it sends zero reports.
-Errors after a possible COMMIT are marked uncertain and must not be retried.
-The public patcher still downloads a file; no browser device picker or physical
-SP connection is shipped.
+`src/lib/opensynth/r51-webhid.ts` requires the exact `CAFE:404F` R51 identity,
+two matching fresh status reports, the C22016/status40 flash profile and the
+pinned P34 hash. It uploads ordered 56-byte chunks, verifies the RAM CRC, writes
+APP1 with sector zero last, checks the padded flash extent and reopens the device
+for two separate terminal status reads. CRC-bound ARM and COMMIT tokens request
+the guarded reboot. The page then watches the authorized Roland serial port and
+accepts only the pinned P34 profile, marker, geometry and record CRC. Any
+uncertain result after COMMIT is non-retryable. The page records the commit and
+guarded reset before it waits for P34 to return. A timeout therefore stays
+locked after a reload instead of offering another flash attempt.
+
+The local candidate publishes pinned R51, carrier and full P34 assets under
+`public/opensynth/usb/`; `tools/check-build.mjs` checks every length and SHA256.
+This satisfies the no-file product flow, but it changes the release boundary:
+do not deploy it until the owner makes the firmware-distribution and license
+decision. The `.ospatch` route remains the alternative that reconstructs P34
+from the visitor's official file.
+
+The reusable transport is also packaged as
+`packages/sp404mk2-usb-installer/release/opensp-sp404mk2-usb-installer-0.3.0.tgz`.
+Its manifest pins the standalone browser bundle, source, direct carrier, staged
+image identity, and APP1 boundary. It contains no OpenSynth firmware image.
+The caller supplies the locally built P34 bytes. The old OpenSynth names remain
+compatibility wrappers. `INTEGRATION.md` documents the browser gesture boundary,
+claim storage, receipts, and no-retry rules. The current archive SHA-256 is
+recorded in `packages/sp404mk2-usb-installer/release/SHA256SUMS`.
+The package also exports Revision W through `stock-carrier-p34-preflight` and
+the `preflightStockP34SerialOnly` API. W validates the staged file and resets
+without a flash write path. If W leaves the staging file in place, Revision X
+may adopt it only after another complete byte-for-byte readback and EOF check.
+The package test installs the generated tarball into a clean temporary project,
+imports its public API and hashes both assets through the installed export map.
+Two consecutive builds produced the same digest. Public distribution still
+needs the project owner's license choice; `PUBLISHING.md` records that step.
 
 ## Screen animations
 
@@ -261,21 +303,25 @@ patch apply from raw APP1 and both ZIP methods, wrong-file, wrong-entry,
 truncated-ZIP, damaged/substituted patch and output-mismatch refusals, and, when
 the stock APP1 is present locally (or `OPENSP_STOCK_APP1` is set), scans the
 shipped patch for Roland runs and rebuilds the pinned output from the real APP1
-and ZIP. `tests/opensynth-r50-webhid.test.mjs` adds eight injected-transport cases:
-64-byte report framing and CRC, zero-write boot attestation, a complete synthetic
-B2 write with one COMMIT and reopened status, pre-COMMIT refusals, uncertain
-post-COMMIT failure, zero-write completion, completion refusals and a source check
-that forbids browser discovery. These are
-host fixtures, not hardware evidence. `tests/opensynth-patcher.spec.ts` drops a synthetic file (synthetic
+and ZIP. The focused Node suite has 56 cases. It retains the historical R50 and
+R51 coverage and covers packet-safe full-speed trigger splitting, exact stock
+packet fixtures, complete stage/readback/carrier runs, passive P34 identity and
+one-shot claim refusal. These are host fixtures, not hardware evidence.
+`tests/opensynth-patcher.spec.ts` drops a synthetic file (synthetic
 patch served by route, so no Roland bytes are committed) and checks the stages,
-SHA256 and download in both themes, the mobile file picker, error and reset.
+SHA256 and download in both themes, the guided USB action, the existing-R51
+compatibility path, the mobile file picker, error, and reset. Its full-route
+fixture starts from stock without a visitor firmware file, verifies the 54 stock
+writes, continues through R51, and reaches the passive P34 identity. Separate
+cases resume a completed carrier after reload and prove that a passive-return
+failure after COMMIT remains locked without a second COMMIT or reset request.
 `tests/synth-release.spec.ts` checks the four-part structure, one animation
 per feature row with the expected alt text and caption, whole-pixel tile zoom, final-release copy
 (no status badges, testing or build-number wording), the Roland link, the patcher,
 sprite loading, axe, no horizontal scroll at 390/1440px in both themes, the
-no-JS first frame and the reduced-motion/toggle/offscreen lifecycle. The schema-2
-page's only module script measured 1,135 bytes gzip (plus the shared inline
-theme script) on 9 October 2026. Run Playwright against the built output with
+no-JS first frame and the reduced-motion/toggle/offscreen lifecycle. The release
+page's initial JavaScript measures 13,292 bytes gzip; the stock bootstrap remains
+a lazy chunk. Run Playwright against the built output with
 `OPENSP_TEST_URL` when another dev server already holds port 4321.
 
 See the retained [website review](reports/opensynth-website-review.md) and

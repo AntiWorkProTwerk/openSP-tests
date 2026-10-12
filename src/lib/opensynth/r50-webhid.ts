@@ -22,7 +22,7 @@ export const B2_WEBHID = Object.freeze({
   reportId: 0,
   marker: 0x52420201,
   maximum: 0x37f000,
-  expectedNormalIdentity: 'openSynthP29',
+  expectedNormalIdentity: 'openSynthP34',
 });
 
 const STATUS_FIELDS = ['version','state','error','length','received','crc32','maximum','capabilities',
@@ -45,7 +45,9 @@ export interface R50FeatureDevice {
 export type R50FreshAttestation = Readonly<{
   format:'opensp-r50-fresh-attestation-v1';
   endpoint:Readonly<{vendorId:number;productId:number;productName:string;usagePage:number;usage:number}>;
-  powerCycleConfirmed:true;
+  bootEvidence:'power-cycle'|'stock-carrier';
+  powerCycleConfirmed:boolean;
+  stockCarrierConfirmed:boolean;
   freshConnectionConfirmed:true;
   statusHex:string;
   confirmationStatusHex:string;
@@ -72,7 +74,7 @@ export type B2Status = Readonly<Record<(typeof STATUS_FIELDS)[number], number> &
 export type R50InstallCompletion = Readonly<{
   format:'opensp-r50-install-completion-v1';
   installReceipt:R50InstallReceipt;
-  normalBoot:Readonly<{powerCycleConfirmed:true;identity:'openSynthP29'}>;
+  normalBoot:Readonly<{powerCycleConfirmed:true;identity:'openSynthP34'}>;
   coldDelBoot:Readonly<{
     powerCycleConfirmed:true;
     delHeldConfirmed:true;
@@ -210,10 +212,15 @@ async function closeDevice(device:R50FeatureDevice,phase:string,commitSent=false
   try{await device.close();}catch(error){fail(phase,'transport-close',`R50 close failed: ${error instanceof Error?error.message:String(error)}`,undefined,commitSent);}
 }
 
-export async function attestFreshR50(device:R50FeatureDevice,confirmation:Readonly<{powerCycleConfirmed:boolean;freshConnectionConfirmed:boolean}>):Promise<R50FreshAttestation>{
+export async function attestFreshR50(device:R50FeatureDevice,confirmation:Readonly<{
+  powerCycleConfirmed:boolean;
+  stockCarrierConfirmed?:boolean;
+  freshConnectionConfirmed:boolean;
+}>):Promise<R50FreshAttestation>{
   assertR50Device(device);
-  need(confirmation.powerCycleConfirmed&&confirmation.freshConnectionConfirmed,'attestation','confirmation-required',
-    'A real power cycle and fresh connection must both be confirmed.');
+  const bootEvidence=confirmation.powerCycleConfirmed?'power-cycle':confirmation.stockCarrierConfirmed?'stock-carrier':undefined;
+  need(bootEvidence&&confirmation.freshConnectionConfirmed,'attestation','confirmation-required',
+    'A real power cycle or completed stock carrier, plus a fresh connection, must be confirmed.');
   need(!device.opened,'attestation','already-open','Close other R50 clients before attestation.');
   await openDevice(device,'attestation');
   try{
@@ -221,7 +228,8 @@ export async function attestFreshR50(device:R50FeatureDevice,confirmation:Readon
     requireFresh(first.status,'attestation');requireFresh(second.status,'attestation');
     need(same(first.raw,second.raw),'attestation','status-changed','The two fresh R50 status reads differ.');
     return Object.freeze({format:'opensp-r50-fresh-attestation-v1',endpoint:Object.freeze({vendorId:device.vendorId,productId:device.productId,
-      productName:device.productName,usagePage:R50_WEBHID.usagePage,usage:R50_WEBHID.usage}),powerCycleConfirmed:true,freshConnectionConfirmed:true,
+      productName:device.productName,usagePage:R50_WEBHID.usagePage,usage:R50_WEBHID.usage}),bootEvidence,
+      powerCycleConfirmed:bootEvidence==='power-cycle',stockCarrierConfirmed:bootEvidence==='stock-carrier',freshConnectionConfirmed:true,
       statusHex:hex(first.raw),confirmationStatusHex:hex(second.raw),status:first.status,statusReads:2,featureReportsSent:0});
   }finally{await closeDevice(device,'attestation');}
 }
@@ -237,7 +245,9 @@ export type R50InstallOptions=Readonly<{
 
 export async function installOpenSynthViaR50(device:R50FeatureDevice,candidate:Uint8Array,options:R50InstallOptions):Promise<R50InstallReceipt>{
   assertR50Device(device);need(!device.opened,'setup','already-open','Close other R50 clients before installation.');
-  need(options.attestation?.format==='opensp-r50-fresh-attestation-v1'&&options.attestation.powerCycleConfirmed===true&&
+  need(options.attestation?.format==='opensp-r50-fresh-attestation-v1'&&
+    ((options.attestation.bootEvidence==='power-cycle'&&options.attestation.powerCycleConfirmed===true&&options.attestation.stockCarrierConfirmed===false)||
+     (options.attestation.bootEvidence==='stock-carrier'&&options.attestation.powerCycleConfirmed===false&&options.attestation.stockCarrierConfirmed===true))&&
     options.attestation.freshConnectionConfirmed===true&&options.attestation.featureReportsSent===0&&
     options.attestation.statusReads===2&&options.attestation.endpoint.vendorId===device.vendorId&&
     options.attestation.endpoint.productId===device.productId&&options.attestation.endpoint.productName===device.productName&&
@@ -336,7 +346,7 @@ export async function completeR50OpenSynthInstall(
     installReceipt.remainingChecks[1]==='cold-DEL B2 return',
     'completion','install-receipt','A completed R50 flash/readback receipt is required.');
   need(confirmation.normalPowerCycleConfirmed&&confirmation.normalIdentity===B2_WEBHID.expectedNormalIdentity,
-    'completion','normal-boot','Confirm a real normal power cycle and the exact openSynthP29 screen identity.');
+    'completion','normal-boot','Confirm a real normal power cycle and the exact openSynthP34 screen identity.');
   need(confirmation.coldDelPowerCycleConfirmed&&confirmation.delHeldConfirmed&&confirmation.freshConnectionConfirmed,
     'completion','cold-del-confirmation','Confirm a separate cold DEL-held power cycle and fresh B2 connection.');
   need(!device.opened,'completion','already-open','Close other B2 clients before completion attestation.');

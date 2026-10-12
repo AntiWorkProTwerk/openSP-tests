@@ -1,11 +1,11 @@
 {
   "schema": 1,
   "format": "opensynth-binpatch/1",
-  "build": "development patch from openSynthP20 candidate 909b9210 (not hardware verified)",
+  "build": "OpenSynth P34 offline-qualified RC1 candidate 00299601316516283cdda08b66893cee09d0375f9719759c9e13917503b5e864",
   "patch": {
     "url": "/opensynth/patch/opensynth-v552.ospatch",
-    "bytes": 156603,
-    "sha256": "ba82a4d3cfd9d2bfd937945aeec154f5fd6ed561e3ce68f9fa33ef7242d97bc0"
+    "bytes": 167315,
+    "sha256": "2a64887b789eb84d3039ee709e726ae0e00f886a5c714370ac95a23f44e060a4"
   },
   "input": {
     "name": "SP404MKII_APP1.bin",
@@ -19,11 +19,11 @@
   },
   "output": {
     "name": "SP404MKII_APP1.bin",
-    "bytes": 2820012,
-    "sha256": "909b92107a5c93b50ff2382dfb0c79cec0835319f93829b2576d5f2ff957e718"
+    "bytes": 2830672,
+    "sha256": "00299601316516283cdda08b66893cee09d0375f9719759c9e13917503b5e864"
   },
-  "storedBytes": 147287,
-  "copiedBytes": 2672725,
-  "operations": 1253,
+  "storedBytes": 157976,
+  "copiedBytes": 2672696,
+  "operations": 1256,
   "minimumCopy": 8
 }

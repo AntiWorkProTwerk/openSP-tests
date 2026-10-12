@@ -1,0 +1,33 @@
+{
+  "name": "@opensp/sp404mk2-usb-installer",
+  "version": "0.3.0",
+  "description": "Browser USB installer primitives for bounded SP-404MKII APP1 firmware updates",
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./src/usb-installer.ts",
+      "import": "./dist/index.js"
+    },
+    "./stock-carrier-p34": "./assets/stock-carrier-p34-x1.oscarrier",
+    "./stock-delta-p34": "./assets/opensynth-p34-from-stock-v552.osdelta",
+    "./stock-delta-carrier-p34": "./assets/stock-carrier-p34-z1.oscarrier",
+    "./stock-carrier-p34-preflight": "./assets/stock-carrier-p34-preflight-w.oscarrier",
+    "./stock-r51": "./assets/stock-r51-v1.osr51",
+    "./stock-carrier-r51": "./assets/stock-carrier-r51-v1.oscarrier",
+    "./manifest": "./MANIFEST.json"
+  },
+  "files": [
+    "assets",
+    "dist",
+    "src",
+    "MANIFEST.json",
+    "INTEGRATION.md",
+    "PUBLISHING.md",
+    "README.md",
+    "SAFETY.md"
+  ],
+  "engines": {
+    "node": ">=22.12.0"
+  }
+}

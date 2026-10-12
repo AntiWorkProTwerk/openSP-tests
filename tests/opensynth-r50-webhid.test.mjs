@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import {createHash} from 'node:crypto';
 import {inspectStockUsbRouteImage} from '../src/lib/opensynth/usb-route.ts';
 import {B2_WEBHID,R50_WEBHID,R50WebHidError,attestFreshR50,completeR50OpenSynthInstall,installOpenSynthViaR50,parseB2Status,parseR50Status,r50Command,r50Crc32} from '../src/lib/opensynth/r50-webhid.ts';
+import {BrowserHidError,requestB2Writer,requestR50Writer} from '../src/lib/opensynth/browser-hid.ts';
 
 const fields=['version','state','error','length','received','crc32','maximum','capabilities','jedec','flash_status','flash_error','programmed','flash_ready','flash_crc32','build_marker'];
 const sha=bytes=>createHash('sha256').update(bytes).digest('hex');
@@ -76,10 +77,33 @@ test('R50 WebHID command and CRC use the 64-byte payload contract',()=>{
 
 test('fresh R50 attestation performs two reads, zero writes and closes the handle',async()=>{
   const fake=new FakeR50(),attestation=await attestFreshR50(fake,{powerCycleConfirmed:true,freshConnectionConfirmed:true});
+  assert.equal(attestation.bootEvidence,'power-cycle');assert.equal(attestation.powerCycleConfirmed,true);assert.equal(attestation.stockCarrierConfirmed,false);
   assert.equal(attestation.status.state,0);assert.equal(attestation.statusReads,2);assert.equal(attestation.featureReportsSent,0);
   assert.equal(fake.reads,2);assert.equal(fake.sent.length,0);assert.equal(fake.opens,1);assert.equal(fake.closes,1);assert.equal(fake.opened,false);
   await rejects(()=>attestFreshR50(new FakeR50(),{powerCycleConfirmed:false,freshConnectionConfirmed:true}),'confirmation-required');
   await rejects(()=>attestFreshR50(new FakeR50({productName:'Roland SP-404MKII'}),{powerCycleConfirmed:true,freshConnectionConfirmed:true}),'device-identity');
+});
+
+test('fresh R50 attestation records a completed stock carrier without inventing a power cycle',async()=>{
+  const fake=new FakeR50(),attestation=await attestFreshR50(fake,{powerCycleConfirmed:false,stockCarrierConfirmed:true,freshConnectionConfirmed:true});
+  assert.equal(attestation.bootEvidence,'stock-carrier');assert.equal(attestation.powerCycleConfirmed,false);assert.equal(attestation.stockCarrierConfirmed,true);
+  assert.equal(fake.reads,2);assert.equal(fake.sent.length,0);
+});
+
+test('browser picker asks only for the exact R50 collection and performs no device I/O',async()=>{
+  const fake=new FakeR50();let options;
+  const selected=await requestR50Writer({requestDevice:async value=>{options=value;return [fake];}});
+  assert.equal(selected,fake);assert.equal(fake.opens,0);assert.equal(fake.reads,0);assert.equal(fake.sent.length,0);
+  assert.deepEqual(options,{filters:[{vendorId:0xcafe,productId:0x404f,usagePage:0xff00,usage:1}]});
+  await assert.rejects(()=>requestR50Writer(undefined),error=>error instanceof BrowserHidError&&error.code==='unsupported');
+  await assert.rejects(()=>requestR50Writer({requestDevice:async()=>[]}),error=>error instanceof BrowserHidError&&error.code==='selection');
+});
+
+test('final browser picker asks only for B2 and leaves it unopened',async()=>{
+  const fake=new FakeB2();let options;
+  const selected=await requestB2Writer({requestDevice:async value=>{options=value;return [fake];}});
+  assert.equal(selected,fake);assert.equal(fake.opens,0);assert.equal(fake.reads,0);assert.equal(fake.sent.length,0);
+  assert.deepEqual(options,{filters:[{vendorId:0xcafe,productId:0x4050,usagePage:0xff00,usage:1}]});
 });
 
 test('guarded R50 WebHID flow uploads exact B2 bytes, commits once and reopens for two terminal reads',async()=>{
@@ -118,9 +142,9 @@ test('post-COMMIT failure is marked uncertain and never retries COMMIT',async()=
 test('normal screen plus fresh cold-DEL B2 attestation completes the install without writes',async()=>{
   const bytes=candidate(),r50=new FakeR50(),attestation=await attestFreshR50(r50,{powerCycleConfirmed:true,freshConnectionConfirmed:true});
   const receipt=await installOpenSynthViaR50(r50,bytes,{expectedSha256:sha(bytes),attestation,sleep:async()=>{}}),b2=new FakeB2();
-  const complete=await completeR50OpenSynthInstall(b2,receipt,{normalPowerCycleConfirmed:true,normalIdentity:'openSynthP29',
+  const complete=await completeR50OpenSynthInstall(b2,receipt,{normalPowerCycleConfirmed:true,normalIdentity:'openSynthP34',
     coldDelPowerCycleConfirmed:true,delHeldConfirmed:true,freshConnectionConfirmed:true});
-  assert.equal(complete.installationComplete,true);assert.equal(complete.normalBoot.identity,'openSynthP29');
+  assert.equal(complete.installationComplete,true);assert.equal(complete.normalBoot.identity,'openSynthP34');
   assert.equal(complete.coldDelBoot.status.build_marker,0x52420201);assert.equal(complete.coldDelBoot.statusReads,2);
   assert.equal(complete.coldDelBoot.featureReportsSent,0);assert.equal(b2.reads,2);assert.equal(b2.sent.length,0);
   assert.equal(b2.opens,1);assert.equal(b2.closes,1);assert.equal(b2.opened,false);
@@ -129,8 +153,8 @@ test('normal screen plus fresh cold-DEL B2 attestation completes the install wit
 test('completion rejects missing reboot evidence and stale or wrong B2 before it can pass',async()=>{
   const bytes=candidate(),r50=new FakeR50(),attestation=await attestFreshR50(r50,{powerCycleConfirmed:true,freshConnectionConfirmed:true});
   const receipt=await installOpenSynthViaR50(r50,bytes,{expectedSha256:sha(bytes),attestation,sleep:async()=>{}});
-  const confirmation={normalPowerCycleConfirmed:true,normalIdentity:'openSynthP29',coldDelPowerCycleConfirmed:true,delHeldConfirmed:true,freshConnectionConfirmed:true};
-  await rejects(()=>completeR50OpenSynthInstall(new FakeB2(),receipt,{...confirmation,normalIdentity:'openSynthP28'}),'normal-boot');
+  const confirmation={normalPowerCycleConfirmed:true,normalIdentity:'openSynthP34',coldDelPowerCycleConfirmed:true,delHeldConfirmed:true,freshConnectionConfirmed:true};
+  await rejects(()=>completeR50OpenSynthInstall(new FakeB2(),receipt,{...confirmation,normalIdentity:'openSynthP33'}),'normal-boot');
   await rejects(()=>completeR50OpenSynthInstall(new FakeB2({productName:'SP404 USB BRIDGE B1'}),receipt,confirmation),'device-identity');
   const stale=new FakeB2();stale.status.state=6;
   await rejects(()=>completeR50OpenSynthInstall(stale,receipt,confirmation),'writer-not-fresh');assert.equal(stale.sent.length,0);

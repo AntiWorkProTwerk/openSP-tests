@@ -22,9 +22,11 @@ an editorial assumption pending the owner's answer, not a confirmed requirement.
 ## Capabilities and constraints
 
 The approved stack is a static Astro site on GitHub Pages. Keep navigation
-native and browser scripts small. The public website never connects to the SP.
-Penpot supplies the shared visual system and linked components. Changes are
-explicitly exported and reviewed; no automatic two-way synchronization exists.
+native and browser scripts small. The openSynth release page can connect to an
+SP through browser USB APIs for its guarded APP1 installer; other public pages
+remain read-only. Penpot supplies the shared visual system and linked components.
+Changes are explicitly exported and reviewed; no automatic two-way
+synchronization exists.
 
 ## Brand commitments
 
@@ -36,9 +38,11 @@ Desktop, mobile, light and dark views share content and components.
 
 The local research workspace preserves firmware manifests, IDA exports, CPU
 verification reports and owner-reported hardware results. Publish only reviewed,
-project-relevant extracts. Do not publish firmware binaries, private identity
-metadata, local account paths or credentials. Illustrative screens must be
-labeled as reconstructions; they are not device photographs or captures.
+project-relevant extracts. Do not publish Roland firmware, private identity
+metadata, local account paths or credentials. Original OpenSP patch, writer and
+carrier artifacts may be published only with exact length and hash checks.
+Illustrative screens must be labeled as reconstructions; they are not device
+photographs or captures.
 
 ## Accessibility
 

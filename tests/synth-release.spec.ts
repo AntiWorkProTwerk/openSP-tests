@@ -2,7 +2,7 @@ import {test,expect} from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
 import screens from '../src/content/releases/opensynth-screens.json' with {type:'json'};
 import copy from '../src/content/releases/synth.json' with {type:'json'};
-const features=copy.sections.find(s=>s.id==='features')!.rows!;
+const features=copy.sections.find(s=>s.id==='features')!.rows! as Array<{label:string;text:string;screen:string;screenCaption?:string}>;
 
 for(const width of [390,1440])for(const theme of ['light','dark']){
   test(`openSynth page structure ${width}px ${theme}`,async({page})=>{
@@ -27,13 +27,14 @@ for(const width of [390,1440])for(const theme of ['light','dark']){
     await expect(page.locator('#features')).toContainText('Press REC and choose an empty pad. Press REC to start');
     await expect(page.locator('#features')).toContainText('PW is greyed out');
     await expect(page.locator('.release-feature-status')).toHaveCount(0);
-    await expect(page.locator('#patch')).toContainText('OpenSP never hosts or sends Roland firmware');
+    await expect(page.locator('#patch')).toContainText('You do not need to download or drop a firmware file');
     await expect(page.locator('#patch [data-patcher]')).toHaveAttribute('data-ready','true');
     await expect(page.locator('#patch [data-patcher-drop]')).toContainText('Drop the v5.52 update file here');
     await expect(page.locator('#patch a[href="https://www.roland.com/global/support/by_product/sp-404mk2/updates_drivers/174cc2fc-ddb2-4128-87a0-848b882cdcea/"]')).toBeVisible();
     await expect(page.locator('#patch [data-source-patcher]')).toHaveCount(0);
-    await expect(page.locator('#patch .release-steps > li')).toHaveCount(5);
-    await expect(page.locator('#patch')).toContainText('hold SHIFT and switch on');
+    await expect(page.locator('#patch .release-steps > li')).toHaveCount(6);
+    await expect(page.locator('#patch')).toContainText('stages OpenSynth P34');
+    await expect(page.locator('#patch')).toContainText('reads every programmed sector back');
     await expect(page.locator('#safety')).toContainText('never writes the bootloader, APP0 or the fuses');
     await expect(page.locator('#safety')).toContainText('keep an SD card ready');
     await expect(page.locator('meta[name="robots"]')).toHaveAttribute('content','noindex');

@@ -111,5 +111,29 @@
 .patcher-sha code{font:14px/1.6 var(--font-label);overflow-wrap:anywhere;word-break:break-all}
 .patcher-reset{min-height:44px;padding:0;border:0;background:none;color:var(--ink);font:inherit;font-size:16px;text-decoration:underline;text-underline-offset:4px;cursor:pointer}
 .patcher-noscript{margin:16px 0 0;padding:16px 20px;border:1px solid var(--ink);font-size:17px;line-height:1.5}
-@media(max-width:600px){.patcher-drop{padding:28px 20px}.patcher-drop-title{font-size:21px}.patcher-progress{padding:18px 16px 16px}.patcher-stages{gap:6px}.patcher-stages li{font-size:11px;letter-spacing:0}.patcher-save{width:100%;justify-content:center;text-align:center;padding:10px 16px;font-size:17px}}
+.usb-installer{width:100%;margin-top:16px;padding-block:24px;border-block:1px solid var(--line)}
+.usb-installer-direct{margin:0 0 24px}
+.usb-installer h3{margin:0 0 12px;font-size:24px;line-height:1.3;font-weight:400;letter-spacing:-.02em}
+.usb-installer>p{margin:0 0 14px;font-size:17px;line-height:1.55;max-width:68ch}
+.usb-installer .usb-installer-warning{color:var(--muted)}
+.usb-installer-steps{margin:20px 0 24px;padding-left:24px;font-size:17px;line-height:1.55}
+.usb-installer-steps li{padding-left:6px;margin-bottom:10px}
+.usb-installer-actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 12px;max-width:900px}
+.usb-installer-button{min-height:48px;padding:8px 18px;border:1px solid var(--ink);background:var(--paper);color:var(--ink);font:var(--type-label-size)/1.4 var(--font-label);letter-spacing:var(--type-label-tracking);text-transform:uppercase;cursor:pointer}
+.usb-installer-button:hover:not(:disabled){background:var(--soft)}
+.usb-installer-button:focus-visible,.usb-installer-receipt:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
+.usb-installer-button:disabled{border-color:var(--line);color:var(--muted);cursor:not-allowed}
+.usb-installer-button[hidden]{display:none}
+.usb-installer-commit:not(:disabled){background:var(--ink);color:var(--paper)}
+.usb-installer-progress{display:flex;align-items:center;gap:16px;margin-top:20px}
+.usb-installer-progress[hidden]{display:none}
+.usb-installer-progress progress{flex:1;appearance:none;-webkit-appearance:none;height:8px;border:1px solid var(--ink);background:transparent;color:var(--ink)}
+.usb-installer-progress progress::-webkit-progress-bar{background:transparent}
+.usb-installer-progress progress::-webkit-progress-value{background:var(--ink)}
+.usb-installer-progress progress::-moz-progress-bar{background:var(--ink)}
+.usb-installer-progress span{min-width:4ch;text-align:right;font:14px/1 var(--font-label);font-variant-numeric:tabular-nums}
+.usb-installer-status{min-height:1.55em;margin:16px 0 0;font-size:17px;line-height:1.55;overflow-wrap:anywhere}
+.usb-installer-receipt{display:inline-flex;align-items:center;min-height:44px;margin-top:6px}
+.usb-installer-receipt[hidden]{display:none}
+@media(max-width:600px){.patcher-drop{padding:28px 20px}.patcher-drop-title{font-size:21px}.patcher-progress{padding:18px 16px 16px}.patcher-stages{gap:6px}.patcher-stages li{font-size:11px;letter-spacing:0}.patcher-save{width:100%;justify-content:center;text-align:center;padding:10px 16px;font-size:17px}.usb-installer-actions{grid-template-columns:1fr}.usb-installer-button{width:100%}}
 @media(prefers-reduced-motion:reduce){.patcher-drop,.patcher-bar progress::-webkit-progress-value{transition:none}}

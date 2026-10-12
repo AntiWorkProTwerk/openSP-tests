@@ -1,0 +1,110 @@
+{
+  "format": "opensp-sp404mk2-usb-installer-package-v2",
+  "package": "@opensp/sp404mk2-usb-installer",
+  "version": "0.3.0",
+  "stockIdentity": {
+    "vendorId": "0582",
+    "productId": "02E7",
+    "transport": "web-serial"
+  },
+  "stagedImage": {
+    "providedByCaller": true,
+    "bytes": 2830672,
+    "sha256": "00299601316516283cdda08b66893cee09d0375f9719759c9e13917503b5e864"
+  },
+  "stockDeltaRoute": {
+    "sourceFirmware": "Roland v5.52 APP1",
+    "sourceSha256": "4a3d67711e14dcc97d50249a4eee7dd6df0251a2f37757cbbe2556c233730d80",
+    "deltaBytes": 165559,
+    "deltaSha256": "3e84b57f11a39ad16db0219cb2f9887c87c72ddc3c218c0f4d4742d60c6800fa",
+    "carrierBytes": 6656,
+    "carrierSha256": "4e85b44a47cc014a9ccea122598c359938b38c818760c64bf4794a3aa21de3bd",
+    "targetSha256": "00299601316516283cdda08b66893cee09d0375f9719759c9e13917503b5e864"
+  },
+  "preflightCarrier": {
+    "diagnosticOnly": true,
+    "flashWritePath": false,
+    "bytes": 2560,
+    "sha256": "773179fcb6713de25d368833d6d0be439e19a174080d5e2548c3a80256b704d7"
+  },
+  "developerWriter": {
+    "applicationFirmwareIncluded": false,
+    "writerBytes": 18500,
+    "writerSha256": "6e72ed9487089f3014ccd161f3600eeb85979285890437cd34be4b51fda4ef26",
+    "carrierBytes": 26112,
+    "carrierSha256": "c082ec3733096a99ba55a7aada19388eea1ed0eef2f2d7ff148c5add99669831"
+  },
+  "routes": {
+    "r51": {
+      "primary": true,
+      "writerMaximumBytes": 3665920,
+      "candidateContract": "stock-derived ABI2 B2",
+      "commitJournalRequired": true
+    },
+    "directP34X": {
+      "primary": false,
+      "compatibility": true,
+      "exactImageOnly": true,
+      "firstOffset": "00080000",
+      "exclusiveEndOffset": "00334000"
+    }
+  },
+  "files": {
+    "src/usb-installer.ts": {
+      "bytes": 170,
+      "sha256": "9b45eab05a602da7d5251ed2f1d94816c119b7a57bdaf11900284f378ce302ae"
+    },
+    "src/usb-route.ts": {
+      "bytes": 3158,
+      "sha256": "ecd0ba81d64b123f52f30244463934050178e71785743561bb19a859ad933ba7"
+    },
+    "src/r50-webhid.ts": {
+      "bytes": 24739,
+      "sha256": "328a4f6c56ae5d61ea45b174440d1513bfd9c3678c2d97057049708e25639405"
+    },
+    "src/r51-webhid.ts": {
+      "bytes": 21514,
+      "sha256": "eac54ac8e00dffe99cd441d9a98b331caf03cf3226a7c89ea76264778563fdb1"
+    },
+    "src/browser-hid.ts": {
+      "bytes": 4771,
+      "sha256": "eaf408a1879c86bd22bde23dba128b2db3e8810e0d71baeae6dbd9da71d9862d"
+    },
+    "src/stock-bootstrap.ts": {
+      "bytes": 58867,
+      "sha256": "dfef58cba3e373c17795c33750c8979f44e85d45d36b7aa8f01e824bd7b18dd5"
+    },
+    "assets/opensynth-p34-from-stock-v552.osdelta": {
+      "bytes": 165559,
+      "sha256": "3e84b57f11a39ad16db0219cb2f9887c87c72ddc3c218c0f4d4742d60c6800fa"
+    },
+    "assets/stock-carrier-p34-z1.oscarrier": {
+      "bytes": 6656,
+      "sha256": "4e85b44a47cc014a9ccea122598c359938b38c818760c64bf4794a3aa21de3bd"
+    },
+    "assets/stock-carrier-p34-x1.oscarrier": {
+      "bytes": 5632,
+      "sha256": "65888c144d27cf286bf3d5ea323b4f95e2737ed8ed94dbabe027f586bdd0bda2"
+    },
+    "assets/stock-carrier-p34-preflight-w.oscarrier": {
+      "bytes": 2560,
+      "sha256": "773179fcb6713de25d368833d6d0be439e19a174080d5e2548c3a80256b704d7"
+    },
+    "assets/stock-r51-v1.osr51": {
+      "bytes": 18500,
+      "sha256": "6e72ed9487089f3014ccd161f3600eeb85979285890437cd34be4b51fda4ef26"
+    },
+    "assets/stock-carrier-r51-v1.oscarrier": {
+      "bytes": 26112,
+      "sha256": "c082ec3733096a99ba55a7aada19388eea1ed0eef2f2d7ff148c5add99669831"
+    },
+    "dist/index.js": {
+      "bytes": 100109,
+      "sha256": "326f5eefe0a3f37e1db58c992c70564ddca8cb0346601028e0269b101dc394be"
+    },
+    "dist/index.js.map": {
+      "bytes": 176745,
+      "sha256": "7307c15ade7c5baa636c3086a791ed27061e948ca8d51edf1cdf36269f856221"
+    }
+  }
+}

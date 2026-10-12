@@ -1,11 +1,34 @@
 ---
 import copy from '../../content/releases/synth.json';
 import patch from '../../content/releases/synth-patch.json';
+import usb from '../../content/releases/synth-usb.json';
 const p = copy.patcher;
 const stages = Object.entries(p.stages) as [string, string][];
 ---
 <div class="patcher" data-patcher data-state="idle" data-component="openSynth patcher" hidden
-  data-patch-url={patch.patch.url} data-patch-sha256={patch.patch.sha256} data-messages={JSON.stringify(p.messages)}>
+  data-patch-url={patch.patch.url} data-patch-sha256={patch.patch.sha256}
+  data-output-sha256={patch.output.sha256} data-output-bytes={patch.output.bytes}
+  data-stock-r51-url={usb.r51.url} data-stock-r51-sha256={usb.r51.sha256}
+  data-stock-carrier-url={usb.legacyCarrier.url} data-stock-carrier-sha256={usb.legacyCarrier.sha256}
+  data-stock-r51-carrier-url={usb.carrier.url} data-stock-r51-carrier-sha256={usb.carrier.sha256}
+  data-stock-app1-url={usb.app1.url} data-stock-app1-sha256={usb.app1.sha256}
+  data-stock-delta-url={usb.delta.url} data-stock-delta-sha256={usb.delta.sha256}
+  data-stock-delta-carrier-url={usb.deltaCarrier.url} data-stock-delta-carrier-sha256={usb.deltaCarrier.sha256}
+  data-normal-identity="openSynthP34" data-messages={JSON.stringify(p.messages)}>
+  <section class="usb-installer usb-installer-direct" data-direct-usb aria-labelledby="direct-usb-heading">
+    <h3 id="direct-usb-heading">Install OpenSynth from stock over USB</h3>
+    <p>Connect an SP-404MKII running stock v5.52, then start the installer. You do not need to download or drop a firmware file. The browser first asks for the stock serial port. When R51 starts, it may ask once more for access to the guarded writer.</p>
+    <p class="usb-installer-warning">Keep power and USB connected. If a write becomes uncertain, the page stops instead of retrying it.</p>
+    <div class="usb-installer-actions">
+      <button type="button" class="usb-installer-button usb-installer-commit" data-direct-usb-action disabled>Connect SP and install OpenSynth</button>
+    </div>
+    <div class="usb-installer-progress" data-direct-usb-progress hidden>
+      <progress max="100" value="0" aria-label="OpenSynth stock USB installation progress"></progress>
+      <span data-direct-usb-percent>0%</span>
+    </div>
+    <p class="usb-installer-status" role="status" aria-live="polite" data-direct-usb-status></p>
+    <a class="usb-installer-receipt" data-direct-usb-receipt download hidden>{p.usb.receiptLabel}</a>
+  </section>
   <label class="patcher-drop" data-patcher-drop>
     <input class="patcher-input" type="file" accept=".zip,.bin,application/zip,application/octet-stream"/>
     <span class="patcher-drop-title">{p.dropTitle}</span>
@@ -23,6 +46,30 @@ const stages = Object.entries(p.stages) as [string, string][];
   <div class="patcher-result">
     <a class="patcher-save" data-patcher-save download={patch.output.name}>{p.saveLabel}</a>
     <dl class="patcher-sha"><dt>{p.shaLabel}</dt><dd><code data-patcher-sha></code></dd></dl>
+    <section class="usb-installer" data-usb-installer aria-labelledby="usb-installer-heading">
+      <h3 id="usb-installer-heading">Install over USB</h3>
+      <p data-usb-support>{p.usb.support}</p>
+      <p class="usb-installer-warning">{p.usb.warning}</p>
+      <ol class="usb-installer-steps">
+        <li>Choose the stock SP serial port when the browser asks.</li>
+        <li>The page stages OpenSynth P34 in bounded chunks and reads the complete file back before it sends the direct carrier once.</li>
+        <li>Keep power and USB connected while the SP writes and verifies APP1, reboots, and returns with the passive OpenSynth P34 identity.</li>
+      </ol>
+      <div class="usb-installer-actions">
+        <button type="button" class="usb-installer-button usb-installer-commit" data-usb-action
+          data-label-stock-check={p.usb.stockCheckLabel} data-label-stock-run={p.usb.stockRunLabel}
+          data-label-r51-connect={p.usb.connectLabel} data-label-install={p.usb.installLabel}
+          data-label-complete={p.usb.completeLabel} data-label-locked={p.usb.lockedLabel}
+          disabled>{p.usb.stockCheckLabel}</button>
+        <button type="button" class="usb-installer-button" data-usb-existing disabled>{p.usb.existingR51Label}</button>
+      </div>
+      <div class="usb-installer-progress" data-usb-progress hidden>
+        <progress max="100" value="0" aria-label={p.usb.progressLabel}></progress>
+        <span data-usb-percent>0%</span>
+      </div>
+      <p class="usb-installer-status" role="status" aria-live="polite" data-usb-status></p>
+      <a class="usb-installer-receipt" data-usb-receipt download hidden>{p.usb.receiptLabel}</a>
+    </section>
     <button type="button" class="patcher-reset" data-patcher-reset>{p.resetLabel}</button>
   </div>
 </div>

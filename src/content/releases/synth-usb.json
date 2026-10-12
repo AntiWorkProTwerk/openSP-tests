@@ -1,0 +1,70 @@
+{
+  "format": "opensp-stock-r51-browser-route-v1",
+  "stock": {
+    "vendorId": "0582",
+    "productId": "02E7",
+    "transport": "web-serial",
+    "stagePath": "/SP404REMOTE///ROLAND\\SP-404MKII/OS51B87E.BIN"
+  },
+  "r51": {
+    "url": "/opensynth/usb/stock-r51-v1.osr51",
+    "bytes": 18500,
+    "sha256": "6e72ed9487089f3014ccd161f3600eeb85979285890437cd34be4b51fda4ef26",
+    "crc32": "A6099AC2"
+  },
+  "carrier": {
+    "url": "/opensynth/usb/stock-carrier-r51-v1.oscarrier",
+    "bytes": 26112,
+    "packets": 51,
+    "packetBytes": 512,
+    "minimumInterpacketMs": 20,
+    "alignmentSafeFrames": 3,
+    "triggerWrites": [512],
+    "highSpeedRequired": true,
+    "sha256": "c082ec3733096a99ba55a7aada19388eea1ed0eef2f2d7ff148c5add99669831"
+  },
+  "legacyCarrier": {
+    "url": "/opensynth/usb/stock-carrier-p34-x1.oscarrier",
+    "bytes": 5632,
+    "packets": 11,
+    "packetBytes": 512,
+    "sha256": "65888c144d27cf286bf3d5ea323b4f95e2737ed8ed94dbabe027f586bdd0bda2"
+  },
+  "app1": {
+    "url": "/opensynth/usb/opensynth-p34-app1.bin",
+    "name": "SP404MKII_APP1.bin",
+    "bytes": 2830672,
+    "sha256": "00299601316516283cdda08b66893cee09d0375f9719759c9e13917503b5e864",
+    "crc32": "2B892D87",
+    "paddedBytes": 2834432,
+    "sectors": 692,
+    "flashOffset": 524288
+  },
+  "writer": {
+    "vendorId": "CAFE",
+    "productId": "404F",
+    "productName": "SP404 STOCK FLASH R51",
+    "transport": "web-hid",
+    "usagePage": 65280,
+    "usage": 1,
+    "reportId": 0,
+    "reportBytes": 64,
+    "statusSignature": "SP51",
+    "statusVersion": 2,
+    "buildMarker": 1382350849,
+    "resetOpcodes": [13, 14]
+  },
+  "delta": {
+    "url": "/opensynth/usb/opensynth-p34-from-stock-v552.osdelta",
+    "bytes": 165559,
+    "sha256": "3e84b57f11a39ad16db0219cb2f9887c87c72ddc3c218c0f4d4742d60c6800fa"
+  },
+  "deltaCarrier": {
+    "url": "/opensynth/usb/stock-carrier-p34-z1.oscarrier",
+    "bytes": 6656,
+    "packets": 13,
+    "packetBytes": 512,
+    "sha256": "4e85b44a47cc014a9ccea122598c359938b38c818760c64bf4794a3aa21de3bd"
+  },
+  "retryAllowed": false
+}
