@@ -1,10 +1,8 @@
 # Publishing the installer package
 
-The package does not currently declare a software license. Put the project
-owner's chosen license at `packages/sp404mk2-usb-installer/LICENSE` and add its
-SPDX identifier as the `license` value in `package.json` before public
-distribution or registry publication. npm includes the package-level license in
-the archive automatically.
+The package is distributed under the MIT License already authorized for the
+owner's OpenSynth contributions. `package.json` declares its SPDX identifier,
+and npm includes the package-level `LICENSE` in the archive automatically.
 
 Run the release check from the OpenSP repository:
 

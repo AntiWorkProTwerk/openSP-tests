@@ -2,6 +2,7 @@
   "name": "@opensp/sp404mk2-usb-installer",
   "version": "0.3.0",
   "description": "Browser USB installer primitives for bounded SP-404MKII APP1 firmware updates",
+  "license": "MIT",
   "type": "module",
   "sideEffects": false,
   "exports": {
