@@ -1,4 +1,5 @@
 import assert from 'node:assert/strict';
+import {existsSync} from 'node:fs';
 import {readFile} from 'node:fs/promises';
 import {test} from 'node:test';
 import {createHash} from 'node:crypto';
@@ -9,6 +10,7 @@ import {STOCK_P34_DELTA,STOCK_P34_PREFLIGHT,STOCK_R51,STOCK_R51_V,StockBootstrap
 const bytes=hex=>Uint8Array.from(hex.match(/../g)?.map(value=>Number.parseInt(value,16))??[]);
 const hexOf=value=>Buffer.from(value).toString('hex');
 const sha=value=>createHash('sha256').update(value).digest('hex');
+const legacyPreflightCarrierUrl=new URL('../../sp404mk2/analysis/v552/stock_usb_bootstrap/stock_task_handoff_r50/build_carrier_w_p34_staged/packet_sequence.bin',import.meta.url);
 const concat=(...parts)=>Uint8Array.from(parts.flatMap(part=>[...part]));
 const u32=value=>{const raw=new Uint8Array(4);new DataView(raw.buffer).setUint32(0,value,true);return raw;};
 const encode5=value=>Uint8Array.of((value>>28)&0x7f,(value>>21)&0x7f,(value>>14)&0x7f,(value>>7)&0x7f,value&0x7f);
@@ -277,9 +279,10 @@ test('stock delta browser flow stages, reads back and sends the Z carrier once',
     error=>error instanceof StockBootstrapError&&error.code==='already-attempted');
 });
 
-test('one qualification action runs W, requires returned stock, adopts the verified stage for X, and proves P34',async()=>{
+test('one qualification action runs W, requires returned stock, adopts the verified stage for X, and proves P34',
+  {skip:!existsSync(legacyPreflightCarrierUrl)&&'legacy W fixture is maintained in the firmware repository'},async()=>{
   const image=new Uint8Array(await readFile(new URL('../public/opensynth/usb/opensynth-p34-app1.bin',import.meta.url)));
-  const preflightCarrier=new Uint8Array(await readFile(new URL('../../sp404mk2/analysis/v552/stock_usb_bootstrap/stock_task_handoff_r50/build_carrier_w_p34_staged/packet_sequence.bin',import.meta.url)));
+  const preflightCarrier=new Uint8Array(await readFile(legacyPreflightCarrierUrl));
   const installCarrier=new Uint8Array(await readFile(new URL('../public/opensynth/usb/stock-carrier-p34-x1.oscarrier',import.meta.url)));
   assert.equal(preflightCarrier.length,STOCK_P34_PREFLIGHT.carrierBytes);assert.equal(sha(preflightCarrier),STOCK_P34_PREFLIGHT.carrierSha256);
   const first=new FakeStockPort(image,preflightCarrier),returned=new FakeStockPort(image,installCarrier,true);
