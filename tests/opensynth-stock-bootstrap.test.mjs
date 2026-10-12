@@ -85,7 +85,7 @@ test('already-authorized stock USB and serial identities are reused without pick
 });
 
 test('browser file-service packets preserve the bounded stock transport',async()=>{
-  const image=new Uint8Array(await readFile(new URL('../../sp404mk2/diagnostics/opensynth_p12_combined_build_26/final-build-001/OPENSYNTH_P12_APP1.bin',import.meta.url)));
+  const image=new Uint8Array(await readFile(new URL('../public/opensynth/usb/opensynth-p34-app1.bin',import.meta.url)));
   const chunk=image.subarray(0,20*1024);
   const records=[
     [__test.openFile(STOCK_R51.stagePath,0x30000001),78],
@@ -162,7 +162,7 @@ test('passive OpenSynth return rejects damaged identity and duplicate ports',asy
 });
 
 test('published stock bootstrap artifacts are exact and bounded',async()=>{
-  const r51=await readFile(new URL('../../sp404mk2/diagnostics/opensynth_p12_combined_build_26/final-build-001/OPENSYNTH_P12_APP1.bin',import.meta.url));
+  const r51=await readFile(new URL('../public/opensynth/usb/opensynth-p34-app1.bin',import.meta.url));
   const carrier=await readFile(new URL('../public/opensynth/usb/stock-carrier-p34-x1.oscarrier',import.meta.url));
   assert.equal(r51.length,STOCK_R51.r51Bytes);assert.equal(sha(r51),STOCK_R51.r51Sha256);
   assert.equal(carrier.length,STOCK_R51.carrierBytes);assert.equal(sha(carrier),STOCK_R51.carrierSha256);
@@ -204,7 +204,7 @@ class FakeStockPort{
 }
 
 test('stock-to-P34 browser flow stages once, verifies in a fresh session and packet-safely splits the trigger',async()=>{
-  const image=new Uint8Array(await readFile(new URL('../../sp404mk2/diagnostics/opensynth_p12_combined_build_26/final-build-001/OPENSYNTH_P12_APP1.bin',import.meta.url)));
+  const image=new Uint8Array(await readFile(new URL('../public/opensynth/usb/opensynth-p34-app1.bin',import.meta.url)));
   const carrier=new Uint8Array(await readFile(new URL('../public/opensynth/usb/stock-carrier-p34-x1.oscarrier',import.meta.url)));
   const port=new FakeStockPort(image,carrier),progress=[];
   let stored=null;const store={load:()=>stored,save:value=>{stored=value;}};
@@ -278,7 +278,7 @@ test('stock delta browser flow stages, reads back and sends the Z carrier once',
 });
 
 test('one qualification action runs W, requires returned stock, adopts the verified stage for X, and proves P34',async()=>{
-  const image=new Uint8Array(await readFile(new URL('../../sp404mk2/diagnostics/opensynth_p12_combined_build_26/final-build-001/OPENSYNTH_P12_APP1.bin',import.meta.url)));
+  const image=new Uint8Array(await readFile(new URL('../public/opensynth/usb/opensynth-p34-app1.bin',import.meta.url)));
   const preflightCarrier=new Uint8Array(await readFile(new URL('../../sp404mk2/analysis/v552/stock_usb_bootstrap/stock_task_handoff_r50/build_carrier_w_p34_staged/packet_sequence.bin',import.meta.url)));
   const installCarrier=new Uint8Array(await readFile(new URL('../public/opensynth/usb/stock-carrier-p34-x1.oscarrier',import.meta.url)));
   assert.equal(preflightCarrier.length,STOCK_P34_PREFLIGHT.carrierBytes);assert.equal(sha(preflightCarrier),STOCK_P34_PREFLIGHT.carrierSha256);
@@ -302,7 +302,7 @@ test('one qualification action runs W, requires returned stock, adopts the verif
 });
 
 test('an exact existing staged file is adopted after full readback, while a sealed carrier claim prevents a repeat',async()=>{
-  const image=new Uint8Array(await readFile(new URL('../../sp404mk2/diagnostics/opensynth_p12_combined_build_26/final-build-001/OPENSYNTH_P12_APP1.bin',import.meta.url)));
+  const image=new Uint8Array(await readFile(new URL('../public/opensynth/usb/opensynth-p34-app1.bin',import.meta.url)));
   const carrier=new Uint8Array(await readFile(new URL('../public/opensynth/usb/stock-carrier-p34-x1.oscarrier',import.meta.url)));
   const adopted=new FakeStockPort(image,carrier,true);let stored=null;
   const receipt=await bootstrapStockToR51SerialOnly(adopted,{r51:image,carrier},{load:()=>stored,save:value=>{stored=value;}});
@@ -318,7 +318,7 @@ test('an exact existing staged file is adopted after full readback, while a seal
 });
 
 test('an existing staged file with any changed byte stops before the carrier',async()=>{
-  const image=new Uint8Array(await readFile(new URL('../../sp404mk2/diagnostics/opensynth_p12_combined_build_26/final-build-001/OPENSYNTH_P12_APP1.bin',import.meta.url)));
+  const image=new Uint8Array(await readFile(new URL('../public/opensynth/usb/opensynth-p34-app1.bin',import.meta.url)));
   const changed=image.slice();changed[changed.length-1]^=1;
   const carrier=new Uint8Array(await readFile(new URL('../public/opensynth/usb/stock-carrier-p34-x1.oscarrier',import.meta.url)));
   const port=new FakeStockPort(changed,carrier,true);let stored=null;
@@ -329,7 +329,7 @@ test('an existing staged file with any changed byte stops before the carrier',as
 });
 
 test('a claim persistence failure stops before stock import or file creation',async()=>{
-  const image=new Uint8Array(await readFile(new URL('../../sp404mk2/diagnostics/opensynth_p12_combined_build_26/final-build-001/OPENSYNTH_P12_APP1.bin',import.meta.url)));
+  const image=new Uint8Array(await readFile(new URL('../public/opensynth/usb/opensynth-p34-app1.bin',import.meta.url)));
   const carrier=new Uint8Array(await readFile(new URL('../public/opensynth/usb/stock-carrier-p34-x1.oscarrier',import.meta.url)));
   const port=new FakeStockPort(image,carrier),device=stockDevice();
   await assert.rejects(()=>bootstrapStockToR51(port,device,attestStockHighSpeed(device),{r51:image,carrier},
