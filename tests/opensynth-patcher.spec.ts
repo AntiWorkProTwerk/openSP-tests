@@ -7,7 +7,9 @@ import usbMeta from '../src/content/releases/synth-usb.json' with {type: 'json'}
 
 const sha = (body: Uint8Array) => createHash('sha256').update(body).digest('hex');
 const realStockUrl = new URL('../../sp404mk2/firmware/v552/extracted/sp404mk2_sys_v552/SP404MKII_APP1.bin', import.meta.url);
-const realStock = existsSync(realStockUrl) ? readFileSync(realStockUrl) : Buffer.alloc(0);
+const hasRealStock = existsSync(realStockUrl);
+const realStock = hasRealStock ? readFileSync(realStockUrl) : Buffer.alloc(0);
+const realStockTest = hasRealStock ? test : test.skip;
 
 // A synthetic official image and B2-shaped target; no Roland bytes are used here.
 const official = randomBytes(64 * 1024);
@@ -82,8 +84,7 @@ for (const theme of ['light', 'dark']) test(`dropping the update builds a checke
   expect(requests.filter(url => !/\/releases\/synth\/$|\.(?:css|js|png|woff2?|svg|json)(?:\?|$)|\.ospatch$|\/@|node_modules|\/src\//.test(url))).toEqual([]);
 });
 
-test('the first guided action opens only the stock serial picker',
-  {skip: !existsSync(realStockUrl) && 'official stock fixture is maintained outside the website repository'}, async ({page}) => {
+realStockTest('the first guided action opens only the stock serial picker', async ({page}) => {
   await page.addInitScript(() => {
     const calls = {usb: 0, serial: 0};
     Object.defineProperty(navigator, 'usb', {value: {
