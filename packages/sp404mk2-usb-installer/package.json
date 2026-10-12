@@ -12,7 +12,6 @@
     "./stock-carrier-p34": "./assets/stock-carrier-p34-x1.oscarrier",
     "./stock-delta-p34": "./assets/opensynth-p34-from-stock-v552.osdelta",
     "./stock-delta-carrier-p34": "./assets/stock-carrier-p34-z1.oscarrier",
-    "./stock-carrier-p34-preflight": "./assets/stock-carrier-p34-preflight-w.oscarrier",
     "./stock-r51": "./assets/stock-r51-v1.osr51",
     "./stock-carrier-r51": "./assets/stock-carrier-r51-v1.oscarrier",
     "./manifest": "./MANIFEST.json"

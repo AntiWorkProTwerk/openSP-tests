@@ -16,9 +16,8 @@ const artifactSources = [
   ['public/opensynth/usb/opensynth-p34-from-stock-v552.osdelta', 'opensynth-p34-from-stock-v552.osdelta'],
   ['public/opensynth/usb/stock-carrier-p34-z1.oscarrier', 'stock-carrier-p34-z1.oscarrier'],
   ['public/opensynth/usb/stock-carrier-p34-x1.oscarrier', 'stock-carrier-p34-x1.oscarrier'],
-  ['../sp404mk2/analysis/v552/stock_usb_bootstrap/stock_task_handoff_r50/build_carrier_w_p34_staged/packet_sequence.bin', 'stock-carrier-p34-preflight-w.oscarrier'],
-  ['../sp404mk2/sdk/examples/original_r51/build/original_r51.bin', 'stock-r51-v1.osr51'],
-  ['../sp404mk2/analysis/v552/stock_usb_bootstrap/stock_task_handoff_r50/build_carrier_v_r51/packet_sequence.bin', 'stock-carrier-r51-v1.oscarrier'],
+  ['public/opensynth/usb/stock-r51-v1.osr51', 'stock-r51-v1.osr51'],
+  ['public/opensynth/usb/stock-carrier-r51-v1.oscarrier', 'stock-carrier-r51-v1.oscarrier'],
 ];
 
 for (const target of [dist, sourceOut, assets, release]) {

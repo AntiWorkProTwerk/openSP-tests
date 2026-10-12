@@ -52,7 +52,7 @@ if (!Array.isArray(packed) || packed.length !== 1) throw new Error('npm pack ret
 const names = new Set(packed[0].files.map(item => item.path));
 for (const required of ['package.json', 'README.md', 'SAFETY.md', 'INTEGRATION.md', 'PUBLISHING.md', 'MANIFEST.json', 'dist/index.js',
   'assets/opensynth-p34-from-stock-v552.osdelta', 'assets/stock-carrier-p34-z1.oscarrier',
-  'assets/stock-carrier-p34-x1.oscarrier', 'assets/stock-carrier-p34-preflight-w.oscarrier',
+  'assets/stock-carrier-p34-x1.oscarrier',
   'assets/stock-r51-v1.osr51', 'assets/stock-carrier-r51-v1.oscarrier']) {
   if (!names.has(required)) throw new Error(`packed archive is missing ${required}`);
 }
@@ -81,7 +81,6 @@ try {
       ['@opensp/sp404mk2-usb-installer/stock-delta-p34','${manifest.files['assets/opensynth-p34-from-stock-v552.osdelta'].sha256}'],
       ['@opensp/sp404mk2-usb-installer/stock-delta-carrier-p34','${manifest.files['assets/stock-carrier-p34-z1.oscarrier'].sha256}'],
       ['@opensp/sp404mk2-usb-installer/stock-carrier-p34','${manifest.files['assets/stock-carrier-p34-x1.oscarrier'].sha256}'],
-      ['@opensp/sp404mk2-usb-installer/stock-carrier-p34-preflight','${manifest.files['assets/stock-carrier-p34-preflight-w.oscarrier'].sha256}'],
       ['@opensp/sp404mk2-usb-installer/stock-r51','${manifest.files['assets/stock-r51-v1.osr51'].sha256}'],
       ['@opensp/sp404mk2-usb-installer/stock-carrier-r51','${manifest.files['assets/stock-carrier-r51-v1.oscarrier'].sha256}'],
     ]){
