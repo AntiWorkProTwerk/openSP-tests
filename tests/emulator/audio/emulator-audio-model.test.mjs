@@ -69,7 +69,7 @@ function core(overrides = {}) {
 }
 
 test('live map shape admits owned SDRAM and only the stock DTCM audio extent', () => {
-  const cpu = readFileSync(new URL('../../../../opensp/src/lib/emulator/cpu.ts', import.meta.url), 'utf8');
+  const cpu = readFileSync(new URL('../../../src/lib/emulator/cpu.ts', import.meta.url), 'utf8');
   assert.match(cpu, /name: 'DTCM', address: 0x20000000, bytes: 0x00080000, permissions: 7/);
   assert.match(cpu, /this\.memoryMap = CPU_MEMORY_MAP\.map/);
   const rows = activeMap(), result = admitStockAudioRam(rows); rows[0].bytes = 1; rows[1].address = 0;

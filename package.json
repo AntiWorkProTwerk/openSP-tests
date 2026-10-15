@@ -11,7 +11,7 @@
     "check": "astro check",
     "test": "node tools/check-journey.mjs --exercises && node tools/check-demos.mjs && npm run test:source-publication && npm run test:opensynth-patcher && npm run test:usb-installer-package && npm run test:features && npm run test:emulator && playwright test",
     "test:source-publication": "node --test --test-isolation=none tests/source-patcher-publication.test.mjs",
-    "test:opensynth-patcher": "node --import ./tools/register-test-typescript.mjs --test tests/opensynth-patcher.test.mjs tests/opensynth-r50-webhid.test.mjs tests/opensynth-r51-webhid.test.mjs tests/opensynth-stock-bootstrap.test.mjs tests/opensynth-usb-assets.test.mjs",
+    "test:opensynth-patcher": "node --import ./tools/register-test-typescript.mjs --test tests/opensynth-patcher.test.mjs tests/opensynth-r50-webhid.test.mjs tests/opensynth-r51-webhid.test.mjs tests/opensynth-withdrawal.test.mjs",
     "package:usb-installer": "node packages/sp404mk2-usb-installer/test-package.mjs",
     "test:usb-installer-package": "node packages/sp404mk2-usb-installer/test-package.mjs",
     "test:features": "node --import ./tools/register-test-typescript.mjs --test tests/features-*.test.mjs",

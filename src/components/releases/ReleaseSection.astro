@@ -1,7 +1,6 @@
 ---
-import OpenSynthPatcher from './OpenSynthPatcher.astro';
 import OpenSynthScreen from './OpenSynthScreen.astro';
-type Step = string | {text: string; link?: {href: string; label: string}; patcher?: boolean};
+type Step = string | {text: string; link?: {href: string; label: string}};
 interface Section {
   id: string;
   heading: string;
@@ -26,10 +25,9 @@ const {section} = Astro.props;
     ))}</ul>
   ) : section.rows && <dl class="release-facts">{section.rows.map(row => <div><dt>{row.label}</dt><dd>{row.text}</dd></div>)}</dl>}
   {section.steps && <ol class="release-steps">{section.steps.map(step => typeof step === 'string' ? <li>{step}</li> : (
-    <li class={step.patcher ? 'release-step-patcher' : undefined}>
+    <li>
       {step.text}
       {step.link && <a class="release-step-link" href={step.link.href} rel="noopener">{step.link.label}</a>}
-      {step.patcher && <OpenSynthPatcher/>}
     </li>
   ))}</ol>}
   {section.note && <p class="release-note">{section.note}</p>}

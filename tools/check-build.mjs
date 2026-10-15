@@ -36,21 +36,8 @@ const synthPatch=JSON.parse(source('src/content/releases/synth-patch.json').toSt
   const header=JSON.parse(bytes.subarray(12,12+bytes.readUInt32LE(8)).toString('utf8'));
   if(bytes.subarray(0,8).toString('latin1')!=='OSPATCH1'||header.format!=='opensynth-binpatch/1'||header.input.sha256!=='4a3d67711e14dcc97d50249a4eee7dd6df0251a2f37757cbbe2556c233730d80'||header.input.bytes!==2652672||header.output.sha256!==synthPatch.output.sha256||header.output.name!=='SP404MKII_APP1.bin')throw Error('openSynth patch header must target the official v5.52 APP1 and the pinned output');
 }
-const synthUsb=JSON.parse(source('src/content/releases/synth-usb.json').toString('utf8'));
-{
-  if(synthUsb.format!=='opensp-stock-r51-browser-route-v1'||synthUsb.stock.vendorId!=='0582'||synthUsb.stock.productId!=='02E7'||synthUsb.stock.transport!=='web-serial'||synthUsb.stock.stagePath!=='/SP404REMOTE///ROLAND\\SP-404MKII/OS51B87E.BIN'||synthUsb.retryAllowed!==false)throw Error('Stock R51 USB release contract differs');
-  if(synthUsb.r51.bytes!==18500||synthUsb.r51.sha256!=='6e72ed9487089f3014ccd161f3600eeb85979285890437cd34be4b51fda4ef26'||synthUsb.app1.bytes!==2830672||synthUsb.app1.sha256!==synthPatch.output.sha256||synthUsb.app1.paddedBytes!==2834432||synthUsb.app1.sectors!==692)throw Error('R51 or OpenSynth P34 release pins differ');
-  if(synthUsb.carrier.packets!==51||synthUsb.carrier.packetBytes!==512||synthUsb.carrier.alignmentSafeFrames!==3||JSON.stringify(synthUsb.carrier.triggerWrites)!=='[512]'||synthUsb.carrier.highSpeedRequired!==true||synthUsb.carrier.bytes!==synthUsb.carrier.packets*synthUsb.carrier.packetBytes)throw Error('Revision V R51 browser carrier bounds differ');
-  if(synthUsb.writer.productName!=='SP404 STOCK FLASH R51'||synthUsb.writer.statusSignature!=='SP51'||synthUsb.writer.buildMarker!==0x52650001||JSON.stringify(synthUsb.writer.resetOpcodes)!=='[13,14]')throw Error('Guarded R51 writer identity differs');
-  const published=['r51','carrier','app1','legacyCarrier'].map(name=>{
-    const item=synthUsb[name],expected=fileURLToPath(new URL(item.url.slice(1),dist));
-    if(!built.some(p=>path.resolve(p)===path.resolve(expected)))throw Error(`The ${name} stock-bootstrap artifact must be published at ${item.url}`);
-    const bytes=fs.readFileSync(expected);if(bytes.length!==item.bytes||hash(bytes)!==item.sha256)throw Error(`Published stock-bootstrap ${name} differs from synth-usb.json`);
-    return {name,url:item.url,bytes:item.bytes,sha256:item.sha256};
-  });
-  synthUsb.published=published;
-}
-const publicFirmwareArtifacts=new Set(['r51','carrier','app1','legacyCarrier'].map(name=>fileURLToPath(new URL(synthUsb[name].url.slice(1),dist))));
+const publicFirmwareArtifacts=new Set();
+if(fs.existsSync(fileURLToPath(new URL('opensynth/usb/opensynth-p34-app1.bin',dist))))throw Error('Withdrawn APP1 image remains in deployment');
 const privateArtifact=/\.(?:penpot|py|env|ts|tsx|astro|mdx?|c|h|cpp|elf|o|obj|a|lib|exe|dll|so|dylib|bin|img|raw|dump|dat|hex|uf2|map|zip|tar|tgz|pem|key|sqlite|pcap)$/i;
 if(built.some(p=>!publicLessons.has(p)&&!publicSourceArchives.has(p)&&!publicFirmwareArtifacts.has(p)&&(privateArtifact.test(p)||/(?:^|[\\/])\.env(?:\.|$)/i.test(p)||p.endsWith('.xml')&&!path.basename(p).startsWith('sitemap'))))throw Error('Unexpected source material in deployment');
 for(const p of built.filter(p=>/\.(?:html|json|py|js|css|svg)$/.test(p)))assertPublicText(fs.readFileSync(p,'utf8'),path.relative(fileURLToPath(dist),p));
@@ -142,7 +129,6 @@ report.totalJavascriptGzipBytes=totalJavascriptGzipBytes;
 report.emulatorRuntime=emulatorRuntime;
 report.sourceArchives=sourceArchives;
 report.opensynthPatch={url:synthPatch.patch.url,bytes:synthPatch.patch.bytes,sha256:synthPatch.patch.sha256,outputSha256:synthPatch.output.sha256,storedBytes:synthPatch.storedBytes};
-report.opensynthStockUsb={format:synthUsb.format,stock:synthUsb.stock,artifacts:synthUsb.published,retryAllowed:synthUsb.retryAllowed};
 if(emulatorPage){
  report.emulatorDesign=Object.fromEntries([
   ['components','design/penpot/emulator-components.json'],

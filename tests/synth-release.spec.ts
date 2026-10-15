@@ -9,9 +9,9 @@ for(const width of [390,1440])for(const theme of ['light','dark']){
     await page.setViewportSize({width,height:1000});await page.goto('/releases/synth/');
     await page.getByLabel('Color theme',{exact:true}).selectOption(theme);
     await expect(page.locator('main h1')).toHaveText('openSynth for the SP-404MKII');
-    await expect(page.locator('.release-status')).toContainText('firmware v5.52');
+    await expect(page.locator('.release-status')).toHaveText('The installer is temporarily unavailable while release artifacts are reviewed.');
     await expect(page.locator('main')).not.toContainText(/in testing|pending review|not yet|\bP1\d\b/i);
-    await expect(page.locator('main .release-section h2')).toHaveText(['Features and how to use them','How to patch',"Why it won't brick your SP"]);
+    await expect(page.locator('main .release-section h2')).toHaveText(['Features and how to use them']);
     await expect(page.locator('opensynth-screens')).toHaveAttribute('data-ready','true');
     await expect(page.locator('opensynth-screens [data-screen]')).toHaveCount(features.length+1);
     await expect(page.locator('.opensynth-hero [data-screen="detune"]')).toHaveCount(1);
@@ -27,16 +27,7 @@ for(const width of [390,1440])for(const theme of ['light','dark']){
     await expect(page.locator('#features')).toContainText('Press REC and choose an empty pad. Press REC to start');
     await expect(page.locator('#features')).toContainText('PW is greyed out');
     await expect(page.locator('.release-feature-status')).toHaveCount(0);
-    await expect(page.locator('#patch')).toContainText('You do not need to download or drop a firmware file');
-    await expect(page.locator('#patch [data-patcher]')).toHaveAttribute('data-ready','true');
-    await expect(page.locator('#patch [data-patcher-drop]')).toContainText('Drop the v5.52 update file here');
-    await expect(page.locator('#patch a[href="https://www.roland.com/global/support/by_product/sp-404mk2/updates_drivers/174cc2fc-ddb2-4128-87a0-848b882cdcea/"]')).toBeVisible();
-    await expect(page.locator('#patch [data-source-patcher]')).toHaveCount(0);
-    await expect(page.locator('#patch .release-steps > li')).toHaveCount(6);
-    await expect(page.locator('#patch')).toContainText('stages OpenSynth P34');
-    await expect(page.locator('#patch')).toContainText('reads every programmed sector back');
-    await expect(page.locator('#safety')).toContainText('never writes the bootloader, APP0 or the fuses');
-    await expect(page.locator('#safety')).toContainText('keep an SD card ready');
+    await expect(page.locator('#patch, #safety, [data-patcher], [data-direct-usb], [data-usb-installer]')).toHaveCount(0);
     await expect(page.locator('meta[name="robots"]')).toHaveAttribute('content','noindex');
     for(const img of await page.locator('opensynth-screens [data-screen] img').all()){
       await img.scrollIntoViewIfNeeded();await expect.poll(()=>img.evaluate((i:HTMLImageElement)=>i.complete&&i.naturalWidth)).toBe(128);
