@@ -26,8 +26,8 @@
     "design:tokens": "node tools/build-design-tokens.mjs"
   },
   "dependencies": {
-    "astro": "7.3.5",
-    "@astrojs/mdx": "8.0.2",
+    "astro": "7.3.8",
+    "@astrojs/mdx": "8.0.3",
     "@astrojs/sitemap": "3.7.4"
   },
   "devDependencies": {
